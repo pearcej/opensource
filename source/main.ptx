@@ -27,7 +27,7 @@
     <!-- possible structure of the book.  Once you know what the   -->
     <!-- title of the chapter is, rename the file something based  -->
     <!-- on the title (ch-shorttitle.ptx) both here and on disk    -->
-    <xi:include href="./ch_first.ptx" />
+    <xi:include href="./ch_1_foss.ptx" />
     <xi:include href="./ch_empty.ptx"/>
     <!-- Of course you will want to add more chapters as you proceed-->
 
