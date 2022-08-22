@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_source_code" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>About Source Code</title>
+  <introduction>
+    <p>
+				Let’s start with an explanation of <em>source code</em>. One cannot understand <em>open source</em> without first understanding source.
+
+    </p>
+  </introduction>
+  <subsection xml:id="subsec_source_code">
+    <title>What is Source Sode</title>
+			<p>
+				Source code is a set of instructions for computers that is meant to be read and written by humans.
+			</p>
+
+			<p>
+				Here’s an example of source code, in the C programming language, for a simple, but complete, program.
+			</p>
+
+			<pre>#include &lt;stdio.h&gt;
+main() { 
+  for(;;) { 
+    printf ("Hello World!\n"); 
+  } 
+}</pre>
+
+			<p>
+				In order to run this program, it must be compiled into machine code. First, we save the program into a file called hello.c. Then, we compile it:
+			</p>
+
+			<pre>gcc -o hello hello.c</pre>
+
+			<p>
+				The command is gcc, which stands for “GNU Compiler Collection.” The flag -o sets the name of the program that we are about to generate; here, we’ve decided to call it hello. The last argument is the name of the source file that we want to compile (hello.c). After compiling the program, you should be able to run it. To run the program, type:
+			</p>
+
+			<pre>./hello</pre>
+
+			<p>
+				at the prompt. This says “run the program called hello that is in the current directory.” When run, this program will print Hello World! until we kill the program. Hold down the <term>CTRL</term> key and press the <term>C</term> key to kill the program’s execution.
+			</p>
+
+			<p>
+				At this point, you have two files in your directory: hello.c, the source code, and hello, the program binary. That binary is a piece of that machine code. You can open it with a program called hexdump that will let you see the binary in a hexidecimal form. You can do this yourself on the command line:
+			</p>
+
+			<pre>hexdump hello</pre>
+
+			<p>
+				We’ve reproduced some of what it looks like when hello is viewed in hexdump after hello.c has been compiled by gcc:<!-- linebreak -->
+			</p>
+
+			<pre> 0000000 457f 464c 0101 0001 0000 0000 0000 0000
+ 0000010 0002 0003 0001 0000 8300 0804 0034 0000
+ 0000020 0820 0000 0000 0000 0034 0020 0008 0028
+ 0000030 001e 001b 0006 0000 0034 0000 8034 0804
+ 0000040 8034 0804 0100 0000 0100 0000 0005 0000
+ 0000050 0004 0000 0003 0000 0134 0000 8134 0804
+ 0000060 8134 0804 0013 0000 0013 0000 0004 0000
+ 0000070 0001 0000 0001 0000 0000 0000 8000 0804
+ 0000080 8000 0804 0518 0000 0518 0000 0005 0000
+ 0000090 1000 0000 0001 0000 0518 0000 9518 0804
+ 00000a0 9518 0804 00fc 0000 0104 0000 0006 0000
+ 00000b0 1000 0000 0002 0000 052c 0000 952c 0804
+ 00000c0 952c 0804 00c8 0000 00c8 0000 0006 0000
+ 00000d0 0004 0000 0004 0000 0148 0000 8148 0804
+ 00000e0 8148 0804 0044 0000 0044 0000 0004 0000
+ 00000f0 0004 0000 e550 6474 04a4 0000 84a4 0804
+ 0000100 84a4 0804 001c 0000 001c 0000 0004 0000
+ 0000110 0004 0000 e551 6474 0000 0000 0000 0000
+ 0000120 0000 0000 0000 0000 0000 0000 0006 0000
+ 0000130 0004 0000 6c2f 6269 6c2f 2d64 696c 756e
+ 0000140 2e78 6f73 322e 0000 0004 0000 0010 0000
+ 0000150 0001 0000 4e47 0055 0000 0000 0002 0000
+ 0000160 0006 0000 0012 0000 0004 0000 0014 0000
+ 0000170 0003 0000 4e47 0055 ac29 394b 26bf 01f1
+ 0000180 e396 f820 3c24 f98c 8c5a 8909 0002 0000
+ 0000190 0004 0000 0001 0000 0005 0000 2000 2000
+ 00001a0 0000 0000 0004 0000 4bad c0e3 0000 0000
+ 00001b0 0000 0000 0000 0000 0000 0000 0001 0000
+ 00001c0 0000 0000 0000 0000 0020 0000 002e 0000
+ 00001d0 0000 0000 0000 0000 0012 0000 0029 0000
+ 00001e0 0000 0000 0000 0000 0012 0000 001a 0000
+ 00001f0 848c 0804 0004 0000 0011 000f 5f00 675f</pre>
+
+			<p>
+				That’s only a small chunk of the program binary. The full binary is much larger — even though the source code that produces this binary is only two lines long.
+			</p>
+
+			<p>
+				As you can see, there’s a huge difference between <em>source code</em>, which is intended to be read and written by humans, and <em>binary code</em>, which is intended to be read and written by computer processors.
+			</p>
+
+			<p>
+				This difference is a crucial one for programmers who need to modify a computer program. Let’s say you wanted to change the program to say “Open source is awesome!!!”. With access to the source code, making this change is trivial, even for a novice programmer. Without access to the source code, making this change would be incredibly difficult. And this for two lines of code.
+			</p>
+
+      </subsection>
+			<subsection xml:id="exercise-change-the-source-code">
+				<title><term>Exercise – Change the source code</term></title>
+
+				<p>
+					Change the source code to print out “Open source is awesome!!!” instead of “Hello World!”. Spend no more than half an hour on this exercise.
+				</p>
+      </subsection>
+
+
+			<subsection xml:id="optional-exercise-change-the-binary-code">
+					<title><term>Optional Exercise – Change the binary code</term></title>
+
+					<p>
+						Change the binary code to print out “FOSS ROXORS!” instead of “Hello World!”. Spend no more than half a day on this exercise.
+					</p>
+
+					<p>
+						This is actually a tricky exercise, and it could take you a fair bit of time. We included it here because you might be curious and want to go poking around in the binary. Under most flavors of Linux you should be able to find or install a program called hexedit. To get you started, you use <term>TAB</term> to switch from hex to ASCII, / to search, and <term>F2</term> to save your changes. You can read the rest of the documentation for hexedit by reading the manpage, which you can get to by typing man hexedit on the command line, or pressing <term>F1</term> while running hexedit.
+					</p>
+
+			</subsection>
+
+</section>
+

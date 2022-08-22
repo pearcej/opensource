@@ -57,13 +57,38 @@
 						There’s a saying about software programs: they’re never finished, only abandoned. There’s always more work to do to improve any software project. The thing that makes FOSS so unique, and so interesting to the aspiring programmer, is that anyone can participate in a FOSS project. Most large projects can benefit from contribution by even novice programmers. There are also more FOSS projects than ever before, with an almost unlimited number of interesting problems. Want to learn how web browsers work? Hack on Firefox. Want to put together an awesome multilingual book reader for the blind? Hack on espeak.
 					</p>
 
+          <p>
+            Honestly, the primary key is to find a project that interests you.
+          </p>
+
   </subsection>
-	
-  <conclusion>
-  <title>What is key?</title>
-    <p>
-      Honestly, the primary key is to find a project that interests you.
-    </p>
-  </conclusion>
+
+  <subsubsection xml:id="exercise-finding-a-cool-project">
+				<title><term>Exercise – Finding a Cool Project</term></title>
+
+				<p>
+					Imagine that you have just been hired as a programmer for FOSS Inc., and your manager has told you that you must spend 20% of your time to work on a FOSS project that matters to you.
+				</p>
+
+				<p><ol>
+					<li>
+					First, search the web and <term>find sites that host FOSS projects</term>. There are many. Bookmark these so that you can come back to them later.
+					</li>
+
+					<li>
+					Second, <term>browse through several of these sites</term> and find one or more projects that are interesting to you. You might be interested in projects that benefit others. You might be interested in tools that support work that you do. Or, it might be that you might find something strikes your fancy that you never considered before! Take this as an opportunity to explore broadly.
+					</li>
+
+					<li>
+					After you find a project, <term>write a blog post about it</term>. At this point, the most important thing you can probably do is to explain why the project is interesting to you.
+					</li>
+
+				</ol></p>
+
+				<p>
+					If you don’t have a blog, set one up for free! Visit <url href="https://www.blogger.com/about/?r=1-null_user">Blogger</url> or <url href="http://wordpress.com/">WordPress</url>; setting up a new blog is easy. Blogs are widely used in the FOSS world by project members to share what they’re doing. Your voice will become one of many, and who knows — your blog might become a resource that other students later look to for inspiration when they are looking for projects to get involved in!
+				</p>
+
+			</subsubsection>
 
 </section>
