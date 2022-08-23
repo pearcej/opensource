@@ -4,7 +4,7 @@
   <title>About Source Code</title>
   <introduction>
     <p>
-				Let’s start with an explanation of <em>source code</em>. One cannot understand <em>open source</em> without first understanding source.
+		Let’s start with an explanation of <em>source code</em>. One cannot understand <em>open source</em> without first understanding source.
 
     </p>
   </introduction>
@@ -18,12 +18,24 @@
 				Here’s an example of source code, in the C programming language, for a simple, but complete, program.
 			</p>
 
-			<pre>#include &lt;stdio.h&gt;
+	<program xml:id="ex_c_prog" interactive="activecode" language="c">
+    <input>
+#include &lt;stdio.h&gt;
 main() { 
   for(;;) { 
     printf ("Hello World!\n"); 
   } 
-}</pre>
+}
+    </input>
+	</program>
+
+<!-- non-runnable
+<pre>#include &lt;stdio.h&gt;
+main() { 
+  for(;;) { 
+    printf ("Hello World!\n"); 
+  } 
+}</pre> -->
 
 			<p>
 				In order to run this program, it must be compiled into machine code. First, we save the program into a file called hello.c. Then, we compile it:

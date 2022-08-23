@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_build_portfolio" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Building your FOSS Portfolio</title>
+  <introduction>
+			<p>
+				Perhaps the greatest benefit of contributing to FOSS projects: you have the opportunity prove, to yourself and to others, that you can usefully contribute to real software projects. You will meet and interact with other developers, some of whom work on FOSS projects for a living. If you can help them solve their problems, they are inclined to help you solve yours — with advice, contacts, recommendation letters, and maybe even job offers.
+			</p>
+
+  </introduction>
+		<subsection xml:id="building-your-foss-portfolio">
+			<title>Building Your FOSS Portfolio</title>
+
+			<p>
+				One of the big differences between working in FOSS and working on proprietary software is that your work is visible to anyone who cares to look. Every mailing list post you write, every blog entry you post, every bug you file, every wiki page you edit, and every line of code you write, are available for anyone’s inspection.
+			</p>
+
+			<p>
+				This a huge potential advantage, if you know how to use it. In the coming chapters, as you begin to engage with your chosen FOSS project, we point out portfolio building opportunities.
+			</p>
+
+			<p>
+				Really, though, the portfolio should be a side effect. If you choose a project that matters to you, and if you work hard to help that project achieve its goals, then your portfolio builds itself.
+			</p>
+    </subsection>
+
+		<subsection xml:id="exercise-learn-about-a-projects-leaders">
+				<title><term>Exercise – Learn about a project’s leaders</term></title>
+
+				<p>
+					Revisit the project you blogged about in (XREF) Exercise 1.1, and spend some time figuring out who some of the project leaders are. Read through the project wiki, mailing lists, and so on. What can you find out about the project leaders? What information do they make available about themselves? Given what you’ve read, what do you think about their work?
+				</p>
+
+    </subsection>
+
+		<subsubsection xml:id="exercise-write-your-own-foss-bio">
+				<title><term>Exercise – Write your own FOSS bio</term></title>
+
+				<p>
+					Find an online wiki provider — <url href="http://www.wikispaces.com/">Wikispaces</url>, for example — and create a wiki page that will become your online FOSS portfolio. Write a little bit about yourself. Link to content: your resume, your blog, your Twitter account, or anything that might be relevant to potential employers. You will use this portfolio extensively over the course of this book.
+				</p>
+
+			</subsubsection>
+
+		<subsection xml:id="supplemental-materials">
+			<title>Supplemental Materials</title>
+			<p>
+				<url href="http://www.catb.org/~esr/writings/homesteading/">The Cathedral and The Bazaar</url> is a great story about the FOSS principles in action. Written originally in 1998 by Eric S. Raymond, it’s considered a must-read by many FOSS practitioners.
+			</p><!--</div attr= class="entry-content">--><!--</div attr= class="entry-container">--><!--</div attr= xml:id="main" class="site-main" role="main">--><!--</div attr= class="wrapper">--><!--</div attr= xml:id="content" class="site-content">-->
+
+
+    </subsection>
+
+</section>
+

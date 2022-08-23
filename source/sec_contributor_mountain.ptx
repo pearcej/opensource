@@ -4,16 +4,16 @@
 			<title>Climbing Contributor Mountain</title>
   <introduction>
 			<p>
-				Participation in FOSS projects is similar, in many ways, to an apprenticeship. It takes some effort, and some help, to work your way to the top. Let’s watch the path a typical newbie takes up Contributor Mountain.
-      <figure>
-      <caption>Contributor Mountain</caption>
+				Participation in FOSS projects is similar, in many ways, to an apprenticeship. 
+				It takes some effort, and some help, to work your way to the top. Let’s watch the path a typical newbie takes up Contributor Mountain.
+			
+			</p>
       <image source="im_contributor_mountain.png" width="50%">
-      <!-- why the link to this is actually in assets is puzzling -->
+	  <!--TODO improve this image -->
+      <!-- why this file must actually be in assets is puzzling -->
         <description>a visual of the contributor mountain with user at the bottom</description>
       </image>
-    </figure>
 
-			</p>
   </introduction>
   
   

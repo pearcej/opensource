@@ -52,5 +52,6 @@
   <xi:include href="./sec_source_code.ptx"/>
   <xi:include href="./sec_share_code.ptx"/>
   <xi:include href="./sec_contributor_mountain.ptx"/>
-  
+  <xi:include href="./sec_build_portfolio.ptx"/>
+
 </chapter>
