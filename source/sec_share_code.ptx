@@ -62,17 +62,17 @@
       </subsection>
 
 
-			<subsection xml:id="exercise-list-of-software">
-					<title><term>Exercise – List of software</term></title>
+			<exercise xml:id="exercise-list-of-software">
+					<title><term>Exercise: List of software</term></title>
 
 					<p>
 						Create a list of all the software that you use on a regular basis. Which software is FOSS? Which applications have FOSS equivalents? What are those equivalents?
 					</p>
 
-				</subsection>
+			</exercise>
 
-				<subsection xml:id="exercise-compare-and-contrast-similar-proprietary-and-foss-software">
-					<title><term>Exercise – Compare and contrast similar proprietary and FOSS software</term></title>
+			<exercise xml:id="exercise-compare-and-contrast-proprietary-and-foss-software">
+					<title><term>Exercise: Compare and contrast similar proprietary and FOSS software</term></title>
 
 					<p>
 						Choose one piece of proprietary software that you use regularly and find its FOSS equivalent if it has one. (If not, pick another program.) Write a blog post comparing the two. Don’t just look at the code; look at the entire experience. How are the user interfaces different or similar? What about the user’s experience overall? Is the quality of the documentation comparable? Is one buggier than the other? (This may take some spelunking in forums, looking for bug reports, etc?)
@@ -82,16 +82,16 @@
 						What, in your estimation, would it take for a new user to switch from the proprietary, closed-source software to the FOSS equivalent?
 					</p>
 
-				</subsection>
+			</exercise>
 
-				<subsection xml:id="exercise-install-a-new-foss-tool-and-blog-about-it">
-					<title><term>Exercise – Install a new FOSS tool and blog about it</term></title>
+			<exercise xml:id="exercise-install-new-foss-tool-and-blog-about-it">
+					<title><term>Exercise: Install a new FOSS tool and blog about it</term></title>
 
 					<p>
 						Go find a new piece of open source software that interests you. Install it, and blog about any problems that you have. Bear in mind that your notes may come in handy during later exercises.
 					</p>
 
-				</subsection>
+			</exercise>
 
 </section>
 

@@ -109,16 +109,16 @@ main() {
 			</p>
 
       </subsection>
-			<subsection xml:id="exercise-change-the-source-code">
+	<exercise xml:id="exercise-change-the-source-code">
 				<title><term>Exercise – Change the source code</term></title>
 
 				<p>
 					Change the source code to print out “Open source is awesome!!!” instead of “Hello World!”. Spend no more than half an hour on this exercise.
 				</p>
-      </subsection>
+  	</exercise>
 
 
-			<subsection xml:id="optional-exercise-change-the-binary-code">
+	<exercise xml:id="optional-exercise-change-the-binary-code">
 					<title><term>Optional Exercise – Change the binary code</term></title>
 
 					<p>
@@ -129,7 +129,7 @@ main() {
 						This is actually a tricky exercise, and it could take you a fair bit of time. We included it here because you might be curious and want to go poking around in the binary. Under most flavors of Linux you should be able to find or install a program called hexedit. To get you started, you use <term>TAB</term> to switch from hex to ASCII, / to search, and <term>F2</term> to save your changes. You can read the rest of the documentation for hexedit by reading the manpage, which you can get to by typing man hexedit on the command line, or pressing <term>F1</term> while running hexedit.
 					</p>
 
-			</subsection>
+	</exercise>
 
 </section>
 

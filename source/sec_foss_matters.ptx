@@ -63,8 +63,8 @@
 
   </subsection>
 
-  <subsubsection xml:id="exercise-finding-a-cool-project">
-				<title><term>Exercise – Finding a Cool Project</term></title>
+  <exercise xml:id="exercise-finding-a-project">
+				<title><term>Exercise: Finding a Cool Project</term></title>
 
 				<p>
 					Imagine that you have just been hired as a programmer for FOSS Inc., and your manager has told you that you must spend 20% of your time to work on a FOSS project that matters to you.
@@ -89,6 +89,6 @@
 					If you don’t have a blog, set one up for free! Visit <url href="https://www.blogger.com/about/?r=1-null_user">Blogger</url> or <url href="http://wordpress.com/">WordPress</url>; setting up a new blog is easy. Blogs are widely used in the FOSS world by project members to share what they’re doing. Your voice will become one of many, and who knows — your blog might become a resource that other students later look to for inspiration when they are looking for projects to get involved in!
 				</p>
 
-			</subsubsection>
+	</exercise>
 
 </section>

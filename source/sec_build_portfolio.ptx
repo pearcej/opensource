@@ -24,23 +24,23 @@
 			</p>
     </subsection>
 
-		<subsection xml:id="exercise-learn-about-a-projects-leaders">
-				<title><term>Exercise – Learn about a project’s leaders</term></title>
+		<exercise xml:id="exercise-learn-about-a-projects-leaders">
+				<title><term>Exercise: Learn about a project’s leaders</term></title>
 
 				<p>
-					Revisit the project you blogged about in (XREF) Exercise 1.1, and spend some time figuring out who some of the project leaders are. Read through the project wiki, mailing lists, and so on. What can you find out about the project leaders? What information do they make available about themselves? Given what you’ve read, what do you think about their work?
+					Revisit the project you blogged about in <xref ref="exercise-finding-a-project" />, and spend some time figuring out who some of the project leaders are. Read through the project wiki, mailing lists, and so on. What can you find out about the project leaders? What information do they make available about themselves? Given what you’ve read, what do you think about their work?
 				</p>
 
-    </subsection>
+    </exercise>
 
-		<subsubsection xml:id="exercise-write-your-own-foss-bio">
-				<title><term>Exercise – Write your own FOSS bio</term></title>
+		<exercise xml:id="exercise-write-your-own-foss-bio">
+				<title><term>Exercise: Write your own FOSS bio</term></title>
 
 				<p>
 					Find an online wiki provider — <url href="http://www.wikispaces.com/">Wikispaces</url>, for example — and create a wiki page that will become your online FOSS portfolio. Write a little bit about yourself. Link to content: your resume, your blog, your Twitter account, or anything that might be relevant to potential employers. You will use this portfolio extensively over the course of this book.
 				</p>
 
-			</subsubsection>
+		</exercise>
 
 		<subsection xml:id="supplemental-materials">
 			<title>Supplemental Materials</title>
