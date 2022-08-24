@@ -9,7 +9,7 @@
   </introduction>
 
 
-		<subsection xml:id="source-code-to-share-or-not-to-share">
+	<subsection xml:id="source-code-to-share-or-not-to-share">
 			<title>Source Code: To Share, or Not To Share?</title>
 
 			<p>
@@ -26,7 +26,7 @@
     </subsection>
 
 
-		<subsection xml:id="the-value-of-sharing">
+	<subsection xml:id="the-value-of-sharing">
 				<title><term>The value of sharing</term></title>
 
 				<p>
@@ -41,37 +41,33 @@
 					<li>
 					<term>Shared development cost</term>. Writing software can be expensive, at least in terms of time. Good software takes time to develop, and time is money. And if writing software is expensive, then maintaining it is even more expensive. In the FOSS model, the cost of the writing and maintaining the software can be spread out over several individuals and/or companies.
 					</li>
-
 					<li>
 					<term>Users can fix their own bugs</term>. This is not a freedom that is obviously useful to everybody. Not every software user is knowledgeable enough to fix a bug when they find it. That’s fine; FOSS also means that users can find other people to fix their bugs for them. Not everybody who owns a car is competent to change their own oil, but the freedom to change your oil, or fix a flat tire, or rebuild your own brakes — or the freedom to be able to go to any mechanic or any mechanically inclined friend and ask them to do it for you — is a crucial freedom to car owners. FOSS extends that freedom to software.
 					</li>
-
 					<li>
-					<term>(Arguably) better software.</term> Allowing users to fix bugs can often lead to better software. One of the problems with proprietary software is that there’s a limit to the number of people you can pay to fix code — that limit is usually directly proportional to how many software licenses the company can sell. FOSS projects have the potential to build a huge base of participants, far greater than the number of developers that any one company could pay. The Apache HTTP server project is a great example of a FOSS project with many developers, both commercial and independent — that has created <url href="http://news.netcraft.com/archives/web_server_survey.html">demonstrably more popular</url> and arguably better software than any of its proprietary counterparts.
+					<term>(Arguably) better software.</term> Allowing users to fix bugs can often lead to better software. One of the problems with proprietary software is that there’s a limit to the number of people you can pay to fix code — that limit is usually directly proportional to how many software licenses the company can sell. FOSS projects have the potential to build a huge base of participants, far greater than the number of developers that any one company could pay. The Apache HTTP server project is a great example of a FOSS project with many developers, both commercial and independent — that has created <url href="http://news.netcraft.com/archives/web_server_survey.html"  visual="news.netcraft.com/archives/web_server_survey.html">demonstrably more popular</url> and arguably better software than any of its proprietary counterparts.
 					</li>
-
 					<li>
 					<term>Software that outlives its creator.</term> There are literally thousands and thousands of pieces of software, written for outdated computers, that are no longer useful for any purpose. If we had source code for these pieces of software, we might be able to extend them to new computers, making them continually more useful and more interesting — but because we don’t have the source code for these programs, we have very little use for them anymore. There’s a word for this kind of software: abandonware. In FOSS, there’s no such thing as <em>abandonware</em>. Sure, people may stop working on a piece of software, but the source is always there, ready to be picked up and carried forward by anyone who has the time and interest to do so. Every dead FOSS project has a chance to be reborn.
 					</li>
-
 					<li>
-					<term>The freedom to fork.</term> Sometimes software projects go wrong. If a project is proprietary, no one has any recourse if they don’t like the direction of the project: the owner of the project decides the direction of the project, period. But because FOSS guarantees everybody the right to redistribute and modify the source code, developers can always take a FOSS project and move it in a new direction, without anybody’s permission. This process is called <em>forking</em>. Forks are usually regarded as last resorts, since contentious forks can divide scarce developer resources and confuse users. However, a number of FOSS projects have benefited greatly from forks; the <url href="http://en.wikipedia.org/wiki/XFree86#Forks_of_XFree86">X.org server</url> and <url href="http://en.wikipedia.org/wiki/Inkscape">Inkscape</url> are notable successful forks.
+					<term>The freedom to fork.</term> Sometimes software projects go wrong. If a project is proprietary, no one has any recourse if they don’t like the direction of the project: the owner of the project decides the direction of the project, period. But because FOSS guarantees everybody the right to redistribute and modify the source code, developers can always take a FOSS project and move it in a new direction, without anybody’s permission. This process is called <em>forking</em>. Forks are usually regarded as last resorts, since contentious forks can divide scarce developer resources and confuse users. However, a number of FOSS projects have benefited greatly from forks; the <url href="http://en.wikipedia.org/wiki/XFree86#Forks_of_XFree86" visual="wikipedia.org/wiki/XFree86#Forks_of_XFree86">X.org server</url> and <url href="http://en.wikipedia.org/wiki/Inkscape" visual="http://en.wikipedia.org/wiki/XFree86#Forks_of_XFree86">Inkscape</url> are notable successful forks.
 					</li>
 
 				</ul></p>
       </subsection>
 
 
-			<exercise xml:id="exercise-list-of-software">
+		<exercise xml:id="exercise-list-of-software">
 					<title><term>Exercise: List of software</term></title>
 
 					<p>
 						Create a list of all the software that you use on a regular basis. Which software is FOSS? Which applications have FOSS equivalents? What are those equivalents?
 					</p>
 
-			</exercise>
+		</exercise>
 
-			<exercise xml:id="exercise-compare-and-contrast-proprietary-and-foss-software">
+		<exercise xml:id="exercise-compare-and-contrast-proprietary-and-foss-software">
 					<title><term>Exercise: Compare and contrast similar proprietary and FOSS software</term></title>
 
 					<p>

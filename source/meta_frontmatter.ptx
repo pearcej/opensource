@@ -29,12 +29,13 @@
       <!-- <minilicense><image source="../images/by-sa.png" /></minilicense> -->
       <shortlicense>
         <!-- <image source="../images/by-sa.png" width="15%"/>  -->
-        This work is provisionally licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
+        This work is provisionally licensed under the Creative Commons Attribution-ShareAlike 3.0 International License.
         To view a copy of this license, visit
         <url 
-          href="http://creativecommons.org/licenses/by-sa/4.0/"
-          visual="creativecommons.org/licenses/by-sa/4.0">
-          CreativeCommons.org</url>
+          href="http://creativecommons.org/licenses/by-sa/3.0/"
+          visual="creativecommons.org/licenses/by-sa/3.0">
+          CreativeCommons.org
+        </url>
       </shortlicense>
     </copyright>
 
@@ -49,10 +50,10 @@
   <acknowledgement>
     <p>
       I would like to thank Berea College for sabbatical support that gave me time and made this work possible. If you do not already know about Berea College, you might be interested to know 
-      I am also grateful to the software innovation lab <url href="https://www.tweag.io">Tweag</url> for financial support and my Tweag mentor, Michael Gale's time.
+      I am also grateful to the software innovation lab <url href="https://www.tweag.io" visual="tweag.io">Tweag</url> for financial support and my Tweag mentor, Michael Gale's time.
     </p>
     <p>
-      Several parts of this textbook including the Forward and Part 1 are duplicated from Karsten Wade's quiad.fedorapeople.org site <url href="https://quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html/">Teaching Open Source</url>. We are very grateful to the authors Greg DeKoenigsberg, Chris Tyler, Karsten Wade, Max Spevack, Mel Chua, and Jeff Sheltren.
+      Several parts of this textbook including the Forward and Part 1 are duplicated from Karsten Wade's quiad.fedorapeople.org site <url href="https://quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html/" visual="quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html">Teaching Open Source</url>. We are very grateful to the authors Greg DeKoenigsberg, Chris Tyler, Karsten Wade, Max Spevack, Mel Chua, and Jeff Sheltren.
     </p>
   </acknowledgement>
 

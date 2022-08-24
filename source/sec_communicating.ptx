@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_communicating" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Communicating</title>
+  <introduction>
+    <p>Communication in an open-source community takes many forms, but all of these break down into two broad categories: synchronous (live/concurrent) and asynchronous (non-simultaneous). Synchronous communications might include instant messaging and various forms of audio chat; asynchronous communications include everything from email to wiki pages. Due to the geographically-dispersed nature of most communities, most communication makes heavy use of technology: it&#8217;s no accident that open source in its current form has grown hand-in-hand with the Internet.
+    </p>
+  </introduction>
+
+  <subsection xml:id="subsec_website">
+    <title>Websites</title>
+    <p>The online anchor-point for most communities is a web site. However, the nature of traditional HTML pages is that they are a static, one-to-many form of communication created by a small number of people with write access to a server. This leads to pages that can become quickly outdated and which do not truly reflect the collaborative nature of the community.
+    </p>
+
+    <p>For this reason, some open source projects have an anchor site with a few static pages, but the bulk of their web content comes from wiki (user-editable), forum (user-posted), and mailing list archive pages.
+    </p>
+  </subsection>
+    
+  <subsection xml:id="subsec_wikis">
+    <title>Wikis</title>
+    <p>The concept of a wiki is widely understood due to the popularity of Wikipedia: it&#8217;s a web site where the pages are user-editable. A wiki provides an easy-to-use, asynchronous way of putting semi-permanent content on the web, so they are ideal for documentation, timelines, status reports, meeting minutes, and conversation logs.From the perspective of a reader, accessing wiki content is the same as accessing static HTML content, and search engines index wiki content very well. For the writer, a wiki provides version control, a database backend, simplified markup, and a fast edit-and-post cycle.
+    </p>
+    <p>Most open source projects use one of the common wiki packages such as MediaWiki (which also powers Wikipedia), TikiWiki, MindTouch, or Trac; this has the benefit of reducing the number of different types of markup that must be memorized.</p>
+    <p>Wikis are related to content management systems (CMS), such as Drupal or WordPress. When a project uses a CMS for a website, the goal is the same &#8212; enable the community to edit the project content.
+    </p>
+    <exercise xml:id="exercise-project-wikis"><title>Exercise: Project Wikis</title>
+    <p>Wikis are meant to be community spaces where everyone can join in. They grown and are made better through community participation. For this exercise, we&#8217;re going to encourage you to check out the wikis of three established open source projects. These might be projects you looked at in the previous chapter:
+    </p>
+
+    <p>What wiki software are they using?<br />
+    Search in the wiki for the history and current structure of the project. Is it in the wiki, or is it somewhere else in their project?<br />
+    When the last change was made, who made it, and how often are changes submitted. Would you describe this wiki as &#8220;thriving&#8221; or &#8220;languishing&#8221;?<br />
+    Authoring and maintaining pages in a wiki (the latter sometimes being referred to as gardening) is a critical part of any FOSS project. If you&#8217;re particularly interested in a project, register an account on the wiki and create a User Profile page. You&#8217;ll want to link this back to your portfolio that you created in the previous chapter.
+    </p>
+    </exercise>
+  </subsection>
+
+  <subsection xml:id="subsec-blogs-planets">
+    <title>Blogs and Planets</title>
+
+    <p>While web sites and wiki provides semi-permanent places for content, blogs provide the opposite: a flow of transient, in-the-moment news and commentary.</p>
+    <p>Because many open source participants write blogs, it has become difficult to keep up with them on a one-by-one basis. The volume of blog postings created within a community can be overwhelming. To help deal with this, RSS or Atom feeds enable the receipt of content in a machine-readable format so that it can be used in a variety of different ways (for example, in Firefox Live Bookmarks, through a service such as Google Reader, or in a program such as <strong>Liferea</strong> or <strong>FeedReader</strong>). Many open-source community maintain a Planet site which aggregates the feeds from community members into a single page (and the Planet, in turn, provides an aggregated feed). Here are some examples: 
+    </p>
+    <ul>
+    <li><url href="http://planet.mozilla.org" visual="planet.mozilla.org">The Mozilla Planet</url></li>
+    <li><url href="http://planet.fedoraproject.org" visual= "planet.fedoraproject.org">Fedora Planet</url></li>
+    <li><url href="http://planet.go-oo.org/" visual="planet.go-oo.org/"> Go-OO Planet</url></li>
+    </ul>
+    <p>In most cases, individual blog postings can be tagged or categorized, and separate feeds can be generated for each tag or category. This permits posts to be sent to one or more different planets at the author&#8217;s discretion.</p>
+    <p>As you get into FOSS, you will want to share your news and opinions with others via a blog. You need to represent your thoughts professionally; here are some guidelines:</p>
+    <ul>
+    <li>Write professionally. Blog postings are less formal than other types of writing, but they are still a reflection of your communications skills.</li>
+    <li>Remember that the internet has a long memory. The Planet page is generated periodically, and even if you delete or change your posting, it may be indexed, cached, or reposted until the planet is re-generated. Avoid saying something that might come back to haunt you later &#8212; and remember that future employers may read your old postings (as well as future in-laws, office mates, and so forth).</li>
+    <li>Do not use profane, obscene, or rude content, or content that belittles other people.</li>
+    <li>Do not link to profane, obscene, rude, or illegal material or to sites that knowingly violate intellectual property rights (warez).</li>
+    <li>Ensure that each posting makes sense when taken out of the context of your blog and viewed on its own. If you are referring to one of your previous posts, link to it rather than refer to it as being &#8220;below&#8221; or &#8220;above&#8221;.</li>
+    <li>Link extensively. If you&#8217;re referring to a blog post, article, video, event, command, software package, person, project &#8212; link to all of them so that your readers can find out more information.</li>
+    <li>Ensure that each posting conforms to your community or institution&#8217;s policies.</li>
+    <li>Keep the postings relevant to your open source work. Use tagging/categories to keep deeply off-topic posts off your planet feeds.</li>
+    </ul>
+    <exercise><title>Exercise: Linking your Blog to Planets</title>
+    <p>In the introduction, you created a blog for yourself. Add that blog to your class planet, if there is one. Monitor the planets operated by the communities that run the wikis you investigated, and create a blog posting of your own with your observations of the community planets.</p>
+    </exercise>
+  </subsection>
+
+  <subsection xml:id="subsec-irc">
+    <title>IRC</title>
+    <p>IRC stands for Internet Relay Chat and is one of the primary means of synchronous communication between people working on a FOSS project. It&#8217;s an older text-based chat system where clients connect to the servers of one or more networks, and the servers relay messages between themselves within each network (hence the name). Communication is done in channels which individual users join, and users are identified by nicks (nicknames). In addition to human users, various services and bots(robots &#8212; programs) are present in many channels.</p>
+    <p>To use IRC, you&#8217;ll need an IRC client; Wikipedia maintains an excellent list of options. We recommend installing a few on your system and trying them out to see which one you prefer. You&#8217;ll need to select a nickname (nick or handle) &#8212; choose wisely, because you&#8217;ll want to keep your nick for the long run. It&#8217;s strongly recommended that you register your nick so that other people cannot masquerade as you.</p>
+    <p>There are a handful of IRC networks used in open source, including ones operated by large projects (such as irc.mozilla.org) and ones which are operated by organizations and shared by many different communities (such as irc.freenode.net and irc.oftc.net). These are open channels and may be logged by one or more entities. Consider anything you say in IRC to be as public as if you said it on a busy street corner, with a megaphone, and seven people videotaping everything.</p>
+    <p>Most IRC clients let you perform operations using menus/hotkeys or by typing commands. Commands start with a slash (&#8220;/&#8221;) to distinguish them from text that you are typing into the chat session. Since the commands are the same in all IRC clients, it&#8217;s worthwhile becoming familiar with them &#8212; here are some of the basics:</p>
+    <ul>
+    <li>/connect server &#8211; connect to the named IRC server.</li>
+    <li>/list &#8211; lists available channels. Channel names start with &#8220;#&#8221; (official channels) or &#8220;##&#8221; (unofficial channels).</li>
+    <li>/join channel &#8211; join the listed channel on the server to which you are connected.</li>
+    <li>/me action &#8211; reports your nick as performing an action.</li>
+    <li>/leave reason &#8211; leave the current channel, citing the reason given (optional).</li>
+    <li>/quit reason &#8211; leave the server, citing the reason given (optional).</li>
+    </ul>
+    <p>Any text you type that does not begin with a slash is taken to be text, and is entered into the conversation.</p>
+    <p>It is normal to join a channel and say nothing. In fact, it is expected: don&#8217;t join a channel and say &#8220;hi&#8221; or leave and say &#8220;bye&#8221; &#8212; you may be interrupting a conversation already underway. Feel free to join as many channels as you like, once you&#8217;re comfortable with IRC.</p>
+    <p>It is fine to join a channel and sit there idle for a long time, lurking. You might never say anything; this is a good way for you to learn about who is in the channel, what they are talking about, etc. Listening is often more important than talking, because you learn more.</p>
+    <p>If you have a question you should just ask it rather than saying, &#8220;Can I ask a question about &#8230;&#8221; or &#8220;Does anyone know about &#8230;&#8221;. You don&#8217;t need to direct general questions to a specific person. Rather, you should ask in the channel in general, and someone usually answers you:</p>
+
+    <console>
+      <input>
+      <line>&lt;don&gt; How do I ask a question?</line>
+      <line>&lt;funny_guy&gt; don: you just did!</line>
+      </input>
+    </console>
+
+    <p>If there are several conversations taking place at the same time, it&#8217;s customary to put the nick of the user you are directing your comment to at the start of the line (as shown in the second line above); most IRC clients send a special alert to a user whose nick is &#8220;spoken&#8221; in a channel. Most IRC clients also auto-complete the nick when you press the <strong>[Tab]</strong> key, so you could type fun[Tab] to fill in the nick &#8220;funny_guy&#8221;.</p>
+    <p>Channels generally have a purpose, and people are often joined to many different channels at once.  You&#8217;ll see many of the same people in different channels.  However, what might be appropriate in one channel often isn&#8217;t in another.  When you enter a channel, take a look at its Topic (displayed at the top, or with the /topic command) for clues.</p>
+    <p>Generally you should avoid small-talk unless you are sure that it is appropriate. Even if you see others in the channel doing it, don&#8217;t take that to mean that you should (i.e., channel veterans can get away with things newcomers can&#8217;t!). At the same time, be ready for a playful and (at times) very sarcastic environment.</p>
+    <p>Also be aware that you never know who you are talking to based on their nicks (you learn who people are later, as you get to know people&#8217;s nicks), and avoid making assumptions about people in the channel.</p>
+    <exercise>
+    <title>Exercise: Learning IRC</title>
+    <p>Install one or more IRC clients. Find out which network(s) and channel(s) are used by the three open source communities that operate the wikis you investigated. Choose a nick and connect to those networks and channels. Leave your IRC client open for at least 24 hours, and observe the patterns of conversation and key participants. Have a discussion in at least one of the channels, and blog about your experience, including an excerpt from your conversation.</p>
+    </exercise>
+  </subsection>
+
+  <subsection xml:id="subsec-mailinglists-newgroupds">
+    <title>Mailing Lists and Newsgroups</title>
+    <p>Almost all open source communities use an electronic mail list for discussions. These lists are sometimes managed through online services such as Google Groups, but are often managed through private installations of list management software such as MailMan, which provide subscriber management, bounce control, and web-accessible archiving.</p>
+    <p>Surprisingly, there is a significant variation from community to community in terms of list ettiquite and even the amount of participation on lists.
+    </p>
+    <p>Some communities use newsgroups or forums in place of mailing lists, but these are usually gatewayed to an e-mail list &#8212; for example, Mozilla uses newsgroups extensively, but many of the Mozilla newsgroup participants actually access the newsgroups as mail.
+    </p>
+    <p>An open-source participant subscribed to several lists in multiple communities can easily receive thousands of messages a day. For this reason, many people choose to use a separate mailbox (such as a Gmail account) or filtering rules to keep their mail under control or sign up to receive only a regular "digest" of the messages.
+    </p>
+    <exercise><title>Exercise: Joining the List</title>
+    <p>Subscribe to at least one mailing list from each of the three open source communities you are observing, and read through the last few months of message archives for each list. Blog your observations of their communication.</p>
+    </exercise>
+  </subsection>
+
+  <subsection xml:id="subsec-bugtrackers-repos">
+    <title>Bug Trackers and Repositories</title>
+<p>It may not be immediately obvious, but bug trackers and code repositories are also important communication tools in most open source communities; for example, there are often significant discussions that take place in bug trackers. See the chapters (XREF).
+  <!--TODO: fix xref-->
+</p>
+  
+</subsection>
+<conclusion>
+  <title>Drawing Conclusions</title>
+    <p>We learn to read before we learn to write; in the same way, the best way to start working with an open source community is to observe that community in action. As you have completed the exercises in this chapter, you should have started to form an impression about the communities that you have been observing.
+    </p>
+</conclusion>
+    <exercise><title>Exercise: Share Your Thoughts</title>
+    <p>Write a blog post summarizing your thoughts about the communities you&#8217;ve been observing. Specifically note your conclusions about the qualities of the community identified earlier.</p>
+    </exercise>
+</section>
+
+
+
+
+
