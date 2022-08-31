@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_about_licensing" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>About Licensing</title>
+  <introduction>
+    <p>
+      TBA - purpose of licensing
+    </p>
+
+  </introduction>
+  <subsection xml:id="subsec_a-subsection">
+    <title>Important Terminology</title>
+    <p>
+      copyright, copyleft, etc.
+    </p>
+  </subsection>
+
+  <conclusion>
+    <p>
+      TBA
+    </p>
+  </conclusion>
+</section>
+

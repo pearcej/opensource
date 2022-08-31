@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <chapter xml:id="ch_licensing" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Open Source Lisensing</title>
+  <title>Open Source Licensing</title>
   <introduction>
     <p>An open-source license is a type of license for things like software and other products that allows the source code or design to be used, modified and/or shared under specific terms and conditions. An open source license allows people to review and modify the source code or design for their own purposes.</p>
   </introduction>
 
+  <xi:include href="./sec_about_licensing.ptx" />
   <xi:include href="./sec_typical_licenses.ptx" />
 
   <conclusion>
