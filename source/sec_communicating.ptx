@@ -42,9 +42,9 @@
     <p>Because many open source participants write blogs, it has become difficult to keep up with them on a one-by-one basis. The volume of blog postings created within a community can be overwhelming. To help deal with this, RSS or Atom feeds enable the receipt of content in a machine-readable format so that it can be used in a variety of different ways (for example, in Firefox Live Bookmarks, through a service such as Google Reader, or in a program such as <strong>Liferea</strong> or <strong>FeedReader</strong>). Many open-source community maintain a Planet site which aggregates the feeds from community members into a single page (and the Planet, in turn, provides an aggregated feed). Here are some examples: 
     </p>
     <ul>
-    <li><url href="http://planet.mozilla.org" visual="planet.mozilla.org">The Mozilla Planet</url></li>
-    <li><url href="http://planet.fedoraproject.org" visual= "planet.fedoraproject.org">Fedora Planet</url></li>
-    <li><url href="http://planet.go-oo.org/" visual="planet.go-oo.org/"> Go-OO Planet</url></li>
+    <li><url href="https://planet.mozilla.org" visual="planet.mozilla.org">The Mozilla Planet</url></li>
+    <li><url href="http://fedoraplanet.org/" visual= "planet.fedoraproject.org">The Fedora Planet</url></li>
+    <li><url href="https://planet.documentfoundation.org/" visual="https://planet.documentfoundation.org/">The Document Foundation Planet</url></li>
     </ul>
     <p>In most cases, individual blog postings can be tagged or categorized, and separate feeds can be generated for each tag or category. This permits posts to be sent to one or more different planets at the author&#8217;s discretion.</p>
     <p>As you get into FOSS, you will want to share your news and opinions with others via a blog. You need to represent your thoughts professionally; here are some guidelines:</p>

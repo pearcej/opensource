@@ -23,6 +23,7 @@
   <xi:include href="./sec_third_culture.ptx" />
   <xi:include href="./sec_community_qualities.ptx" />
   <xi:include href="./sec_communicating.ptx" />
+  <!-- TODO modernize sec_communicating.ptx -->
 
 
 </chapter>
