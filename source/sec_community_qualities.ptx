@@ -2,8 +2,9 @@
 
 <section xml:id="sec_community_qualities" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Qualities of a Community</title>
-
-<p>Each FOSS community has a rich set of defining qualities. Understanding these qualities is essential to evalutating and participating in the community:</p>
+<introduction>
+  <p>Each FOSS community has a rich set of defining qualities. Understanding these qualities is essential to evalutating and participating in the community:</p>
+</introduction>
 
 <subsection xml:id="subsec_focus">
 <title>Focus</title>

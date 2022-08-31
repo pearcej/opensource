@@ -20,16 +20,24 @@
     <title>Wikis</title>
     <p>The concept of a wiki is widely understood due to the popularity of Wikipedia: it&#8217;s a web site where the pages are user-editable. A wiki provides an easy-to-use, asynchronous way of putting semi-permanent content on the web, so they are ideal for documentation, timelines, status reports, meeting minutes, and conversation logs.From the perspective of a reader, accessing wiki content is the same as accessing static HTML content, and search engines index wiki content very well. For the writer, a wiki provides version control, a database backend, simplified markup, and a fast edit-and-post cycle.
     </p>
-    <p>Most open source projects use one of the common wiki packages such as MediaWiki (which also powers Wikipedia), TikiWiki, MindTouch, or Trac; this has the benefit of reducing the number of different types of markup that must be memorized.</p>
+    <p>Most open source projects use one of the common wiki packages such as MediaWiki (which also powers Wikipedia), TikiWiki, MindTouch, or Trac; this has the benefit of reducing the number of different types of markup that must be memorized.
+    </p>
     <p>Wikis are related to content management systems (CMS), such as Drupal or WordPress. When a project uses a CMS for a website, the goal is the same &#8212; enable the community to edit the project content.
     </p>
     <exercise xml:id="exercise-project-wikis"><title>Exercise: Project Wikis</title>
     <p>Wikis are meant to be community spaces where everyone can join in. They grown and are made better through community participation. For this exercise, we&#8217;re going to encourage you to check out the wikis of three established open source projects. These might be projects you looked at in the previous chapter:
     </p>
 
-    <p>What wiki software are they using?<br />
-    Search in the wiki for the history and current structure of the project. Is it in the wiki, or is it somewhere else in their project?<br />
-    When the last change was made, who made it, and how often are changes submitted. Would you describe this wiki as &#8220;thriving&#8221; or &#8220;languishing&#8221;?<br />
+    <p>
+    <title>What wiki software are they using?</title>
+    <ol>
+      <li>
+        Search in the wiki for the history and current structure of the project. Is it in the wiki, or is it somewhere else in their project?
+      </li>
+      <li>
+        When the last change was made, who made it, and how often are changes submitted. Would you describe this wiki as &#8220;thriving&#8221; or &#8220;languishing&#8221;?
+      </li>
+    </ol>
     Authoring and maintaining pages in a wiki (the latter sometimes being referred to as gardening) is a critical part of any FOSS project. If you&#8217;re particularly interested in a project, register an account on the wiki and create a User Profile page. You&#8217;ll want to link this back to your portfolio that you created in the previous chapter.
     </p>
     </exercise>
@@ -54,8 +62,8 @@
     <li>Do not use profane, obscene, or rude content, or content that belittles other people.</li>
     <li>Do not link to profane, obscene, rude, or illegal material or to sites that knowingly violate intellectual property rights (warez).</li>
     <li>Ensure that each posting makes sense when taken out of the context of your blog and viewed on its own. If you are referring to one of your previous posts, link to it rather than refer to it as being &#8220;below&#8221; or &#8220;above&#8221;.</li>
-    <li>Link extensively. If you&#8217;re referring to a blog post, article, video, event, command, software package, person, project &#8212; link to all of them so that your readers can find out more information.</li>
-    <li>Ensure that each posting conforms to your community or institution&#8217;s policies.</li>
+    <li>Link extensively. If you're referring to a blog post, article, video, event, command, software package, person, project &#8212; link to all of them so that your readers can find out more information.</li>
+    <li>Ensure that each posting conforms to your community or institution's policies.</li>
     <li>Keep the postings relevant to your open source work. Use tagging/categories to keep deeply off-topic posts off your planet feeds.</li>
     </ul>
     <exercise><title>Exercise: Linking your Blog to Planets</title>
@@ -82,12 +90,10 @@
     <p>It is fine to join a channel and sit there idle for a long time, lurking. You might never say anything; this is a good way for you to learn about who is in the channel, what they are talking about, etc. Listening is often more important than talking, because you learn more.</p>
     <p>If you have a question you should just ask it rather than saying, &#8220;Can I ask a question about &#8230;&#8221; or &#8220;Does anyone know about &#8230;&#8221;. You don&#8217;t need to direct general questions to a specific person. Rather, you should ask in the channel in general, and someone usually answers you:</p>
 
-    <console>
-      <input>
-      <line>&lt;don&gt; How do I ask a question?</line>
-      <line>&lt;funny_guy&gt; don: you just did!</line>
-      </input>
-    </console>
+    <program>
+      don: How do I ask a question?
+      funny_guy: don: you just did!
+    </program>
 
     <p>If there are several conversations taking place at the same time, it&#8217;s customary to put the nick of the user you are directing your comment to at the start of the line (as shown in the second line above); most IRC clients send a special alert to a user whose nick is &#8220;spoken&#8221; in a channel. Most IRC clients also auto-complete the nick when you press the <strong>[Tab]</strong> key, so you could type fun[Tab] to fill in the nick &#8220;funny_guy&#8221;.</p>
     <p>Channels generally have a purpose, and people are often joined to many different channels at once.  You&#8217;ll see many of the same people in different channels.  However, what might be appropriate in one channel often isn&#8217;t in another.  When you enter a channel, take a look at its Topic (displayed at the top, or with the /topic command) for clues.</p>
