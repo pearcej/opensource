@@ -15,16 +15,16 @@
 
   <colophon>
 
-    <website>
+<!--     <website>
       <name><c>my-website.org</c></name>
       <address>http://pretextbook.org</address>
-    </website>
+    </website> -->
 
     <copyright>
       <!-- In addition to specifying the copyright holder, you should  -->
       <!-- include a license, such as the cc-by-sa license shown below -->
       <!-- so people reading your book know how they can use it.       -->
-      <year>2020<ndash/>2022</year>
+      <year>2022<ndash/>2022</year>
       <holder>Dr. Jan Pearce</holder>
       <!-- <minilicense><image source="../images/by-sa.png" /></minilicense> -->
       <shortlicense>
@@ -49,7 +49,7 @@
 
   <acknowledgement>
     <p>
-      I would like to thank Berea College for sabbatical support that gave me time and made this work possible. If you do not already know about Berea College, you might be interested to know 
+      I would like to thank <url href="https://www.berea.edu" visual="www.berea.edu">Berea College</url> for sabbatical support that gave me time and made this work possible. If you do not already know about Berea College, you might be interested to know 
       I am also grateful to the software innovation lab <url href="https://www.tweag.io" visual="tweag.io">Tweag</url> for financial support and my Tweag mentor, Michael Gale's time.
     </p>
     <p>
