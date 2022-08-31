@@ -53,7 +53,10 @@
       I am also grateful to the software innovation lab <url href="https://www.tweag.io" visual="tweag.io">Tweag</url> for financial support and my Tweag mentor, Michael Gale's time.
     </p>
     <p>
-      Several parts of this textbook including the Forward and Part 1 are duplicated from Karsten Wade's quiad.fedorapeople.org site <url href="https://quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html/" visual="quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html">Teaching Open Source</url>. We are very grateful to the authors Greg DeKoenigsberg, Chris Tyler, Karsten Wade, Max Spevack, Mel Chua, and Jeff Sheltren.
+      Several parts of this textbook including the Forward and several portions of chapters 1 and 2 are modified from Karsten Wade's quiad.fedorapeople.org site <url href="https://quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html/" visual="quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html">Teaching Open Source</url>. We are very grateful to the authors Greg DeKoenigsberg, Chris Tyler, Karsten Wade, Max Spevack, Mel Chua, and Jeff Sheltren.
+    </p>
+    <p>
+      Nearly all of Chapter 3 is modified from <url href="https://choosealicense.com/" visual="choosealicense.com">Choose a License</url> which is curated by <url href="https://github.com/" visual="github.com">. We are grateful for all that Github does for the open source community.
     </p>
   </acknowledgement>
 

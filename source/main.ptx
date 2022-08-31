@@ -18,8 +18,10 @@
     <subtitle>What It Is and How to Contribute</subtitle>
 
     <xi:include href="./meta_frontmatter.ptx" />
-    <xi:include href="./ch_1_foss.ptx" />
-    <xi:include href="./ch_2_community_communication.ptx"/>
+    <xi:include href="./ch1_foss.ptx" />
+    <xi:include href="./ch2_community_communication.ptx"/>
+    <xi:include href="./ch3_licensing.ptx"/>
+    <xi:include href="./ch4_building_code.ptx"/>
 
 
     <!-- The folowing chapter contains a wide variety of elements to  -->
