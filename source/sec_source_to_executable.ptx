@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_source_to_executable" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>From Source to Executable</title>
+  <introduction>
+    <p>
+      Now you know how source control works, and you’ve got a gigantic pile of source code sitting in a directory or a set of directories?
+    </p>
+    <p>
+      What do you do with it?
+    </p>
+    <p>
+      That's the topic of this chapter
+    </p>
+  </introduction>
+  <subsection xml:id="subsec_what_is_building">
+    <title>What is Building, Exactly?</title>
+    <introduction>
+      <p>
+        The process of turning source code into executable binary code can be complicated. The larger the project and the more source code you have, the more complicated that process is. Almost every serious piece of software has its own build process, that every developer must follow — and woe be unto the developer who repeatedly breaks the build for everyone else.
+      </p>
+    </introduction>
+    <p>
+      There are many steps in the process of turning source code into a binary executable. Some examples of tasks that you might encounter during a typical build process:
+    </p>
+    <p>
+      <ul>
+				<li>
+				<em>Compiling the code.</em> Source code must somehow become machine code, ultimately. Sometimes this is handled in real-time by an interpreter, as in the case of scripting languages such as Perl or Javascript. For more complex applications, though, this work is usually handled by a compiler. Therefore, you must ensure that you have a proper compiler installed, and that you are calling the compiler properly with the correct compiler options.
+				</li>
+
+				<li>
+				<em>Linking object files and libraries.</em> In the modern world, it’s crazy to write all of the code yourself. When you want to write output to the screen, you don’t write code that talks directly to the monitor; you use a library that handles input and output. When you want to play audio, you don’t handcode the waveforms yourself; you use audio codecs. When you compile the code, you almost always need to include libraries of one kind or another — which means you must know which libraries you need, and you must ensure that the libraries are where the compiler expects them to be, and that the libraries are all of the right version.
+				</li>
+
+				<li>
+				<em>Determining build order and dependencies.</em> In complex software projects, it’s vital to keep track of dependencies. A change to code in a single library can have effects across your entire project, and might require some or all of your code to be recompiled — and often in a particular order. Keeping track of dozens of libraries, and references to those libraries by hundreds of source files, can be an ugly business.
+				</li>
+
+				<li>
+				<em>Testing the build results. </em>It’s essential to know when you’ve introduced bugs sooner rather than later; new bugs are often easy to fix, and old bugs are often not so easy to fix. Also, it frequently happens that bugs, once fixed, creep back into code. Running basic tests on a project every time it’s built can be a good way to ensure that bugs get fixed and stay fixed.
+				</li>
+
+				<li>
+				<em>Packaging and/or Deploying.</em> Sometimes you want to install the program you just compiled so that it can be run from anyhere on the system, and other programs or users can find it. Or sometimes you want to bundle it up into a format that allows anyone to take your executable and install it easily for themselves. You don’t want to do this for every build, but when you know that your build is good, one of the important final steps is to put the executable, and all documentation, in a central location.
+				</li>
+
+			</ul>
+      </p>
+
+			<p>
+				Performing all of these tasks by hand would be time-consuming and difficult.  Build automation tools allow the developer to handle all of these tasks automatically — and thus, to manage projects with a much higher degree of complexity.
+			</p>
+  </subsection>
+
+<subsection xml:id="living-with-complexity">
+			<title>Living With Complexity</title>
+
+			<p>
+				Fair warning: sometimes code doesn’t compile. Sometimes you follow all the instructions, and it still doesn’t work. What then?
+			</p>
+
+			<p>
+				If this is your first experience dealing with a large codebase written by someone else, then welcome to the real world. As you run your first build, you may have very little idea of what’s actually going on. Don’t get discouraged. Have patience; you’ll soon begin to figure it all out.
+			</p>
+
+			<p>
+				You are about to walk through a software build process. The typical build command might return hundreds, or even thousands, of log entries, all of which scroll across the screen at lightning speed. You may understand all, some, or none of those entries.
+			</p>
+
+			<p>
+				That’s okay. Everyone starts somewhere.
+			</p>
+
+			<p>
+				Here are some points to keep in mind.
+			</p>
+
+			<p><ul>
+				<li>
+				<term>Read instructions carefully.</term> Almost every sizable FOSS project has a README or an INSTALL file that provides instructions for how to build and install the software. Read those instructions, and do your best to follow them to the letter. Understand that even the best instructions may leave out a step or two — and these are opportunities to improve the project.
+				</li>
+
+				<li>
+				<term>Don’t expect to understand every word.</term> Very few developers understand every single word of every build log they encounter. Learning to distinguish between the important messages and the spurious messages takes time. Don’t be intimidated.
+				</li>
+
+				<li>
+				<term>Read logs carefully and thoughtfully. </term>When you see an error, read back and think about what it could mean. Does the error say “couldn’t find something”? That probably means you didn’t install a library dependency properly. Was the error you found the only error in the log? In a 1000-line build log, the error at the end could be the result of another error dozens, or hundreds, of lines earlier. If your build doesn’t end happily, don’t panic. Relax and work your way through the problem.
+				</li>
+
+				<li>
+				<term>Google is your friend.</term> If you don’t understand an error message, just Google it! Googling an error message can be a surprisingly effective method for determining what’s gone wrong. There’s a decent chance that someone before you has run into the same error, and someone has posted the solution to your problem on a message board or mailing list. Even if the answer isn’t obvious, there will frequently be clues. The Internet is a gigantic resource. Use it.
+				</li>
+
+				<li>
+				<term>Ask for help.</term> If you’ve done your homework and still can’t figure out why your program isn’t building, get on the project’s mailing list, message board, or IRC channel, and ask for help. The more you’ve dug into the problem, and the more information you provide, the more likely it is that developers will help you figure out the problem.
+				</li>
+
+			</ul></p>
+
+		</subsection>
+
+  <conclusion>
+    <p>
+      TBA
+    </p>
+  </conclusion>
+</section>
