@@ -8,6 +8,8 @@
 
   <xi:include href="./sec_about_licensing.ptx" />
   <xi:include href="./sec_typical_licenses.ptx" />
+  <xi:include href="./sec_existing_community.ptx" />
+  <xi:include href="./sec_no_license.ptx" />
 
   <conclusion>
     <p>If you find software that doesn’t seem to have a license, that generally means you have no permission from the creators of the software to use, modify, or share the software. Although a code host such as <url href="https://github.com/" visual="github.com">GitHub</url> may allow you to view and even make a copy of the code, this does not imply that you are permitted to use, modify, or share the software for any purpose.</p>
