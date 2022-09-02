@@ -73,8 +73,8 @@
   <preface xml:id="meta_frontmatter-forward">
     <title>Forward</title>
 
-    <section xml:id="sec-why-necessary">
-      <title>Why is This Book Necessary?</title>
+      <paragraphs xml:id="why-necessary">
+        <title>Why is This Book Necessary?</title>
       <p>
         In March 2006, David A. Patterson wrote an article entitled “Computer science education in the 21st century.” David A. Patterson was, at the time, the president of the Association for Computer Machinery, the world’s largest educational and scientific computing society. In this article — which, sadly, you cannot read unless you are an ACM member — he advocated for fundamental changes to how computer science is taught. One of the changes to the standard undergraduate computer science curriculum that he advocated for was the inclusion of courses in open source software development.
       </p>
@@ -109,9 +109,9 @@
       <p>
         We hope that this textbook helps provide that guidance to a whole generation of students.
       </p>
-    </section>
+    </paragraphs>
 
-    <section xml:id="sec-why-inneffective">
+    <paragraphs xml:id="why-inneffective">
       <title>Why Traditional Student Projects Are Ineffective</title>
       <p>
         Almost every modern computer science degree program requires its students to complete a Big Project. Sometimes it’s the “Senior Project,” and sometimes it’s the “Capstone Project.” Whatever it’s called, the purpose of this Big Project is to expose students to “real” software engineering practices.
@@ -131,10 +131,12 @@
       <p>
         Sooner or later, the coder aspirant must work at scale, with teammates. Open source provides that opportunity in a way that nothing else can.
       </p>
-    </section>
-    <section xml:id="sec-using-this-textbook">
-      <title> Using This Textbook to Get Started</title>
-      <p>  
+          
+    </paragraphs>
+
+    <paragraphs xml:id="why-using-this-textbook">
+      <title> Using This Textbook to Get Started</title>  
+      <p>
         This textbook exists because professors asked for it, but the textbook’s fundamental approach — teaching the basic skills of open source development incrementally, through real involvement in meaningful projects — should make it suitable for self-learners as well. Regardless of whether you are using this text as part of a course or working with it on your own, you should work through it while adhering to the principles of contributing, calling for help, and being bold.
       </p>
       <p>
@@ -149,8 +151,9 @@
       <p>
         In most educational contexts, you have likely been “trained” to wait for permission before doing anything not previously specified, but you must avoid letting that get in the way of your progress when engaging with an open source project. When the rules are unclear, don’t sit on your hands. Do your best to help the project. It’s better to do something wrong, and learn from it, than to do nothing at all.
       </p>
-    </section>
-    <section xml:id="sec-free-vs-opensource">
+    </paragraphs>
+
+    <paragraphs xml:id="why-free-vs-opensource">
       <title> A Note on Terminology - Free Versus Open Source</title>
       <p>
         This is, first and foremost, a textbook about how to create software collaboratively, using a community development model.
@@ -164,7 +167,8 @@
       <p>
         Enough of the pep talk. Its time to get started.
       </p>
-    </section>    
+    </paragraphs>  
+
   </preface>
 </frontmatter>
 
