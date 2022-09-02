@@ -4,13 +4,13 @@
   <title>From Source to Executable</title>
   <introduction>
     <p>
-      Now you know how source control works, and you’ve got a gigantic pile of source code sitting in a directory or a set of directories?
+      Now you know how version control works, and you’ve got a gigantic pile of source code sitting in a directory or a set of directories?
     </p>
     <p>
       What do you do with it?
     </p>
     <p>
-      That's the topic of this chapter
+      That's the topic of this section.
     </p>
   </introduction>
   <subsection xml:id="subsec_what_is_building">

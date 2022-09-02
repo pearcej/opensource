@@ -21,7 +21,8 @@
     <xi:include href="./ch1_foss.ptx" />
     <xi:include href="./ch2_community_communication.ptx"/>
     <xi:include href="./ch3_licensing.ptx"/>
-    <xi:include href="./ch4_building_code.ptx"/>
+    <xi:include href="./ch4_tools_technologies.ptx"/>
+    <xi:include href="./ch5_building_code.ptx"/>
 
 
     <!-- The folowing chapter contains a wide variety of elements to  -->
