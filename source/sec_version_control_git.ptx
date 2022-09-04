@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec_first-intro" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="version-control" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Version Control</title>
   <introduction>
     <p>
@@ -22,8 +22,10 @@
           You then have to merge the two versions <em>by hand</em>.
         </li>
       </ul>
-
-  After doing a lot of merging of documents by hand, you might have a folder that looks like the following:
+    </p>
+  
+`````<p>
+    After doing a lot of merging of documents by hand, you might have a folder that looks like the following:
 
     <pre>
       mydoc.odt
@@ -31,6 +33,8 @@
       mydoc-moms-edits.odt
       mydoc2-plus-moms-combined.odt
     </pre>
+    </p>
+    <p>
       Or maybe you have experienced this onlyon a larger scale... for example, three of your friends comment on differnent versions because they share them with the whole group via email. Some comment on the original version, some comment on mom's version, others comment on your brother's verion, etc.
     </p>
     <p>
