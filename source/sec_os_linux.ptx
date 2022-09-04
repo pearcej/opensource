@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec_first-intro" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Introduction to First Chapter</title>
+<section xml:id="sec_os_linux" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Linux Operating System/title>
   <introduction>
     <p>
       Intro to section, because we will have subsections.
@@ -10,7 +10,7 @@
       Another paragraph of the introduction.
     </p>
   </introduction>
-  <subsection xml:id="subsec_a-subsection">
+  <subsection xml:id="subsec_os_linux">
     <title>A subsection</title>
     <p>
       Content of the subsection.
@@ -20,12 +20,6 @@
     </p>
   </subsection>
 
-  <subsection xml:id="subsec_another-subsection">
-    <title>Another Subsection</title>
-    <p>
-      Text with some math: <m>\sin(x) = \cos(x)</m> only for some values of <m>x</m>.
-    </p>
-  </subsection>
 
   <conclusion>
     <p>

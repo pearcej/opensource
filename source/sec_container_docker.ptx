@@ -8,7 +8,7 @@
     </p>
   </introduction>
 
-<!--   <subsection xml:id="subsec_virtual_machines">
+  <subsection xml:id="subsec_virtual_machines">
     <title>Virtual Machines</title>
     <p>
       TBA
@@ -16,26 +16,25 @@
   </subsection>
 
   <subsection xml:id="subsec_virtualization">
-    <title>Virtualization/title>
+    <title>Virtualization</title>
     <p>
       TBA
     </p>
   </subsection>
 
   <subsection xml:id="subsec_containerizaton">
-    <title>Containerization/title>
+    <title>Containerization</title>
     <p>
       TBA
     </p>
   </subsection>
 
   <subsection xml:id="subsec_docker">
-    <title>Case Study: Docker/title>
+    <title>Case Study: Docker</title>
     <p>
       TBA
     </p>
-  </subsection> -->
-
+  </subsection>
 
 </section>
 

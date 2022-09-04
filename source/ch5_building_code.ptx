@@ -11,7 +11,6 @@
   </introduction>
 
   <xi:include href="./sec_source_to_executable.ptx" />
-  <xi:include href="./sec_source_to_executable.ptx" />
 
 </chapter>
 

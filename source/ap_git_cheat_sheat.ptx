@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ap_git_cheat_sheat" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Git Cheat Sheat</title>
+
+    <p>
+      Intro to section TBA
+    </p>
+  <subsection xml:id="subsec_a_git_-subsection">
+    <title>A subsection</title>
+    <p>
+      Content of the subsection.
+    </p>
+    <p>
+      More content.
+    </p>
+  </subsection>
+
+
+  <conclusion>
+    <p>
+       TBA- add links to more references.
+    </p>
+  </conclusion>
+</section>
+

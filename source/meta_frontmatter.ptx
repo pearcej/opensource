@@ -56,7 +56,15 @@
       Several parts of this textbook including the Forward and several portions of chapters 1 and 2 are copied from or modified from Karsten Wade's quiad.fedorapeople.org site <url href="https://quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html/" visual="quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html">Teaching Open Source</url>. We are very grateful to the authors Greg DeKoenigsberg, Chris Tyler, Karsten Wade, Max Spevack, Mel Chua, and Jeff Sheltren, and for releasing this work under the <url href="http://creativecommons.org/licenses/by-sa/3.0/" visual="creativecommons.org/licenses/by-sa/3.0">Creative Commons Attribution–Share Alike 3.0 Unported license ("CC-BY-SA")</url>.
     </p>
     <p>
-      With the exception of the <xref ref="sec_about_licensing"/> which is original, nearly all of Chapter 3 are either copied verbatul from or modified from <url href="https://choosealicense.com/" visual="choosealicense.com">Choose a License</url> which is curated by <url href="https://github.com/" visual="github.com">Github</url>. We are grateful for all that Github does for the open source community under the  the <url href="https://creativecommons.org/licenses/by/3.0/" visual="creativecommons.org/licenses/by/3.0">Creative Commons Attribution 3.0 Unported License</url>.
+      With the exception of the <xref ref="sec_about_licensing"/> which is original, nearly all of Chapter 3 is either copied verbatum from or modified from <url href="https://choosealicense.com/" visual="choosealicense.com">Choose a License</url> which is curated by <url href="https://github.com/" visual="github.com">Github</url>. We are grateful for all that Github does for the open source community under the  the <url href="https://creativecommons.org/licenses/by/3.0/" visual="creativecommons.org/licenses/by/3.0">Creative Commons Attribution 3.0 Unported License</url>.
+    </p>
+
+    <p>
+      I want to very specifically give a hearty thanks to Brad Miller for his work in creating <url href="https://runestone.academy/" visual="https://runestone.academy/">Runestone Academy</url> where this book is hosted, and for his collaborative work with the <url href="https://pretextbook.org/" visual="pretextbook.org">PreTeXt</url> authoring group.
+    </p>
+
+    <p>
+      I would like Rob Beezer for the creation of PreTeXt which is the authoring platorm of this text, and for his amazing level of responsivemness to the PreTeXt support channel, specifically Rob Beezer, David Farmer, 
     </p>
   </acknowledgement>
 
@@ -113,7 +121,7 @@
       </p>
     </paragraphs>
 
-    <paragraphs xml:id="why-inneffective">
+    <paragraphs xml:id="why-ineffective">
       <title>Why Traditional Student Projects Are Ineffective</title>
       <p>
       </p>
@@ -158,24 +166,6 @@
         In most educational contexts, you have likely been “trained” to wait for permission before doing anything not previously specified, but you must avoid letting that get in the way of your progress when engaging with an open source project. When the rules are unclear, don’t sit on your hands. Do your best to help the project. It’s better to do something wrong, and learn from it, than to do nothing at all.
       </p>
     </paragraphs>
-
-    <paragraphs xml:id="why-free-vs-opensource">
-      <title> A Note on Terminology - Free Versus Open Source</title>
-      <p>
-      </p>
-      <p>
-        This is, first and foremost, a textbook about how to create software collaboratively, using a community development model.
-      </p>
-      <p>
-        Some people call the result of such work by the name free software. Some people call it open source software. Some folks call it both: free and open source software. Some people throw in libre to specify a particular meaning of free, and call it free/libre open source software. Frequently one will see these abbreviated into the terms FOSS or FLOSS.
-      </p>
-      <p>
-        There are valid reasons for the usage of these different terms in different contexts, but for the sake of simplicity, we use the term FOSS primarily in this book, with the tacit understanding that all terms mean virtually the same thing in our chosen context.
-      </p>
-      <p>
-        Enough of the pep talk. Its time to get started.
-      </p>
-    </paragraphs>  
 
   </preface>
 </frontmatter>

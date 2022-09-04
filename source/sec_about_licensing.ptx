@@ -8,14 +8,16 @@
     </p>
 
   </introduction>
-  <subsection xml:id="subsec_a-subsection">
-    <title>Important Terminology</title>
+  <subsection xml:id="subsec_important_IP_Terminology">
+    <title>Important IP Terminology</title>
     <p>
       Here we give a few definitions that are important for the remainder of the chapter. Note that these these are intended not as legal defnitions but to help in understanding the common usage of these terms.
 
     For the first term, <term>Intellectual Property</term>, you can think "property" (like software) that is "intellectual" in nature, but it refers to more than just the property itself.
 
     <definition xml:id="def-Intellectual-Property">
+    <idx>intellectural property</idx>
+            
       <statement>
         <p>
           <term>Intellectual property</term> or <term>IP</term> refers both to the "property" that is created by efforts of the mind and to the <em>legal rights</em> related to this property. 
@@ -28,6 +30,7 @@
       For the term, <term>copyright</term>, you can think <em>restrictions</em> on things like the "right" to "copy".  The following definition comes from the <url href="https://www.copyright.gov/what-is-copyright/" visual="www.copyright.gov/what-is-copyright">Copyright Office of the US government</url>. You will note that copyright refers to much more than solely the right to copy or not to copy.
 
       <definition xml:id="def-copyright">
+      <idx>copyright</idx>
         <statement>
           <p>
             A <term>copyright</term> is a type of intellectual property that protects original works of authorship as soon as an author fixes the work in a tangible form of expression. 
@@ -64,6 +67,7 @@
         The <url href="https://copyleft.org/guide/comprehensive-gpl-guidech3.html" visual="copyleft.org/guide/comprehensive-gpl-guidech3.html">Copyleft Foundation</url> states the following as the essential innovation of copyleft in section 2.2:
 
       <definition xml:id="def-copyleft">
+      <idx>copyleft</idx>
         <statement>
           <p>
             <term>Copyleft</term> uses the copyright holders’ controls on permission to modify the work to add a conditional requirement. Namely, downstream users may only have permission to modify the work if they pass along the same permissions on the modified version that came originally to them.
@@ -79,6 +83,7 @@
 
     <definition xml:id="def-fair-use">
       <statement>
+      <idx>fair use</idx>
         <p>
           Loosely speaking, <term>fair use</term> is copying of copyrighted material done for a "limited" and also “transformative” purpose. 
         </p>

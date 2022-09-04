@@ -6,19 +6,25 @@
 <!-- solutions in the next.  Then there is an appendix    -->
 <!-- with all notation generated, and finally the index.  -->
 <backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="meta_backmatter">
-  <title>Backmatter</title>
+  <title>Appendices</title>
   
-  <solutions divisional="hint">
+ <!--  <solutions divisional="hint">
     <title>Selected Hints</title>
   </solutions>
   
   <solutions divisional="solution">
     <title>Selected Solutions</title>
   </solutions>
-  
-  <appendix>
+ -->  
+  <appendix xml:id="list_of_symbols">
     <title>List of Symbols</title>
     <notation-list/>
+  </appendix>
+
+  <appendix xml:id="ap_cheat_sheets">
+    <title>Cheat Sheets</title>
+    <xi:include href="./ap_git_cheat_sheat.ptx" />
+    <xi:include href="./ap_linux_cheat_sheat.ptx" />
   </appendix>
 
   <index>
