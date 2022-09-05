@@ -1,17 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!-- This is the main file of the pretext template book provided -->
-<!-- by the `pretext new book` command.  The main.ptx here always-->
-<!-- starts with <pretext> tags.  In this example, the main file -->
-<!-- just imports other .ptx files which contain content. Open   -->
-<!-- those files to see more pretext features                    -->
+<!-- This is the main file.  The main.ptx here always            -->
+<!-- starts with <pretext> tags.  Here, the main file            -->
+<!-- just imports other .ptx files which contain content.        -->
 
 <pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <!-- we first include a file which contains the docinfo element: -->
   <xi:include href="./meta_docinfo.ptx" />
 
-  <!-- The <book> tags wrap all the content.  Change the @xml:id   -->
-  <!-- to some short (non-spaced) description of your book         -->
+  <!-- The <book> tags wrap all the content.  -->
+
   <book xml:id="open-source">
     <!-- The book needs a title and can have a subtitle  -->
     <title>Open Source</title>
@@ -24,6 +22,7 @@
     <xi:include href="./ch4_tools_technologies.ptx"/>
     <xi:include href="./ch5_building_code.ptx"/>
     <xi:include href="./ch6_bugs_debugging.ptx"/>
+    <xi:include href="./ch7_documentation.ptx"/>
 
     <!-- The folowing chapter contains a wide variety of elements to  -->
     <!-- illustrate what pretext can do, plus links to more help.  -->
