@@ -2,25 +2,88 @@
 
 <section xml:id="ap_git_cheat_sheat" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Git Cheat Sheat</title>
-
-    <p>
-      Intro to section TBA
-    </p>
-  <subsection xml:id="subsec_a_git_-subsection">
-    <title>A subsection</title>
-    <p>
-      Content of the subsection.
-    </p>
-    <p>
-      More content.
-    </p>
-  </subsection>
+<!-- 
+      <line>Prerequistes</line> -->
+        
+<!--         This cheatsheet presumes you are working on the command line or terminal. For more information about how to do that, see <xref ref="version-control"/>. -->
+        <!--TODO Refine this reference once chapter is completed-->
+        
 
 
-  <conclusion>
-    <p>
-       TBA- add links to more references.
-    </p>
-  </conclusion>
+<subsection xml:id="sec-gitcs-getting-started">
+      <title>Getting started with a project</title>
+
+      <dl width="narrow" >
+        <li>
+          <title><c>git init &lt;directory-name&gt;</c></title>
+          <p>
+            Create an empty git repo in a new directory named <c>directory-name</c>. Take care with the <c>directory-name</c>; it is typical to use a short, descriptive, name using only lower case letters and the "-" character. Note that if you leave off the directory name then the current directory will be initialized as a git repository.        
+          </p>
+        </li>
+        <li>
+        <title><c>git clone &lt;repository-url&gt;</c></title>
+        <p>
+          Clone a repository from the cloud to your local system. Note that if you are planning to contribute to a project that is not yours, you will likely want to <term>fork</term> the repository into your own cloud account first. 
+        </p>
+      </li>
+
+      </dl>
+
+
+    
+   </subsection>
+
+    <subsection xml:id="sec-gitcs-state">
+      <title>Current state</title>
+
+      <dl width="narrow" >
+        <li>
+      <title><c>git diff</c></title>    
+      <p>
+        List the changes to files that have not yet been added (staged).
+      </p>
+      </li>
+        <li>
+        <title><c>git status</c></title>
+        <p>
+        Check the status to see if there are files that have been changed but not added (staged).
+      </p>
+      </li>
+        <li>
+        <title><c>git logs</c></title>
+      <p>
+        List recent commits.
+      </p>
+      </li>
+      </dl>
+    </subsection>
+
+    <subsection xml:id="sec-gitcs-branching">
+      <title>Git branching</title>
+        <dl width="narrow" >
+        <li>
+      <title><c>git branch</c></title>
+      <p>
+        List all existing branches.
+      </p>   
+
+      </li>
+      <li>
+        <title><c>git checkout &lt;branch-name&gt;</c></title>
+      <p>
+        Switch to the branch <c>&lt;branch-name&gt;</c>.
+      </p>  
+      </li>
+      <li>
+        <title> <c>git checkout &lt;branch-name&gt;</c></title>
+      <p>
+        Switch to the branch <c>&lt;branch-name&gt;</c>.
+      </p>  
+      </li>
+      </dl>
+    </subsection>
+
+
 </section>
+
 

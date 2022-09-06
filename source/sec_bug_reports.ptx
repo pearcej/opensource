@@ -4,7 +4,7 @@
   <title>Bug Reports</title>
   <introduction>
     <p>
-      Some open source projects use issue queues that are attached to repositories to keep track of bugs, other projects use a special bug tracking system. Both serve the same p
+      Some open source projects use issue queues that are attached to repositories to keep track of bugs, other projects use a special bug tracking system. Both serve the same purpose, namely tracking bugs and related issues like new feature requests.
     </p>
     <p>
       Take a closer look at the bugs in your project’s bug tracker. In particular, spend some time looking through bugs in the <em>new</em> state.
@@ -114,7 +114,7 @@ I think it might be related to Foomail client crashes
 			</p>
 
 			<p>
-				Don’t do that. You may very well be right that the issues are related — but you may also be wrong, and in either case, two different issues deserve two different bug reports. In our example above, it may be that the issues with <term>Foomail</term> and <term>Barchat</term> are actually related to a problem with <term>Bazlib</term>, which is a shared component of <term>Foomail</term> and <term>Barchat</term>. Each bug must be fixed and tested in its own context, and that won’t work if they’re all stuffed in the same bug report.
+				Don’t do that. You may very well be right that the issues are related — but you may also be wrong, and in either case, two different issues deserve two different bug reports. In our example above, it may be that the issues with <term>Foomail</term> and <term>Barchat</term> are actually related to a problem with <term>Bazlib</term>, which is a shared component of <term>Foomail</term> and <term>Barchat</term>. Each bug must be fixed and tested in its own context, and that won’t work if they’re all stuffed in the same bug report.
 			</p>
     </paragraphs>
 
