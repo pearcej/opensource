@@ -19,10 +19,12 @@
     <xi:include href="./ch1_open_source_software.ptx" />
     <xi:include href="./ch2_community_communication.ptx"/>
     <xi:include href="./ch3_licensing.ptx"/>
-    <xi:include href="./ch4_tools_technologies.ptx"/>
-    <xi:include href="./ch5_building_code.ptx"/>
-    <xi:include href="./ch6_bugs_debugging.ptx"/>
-    <xi:include href="./ch7_documentation.ptx"/>
+    <xi:include href="./ch4_documentation.ptx"/>
+    <xi:include href="./ch5_tools_technologies.ptx"/>
+    <xi:include href="./ch6_git.ptx"/> 
+    <xi:include href="./ch7_building_code.ptx"/>
+    <xi:include href="./ch8_bugs_debugging.ptx"/>
+  
 
     <!-- The folowing chapter contains a wide variety of elements to  -->
     <!-- illustrate what pretext can do, plus links to more help.  -->

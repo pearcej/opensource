@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="version-control" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="intro-version-control" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Version Control</title>
   <introduction>
     <p>
@@ -84,27 +84,15 @@
 
   </subsection>
 
-  <subsection xml:id="subsec_git">
-    <title>Case Study: Git</title>
-    <p>
-      TBA
-    </p>
-  </subsection>
-
-  <subsection xml:id="subsec_github">
-    <title>Case Study: Github</title>
-    <p>
-      TBA
-    </p>
     <conclusion>
     <p>
       What has happenened in the recent decade in version control systems has been truly remarkable because Git has come to completely dominate not just the open source world, but also much of the rest of the proprietary software community as well.
     </p>
     <p>
-      For this reason, we will be exploring Git and a cloud hosting site called <em>Gothub</em>.
+      For this reason, in the next chapter we will be exploring Git and a cloud hosting site called <url href="https://www.github.com/">Github</url>.
     </p>
     </conclusion>
-  </subsection>
+
 
 
 
