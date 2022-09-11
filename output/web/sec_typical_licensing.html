@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-09-11T17:28:34-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -34,14 +37,6 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-startup: {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      $(document).trigger("runestone:mathjax-ready");
-      }
-    )}
-},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
 <script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -85,8 +80,8 @@ eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.0/runtime.d24a93181f625912.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.0/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.0/runestone.aeb994b86db36b29.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.0/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.0/runestone.e4d5592da655219f.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -108,11 +103,11 @@ eBookConfig.enable_chatcodes =  false;
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_about_licensing.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch3_licensing.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_existing_communities.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_about_licensing.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch_licensing.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_existing_communities.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_about_licensing.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch3_licensing.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_existing_communities.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_about_licensing.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch_licensing.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_existing_communities.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -127,7 +122,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link">
-<a href="ch_1_foss.html" data-scroll="ch_1_foss" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Free and Open Source Software (FOSS)</span></a><ul>
+<a href="ch_o.html" data-scroll="ch_o" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Free and Open Source Software (FOSS)</span></a><ul>
 <li><a href="sec_what_is_open_source.html" data-scroll="sec_what_is_open_source" class="internal">What is Open Source Software?</a></li>
 <li><a href="sec_foss_matters.html" data-scroll="sec_foss_matters" class="internal">Why might FOSS matter to me</a></li>
 <li><a href="sec_source_code.html" data-scroll="sec_source_code" class="internal">About Source Code</a></li>
@@ -145,7 +140,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link">
-<a href="ch3_licensing.html" data-scroll="ch3_licensing" class="internal"><span class="codenumber">3</span> <span class="title">Open Source Licensing</span></a><ul>
+<a href="ch_licensing.html" data-scroll="ch_licensing" class="internal"><span class="codenumber">3</span> <span class="title">Open Source Licensing</span></a><ul>
 <li><a href="sec_about_licensing.html" data-scroll="sec_about_licensing" class="internal">About Licensing</a></li>
 <li><a href="sec_typical_licensing.html" data-scroll="sec_typical_licensing" class="active">Typical Open Source Licenses</a></li>
 <li><a href="sec_existing_communities.html" data-scroll="sec_existing_communities" class="internal">Existing Communities</a></li>
@@ -153,24 +148,26 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link">
-<a href="ch4_documentation.html" data-scroll="ch4_documentation" class="internal"><span class="codenumber">4</span> <span class="title">Documentation</span></a><ul>
+<a href="ch_documentation.html" data-scroll="ch_documentation" class="internal"><span class="codenumber">4</span> <span class="title">Documentation</span></a><ul>
 <li><a href="sec_documentation_matters.html" data-scroll="sec_documentation_matters" class="internal">Documentation Matters</a></li>
 <li><a href="sec_documentation_involvement.html" data-scroll="sec_documentation_involvement" class="internal">Documentation as Involvement</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="ch5_tools_technologies.html" data-scroll="ch5_tools_technologies" class="internal"><span class="codenumber">5</span> <span class="title">Open Source Tools and Technologies</span></a><ul>
+<a href="ch_tools_technologies.html" data-scroll="ch_tools_technologies" class="internal"><span class="codenumber">5</span> <span class="title">Open Source Tools and Technologies</span></a><ul>
 <li><a href="sec_os_linux.html" data-scroll="sec_os_linux" class="internal">The Linux Operating System</a></li>
 <li><a href="sec_vms_virtualizaton_container.html" data-scroll="sec_vms_virtualizaton_container" class="internal">Virtual Machines, Virtualization, and Containerization</a></li>
 <li><a href="intro-version-control.html" data-scroll="intro-version-control" class="internal">Version Control</a></li>
 </ul>
 </li>
-<li class="link"><a href="ch6_git.html" data-scroll="ch6_git" class="internal"><span class="codenumber">6</span> <span class="title">Git</span></a></li>
 <li class="link">
-<a href="ch7_building_code.html" data-scroll="ch7_building_code" class="internal"><span class="codenumber">7</span> <span class="title">Getting and Building the Code</span></a><ul><li><a href="sec_source_to_executable.html" data-scroll="sec_source_to_executable" class="internal">From Source to Executable</a></li></ul>
+<a href="ch_git.html" data-scroll="ch_git" class="internal"><span class="codenumber">6</span> <span class="title">Git</span></a><ul><li><a href="git_sec_getting_started.html" data-scroll="git_sec_getting_started" class="internal">Git: Getting Started</a></li></ul>
 </li>
 <li class="link">
-<a href="ch8_bugs_and_debugging.html" data-scroll="ch8_bugs_and_debugging" class="internal"><span class="codenumber">8</span> <span class="title">Bugs and Debugging</span></a><ul>
+<a href="ch_building_code.html" data-scroll="ch_building_code" class="internal"><span class="codenumber">7</span> <span class="title">Getting and Building the Code</span></a><ul><li><a href="sec_source_to_executable.html" data-scroll="sec_source_to_executable" class="internal">From Source to Executable</a></li></ul>
+</li>
+<li class="link">
+<a href="ch_bugs_and_debugging.html" data-scroll="ch_bugs_and_debugging" class="internal"><span class="codenumber">8</span> <span class="title">Bugs and Debugging</span></a><ul>
 <li><a href="sec_bug_trackers.html" data-scroll="sec_bug_trackers" class="internal">Bug Trackers</a></li>
 <li><a href="sec_bug_reports.html" data-scroll="sec_bug_reports" class="internal">Bug Reports</a></li>
 <li><a href="sec_bug_triage.html" data-scroll="sec_bug_triage" class="internal">Bug Triage</a></li>
@@ -192,11 +189,11 @@ eBookConfig.enable_chatcodes =  false;
 <section class="section" id="sec_typical_licensing"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">Typical Open Source Licenses</span>
 </h2>
-<section class="introduction" id="introduction-12"><p id="p-174"></p></section><section class="subsection" id="subsec_MIT"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-12"><p id="p-175"></p></section><section class="subsection" id="subsec_MIT"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.2.1</span> <span class="title">MIT License</span>
 </h3>
-<p id="p-175">The MIT license is a short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.</p>
-<p id="p-176">Here is the entire text of the MIT license:<pre class="code-block tex2jax_ignore">MIT License
+<p id="p-176">The MIT license is a short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.</p>
+<p id="p-177">Here is the entire text of the MIT license:<pre class="code-block tex2jax_ignore">MIT License
 
 Copyright (c) [year] [fullname]
 
@@ -218,16 +215,16 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 </pre></p>
-<p id="p-177">Examples of open source projects using this license:</p>
+<p id="p-178">Examples of open source projects using this license:</p>
 <ul class="disc">
-<li id="li-44"><p id="p-derived-li-44"><a class="external" href="https://github.com/babel/babel/blob/master/LICENSE" target="_blank">Babel</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-25" id="fn-25"><sup> 1 </sup></a></p></li>
-<li id="li-45"><p id="p-derived-li-45"><a class="external" href="https://github.com/dotnet/runtime/blob/main/LICENSE.TXT" target="_blank">.NET</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-26" id="fn-26"><sup> 2 </sup></a></p></li>
-<li id="li-46"><p id="p-derived-li-46"><a class="external" href="https://github.com/rails/rails/blob/master/MIT-LICENSE" target="_blank">Rails</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-27" id="fn-27"><sup> 3 </sup></a></p></li>
+<li id="li-44"><p id="p-derived-li-44"><a class="external" href="https://github.com/babel/babel/blob/master/LICENSE" target="_blank">Babel</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-27" id="fn-27"><sup> 1 </sup></a></p></li>
+<li id="li-45"><p id="p-derived-li-45"><a class="external" href="https://github.com/dotnet/runtime/blob/main/LICENSE.TXT" target="_blank">.NET</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-28" id="fn-28"><sup> 2 </sup></a></p></li>
+<li id="li-46"><p id="p-derived-li-46"><a class="external" href="https://github.com/rails/rails/blob/master/MIT-LICENSE" target="_blank">Rails</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-29" id="fn-29"><sup> 3 </sup></a></p></li>
 </ul></section><section class="subsection" id="subsec-Apache"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.2.2</span> <span class="title">Apache License 2.0</span>
 </h3>
-<p id="p-178">A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.</p>
-<p id="p-179">Here is the entire text of the Apache License 2.0:<pre class="code-block tex2jax_ignore">Apache License
+<p id="p-179">A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.</p>
+<p id="p-180">Here is the entire text of the Apache License 2.0:<pre class="code-block tex2jax_ignore">Apache License
                             Version 2.0, January 2004
                           http://www.apache.org/licenses/
 
@@ -429,16 +426,16 @@ SOFTWARE.
     See the License for the specific language governing permissions and
     limitations under the License.
 </pre></p>
-<p id="p-180">Examples of open source projects using this license:</p>
+<p id="p-181">Examples of open source projects using this license:</p>
 <ul class="disc">
-<li id="li-47"><p id="p-derived-li-47"><a class="external" href="https://github.com/kubernetes/kubernetes/blob/master/LICENSE" target="_blank">Kubernetes</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-28" id="fn-28"><sup> 4 </sup></a></p></li>
-<li id="li-48"><p id="p-derived-li-48"><a class="external" href="https://github.com/mozilla/pdf.js/blob/master/LICENSE" target="_blank">pdf.js</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-29" id="fn-29"><sup> 5 </sup></a></p></li>
-<li id="li-49"><p id="p-derived-li-49"><a class="external" href="https://github.com/apple/swift/blob/main/LICENSE.txt" target="_blank">Swift</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-30" id="fn-30"><sup> 6 </sup></a></p></li>
+<li id="li-47"><p id="p-derived-li-47"><a class="external" href="https://github.com/kubernetes/kubernetes/blob/master/LICENSE" target="_blank">Kubernetes</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-30" id="fn-30"><sup> 4 </sup></a></p></li>
+<li id="li-48"><p id="p-derived-li-48"><a class="external" href="https://github.com/mozilla/pdf.js/blob/master/LICENSE" target="_blank">pdf.js</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-31" id="fn-31"><sup> 5 </sup></a></p></li>
+<li id="li-49"><p id="p-derived-li-49"><a class="external" href="https://github.com/apple/swift/blob/main/LICENSE.txt" target="_blank">Swift</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-32" id="fn-32"><sup> 6 </sup></a></p></li>
 </ul></section><section class="subsection" id="subsec_GNU_GPLv3"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.2.3</span> <span class="title">GNU General Public License v3.0</span>
 </h3>
-<p id="p-181">The GNU General Public License v3.0 is considered a strong copyleft license whose permissions are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.</p>
-<p id="p-182">Here is the text of the GNU General Public License v3.0 license, which you will note is much longer than the MIT License:<pre class="code-block tex2jax_ignore">                    GNU GENERAL PUBLIC LICENSE
+<p id="p-182">The GNU General Public License v3.0 is considered a strong copyleft license whose permissions are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.</p>
+<p id="p-183">Here is the text of the GNU General Public License v3.0 license, which you will note is much longer than the MIT License:<pre class="code-block tex2jax_ignore">                    GNU GENERAL PUBLIC LICENSE
                       Version 3, 29 June 2007
 
 Copyright (C) 2007 Free Software Foundation, Inc. &lt;https://fsf.org&gt;
@@ -1113,20 +1110,20 @@ the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 &lt;https://www.gnu.org/licenses/why-not-lgpl.html&gt;.
 </pre></p>
-<p id="p-183">Examples of open source projects using this license:</p>
+<p id="p-184">Examples of open source projects using this license:</p>
 <ul class="disc">
-<li id="li-50"><p id="p-derived-li-50"><a class="external" href="https://github.com/ansible/ansible/blob/devel/COPYING" target="_blank">Ansible</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-31" id="fn-31"><sup> 7 </sup></a></p></li>
-<li id="li-51"><p id="p-derived-li-51"><a class="external" href="https://git.savannah.gnu.org/cgit/bash.git/tree/COPYING" target="_blank">Bash</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-32" id="fn-32"><sup> 8 </sup></a></p></li>
-<li id="li-52"><p id="p-derived-li-52"><a class="external" href="https://git.gnome.org/browse/gimp/tree/COPYING" target="_blank">Gimp</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-33" id="fn-33"><sup> 9 </sup></a></p></li>
-</ul></section><section class="conclusion" id="conclusion-3"><p id="p-184">After the last subsection, you might have a conclusion.</p></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-25"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/babel/babel/blob/master/LICENSE</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-26"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/dotnet/runtime/blob/main/LICENSE.TXT</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-27"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/rails/rails/blob/master/MIT-LICENSE</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-28"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/kubernetes/kubernetes/blob/master/LICENSE</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-29"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/mozilla/pdf.js/blob/master/LICENSE</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-30"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/apple/swift/blob/main/LICENSE.txt</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-31"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/ansible/ansible/blob/devel/COPYING</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-32"><div class="fn"><code class="code-inline tex2jax_ignore">https://git.savannah.gnu.org/cgit/bash.git/tree/COPYING</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-33"><div class="fn"><code class="code-inline tex2jax_ignore">git.gnome.org/browse/gimp/tree/COPYING</code></div></div>
+<li id="li-50"><p id="p-derived-li-50"><a class="external" href="https://github.com/ansible/ansible/blob/devel/COPYING" target="_blank">Ansible</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-33" id="fn-33"><sup> 7 </sup></a></p></li>
+<li id="li-51"><p id="p-derived-li-51"><a class="external" href="https://git.savannah.gnu.org/cgit/bash.git/tree/COPYING" target="_blank">Bash</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-34" id="fn-34"><sup> 8 </sup></a></p></li>
+<li id="li-52"><p id="p-derived-li-52"><a class="external" href="https://git.gnome.org/browse/gimp/tree/COPYING" target="_blank">Gimp</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-35" id="fn-35"><sup> 9 </sup></a></p></li>
+</ul></section><section class="conclusion" id="conclusion-3"><p id="p-185">After the last subsection, you might have a conclusion.</p></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-27"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/babel/babel/blob/master/LICENSE</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-28"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/dotnet/runtime/blob/main/LICENSE.TXT</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-29"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/rails/rails/blob/master/MIT-LICENSE</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-30"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/kubernetes/kubernetes/blob/master/LICENSE</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-31"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/mozilla/pdf.js/blob/master/LICENSE</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-32"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/apple/swift/blob/main/LICENSE.txt</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-33"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/ansible/ansible/blob/devel/COPYING</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-34"><div class="fn"><code class="code-inline tex2jax_ignore">https://git.savannah.gnu.org/cgit/bash.git/tree/COPYING</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-35"><div class="fn"><code class="code-inline tex2jax_ignore">git.gnome.org/browse/gimp/tree/COPYING</code></div></div>
 </div></main>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>

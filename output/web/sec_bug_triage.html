@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-09-11T17:28:35-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -34,14 +37,6 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-startup: {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      $(document).trigger("runestone:mathjax-ready");
-      }
-    )}
-},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
 <script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -85,8 +80,8 @@ eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.0/runtime.d24a93181f625912.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.0/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.0/runestone.aeb994b86db36b29.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.0/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.0/runestone.e4d5592da655219f.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -108,11 +103,11 @@ eBookConfig.enable_chatcodes =  false;
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_bug_reports.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch8_bugs_and_debugging.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="meta_backmatter.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_bug_reports.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch_bugs_and_debugging.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="meta_backmatter.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_bug_reports.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch8_bugs_and_debugging.html" title="Up">Up</a><a class="next-button button toolbar-item" href="meta_backmatter.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_bug_reports.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch_bugs_and_debugging.html" title="Up">Up</a><a class="next-button button toolbar-item" href="meta_backmatter.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -127,7 +122,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link">
-<a href="ch_1_foss.html" data-scroll="ch_1_foss" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Free and Open Source Software (FOSS)</span></a><ul>
+<a href="ch_o.html" data-scroll="ch_o" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Free and Open Source Software (FOSS)</span></a><ul>
 <li><a href="sec_what_is_open_source.html" data-scroll="sec_what_is_open_source" class="internal">What is Open Source Software?</a></li>
 <li><a href="sec_foss_matters.html" data-scroll="sec_foss_matters" class="internal">Why might FOSS matter to me</a></li>
 <li><a href="sec_source_code.html" data-scroll="sec_source_code" class="internal">About Source Code</a></li>
@@ -145,7 +140,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link">
-<a href="ch3_licensing.html" data-scroll="ch3_licensing" class="internal"><span class="codenumber">3</span> <span class="title">Open Source Licensing</span></a><ul>
+<a href="ch_licensing.html" data-scroll="ch_licensing" class="internal"><span class="codenumber">3</span> <span class="title">Open Source Licensing</span></a><ul>
 <li><a href="sec_about_licensing.html" data-scroll="sec_about_licensing" class="internal">About Licensing</a></li>
 <li><a href="sec_typical_licensing.html" data-scroll="sec_typical_licensing" class="internal">Typical Open Source Licenses</a></li>
 <li><a href="sec_existing_communities.html" data-scroll="sec_existing_communities" class="internal">Existing Communities</a></li>
@@ -153,24 +148,26 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link">
-<a href="ch4_documentation.html" data-scroll="ch4_documentation" class="internal"><span class="codenumber">4</span> <span class="title">Documentation</span></a><ul>
+<a href="ch_documentation.html" data-scroll="ch_documentation" class="internal"><span class="codenumber">4</span> <span class="title">Documentation</span></a><ul>
 <li><a href="sec_documentation_matters.html" data-scroll="sec_documentation_matters" class="internal">Documentation Matters</a></li>
 <li><a href="sec_documentation_involvement.html" data-scroll="sec_documentation_involvement" class="internal">Documentation as Involvement</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="ch5_tools_technologies.html" data-scroll="ch5_tools_technologies" class="internal"><span class="codenumber">5</span> <span class="title">Open Source Tools and Technologies</span></a><ul>
+<a href="ch_tools_technologies.html" data-scroll="ch_tools_technologies" class="internal"><span class="codenumber">5</span> <span class="title">Open Source Tools and Technologies</span></a><ul>
 <li><a href="sec_os_linux.html" data-scroll="sec_os_linux" class="internal">The Linux Operating System</a></li>
 <li><a href="sec_vms_virtualizaton_container.html" data-scroll="sec_vms_virtualizaton_container" class="internal">Virtual Machines, Virtualization, and Containerization</a></li>
 <li><a href="intro-version-control.html" data-scroll="intro-version-control" class="internal">Version Control</a></li>
 </ul>
 </li>
-<li class="link"><a href="ch6_git.html" data-scroll="ch6_git" class="internal"><span class="codenumber">6</span> <span class="title">Git</span></a></li>
 <li class="link">
-<a href="ch7_building_code.html" data-scroll="ch7_building_code" class="internal"><span class="codenumber">7</span> <span class="title">Getting and Building the Code</span></a><ul><li><a href="sec_source_to_executable.html" data-scroll="sec_source_to_executable" class="internal">From Source to Executable</a></li></ul>
+<a href="ch_git.html" data-scroll="ch_git" class="internal"><span class="codenumber">6</span> <span class="title">Git</span></a><ul><li><a href="git_sec_getting_started.html" data-scroll="git_sec_getting_started" class="internal">Git: Getting Started</a></li></ul>
 </li>
 <li class="link">
-<a href="ch8_bugs_and_debugging.html" data-scroll="ch8_bugs_and_debugging" class="internal"><span class="codenumber">8</span> <span class="title">Bugs and Debugging</span></a><ul>
+<a href="ch_building_code.html" data-scroll="ch_building_code" class="internal"><span class="codenumber">7</span> <span class="title">Getting and Building the Code</span></a><ul><li><a href="sec_source_to_executable.html" data-scroll="sec_source_to_executable" class="internal">From Source to Executable</a></li></ul>
+</li>
+<li class="link">
+<a href="ch_bugs_and_debugging.html" data-scroll="ch_bugs_and_debugging" class="internal"><span class="codenumber">8</span> <span class="title">Bugs and Debugging</span></a><ul>
 <li><a href="sec_bug_trackers.html" data-scroll="sec_bug_trackers" class="internal">Bug Trackers</a></li>
 <li><a href="sec_bug_reports.html" data-scroll="sec_bug_reports" class="internal">Bug Reports</a></li>
 <li><a href="sec_bug_triage.html" data-scroll="sec_bug_triage" class="active">Bug Triage</a></li>
@@ -192,47 +189,47 @@ eBookConfig.enable_chatcodes =  false;
 <section class="section" id="sec_bug_triage"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">8.3</span> <span class="title">Bug Triage</span>
 </h2>
-<section class="introduction" id="introduction-28"><p id="p-323">Some projects receive a handful of bug reports. Some projects receive tens of thousands of bug reports.</p>
-<p id="p-324">All projects have overworked developers. In software projects, there are almost always more bugs than time to fix them.</p>
-<p id="p-325">Bug triage is needed!</p></section><section class="subsection" id="triage"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-31"><p id="p-418">Some projects receive a handful of bug reports. Some projects receive tens of thousands of bug reports.</p>
+<p id="p-419">All projects have overworked developers. In software projects, there are almost always more bugs than time to fix them.</p>
+<p id="p-420">Bug triage is needed!</p></section><section class="subsection" id="triage"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">8.3.1</span> <span class="title">Bug Triage</span>
 </h3>
-<p id="p-326">The title <em class="emphasis">triage</em> is borrowed from the medical profession, in which patients are stabilized and prioritized based on the severity of their condition. In the same way that patients are prioritized, bugs can be prioritized. Bug triage saves critical time for developers, and moves the project forward. It’s one of the most useful and instructive activities in which a newbie can engage.</p>
-<p id="p-327">Some projects have entire teams devoted to bug triage. A couple examples:</p>
-<ul id="p-328" class="disc">
-<li id="li-144"><p id="p-derived-li-144"><a class="external" href="https://wiki.gnome.org/Bugsquad/TriageGuide" target="_blank">The GNOME Bug Squad</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-68" id="fn-68"><sup> 1 </sup></a></p></li>
-<li id="li-145"><p id="p-derived-li-145"><a class="external" href="https://wiki.ubuntu.com/Bugs/Triage" target="_blank">Ubuntu Bug triage</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-69" id="fn-69"><sup> 2 </sup></a></p></li>
+<p id="p-421">The title <em class="emphasis">triage</em> is borrowed from the medical profession, in which patients are stabilized and prioritized based on the severity of their condition. In the same way that patients are prioritized, bugs can be prioritized. Bug triage saves critical time for developers, and moves the project forward. It’s one of the most useful and instructive activities in which a newbie can engage.</p>
+<p id="p-422">Some projects have entire teams devoted to bug triage. A couple examples:</p>
+<ul id="p-423" class="disc">
+<li id="li-158"><p id="p-derived-li-158"><a class="external" href="https://wiki.gnome.org/Bugsquad/TriageGuide" target="_blank">The GNOME Bug Squad</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-79" id="fn-79"><sup> 1 </sup></a></p></li>
+<li id="li-159"><p id="p-derived-li-159"><a class="external" href="https://wiki.ubuntu.com/Bugs/Triage" target="_blank">Ubuntu Bug triage</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-80" id="fn-80"><sup> 2 </sup></a></p></li>
 </ul>
-<p id="p-329">There are many more examples of bug triage teams — but even those projects that don’t have a dedicated team can still benefit greatly from bug triage.</p>
-<p id="p-330">Triaging a bug generally means:</p>
-<ul id="p-331" class="disc">
-<li id="li-146">
-<span class="heading"><span class="title">Letting the user know that someone has looked at it.</span></span><p id="p-derived-li-146"> This simple courtesy is frequently overlooked. Bug trackers send emails to the original reporter whenever the state of a bug changes in any way — and when a user files a bug and never hears any response at all, it’s discouraging and makes it less likely that the user will bother to file another bug. A response such as, “thanks for reporting, I’ll try to reproduce today” can be very helpful.</p>
+<p id="p-424">There are many more examples of bug triage teams — but even those projects that don’t have a dedicated team can still benefit greatly from bug triage.</p>
+<p id="p-425">Triaging a bug generally means:</p>
+<ul id="p-426" class="disc">
+<li id="li-160">
+<span class="heading"><span class="title">Letting the user know that someone has looked at it.</span></span><p id="p-derived-li-160"> This simple courtesy is frequently overlooked. Bug trackers send emails to the original reporter whenever the state of a bug changes in any way — and when a user files a bug and never hears any response at all, it’s discouraging and makes it less likely that the user will bother to file another bug. A response such as, “thanks for reporting, I’ll try to reproduce today” can be very helpful.</p>
 </li>
-<li id="li-147">
-<span class="heading"><span class="title">Looking for other similar bugs.</span></span><p id="p-derived-li-147"> A large percentage of bugs filed against open source projects are duplicates; users frequently report bugs without searching to see if similar bugs have already been filed. Finding duplicates becomes easier with a bit of practice; the more familiar you are with a program, and the more you communicate with its developers, and the more bugs you see coming through the bug tracker, the more likely it is that you know when a bug is a duplicate. Still, even an inexperienced triager can spot obvious duplicates.</p>
+<li id="li-161">
+<span class="heading"><span class="title">Looking for other similar bugs.</span></span><p id="p-derived-li-161"> A large percentage of bugs filed against open source projects are duplicates; users frequently report bugs without searching to see if similar bugs have already been filed. Finding duplicates becomes easier with a bit of practice; the more familiar you are with a program, and the more you communicate with its developers, and the more bugs you see coming through the bug tracker, the more likely it is that you know when a bug is a duplicate. Still, even an inexperienced triager can spot obvious duplicates.</p>
 </li>
-<li id="li-148">
-<span class="heading"><span class="title">Guaranteeing proper severity and/or priority.</span></span><p id="p-derived-li-148"> Users tend to think that their bugs are the most important issues in the world. Sometimes, they’re right. Often, they’re not. Part of the triager’s job is to make a good faith estimate of a bug’s severity and priority. It’s an imperfect process, so triagers are also be wrong sometimes — but experienced bug triagers are much less wrong.</p>
+<li id="li-162">
+<span class="heading"><span class="title">Guaranteeing proper severity and/or priority.</span></span><p id="p-derived-li-162"> Users tend to think that their bugs are the most important issues in the world. Sometimes, they’re right. Often, they’re not. Part of the triager’s job is to make a good faith estimate of a bug’s severity and priority. It’s an imperfect process, so triagers are also be wrong sometimes — but experienced bug triagers are much less wrong.</p>
 </li>
-<li id="li-149">
-<span class="heading"><span class="title">Ensuring that the bug is sensible and helpful to developers.</span></span><p id="p-derived-li-149"> A poorly written bug report should never even make its way into the developer’s queue. If a bug report is filed with absolutely no information, it’s the triager’s job to get that information — with a politely worded comment in the bug, something like this: “Thanks for filing the bug, but there isn’t much information here. Could you help by telling us what version of Barchat you’re running, and if possible, attach the last 100 lines of ~/.barchatlog?”</p>
+<li id="li-163">
+<span class="heading"><span class="title">Ensuring that the bug is sensible and helpful to developers.</span></span><p id="p-derived-li-163"> A poorly written bug report should never even make its way into the developer’s queue. If a bug report is filed with absolutely no information, it’s the triager’s job to get that information — with a politely worded comment in the bug, something like this: “Thanks for filing the bug, but there isn’t much information here. Could you help by telling us what version of Barchat you’re running, and if possible, attach the last 100 lines of ~/.barchatlog?”</p>
 </li>
-<li id="li-150">
-<span class="heading"><span class="title">Ensuring that the bug is filed against the correct component, with the correct version.</span></span><p id="p-derived-li-150"> Sometimes, bugs are simply filed with the wrong information in some of the fields and it is obviously wrong. When a bug report about foomail accidentally gets filed against foomatic, reassiging that bug to the right component is simple — but vital.</p>
+<li id="li-164">
+<span class="heading"><span class="title">Ensuring that the bug is filed against the correct component, with the correct version.</span></span><p id="p-derived-li-164"> Sometimes, bugs are simply filed with the wrong information in some of the fields and it is obviously wrong. When a bug report about foomail accidentally gets filed against foomatic, reassiging that bug to the right component is simple — but vital.</p>
 </li>
 </ul>
-<p id="p-332"><em class="emphasis">Take note! If you can do these things well, you are building job references with real developers, right now.</em> If you are doing it right at this point, you may be setting yourself up for a job down the line.</p>
+<p id="p-427"><em class="emphasis">Take note! If you can do these things well, you are building job references with real developers, right now.</em> If you are doing it right at this point, you may be setting yourself up for a job down the line.</p>
 <article class="exercise exercise-like" id="exercise-bug-triage"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-bug-triage"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">8.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Exercise: Bug Triage.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-bug-triage"><article class="exercise exercise-like"><p id="p-333">Find five bug reports in the <em class="emphasis">new</em> state, and attempt to triage them according to the rules above. Your goal is to do as much as you possibly can, in a short period of time, to make those bug reports as useful as possible to the developer to whom they are assigned. (Note: be sure to follow any triage rules that your project may have defined. If there are no set triage rules, be sure to announce your intentions on the project’s mailing list, so that developers can provide you some guidelines if they choose.)</p></article></div>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-bug-triage"><article class="exercise exercise-like"><p id="p-428">Find five bug reports in the <em class="emphasis">new</em> state, and attempt to triage them according to the rules above. Your goal is to do as much as you possibly can, in a short period of time, to make those bug reports as useful as possible to the developer to whom they are assigned. (Note: be sure to follow any triage rules that your project may have defined. If there are no set triage rules, be sure to announce your intentions on the project’s mailing list, so that developers can provide you some guidelines if they choose.)</p></article></div>
 <article class="exercise exercise-like" id="exercise-20"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-20"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">8.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Exercise: Find the leading Bug-Zapper.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-20"><article class="exercise exercise-like"><p id="p-334">Find the developer to whom the most bugs are assigned. Find all bugs in the <em class="emphasis">new</em> state that have not been reproduced, and try to reproduce them.</p></article></div>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-20"><article class="exercise exercise-like"><p id="p-429">Find the developer to whom the most bugs are assigned. Find all bugs in the <em class="emphasis">new</em> state that have not been reproduced, and try to reproduce them.</p></article></div>
 <article class="exercise exercise-like" id="exercise-21"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-21"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">8.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Exercise: Get bug notifications.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-21"><article class="exercise exercise-like"><p id="p-335">Figure out how to get yourself put on the default <em class="emphasis">Cc:</em> of a particular bug or component, so that you see new bug reports in your email.</p></article></div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-68"><div class="fn"><code class="code-inline tex2jax_ignore">wiki.gnome.org/Bugsquad/TriageGuide</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-69"><div class="fn"><code class="code-inline tex2jax_ignore">wiki.ubuntu.com/Bugs/Triage</code></div></div>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-21"><article class="exercise exercise-like"><p id="p-430">Figure out how to get yourself put on the default <em class="emphasis">Cc:</em> of a particular bug or component, so that you see new bug reports in your email.</p></article></div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-79"><div class="fn"><code class="code-inline tex2jax_ignore">wiki.gnome.org/Bugsquad/TriageGuide</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-80"><div class="fn"><code class="code-inline tex2jax_ignore">/wiki.ubuntu.com/Bugs/Triage</code></div></div>
 </div></main>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>

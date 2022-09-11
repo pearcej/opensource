@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-09-11T17:28:33-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -34,14 +37,6 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-startup: {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      $(document).trigger("runestone:mathjax-ready");
-      }
-    )}
-},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
 <script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -85,8 +80,8 @@ eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.0/runtime.d24a93181f625912.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.0/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.0/runestone.aeb994b86db36b29.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.0/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.0/runestone.e4d5592da655219f.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -127,7 +122,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link">
-<a href="ch_1_foss.html" data-scroll="ch_1_foss" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Free and Open Source Software (FOSS)</span></a><ul>
+<a href="ch_o.html" data-scroll="ch_o" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Free and Open Source Software (FOSS)</span></a><ul>
 <li><a href="sec_what_is_open_source.html" data-scroll="sec_what_is_open_source" class="internal">What is Open Source Software?</a></li>
 <li><a href="sec_foss_matters.html" data-scroll="sec_foss_matters" class="internal">Why might FOSS matter to me</a></li>
 <li><a href="sec_source_code.html" data-scroll="sec_source_code" class="internal">About Source Code</a></li>
@@ -145,7 +140,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link">
-<a href="ch3_licensing.html" data-scroll="ch3_licensing" class="internal"><span class="codenumber">3</span> <span class="title">Open Source Licensing</span></a><ul>
+<a href="ch_licensing.html" data-scroll="ch_licensing" class="internal"><span class="codenumber">3</span> <span class="title">Open Source Licensing</span></a><ul>
 <li><a href="sec_about_licensing.html" data-scroll="sec_about_licensing" class="internal">About Licensing</a></li>
 <li><a href="sec_typical_licensing.html" data-scroll="sec_typical_licensing" class="internal">Typical Open Source Licenses</a></li>
 <li><a href="sec_existing_communities.html" data-scroll="sec_existing_communities" class="internal">Existing Communities</a></li>
@@ -153,24 +148,26 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link">
-<a href="ch4_documentation.html" data-scroll="ch4_documentation" class="internal"><span class="codenumber">4</span> <span class="title">Documentation</span></a><ul>
+<a href="ch_documentation.html" data-scroll="ch_documentation" class="internal"><span class="codenumber">4</span> <span class="title">Documentation</span></a><ul>
 <li><a href="sec_documentation_matters.html" data-scroll="sec_documentation_matters" class="internal">Documentation Matters</a></li>
 <li><a href="sec_documentation_involvement.html" data-scroll="sec_documentation_involvement" class="internal">Documentation as Involvement</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="ch5_tools_technologies.html" data-scroll="ch5_tools_technologies" class="internal"><span class="codenumber">5</span> <span class="title">Open Source Tools and Technologies</span></a><ul>
+<a href="ch_tools_technologies.html" data-scroll="ch_tools_technologies" class="internal"><span class="codenumber">5</span> <span class="title">Open Source Tools and Technologies</span></a><ul>
 <li><a href="sec_os_linux.html" data-scroll="sec_os_linux" class="internal">The Linux Operating System</a></li>
 <li><a href="sec_vms_virtualizaton_container.html" data-scroll="sec_vms_virtualizaton_container" class="internal">Virtual Machines, Virtualization, and Containerization</a></li>
 <li><a href="intro-version-control.html" data-scroll="intro-version-control" class="internal">Version Control</a></li>
 </ul>
 </li>
-<li class="link"><a href="ch6_git.html" data-scroll="ch6_git" class="internal"><span class="codenumber">6</span> <span class="title">Git</span></a></li>
 <li class="link">
-<a href="ch7_building_code.html" data-scroll="ch7_building_code" class="internal"><span class="codenumber">7</span> <span class="title">Getting and Building the Code</span></a><ul><li><a href="sec_source_to_executable.html" data-scroll="sec_source_to_executable" class="internal">From Source to Executable</a></li></ul>
+<a href="ch_git.html" data-scroll="ch_git" class="internal"><span class="codenumber">6</span> <span class="title">Git</span></a><ul><li><a href="git_sec_getting_started.html" data-scroll="git_sec_getting_started" class="internal">Git: Getting Started</a></li></ul>
 </li>
 <li class="link">
-<a href="ch8_bugs_and_debugging.html" data-scroll="ch8_bugs_and_debugging" class="internal"><span class="codenumber">8</span> <span class="title">Bugs and Debugging</span></a><ul>
+<a href="ch_building_code.html" data-scroll="ch_building_code" class="internal"><span class="codenumber">7</span> <span class="title">Getting and Building the Code</span></a><ul><li><a href="sec_source_to_executable.html" data-scroll="sec_source_to_executable" class="internal">From Source to Executable</a></li></ul>
+</li>
+<li class="link">
+<a href="ch_bugs_and_debugging.html" data-scroll="ch_bugs_and_debugging" class="internal"><span class="codenumber">8</span> <span class="title">Bugs and Debugging</span></a><ul>
 <li><a href="sec_bug_trackers.html" data-scroll="sec_bug_trackers" class="internal">Bug Trackers</a></li>
 <li><a href="sec_bug_reports.html" data-scroll="sec_bug_reports" class="internal">Bug Reports</a></li>
 <li><a href="sec_bug_triage.html" data-scroll="sec_bug_triage" class="internal">Bug Triage</a></li>
@@ -192,9 +189,9 @@ eBookConfig.enable_chatcodes =  false;
 <section class="section" id="sec_third_culture"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">The Synthetic Third Culture</span>
 </h2>
-<p id="p-114">Ruth Hill Useem developed the term <a class="external" href="http://www.tckworld.com/" target="_blank">Third Culture Kids (TCKs)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-18" id="fn-18"><sup> 1 </sup></a> forty years ago to describe the children of military, diplomatic, missionary, and other families who exist in a twilight world between their passport countries and the countries in which they live. Often, these children are neither at home in their birth culture nor in the culture in which they live day-to-day, a fact that often becomes evident only upon returning to their native country. TCKs usually feel more at home with other TCKs than with other people.</p>
-<p id="p-115">In a somewhat similar way, FOSS communities often create their own culture, which is not the native culture of any of the participants. When Chinese developers work with Brazilian colleagues day after day, their communication does not usually reflect much of either Chinese nor Brazilian culture. When joined by colleagues from (say) Morocco, Russia, Canada, and Australia, native culture is made even less significant. Over time, the communities build up shared experiences, humor, social norms, and conventions that define that community, building up a synthetic third culture.</p>
-<p id="p-116">This is not unique — collaborative groups have always developed their own sense of identity. The difference with most FOSS communities is that the collaboration is remote, so the participants remain in their native cultural context while participating in the synthetic third culture of the FOSS community, and the interaction is high-volume and sustained over a long period of time (decades, in some cases). Obviously, the diversity, intensity, and health of the community play a significant role in the depth and uniqueness of the third culture.</p></section><div class="hidden-content tex2jax_ignore" id="hk-fn-18"><div class="fn"><code class="code-inline tex2jax_ignore">tckworld.com</code></div></div>
+<p id="p-115">Ruth Hill Useem developed the term <a class="external" href="http://www.tckworld.com/" target="_blank">Third Culture Kids (TCKs)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-20" id="fn-20"><sup> 1 </sup></a> forty years ago to describe the children of military, diplomatic, missionary, and other families who exist in a twilight world between their passport countries and the countries in which they live. Often, these children are neither at home in their birth culture nor in the culture in which they live day-to-day, a fact that often becomes evident only upon returning to their native country. TCKs usually feel more at home with other TCKs than with other people.</p>
+<p id="p-116">In a somewhat similar way, FOSS communities often create their own culture, which is not the native culture of any of the participants. When Chinese developers work with Brazilian colleagues day after day, their communication does not usually reflect much of either Chinese nor Brazilian culture. When joined by colleagues from (say) Morocco, Russia, Canada, and Australia, native culture is made even less significant. Over time, the communities build up shared experiences, humor, social norms, and conventions that define that community, building up a synthetic third culture.</p>
+<p id="p-117">This is not unique — collaborative groups have always developed their own sense of identity. The difference with most FOSS communities is that the collaboration is remote, so the participants remain in their native cultural context while participating in the synthetic third culture of the FOSS community, and the interaction is high-volume and sustained over a long period of time (decades, in some cases). Obviously, the diversity, intensity, and health of the community play a significant role in the depth and uniqueness of the third culture.</p></section><div class="hidden-content tex2jax_ignore" id="hk-fn-20"><div class="fn"><code class="code-inline tex2jax_ignore">tckworld.com</code></div></div>
 </div></main>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>

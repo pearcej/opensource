@@ -38,7 +38,7 @@
       Or maybe you have experienced this onlyon a larger scale... for example, three of your friends comment on differnent versions because they share them with the whole group via email. Some comment on the original version, some comment on mom's version, others comment on your brother's verion, etc.
     </p>
     <p>
-      If you have experienced this, you have used version control, which according to Wikipedia <url href="https://en.wikipedia.org/wiki/Version_control">version control</url> “is the management of changes to documents, programs, and other information stored as computer files.” But, you have also have come to deeply understand the need for a far easier way to merge in any changes that come on an earlier version.
+      If you have experienced this, you have used version control, which according to Wikipedia <url href="https://en.wikipedia.org/wiki/Version_control" visual="https://en.wikipedia.org/wiki/Version_control">version control</url> “is the management of changes to documents, programs, and other information stored as computer files.” But, you have also have come to deeply understand the need for a far easier way to merge in any changes that come on an earlier version.
     </p>
 
     <p>
@@ -60,23 +60,23 @@
 
 			<p><ul>
 				<li>
-				<url href="http://subversion.apache.org">Subversion (svn)</url>
+				<url href="http://subversion.apache.org" visual="subversion.apache.org">Subversion (svn)</url>
 				</li>
 
 				<li>
-				<url href="http://bazaar.canonical.com/en/">Bazaar (bzr)</url>
+				<url href="http://bazaar.canonical.com/en/" visual="bazaar.canonical.com/en">Bazaar (bzr)</url>
 				</li>
 
 				<li>
-				<url href="http://www.nongnu.org/cvs/">Concurrent Version System (cvs)</url>
+				<url href="http://www.nongnu.org/cvs/" visual="www.nongnu.org/cvs">Concurrent Version System (cvs)</url>
 				</li>
 
 				<li>
-				<url href="https://git-scm.com">Git (git)</url>
+				<url href="https://git-scm.com" visual="git-scm.com">Git (git)</url>
 				</li>
 
 				<li>
-				<url href="https://www.mercurial-scm.org/">Mercurial (hg)</url>
+				<url href="https://www.mercurial-scm.org/" visual="www.mercurial-scm.org/">Mercurial (hg)</url>
 				</li>
 
 			</ul></p>
@@ -89,7 +89,7 @@
       What has happenened in the recent decade in version control systems has been truly remarkable because Git has come to completely dominate not just the open source world, but also much of the rest of the proprietary software community as well.
     </p>
     <p>
-      For this reason, in the next chapter we will be exploring Git and a cloud hosting site called <url href="https://www.github.com/">Github</url>.
+      For this reason, in the next chapter we will be exploring Git and a cloud hosting site called <url href="https://www.github.com/" visual="www.github.com/">>Github</url>.
     </p>
     </conclusion>
 

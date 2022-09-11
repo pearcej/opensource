@@ -1,15 +1,14 @@
-INFO    : PreTeXt project found in `/Users/pearcej/rsdocker/RunestoneServer/books/opensource`.
-WARNING : Using CLI version 0.8.3 but project's `requirements.txt`
-WARNING : is configured to use 0.0.8. Consider either installing
-WARNING : CLI version 0.0.8 or changing `requirements.txt` to match 0.8.3.
-INFO    : 
-INFO    : Now preparing local server to preview directory `/Users/pearcej/rsdocker/RunestoneServer/books/opensource/output/web`.
-INFO    :   (Reminder: use `pretext deploy` to deploy your built project to a public
-INFO    :   GitHub Pages site that can be shared with readers who cannot access your
-INFO    :   personal computer.)
-INFO    : 
-INFO    : Success! The most recent build of your project can be viewed in a web browser at the following url:
-INFO    :     http://localhost:8000
-INFO    : This page should open in a new tab automatically.
-INFO    : Use [Ctrl]+[C] to halt the server.
+INFO    :  PreTeXt project found in `/Users/pearcej/rsdocker/RunestoneServer/books/opensource`.
+WARNING :  Using CLI version 0.8.1 but project's `requirements.txt`
+WARNING :  is configured to use 0.0.8. Consider either installing
+WARNING :  CLI version 0.0.8 or changing `requirements.txt` to match 0.8.1.
+INFO    :  
+INFO    :  Now preparing local server to preview directory `/Users/pearcej/rsdocker/RunestoneServer/books/opensource/output/web`.
+INFO    :    (Reminder: use `pretext deploy` to deploy your built project to a public
+INFO    :    GitHub Pages site that can be shared with readers who cannot access your
+INFO    :    personal computer.)
+INFO    :  
+INFO    :  Success! Open the below url in a web browser to preview the most recent build of your project.
+INFO    :      http://localhost:8000
+INFO    :  Use [Ctrl]+[C] to halt the server.
 

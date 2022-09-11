@@ -31,11 +31,11 @@
 
 			<p><ul>
 				<li>
-				<url href="https://wiki.gnome.org/Bugsquad/TriageGuide">The GNOME Bug Squad</url>
+				<url href="https://wiki.gnome.org/Bugsquad/TriageGuide" visual="wiki.gnome.org/Bugsquad/TriageGuide">The GNOME Bug Squad</url>
 				</li>
 
 				<li>
-				<url href="https://wiki.ubuntu.com/Bugs/Triage">Ubuntu Bug triage</url>
+				<url href="https://wiki.ubuntu.com/Bugs/Triage" visual="/wiki.ubuntu.com/Bugs/Triage">Ubuntu Bug triage</url>
 				</li>
 
 			</ul></p>

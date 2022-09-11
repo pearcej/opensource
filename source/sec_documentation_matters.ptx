@@ -61,7 +61,7 @@ return self._findAll(name, attrs, text, limit, self.previousGenerator,
 			</p>
 
 			<p>
-				<url href="http://www.crummy.com/software/BeautifulSoup/documentation.html#findAllPrevious(name,%20attrs,%20text,%20limit,%20**kwargs)%20and%20findPrevious(name,%20attrs,%20text,%20**kwargs)">http://www.crummy.com/software/BeautifulSoup/documentation.html#findAllPrevious(name,%20attrs,%20text,%20limit,%20**kwargs)%20and%20findPrevious(name,%20attrs,%20text,%20**kwargs)</url>
+				<url href="http://www.crummy.com/software/BeautifulSoup/documentation.html#findAllPrevious(name,%20attrs,%20text,%20limit,%20**kwargs)%20and%20findPrevious(name,%20attrs,%20text,%20**kwargs)" visual="www.crummy.com/software/BeautifulSoup/documentation.html#findAllPrevious(name,%20attrs,%20text,%20limit,%20**kwargs)%20and%20findPrevious(name,%20attrs,%20text,%20**kwargs)">http://www.crummy.com/software/BeautifulSoup/documentation.html#findAllPrevious(name,%20attrs,%20text,%20limit,%20**kwargs)%20and%20findPrevious(name,%20attrs,%20text,%20**kwargs)</url>
 			</p>
 
 			<p>
@@ -74,21 +74,21 @@ return self._findAll(name, attrs, text, limit, self.previousGenerator,
 
 			<p><ul>
 				<li>
-				<url href="http://en.wikipedia.org/w/index.php?title=Software_documentation&amp;limit=500&amp;action=history">History of the Wikipedia page on ‘software documentation’</url>
+				<url href="http://en.wikipedia.org/w/index.php?title=Software_documentation&amp;limit=500&amp;action=history" visual="en.wikipedia.org/w/index.php?title=Software_documentation&amp;limit=500&amp;action=history">History of the Wikipedia page on ‘software documentation’</url>
 				</li>
 
 				<li>
-				<url href="https://en.wikipedia.org/wiki/Talk:Software_documentation">Discussion or talk page on ‘software documentation’</url>
+				<url href="https://en.wikipedia.org/wiki/Talk:Software_documentation" visual="en.wikipedia.org/wiki/Talk:Software_documentation">Discussion or talk page on ‘software documentation’</url>
 				</li>
 
 				<li>
-				<url href="https://en.wikipedia.org/w/index.php?title=Talk:Software_documentation&amp;action=history">History of ‘Talk:Software_documentation’</url>
+				<url href="https://en.wikipedia.org/w/index.php?title=Talk:Software_documentation&amp;action=history" visual="en.wikipedia.org/w/index.php?title=Talk:Software_documentation&amp;action=history">History of ‘Talk:Software_documentation’</url>
 				</li>
 
 			</ul></p>
 
 			<p>
-				<url href="https://en.wikipedia.org/wiki/Software_documentation">According to Wikipedia</url>, documentation “is written text that accompanies computer software. It either explains how it operates or how to use it.” For software engineering purposes, operate/use includes manipulating the source code as well as using the application. Documentation is a sanity-preserving tool for users of and potential contributors to your project, including your future self … and perhaps your future boss or coworker.
+				<url href="https://en.wikipedia.org/wiki/Software_documentation" visual="en.wikipedia.org/wiki/Software_documentation">According to Wikipedia</url>, documentation “is written text that accompanies computer software. It either explains how it operates or how to use it.” For software engineering purposes, operate/use includes manipulating the source code as well as using the application. Documentation is a sanity-preserving tool for users of and potential contributors to your project, including your future self … and perhaps your future boss or coworker.
 			</p>
 
 			<p>
@@ -241,7 +241,7 @@ return self._findAll(name, attrs, text, limit, self.previousGenerator,
 					<title><term>Five steps for technical writing</term></title>
 
 					<p>
-						(Adapted from <url href="https://fossdocs.wordpress.com/2009/08/07/creating-technical-documentation-in-five-easy-steps/">Creating technical documentation in five easy steps</url> and <url href="https://fossdocs.wordpress.com/2009/10/20/magic-waterfalls/">Magic waterfalls</url> under <url href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0.</url>)
+						(Adapted from <url href="https://fossdocs.wordpress.com/2009/08/07/creating-technical-documentation-in-five-easy-steps/" visual="fossdocs.wordpress.com/2009/08/07/creating-technical-documentation-in-five-easy-steps/">Creating technical documentation in five easy steps</url> and <url href="https://fossdocs.wordpress.com/2009/10/20/magic-waterfalls/" visual="https://fossdocs.wordpress.com/2009/10/20/magic-waterfalls/">Magic waterfalls</url> under <url href="https://creativecommons.org/licenses/by-sa/3.0/" visual="creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0.</url>)
 					</p>
 
 					<p>

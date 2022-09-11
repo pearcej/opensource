@@ -2,7 +2,7 @@
 
 <!-- The @xmlns:xi attribute  -->
 <!-- is needed if you use xi:include in this file             -->
-<chapter xml:id="ch_1_foss" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xml:id="ch_o" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Introduction to Free and Open Source Software (FOSS)</title>
   <introduction>
 	<p>
@@ -10,7 +10,7 @@
 	</p>
 
 	<p>
-		There are more rigorous definitions, and there are many licenses that help to ensure these freedoms in subtly different ways. We examine these details later in <xref ref="ch3_licensing"/>. For now, focus on this simple idea: the freedom to share source code is the essential element of free and open source software.
+		There are more rigorous definitions, and there are many licenses that help to ensure these freedoms in subtly different ways. We examine these details later in <xref ref="ch_licensing"/>. For now, focus on this simple idea: the freedom to share source code is the essential element of free and open source software.
 	</p>
 
 	<p>

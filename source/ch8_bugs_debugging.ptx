@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<chapter xml:id="ch8_bugs_and_debugging" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xml:id="ch_bugs_and_debugging" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Bugs and Debugging</title>
   <introduction>
 			<p>
@@ -33,15 +33,16 @@
   <title>More Advice on Bug Reports</title>
 			<p><ul>
 				<li>
-				The Fedora project has good guidelines for bug reporters at <url href="http://fedoraproject.org/wiki/How_to_file_a_bug_report">How to file a bug report</url>. A bit specific to Fedora in places, but very instructive.
+				The Fedora project has good guidelines for bug reporters at <url href="http://fedoraproject.org/wiki/How_to_file_a_bug_report" visual="fedoraproject.org/wiki/How_to_file_a_bug_report">How to file a bug report</url>. A bit specific to Fedora in places, but very instructive.
 				</li>
 
 				<li>
-				The Mozilla project also has a set of <url href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines">bug reporting guidelines</url>, and a great <url href="https://bugzilla.mozilla.org/page.cgi?id=etiquette.html">etiquette guide</url> as well. Specific to Mozilla, but instructive.
+				The Mozilla project also has a set of <url href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines" visual="developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines">bug reporting guidelines</url>, and a great 
+				<url href="https://bugzilla.mozilla.org/page.cgi?id=etiquette.html" visual="bugzilla.mozilla.org/page.cgi?id=etiquette.html">etiquette guide</url> as well. Specific to Mozilla, but instructive.
 				</li>
 
 				<li>
-				Simon Tatham’s <url href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html">How to Report Bugs Effectively</url> is a truly outstanding work. Strongly recommended.
+				Simon Tatham’s <url href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html" visual="www.chiark.greenend.org.uk/~sgtatham/bugs.html">How to Report Bugs Effectively</url> is a truly outstanding work. Strongly recommended.
 				</li>
 
 			</ul></p>

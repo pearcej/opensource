@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-09-11T17:28:33-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -34,14 +37,6 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-startup: {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      $(document).trigger("runestone:mathjax-ready");
-      }
-    )}
-},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
 <script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -85,8 +80,8 @@ eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.0/runtime.d24a93181f625912.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.0/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.0/runestone.aeb994b86db36b29.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.0/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.0/runestone.e4d5592da655219f.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -108,11 +103,11 @@ eBookConfig.enable_chatcodes =  false;
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_community_qualities.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch_community_communication.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch3_licensing.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_community_qualities.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch_community_communication.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch_licensing.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_community_qualities.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch_community_communication.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ch3_licensing.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_community_qualities.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch_community_communication.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ch_licensing.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -127,7 +122,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link">
-<a href="ch_1_foss.html" data-scroll="ch_1_foss" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Free and Open Source Software (FOSS)</span></a><ul>
+<a href="ch_o.html" data-scroll="ch_o" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Free and Open Source Software (FOSS)</span></a><ul>
 <li><a href="sec_what_is_open_source.html" data-scroll="sec_what_is_open_source" class="internal">What is Open Source Software?</a></li>
 <li><a href="sec_foss_matters.html" data-scroll="sec_foss_matters" class="internal">Why might FOSS matter to me</a></li>
 <li><a href="sec_source_code.html" data-scroll="sec_source_code" class="internal">About Source Code</a></li>
@@ -145,7 +140,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link">
-<a href="ch3_licensing.html" data-scroll="ch3_licensing" class="internal"><span class="codenumber">3</span> <span class="title">Open Source Licensing</span></a><ul>
+<a href="ch_licensing.html" data-scroll="ch_licensing" class="internal"><span class="codenumber">3</span> <span class="title">Open Source Licensing</span></a><ul>
 <li><a href="sec_about_licensing.html" data-scroll="sec_about_licensing" class="internal">About Licensing</a></li>
 <li><a href="sec_typical_licensing.html" data-scroll="sec_typical_licensing" class="internal">Typical Open Source Licenses</a></li>
 <li><a href="sec_existing_communities.html" data-scroll="sec_existing_communities" class="internal">Existing Communities</a></li>
@@ -153,24 +148,26 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link">
-<a href="ch4_documentation.html" data-scroll="ch4_documentation" class="internal"><span class="codenumber">4</span> <span class="title">Documentation</span></a><ul>
+<a href="ch_documentation.html" data-scroll="ch_documentation" class="internal"><span class="codenumber">4</span> <span class="title">Documentation</span></a><ul>
 <li><a href="sec_documentation_matters.html" data-scroll="sec_documentation_matters" class="internal">Documentation Matters</a></li>
 <li><a href="sec_documentation_involvement.html" data-scroll="sec_documentation_involvement" class="internal">Documentation as Involvement</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="ch5_tools_technologies.html" data-scroll="ch5_tools_technologies" class="internal"><span class="codenumber">5</span> <span class="title">Open Source Tools and Technologies</span></a><ul>
+<a href="ch_tools_technologies.html" data-scroll="ch_tools_technologies" class="internal"><span class="codenumber">5</span> <span class="title">Open Source Tools and Technologies</span></a><ul>
 <li><a href="sec_os_linux.html" data-scroll="sec_os_linux" class="internal">The Linux Operating System</a></li>
 <li><a href="sec_vms_virtualizaton_container.html" data-scroll="sec_vms_virtualizaton_container" class="internal">Virtual Machines, Virtualization, and Containerization</a></li>
 <li><a href="intro-version-control.html" data-scroll="intro-version-control" class="internal">Version Control</a></li>
 </ul>
 </li>
-<li class="link"><a href="ch6_git.html" data-scroll="ch6_git" class="internal"><span class="codenumber">6</span> <span class="title">Git</span></a></li>
 <li class="link">
-<a href="ch7_building_code.html" data-scroll="ch7_building_code" class="internal"><span class="codenumber">7</span> <span class="title">Getting and Building the Code</span></a><ul><li><a href="sec_source_to_executable.html" data-scroll="sec_source_to_executable" class="internal">From Source to Executable</a></li></ul>
+<a href="ch_git.html" data-scroll="ch_git" class="internal"><span class="codenumber">6</span> <span class="title">Git</span></a><ul><li><a href="git_sec_getting_started.html" data-scroll="git_sec_getting_started" class="internal">Git: Getting Started</a></li></ul>
 </li>
 <li class="link">
-<a href="ch8_bugs_and_debugging.html" data-scroll="ch8_bugs_and_debugging" class="internal"><span class="codenumber">8</span> <span class="title">Bugs and Debugging</span></a><ul>
+<a href="ch_building_code.html" data-scroll="ch_building_code" class="internal"><span class="codenumber">7</span> <span class="title">Getting and Building the Code</span></a><ul><li><a href="sec_source_to_executable.html" data-scroll="sec_source_to_executable" class="internal">From Source to Executable</a></li></ul>
+</li>
+<li class="link">
+<a href="ch_bugs_and_debugging.html" data-scroll="ch_bugs_and_debugging" class="internal"><span class="codenumber">8</span> <span class="title">Bugs and Debugging</span></a><ul>
 <li><a href="sec_bug_trackers.html" data-scroll="sec_bug_trackers" class="internal">Bug Trackers</a></li>
 <li><a href="sec_bug_reports.html" data-scroll="sec_bug_reports" class="internal">Bug Reports</a></li>
 <li><a href="sec_bug_triage.html" data-scroll="sec_bug_triage" class="internal">Bug Triage</a></li>
@@ -192,35 +189,35 @@ eBookConfig.enable_chatcodes =  false;
 <section class="section" id="sec_communicating"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.4</span> <span class="title">Communicating</span>
 </h2>
-<section class="introduction" id="introduction-9"><p id="p-125">Communication in an open-source community takes many forms, but all of these break down into two broad categories: synchronous (live/concurrent) and asynchronous (non-simultaneous). Synchronous communications might include instant messaging and various forms of audio chat; asynchronous communications include everything from email to wiki pages. Due to the geographically-dispersed nature of most communities, most communication makes heavy use of technology: it’s no accident that open source in its current form has grown hand-in-hand with the Internet.</p></section><section class="subsection" id="subsec_website"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-9"><p id="p-126">Communication in an open-source community takes many forms, but all of these break down into two broad categories: synchronous (live/concurrent) and asynchronous (non-simultaneous). Synchronous communications might include instant messaging and various forms of audio chat; asynchronous communications include everything from email to wiki pages. Due to the geographically-dispersed nature of most communities, most communication makes heavy use of technology: it’s no accident that open source in its current form has grown hand-in-hand with the Internet.</p></section><section class="subsection" id="subsec_website"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.4.1</span> <span class="title">Websites</span>
 </h3>
-<p id="p-126">The online anchor-point for most communities is a web site. However, the nature of traditional HTML pages is that they are a static, one-to-many form of communication created by a small number of people with write access to a server. This leads to pages that can become quickly outdated and which do not truly reflect the collaborative nature of the community.</p>
-<p id="p-127">For this reason, some open source projects have an anchor site with a few static pages, but the bulk of their web content comes from wiki (user-editable), forum (user-posted), and mailing list archive pages.</p></section><section class="subsection" id="subsec_wikis"><h3 class="heading hide-type">
+<p id="p-127">The online anchor-point for most communities is a web site. However, the nature of traditional HTML pages is that they are a static, one-to-many form of communication created by a small number of people with write access to a server. This leads to pages that can become quickly outdated and which do not truly reflect the collaborative nature of the community.</p>
+<p id="p-128">For this reason, some open source projects have an anchor site with a few static pages, but the bulk of their web content comes from wiki (user-editable), forum (user-posted), and mailing list archive pages.</p></section><section class="subsection" id="subsec_wikis"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.4.2</span> <span class="title">Wikis</span>
 </h3>
-<p id="p-128">The concept of a wiki is widely understood due to the popularity of Wikipedia: it’s a web site where the pages are user-editable. A wiki provides an easy-to-use, asynchronous way of putting semi-permanent content on the web, so they are ideal for documentation, timelines, status reports, meeting minutes, and conversation logs.From the perspective of a reader, accessing wiki content is the same as accessing static HTML content, and search engines index wiki content very well. For the writer, a wiki provides version control, a database backend, simplified markup, and a fast edit-and-post cycle.</p>
-<p id="p-129">Most open source projects use one of the common wiki packages such as MediaWiki (which also powers Wikipedia), TikiWiki, MindTouch, or Trac; this has the benefit of reducing the number of different types of markup that must be memorized.</p>
-<p id="p-130">Wikis are related to content management systems (CMS), such as Drupal or WordPress. When a project uses a CMS for a website, the goal is the same — enable the community to edit the project content.</p>
+<p id="p-129">The concept of a wiki is widely understood due to the popularity of Wikipedia: it’s a web site where the pages are user-editable. A wiki provides an easy-to-use, asynchronous way of putting semi-permanent content on the web, so they are ideal for documentation, timelines, status reports, meeting minutes, and conversation logs.From the perspective of a reader, accessing wiki content is the same as accessing static HTML content, and search engines index wiki content very well. For the writer, a wiki provides version control, a database backend, simplified markup, and a fast edit-and-post cycle.</p>
+<p id="p-130">Most open source projects use one of the common wiki packages such as MediaWiki (which also powers Wikipedia), TikiWiki, MindTouch, or Trac; this has the benefit of reducing the number of different types of markup that must be memorized.</p>
+<p id="p-131">Wikis are related to content management systems (CMS), such as Drupal or WordPress. When a project uses a CMS for a website, the goal is the same — enable the community to edit the project content.</p>
 <article class="exercise exercise-like" id="exercise-project-wikis"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-project-wikis"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Exercise: Project Wikis.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-project-wikis"><article class="exercise exercise-like"><p id="p-131">Wikis are meant to be community spaces where everyone can join in. They grown and are made better through community participation. For this exercise, we’re going to encourage you to check out the wikis of three established open source projects. These might be projects you looked at in the previous chapter:</p>
-<ol id="p-132" class="decimal">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-project-wikis"><article class="exercise exercise-like"><p id="p-132">Wikis are meant to be community spaces where everyone can join in. They grown and are made better through community participation. For this exercise, we’re going to encourage you to check out the wikis of three established open source projects. These might be projects you looked at in the previous chapter:</p>
+<ol id="p-133" class="decimal">
 <li id="li-21"><p id="p-derived-li-21">Search in the wiki for the history and current structure of the project. Is it in the wiki, or is it somewhere else in their project?</p></li>
 <li id="li-22"><p id="p-derived-li-22">When the last change was made, who made it, and how often are changes submitted. Would you describe this wiki as “thriving” or “languishing”?</p></li>
 </ol>
 <p class="continuation">Authoring and maintaining pages in a wiki (the latter sometimes being referred to as gardening) is a critical part of any FOSS project. If you’re particularly interested in a project, register an account on the wiki and create a User Profile page. You’ll want to link this back to your portfolio that you created in the previous chapter.</p></article></div></section><section class="subsection" id="subsec-blogs-planets"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.4.3</span> <span class="title">Blogs and Planets</span>
 </h3>
-<p id="p-133">While web sites and wiki provides semi-permanent places for content, blogs provide the opposite: a flow of transient, in-the-moment news and commentary.</p>
-<p id="p-134">Because many open source participants write blogs, it has become difficult to keep up with them on a one-by-one basis. The volume of blog postings created within a community can be overwhelming. To help deal with this, RSS or Atom feeds enable the receipt of content in a machine-readable format so that it can be used in a variety of different ways (for example, in Firefox Live Bookmarks, through a service such as Google Reader, or in a program such as Liferea or FeedReader). Many open-source community maintain a Planet site which aggregates the feeds from community members into a single page (and the Planet, in turn, provides an aggregated feed). Here are some examples:</p>
+<p id="p-134">While web sites and wiki provides semi-permanent places for content, blogs provide the opposite: a flow of transient, in-the-moment news and commentary.</p>
+<p id="p-135">Because many open source participants write blogs, it has become difficult to keep up with them on a one-by-one basis. The volume of blog postings created within a community can be overwhelming. To help deal with this, RSS or Atom feeds enable the receipt of content in a machine-readable format so that it can be used in a variety of different ways (for example, in Firefox Live Bookmarks, through a service such as Google Reader, or in a program such as Liferea or FeedReader). Many open-source community maintain a Planet site which aggregates the feeds from community members into a single page (and the Planet, in turn, provides an aggregated feed). Here are some examples:</p>
 <ul class="disc">
-<li id="li-23"><p id="p-derived-li-23"><a class="external" href="https://planet.mozilla.org" target="_blank">The Mozilla Planet</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-19" id="fn-19"><sup> 1 </sup></a></p></li>
-<li id="li-24"><p id="p-derived-li-24"><a class="external" href="http://fedoraplanet.org/" target="_blank">The Fedora Planet</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-20" id="fn-20"><sup> 2 </sup></a></p></li>
-<li id="li-25"><p id="p-derived-li-25"><a class="external" href="https://planet.documentfoundation.org/" target="_blank">The Document Foundation Planet</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-21" id="fn-21"><sup> 3 </sup></a></p></li>
+<li id="li-23"><p id="p-derived-li-23"><a class="external" href="https://planet.mozilla.org" target="_blank">The Mozilla Planet</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-21" id="fn-21"><sup> 1 </sup></a></p></li>
+<li id="li-24"><p id="p-derived-li-24"><a class="external" href="http://fedoraplanet.org/" target="_blank">The Fedora Planet</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-22" id="fn-22"><sup> 2 </sup></a></p></li>
+<li id="li-25"><p id="p-derived-li-25"><a class="external" href="https://planet.documentfoundation.org/" target="_blank">The Document Foundation Planet</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-23" id="fn-23"><sup> 3 </sup></a></p></li>
 </ul>
-<p id="p-135">In most cases, individual blog postings can be tagged or categorized, and separate feeds can be generated for each tag or category. This permits posts to be sent to one or more different planets at the author’s discretion.</p>
-<p id="p-136">As you get into FOSS, you will want to share your news and opinions with others via a blog. You need to represent your thoughts professionally; here are some guidelines:</p>
+<p id="p-136">In most cases, individual blog postings can be tagged or categorized, and separate feeds can be generated for each tag or category. This permits posts to be sent to one or more different planets at the author’s discretion.</p>
+<p id="p-137">As you get into FOSS, you will want to share your news and opinions with others via a blog. You need to represent your thoughts professionally; here are some guidelines:</p>
 <ul class="disc">
 <li id="li-26"><p id="p-derived-li-26">Write professionally. Blog postings are less formal than other types of writing, but they are still a reflection of your communications skills.</p></li>
 <li id="li-27"><p id="p-derived-li-27">Remember that the internet has a long memory. The Planet page is generated periodically, and even if you delete or change your posting, it may be indexed, cached, or reposted until the planet is re-generated. Avoid saying something that might come back to haunt you later — and remember that future employers may read your old postings (as well as future in-laws, office mates, and so forth).</p></li>
@@ -233,13 +230,13 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 <article class="exercise exercise-like" id="exercise-10"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-10"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Exercise: Linking your Blog to Planets.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-10"><article class="exercise exercise-like"><p id="p-137">In the introduction, you created a blog for yourself. Add that blog to your class planet, if there is one. Monitor the planets operated by the communities that run the wikis you investigated, and create a blog posting of your own with your observations of the community planets.</p></article></div></section><section class="subsection" id="subsec-irc"><h3 class="heading hide-type">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-10"><article class="exercise exercise-like"><p id="p-138">In the introduction, you created a blog for yourself. Add that blog to your class planet, if there is one. Monitor the planets operated by the communities that run the wikis you investigated, and create a blog posting of your own with your observations of the community planets.</p></article></div></section><section class="subsection" id="subsec-irc"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.4.4</span> <span class="title">IRC</span>
 </h3>
-<p id="p-138">IRC stands for Internet Relay Chat and is one of the primary means of synchronous communication between people working on a FOSS project. It’s an older text-based chat system where clients connect to the servers of one or more networks, and the servers relay messages between themselves within each network (hence the name). Communication is done in channels which individual users join, and users are identified by nicks (nicknames). In addition to human users, various services and bots(robots — programs) are present in many channels.</p>
-<p id="p-139">To use IRC, you’ll need an IRC client; Wikipedia maintains an excellent list of options. We recommend installing a few on your system and trying them out to see which one you prefer. You’ll need to select a nickname (nick or handle) — choose wisely, because you’ll want to keep your nick for the long run. It’s strongly recommended that you register your nick so that other people cannot masquerade as you.</p>
-<p id="p-140">There are a handful of IRC networks used in open source, including ones operated by large projects (such as irc.mozilla.org) and ones which are operated by organizations and shared by many different communities (such as irc.freenode.net and irc.oftc.net). These are open channels and may be logged by one or more entities. Consider anything you say in IRC to be as public as if you said it on a busy street corner, with a megaphone, and seven people videotaping everything.</p>
-<p id="p-141">Most IRC clients let you perform operations using menus/hotkeys or by typing commands. Commands start with a slash (“/”) to distinguish them from text that you are typing into the chat session. Since the commands are the same in all IRC clients, it’s worthwhile becoming familiar with them — here are some of the basics:</p>
+<p id="p-139">IRC stands for Internet Relay Chat and is one of the primary means of synchronous communication between people working on a FOSS project. It’s an older text-based chat system where clients connect to the servers of one or more networks, and the servers relay messages between themselves within each network (hence the name). Communication is done in channels which individual users join, and users are identified by nicks (nicknames). In addition to human users, various services and bots(robots — programs) are present in many channels.</p>
+<p id="p-140">To use IRC, you’ll need an IRC client; Wikipedia maintains an excellent list of options. We recommend installing a few on your system and trying them out to see which one you prefer. You’ll need to select a nickname (nick or handle) — choose wisely, because you’ll want to keep your nick for the long run. It’s strongly recommended that you register your nick so that other people cannot masquerade as you.</p>
+<p id="p-141">There are a handful of IRC networks used in open source, including ones operated by large projects (such as irc.mozilla.org) and ones which are operated by organizations and shared by many different communities (such as irc.freenode.net and irc.oftc.net). These are open channels and may be logged by one or more entities. Consider anything you say in IRC to be as public as if you said it on a busy street corner, with a megaphone, and seven people videotaping everything.</p>
+<p id="p-142">Most IRC clients let you perform operations using menus/hotkeys or by typing commands. Commands start with a slash (“/”) to distinguish them from text that you are typing into the chat session. Since the commands are the same in all IRC clients, it’s worthwhile becoming familiar with them — here are some of the basics:</p>
 <ul class="disc">
 <li id="li-34"><p id="p-derived-li-34">/connect server – connect to the named IRC server.</p></li>
 <li id="li-35"><p id="p-derived-li-35">/list – lists available channels. Channel names start with “#” (official channels) or “##” (unofficial channels).</p></li>
@@ -248,38 +245,38 @@ eBookConfig.enable_chatcodes =  false;
 <li id="li-38"><p id="p-derived-li-38">/leave reason – leave the current channel, citing the reason given (optional).</p></li>
 <li id="li-39"><p id="p-derived-li-39">/quit reason – leave the server, citing the reason given (optional).</p></li>
 </ul>
-<p id="p-142">Any text you type that does not begin with a slash is taken to be text, and is entered into the conversation.</p>
-<p id="p-143">It is normal to join a channel and say nothing. In fact, it is expected: don’t join a channel and say “hi” or leave and say “bye” — you may be interrupting a conversation already underway. Feel free to join as many channels as you like, once you’re comfortable with IRC.</p>
-<p id="p-144">It is fine to join a channel and sit there idle for a long time, lurking. You might never say anything; this is a good way for you to learn about who is in the channel, what they are talking about, etc. Listening is often more important than talking, because you learn more.</p>
-<p id="p-145">If you have a question you should just ask it rather than saying, “Can I ask a question about …” or “Does anyone know about …”. You don’t need to direct general questions to a specific person. Rather, you should ask in the channel in general, and someone usually answers you:</p>
+<p id="p-143">Any text you type that does not begin with a slash is taken to be text, and is entered into the conversation.</p>
+<p id="p-144">It is normal to join a channel and say nothing. In fact, it is expected: don’t join a channel and say “hi” or leave and say “bye” — you may be interrupting a conversation already underway. Feel free to join as many channels as you like, once you’re comfortable with IRC.</p>
+<p id="p-145">It is fine to join a channel and sit there idle for a long time, lurking. You might never say anything; this is a good way for you to learn about who is in the channel, what they are talking about, etc. Listening is often more important than talking, because you learn more.</p>
+<p id="p-146">If you have a question you should just ask it rather than saying, “Can I ask a question about …” or “Does anyone know about …”. You don’t need to direct general questions to a specific person. Rather, you should ask in the channel in general, and someone usually answers you:</p>
 <pre class="code-block tex2jax_ignore">don: How do I ask a question?
 funny_guy: don, you just did!
 </pre>
-<p id="p-146">If there are several conversations taking place at the same time, it’s customary to put the nick of the user you are directing your comment to at the start of the line (as shown in the second line above); most IRC clients send a special alert to a user whose nick is “spoken” in a channel. Most IRC clients also auto-complete the nick when you press the [Tab] key, so you could type fun[Tab] to fill in the nick “funny_guy”.</p>
-<p id="p-147">Channels generally have a purpose, and people are often joined to many different channels at once.  You’ll see many of the same people in different channels.  However, what might be appropriate in one channel often isn’t in another.  When you enter a channel, take a look at its Topic (displayed at the top, or with the /topic command) for clues.</p>
-<p id="p-148">Generally you should avoid small-talk unless you are sure that it is appropriate. Even if you see others in the channel doing it, don’t take that to mean that you should (i.e., channel veterans can get away with things newcomers can’t!). At the same time, be ready for a playful and (at times) very sarcastic environment.</p>
-<p id="p-149">Also be aware that you never know who you are talking to based on their nicks (you learn who people are later, as you get to know people’s nicks), and avoid making assumptions about people in the channel.</p>
+<p id="p-147">If there are several conversations taking place at the same time, it’s customary to put the nick of the user you are directing your comment to at the start of the line (as shown in the second line above); most IRC clients send a special alert to a user whose nick is “spoken” in a channel. Most IRC clients also auto-complete the nick when you press the [Tab] key, so you could type fun[Tab] to fill in the nick “funny_guy”.</p>
+<p id="p-148">Channels generally have a purpose, and people are often joined to many different channels at once.  You’ll see many of the same people in different channels.  However, what might be appropriate in one channel often isn’t in another.  When you enter a channel, take a look at its Topic (displayed at the top, or with the /topic command) for clues.</p>
+<p id="p-149">Generally you should avoid small-talk unless you are sure that it is appropriate. Even if you see others in the channel doing it, don’t take that to mean that you should (i.e., channel veterans can get away with things newcomers can’t!). At the same time, be ready for a playful and (at times) very sarcastic environment.</p>
+<p id="p-150">Also be aware that you never know who you are talking to based on their nicks (you learn who people are later, as you get to know people’s nicks), and avoid making assumptions about people in the channel.</p>
 <article class="exercise exercise-like" id="exercise-11"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-11"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Exercise: Learning IRC.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-11"><article class="exercise exercise-like"><p id="p-150">Install one or more IRC clients. Find out which network(s) and channel(s) are used by the three open source communities that operate the wikis you investigated. Choose a nick and connect to those networks and channels. Leave your IRC client open for at least 24 hours, and observe the patterns of conversation and key participants. Have a discussion in at least one of the channels, and blog about your experience, including an excerpt from your conversation.</p></article></div></section><section class="subsection" id="subsec-mailinglists-newgroupds"><h3 class="heading hide-type">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-11"><article class="exercise exercise-like"><p id="p-151">Install one or more IRC clients. Find out which network(s) and channel(s) are used by the three open source communities that operate the wikis you investigated. Choose a nick and connect to those networks and channels. Leave your IRC client open for at least 24 hours, and observe the patterns of conversation and key participants. Have a discussion in at least one of the channels, and blog about your experience, including an excerpt from your conversation.</p></article></div></section><section class="subsection" id="subsec-mailinglists-newgroupds"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.4.5</span> <span class="title">Mailing Lists and Newsgroups</span>
 </h3>
-<p id="p-151">Almost all open source communities use an electronic mail list for discussions. These lists are sometimes managed through online services such as Google Groups, but are often managed through private installations of list management software such as MailMan, which provide subscriber management, bounce control, and web-accessible archiving.</p>
-<p id="p-152">Surprisingly, there is a significant variation from community to community in terms of list ettiquite and even the amount of participation on lists.</p>
-<p id="p-153">Some communities use newsgroups or forums in place of mailing lists, but these are usually gatewayed to an e-mail list — for example, Mozilla uses newsgroups extensively, but many of the Mozilla newsgroup participants actually access the newsgroups as mail.</p>
-<p id="p-154">An open-source participant subscribed to several lists in multiple communities can easily receive thousands of messages a day. For this reason, many people choose to use a separate mailbox (such as a Gmail account) or filtering rules to keep their mail under control or sign up to receive only a regular "digest" of the messages.</p>
+<p id="p-152">Almost all open source communities use an electronic mail list for discussions. These lists are sometimes managed through online services such as Google Groups, but are often managed through private installations of list management software such as MailMan, which provide subscriber management, bounce control, and web-accessible archiving.</p>
+<p id="p-153">Surprisingly, there is a significant variation from community to community in terms of list ettiquite and even the amount of participation on lists.</p>
+<p id="p-154">Some communities use newsgroups or forums in place of mailing lists, but these are usually gatewayed to an e-mail list — for example, Mozilla uses newsgroups extensively, but many of the Mozilla newsgroup participants actually access the newsgroups as mail.</p>
+<p id="p-155">An open-source participant subscribed to several lists in multiple communities can easily receive thousands of messages a day. For this reason, many people choose to use a separate mailbox (such as a Gmail account) or filtering rules to keep their mail under control or sign up to receive only a regular "digest" of the messages.</p>
 <article class="exercise exercise-like" id="exercise-12"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-12"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Exercise: Joining the List.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-12"><article class="exercise exercise-like"><p id="p-155">Subscribe to at least one mailing list from each of the three open source communities you are observing, and read through the last few months of message archives for each list. Blog your observations of their communication.</p></article></div></section><section class="subsection" id="subsec-bugtrackers-repos"><h3 class="heading hide-type">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-12"><article class="exercise exercise-like"><p id="p-156">Subscribe to at least one mailing list from each of the three open source communities you are observing, and read through the last few months of message archives for each list. Blog your observations of their communication.</p></article></div></section><section class="subsection" id="subsec-bugtrackers-repos"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.4.6</span> <span class="title">Bug Trackers and Repositories</span>
 </h3>
-<p id="p-156">It may not be immediately obvious, but bug trackers and code repositories are also important communication tools in most open source communities; for example, there are often significant discussions that take place in bug trackers. See the chapters (XREF). </p></section><section class="conclusion" id="conclusion-1"><h3 class="heading">Drawing Conclusions.<span></span>
+<p id="p-157">It may not be immediately obvious, but bug trackers and code repositories are also important communication tools in most open source communities; for example, there are often significant discussions that take place in bug trackers. See the chapters (XREF). </p></section><section class="conclusion" id="conclusion-1"><h3 class="heading">Drawing Conclusions.<span></span>
 </h3>
-<p id="p-157">We learn to read before we learn to write; in the same way, the best way to start working with an open source community is to observe that community in action. As you have completed the exercises in this chapter, you should have started to form an impression about the communities that you have been observing.</p></section><article class="exercise exercise-like" id="exercise-13"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-13"><h3 class="heading">
+<p id="p-158">We learn to read before we learn to write; in the same way, the best way to start working with an open source community is to observe that community in action. As you have completed the exercises in this chapter, you should have started to form an impression about the communities that you have been observing.</p></section><article class="exercise exercise-like" id="exercise-13"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-13"><h3 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Exercise: Share Your Thoughts.</span>
-</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-13"><article class="exercise exercise-like"><p id="p-158">Write a blog post summarizing your thoughts about the communities you’ve been observing. Specifically note your conclusions about the qualities of the community identified earlier.</p></article></div></section><div class="hidden-content tex2jax_ignore" id="hk-fn-19"><div class="fn"><code class="code-inline tex2jax_ignore">planet.mozilla.org</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-20"><div class="fn"><code class="code-inline tex2jax_ignore">planet.fedoraproject.org</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-21"><div class="fn"><code class="code-inline tex2jax_ignore">https://planet.documentfoundation.org/</code></div></div>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-13"><article class="exercise exercise-like"><p id="p-159">Write a blog post summarizing your thoughts about the communities you’ve been observing. Specifically note your conclusions about the qualities of the community identified earlier.</p></article></div></section><div class="hidden-content tex2jax_ignore" id="hk-fn-21"><div class="fn"><code class="code-inline tex2jax_ignore">planet.mozilla.org</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-22"><div class="fn"><code class="code-inline tex2jax_ignore">planet.fedoraproject.org</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-23"><div class="fn"><code class="code-inline tex2jax_ignore">https://planet.documentfoundation.org/</code></div></div>
 </div></main>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
