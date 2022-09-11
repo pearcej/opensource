@@ -1,35 +1,1499 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec_first-intro" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Introduction to First Chapter</title>
+<section xml:id="sec_git_basics" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Git Basics</title>
   <introduction>
     <p>
-      Intro to section, because we will have subsections.
-    </p>
-    <p>
-      Another paragraph of the introduction.
+    If you can read only one chapter to get going with Git, this is it. This chapter covers every basic command you need to do the vast majority of the things you’ll eventually spend your time doing with Git. By the end of the chapter, you should be able to configure and initialize a repository, begin and stop tracking files, and stage and commit changes. We’ll also show you how to set up Git to ignore certain files and file patterns, how to undo mistakes quickly and easily, how to browse the history of your project and view changes between commits, and how to push and pull from remote repositories.
     </p>
   </introduction>
-  <subsection xml:id="subsec_a-subsection">
-    <title>A subsection</title>
-    <p>
-      Content of the subsection.
-    </p>
-    <p>
-      More content.
-    </p>
-  </subsection>
 
-  <subsection xml:id="subsec_another-subsection">
-    <title>Another Subsection</title>
-    <p>
-      Text with some math: <m>\sin(x) = \cos(x)</m> only for some values of <m>x</m>.
-    </p>
-  </subsection>
+		<subsection xml:id="_getting_a_repo">
+			<title>Getting a Git Repository</title>
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				You typically obtain a Git repository in one of two ways:
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="olist arabic"-->
+			<p><ol>
+				<li>
+							<p>
+				You can take a local directory that is currently not under version control, and turn it into a Git repository, or
+			</p>
+				</li>
+
+				<li>
+							<p>
+				You can <em>clone</em> an existing Git repository from elsewhere.
+			</p>
+				</li>
+
+			</ol></p><!--</div attr= class="olist arabic">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				In either case, you end up with a Git repository on your local machine, ready for work.
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="sect3"-->
+
+			<subsubsection xml:id="_initializing_a_repository_in_an_existing_directory">
+				<title>Initializing a Repository in an Existing Directory</title>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					If you have a project directory that is currently not under version control and you want to start controlling it with Git, you first need to go to that project’s directory. If you’ve never done this, it looks a little different depending on which system you’re running:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					for Linux:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ cd /home/user/my_project</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					for macOS:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ cd /Users/user/my_project</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					for Windows:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ cd C:/Users/user/my_project</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					and type:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git init</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					This creates a new subdirectory named <c>.git</c> that contains all of your necessary repository files — a Git repository skeleton. At this point, nothing in your project is tracked yet. See <url href="ch00/ch10-git-internals">Git Internals</url> for more information about exactly what files are contained in the <c>.git</c> directory you just created.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					If you want to start version-controlling existing files (as opposed to an empty directory), you should probably begin tracking those files and do an initial commit. You can accomplish that with a few <c>git add</c> commands that specify the files you want to track, followed by a <c>git commit</c>:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git add *.c
+$ git add LICENSE
+$ git commit -m 'Initial project version'</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					We’ll go over what these commands do in just a minute. At this point, you have a Git repository with tracked files and an initial commit.
+				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
+
+<!-- div attr= class="sect3"-->
+			</subsubsection>
+
+			<subsubsection xml:id="_git_cloning">
+				<title>Cloning an Existing Repository</title>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					If you want to get a copy of an existing Git repository — for example, a project you’d like to contribute to — the command you need is <c>git clone</c>. If you’re familiar with other VCSs such as Subversion, you’ll notice that the command is "clone" and not "checkout". This is an important distinction — instead of getting just a working copy, Git receives a full copy of nearly all data that the server has. Every version of every file for the history of the project is pulled down by default when you run <c>git clone</c>. In fact, if your server disk gets corrupted, you can often use nearly any of the clones on any client to set the server back to the state it was in when it was cloned (you may lose some server-side hooks and such, but all the versioned data would be there — see <url href="ch00/_getting_git_on_a_server">Getting Git on a Server</url> for more details).
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					You clone a repository with <c>git clone &lt;url&gt;</c>. For example, if you want to clone the Git linkable library called <c>libgit2</c>, you can do so like this:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git clone https://github.com/libgit2/libgit2</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					That creates a directory named <c>libgit2</c>, initializes a <c>.git</c> directory inside it, pulls down all the data for that repository, and checks out a working copy of the latest version. If you go into the new <c>libgit2</c> directory that was just created, you’ll see the project files in there, ready to be worked on or used.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					If you want to clone the repository into a directory named something other than <c>libgit2</c>, you can specify the new directory name as an additional argument:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git clone https://github.com/libgit2/libgit2 mylibgit</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					That command does the same thing as the previous one, but the target directory is called <c>mylibgit</c>.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Git has a number of different transfer protocols you can use. The previous example uses the <c>https://</c> protocol, but you may also see <c>git://</c> or <c>user@server:path/to/repo.git</c>, which uses the SSH transfer protocol. 
+				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
+
+			</subsubsection>
+
+		</subsection>
+
+  		<subsection xml:id="_recording_changes_to_the_repository">
+			<title>Recording Changes to the Repository</title>
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				At this point, you should have a <em>bona fide</em> Git repository on your local machine, and a checkout or <em>working copy</em> of all of its files in front of you. Typically, you’ll want to start making changes and committing snapshots of those changes into your repository each time the project reaches a state you want to record.
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				Remember that each file in your working directory can be in one of two states: <em>tracked</em> or <em>untracked</em>. Tracked files are files that were in the last snapshot, as well as any newly staged files; they can be unmodified, modified, or staged. In short, tracked files are files that Git knows about.
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				Untracked files are everything else — any files in your working directory that were not in your last snapshot and are not in your staging area. When you first clone a repository, all of your files will be tracked and unmodified because Git just checked them out and you haven’t edited anything.
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				As you edit files, Git sees them as modified, because you’ve changed them since your last commit. As you work, you selectively stage these modified files and then commit all those staged changes, and the cycle repeats.
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="imageblock"-->
+<!-- div attr= class="content"-->
+<figure xml:id="git-lifecycle">
+  <caption>The lifecycle of the status of your files</caption>
+
+<image source='lifecycle.png'/><!--</div attr= class="content">-->
+</figure>
+<!-- div attr= class="title"-->
+<!--</div attr= class="title">--><!--</div attr= class="imageblock">-->
+
+<!-- div attr= class="sect3"-->
+
+			<subsubsection xml:id="_checking_status">
+				<title>Checking the Status of Your Files</title>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					The main tool you use to determine which files are in which state is the <c>git status</c> command. If you run this command directly after a clone, you should see something like this:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					This means you have a clean working directory; in other words, none of your tracked files are modified. Git also doesn’t see any untracked files, or they would be listed here. Finally, the command tells you which branch you’re on and informs you that it has not diverged from the same branch on the server. For now, that branch is always <c>master</c>, which is the default; you won’t worry about it here. <url href="ch00/ch03-git-branching">Git Branching</url> will go over branches and references in detail.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Let’s say you add a new file to your project, a simple <c>README</c> file. If the file didn’t exist before, and you run <c>git status</c>, you see your untracked file like so:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ echo 'My Project' &gt; README
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+
+    README
+
+nothing added to commit but untracked files present (use "git add" to track)</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					You can see that your new <c>README</c> file is untracked, because it’s under the “Untracked files” heading in your status output. Untracked basically means that Git sees a file you didn’t have in the previous snapshot (commit), and which hasn’t yet been staged; Git won’t start including it in your commit snapshots until you explicitly tell it to do so. It does this so you don’t accidentally begin including generated binary files or other files that you did not mean to include. You do want to start including <c>README</c>, so let’s start tracking the file.
+				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
+
+<!-- div attr= class="sect3"-->
+			</subsubsection>
+
+			<subsubsection xml:id="_tracking_files">
+				<title>Tracking New Files</title>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					In order to begin tracking a new file, you use the command <c>git add</c>. To begin tracking the <c>README</c> file, you can run this:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git add README</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					If you run your status command again, you can see that your <c>README</c> file is now tracked and staged to be committed:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git restore --staged &lt;file&gt;..." to unstage)
+
+    new file:   README</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					You can tell that it’s staged because it’s under the “Changes to be committed” heading. If you commit at this point, the version of the file at the time you ran <c>git add</c> is what will be in the subsequent historical snapshot. You may recall that when you ran <c>git init</c> earlier, you then ran <c>git add &lt;files&gt;</c> — that was to begin tracking files in your directory. The <c>git add</c> command takes a path name for either a file or a directory; if it’s a directory, the command adds all the files in that directory recursively.
+				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
+
+<!-- div attr= class="sect3"-->
+			</subsubsection>
+
+			<subsubsection xml:id="_staging_modified_files">
+				<title>Staging Modified Files</title>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Let’s change a file that was already tracked. If you change a previously tracked file called <c>CONTRIBUTING.md</c> and then run your <c>git status</c> command again, you get something that looks like this:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
+
+    new file:   README
+
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+    modified:   CONTRIBUTING.md</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					The <c>CONTRIBUTING.md</c> file appears under a section named “Changes not staged for commit” — which means that a file that is tracked has been modified in the working directory but not yet staged. To stage it, you run the <c>git add</c> command. <c>git add</c> is a multipurpose command — you use it to begin tracking new files, to stage files, and to do other things like marking merge-conflicted files as resolved. It may be helpful to think of it more as “add precisely this content to the next commit” rather than “add this file to the project”. Let’s run <c>git add</c> now to stage the <c>CONTRIBUTING.md</c> file, and then run <c>git status</c> again:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git add CONTRIBUTING.md
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
+
+    new file:   README
+    modified:   CONTRIBUTING.md</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Both files are staged and will go into your next commit. At this point, suppose you remember one little change that you want to make in <c>CONTRIBUTING.md</c> before you commit it. You open it again and make that change, and you’re ready to commit. However, let’s run <c>git status</c> one more time:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ vim CONTRIBUTING.md
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
+
+    new file:   README
+    modified:   CONTRIBUTING.md
+
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+    modified:   CONTRIBUTING.md</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					What the heck? Now <c>CONTRIBUTING.md</c> is listed as both staged <em>and</em> unstaged. How is that possible? It turns out that Git stages a file exactly as it is when you run the <c>git add</c> command. If you commit now, the version of <c>CONTRIBUTING.md</c> as it was when you last ran the <c>git add</c> command is how it will go into the commit, not the version of the file as it looks in your working directory when you run <c>git commit</c>. If you modify a file after you run <c>git add</c>, you have to run <c>git add</c> again to stage the latest version of the file:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git add CONTRIBUTING.md
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
+
+    new file:   README
+    modified:   CONTRIBUTING.md</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">--><!--</div attr= class="sect3">-->
+
+<!-- div attr= class="sect3"-->
+			</subsubsection>
+
+			<subsubsection xml:id="_short_status">
+				<title>Short Status</title>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					While the <c>git status</c> output is pretty comprehensive, it’s also quite wordy. Git also has a short status flag so you can see your changes in a more compact way. If you run <c>git status -s</c> or <c>git status --short</c> you get a far more simplified output from the command:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git status -s
+ M README
+MM Rakefile
+A  lib/git.rb
+M  lib/simplegit.rb
+?? LICENSE.txt</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					New files that aren’t tracked have a <c>??</c> next to them, new files that have been added to the staging area have an <c>A</c>, modified files have an <c>M</c> and so on. There are two columns to the output — the left-hand column indicates the status of the staging area and the right-hand column indicates the status of the working tree. So for example in that output, the <c>README</c> file is modified in the working directory but not yet staged, while the <c>lib/simplegit.rb</c> file is modified and staged. The <c>Rakefile</c> was modified, staged and then modified again, so there are changes to it that are both staged and unstaged.
+				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
+
+<!-- div attr= class="sect3"-->
+			</subsubsection>
+
+			<subsubsection xml:id="_ignoring">
+				<title>Ignoring Files</title>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Often, you’ll have a class of files that you don’t want Git to automatically add or even show you as being untracked. These are generally automatically generated files such as log files or files produced by your build system. In such cases, you can create a file listing patterns to match them named <c>.gitignore</c>. Here is an example <c>.gitignore</c> file:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ cat .gitignore
+*.[oa]
+*~</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					The first line tells Git to ignore any files ending in “.o” or “.a” — object and archive files that may be the product of building your code. The second line tells Git to ignore all files whose names end with a tilde (<c>~</c>), which is used by many text editors such as Emacs to mark temporary files. You may also include a log, tmp, or pid directory; automatically generated documentation; and so on. Setting up a <c>.gitignore</c> file for your new repository before you get going is generally a good idea so you don’t accidentally commit files that you really don’t want in your Git repository.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					The rules for the patterns you can put in the <c>.gitignore</c> file are as follows:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="ulist"-->
+				<p><ul>
+					<li>
+									<p>
+					Blank lines or lines starting with <c>#</c> are ignored.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					Standard glob patterns work, and will be applied recursively throughout the entire working tree.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					You can start patterns with a forward slash (<c>/</c>) to avoid recursivity.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					You can end patterns with a forward slash (<c>/</c>) to specify a directory.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					You can negate a pattern by starting it with an exclamation point (<c>!</c>).
+				</p>
+					</li>
+
+				</ul></p><!--</div attr= class="ulist">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Glob patterns are like simplified regular expressions that shells use. An asterisk (<c>*</c>) matches zero or more characters; <c>[abc]</c> matches any character inside the brackets (in this case a, b, or c); a question mark (<c>?</c>) matches a single character; and brackets enclosing characters separated by a hyphen (<c>[0-9]</c>) matches any character between them (in this case 0 through 9). You can also use two asterisks to match nested directories; <c>a/**/z</c> would match <c>a/z</c>, <c>a/b/z</c>, <c>a/b/c/z</c>, and so on.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Here is another example <c>.gitignore</c> file:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre># ignore all .a files
+*.a
+
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+
+# ignore all files in any directory named build
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory and any of its subdirectories
+doc/**/*.pdf</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+        
+				<hint>
+          <p>
+            Tip: GitHub maintains a fairly comprehensive list of good <c>.gitignore</c> file examples for dozens of projects and languages at <url href="https://github.com/github/gitignore">https://github.com/github/gitignore</url> if you want a starting point for your project.
+          </p>
+        </hint>	
+				
+
+				<p>
+					Note: In the simple case, a repository might have a single <c>.gitignore</c> file in its root directory, which applies recursively to the entire repository. However, it is also possible to have additional <c>.gitignore</c> files in subdirectories. The rules in these nested <c>.gitignore</c> files apply only to the files under the directory where they are located. The Linux kernel source repository has 206 <c>.gitignore</c> files.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					It is beyond the scope of this book to get into the details of multiple <c>.gitignore</c> files; see <c>man gitignore</c> for the details.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="sect3"-->
+			</subsubsection>
+
+			<subsubsection xml:id="_git_diff_staged">
+				<title>Viewing Your Staged and Unstaged Changes</title>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					If the <c>git status</c> command is too vague for you — you want to know exactly what you changed, not just which files were changed — you can use the <c>git diff</c> command. We’ll cover <c>git diff</c> in more detail later, but you’ll probably use it most often to answer these two questions: What have you changed but not yet staged? And what have you staged that you are about to commit? Although <c>git status</c> answers those questions very generally by listing the file names, <c>git diff</c> shows you the exact lines added and removed — the patch, as it were.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Let’s say you edit and stage the <c>README</c> file again and then edit the <c>CONTRIBUTING.md</c> file without staging it. If you run your <c>git status</c> command, you once again see something like this:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
+
+    modified:   README
+
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+    modified:   CONTRIBUTING.md</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					To see what you’ve changed but not yet staged, type <c>git diff</c> with no other arguments:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git diff
+diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
+index 8ebb991..643e24f 100644
+--- a/CONTRIBUTING.md
++++ b/CONTRIBUTING.md
+@@ -65,7 +65,8 @@ branch directly, things can get messy.
+ Please include a nice description of your changes when you submit your PR;
+ if we have to read the whole diff to figure out why you're contributing
+ in the first place, you're less likely to get feedback and have your change
+-merged in.
++merged in. Also, split your changes into comprehensive chunks if your patch is
++longer than a dozen lines.
+
+ If you are starting to work on a particular area, feel free to submit a PR
+ that highlights your work in progress (and note in the PR title that it's</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					That command compares what is in your working directory with what is in your staging area. The result tells you the changes you’ve made that you haven’t yet staged.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					If you want to see what you’ve staged that will go into your next commit, you can use <c>git diff --staged</c>. This command compares your staged changes to your last commit:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git diff --staged
+diff --git a/README b/README
+new file mode 100644
+index 0000000..03902a1
+--- /dev/null
++++ b/README
+@@ -0,0 +1 @@
++My Project</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					It’s important to note that <c>git diff</c> by itself doesn’t show all changes made since your last commit — only changes that are still unstaged. If you’ve staged all of your changes, <c>git diff</c> will give you no output.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					For another example, if you stage the <c>CONTRIBUTING.md</c> file and then edit it, you can use <c>git diff</c> to see the changes in the file that are staged and the changes that are unstaged. If our environment looks like this:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git add CONTRIBUTING.md
+$ echo '# test line' &gt;&gt; CONTRIBUTING.md
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
+
+    modified:   CONTRIBUTING.md
+
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+    modified:   CONTRIBUTING.md</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Now you can use <c>git diff</c> to see what is still unstaged:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git diff
+diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
+index 643e24f..87f08c8 100644
+--- a/CONTRIBUTING.md
++++ b/CONTRIBUTING.md
+@@ -119,3 +119,4 @@ at the
+ ## Starter Projects
+
+ See our [projects list](https://github.com/libgit2/libgit2/blob/development/PROJECTS.md).
++# test line</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					and <c>git diff --cached</c> to see what you’ve staged so far (<c>--staged</c> and <c>--cached</c> are synonyms):
+				</p><!--</div attr= class="paragraph">-->
+<p>
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git diff --cached
+diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
+index 8ebb991..643e24f 100644
+--- a/CONTRIBUTING.md
++++ b/CONTRIBUTING.md
+@@ -65,7 +65,8 @@ branch directly, things can get messy.
+ Please include a nice description of your changes when you submit your PR;
+ if we have to read the whole diff to figure out why you're contributing
+ in the first place, you're less likely to get feedback and have your change
+-merged in.
++merged in. Also, split your changes into comprehensive chunks if your patch is
++longer than a dozen lines.
+
+ If you are starting to work on a particular area, feel free to submit a PR
+ that highlights your work in progress (and note in the PR title that it is so.
+ </pre>
+</p>
+
+        <p>
+          Note:
+        Git Diff in an External Tool
+        </p>
+				<p>
+					We will continue to use the <c>git diff</c> command in various ways throughout the rest of the book. There is another way to look at these diffs if you prefer a graphical or external diff viewing program instead. If you run <c>git difftool</c> instead of <c>git diff</c>, you can view any of these diffs in software like emerge, vimdiff and many more (including commercial products). Run <c>git difftool --tool-help</c> to see what is available on your system.
+          </p>
+
+
+<!-- div attr= class="sect3"-->
+			</subsubsection>
+
+			<subsubsection xml:id="_committing_changes">
+				<title>Committing Your Changes</title>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Now that your staging area is set up the way you want it, you can commit your changes. Remember that anything that is still unstaged — any files you have created or modified that you haven’t run <c>git add</c> on since you edited them — won’t go into this commit. They will stay as modified files on your disk. In this case, let’s say that the last time you ran <c>git status</c>, you saw that everything was staged, so you’re ready to commit your changes. The simplest way to commit is to type <c>git commit</c>:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git commit</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Doing so launches your editor of choice.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="admonitionblock note"-->
+				<!--table>
+					<caption>TBA</caption>
+<col width="50%" />
+<col width="50%" />
+					<tabular>
+					<row class="odd">
+						<cell halign="left">
+Note</cell>
+						<cell halign="left">
+				
+					This is set by your shell’s <c>EDITOR</c> environment variable — usually vim or emacs, although you can configure it with whatever you want using the <c>git config - -global core.editor</c> command as you saw in <url href="ch00/ch01-getting-started">Getting Started</url>.
+				</cell>
+					</row>
+					</tabular>
+				</table-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					The editor displays the following text (this example is a Vim screen):
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre># Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#   new file:   README
+#   modified:   CONTRIBUTING.md
+#
+~
+~
+~
+".git/COMMIT_EDITMSG" 9L, 283C</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					You can see that the default commit message contains the latest output of the <c>git status</c> command commented out and one empty line on top. You can remove these comments and type your commit message, or you can leave them there to help you remember what you’re committing.
+				</p><!--</div attr= class="paragraph">-->
+
+
+				<p>
+					Note: For an even more explicit reminder of what you’ve modified, you can pass the <c>-v</c> option to <c>git commit</c>. Doing so also puts the diff of your change in the editor so you can see exactly what changes you’re committing.
+				</p>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					When you exit the editor, Git creates your commit with that commit message (with the comments and diff stripped out).
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Alternatively, you can type your commit message inline with the <c>commit</c> command by specifying it after a <c>-m</c> flag, like this:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git commit -m "Story 182: fix benchmarks for speed"
+[master 463dc4f] Story 182: fix benchmarks for speed
+ 2 files changed, 2 insertions(+)
+ create mode 100644 README</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Now you’ve created your first commit! You can see that the commit has given you some output about itself: which branch you committed to (<c>master</c>), what SHA-1 checksum the commit has (<c>463dc4f</c>), how many files were changed, and statistics about lines added and removed in the commit.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Remember that the commit records the snapshot you set up in your staging area. Anything you didn’t stage is still sitting there modified; you can do another commit to add it to your history. Every time you perform a commit, you’re recording a snapshot of your project that you can revert to or compare to later.
+				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
+
+<!-- div attr= class="sect3"-->
+			</subsubsection>
+
+			<subsubsection xml:id="_skipping_the_staging_area">
+				<title>Skipping the Staging Area</title>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Although it can be amazingly useful for crafting commits exactly how you want them, the staging area is sometimes a bit more complex than you need in your workflow. If you want to skip the staging area, Git provides a simple shortcut. Adding the <c>-a</c> option to the <c>git commit</c> command makes Git automatically stage every file that is already tracked before doing the commit, letting you skip the <c>git add</c> part:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+    modified:   CONTRIBUTING.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+$ git commit -a -m 'Add new benchmarks'
+[master 83e38c7] Add new benchmarks
+ 1 file changed, 5 insertions(+), 0 deletions(-)</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Notice how you don’t have to run <c>git add</c> on the <c>CONTRIBUTING.md</c> file in this case before you commit. That’s because the <c>-a</c> flag includes all changed files. This is convenient, but be careful; sometimes this flag will cause you to include unwanted changes.
+				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
+
+<!-- div attr= class="sect3"-->
+			</subsubsection>
+
+			<subsubsection xml:id="_removing_files">
+				<title>Removing Files</title>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					To remove a file from Git, you have to remove it from your tracked files (more accurately, remove it from your staging area) and then commit. The <c>git rm</c> command does that, and also removes the file from your working directory so you don’t see it as an untracked file the next time around.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					If you simply remove the file from your working directory, it shows up under the “Changes not staged for commit” (that is, <em>unstaged</em>) area of your <c>git status</c> output:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ rm PROJECTS.md
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add/rm &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+        deleted:    PROJECTS.md
+
+no changes added to commit (use "git add" and/or "git commit -a")</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Then, if you run <c>git rm</c>, it stages the file’s removal:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git rm PROJECTS.md
+rm 'PROJECTS.md'
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
+
+    deleted:    PROJECTS.md</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					The next time you commit, the file will be gone and no longer tracked. If you modified the file or had already added it to the staging area, you must force the removal with the <c>-f</c> option. This is a safety feature to prevent accidental removal of data that hasn’t yet been recorded in a snapshot and that can’t be recovered from Git.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Another useful thing you may want to do is to keep the file in your working tree but remove it from your staging area. In other words, you may want to keep the file on your hard drive but not have Git track it anymore. This is particularly useful if you forgot to add something to your <c>.gitignore</c> file and accidentally staged it, like a large log file or a bunch of <c>.a</c> compiled files. To do this, use the <c>--cached</c> option:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git rm --cached README</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					You can pass files, directories, and file-glob patterns to the <c>git rm</c> command. That means you can do things such as:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git rm log/\*.log</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Note the backslash (<c>\</c>) in front of the <c>*</c>. This is necessary because Git does its own filename expansion in addition to your shell’s filename expansion. This command removes all files that have the <c>.log</c> extension in the <c>log/</c> directory. Or, you can do something like this:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git rm \*~</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					This command removes all files whose names end with a <c>~</c>.
+				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
+
+<!-- div attr= class="sect3"-->
+			</subsubsection>
+
+			<subsubsection xml:id="_git_mv">
+				<title>Moving Files</title>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Unlike many other VCSs, Git doesn’t explicitly track file movement. If you rename a file in Git, no metadata is stored in Git that tells it you renamed the file. However, Git is pretty smart about figuring that out after the fact — we’ll deal with detecting file movement a bit later.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Thus it’s a bit confusing that Git has a <c>mv</c> command. If you want to rename a file in Git, you can run something like:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git mv file_from file_to</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					and it works fine. In fact, if you run something like this and look at the status, you’ll see that Git considers it a renamed file:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git mv README.md README
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
+
+    renamed:    README.md -&gt; README</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					However, this is equivalent to running something like this:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ mv README.md README
+$ git rm README.md
+$ git add README</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Git figures out that it’s a rename implicitly, so it doesn’t matter if you rename a file that way or with the <c>mv</c> command. The only real difference is that <c>git mv</c> is one command instead of three — it’s a convenience function. More importantly, you can use any tool you like to rename a file, and address the <c>add</c>/<c>rm</c> later, before you commit.
+				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
+
+
+			</subsubsection>
+      </subsection>
+
+  		<subsection xml:id="_viewing_history">
+			<title>Viewing the Commit History</title>
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				After you have created several commits, or if you have cloned a repository with an existing commit history, you’ll probably want to look back to see what has happened. The most basic and powerful tool to do this is the <c>git log</c> command.
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				These examples use a very simple project called “simplegit”. To get the project, run:
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+			<pre>$ git clone https://github.com/schacon/simplegit-progit</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				When you run <c>git log</c> in this project, you should get output that looks something like this:
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+			<pre>$ git log
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+    Change version number
+
+commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 16:40:33 2008 -0700
+
+    Remove unnecessary test
+
+commit a11bef06a3f659402fe7563abf99ad00de2209e6
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 10:31:28 2008 -0700
+
+    Initial commit</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				By default, with no arguments, <c>git log</c> lists the commits made in that repository in reverse chronological order; that is, the most recent commits show up first. As you can see, this command lists each commit with its SHA-1 checksum, the author’s name and email, the date written, and the commit message.
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				A huge number and variety of options to the <c>git log</c> command are available to show you exactly what you’re looking for. Here, we’ll show you some of the most popular.
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				One of the more helpful options is <c>-p</c> or <c>--patch</c>, which shows the difference (the <em>patch</em> output) introduced in each commit. You can also limit the number of log entries displayed, such as using <c>-2</c> to show only the last two entries.
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+			<pre>$ git log -p -2
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+    Change version number
+
+diff --git a/Rakefile b/Rakefile
+index a874b73..8f94139 100644
+--- a/Rakefile
++++ b/Rakefile
+@@ -5,7 +5,7 @@ require 'rake/gempackagetask'
+ spec = Gem::Specification.new do |s|
+     s.platform  =   Gem::Platform::RUBY
+     s.name      =   "simplegit"
+-    s.version   =   "0.1.0"
++    s.version   =   "0.1.1"
+     s.author    =   "Scott Chacon"
+     s.email     =   "schacon@gee-mail.com"
+     s.summary   =   "A simple gem for using Git in Ruby code."
+
+commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 16:40:33 2008 -0700
+
+    Remove unnecessary test
+
+diff --git a/lib/simplegit.rb b/lib/simplegit.rb
+index a0a60ae..47c6340 100644
+--- a/lib/simplegit.rb
++++ b/lib/simplegit.rb
+@@ -18,8 +18,3 @@ class SimpleGit
+     end
+
+ end
+-
+-if $0 == __FILE__
+-  git = SimpleGit.new
+-  puts git.show
+-end</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				This option displays the same information but with a diff directly following each entry. This is very helpful for code review or to quickly browse what happened during a series of commits that a collaborator has added. You can also use a series of summarizing options with <c>git log</c>. For example, if you want to see some abbreviated stats for each commit, you can use the <c>--stat</c> option:
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+			<pre>$ git log --stat
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+    Change version number
+
+ Rakefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 16:40:33 2008 -0700
+
+    Remove unnecessary test
+
+ lib/simplegit.rb | 5 -----
+ 1 file changed, 5 deletions(-)
+
+commit a11bef06a3f659402fe7563abf99ad00de2209e6
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 10:31:28 2008 -0700
+
+    Initial commit
+
+ README           |  6 ++++++
+ Rakefile         | 23 +++++++++++++++++++++++
+ lib/simplegit.rb | 25 +++++++++++++++++++++++++
+ 3 files changed, 54 insertions(+)</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				As you can see, the <c>--stat</c> option prints below each commit entry a list of modified files, how many files were changed, and how many lines in those files were added and removed. It also puts a summary of the information at the end.
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				Another really useful option is <c>--pretty</c>. This option changes the log output to formats other than the default. A few prebuilt option values are available for you to use. The <c>oneline</c> value for this option prints each commit on a single line, which is useful if you’re looking at a lot of commits. In addition, the <c>short</c>, <c>full</c>, and <c>fuller</c> values show the output in roughly the same format but with less or more information, respectively:
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+			<pre>$ git log --pretty=oneline
+ca82a6dff817ec66f44342007202690a93763949 Change version number
+085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7 Remove unnecessary test
+a11bef06a3f659402fe7563abf99ad00de2209e6 Initial commit</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				The most interesting option value is <c>format</c>, which allows you to specify your own log output format. This is especially useful when you’re generating output for machine parsing — because you specify the format explicitly, you know it won’t change with updates to Git:
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+			<pre>$ git log --pretty=format:"%h - %an, %ar : %s"
+ca82a6d - Scott Chacon, 6 years ago : Change version number
+085bb3b - Scott Chacon, 6 years ago : Remove unnecessary test
+a11bef0 - Scott Chacon, 6 years ago : Initial commit</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				<url href="ch00/pretty_format">Useful specifiers for <c>git log --pretty=format</c></url> lists some of the more useful specifiers that <c>format</c> takes.
+			</p><!--</div attr= class="paragraph">-->
+
+			<table>
+				<title>Useful specifiers for <c>git log --pretty=format</c></title>
+<col width="20%" />
+<col width="80%" />
+				<tabular>
+				<row header="yes">
+					<cell halign="left">Specifier</cell>
+					<cell halign="left">Description of Output</cell>
+				</row>
+				<row class="odd">
+					<cell halign="left">			
+				<c>%H</c>
+			</cell>
+					<cell halign="left">			
+				Commit hash
+			</cell>
+				</row>
+				<row class="even">
+					<cell halign="left">			
+				<c>%h</c>
+			</cell>
+					<cell halign="left">			
+				Abbreviated commit hash
+			</cell>
+				</row>
+				<row class="odd">
+					<cell halign="left">			
+				<c>%T</c>
+			</cell>
+					<cell halign="left">			
+				Tree hash
+			</cell>
+				</row>
+				<row class="even">
+					<cell halign="left">			
+				<c>%t</c>
+			</cell>
+					<cell halign="left">			
+				Abbreviated tree hash
+			</cell>
+				</row>
+				<row class="odd">
+					<cell halign="left">			
+				<c>%P</c>
+			</cell>
+					<cell halign="left">			
+				Parent hashes
+			</cell>
+				</row>
+				<row class="even">
+					<cell halign="left">			
+				<c>%p</c>
+			</cell>
+					<cell halign="left">			
+				Abbreviated parent hashes
+			</cell>
+				</row>
+				<row class="odd">
+					<cell halign="left">			
+				<c>%an</c>
+			</cell>
+					<cell halign="left">			
+				Author name
+			</cell>
+				</row>
+				<row class="even">
+					<cell halign="left">			
+				<c>%ae</c>
+			</cell>
+					<cell halign="left">			
+				Author email
+			</cell>
+				</row>
+				<row class="odd">
+					<cell halign="left">			
+				<c>%ad</c>
+			</cell>
+					<cell halign="left">			
+				Author date (format respects the --date=option)
+			</cell>
+				</row>
+				<row class="even">
+					<cell halign="left">			
+				<c>%ar</c>
+			</cell>
+					<cell halign="left">			
+				Author date, relative
+			</cell>
+				</row>
+				<row class="odd">
+					<cell halign="left">			
+				<c>%cn</c>
+			</cell>
+					<cell halign="left">			
+				Committer name
+			</cell>
+				</row>
+				<row class="even">
+					<cell halign="left">			
+				<c>%ce</c>
+			</cell>
+					<cell halign="left">			
+				Committer email
+			</cell>
+				</row>
+				<row class="odd">
+					<cell halign="left">			
+				<c>%cd</c>
+			</cell>
+					<cell halign="left">			
+				Committer date
+			</cell>
+				</row>
+				<row class="even">
+					<cell halign="left">			
+				<c>%cr</c>
+			</cell>
+					<cell halign="left">			
+				Committer date, relative
+			</cell>
+				</row>
+				<row class="odd">
+					<cell halign="left">			
+				<c>%s</c>
+			</cell>
+					<cell halign="left">			
+				Subject
+			</cell>
+				</row>
+				</tabular>
+			</table>
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				You may be wondering what the difference is between <em>author</em> and <em>committer</em>. The author is the person who originally wrote the work, whereas the committer is the person who last applied the work. So, if you send in a patch to a project and one of the core members applies the patch, both of you get credit — you as the author, and the core member as the committer. We’ll cover this distinction a bit more in <url href="ch00/ch05-distributed-git">Distributed Git</url>.
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				The <c>oneline</c> and <c>format</c> option values are particularly useful with another <c>log</c> option called <c>--graph</c>. This option adds a nice little ASCII graph showing your branch and merge history:
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+			<pre>$ git log --pretty=format:"%h %s" --graph
+* 2d3acf9 Ignore errors from SIGCHLD on trap
+*  5e3ee11 Merge branch 'master' of git://github.com/dustin/grit
+|\
+| * 420eac9 Add method for getting the current branch
+* | 30e367c Timeout code and tests
+* | 5a09431 Add timeout protection to grit
+* | e1193f8 Support for heads with slashes in them
+|/
+* d6016bc Require time for xmlschema
+*  11d191e Merge branch 'defunkt' into local</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				This type of output will become more interesting as we go through branching and merging in the next chapter.
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				Those are only some simple output-formatting options to <c>git log</c> — there are many more. <url href="ch00/log_options">Common options to <c>git log</c></url> lists the options we’ve covered so far, as well as some other common formatting options that may be useful, along with how they change the output of the log command.
+			</p><!--</div attr= class="paragraph">-->
+
+			<table>
+				<title>Common options to <c>git log</c></title>
+<col width="20%" />
+<col width="80%" />
+				<tabular>
+				<row header="yes">
+					<cell halign="left">Option</cell>
+					<cell halign="left">Description</cell>
+				</row>
+				<row class="odd">
+					<cell halign="left">			
+				<c>-p</c>
+			</cell>
+					<cell halign="left">			
+				Show the patch introduced with each commit.
+			</cell>
+				</row>
+				<row class="even">
+					<cell halign="left">			
+				<c>--stat</c>
+			</cell>
+					<cell halign="left">			
+				Show statistics for files modified in each commit.
+			</cell>
+				</row>
+				<row class="odd">
+					<cell halign="left">			
+				<c>--shortstat</c>
+			</cell>
+					<cell halign="left">			
+				Display only the changed/insertions/deletions line from the --stat command.
+			</cell>
+				</row>
+				<row class="even">
+					<cell halign="left">			
+				<c>--name-only</c>
+			</cell>
+					<cell halign="left">			
+				Show the list of files modified after the commit information.
+			</cell>
+				</row>
+				<row class="odd">
+					<cell halign="left">			
+				<c>--name-status</c>
+			</cell>
+					<cell halign="left">			
+				Show the list of files affected with added/modified/deleted information as well.
+			</cell>
+				</row>
+				<row class="even">
+					<cell halign="left">			
+				<c>--abbrev-commit</c>
+			</cell>
+					<cell halign="left">			
+				Show only the first few characters of the SHA-1 checksum instead of all 40.
+			</cell>
+				</row>
+				<row class="odd">
+					<cell halign="left">			
+				<c>--relative-date</c>
+			</cell>
+					<cell halign="left">			
+				Display the date in a relative format (for example, “2 weeks ago”) instead of using the full date format.
+			</cell>
+				</row>
+				<row class="even">
+					<cell halign="left">			
+				<c>--graph</c>
+			</cell>
+					<cell halign="left">			
+				Display an ASCII graph of the branch and merge history beside the log output.
+			</cell>
+				</row>
+				<row class="odd">
+					<cell halign="left">			
+				<c>--pretty</c>
+			</cell>
+					<cell halign="left">			
+				Show commits in an alternate format. Option values include oneline, short, full, fuller, and format (where you specify your own format).
+			</cell>
+				</row>
+				<row class="even">
+					<cell halign="left">			
+				<c>--oneline</c>
+			</cell>
+					<cell halign="left">			
+				Shorthand for <c>--pretty=oneline --abbrev-commit</c> used together.
+			</cell>
+				</row>
+				</tabular>
+			</table>
+
+<!-- div attr= class="sect3"-->
+
+			<subsubsection xml:id="_limiting_log_output">
+				<title>Limiting Log Output</title>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					In addition to output-formatting options, <c>git log</c> takes a number of useful limiting options; that is, options that let you show only a subset of commits. You’ve seen one such option already — the <c>-2</c> option, which displays only the last two commits. In fact, you can do <c>-&lt;n&gt;</c>, where <c>n</c> is any integer to show the last <c>n</c> commits. In reality, you’re unlikely to use that often, because Git by default pipes all output through a pager so you see only one page of log output at a time.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					However, the time-limiting options such as <c>--since</c> and <c>--until</c> are very useful. For example, this command gets the list of commits made in the last two weeks:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git log --since=2.weeks</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					This command works with lots of formats — you can specify a specific date like <c>"2008-01-15"</c>, or a relative date such as <c>"2 years 1 day 3 minutes ago"</c>.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					You can also filter the list to commits that match some search criteria. The <c>--author</c> option allows you to filter on a specific author, and the <c>--grep</c> option lets you search for keywords in the commit messages.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="admonitionblock note"-->
+				<p>
+					Note: You can specify more than one instance of both the <c>--author</c> and <c>--grep</c> search criteria, which will limit the commit output to commits that match <em>any</em> of the <c>--author</c> patterns and <em>any</em> of the <c>--grep</c> patterns; however, adding the <c>--all-match</c> option further limits the output to just those commits that match <em>all</em> <c>--grep</c> patterns.
+				</p>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Another really helpful filter is the <c>-S</c> option (colloquially referred to as Git’s “pickaxe” option), which takes a string and shows only those commits that changed the number of occurrences of that string. For instance, if you wanted to find the last commit that added or removed a reference to a specific function, you could call:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git log -S function_name</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					The last really useful option to pass to <c>git log</c> as a filter is a path. If you specify a directory or file name, you can limit the log output to commits that introduced a change to those files. This is always the last option and is generally preceded by double dashes (<c>--</c>) to separate the paths from the options:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git log -- path/to/file</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					In <url href="ch00/limit_options">Options to limit the output of <c>git log</c></url> we’ll list these and a few other common options for your reference.
+				</p><!--</div attr= class="paragraph">-->
+
+				<table>
+					<title>Options to limit the output of <c>git log</c></title>
+<col width="33%" />
+<col width="67%" />
+					<tabular>
+					<row header="yes">
+						<cell halign="left">Option</cell>
+						<cell halign="left">Description</cell>
+					</row>
+					<row class="odd">
+						<cell halign="left">				
+					<c>-&lt;n&gt;</c>
+				</cell>
+						<cell halign="left">				
+					Show only the last n commits
+				</cell>
+					</row>
+					<row class="even">
+						<cell halign="left">				
+					<c>--since</c>, <c>--after</c>
+				</cell>
+						<cell halign="left">				
+					Limit the commits to those made after the specified date.
+				</cell>
+					</row>
+					<row class="odd">
+						<cell halign="left">				
+					<c>--until</c>, <c>--before</c>
+				</cell>
+						<cell halign="left">				
+					Limit the commits to those made before the specified date.
+				</cell>
+					</row>
+					<row class="even">
+						<cell halign="left">				
+					<c>--author</c>
+				</cell>
+						<cell halign="left">				
+					Only show commits in which the author entry matches the specified string.
+				</cell>
+					</row>
+					<row class="odd">
+						<cell halign="left">				
+					<c>--committer</c>
+				</cell>
+						<cell halign="left">				
+					Only show commits in which the committer entry matches the specified string.
+				</cell>
+					</row>
+					<row class="even">
+						<cell halign="left">				
+					<c>--grep</c>
+				</cell>
+						<cell halign="left">				
+					Only show commits with a commit message containing the string
+				</cell>
+					</row>
+					<row class="odd">
+						<cell halign="left">				
+					<c>-S</c>
+				</cell>
+						<cell halign="left">				
+					Only show commits adding or removing code matching the string
+				</cell>
+					</row>
+					</tabular>
+				</table>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					For example, if you want to see which commits modifying test files in the Git source code history were committed by Junio Hamano in the month of October 2008 and are not merge commits, you can run something like this:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git log --pretty="%h - %s" --author='Junio C Hamano' --since="2008-10-01" \
+   --before="2008-11-01" --no-merges -- t/
+5610e3b - Fix testcase failure when extended attributes are in use
+acd3b9e - Enhance hold_lock_file_for_{update,append}() API
+f563754 - demonstrate breakage of detached checkout with symbolic link HEAD
+d1a43f2 - reset --hard/read-tree --reset -u: remove unmerged new paths
+51a94af - Fix "checkout --track -b newbranch" on detached HEAD
+b0ad11e - pull: allow "git pull origin $something:$current_branch" into an unborn branch</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Of the nearly 40,000 commits in the Git source code history, this command shows the 6 that match those criteria.
+				</p><!--</div attr= class="paragraph">-->
+
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Tip: Depending on the workflow used in your repository, it’s possible that a sizable percentage of the commits in your log history are just merge commits, which typically aren’t very informative. To prevent the display of merge commits cluttering up your log history, simply add the log option <c>--no-merges</c>.
+				</p><!--</div attr= class="paragraph">-->
+
+			</subsubsection>
+
+		</subsection>
 
   <conclusion>
     <p>
-      After the last subsection, you might have a conclusion.
+      At this point, you can do all the basic local Git operations — creating or cloning a repository, making changes, staging and committing those changes, and viewing the history of all the changes the repository has been through. Next, we’ll cover Git’s killer feature: its branching model.
     </p>
   </conclusion>
 </section>

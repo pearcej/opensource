@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-09-11T17:28:38-04:00       *-->
+<!--*       on 2022-09-11T18:48:02-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,14 +14,8 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<ul class="disc">
-<li><p><dfn class="terminology">Read instructions carefully.</dfn> Almost every sizable FOSS project has a README or an INSTALL file that provides instructions for how to build and install the software. Read those instructions, and do your best to follow them to the letter. Understand that even the best instructions may leave out a step or two — and these are opportunities to improve the project.</p></li>
-<li><p><dfn class="terminology">Don’t expect to understand every word.</dfn> Very few developers understand every single word of every build log they encounter. Learning to distinguish between the important messages and the spurious messages takes time. Don’t be intimidated.</p></li>
-<li><p><dfn class="terminology">Read logs carefully and thoughtfully. </dfn>When you see an error, read back and think about what it could mean. Does the error say “couldn’t find something”? That probably means you didn’t install a library dependency properly. Was the error you found the only error in the log? In a 1000-line build log, the error at the end could be the result of another error dozens, or hundreds, of lines earlier. If your build doesn’t end happily, don’t panic. Relax and work your way through the problem.</p></li>
-<li><p><dfn class="terminology">Google is your friend.</dfn> If you don’t understand an error message, just Google it! Googling an error message can be a surprisingly effective method for determining what’s gone wrong. There’s a decent chance that someone before you has run into the same error, and someone has posted the solution to your problem on a message board or mailing list. Even if the answer isn’t obvious, there will frequently be clues. The Internet is a gigantic resource. Use it.</p></li>
-<li><p><dfn class="terminology">Ask for help.</dfn> If you’ve done your homework and still can’t figure out why your program isn’t building, get on the project’s mailing list, message board, or IRC channel, and ask for help. The more you’ve dug into the problem, and the more information you provide, the more likely it is that developers will help you figure out the problem.</p></li>
-</ul>
-<span class="incontext"><a href="sec_source_to_executable.html#p-374" class="internal">in-context</a></span>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<p>If you want to get a copy of an existing Git repository — for example, a project you’d like to contribute to — the command you need is <code class="code-inline tex2jax_ignore">git clone</code>. If you’re familiar with other VCSs such as Subversion, you’ll notice that the command is "clone" and not "checkout". This is an important distinction — instead of getting just a working copy, Git receives a full copy of nearly all data that the server has. Every version of every file for the history of the project is pulled down by default when you run <code class="code-inline tex2jax_ignore">git clone</code>. In fact, if your server disk gets corrupted, you can often use nearly any of the clones on any client to set the server back to the state it was in when it was cloned (you may lose some server-side hooks and such, but all the versioned data would be there — see <a class="external" href="ch00/_getting_git_on_a_server" target="_blank">Getting Git on a Server</a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-80-hidden.html" title="Footnote 6.2.2"><sup> 2 </sup></a> for more details).</p>
+<span class="incontext"><a href="sec_git_basics.html#p-374" class="internal">in-context</a></span>
 </body>
 </html>
