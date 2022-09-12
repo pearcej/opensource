@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-09-11T18:48:02-04:00       *-->
+<!--*       on 2022-09-12T09:15:27-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,20 +14,13 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<section class="paragraphs"><h4 class="heading"><span class="title">Good bugs reports are reproducible with the fewest possible steps.</span></h4>
-<p><pre class="code-block tex2jax_ignore">Bad: start it and click around for a while and then it crashes 
+<section class="paragraphs"><h4 class="heading"><span class="title">Good bugs reports have descriptive summaries.</span></h4>
+<p><pre class="code-block tex2jax_ignore">Bad: Audio player hangs 
 
-Good: Start the application. 
-Click the mouse button and type on the keyboard. 
-Within 45 seconds or less, the application will always crash. 
+Good: Audio Player stutters when playing some kinds of audio files 
 
-Best: Start the application. 
-Click the mouse five times, 
-and the application crashes with the following error message in 
-"/var/log/foo.err"...
+Best: Audio Player stutters when playing .mp3/.wav files &gt; 35Mb, patch attached
 </pre></p>
-<p>Anybody can break software. People break software all the time. But it takes a bit of practice and skill to break things predictably, over and over — and if there’s no one exercising this skill on a project’s behalf, it’s much more difficult to improve that project over time. That’s why software companies hire testers (although they almost never hire as many as they should.)</p>
-<p>Reproducing bugs is one of the best ways to learn how software actually works. A tester who has explored a bug thoroughly, and who can confidently say “this bug only happens when these three conditions are met,” is much more likely to be able to take the next step: namely, to dig in and find the code that actually creates those three conditions.</p>
-<p>Sometimes it’s not possible to reproduce a bug 100% of the time. Intermittent bugs are extremely frustrating for both testers and developers; they are frequently the result of complex software interactions, and reproducing the bug is actually the hardest part of fixing it. In such cases, testers should do their best to provide as much information as possible, and be ready to answer a developer’s questions.</p></section><span class="incontext"><a href="sec_bug_reports.html#paragraphs-27" class="internal">in-context</a></span>
+<p>Software developers, like most people, are busy and lazy in roughly equal parts. When a developer has decided to spend a day “fixing bugs,” that developer likely starts by scanning the bug list. If she sees a bug summary that says “your program is broken,” it’s unlikely to provoke a favorable response. Summaries matter. The goal is to pack as much information into a single line of text. The more information the developer sees in a bug summary, the more likely she is to dig into that bug.</p></section><span class="incontext"><a href="sec_bug_reports.html#paragraphs-27" class="internal">in-context</a></span>
 </body>
 </html>

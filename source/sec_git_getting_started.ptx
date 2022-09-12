@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="git_sec_getting_started">
-	<title>Git: Getting Started </title>
+<section xml:id="sec_git_getting_started">
+	<title>Getting Started with Git</title>
 	
 <subsection xml:id="sec_git_types_version_control" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Types of Version Control</title>
