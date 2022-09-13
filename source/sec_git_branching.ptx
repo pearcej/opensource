@@ -3,33 +3,337 @@
 <section xml:id="sec_git_branching" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Git Branching</title>
   <introduction>
-    <p>
-      Intro to section, because we will have subsections.
-    </p>
-    <p>
-      Another paragraph of the introduction.
-    </p>
+		<p>
+			Nearly every VCS has some form of branching support. Branching means you diverge from the main line of development and continue to do work without messing with that main line. In many VCS tools, this is a somewhat expensive process, often requiring you to create a new copy of your source code directory, which can take a long time for large projects.
+		</p>
+		<p>
+			Some people refer to Git’s branching model as its “killer feature,” and it certainly sets Git apart in the VCS community. Why is it so special? The way Git branches is incredibly lightweight, making branching operations nearly instantaneous, and switching back and forth between branches generally just as fast. Unlike many other VCSs, Git encourages workflows that branch and merge often, even multiple times in a day. Understanding and mastering this feature gives you a powerful and unique tool and can entirely change the way that you develop.
+		</p>
   </introduction>
-  <subsection xml:id="subsec_agb-subsection">
-    <title>A subsection</title>
-    <p>
-      Content of the subsection.
-    </p>
-    <p>
-      More content.
-    </p>
-  </subsection>
 
-  <subsection xml:id="subsec_gbanother-subsection">
-    <title>Another Subsection</title>
-    <p>
-      Text with some math: <m>\sin(x) = \cos(x)</m> only for some values of <m>x</m>.
-    </p>
-  </subsection>
+<subsection xml:id="_git_branches_overview">
+			<title>Branches in a Nutshell</title>
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				To really understand the way Git does branching, we need to take a step back and examine how Git stores its data.
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				As you may remember from <xref ref="sec-what-is-git"/>, Git doesn’t store data as a series of changesets or differences, but instead as a series of <em>snapshots</em>.
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				When you make a commit, Git stores a commit object that contains a pointer to the snapshot of the content you staged. This object also contains the author’s name and email address, the message that you typed, and pointers to the commit or commits that directly came before this commit (its parent or parents): zero parents for the initial commit, one parent for a normal commit, and multiple parents for a commit that results from a merge of two or more branches.
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				To visualize this, let’s assume that you have a directory containing three files, and you stage them all and commit. Staging the files computes a checksum for each one (the SHA-1 hash we mentioned in ,<xref ref="sec-what-is-git"/>, stores that version of the file in the Git repository (Git refers to them as <em>blobs</em>), and adds that checksum to the staging area:
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+			<pre>$ git add README test.rb LICENSE
+$ git commit -m 'Initial commit'</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				When you create the commit by running <c>git commit</c>, Git checksums each subdirectory (in this case, just the root project directory) and stores them as a tree object in the Git repository. Git then creates a commit object that has the metadata and a pointer to the root project tree so it can re-create that snapshot when needed.
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+			<p>
+				Your Git repository now contains five objects: three <em>blobs</em> (each representing the contents of one of the three files), one <em>tree</em> that lists the contents of the directory and specifies which file names are stored as which blobs, and one <em>commit</em> with the pointer to that root tree and all the commit metadata.
+			</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="imageblock"-->
+<!-- div attr= class="content"-->
+<figure xml:id="git-commit-tree">
+  <caption>A commit and its tree</caption>
+  <image source='git-commit-and-tree.png'/>
+</figure>
+<!--</div attr= class="content">-->
+
+			<p>
+				If you make some changes and commit again, the next commit stores a pointer to the commit that came immediately before it.
+			</p><!--</div attr= class="paragraph">-->
+
+
+<figure xml:id="git-commit-parents">
+  <caption>Commits and their parents</caption>
+   <image source='git-commits-and-parents.png'/>
+</figure>
+
+			<p>
+				A branch in Git is simply a lightweight movable pointer to one of these commits. The initial branch name (which is also by default the default branch) in Git was <c>master</c> until more recent versions of Git when it became <c>main</c>. As you start making commits, you’re given a <c>main</c> branch that points to the last commit you made. Every time you commit, the <c>main</c> branch pointer moves forward automatically.
+			</p><!--</div attr= class="paragraph">-->
+
+
+			<p>
+				Note: The “master” or "main" branch in Git is not a special branch. It is exactly like any other branch. The only reason nearly every repository has one or the other is that the <c>git init</c> command creates one by default and most people don’t bother to change its name. However, Git 2.28.0, released in July 2020, introduced the <c>init.defaultBranch</c> configuration option, which allows Git users to define and configure a default branch name other than the one chosen by Git. 
+			</p>
+      <p>
+        Note: For the rest of this chapter, we will use both "main" and "master" interchangably because open-source contributors are likely to see one or the other, but not both, depending at least partially on the age of the project.
+      </p>
+
+<!-- div attr= class="imageblock"-->
+<!-- div attr= class="content"-->
+<figure xml:id="git-branch-and-commit-hostory">
+  <caption>A branch and its commit history</caption>
+   <image source='git-branch-and-history.png'/>
+</figure>
+<!--</div attr= class="content">-->
+
+<!-- div attr= class="title"-->
+Figure 11. <!--</div attr= class="title">--><!--</div attr= class="imageblock">-->
+
+<!-- div attr= class="sect3"-->
+
+			<subsubsection xml:id="_create_new_branch">
+				<title>Creating a New Branch</title>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					What happens when you create a new branch? Well, doing so creates a new pointer for you to move around. Let’s say you want to create a new branch called <c>testing</c>. You do this with the <c>git branch</c> command:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git branch testing</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					This creates a new pointer to the same commit you’re currently on.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="imageblock"-->
+<!-- div attr= class="content"-->
+<figure xml:id="git-two-branches">
+  <caption>Two branches pointing into the same series of commits</caption>
+  <image source='git-two-branches.png'/>
+</figure>
+
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					How does Git know what branch you’re currently on? It keeps a special pointer called <c>HEAD</c>. Note that this is a lot different than the concept of <c>HEAD</c> in other VCSs you may be used to, such as Subversion or CVS. In Git, this is a pointer to the local branch you’re currently on. In this case, you’re still on <c>master</c>. The <c>git branch</c> command only <em>created</em> a new branch — it didn’t switch to that branch.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="imageblock"-->
+<!-- div attr= class="content"-->
+<figure xml:id="git-HEAD-branch">
+  <caption>HEAD pointing to a branch</caption>
+  <image source='git-head-to-master.png'/>
+</figure>
+<!--</div attr= class="content">-->
+
+				<p>
+					You can easily see this by running a simple <c>git log</c> command that shows you where the branch pointers are pointing. This option is called <c>--decorate</c>.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git log --oneline --decorate
+f30ab (HEAD -&gt; master, testing) Add feature #32 - ability to add new formats to the central interface
+34ac2 Fix bug #1328 - stack overflow under certain conditions
+98ca9 Initial commit</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					You can see the <c>master</c> and <c>testing</c> branches that are right there next to the <c>f30ab</c> commit.
+				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
+
+<!-- div attr= class="sect3"-->
+			</subsubsection>
+
+			<subsubsection xml:id="_switching_branches">
+				<title>Switching Branches</title>
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					To switch to an existing branch, you run the <c>git checkout</c> command. Let’s switch to the new <c>testing</c> branch:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git checkout testing</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					This moves <c>HEAD</c> to point to the <c>testing</c> branch.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="imageblock"-->
+<!-- div attr= class="content"-->
+<figure xml:id="git-HEAD-current-branch">
+  <caption>HEAD points to the current branch</caption>
+  <image source='git-head-to-testing.png'/>
+</figure>
+<!--</div attr= class="content">-->
+
+<!-- div attr= class="title"-->
+<!--</div attr= class="title">--><!--</div attr= class="imageblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					What is the significance of that? Well, let’s do another commit:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ vim test.rb
+$ git commit -a -m 'made a change'</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="imageblock"-->
+<!-- div attr= class="content"-->
+<figure xml:id="git-HEAD-moves">
+  <caption>The HEAD branch moves forward when a commit is made</caption>
+  <image source='git-advance-testing.png'/>
+</figure>
+<!--</div attr= class="content">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					This is interesting, because now your <c>testing</c> branch has moved forward, but your <c>master</c> branch still points to the commit you were on when you ran <c>git checkout</c> to switch branches. Let’s switch back to the <c>master</c> branch:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git checkout master</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+
+Note that <c>git log</c> doesn’t show <em>all</em> the branches <em>all</em> the time<!--</div attr= class="title">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					If you were to run <c>git log</c> right now, you might wonder where the "testing" branch you just created went, as it would not appear in the output.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					The branch hasn’t disappeared; Git just doesn’t know that you’re interested in that branch and it is trying to show you what it thinks you’re interested in. In other words, by default, <c>git log</c> will only show commit history below the branch you’ve checked out.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					To show commit history for the desired branch you have to explicitly specify it: <c>git log testing</c>. To show all of the branches, add <c>--all</c> to your <c>git log</c> command.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="imageblock"-->
+<!-- div attr= class="content"-->
+<figure  xml:id="git-HEAD-moves-checkout">
+  <caption>HEAD moves when you checkout</caption>
+  <image source='git-checkout-master.png'/>
+</figure>
+
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					That command did two things. It moved the HEAD pointer back to point to the <c>master</c> branch, and it reverted the files in your working directory back to the snapshot that <c>master</c> points to. This also means the changes you make from this point forward will diverge from an older version of the project. It essentially rewinds the work you’ve done in your <c>testing</c> branch so you can go in a different direction.
+				</p><!--</div attr= class="paragraph">-->
+
+        <p>
+          
+        Note: Switching branches changes files in your working directory<!--</div attr= class="title">-->
+        </p>
+<!-- div attr= class="paragraph"-->
+				<p>
+					It’s important to note that when you switch branches in Git, files in your working directory will change. If you switch to an older branch, your working directory will be reverted to look like it did the last time you committed on that branch. If Git cannot do it cleanly, it will not let you switch at all.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Let’s make a few changes and commit again:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ vim test.rb
+$ git commit -a -m 'made other changes'</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Now your project history has diverged. You created and switched to a branch, did some work on it, and then switched back to your main branch and did other work. Both of those changes are isolated in separate branches: you can switch back and forth between the branches and merge them together when you’re ready. And you did all that with simple <c>branch</c>, <c>checkout</c>, and <c>commit</c> commands.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= xml:id="divergent_history" class="imageblock"-->
+<!-- div attr= class="content"-->
+<figure xml:id="git-divergent-history">
+  <caption>Divergent history</caption>
+  <image source='git-advance-master.png'/>
+</figure>
+
+				<p>
+					You can also see this easily with the <c>git log</c> command. If you run <c>git log --oneline --decorate --graph --all</c> it will print out the history of your commits, showing where your branch pointers are and how your history has diverged.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="listingblock"-->
+<!-- div attr= class="content"-->
+				<pre>$ git log --oneline --decorate --graph --all
+* c2b9e (HEAD, master) Made other changes
+| * 87ab2 (testing) Made a change
+|/
+* f30ab Add feature #32 - ability to add new formats to the central interface
+* 34ac2 Fix bug #1328 - stack overflow under certain conditions
+* 98ca9 initial commit of my project</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Because a branch in Git is actually a simple file that contains the 40 character SHA-1 checksum of the commit it points to, branches are cheap to create and destroy. Creating a new branch is as quick and simple as writing 41 bytes to a file (40 characters and a newline).
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					This is in sharp contrast to the way most older VCS tools branch, which involves copying all of the project’s files into a second directory. This can take several seconds or even minutes, depending on the size of the project, whereas in Git the process is always instantaneous. Also, because we’re recording the parents when we commit, finding a proper merge base for merging is automatically done for us and is generally very easy to do. These features help encourage developers to create and use branches often.
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+				<p>
+					Let’s see why you should do so.
+				</p><!--</div attr= class="paragraph">-->
+
+        <p>
+          Note: <em>Creating a new branch and switching to it at the same time.</em> It’s typical to create a new branch and want to switch to that new branch at the same time — this can be done in one operation with <c>git checkout -b &lt;newbranchname&gt;</c>.
+				</p>
+
+				<p>
+					Note: From Git version 2.23 onwards you can use <c>git switch</c> instead of <c>git checkout</c> to:
+				</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="ulist"-->
+				<p><ul>
+					<li>
+					<p>
+					Switch to an existing branch: <c>git switch testing-branch</c>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					Create a new branch and switch to it: <c>git switch -c new-branch</c>. The <c>-c</c> flag stands for create, you can also use the full flag: <c>--create</c>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					Return to your previously checked out branch: <c>git switch -</c>.
+				</p>
+					</li>
+
+				</ul></p>
+
+			</subsubsection>
+
+		</subsection>
 
   <conclusion>
+    <title>Section Summary</title>
+  
     <p>
-      After the last subsection, you might have a conclusion.
+     We’ve covered basic branching and merging in Git. You should feel comfortable creating and switching to new branches, switching between branches and merging local branches together. You should also be able to share your branches by pushing them to a shared server, working with others on shared branches and rebasing your branches before they are shared. Next, we’ll cover what you’ll need to run your own Git repository-hosting server.
     </p>
   </conclusion>
 </section>
