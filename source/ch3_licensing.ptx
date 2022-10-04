@@ -3,19 +3,19 @@
 <chapter xml:id="ch_licensing" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Open Source Licensing</title>
   <introduction>
-    <p>An open-source license is a type of license for things like software and other products that allows the source code or design to be used, modified and/or shared under specific terms and conditions. An open source license allows people to review and modify the source code or design for their own purposes.</p>
+    <p>An open source license formalises what people are permitted to do with the material that is open source and under what conditions. For example, this might address whether you are granted the rights to use, modify, or distribute (commercially or non-commercially) the material.</p>
+    <p>
+    Disclamer: It is not the goal of this chapter to provide legal advice. The goal of this chapter is to provide a starting point to help you make an informed choice by providing information on popular open source licenses in a simplified fashion. If you have any questions regarding the best license for your code or any other legal issues relating to it, it’s your responsibility to do further research or consult with a professional.
+    </p>
   </introduction>
 
-  <xi:include href="./sec_about_licensing.ptx" />
-  <xi:include href="./sec_typical_licenses.ptx" />
-  <xi:include href="./sec_existing_community.ptx" />
-  <xi:include href="./sec_no_license.ptx" />
+  <xi:include href="./sec_licensing_about.ptx" />
+  <xi:include href="./sec_licensing_typical.ptx" />
+  <xi:include href="./sec_licensing_existing_communities.ptx" />
+  <xi:include href="./sec_licensing_none.ptx" />
 
   <conclusion>
-    <p>If you find software that doesn’t seem to have a license, that generally means you have no permission from the creators of the software to use, modify, or share the software. Although a code host such as <url href="https://github.com/" visual="github.com">GitHub</url> may allow you to view and even make a copy of the code, this does not imply that you are permitted to use, modify, or share the software for any purpose.</p>
-    <p>
-    Disclamer: It is not the goal of this site to provide legal advice. The goal of this site is to provide a starting point to help you make an informed choice by providing information on popular open source licenses in a simplified fashion. If you have any questions regarding the best license for your code or any other legal issues relating to it, it’s your responsibility to do further research or consult with a professional.
-    </p>
+    Many people find licensing to be one of the more confusing aspects of open source software. It is our hope that this simplified treatment has given the reader a better understaning of the key issues.
   </conclusion>
 
 </chapter>

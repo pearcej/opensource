@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-09-13T12:15:25-04:00       *-->
+<!--*       on 2022-09-14T14:44:36-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,7 +16,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
 <meta property="book:title" content="Open Source">
-<meta property="book:author" content="Dr. Jan Pearce">
 <script>window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
@@ -38,8 +37,7 @@
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
-<script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
@@ -50,38 +48,6 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
-<!--** Runestone components to run locally in reader's browser **-->
-<!--** No external communication:                              **-->
-<!--**     log level is 0, Runestone Services are disabled     **-->
-<script type="text/javascript">
-eBookConfig = {};
-eBookConfig.useRunestoneServices = false;
-eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
-eBookConfig.isLoggedIn = false;
-eBookConfig.email = '';
-eBookConfig.isInstructor = false;
-eBookConfig.logLevel = 0;
-eBookConfig.username = '';
-eBookConfig.readings = null;
-eBookConfig.activities = null;
-eBookConfig.downloadsEnabled = false;
-eBookConfig.allow_pairs = false;
-eBookConfig.enableScratchAC = false;
-eBookConfig.build_info = "";
-eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
-eBookConfig.runestone_version = '5.0.1';
-eBookConfig.jobehost = '';
-eBookConfig.proxyuri_runs = '';
-eBookConfig.proxyuri_files = '';
-eBookConfig.enable_chatcodes =  false;
-</script>
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -97,84 +63,27 @@ eBookConfig.enable_chatcodes =  false;
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
 <h1 class="heading"><a href="open-source.html"><span class="title">Open Source:</span> <span class="subtitle">What It Is and How to Contribute</span></a></h1>
-<p class="byline">Dr. Jan Pearce</p>
+<p class="byline"></p>
 </div>
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_existing_communities.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch_licensing.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch_documentation.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_existing_communities.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch_licensing.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="meta_backmatter.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_existing_communities.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch_licensing.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ch_documentation.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_existing_communities.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch_licensing.html" title="Up">Up</a><a class="next-button button toolbar-item" href="meta_backmatter.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
-<li class="link frontmatter">
-<a href="meta_frontmatter.html" data-scroll="meta_frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
-<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
-<li><a href="dedication-1.html" data-scroll="dedication-1" class="internal">Dedication</a></li>
-<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
-<li><a href="meta_frontmatter-preface.html" data-scroll="meta_frontmatter-preface" class="internal">Preface</a></li>
-<li><a href="meta_frontmatter-forward.html" data-scroll="meta_frontmatter-forward" class="internal">Forward</a></li>
-</ul>
-</li>
 <li class="link">
-<a href="ch_o.html" data-scroll="ch_o" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Free and Open Source Software (FOSS)</span></a><ul>
-<li><a href="sec_what_is_open_source.html" data-scroll="sec_what_is_open_source" class="internal">What is Open Source Software?</a></li>
-<li><a href="sec_foss_matters.html" data-scroll="sec_foss_matters" class="internal">Why might FOSS matter to me</a></li>
-<li><a href="sec_source_code.html" data-scroll="sec_source_code" class="internal">About Source Code</a></li>
-<li><a href="sec_share_code.html" data-scroll="sec_share_code" class="internal">On Sharing Source Code</a></li>
-<li><a href="sec_contributor_mountain.html" data-scroll="sec_contributor_mountain" class="internal">Climbing Contributor Mountain</a></li>
-<li><a href="sec_build_portfolio.html" data-scroll="sec_build_portfolio" class="internal">Building your FOSS Portfolio</a></li>
-</ul>
-</li>
-<li class="link">
-<a href="ch_community_communication.html" data-scroll="ch_community_communication" class="internal"><span class="codenumber">2</span> <span class="title">FOSS Community and Communication</span></a><ul>
-<li><a href="sec_global_community.html" data-scroll="sec_global_community" class="internal">The Challenges of Global Community</a></li>
-<li><a href="sec_third_culture.html" data-scroll="sec_third_culture" class="internal">The Synthetic Third Culture</a></li>
-<li><a href="sec_community_qualities.html" data-scroll="sec_community_qualities" class="internal">Qualities of a Community</a></li>
-<li><a href="sec_communicating.html" data-scroll="sec_communicating" class="internal">Communicating</a></li>
-</ul>
-</li>
-<li class="link">
-<a href="ch_licensing.html" data-scroll="ch_licensing" class="internal"><span class="codenumber">3</span> <span class="title">Open Source Licensing</span></a><ul>
+<a href="ch_licensing.html" data-scroll="ch_licensing" class="internal"><span class="codenumber">1</span> <span class="title">Open Source Licensing</span></a><ul>
 <li><a href="sec_about_licensing.html" data-scroll="sec_about_licensing" class="internal">About Licensing</a></li>
 <li><a href="sec_typical_licensing.html" data-scroll="sec_typical_licensing" class="internal">Typical Open Source Licenses</a></li>
 <li><a href="sec_existing_communities.html" data-scroll="sec_existing_communities" class="internal">Existing Communities</a></li>
 <li><a href="sec_no_license.html" data-scroll="sec_no_license" class="active">No License</a></li>
-</ul>
-</li>
-<li class="link">
-<a href="ch_documentation.html" data-scroll="ch_documentation" class="internal"><span class="codenumber">4</span> <span class="title">Documentation</span></a><ul>
-<li><a href="sec_documentation_matters.html" data-scroll="sec_documentation_matters" class="internal">Documentation Matters</a></li>
-<li><a href="sec_documentation_involvement.html" data-scroll="sec_documentation_involvement" class="internal">Documentation as Involvement</a></li>
-</ul>
-</li>
-<li class="link">
-<a href="ch_tools_technologies.html" data-scroll="ch_tools_technologies" class="internal"><span class="codenumber">5</span> <span class="title">Open Source Tools and Technologies</span></a><ul>
-<li><a href="sec_os_linux.html" data-scroll="sec_os_linux" class="internal">The Linux Operating System</a></li>
-<li><a href="sec_vms_virtualizaton_container.html" data-scroll="sec_vms_virtualizaton_container" class="internal">Virtual Machines, Virtualization, and Containerization</a></li>
-<li><a href="intro-version-control.html" data-scroll="intro-version-control" class="internal">Version Control</a></li>
-</ul>
-</li>
-<li class="link">
-<a href="ch_git.html" data-scroll="ch_git" class="internal"><span class="codenumber">6</span> <span class="title">Git</span></a><ul>
-<li><a href="sec_git_getting_started.html" data-scroll="sec_git_getting_started" class="internal">Getting Started with Git</a></li>
-<li><a href="sec_git_basics.html" data-scroll="sec_git_basics" class="internal">Git Basics</a></li>
-<li><a href="sec_git_branching.html" data-scroll="sec_git_branching" class="internal">Git Branching</a></li>
-</ul>
-</li>
-<li class="link">
-<a href="ch_building_code.html" data-scroll="ch_building_code" class="internal"><span class="codenumber">7</span> <span class="title">Getting and Building the Code</span></a><ul><li><a href="sec_source_to_executable.html" data-scroll="sec_source_to_executable" class="internal">From Source to Executable</a></li></ul>
-</li>
-<li class="link">
-<a href="ch_bugs_and_debugging.html" data-scroll="ch_bugs_and_debugging" class="internal"><span class="codenumber">8</span> <span class="title">Bugs and Debugging</span></a><ul>
-<li><a href="sec_bug_trackers.html" data-scroll="sec_bug_trackers" class="internal">Bug Trackers</a></li>
-<li><a href="sec_bug_reports.html" data-scroll="sec_bug_reports" class="internal">Bug Reports</a></li>
-<li><a href="sec_bug_triage.html" data-scroll="sec_bug_triage" class="internal">Bug Triage</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="meta_backmatter.html" data-scroll="meta_backmatter" class="internal"><span class="title">Appendices</span></a></li>
@@ -186,37 +95,36 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
-<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+<li class="link"><a href="colophon-1.html" data-scroll="colophon-1" class="internal"><span class="title">Colophon</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content">
 <section class="section" id="sec_no_license"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">3.4</span> <span class="title">No License</span>
+<span class="type">Section</span> <span class="codenumber">1.4</span> <span class="title">No License</span>
 </h2>
-<section class="introduction" id="introduction-13"><p id="p-190">When you make a creative work (which includes code), the work is under exclusive copyright by default. Unless you include a license that specifies otherwise, nobody else can copy, distribute, or modify your work without being at risk of take-downs, shake-downs, or litigation. Once the work has other contributors (each a copyright holder), “nobody” starts including you.</p></section><section class="subsection" id="subsec_no_license"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.4.1</span> <span class="title">In the Absense of a License</span>
+<section class="introduction" id="introduction-4"><p id="p-35">When you make a creative work (which includes code), the work is under exclusive copyright by default. Unless you include a license that specifies otherwise, nobody else can copy, distribute, or modify your work without being at risk of take-downs, shake-downs, or litigation. Once the work has other contributors (each a copyright holder), “nobody” starts including you.</p></section><section class="subsection" id="subsec_no_license"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.4.1</span> <span class="title">In the Absense of a License</span>
 </h3>
-<p id="p-191">Even in the absence of a license file, you may grant some rights in cases where you publish your source code to a site that requires accepting terms of service. For example, if you publish your source code in a public repository on GitHub, you have accepted the <a class="external" href="https://help.github.com/articles/github-terms-of-service" target="_blank">Terms of Service</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-52" id="fn-52"><sup> 1 </sup></a>, by which you allow others to view and fork your repository. Others may not need your permission if <a class="external" href="https://en.wikipedia.org/wiki/Limitations_and_exceptions_to_copyright" target="_blank">limitations and exceptions to copyright</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-53" id="fn-53"><sup> 2 </sup></a> apply to their particular situation. Neither site terms nor jurisdiction-specific copyright limitations are sufficient for the kinds of collaboration that people usually seek on a public code host, such as experimentation, modification, and sharing as fostered by an open source license.</p>
-<p id="p-192">You don’t have to do anything to <em class="emphasis">not</em> offer a license. You may, however, wish to add a copyright notice and statement that you are not offering any license in a prominent place (e.g., your project’s README) so that users don’t assume you made an oversight. If you’re going to accept others’ contributions to your non-licensed project, you may wish to explore adding a contributor agreement to your project with your lawyer so that you maintain copyright permission from contributors, even though you’re not granting the same.</p>
-<p id="p-193">Disallowing use of your code might not be what you intend by “no license.” An open source license allows reuse of your code while retaining copyright. If your goal is to completely opt-out of copyright restrictions, try a public domain dedication instead.</p></section><section class="subsection" id="subsec_users_no_license"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.4.2</span> <span class="title">For potential users</span>
+<p id="p-36">Even in the absence of a license file, you may grant some rights in cases where you publish your source code to a site that requires accepting terms of service. For example, if you publish your source code in a public repository on GitHub, you have accepted the <a class="external" href="https://help.github.com/articles/github-terms-of-service" target="_blank">Terms of Service</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-32" id="fn-32"><sup> 1 </sup></a>, by which you allow others to view and fork your repository. Others may not need your permission if <a class="external" href="https://en.wikipedia.org/wiki/Limitations_and_exceptions_to_copyright" target="_blank">limitations and exceptions to copyright</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-33" id="fn-33"><sup> 2 </sup></a> apply to their particular situation. Neither site terms nor jurisdiction-specific copyright limitations are sufficient for the kinds of collaboration that people usually seek on a public code host, such as experimentation, modification, and sharing as fostered by an open source license.</p>
+<p id="p-37">You don’t have to do anything to <em class="emphasis">not</em> offer a license. You may, however, wish to add a copyright notice and statement that you are not offering any license in a prominent place (e.g., your project’s README) so that users don’t assume you made an oversight. If you’re going to accept others’ contributions to your non-licensed project, you may wish to explore adding a contributor agreement to your project with your lawyer so that you maintain copyright permission from contributors, even though you’re not granting the same.</p>
+<p id="p-38">Disallowing use of your code might not be what you intend by “no license.” An open source license allows reuse of your code while retaining copyright. If your goal is to completely opt-out of copyright restrictions, try a public domain dedication instead.</p></section><section class="subsection" id="subsec_users_no_license"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.4.2</span> <span class="title">For potential users</span>
 </h3>
-<p id="p-194">If you find software that doesn’t have a license, that generally means you have <em class="emphasis">no</em> permission from the creators of the software to use, modify, or share the software. Although a code host such as GitHub may allow you to view and fork the code, this does not imply that you are permitted to use, modify, or share the software for any purpose.</p>
-<p id="p-195">Your options:</p>
-<ul id="p-196" class="disc">
-<li id="li-60">
-<span class="heading"><span class="title">Ask the maintainers nicely to add a license.</span></span><p id="p-derived-li-60"> Unless the software includes strong indications to the contrary, lack of a license is probably an oversight. If the software is hosted on a site like GitHub, open an issue requesting a license. If you’re bold and it’s fairly obvious what license is most appropriate, open a pull request to add a license.</p>
+<p id="p-39">If you find software that doesn’t have a license, that generally means you have <em class="emphasis">no</em> permission from the creators of the software to use, modify, or share the software. Although a code host such as GitHub may allow you to view and fork the code, this does not imply that you are permitted to use, modify, or share the software for any purpose.</p>
+<p id="p-40">Your options:</p>
+<ul id="p-41" class="disc">
+<li id="li-21">
+<span class="heading"><span class="title">Ask the maintainers nicely to add a license.</span></span><p id="p-derived-li-21"> Unless the software includes strong indications to the contrary, lack of a license is probably an oversight. If the software is hosted on a site like GitHub, open an issue requesting a license. If you’re bold and it’s fairly obvious what license is most appropriate, open a pull request to add a license.</p>
 </li>
-<li id="li-61">
-<span class="heading"><span class="title">Don’t use the software.</span></span><p id="p-derived-li-61"> Find or create an alternative that is under an open source license.</p>
+<li id="li-22">
+<span class="heading"><span class="title">Don’t use the software.</span></span><p id="p-derived-li-22"> Find or create an alternative that is under an open source license.</p>
 </li>
-<li id="li-62">
-<span class="heading"><span class="title">Negotiate a private license.</span></span><p id="p-derived-li-62"> Be sure to bring your lawyer.</p>
+<li id="li-23">
+<span class="heading"><span class="title">Negotiate a private license.</span></span><p id="p-derived-li-23"> Be sure to bring your lawyer.</p>
 </li>
-</ul></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-52"><div class="fn"><code class="code-inline tex2jax_ignore">help.github.com/articles/github-terms-of-service</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-53"><div class="fn"><code class="code-inline tex2jax_ignore">https://en.wikipedia.org/wiki/Limitations_and_exceptions_to_copyright</code></div></div>
+</ul></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-32"><div class="fn"><code class="code-inline tex2jax_ignore">help.github.com/articles/github-terms-of-service</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-33"><div class="fn"><code class="code-inline tex2jax_ignore">https://en.wikipedia.org/wiki/Limitations_and_exceptions_to_copyright</code></div></div>
 </div></main>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 </html>

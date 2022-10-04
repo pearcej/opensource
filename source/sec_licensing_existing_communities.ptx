@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_licensing_existing_communities" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Existing OSS Communities</title>
+
+  <subsection xml:id="subsec-existing-projects">
+	<title>Contributing to Existing Projects</title>
+
+    <p>
+      If you’re contributing to or extending an existing project, it almost always makes the most sense to continue using that project’s license. Depending on the original project’s license, using the same license might be a requirement, not just the easiest thing to do. (See the “same license” condition of some licenses.) To find a project's license, look for a file called LICENSE or COPYING, and skim the project’s README. If you can’t find a license, ask the maintainers.
+    </p>
+    <p>
+      Some open source communities have strong preferences for particular licenses. If you want to participate in one of these, it will be easier to use their preferred license, even if you’re starting a brand new project with no existing dependencies. Some examples of such communities include:
+    <ul>
+			<li>
+			<url href="https://www.apache.org/licenses/" visual="www.apache.org/licenses">Apache</url> requires <url href="/licenses/apache-2.0/" visual="/licenses/apache-2.0">Apache License 2.0</url>
+			</li>
+
+			<li>
+			<url href="https://github.com/cncf/foundation/blob/main/charter.md#11-ip-policy" visual="https://github.com/cncf/foundation/blob/main/charter.md#11-ip-policy">Cloud Native Computing Foundation</url> requires <url href="/licenses/apache-2.0/" visual="/licenses/apache-2.0">Apache License 2.0</url>
+			</li>
+
+			<li>
+			<url href="https://www.gnu.org/licenses/license-recommendations.html" visual="www.gnu.org/licenses/license-recommendations.html">GNU</url> recommends <url href="/licenses/gpl-3.0/" visual="/licenses/gpl-3.0/">GNU GPLv3</url> for most programs
+			</li>
+
+			<li>
+			<url href="https://libraries.io/search?platforms=npm" visual="libraries.io/search?platforms=npm">npm packages</url> overwhelmingly use the <url href="/licenses/mit/" visual="/licenses/mit">MIT</url> or the very similar <url href="/licenses/isc" visual="/licenses/isc">ISC</url> licenses
+			</li>
+
+			<li>
+			<url href="https://www.openbsd.org/policy.html" visual="www.openbsd.org/policy.html">OpenBSD</url> prefers the <url href="/licenses/isc/" visual="/licenses/isc">ISC License</url>
+			</li>
+
+			<li>
+			<url href="https://rust-lang.github.io/api-guidelines/necessities.html#crate-and-its-dependencies-have-a-permissive-license-c-permissive" visual="rust-lang.github.io/api-guidelines/necessities.html#crate-and-its-dependencies-have-a-permissive-license-c-permissive">Rust</url> crates are overwhelmingly licensed under both <url href="/licenses/mit/" visual="/licenses/mit">MIT</url> and <url href="/licenses/apache-2.0/" visual="/licenses/apache-2.0/">Apache License 2.0</url>
+			</li>
+
+			<li>
+			<url href="https://wordpress.org/about/license/" visual="wordpress.org/about/license">WordPress</url> plugins and themes must be <url href="/licenses/gpl-2.0/" visual="/licenses/gpl-2.0/">GNU GPLv2</url> (or later)
+			</li>
+
+		</ul>
+    </p>
+    <p>
+      Communities come in all shapes and sizes, and more than one community might be pertinent. For example,you must keep in mind the rules of your company if you work for one. The examples above are very well established. If the community you’re building a project for doesn’t have set-in-stone licensing traditions, or you don’t see your project as part of any particular community, that’s fine. Then you will need to make your own choice of a license because not posting any license at all means you implicitly retain all rights and give no permissions to use, share, modify, or improve the software.
+    </p>
+
+  </subsection>
+  <subsection xml:id="subsec-changing-licenses">
+	<title>Changing Licenses</title>
+	<p>
+		As an open source software project matures, sometimes the mantainers of the project decide to change open source licenses. This section highlights a case study of one project's change of license and their reasons for that change.
+	</p>
+	<p>		
+		Some people who are new to working in open source software communities may naively think that the best licenses are those that are the most permissive. Unfortunately, there are pitfalls to tho most permissive licenses when anyone can utilize the software for any purpose. 
+	</p>
+	<p>
+		<url href="https://plausible.io" visual="plausible.io">Plausible Analytics</url> is an open source software web analytics project that provides an alternative to Google Analytics, which is more privacy-friendly.
+		Plausible decided to change licenses from the very permissive <url href="https://mit-license.org/" visual="mit-license.org/">MIT License</url> to the <url href="https://www.fsf.org/bulletin/2021/fall/the-fundamentals-of-the-agplv3" visual="www.fsf.org/bulletin/2021/fall/the-fundamentals-of-the-agplv3">AGPL license</url>, a GNU copyleft license designed to protect rights when the software is being utilized over a network. Simply stated, the AGPLv3 is basically the GPLv3, but with an additional licensing term that requires that users who interact over a network with modified versions of the program can receive the source code for that program.
+	</p>
+	<p>
+		In their blog, Plausible explained that they made the change their license to protect against corporations that took their code and then used it to create and sell proprietary software that directly competed with their project. They had also been approached by some large corporations that wanted Plausible to help them so they could sell a version of Plausible Analytics to their own clients without wanting to contribute anything back to the Plausible project. For more details, see <url href="https://plausible.io/blog/open-source-licenses#risks-associated-with-permissive-open-source-licenses" visual="plausible.io/blog/open-source-licenses#risks-associated-with-permissive-open-source-licenses">Open source licensing and why we're changing Plausible to the AGPL license</url>.
+	</p>
+	<p>
+		The kind of situation Plausible found themselves in underscores the importance of licensing, and also the importance of the terms of that license.
+	</p>
+	
+  </subsection>
+
+</section>
+

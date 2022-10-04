@@ -11,7 +11,6 @@
   <!-- The <book> tags wrap all the content.  -->
 
   <book xml:id="open-source">
-    <!-- The book needs a title and can have a subtitle  -->
     <title>Open Source</title>
     <subtitle>What It Is and How to Contribute</subtitle>
 

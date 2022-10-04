@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_licensing_typical" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Typical Open Source Licenses</title>
+  <introduction>
+    <p>
+     </p>
+  </introduction>
+  <subsection xml:id="subsec_MIT">
+    <title>MIT License</title>
+    <p>
+    The MIT license is a short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code. The following table summarizes these conditions:
+    </p>
+
+		<table width="100%" xml:id="table-MIT-summary">
+			<title>MIT License Permissions, Conditions, and Limitations</title>
+        <col width="33%" colors="green"/>
+        <col width="33%" />
+        <col width="33%" />
+        <tabular halign="left" width="100%">
+        <row header="yes" bottom="minor">
+          <cell halign="left" width="33%" >Permissions&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</cell>
+          <cell halign="left" width="33%" >Conditions&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</cell>
+          <cell halign="left" width="33%" >Limitations&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</cell>
+        </row>
+        <row valign="top">
+          <cell halign="left">
+
+        <line>
+          &#10003; Commercial use
+        </line>
+
+        <line>
+          &#10003; Distribution
+        </line>
+
+        <line>
+          &#10003; Modification
+        </line>
+
+        <line>
+          &#10003; Private use
+        </line>
+
+      </cell>
+          <cell halign="left">
+        <line>	&#9888; License and</line> 
+        <line>copyright notice</line>
+
+      </cell>
+          <cell halign="left">
+        <line>
+            &#10007; Liability
+        </line>
+
+        <line>
+            &#10007; Warranty
+        </line>
+
+      </cell>
+        </row>
+        </tabular>
+      </table>
+
+    <p>
+      The entire text of the MIT license is quite understandable and brief. Note how short and sweet it is:
+
+            <url href="https://mit-license.org/" visual="mit-license.org/">MIT License</url>.
+      <pre>
+      Copyright (c) [year] [fullname]
+
+      Permission is hereby granted, free of charge, to any person obtaining a copy
+      of this software and associated documentation files (the "Software"), to deal
+      in the Software without restriction, including without limitation the rights
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+      copies of the Software, and to permit persons to whom the Software is
+      furnished to do so, subject to the following conditions:
+
+      The above copyright notice and this permission notice shall be included in all
+      copies or substantial portions of the Software.
+
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+      SOFTWARE. 
+      </pre>
+      
+    </p>
+
+    <p>
+      Examples of open source projects using this license:
+      <ul>
+        <li>
+        <url href="https://github.com/babel/babel/blob/master/LICENSE" visual="github.com/babel/babel/blob/master/LICENSE">Babel</url>
+        </li>
+        <li>
+          <url href="https://github.com/dotnet/runtime/blob/main/LICENSE.TXT" visual="github.com/dotnet/runtime/blob/main/LICENSE.TXT">.NET</url>
+        </li>
+        <li>
+          <url href="https://github.com/rails/rails/blob/master/MIT-LICENSE" visual="github.com/rails/rails/blob/master/MIT-LICENSE">Rails</url>
+        </li>
+      </ul>
+    </p>
+
+  </subsection>
+
+  <subsection xml:id="subsec-Apache">
+    <title>Apache License 2.0</title>
+    <p>
+      The Apache License 2.0 is a permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+    </p>
+    <p>
+      The following table summarizes these conditions:
+
+
+    <table width="100%" xml:id="table-Apachev2-summary">
+			<title>Apache 2.0 License Permissions, Conditions, and Limitations</title>
+        <col width="33%" colors="green"/>
+        <col width="33%" />
+        <col width="33%" />
+        <tabular halign="left" width="100%">
+        <row header="yes" bottom="minor">
+          <cell halign="left" width="33%" >Permissions&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</cell>
+          <cell halign="left" width="33%" >Conditions&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</cell>
+          <cell halign="left" width="33%" >Limitations&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</cell>
+        </row>
+        <row valign="top">
+          <cell halign="left">
+
+        <line>
+          &#10003; Commercial use
+        </line>
+
+        <line>
+          &#10003; Distribution
+        </line>
+
+        <line>
+          &#10003; Modification
+        </line>
+
+        <line>
+          &#10003; Patent use
+        </line>
+
+        <line>
+          &#10003; Private use
+        </line>
+
+
+
+      </cell>
+          <cell halign="left">
+        <line>&#9888; License and</line> 
+        <line>copyright notice</line>
+        <line>&#9888; State changes</line>
+
+      </cell>
+          <cell halign="left">
+        <line>
+            &#10007; Liability
+        </line>
+
+        <line>
+            &#10007; Trademark use
+        </line>
+
+        <line>
+            &#10007; Warranty
+        </line>
+
+      </cell>
+        </row>
+        </tabular>
+      </table>
+    </p>
+
+    <p>
+      The entire text of the Apache License 2.0 is <em>much longer</em> than that of the MIT license. If interested in the details, see <url href="https://www.apache.org/licenses/LICENSE-2.0.html" visual="www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</url>.
+   </p>
+    <p>
+         Examples of open source projects using this license:
+      <ul>
+        <li>
+        <url href="https://github.com/kubernetes/kubernetes/blob/master/LICENSE" visual="github.com/kubernetes/kubernetes/blob/master/LICENSE">Kubernetes</url>
+        </li>
+        <li>
+          <url href="https://github.com/mozilla/pdf.js/blob/master/LICENSE" visual="github.com/mozilla/pdf.js/blob/master/LICENSE">pdf.js</url>
+        </li>
+        <li>
+          <url href="https://github.com/apple/swift/blob/main/LICENSE.txt" visual="github.com/apple/swift/blob/main/LICENSE.txt">Swift</url>
+        </li>
+      </ul>
+   </p>
+  </subsection>
+
+  <subsection xml:id="subsec_GNU_GPLv3">
+    <title>GNU General Public License v3.0</title>
+    <p>
+      The GNU General Public License v3.0 is considered a strong copyleft license whose permissions are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.</p>
+  
+    <p>
+      The following table summarizes these conditions:
+
+
+   <table width="100%" xml:id="table-GPLv3-summary">
+			<title>GNU General Public License v3.0 License Permissions, Conditions, and Limitations</title>
+        <col width="33%" />
+        <col width="33%" />
+        <col width="33%" />
+        <tabular halign="left" width="100%">
+        <row header="yes" bottom="minor">
+          <cell halign="left" width="33%" >Permissions&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</cell>
+          <cell halign="left" width="33%" >Conditions&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</cell>
+          <cell halign="left" width="33%" >Limitations&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</cell>
+        </row>
+        <row valign="top">
+          <cell halign="left">
+
+        <line>
+          &#10003; Commercial use
+        </line>
+
+        <line>
+          &#10003; Distribution
+        </line>
+
+        <line>
+          &#10003; Modification
+        </line>
+
+        <line>
+          &#10003; Patent use
+        </line>
+
+        <line>
+          &#10003; Private use
+        </line>
+
+      </cell>
+
+      <cell halign="left">
+        <line>&#9888; License and</line> 
+        <line>copyright notice</line>
+        <line>&#9888; State changes</line>
+      </cell>
+
+      <cell halign="left">
+        <line>
+            &#10007; Liability
+        </line>
+
+        <line>
+            &#10007; Warranty
+        </line>
+
+      </cell>
+        </row>
+        </tabular>
+      </table>
+    </p>
+
+    <p>
+      The text of the GNU General Public License v3.0 license is even longer than the full text of Apache License 2.0 is avaialble from <url href="https://www.gnu.org/licenses/gpl-3.0.en.html" visual="www.gnu.org/licenses/gpl-3.0.en"></url>. 
+
+    </p>
+
+    <p>
+      Examples of open source projects using this license:
+      <ul>
+        <li>
+        <url href="https://github.com/ansible/ansible/blob/devel/COPYING" visual="github.com/ansible/ansible/blob/devel/COPYING">Ansible</url>
+        </li>
+        <li>
+          <url href="https://git.savannah.gnu.org/cgit/bash.git/tree/COPYING" visual="https://git.savannah.gnu.org/cgit/bash.git/tree/COPYING">Bash</url>
+        </li>
+        <li>
+          <url href="https://git.gnome.org/browse/gimp/tree/COPYING" visual="git.gnome.org/browse/gimp/tree/COPYING">Gimp</url>
+        </li>
+      </ul>
+    </p>
+    
+  </subsection>
+
+  <conclusion>
+    <title>Section Summary</title>
+    
+    <p>
+      There are many other licenses all with differing rules in the open source community. For a useful treatment of some more of other open source licenses, see <url href="https://choosealicense.com/licenses/" visual="choosealicense.com/licenses">Choose a License</url> by Github.
+    </p>
+  </conclusion>
+</section>
+

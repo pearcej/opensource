@@ -49,14 +49,14 @@
 
   <acknowledgement>
     <p>
-      I would like to thank <url href="https://www.berea.edu" visual="www.berea.edu">Berea College</url> for sabbatical leave support that gave me time and made this work possible. If you do not already know about Berea College, you might be interested to know 
+      I would like to thank <url href="https://www.berea.edu" visual="www.berea.edu">Berea College</url> for sabbatical leave support that gave me time and made this work possible. 
       I am also grateful to the software innovation lab <url href="https://www.tweag.io" visual="tweag.io">Tweag</url> for financial support and my Tweag mentor, Michael Gale's time.
     </p>
     <p>
       Several parts of this textbook including the Forward and several portions of chapters 1 and 2 are copied from or modified from Karsten Wade's quiad.fedorapeople.org site <url href="https://quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html/" visual="quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html">Teaching Open Source</url>. We are very grateful to the authors Greg DeKoenigsberg, Chris Tyler, Karsten Wade, Max Spevack, Mel Chua, and Jeff Sheltren, and for releasing this work under the <url href="http://creativecommons.org/licenses/by-sa/3.0/" visual="creativecommons.org/licenses/by-sa/3.0">Creative Commons Attribution–Share Alike 3.0 Unported license ("CC-BY-SA")</url>.
     </p>
     <p>
-      With the exception of the <xref ref="sec_about_licensing"/> which is original, nearly all of Chapter 4 is either copied verbatum from or modified from <url href="https://choosealicense.com/" visual="choosealicense.com">Choose a License</url> which is curated by <url href="https://github.com/" visual="github.com">Github</url>. We are grateful for all that Github does for the open source community under the  the <url href="https://creativecommons.org/licenses/by/3.0/" visual="creativecommons.org/licenses/by/3.0">Creative Commons Attribution 3.0 Unported License</url>.
+      With the exception of the <xref ref="sec_licensing_about"/> which is original, nearly all of <xref ref="ch_licensing"/> is either copied verbatum from or modified from <url href="https://choosealicense.com/" visual="choosealicense.com">Choose a License</url> which is curated by <url href="https://github.com/" visual="github.com">Github</url>. We are grateful for all that Github does for the open source community under the  the <url href="https://creativecommons.org/licenses/by/3.0/" visual="creativecommons.org/licenses/by/3.0">Creative Commons Attribution 3.0 Unported License</url>.
     </p>
 
     <p>

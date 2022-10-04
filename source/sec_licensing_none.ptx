@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec_no_license" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec_licensing_none" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>No License</title>
-  <introduction>
-    <p>
-      When you make a creative work (which includes code), the work is under exclusive copyright by default. Unless you include a license that specifies otherwise, nobody else can copy, distribute, or modify your work without being at risk of take-downs, shake-downs, or litigation. Once the work has other contributors (each a copyright holder), “nobody” starts including you. 
-    </p>
-  </introduction>
 
   <subsection xml:id="subsec_no_license">
     <title>In the Absense of a License</title>
@@ -20,7 +15,7 @@
 		</p>
 
 		<p>
-			Disallowing use of your code might not be what you intend by “no license.” An open source license allows reuse of your code while retaining copyright. If your goal is to completely opt-out of copyright restrictions, try a public domain dedication instead.
+			Disallowing use of your code might not be what you intend by posting “no license.” An open source license allows reuse of your code while you retain the copyright. If your goal is to completely opt-out of copyright restrictions, try a public domain dedication instead.
 		</p>
 
   </subsection>
@@ -28,31 +23,37 @@
   <subsection xml:id="subsec_users_no_license">
 	<title>For potential users</title>
 
-			<p>
-				If you find software that doesn’t have a license, that generally means you have <em>no</em> permission from the creators of the software to use, modify, or share the software. Although a code host such as GitHub may allow you to view and fork the code, this does not imply that you are permitted to use, modify, or share the software for any purpose.
-			</p>
+		<p>
+			If you find software that doesn’t seem to have a license, that generally means you have been granted no permission from the creators of the software at all. Although a code host such as <url href="https://github.com/" visual="github.com">GitHub</url> may allow you to view and even make a copy of the code, this does not imply that you are permitted to use, modify, or share the software for any purpose. 
+		</p>
 
-			<p>
-				Your options:
-			</p>
+		<p>
+			To be clear, if software has no license at all, that  means you have been granted <em>no</em> permission from the creators of the software to use, modify, or share the software, so you had best not do so. 
+		</p>
 
-			<p><ul>
-				<li>
-				<title>Ask the maintainers nicely to add a license</title> 
-        Unless the software includes strong indications to the contrary, lack of a license is probably an oversight. If the software is hosted on a site like GitHub, open an issue requesting a license. If you’re bold and it’s fairly obvious what license is most appropriate, open a pull request to add a license.
-				</li>
+		<p>
+			If you find software without a posted license, your options are:
+		</p>
 
-				<li>
-				<title>Don’t use the software</title> 
-        Find or create an alternative that is under an open source license.
-				</li>
+		<p><ul>
+			<li>
+			<title>Ask the maintainers nicely to add a license</title> 
+				Unless the software includes strong indications to the contrary, lack of a license is probably an oversight. If the software is hosted on a site like GitHub, open an issue requesting a license. If you’re bold and it’s fairly obvious what license is most appropriate, open a pull request to add a license.
+			</li>
 
-				<li>
-				<title>Negotiate a private license</title> 
-        Be sure to bring your lawyer.
-				</li>
+			<li>
+			<title>Don’t use the software</title> 
+				Find or create an alternative that is under an open source license.
+			</li>
+
+			<li>
+			<title>Negotiate a private license</title> 
+				Be sure to bring your lawyer.
+			</li>
 
 			</ul></p>
+
+
   </subsection>
 
 </section>
