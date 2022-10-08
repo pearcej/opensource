@@ -13,8 +13,7 @@
 
 <subsection xml:id="_git_branches_overview">
 			<title>Branches in a Nutshell</title>
-
-<!-- div attr= class="paragraph"-->
+		<!-- div attr= class="paragraph"-->
 			<p>
 				To really understand the way Git does branching, we need to take a step back and examine how Git stores its data.
 			</p><!--</div attr= class="paragraph">-->
@@ -49,23 +48,23 @@ $ git commit -m 'Initial commit'</pre><!--</div attr= class="content">--><!--</d
 				Your Git repository now contains five objects: three <em>blobs</em> (each representing the contents of one of the three files), one <em>tree</em> that lists the contents of the directory and specifies which file names are stored as which blobs, and one <em>commit</em> with the pointer to that root tree and all the commit metadata.
 			</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="imageblock"-->
-<!-- div attr= class="content"-->
-<figure xml:id="git-commit-tree">
-  <caption>A commit and its tree</caption>
-  <image source='git-commit-and-tree.png'/>
-</figure>
-<!--</div attr= class="content">-->
+			<!-- div attr= class="imageblock"-->
+			<!-- div attr= class="content"-->
+			<figure xml:id="git-commit-tree">
+			<caption>A commit and its tree</caption>
+			<image source='git-commit-and-tree.png'/>
+			</figure>
+			<!--</div attr= class="content">-->
 
 			<p>
 				If you make some changes and commit again, the next commit stores a pointer to the commit that came immediately before it.
 			</p><!--</div attr= class="paragraph">-->
 
 
-<figure xml:id="git-commit-parents">
-  <caption>Commits and their parents</caption>
-   <image source='git-commits-and-parents.png'/>
-</figure>
+			<figure xml:id="git-commit-parents">
+			<caption>Commits and their parents</caption>
+			<image source='git-commits-and-parents.png'/>
+			</figure>
 
 			<p>
 				A branch in Git is simply a lightweight movable pointer to one of these commits. The initial branch name (which is also by default the default branch) in Git was <c>master</c> until more recent versions of Git when it became <c>main</c>. As you start making commits, you’re given a <c>main</c> branch that points to the last commit you made. Every time you commit, the <c>main</c> branch pointer moves forward automatically.
@@ -81,18 +80,15 @@ $ git commit -m 'Initial commit'</pre><!--</div attr= class="content">--><!--</d
 
 <!-- div attr= class="imageblock"-->
 <!-- div attr= class="content"-->
-<figure xml:id="git-branch-and-commit-hostory">
-  <caption>A branch and its commit history</caption>
-   <image source='git-branch-and-history.png'/>
-</figure>
+		<figure xml:id="git-branch-and-commit-hostory">
+		<caption>A branch and its commit history</caption>
+		<image source='git-branch-and-history.png'/>
+		</figure>
 <!--</div attr= class="content">-->
-
-<!-- div attr= class="title"-->
-Figure 11. <!--</div attr= class="title">--><!--</div attr= class="imageblock">-->
 
 <!-- div attr= class="sect3"-->
 
-			<subsubsection xml:id="_create_new_branch">
+			<paragraphs xml:id="_create_new_branch">
 				<title>Creating a New Branch</title>
 
 <!-- div attr= class="paragraph"-->
@@ -147,9 +143,9 @@ f30ab (HEAD -&gt; master, testing) Add feature #32 - ability to add new formats 
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</subsubsection>
+			</paragraphs>
 
-			<subsubsection xml:id="_switching_branches">
+			<paragraphs xml:id="_switching_branches">
 				<title>Switching Branches</title>
 
 <!-- div attr= class="paragraph"-->
@@ -325,7 +321,7 @@ $ git commit -a -m 'made other changes'</pre><!--</div attr= class="content">-->
 
 				</ul></p>
 
-			</subsubsection>
+			</paragraphs>
 
 		</subsection>
 

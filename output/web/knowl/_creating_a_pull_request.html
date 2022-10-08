@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<section class="paragraphs"><h5 class="heading"><span class="title">Creating a Pull Request.</span></h5>
+<p>Tony is looking for code to run on his Arduino programmable microcontroller and has found a great program file on GitHub at <a class="external" href="https://github.com/schacon/blink" target="_blank">https://github.com/schacon/blink</a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-94-hidden.html" title="Footnote 6.4.9"><sup> 9 </sup></a>.</p>
+<figure class="figure figure-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/github-blink-01-start.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.4.9<span class="period">.</span></span><span class="space"> </span>The project we want to contribute to</figcaption></figure><p>The only problem is that the blinking rate is too fast. We think it’s much nicer to wait 3 seconds instead of 1 in between each state change. So let’s improve the program and submit it back to the project as a proposed change.</p>
+<p>First, we click the 'Fork' button as mentioned earlier to get our own copy of the project. Our user name here is “tonychacon” so our copy of this project is at <a class="external" href="https://github.com/tonychacon/blink" target="_blank"><code class="code-inline tex2jax_ignore">https://github.com/tonychacon/blink</code></a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-95-hidden.html" title="Footnote 6.4.10"><sup> 10 </sup></a> and that’s where we can edit it. We will clone it locally, create a topic branch, make the code change and finally push that change back up to GitHub.</p>
+<pre class="code-block tex2jax_ignore">$ git clone https://github.com/tonychacon/blink (1)
+Cloning into 'blink'...
+
+$ cd blink
+$ git checkout -b slow-blink (2)
+Switched to a new branch 'slow-blink'
+
+$ sed -i '' 's/1000/3000/' blink.ino (macOS) (3)
+# If you're on a Linux system, do this instead:
+# $ sed -i 's/1000/3000/' blink.ino (3)
+
+$ git diff --word-diff (4)
+diff --git a/blink.ino b/blink.ino
+index 15b9911..a6cc5a5 100644
+--- a/blink.ino
++++ b/blink.ino
+@@ -18,7 +18,7 @@ void setup() {
+// the loop routine runs over and over again forever:
+void loop() {
+  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
+  [-delay(1000);-]{+delay(3000);+}               // wait for a second
+  digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
+  [-delay(1000);-]{+delay(3000);+}               // wait for a second
+}
+
+$ git commit -a -m 'Change delay to 3 seconds' (5)
+[slow-blink 5ca509d] Change delay to 3 seconds
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+$ git push origin slow-blink (6)
+Username for 'https://github.com': tonychacon
+Password for 'https://tonychacon@github.com':
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 340 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/tonychacon/blink
+ * [new branch]      slow-blink -&gt; slow-blink
+</pre>
+<ol class="decimal">
+<li><p>Clone our fork of the project locally.</p></li>
+<li><p>Create a descriptive topic branch.</p></li>
+<li><p>Make our change to the code.</p></li>
+<li><p>Check that the change is good.</p></li>
+<li><p>Commit our change to the topic branch.</p></li>
+<li><p>Push our new topic branch back up to our GitHub fork.</p></li>
+</ol>
+<p>Now if we go back to our fork on GitHub, we can see that GitHub noticed that we pushed a new topic branch up and presents us with a big green button to check out our changes and open a Pull Request to the original project.</p>
+<p>You can alternatively go to the “Branches” page at <code class="code-inline tex2jax_ignore">https://github.com/&lt;user&gt;/&lt;project&gt;/branches</code> to locate your branch and open a new Pull Request from there.</p>
+<figure class="figure figure-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/github-blink-02-pr.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.4.10<span class="period">.</span></span><span class="space"> </span>Pull Request button</figcaption></figure><p>If we click that green button, we’ll see a screen that asks us to give our Pull Request a title and description. It is almost always worthwhile to put some effort into this, since a good description helps the owner of the original project determine what you were trying to do, whether your proposed changes are correct, and whether accepting the changes would improve the original project.</p>
+<p>We also see a list of the commits in our topic branch that are “ahead” of the <code class="code-inline tex2jax_ignore">master</code> branch (in this case, just the one) and a unified diff of all the changes that will be made should this branch get merged by the project owner.</p>
+<figure class="figure figure-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/github-blink-03-pull-request-open.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.4.11<span class="period">.</span></span><span class="space"> </span>Pull Request creation page</figcaption></figure><p>When you hit the 'Create pull request' button on this screen, the owner of the project you forked will get a notification that someone is suggesting a change and will link to a page that has all of this information on it.</p>
+<p>Note: Though Pull Requests are used commonly for public projects like this when the contributor has a complete change ready to be made, it’s also often used in internal projects <em class="emphasis">at the beginning</em> of the development cycle. Since you can keep pushing to the topic branch even <dfn class="terminology">after</dfn> the Pull Request is opened, it’s often opened early and used as a way to iterate on work as a team within a context, rather than opened at the very end of the process.</p></section><span class="incontext"><a href="sec_git_github.html#_creating_a_pull_request" class="internal">in-context</a></span>
+</body>
+</html>

@@ -25,7 +25,7 @@
 				</li>
 
 				<li>
-							<p>
+			<p>
 				You can <em>clone</em> an existing Git repository from elsewhere.
 			</p>
 				</li>
@@ -177,11 +177,10 @@ $ git commit -m 'Initial project version'</pre><!--</div attr= class="content">-
 
 <!-- div attr= class="imageblock"-->
 <!-- div attr= class="content"-->
-<figure xml:id="git-lifecycle">
-  <caption>The lifecycle of the status of your files</caption>
-
-<image source='lifecycle.png'/><!--</div attr= class="content">-->
-</figure>
+			<figure xml:id="git-lifecycle">
+			<caption>The lifecycle of the status of your files</caption>
+			<image source='lifecycle.png'/><!--</div attr= class="content">-->
+			</figure>
 <!-- div attr= class="title"-->
 <!--</div attr= class="title">--><!--</div attr= class="imageblock">-->
 

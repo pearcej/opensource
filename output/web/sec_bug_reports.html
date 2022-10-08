@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-10-04T12:00:26-04:00       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -17,7 +14,8 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Open Source">
 <meta property="book:author" content="Dr. Jan Pearce">
-<script>window.MathJax = {
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -37,6 +35,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
 <script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -58,8 +64,8 @@
 eBookConfig = {};
 eBookConfig.useRunestoneServices = false;
 eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
 eBookConfig.isLoggedIn = false;
 eBookConfig.email = '';
 eBookConfig.isInstructor = false;
@@ -72,7 +78,6 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.runestone_version = '5.0.1';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
@@ -80,8 +85,8 @@ eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.7/runtime.980858fa0f34fd96.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.7/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.7/runestone.dca7462213311157.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.7/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.7/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -161,10 +166,11 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link">
-<a href="ch_git.html" data-scroll="ch_git" class="internal"><span class="codenumber">6</span> <span class="title">Git</span></a><ul>
+<a href="ch_git.html" data-scroll="ch_git" class="internal"><span class="codenumber">6</span> <span class="title">Version Control with Git</span></a><ul>
 <li><a href="sec_git_getting_started.html" data-scroll="sec_git_getting_started" class="internal">Getting Started with Git</a></li>
 <li><a href="sec_git_basics.html" data-scroll="sec_git_basics" class="internal">Git Basics</a></li>
 <li><a href="sec_git_branching.html" data-scroll="sec_git_branching" class="internal">Git Branching</a></li>
+<li><a href="sec_git_github.html" data-scroll="sec_git_github" class="internal">GitHub - Git in the Cloud</a></li>
 </ul>
 </li>
 <li class="link">
@@ -192,41 +198,41 @@ eBookConfig.enable_chatcodes =  false;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_bug_reports"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">8.2</span> <span class="title">Bug Reports</span>
 </h2>
-<section class="introduction" id="introduction-31"><p id="p-653">Some open source projects use issue queues that are attached to repositories to keep track of bugs, other projects use a special bug tracking system. Both serve the same purpose, namely tracking bugs and related issues like new feature requests.</p>
-<p id="p-654">Take a closer look at the bugs in your project’s bug tracker. In particular, spend some time looking through bugs in the <em class="emphasis">new</em> state.</p>
-<p id="p-655">It’s certain that some of these bug reports are not be very useful.</p>
-<p id="p-656">For software to improve over time, good bug reports are absolutely essential. Users who file bugs, while almost always well-meaning, frequently don’t know how to write good bug reports — which is a problem, but also an opportunity for others to make positive contributions. Turning a bad bug report into a good bug report doesn’t require special developer knowledge; it just requires patience, persistence, a solid understanding of how the software works, and an understanding of what good bug reports look like.</p>
-<p id="p-657">So what does a good bug report look like? Look at some of the characteristics of good bug reports.</p></section><section class="subsection" id="the-anatomy-of-a-good-bug-report"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-32"><p id="p-862">Some open source projects use issue queues that are attached to repositories to keep track of bugs, other projects use a special bug tracking system. Both serve the same purpose, namely tracking bugs and related issues like new feature requests.</p>
+<p id="p-863">Take a closer look at the bugs in your project’s bug tracker. In particular, spend some time looking through bugs in the <em class="emphasis">new</em> state.</p>
+<p id="p-864">It’s certain that some of these bug reports are not be very useful.</p>
+<p id="p-865">For software to improve over time, good bug reports are absolutely essential. Users who file bugs, while almost always well-meaning, frequently don’t know how to write good bug reports — which is a problem, but also an opportunity for others to make positive contributions. Turning a bad bug report into a good bug report doesn’t require special developer knowledge; it just requires patience, persistence, a solid understanding of how the software works, and an understanding of what good bug reports look like.</p>
+<p id="p-866">So what does a good bug report look like? Look at some of the characteristics of good bug reports.</p></section><section class="subsection" id="the-anatomy-of-a-good-bug-report"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">8.2.1</span> <span class="title">The Anatomy of a Good Bug Report</span>
 </h3>
-<section class="paragraphs" id="paragraphs-53"><h4 class="heading"><span class="title">What makes a useful bug report?</span></h4>
-<p id="p-658"></p>
-<p id="p-659">Take a closer look at the bugs in your project’s bug tracker. In particular, spend some time looking through bugs in the <em class="emphasis">new</em> state.</p>
-<p id="p-660">It’s certain that some of these bug reports are not be very useful.</p>
-<p id="p-661">For software to improve over time, good bug reports are absolutely essential. Users who file bugs, while almost always well-meaning, frequently don’t know how to write good bug reports — which is a problem, but also an opportunity for others to make positive contributions. Turning a bad bug report into a good bug report doesn’t require special developer knowledge; it just requires patience, persistence, a solid understanding of how the software works, and an understanding of what good bug reports look like.</p>
-<p id="p-662">So what does a good bug report look like? Look at some of the characteristics of good bug reports.</p></section><section class="paragraphs" id="paragraphs-54"><h4 class="heading"><span class="title">Good bugs reports have descriptive summaries.</span></h4>
-<p id="p-663"><pre class="code-block tex2jax_ignore">Bad: Audio player hangs 
+<section class="paragraphs" id="paragraphs-91"><h4 class="heading"><span class="title">What makes a useful bug report?</span></h4>
+<p id="p-867"></p>
+<p id="p-868">Take a closer look at the bugs in your project’s bug tracker. In particular, spend some time looking through bugs in the <em class="emphasis">new</em> state.</p>
+<p id="p-869">It’s certain that some of these bug reports are not be very useful.</p>
+<p id="p-870">For software to improve over time, good bug reports are absolutely essential. Users who file bugs, while almost always well-meaning, frequently don’t know how to write good bug reports — which is a problem, but also an opportunity for others to make positive contributions. Turning a bad bug report into a good bug report doesn’t require special developer knowledge; it just requires patience, persistence, a solid understanding of how the software works, and an understanding of what good bug reports look like.</p>
+<p id="p-871">So what does a good bug report look like? Look at some of the characteristics of good bug reports.</p></section><section class="paragraphs" id="paragraphs-92"><h4 class="heading"><span class="title">Good bugs reports have descriptive summaries.</span></h4>
+<p id="p-872"><pre class="code-block tex2jax_ignore">Bad: Audio player hangs 
 
 Good: Audio Player stutters when playing some kinds of audio files 
 
 Best: Audio Player stutters when playing .mp3/.wav files &gt; 35Mb, patch attached
 </pre></p>
-<p id="p-664">Software developers, like most people, are busy and lazy in roughly equal parts. When a developer has decided to spend a day “fixing bugs,” that developer likely starts by scanning the bug list. If she sees a bug summary that says “your program is broken,” it’s unlikely to provoke a favorable response. Summaries matter. The goal is to pack as much information into a single line of text. The more information the developer sees in a bug summary, the more likely she is to dig into that bug.</p></section><section class="paragraphs" id="paragraphs-55"><h4 class="heading"><span class="title">Good bugs reports refer to the version of the software..</span></h4>
-<p id="p-665"><pre class="code-block tex2jax_ignore">Bad: Zombie-buster version... two-something? 
+<p id="p-873">Software developers, like most people, are busy and lazy in roughly equal parts. When a developer has decided to spend a day “fixing bugs,” that developer likely starts by scanning the bug list. If she sees a bug summary that says “your program is broken,” it’s unlikely to provoke a favorable response. Summaries matter. The goal is to pack as much information into a single line of text. The more information the developer sees in a bug summary, the more likely she is to dig into that bug.</p></section><section class="paragraphs" id="paragraphs-93"><h4 class="heading"><span class="title">Good bugs reports refer to the version of the software..</span></h4>
+<p id="p-874"><pre class="code-block tex2jax_ignore">Bad: Zombie-buster version... two-something? 
 
 Good: Zombie-buster-1.2.4 
 
 Best: Zombie-buster-1.2.4 and confirmed in HEAD, git commit 1361
 </pre></p>
-<p id="p-666">Most of the time, the bug tracker you use has a predefined field for version. That field is a good start, but sometimes the entries can be outdated, and even if there’s an entry for <em class="emphasis">HEAD</em> (i.e. the very latest code in the SCM), it’s still important to provide the most detailed version information that you can possibly provide. What you absolutely must NOT do: ignore this field. If you can’t figure out what version of the software you’re running, then you probably shouldn’t even file a bug.</p></section><section class="paragraphs" id="paragraphs-56"><h4 class="heading"><span class="title">Good bugs reports provide relevant system information.</span></h4>
-<p id="p-667"><pre class="code-block tex2jax_ignore">Bad: I'm running Linux, if that matters. 
+<p id="p-875">Most of the time, the bug tracker you use has a predefined field for version. That field is a good start, but sometimes the entries can be outdated, and even if there’s an entry for <em class="emphasis">HEAD</em> (i.e. the very latest code in the SCM), it’s still important to provide the most detailed version information that you can possibly provide. What you absolutely must NOT do: ignore this field. If you can’t figure out what version of the software you’re running, then you probably shouldn’t even file a bug.</p></section><section class="paragraphs" id="paragraphs-94"><h4 class="heading"><span class="title">Good bugs reports provide relevant system information.</span></h4>
+<p id="p-876"><pre class="code-block tex2jax_ignore">Bad: I'm running Linux, if that matters. 
 
 Good: I'm running Gnome 2.28 on Fedora 12. 
 
 Best: Gnome 2.28, Fedora 12, nVidia Corporation G70 GeForce 7800 GTX (rev a1)
 </pre></p>
-<p id="p-668">It’s easy to provide way too much of this kind of information, but that’s a forgivable sin: it’s certainly better than providing none at all, which is too frequently the case. Over time, you develop a feel for which information to provide — and if you become a trusted contributor to a project, developers feel more comfortable asking for precisely the information they need. Until developers say otherwise, it’s usually best to err on the side of providing too much info. (Within reason. Dumping the entire contents of gigantic log files into a bug report is clearly bad form, but a relevant log file may be attached to a bug report.)</p></section><section class="paragraphs" id="paragraphs-57"><h4 class="heading"><span class="title">Good bugs reports only report a single issue.</span></h4>
-<p id="p-669"><pre class="code-block tex2jax_ignore">Bad: When I load the latest Foomail client, it crashes. 
+<p id="p-877">It’s easy to provide way too much of this kind of information, but that’s a forgivable sin: it’s certainly better than providing none at all, which is too frequently the case. Over time, you develop a feel for which information to provide — and if you become a trusted contributor to a project, developers feel more comfortable asking for precisely the information they need. Until developers say otherwise, it’s usually best to err on the side of providing too much info. (Within reason. Dumping the entire contents of gigantic log files into a bug report is clearly bad form, but a relevant log file may be attached to a bug report.)</p></section><section class="paragraphs" id="paragraphs-95"><h4 class="heading"><span class="title">Good bugs reports only report a single issue.</span></h4>
+<p id="p-878"><pre class="code-block tex2jax_ignore">Bad: When I load the latest Foomail client, it crashes. 
 Also, I'm getting screen lockups in Barchat. I think they're related. 
 
 Good: Bug 1: Foomail client crashes. 
@@ -239,9 +245,9 @@ Bug 2: Lockups in Barchat.
 I think it might be related to Foomail client crashes 
 (and here's some evidence).
 </pre></p>
-<p id="p-670">It’s tempting sometimes to see multiple issues, convince yourself that they are related, and then file a single bug on the whole thing.</p>
-<p id="p-671">Don’t do that. You may very well be right that the issues are related — but you may also be wrong, and in either case, two different issues deserve two different bug reports. In our example above, it may be that the issues with <dfn class="terminology">Foomail</dfn> and <dfn class="terminology">Barchat</dfn> are actually related to a problem with <dfn class="terminology">Bazlib</dfn>, which is a shared component of <dfn class="terminology">Foomail</dfn> and <dfn class="terminology">Barchat</dfn>. Each bug must be fixed and tested in its own context, and that won’t work if they’re all stuffed in the same bug report.</p></section><section class="paragraphs" id="paragraphs-58"><h4 class="heading"><span class="title">Good bugs reports are followed by people who care about a solution.</span></h4>
-<p id="p-672"><pre class="code-block tex2jax_ignore">Bad: What, you said file a bug report, I filed a bug report. 
+<p id="p-879">It’s tempting sometimes to see multiple issues, convince yourself that they are related, and then file a single bug on the whole thing.</p>
+<p id="p-880">Don’t do that. You may very well be right that the issues are related — but you may also be wrong, and in either case, two different issues deserve two different bug reports. In our example above, it may be that the issues with <dfn class="terminology">Foomail</dfn> and <dfn class="terminology">Barchat</dfn> are actually related to a problem with <dfn class="terminology">Bazlib</dfn>, which is a shared component of <dfn class="terminology">Foomail</dfn> and <dfn class="terminology">Barchat</dfn>. Each bug must be fixed and tested in its own context, and that won’t work if they’re all stuffed in the same bug report.</p></section><section class="paragraphs" id="paragraphs-96"><h4 class="heading"><span class="title">Good bugs reports are followed by people who care about a solution.</span></h4>
+<p id="p-881"><pre class="code-block tex2jax_ignore">Bad: What, you said file a bug report, I filed a bug report. 
 I don't care if you fix it. How do I turn off these email notifications? 
 
 Good: Hey, I checked the latest version like you asked, 
@@ -251,8 +257,8 @@ Best: I kept poking at this bug,
 and this log entry makes me think it's somewhere in libfoo. 
 I'll keep digging.
 </pre></p>
-<p id="p-673">Never underestimate the power of attention. The more you care about a particular bug, the more likely it is that the developer will care about it. The more work you do to chase it down, the more obligated the developer feels to spend some time on it also, and the more appreciative he or she is. If you file a bug that no one cares enough to follow up on, not even you, then why should the developer care enough to fix it? Especially if there are other bugs that people do care about?</p></section><section class="paragraphs" id="paragraphs-59"><h4 class="heading"><span class="title">Good bugs reports are reproducible with the fewest possible steps.</span></h4>
-<p id="p-674"><pre class="code-block tex2jax_ignore">Bad: start it and click around for a while and then it crashes 
+<p id="p-882">Never underestimate the power of attention. The more you care about a particular bug, the more likely it is that the developer will care about it. The more work you do to chase it down, the more obligated the developer feels to spend some time on it also, and the more appreciative he or she is. If you file a bug that no one cares enough to follow up on, not even you, then why should the developer care enough to fix it? Especially if there are other bugs that people do care about?</p></section><section class="paragraphs" id="paragraphs-97"><h4 class="heading"><span class="title">Good bugs reports are reproducible with the fewest possible steps.</span></h4>
+<p id="p-883"><pre class="code-block tex2jax_ignore">Bad: start it and click around for a while and then it crashes 
 
 Good: Start the application. 
 Click the mouse button and type on the keyboard. 
@@ -263,11 +269,11 @@ Click the mouse five times,
 and the application crashes with the following error message in 
 "/var/log/foo.err"...
 </pre></p>
-<p id="p-675">Anybody can break software. People break software all the time. But it takes a bit of practice and skill to break things predictably, over and over — and if there’s no one exercising this skill on a project’s behalf, it’s much more difficult to improve that project over time. That’s why software companies hire testers (although they almost never hire as many as they should.)</p>
-<p id="p-676">Reproducing bugs is one of the best ways to learn how software actually works. A tester who has explored a bug thoroughly, and who can confidently say “this bug only happens when these three conditions are met,” is much more likely to be able to take the next step: namely, to dig in and find the code that actually creates those three conditions.</p>
-<p id="p-677">Sometimes it’s not possible to reproduce a bug 100% of the time. Intermittent bugs are extremely frustrating for both testers and developers; they are frequently the result of complex software interactions, and reproducing the bug is actually the hardest part of fixing it. In such cases, testers should do their best to provide as much information as possible, and be ready to answer a developer’s questions.</p></section></section><article class="exercise exercise-like" id="exercise-reproduce-a-bug"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-reproduce-a-bug"><h3 class="heading">
+<p id="p-884">Anybody can break software. People break software all the time. But it takes a bit of practice and skill to break things predictably, over and over — and if there’s no one exercising this skill on a project’s behalf, it’s much more difficult to improve that project over time. That’s why software companies hire testers (although they almost never hire as many as they should.)</p>
+<p id="p-885">Reproducing bugs is one of the best ways to learn how software actually works. A tester who has explored a bug thoroughly, and who can confidently say “this bug only happens when these three conditions are met,” is much more likely to be able to take the next step: namely, to dig in and find the code that actually creates those three conditions.</p>
+<p id="p-886">Sometimes it’s not possible to reproduce a bug 100% of the time. Intermittent bugs are extremely frustrating for both testers and developers; they are frequently the result of complex software interactions, and reproducing the bug is actually the hardest part of fixing it. In such cases, testers should do their best to provide as much information as possible, and be ready to answer a developer’s questions.</p></section></section><article class="exercise exercise-like" id="exercise-reproduce-a-bug"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-reproduce-a-bug"><h3 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">8.2.1</span><span class="period">.</span><span class="space"> </span><span class="title"><dfn class="terminology">Exercise: Reproduce a Bug</dfn>.</span>
-</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-reproduce-a-bug"><article class="exercise exercise-like"><p id="p-678">Go through your project’s bug tracker and find a bug that you think you might be able to reproduce — and then try to reproduce it in the latest build. Take careful notes. Report your experiences as a comment to the bug. If you can reproduce the bug, great! Give as much information as you can. If you can’t reproduce the bug, great! Give as much information as you can, and ask the original reporter if there are other steps you might be able to take to reproduce the bug.</p></article></div></section></div></main>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-reproduce-a-bug"><article class="exercise exercise-like"><p id="p-887">Go through your project’s bug tracker and find a bug that you think you might be able to reproduce — and then try to reproduce it in the latest build. Take careful notes. Report your experiences as a comment to the bug. If you can reproduce the bug, great! Give as much information as you can. If you can’t reproduce the bug, great! Give as much information as you can, and ask the original reporter if there are other steps you might be able to take to reproduce the bug.</p></article></div></section></div></main>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>

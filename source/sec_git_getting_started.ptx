@@ -16,7 +16,7 @@
   </introduction>
 
 			<paragraphs xml:id="sec_local_version_control_systems">
-				<title>Local Version Control Systems</title>
+				<title>Local Version Control Systems (VCSs)</title>
 
 				<p>
 					Many people’s version-control method of choice is to copy files into another directory (perhaps a time-stamped directory, if they’re clever). This approach is very common because it is so simple, but it is also incredibly error prone. It is easy to forget which directory you’re in and accidentally write to the wrong file or copy over files you don’t mean to.
@@ -24,7 +24,7 @@
 
 
 				<p>
-					To deal with this issue, programmers long ago developed local VCSs that had a simple database that kept all the changes to files under revision control.
+					To deal with this issue, programmers long ago developed local Version Control Systems (VCSs) that had a simple database that kept all the changes to files under revision control.
 				</p>
 
 
@@ -33,9 +33,9 @@
 					<caption>Local version control</caption>
 				</figure>
 
-				<p>
+<!-- 				<p>
 					One of the most popular VCS tools was a system called RCS, which is still distributed with many computers today. <url href="https://www.gnu.org/software/rcs/" visual="https://www.gnu.org/software/rcs/">RCS</url> works by keeping patch sets (that is, the differences between files) in a special format on disk; it can then re-create what any file looked like at any point in time by adding up all the patches.
-				</p>
+				</p> -->
 			</paragraphs>
 
 			<paragraphs xml:id="sec_centralized_version_control_systems">
@@ -43,7 +43,7 @@
 
 
 				<p>
-					The next major issue that people encounter is that they need to collaborate with developers on other systems. To deal with this problem, Centralized Version Control Systems (CVCSs) were developed. These systems (such as CVS, Subversion, and Perforce) have a single server that contains all the versioned files, and a number of clients that check out files from that central place. For many years, this has been the standard for version control.
+					The next major issue that people encounter is that they need to collaborate with developers on other systems. To deal with this problem, Centralized Version Control Systems (CVCSs) were developed. These systems (such as CVS, Subversion, and Perforce) have a single server that contains all the versioned files, and a number of clients that check out files from that central place. For many years, this was the standard for version control.
 				</p>
 
 				<figure xml:id="git_centralized">
@@ -53,11 +53,11 @@
 				</figure>
 
 				<p>
-					This setup offers many advantages, especially over local VCSs. For example, everyone knows to a certain degree what everyone else on the project is doing. Administrators have fine-grained control over who can do what, and it’s far easier to administer a CVCS than it is to deal with local databases on every client.
+					This centralized setup offers many advantages, especially over local VCSs. For example, everyone knows to a certain degree what everyone else on the project is doing. Administrators have fine-grained control over who can do what, and it’s far easier to administer a CVCS than it is to deal with local databases on every client.
 				</p>
 
 				<p>
-					However, this setup also has some serious downsides. The most obvious is the single point of failure that the centralized server represents. If that server goes down for an hour, then during that hour nobody can collaborate at all or save versioned changes to anything they’re working on. If the hard disk the central database is on becomes corrupted, and proper backups haven’t been kept, you lose absolutely everything — the entire history of the project except whatever single snapshots people happen to have on their local machines. Local VCSs suffer from this same problem — whenever you have the entire history of the project in a single place, you risk losing everything.
+					However, this setup also has some serious downsides. The most obvious is the single point of failure that the centralized server represents. If that server goes down for an hour, then during that hour nobody can collaborate at all or save versioned changes to anything they’re working on. If the disk the central database is on becomes corrupted, and proper backups haven’t been kept, you lose absolutely everything — the entire history of the project except whatever single snapshots people happen to have on their local machines. Local VCSs suffer from this same problem — whenever you have the entire history of the project in a single place, you risk losing everything.
 				</p>
 
 
@@ -156,7 +156,7 @@
 
 <!-- div attr= class="paragraph"-->
 			<p>
-				So, what is Git in a nutshell? This is an important topic to absorb, because if you understand what Git is and the fundamentals of how it works, then using Git effectively will probably be much easier for you. As you learn Git, try to clear your mind of the things you may know about other VCSs, such as CVS, Subversion or Perforce — doing so will help you avoid subtle confusion when using the tool. Even though Git’s user interface is fairly similar to these other VCSs, Git stores and thinks about information in a very different way, and understanding these differences will help you avoid becoming confused while using it.
+				So, what is Git in a nutshell? This is an important topic to absorb, because if you understand what Git is and the fundamentals of how it works, then using Git effectively will probably be much easier for you. As you learn Git, try to clear your mind of the things you may know about other VCSs— doing so will help you avoid subtle confusion when using the tool. Even though Git’s user interface is fairly similar to  other VCSs, Git stores and thinks about information in a very different way, and understanding these differences will help you avoid becoming confused while using it.
 			</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="sect3"-->
@@ -167,7 +167,7 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					The major difference between Git and any other VCS (Subversion and friends included) is the way Git thinks about its data. Conceptually, most other systems store information as a list of file-based changes. These other systems (CVS, Subversion, Perforce, Bazaar, and so on) think of the information they store as a set of files and the changes made to each file over time (this is commonly described as <em>delta-based</em> version control).
+					The major difference between Git and most other VCS (Subversion and friends included) is the way Git thinks about its data. Conceptually, most other systems store information as a list of file-based changes. These other systems (CVS, Subversion, Perforce, Bazaar, and so on) think of the information they store as a set of files and the changes made to each file over time (this is commonly described as <em>delta-based</em> version control).
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="imageblock"-->
@@ -351,7 +351,7 @@
 			</paragraphs>
 
 	</subsection>
-<subsection xml:id="sec_the_command_line">
+<subsection xml:id="sec_git_on_the_command_line">
 			<title>The Command Line</title>
 
 <!-- div attr= class="paragraph"-->
@@ -364,10 +364,12 @@
 				So we will expect you to know how to open Terminal in macOS or Command Prompt or PowerShell in Windows. If you don’t know what we’re talking about here, you may need to stop and research that quickly so that you can follow the rest of the examples and descriptions in this chapter.
 			</p><!--</div attr= class="paragraph">-->
 
+			<!--TODO add directions on how to get to a terminal in all environments-->
+
 
 		</subsection>
 
-		<subsection xml:id="_installing_git">
+		<subsection xml:id="git_installing">
 			<title>Installing Git</title>
 
 <!-- div attr= class="paragraph"-->
@@ -387,7 +389,7 @@ Note
 </cell>
 					<cell halign="left">
 			<p>
-				This chapter was written using Git version <term>2.8.0</term>. Though most of the commands we use should work even in ancient versions of Git, some of them might not or might act slightly differently if you’re using an older version. Since Git is quite excellent at preserving backwards compatibility, any version after 2.8 should work just fine.
+				This section was written using Git version <term>2.8.0</term>. Though most of the commands we use should work even in ancient versions of Git, some of them might not or might act slightly differently if you’re using an older version. Since Git is quite excellent at preserving backwards compatibility, any version after 2.8 should work just fine.
 			</p>
 			</cell>
 				</row>
@@ -396,7 +398,7 @@ Note
 
 <!-- div attr= class="sect3"-->
 
-			<paragraphs xml:id="_installing_on_linux">
+			<paragraphs xml:id="git_installing_on_linux">
 				<title>Installing on Linux</title>
 
 <!-- div attr= class="paragraph"-->
@@ -425,7 +427,7 @@ Note
 <!-- div attr= class="sect3"-->
 			</paragraphs>
 
-			<paragraphs xml:id="_installing_on_macos">
+			<paragraphs xml:id="git_installing_on_macos">
 				<title>Installing on macOS</title>
 
 <!-- div attr= class="paragraph"-->

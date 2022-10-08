@@ -1,2 +1,2 @@
-/Users/pearcej/rsdocker/RunestoneServer/books/opensource/source/main.ptx:9:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element include there
-/Users/pearcej/rsdocker/RunestoneServer/books/opensource/source/main.ptx:9:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element pretext has extra content: include
+file:/C:/Users/pearcej/opensource/source/main.ptx:9:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element include there
+file:/C:/Users/pearcej/opensource/source/main.ptx:9:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element pretext has extra content: include

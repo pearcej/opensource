@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <chapter xml:id="ch_git" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Git</title>
+  <title>Version Control with Git</title>
   <introduction>
     <p>
-			This chapter is about getting started with Git. We begin by explaining some background on version control tools, then move on to how to get Git running on your system and finally how to get it set up to start working with. At the end of this chapter you should understand why Git is around, why you should use it and you should be all set up to do so.
+    <!-- TODO -need a more appropriate intriduction... that is not just about the first section-->
+			This chapter is about version control system with a focus on the Git version control system. We begin by discussing why you need version control, explaining some background on version control tools, move on to how to get Git running on your system, and we finally how to get it set up to start working with. By the end of this chapter you should understand why Git is around, why you should use it, and you should be all set up to do so.
     </p>
   </introduction>
 
@@ -12,6 +13,7 @@
   <xi:include href="./sec_git_basics.ptx" />
   <xi:include href="./sec_git_branching.ptx" /> 
   <!-- <xi:include href="./sec_git_distributed.ptx" /> -->
-  <!-- <xi:include href="./sec_git_github.ptx" /> -->
+  <xi:include href="./sec_git_github.ptx" />
+  <!-- <xi:include href="./sec_scratch.ptx" /> -->
   <!-- <xi:include href="./sec_git_tools.ptx" /> -->
 </chapter>
