@@ -2,19 +2,19 @@
 
 <!-- The @xmlns:xi attribute  -->
 <!-- is needed if you use xi:include in this file             -->
-<chapter xml:id="ch_o" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Introduction to Free and Open Source Software (FOSS)</title>
+<chapter xml:id="ch_intro_2_oss" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction to Open Source Software (OSS)</title>
   <introduction>
 	<p>
-		Open Source Software, or OSS for short, is software for which the source code can be shared, with anyone.
+		Open Source Software (OSS) aka Free and Open Source Software (FOSS), is software for which the source code can be freely shared with anyone. (Note that the "free" n FOSS is related to the freedom to share the source code as opposed to being free of cost, which is might, or might not, be--more on this in the first section.)
 	</p>
 
 	<p>
-		There are more rigorous definitions, and there are many licenses that help to ensure these freedoms in subtly different ways. We examine these details later in <xref ref="ch_licensing"/>. For now, focus on this simple idea: the freedom to share source code is the essential element of free and open source software.
+		There are more rigorous definitions, and there are many licenses that help to ensure these freedoms in subtly different ways. We examine these details later in <xref ref="ch_licensing"/>. For now, focus on this simple idea: the freedom to share source code is the essential element of free and open source software. 
 	</p>
 
 	<p>
-		At the end of this chapter, you should:
+		By the end of this chapter, you should:
 	</p>
 
 	<p><ul>
@@ -47,7 +47,7 @@
 
 
   <xi:include href="./sec_what_is_open_source.ptx" />
-  <xi:include href="./sec_foss_matters.ptx" />
+  <xi:include href="./sec_oss_matters.ptx" />
   <xi:include href="./sec_source_code.ptx"/>
   <xi:include href="./sec_share_code.ptx"/>
   <xi:include href="./sec_contributor_mountain.ptx"/>

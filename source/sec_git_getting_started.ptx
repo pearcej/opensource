@@ -336,7 +336,7 @@
 
 					<li>
 									<p>
-					You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
+					You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your local Git directory (on your computer). Note that in <xref ref="sec_git_github"/>, we will learn how to push your work to a cloud repository like Github.
 				</p>
 					</li>
 
@@ -361,7 +361,7 @@
 
 <!-- div attr= class="paragraph"-->
 			<p>
-				So we will expect you to know how to open Terminal in macOS or Command Prompt or PowerShell in Windows. If you don’t know what we’re talking about here, you may need to stop and research that quickly so that you can follow the rest of the examples and descriptions in this chapter.
+				So you will need to to know how to open the Terminal in macOS or Linux or the Command Prompt or PowerShell in Windows. If you don’t know what we’re talking about here, pleasestop and research that quickly so that you can follow the rest of the examples and descriptions in this chapter.
 			</p><!--</div attr= class="paragraph">-->
 
 			<!--TODO add directions on how to get to a terminal in all environments-->
@@ -374,7 +374,7 @@
 
 <!-- div attr= class="paragraph"-->
 			<p>
-				Before you start using Git, you have to make it available on your computer. Even if it’s already installed, it’s probably a good idea to update to the latest version. You can either install it as a package or via another installer, or download the source code and compile it yourself.
+				Before you start using Git, you have to make it available on your computer. Even if it’s already installed, it’s probably a good idea to update to the latest version. You can either install it as a package or via another installer, or download the source code and compile it yourself. If you are a beginner, we strongly recommend using an installer.
 			</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="admonitionblock note"-->
@@ -481,14 +481,14 @@ Note
 				<title>Installing from Source</title>
 
 <!-- div attr= class="paragraph"-->
-				<p>
+<!-- 				<p>
 					Some people may instead find it useful to install Git from source, because you’ll get the most recent version. The binary installers tend to be a bit behind, though as Git has matured in recent years, this has made less of a difference.
-				</p><!--</div attr= class="paragraph">-->
+				</p> --><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
-				<p>
+<!-- 				<p>
 					If you do want to install Git from source, you need to have the following libraries that Git depends on: autotools, curl, zlib, openssl, expat, and libiconv. For example, if you’re on a system that has <c>dnf</c> (such as Fedora) or <c>apt-get</c> (such as a Debian-based system), you can use one of these commands to install the minimal dependencies for compiling and installing the Git binaries:
-				</p><!--</div attr= class="paragraph">-->
+				</p> --><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->

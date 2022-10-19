@@ -1,7 +1,4 @@
 INFO    : PreTeXt project found in `C:\Users\pearcej\opensource`.
-WARNING : Using CLI version 1.0.4 but project's `requirements.txt`
-WARNING : is configured to use 0.0.8. Consider either installing
-WARNING : CLI version 0.0.8 or changing `requirements.txt` to match 1.0.4.
 INFO    : Now preparing local server to preview directory `C:\Users\pearcej\opensource\output\web`.
 INFO    :   (Reminder: use `pretext deploy` to deploy your built project to a public
 INFO    :   GitHub Pages site that can be shared with readers who cannot access your
@@ -12,3 +9,5 @@ INFO    :     http://localhost:8000
 INFO    : This page should open in a new tab automatically.
 INFO    : Use [Ctrl]+[C] to halt the server.
 
+INFO    : 
+Closing server...

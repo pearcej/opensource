@@ -15,7 +15,7 @@
       </p>
 
       <p>
-        There are valid reasons for the usage of these different terms in different contexts, but for the sake of simplicity, we primarily use the terms <term>open source</term> or <term>open source software</term> primarily in this book, with the tacit understanding that all terms mean virtually the same thing in our chosen context.
+        There are valid reasons for the usage of these different terms in different contexts, but for the sake of simplicity, we primarily use the terms <term>open source</term> or <term>open source software (OSS)</term> primarily in this book, with the tacit understanding that all terms mean virtually the same thing in our chosen context.
       </p>
 
       <p>
@@ -24,16 +24,16 @@
       <definition xml:id="def-open-source">
         <idx>open source</idx>
         <idx>open source software</idx>
-         <idx>OSS</idx>
+        <idx>OSS</idx>
         <statement>
           <p>
-            Open source software (OSS) is software that is designed with code that is publicly accessible. 
+            <term>Open source software (OSS)</term> is software that is designed with code that is publicly accessible and freely shared.
           </p>
         </statement>
       </definition>
       </p>
 
-      <p>Open source software is typically developed in a collaborative way. It often relies upon peer review and community member contributions, often with community members from all over the world. In addition to seeing the code, often anyone can also modify and distribute the code as they see fit as long as the open source license is followed. We will explore licensing details in <xref ref="ch_licensing"/>
+      <p>Open source software is typically developed in a collaborative way. It often relies upon peer review and community member contributions, frequently with community members from all over the world. In addition to seeing the code, often anyone can also freely modify and distribute the code as they see fit as long as the open source license is followed. We will explore licensing details in <xref ref="ch_licensing"/>
       </p>
 
       <p>
