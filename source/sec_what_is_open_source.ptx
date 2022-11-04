@@ -3,19 +3,20 @@
 <section xml:id="sec_what_is_open_source" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>What is Open Source Software?</title>
       <p>
-        This is, first and foremost, a textbook about people create software collaboratively, using a community development model, and about how you can become a member of one of those communities.
+        This is, first and foremost, a textbook about how people create software collaboratively using a community development model, and about how you can become a member of one of those communities.  When the source code is open to viewing, most people call the result of such work by the name <term>open source software (OSS)</term>.
       </p>
       <p>
+      The following related terms relate to OSS that guarantees additional freedoms:
         <idx>free software</idx>   
         <idx>free and open source software</idx>  
         <idx>FOSS</idx>   
         <idx>FLOSS</idx>  
         <idx>free/libre and open source software</idx>   
-        Most people call the result of such work by the name <term>open source software (OSS)</term>. Some people call <term>free software</term> or use both terms: <term>free and open source software (FOSS)</term>. Some people throw in the word libre to specify a particular meaning of free, and call it <term>free/libre open source software (FLOSS)</term>. 
+       Some people call <term>free software</term> or use both terms: <term>free and open source software (FOSS)</term>. Some people throw in the word libre to glarify the intended meaning of free, and call it <term>free/libre open source software (FLOSS)</term>. 
       </p>
 
       <p>
-        There are valid reasons for the usage of these different terms in different contexts, but for the sake of simplicity, we primarily use the terms <term>open source</term> or <term>open source software (OSS)</term> primarily in this book, with the tacit understanding that all terms mean virtually the same thing in our chosen context.
+        There are valid reasons for the usage of these different terms in different contexts, but for the sake of breadth, we primarily use the terms <term>open source</term> or <term>open source software (OSS)</term> in this book. If you are interested in additional clarification or on the history of these related types of software and the evolution of the terms, see <url href="https://www.gnu.org/philosophy/free-sw.html" visual="www.gnu.org/philosophy/free-sw.html">What is Free Software</url> by the open source <url href="https://www.gnu.org/" visual="www.gnu.org/">GNU Operating System</url>.
       </p>
 
       <p>
@@ -27,7 +28,7 @@
         <idx>OSS</idx>
         <statement>
           <p>
-            <term>Open source software (OSS)</term> is software that is designed with code that is publicly accessible and freely shared.
+            <term>Open source software (OSS)</term> is software that is designed with code that is publicly accessible and openly viewed.
           </p>
         </statement>
       </definition>

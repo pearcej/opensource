@@ -4,13 +4,13 @@
   <title>Documentation Matters</title>
   <introduction>
 			<p>
-				People are going to tell you documentation doesn’t matter. In a perfect world, it doesn’t! If all code were self-evident and all programs worked for users without needing help, if all work and communities were easy to participate in, perhaps we could do without documentation. Of course, that would require all people to think and act in similar ways; we may never be without documentation simply because we are a diverse species.
+				People might tell you documentation doesn’t matter. In a perfect world, it might not. If all code were self-evident and all programs worked for users without needing help, if all work and communities were easy to participate in, perhaps we could do without documentation. Of course, that would require all people to think and act in similar ways; we may never be without documentation simply because we are a diverse species.
     </p>
   </introduction>
   <subsection xml:id="subsec_why_needed">
     <title>Why Documentation is Needed</title>
 			<p>
-				In open source, documentation is a key tool of transparency and participation. You have to document everything that you do in a open source project, not just the code. Next year when you need to remember why a technical decision was made, the answer is coming from a combination of mailing list archives, wiki page history, and well written version control log messages. A question of why you have specific commit rules or code styles? Mailing list archive and wiki page history are your friends.
+				In open source, documentation is a key tool of transparency and participation. You have to document everything that you do in a open source project, not just with the code. Next year when you need to remember why a technical decision was made, the answer is coming from a combination of mailing list archives, wiki page history, and well written version control log messages. A question of why you have specific commit rules or code styles? Mailing list archive and wiki page history are your friends.
 			</p>
 
 			<p>
@@ -174,7 +174,7 @@ return self._findAll(name, attrs, text, limit, self.previousGenerator,
 
 
 				<exercise xml:id="exercise-practice-good-code-commenting">
-					<title><term>Exercise: Practice good code commenting</term></title>
+					<title>Exercise: Practice good code commenting</title>
 
 					<p>
 						Throughout all the exercises in this book practice doing good commenting and documentation for your coding efforts.
@@ -238,7 +238,7 @@ return self._findAll(name, attrs, text, limit, self.previousGenerator,
 
 
 				<paragraphs xml:id="five-steps-for-technical-writing">
-					<title><term>Five steps for technical writing</term></title>
+					<title>Five steps for technical writing</title>
 
 					<p>
 						(Adapted from <url href="https://fossdocs.wordpress.com/2009/08/07/creating-technical-documentation-in-five-easy-steps/" visual="fossdocs.wordpress.com/2009/08/07/creating-technical-documentation-in-five-easy-steps/">Creating technical documentation in five easy steps</url> and <url href="https://fossdocs.wordpress.com/2009/10/20/magic-waterfalls/" visual="https://fossdocs.wordpress.com/2009/10/20/magic-waterfalls/">Magic waterfalls</url> under <url href="https://creativecommons.org/licenses/by-sa/3.0/" visual="creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0.</url>)
@@ -250,23 +250,23 @@ return self._findAll(name, attrs, text, limit, self.previousGenerator,
 
 					<p><ol>
 						<li>
-						Planning – who is the audience? What are the goals?
+						Planning – Who is the audience? What are the goals?
 						</li>
 
 						<li>
-						Content – what are the chapters about? Where will you get the information?
+						Content – What is the work about? Where will you get the information?
 						</li>
 
 						<li>
-						Writing – first draft, review, second draft …
+						Writing – First draft, review, second draft ...
 						</li>
 
 						<li>
-						Internationalisation/Localisation – will the book be translated? Into what languages?
+						Internationalisation/Internationalization – What spelling conventions will be used? Will the work be translated? If so, into what languages?
 						</li>
 
 						<li>
-						Review – what worked? What didn’t? How will the book be maintained?
+						Review – What worked? What didn’t? How will the work be maintained?
 						</li>
 
 					</ol></p>
@@ -283,10 +283,5 @@ return self._findAll(name, attrs, text, limit, self.previousGenerator,
 				</paragraphs>
     </subsection>
 
-  <conclusion>
-    <p>
-      After the last subsection, you might have a conclusion.
-    </p>
-  </conclusion>
 </section>
 

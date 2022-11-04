@@ -6,11 +6,16 @@
   <title>Introduction to Open Source Software (OSS)</title>
   <introduction>
 	<p>
-		Open Source Software (OSS) aka Free and Open Source Software (FOSS), is software for which the source code can be freely shared with anyone. (Note that the "free" n FOSS is related to the freedom to share the source code as opposed to being free of cost, which is might, or might not, be--more on this in the first section.)
+		Open Source Software (OSS) is software for which the source code is open for anyone to view.
+		A related type of open source software is Free and Open Source Software (FOSS) which offers additional freedoms. FOSS is software for which the source code not only affords users the freedom to view the source code but also guarantees users the freedom to build, copy, distribute, change, and improve the software. Note that the "free" in FOSS is related to these freedoms of what one is permitted to do with the the source code as opposed to being free of cost, which it might, or might not, be — more on this topic in the first section of this chapter.
 	</p>
 
 	<p>
-		There are more rigorous definitions, and there are many licenses that help to ensure these freedoms in subtly different ways. We examine these details later in <xref ref="ch_licensing"/>. For now, focus on this simple idea: the freedom to share source code is the essential element of free and open source software. 
+		Open source software differs from closed source proprietary software where only the owners and those they appoint have access to the source code because it is close-off to others. So, with closed source software, if you want to personally accertain that a game or another piece of software that you want to download and install does not include code that will steal your data or take over your entire system, you are simply out of luck.
+	</p>
+
+	<p>
+		There are more rigorous definitions of OSS and FOSS, and there are many licenses that help to ensure verious freedoms in subtly different ways. We examine many of these details later in <xref ref="ch_licensing"/>. For now, we focus on this one simple idea: the freedom to view the source code is the essential element of open source software. 
 	</p>
 
 	<p>
@@ -19,11 +24,11 @@
 
 	<p><ul>
 			<li>
-			Understand the difference between source code and binary code;
+			Understand the difference between source code and binary code;
 			</li>
 
 			<li>
-			Understand some of the benefits of using open source software;
+			Be able to articulate advantages and disadvantages of open source software;
 			</li>
 
 			<li>

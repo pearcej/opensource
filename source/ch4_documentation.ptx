@@ -11,19 +11,18 @@
 					<li>
 				  Use documentation as a way to become immediately useful as a project newcomer.
 					</li>
-
 					<li>
-					Document your project in a way that encourages other people to discover, use, and contribute to it.Follow a good methodology for technical writing, including writing good commit log messages, and documenting your contributions as you make them.
+					Document your project in a way that encourages other people to discover, use, and contribute to it.
 					</li>
-
+					<li>
+					Follow a good methodology for technical writing, including writing good commit log messages, and documenting your contributions as you make them.
+					</li>
 					<li>
 					Engage in an open collaboration on documentation, whether in source code or on a wiki.
 					</li>
-
 					<li>
 					Participate as part of a community in documenting a proceeding or event.
 					</li>
-
 					<li>
 					Explain the value of documentation to open source software.
 					</li>

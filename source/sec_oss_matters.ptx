@@ -1,93 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec_oss_matters" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Why might OSS matter to me</title>
+  <title>Why OSS Matters</title>
   <introduction>
-			<p>
-				Open source software matters because it’s real, and because you, the student, can see in to the guts of it. And if you choose to go out into the real world, looking for a job as a software developer, you will have a tremendous advantage if you can prove that you have experience in real software projects — ugly, messy, confusing, gigantic software projects.
-			</p>
+	<p>
+		Because of the open nature of the source code, many credible organizations believe that OSS is at least comparable to proprietary software in the area of software security. And, security in nearly every type of software matters to some extent, often to a critical extent. A user of proprietary software must accept the level of security (as well as the lack there of) that the software vendor is able and willing to provide as well as the speed at which fixes and updates to the software are released. If the user is not willing to accept these limitations, they must simply choose a different vender. Hence, some organizations such as the <url href="https://dodcio.defense.gov/Open-Source-Software-FAQ/" visual="dodcio.defense.gov/Open-Source-Software-FAQ/">US Department of Defense</url>  require that all software either have a warranty or be open source. So, open source matters for reasons of security.
+	</p>
+	<p>	
+		Unfortunately, most people do not even read the legal terms and conditions for software packages before accepting them. A 2017 study entitled <url href="https://www.businessinsider.com/deloitte-study-91-percent-agree-terms-of-service-without-reading-2017-11?op=1" visual="businessinsider.com/deloitte-study-91-percent-agree-terms-of-service-without-reading-2017-11">You're not alone, no one reads terms of service agreements</url> found that over 90% of people do not read these statements before agreeing to them. Honestly, I am shocked that statistic is not even higher... So, everyone who does not read these is at the mercy of the developers, which might or might not be a safe choice. Open source should matter to those who do not read these license agreements because they and others can look at the source code.
+	</p>
+	<p>
+		Did you realize that open source software is so incredibly prevalent that you would be pretty hard-pressed to not be using it regularly? Android and Apple iOS very heavily dominate the global market share for cell phone operating systems. However, the <url href="https://source.android.com/" visual="source.android.com">Android</url> system has more than three times as many users as Apple's iOS, and Android is open source. <url href="https://en.wikipedia.org/wiki/Linux" visual="en.wikipedia.org/wiki/Linux">Linux</url> is a family of open source operating systems that powers the majority of the webpages on the Internet. Chrome is by far the most popular brower on the planet, and while it is not fully open source,  it is built on top of a number of OSS projects, the details of which can be found by going to "chrome://credits" in the Chrome browser's URL bar. Even Apple iOS, which as mentioned above is the second most popular operating systems for cell phones, includes a lot of OSS components which are listed in "Settings > General > Legal and Regulatory". We will learn a lot more about open source licensing in <xref ref="ch_licensing"/>. So, OSS matters to everyone who uses a cell phone or searches the Internet. In fact, these are just examples, virtually any piece of software that the reader is using will likely include OSS components, so OSS should matter to <em>you</em>!
+	</p>
+	<p>
+		OSS might also matter to you if you are a student or a learner because it is real. You can see into not only the source code but also into the process of making code improvements. And if you choose to go out into the real world looking for a job as a software developer, you will have a tremendous advantage if you can prove that you have experience in real software projects — ugly, messy, confusing, gigantic real software projects.
+	</p>
 
-			<p>
-				Without OSS, getting experience in real software projects requires access, and probably permission, to see the source code. For students, that access is usually limited to those who can get <em>internships</em> or positions in <em>co-op </em>programs. Not everyone has the opportunity to spend the summer interning with a company that does large-scale software development, meaning that too few students have the opportunity to work with large (proprietary/closed) codebases. And even if they do, those students typically cannot show their work to anyone outside of the sponsoring company, and they sometimes cannot even discuss that work.
-			</p>
+	<p>
+		Without OSS, getting experience in real software projects requires access, and probably permission, to see the source code. For students, that access is usually limited to those who can get <em>internships</em> or positions in <em>co-op </em>programs. Not everyone has the opportunity to spend the summer interning with a company that does large-scale software development, meaning that too few students have the opportunity to work with large (proprietary/closed) codebases. And even if they do, those students typically cannot show their work to anyone outside of the sponsoring company, and they sometimes cannot even discuss that work.
+	</p>
 
-			<p>
-				In the world of OSS, the source code is available to anyone who wants to see it. Not only is the source code available — also available are all of the interesting challenges that go with managing large software projects. In this book, we explore a number of these challenges and help you engage in them in direct and practical ways.
-			</p>
+	<p>
+		In the world of OSS, the source code is available to anyone who wants to see it. Not only is the source code available — also available are all of the interesting challenges that go with managing large software projects. In this book, we explore a number of these challenges and help you engage in them in direct and practical ways.
+	</p>
   </introduction>
 
   <subsection xml:id="source-control">
-				<title>Source Control</title>
+	<title>Source Control</title>
 
-				<p>
-					How do fifteen software engineers work on the same piece of software together? When two software engineers decide independently to edit the same line of code, what happens? In the world of OSS, we make use of version control systems to help avoid these kinds of problems. Without version control, it’s a disaster, which is why we cover version control in the chapter <xref ref="ch_git"/>.
-				</p>
+	<p>
+		How do fifteen software engineers work on the same piece of software together? When two software engineers decide independently to edit the same line of code, what happens? In the world of OSS, we make use of version control systems to help avoid these kinds of problems. Without version control, it’s a disaster, which is why we cover version control in the chapter <xref ref="ch_git"/>.
+	</p>
 
   </subsection>
   <subsection xml:id="build-system">
-					<title>Build Systems</title>
+	<title>Build Systems</title>
 
-					<p>
-						Complex software is built in different <em>modules</em>. Those modules have different names in every language — <em>modules</em>, <em>packages</em>, <em>libraries</em>, etc. — but modularity is always introduced to help manage the complexity of large projects. One software project may import dozens, or even hundreds, of previously built software modules. What happens when one of those modules changes? If you don’t know how those modules fit together, it’s a disaster. Which is why we cover <em>build management</em> in the chapter <xref ref="ch_building_code"/>.
-					</p>
+	<p>
+		Complex software is built in different <em>modules</em>. Those modules have different names in every language — <em>modules</em>, <em>packages</em>, <em>libraries</em>, etc. — but modularity is always introduced to help manage the complexity of large projects. One software project may import dozens, or even hundreds, of previously built software modules. What happens when one of those modules changes? If you don’t know how those modules fit together, it’s a disaster. Which is why we cover <em>build management</em> in the chapter <xref ref="ch_building_code"/>.
+	</p>
 
   </subsection>
   <subsection xml:id="documentation">
-			<title>Documentation</title>
+	<title>Documentation</title>
 
-					<p>
-						There’s also a lot more to good software than just the code. How do you make sure people have the resources and knowledge they need to find and run (and/or contribute to) the software that you make? Beautiful code that doesn’t get used is just as useful as code that was never written. Which is why we cover <em>documentation</em> in the chapter <xref ref="ch_documentation"/>.
-					</p>
+	<p>
+		There’s  a lot more to good software than just the code. How do you make sure people have the resources and knowledge they need to find and run (and/or contribute to) the software that you make? Beautiful code that doesn’t get used is exactly as useful as code that was never written. Which is why we cover <em>documentation</em> in the chapter <xref ref="ch_documentation"/>.
+	</p>
 
-	</subsection>
+</subsection>
 
-	<subsection xml:id="tracking-bugs">
-					<title>Tracking Bugs</title>
+<subsection xml:id="tracking-bugs">
+	<title>Tracking Bugs</title>
 
-					<p>
-						Most code is buggy. Even the very best code can still have bugs, which means the ability to find and eliminate bugs is a critical skill for all software engineers. If you don’t know how to find the bugs your users find, you’re in trouble. Which is why we cover bug hunting and the mechanics of fixing code in the chapter entitled <xref ref="ch_bugs_and_debugging"/>.
-					</p>
+	<p>
+		Because humans write code and humans are fallible, most code is buggy. Even the very best code can still have bugs, which means the ability to find and eliminate bugs is a critical skill for all software engineers. If you don’t know how to find the bugs your users find, you’re in trouble. Which is why we cover bug hunting and the mechanics of fixing code in the chapter entitled <xref ref="ch_bugs_and_debugging"/>.
+	</p>
 
 	</subsection>
 
 	<subsection xml:id="experiencing-the-software-lifecycle">
-					<title>Experiencing the Software Lifecycle</title>
+		<title>Experiencing the Software Lifecycle</title>
 
-					<p>
-						There’s a saying about software programs: they’re never finished, only abandoned. There’s always more work to do to improve any software project. The thing that makes OSS so unique, and so interesting to the aspiring programmer, is that anyone can participate in a OSS project. Most large projects can benefit from contribution by even novice programmers. There are also more OSS projects than ever before, with an almost unlimited number of interesting problems. Want to learn how web browsers work? Hack on Firefox. Want to put together an awesome multilingual book reader for the blind? Hack on espeak.
-					</p>
+		<p>
+			There’s a saying about software programs: they’re never finished, only abandoned. There’s always more work to do to improve any software project. The thing that makes OSS so unique, and so interesting to the aspiring programmer, is that anyone can participate in a OSS project. Many large projects can benefit from contribution by even novice programmers. There are also more OSS projects than ever before, with an almost unlimited number of interesting problems. Want to learn how web browsers work? Hack on Firefox. Want to put together an awesome multilingual book reader for the blind? Hack on espeak.
+		</p>
 
-          <p>
-            Honestly, the primary key is to find a project that interests you.
-          </p>
+		<p>
+			Honestly, the primary key is to find a project that interests you.
+		</p>
 
   </subsection>
 
   <exercise xml:id="exercise-finding-a-project">
-				<title>Exercise: Finding a Cool Project</title>
+	<title>Exercise: Finding a Cool Project</title>
 
-				<p>
-					Imagine that you have just been hired as a programmer for OSS Inc., and your manager has told you that you must spend 20% of your time to work on a OSS project that matters to you.
-				</p>
+		<p>
+			Imagine that you have just been hired as a programmer for OSS Inc., and your manager has told you that you must spend 20% of your time to work on a OSS project that matters to you.
+		</p>
 
-				<p><ol>
-					<li>
-					First, search the web and <em>find sites that host OSS projects</em>. There are many. Bookmark these so that you can come back to them later.
-					</li>
+		<p><ol>
+			<li>
+			First, search the web and <em>find sites that host OSS projects</em>. There are many. Bookmark these so that you can come back to them later.
+			</li>
 
-					<li>
-					Second, <em>browse through several of these sites</em> and find one or more projects that are interesting to you. You might be interested in projects that benefit others. You might be interested in tools that support work that you do. Or, it might be that you might find something strikes your fancy that you never considered before! Take this as an opportunity to explore broadly.
-					</li>
+			<li>
+			Second, <em>browse through several of these sites</em> and find one or more projects that are interesting to you. You might be interested in projects that benefit others. You might be interested in tools that support work that you do. Or, it might be that you might find something strikes your fancy that you never considered before! Take this as an opportunity to explore broadly.
+			</li>
 
-					<li>
-					After you find a project, <em>write a blog post about it</em>. At this point, the most important thing you can probably do is to explain why the project is interesting to you.
-					</li>
+			<li>
+			After you find an open source project of interest, <em>write a blog post about it</em>. At this point, the most important thing you can probably do is to explain why the project is interesting to you.
+			</li>
 
-				</ol></p>
+		</ol></p>
 
-				<p>
-					If you don’t have a blog, set one up for free! Visit <url href="https://www.blogger.com/about/?r=1-null_user" visual="blogger.com">Blogger</url> or <url href="http://wordpress.com/" visual="wordress.com">WordPress</url>; setting up a new blog is easy. Blogs are widely used in the FOSS world by project members to share what they’re doing. Your voice will become one of many, and who knows — your blog might become a resource that other students later look to for inspiration when they are looking for projects to get involved in!
-				</p>
+		<p>
+			If you don’t have a blog, set one up for free! Visit <url href="https://www.blogger.com/about/?r=1-null_user" visual="blogger.com">Blogger</url> or <url href="http://wordpress.com/" visual="wordress.com">WordPress</url>; setting up a new blog is easy. Blogs are widely used in the FOSS world by project members to share what they’re doing. Your voice will become one of many, and who knows — your blog might become a resource that other students later look to for inspiration when they are looking for projects to get involved in!
+		</p>
 
 	</exercise>
 

@@ -129,7 +129,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="link">
 <a href="ch_intro_2_oss.html" data-scroll="ch_intro_2_oss" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Open Source Software (OSS)</span></a><ul>
 <li><a href="sec_what_is_open_source.html" data-scroll="sec_what_is_open_source" class="internal">What is Open Source Software?</a></li>
-<li><a href="sec_oss_matters.html" data-scroll="sec_oss_matters" class="internal">Why might OSS matter to me</a></li>
+<li><a href="sec_oss_matters.html" data-scroll="sec_oss_matters" class="internal">Why OSS Matters</a></li>
 <li><a href="sec_source_code.html" data-scroll="sec_source_code" class="active">About Source Code</a></li>
 <li><a href="sec_share_code.html" data-scroll="sec_share_code" class="internal">On Sharing Source Code</a></li>
 <li><a href="sec_contributor_mountain.html" data-scroll="sec_contributor_mountain" class="internal">Climbing Contributor Mountain</a></li>
@@ -195,14 +195,15 @@ eBookConfig.enable_chatcodes =  false;
 <li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_source_code"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content">
+<section class="section" id="sec_source_code"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1.3</span> <span class="title">About Source Code</span>
 </h2>
-<section class="introduction" id="introduction-3"><p id="p-56">Let’s start with an explanation of <em class="emphasis">source code</em>. One cannot understand <em class="emphasis">open source</em> without first understanding source.</p></section><section class="subsection" id="subsec_source_code"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-3"><p id="p-60">Let’s start with an explanation of <em class="emphasis">source code</em>. One cannot understand <em class="emphasis">open source</em> without first understanding source.</p></section><section class="subsection" id="subsec_source_code"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.3.1</span> <span class="title">What is Source Sode</span>
 </h3>
-<p id="p-57">Source code is a set of instructions for computers that is meant to be read and written by humans.</p>
-<p id="p-58">Here’s an example of source code, in the C programming language, for a simple, but complete, program.</p>
+<p id="p-61">Source code is a set of instructions for computers that is meant to be read and written by humans.</p>
+<p id="p-62">Here’s an example of source code, in the C programming language, for a simple, but complete, program.</p>
 <pre class="program"><code class="language-c">#include &lt;stdio.h&gt;
 main() { 
   for(;;) { 
@@ -210,17 +211,17 @@ main() {
   } 
 }
 </code></pre>
-<p id="p-59">In order to run this program, it must be compiled into machine code. First, we save the program into a file called hello.c. Then, we compile it:</p>
+<p id="p-63">In order to run this program, it must be <dfn class="terminology">compiled</dfn> into machine code using a program called a compiler. First, we save the program into a file called hello.c. Then, we compile it:</p>
 <pre class="code-block tex2jax_ignore">gcc -o hello hello.c
 </pre>
-<p id="p-60">The command is gcc, which stands for “GNU Compiler Collection.” The flag -o sets the name of the program that we are about to generate; here, we’ve decided to call it hello. The last argument is the name of the source file that we want to compile (hello.c). After compiling the program, you should be able to run it. To run the program, type:</p>
+<p id="p-64">The compilation command is gcc, which stands for “GNU Compiler Collection.” The flag -o sets the name of the program that we are about to generate; here, we’ve decided to call it hello. The last argument is the name of the source file that we want to compile (hello.c). After compiling the program, you should be able to run it. To run the program, type the following at the prompt:</p>
 <pre class="code-block tex2jax_ignore">./hello
 </pre>
-<p id="p-61">at the prompt. This says “run the program called hello that is in the current directory.” When run, this program will print Hello World! until we kill the program. Hold down the <dfn class="terminology">CTRL</dfn> key and press the <dfn class="terminology">C</dfn> key to kill the program’s execution.</p>
-<p id="p-62">At this point, you have two files in your directory: hello.c, the source code, and hello, the program binary. That binary is a piece of that machine code. You can open it with a program called hexdump that will let you see the binary in a hexidecimal form. You can do this yourself on the command line:</p>
+<p id="p-65">This says “run the program called hello that is in the current directory.” When run, this program will print Hello World! until we kill the program. Hold down the <dfn class="terminology">CTRL</dfn> key and press the <dfn class="terminology">C</dfn> key to kill the program’s execution.</p>
+<p id="p-66">At this point, you have two files in your directory: hello.c, the source code, and hello, the program binary. That binary is a piece of that machine code. You can open it with a program called hexdump that will let you see the binary in a hexidecimal form. You can do this yourself on the command line:</p>
 <pre class="code-block tex2jax_ignore">hexdump hello
 </pre>
-<p id="p-63">We’ve reproduced some of what it looks like when hello is viewed in hexdump after hello.c has been compiled by gcc:</p>
+<p id="p-67">We’ve reproduced some of what it looks like when hello is viewed in hexdump after hello.c has been compiled by gcc:</p>
 <pre class="code-block tex2jax_ignore">0000000 457f 464c 0101 0001 0000 0000 0000 0000
 0000010 0002 0003 0001 0000 8300 0804 0034 0000
 0000020 0820 0000 0000 0000 0034 0020 0008 0028
@@ -254,15 +255,21 @@ main() {
 00001e0 0000 0000 0000 0000 0012 0000 001a 0000
 00001f0 848c 0804 0004 0000 0011 000f 5f00 675f
 </pre>
-<p id="p-64">That’s only a small chunk of the program binary. The full binary is much larger — even though the source code that produces this binary is only two lines long.</p>
-<p id="p-65">As you can see, there’s a huge difference between <em class="emphasis">source code</em>, which is intended to be read and written by humans, and <em class="emphasis">binary code</em>, which is intended to be read and written by computer processors.</p>
-<p id="p-66">This difference is a crucial one for programmers who need to modify a computer program. Let’s say you wanted to change the program to say “Open source is awesome!!!”. With access to the source code, making this change is trivial, even for a novice programmer. Without access to the source code, making this change would be incredibly difficult. And this for two lines of code.</p></section><article class="exercise exercise-like" id="exercise-change-the-source-code"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-change-the-source-code"><h3 class="heading">
+<p id="p-68">That’s only a small chunk of the program binary. The full binary is much larger — even though the source code that produces this binary is only two lines long.</p>
+<p id="p-69">As you can see, there’s a huge difference between <em class="emphasis">source code</em>, which is intended to be read and written by humans, and <em class="emphasis">binary code</em>, which is intended to be read and written by computer processors.</p>
+<p id="p-70">This difference is a crucial one for programmers who need to modify a computer program. Let’s say you wanted to change the program to say “Open source is awesome!!!”. With access to the source code, making this change is trivial, even for a novice programmer. Without access to the source code, making this change would be incredibly difficult. And this for two lines of code.</p></section><section class="subsection" id="subsec_decompilation"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.3.2</span> <span class="title">On Decompilation</span>
+</h3>
+<p id="p-71">The process of reverse engineering a program from its binary code to source code is called <dfn class="terminology">decompiling</dfn>, and the level of difficulty of decompiling a program differs rather significantly by the programming language of the source code. C code is notoriously difficult to decompile, while Java is much easier partly because of compiler optimizations and partly because the intact metadata including data types and methods names, etc.</p>
+<p id="p-72">The challenges of decompilation and the potential security risks inherent in programs that are closed source, led the Research Directorite of the US National Security Agency (NSA) to develop a suite of open source reverse engineering and decompilation tools called <a class="external" href="https://ghidra-sre.org/" target="_blank">Ghidra</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-21" id="fn-21"><sup> 1 </sup></a>. That this work was developed by one of the top cybersecurity agencies in the world and that they released and maintain it as open source software stands as a strong testimonial to the potential security concerns inherent in closed source software.</p>
+<p id="p-73">Note that copyright law generally provides the copyright holder with a set of exclusive rights. Decompilation is carried out by making copies of the software program, and so to be in compliance with law, one must consider the copyright before undertaking decompilation. Laws in both the United States and Europe do permit decompilation to a limited extent and for limited specific purposes. Laws in other areas of the world will vary, but reverse engineering a program for the purpose of reselling it under a different name and license would likely open you up to legal battles – the authors of this text strongly caution you against such action.</p></section><article class="exercise exercise-like" id="exercise-change-the-source-code"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-change-the-source-code"><h3 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="period">.</span><span class="space"> </span><span class="title"><dfn class="terminology">Exercise – Change the source code</dfn>.</span>
-</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-change-the-source-code"><article class="exercise exercise-like"><p id="p-67">Change the source code to print out “Open source is awesome!!!” instead of “Hello World!”. Spend no more than half an hour on this exercise.</p></article></div>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-change-the-source-code"><article class="exercise exercise-like"><p id="p-74">Change the source code to print out “Open source is awesome!!!” instead of “Hello World!”. Spend no more than half an hour on this exercise.</p></article></div>
 <article class="exercise exercise-like" id="optional-exercise-change-the-binary-code"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-optional-exercise-change-the-binary-code"><h3 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="period">.</span><span class="space"> </span><span class="title"><dfn class="terminology">Optional Exercise – Change the binary code</dfn>.</span>
-</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-optional-exercise-change-the-binary-code"><article class="exercise exercise-like"><p id="p-68">Change the binary code to print out “FOSS ROXORS!” instead of “Hello World!”. Spend no more than half a day on this exercise.</p>
-<p id="p-69">This is actually a tricky exercise, and it could take you a fair bit of time. We included it here because you might be curious and want to go poking around in the binary. Under most flavors of Linux you should be able to find or install a program called hexedit. To get you started, you use <dfn class="terminology">TAB</dfn> to switch from hex to ASCII, / to search, and <dfn class="terminology">F2</dfn> to save your changes. You can read the rest of the documentation for hexedit by reading the manpage, which you can get to by typing man hexedit on the command line, or pressing <dfn class="terminology">F1</dfn> while running hexedit.</p></article></div></section></div></main>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-optional-exercise-change-the-binary-code"><article class="exercise exercise-like"><p id="p-75">Change the binary code to print out “OSS Rocks!” instead of “Hello World!”. Spend no more than half a day on this exercise.</p>
+<p id="p-76">This is actually a tricky exercise, and it could take you a fair bit of time. We included it here because you might be curious and want to go poking around in the binary. Under most flavors of Linux you should be able to find or install a program called hexedit. To get you started, you use <dfn class="terminology">TAB</dfn> to switch from hex to ASCII, / to search, and <dfn class="terminology">F2</dfn> to save your changes. You can read the rest of the documentation for hexedit by reading the manpage, which you can get to by typing man hexedit on the command line, or pressing <dfn class="terminology">F1</dfn> while running hexedit.</p></article></div></section><div class="hidden-content tex2jax_ignore" id="hk-fn-21"><div class="fn"><code class="code-inline tex2jax_ignore">ghidra-sre.org/</code></div></div>
+</div></main>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
