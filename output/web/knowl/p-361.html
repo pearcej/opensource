@@ -11,8 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:</p>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<ol class="decimal">
+<li><p><code class="code-inline tex2jax_ignore">[path]/etc/gitconfig</code> file: Contains values applied to every user on the system and all their repositories. If you pass the option <code class="code-inline tex2jax_ignore">--system</code> to <code class="code-inline tex2jax_ignore">git config</code>, it reads and writes from this file specifically. Because this is a system configuration file, you would need administrative or superuser privilege to make changes to it.</p></li>
+<li><p><code class="code-inline tex2jax_ignore">~/.gitconfig</code> or <code class="code-inline tex2jax_ignore">~/.config/git/config</code> file: Values specific personally to you, the user. You can make Git read and write to this file specifically by passing the <code class="code-inline tex2jax_ignore">--global</code> option, and this affects <em class="emphasis">all</em> of the repositories you work with on your system.</p></li>
+<li><p><code class="code-inline tex2jax_ignore">config</code> file in the Git directory (that is, <code class="code-inline tex2jax_ignore">.git/config</code>) of whatever repository you’re currently using: Specific to that single repository. You can force Git to read from and write to this file with the <code class="code-inline tex2jax_ignore">--local</code> option, but that is in fact the default. Unsurprisingly, you need to be located somewhere in a Git repository for this option to work properly.</p></li>
+</ol>
 <span class="incontext"><a href="sec_git_getting_started.html#p-361" class="internal">in-context</a></span>
 </body>
 </html>

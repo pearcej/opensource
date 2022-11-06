@@ -4,7 +4,7 @@
   <title>No License</title>
 
   <subsection xml:id="subsec_no_license">
-    <title>In the Absense of a License</title>
+    <title>In the Absence of a License</title>
     
 		<p>
 			Even in the absence of a license file, you may grant some rights in cases where you publish your source code to a site that requires accepting terms of service. For example, if you publish your source code in a public repository on GitHub, you have accepted the <url href="https://help.github.com/articles/github-terms-of-service" visual="help.github.com/articles/github-terms-of-service">Terms of Service</url>, by which you allow others to view and fork your repository. Others may not need your permission if <url href="https://en.wikipedia.org/wiki/Limitations_and_exceptions_to_copyright" visual="https://en.wikipedia.org/wiki/Limitations_and_exceptions_to_copyright">limitations and exceptions to copyright</url> apply to their particular situation. Neither site terms nor jurisdiction-specific copyright limitations are sufficient for the kinds of collaboration that people usually seek on a public code host, such as experimentation, modification, and sharing as fostered by an open source license.
@@ -15,8 +15,88 @@
 		</p>
 
 		<p>
-			Disallowing use of your code might not be what you intend by posting “no license.” An open source license allows reuse of your code while you retain the copyright. If your goal is to completely opt-out of copyright restrictions, try a public domain dedication instead.
+			Disallowing use of your code might not be what you intend by posting “no license.” An open source license allows reuse of your code while you retain the copyright. If your goal is to completely opt-out of copyright restrictions, consider a public domain dedication instead using something like the <url href="">Unlicense</url>. (Note that not all countries recognize public domain, so public domain licensing tries to address this issue.)
 		</p>
+
+<paragraphs>
+	<title>The Unlicense</title>
+	<p>
+	</p>
+    <p>
+ 	A license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code.
+    </p>
+    <p>
+    The following table summarizes this the Unlicense:
+
+
+		<table width="100%" xml:id="table-unlicense-summary">
+			<title>The Unlicense Permissions, Conditions, and Limitations</title>
+        <col width="33%" colors="green"/>
+        <col width="33%" />
+        <col width="33%" />
+        <tabular halign="left" width="100%">
+        <row header="yes" bottom="minor">
+          <cell halign="left" width="33%" >Permissions&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</cell>
+          <cell halign="left" width="33%" >Conditions&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</cell>
+          <cell halign="left" width="33%" >Limitations&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</cell>
+        </row>
+        <row valign="top">
+          <cell halign="left">
+
+        <line>
+          &#10003; Commercial use
+        </line>
+
+        <line>
+          &#10003; Distribution
+        </line>
+
+        <line>
+          &#10003; Modification
+        </line>
+
+        <line>
+          &#10003; Private use
+        </line>
+
+      </cell>
+          <cell halign="left">
+        <line>	&#9888; (None) </line>
+
+      </cell>
+          <cell halign="left">
+        <line>
+            &#10007; Liability
+        </line>
+
+        <line>
+            &#10007; Warranty
+        </line>
+
+      </cell>
+        </row>
+        </tabular>
+      </table>
+    </p>
+    <p>
+      The entire text of the Unlicense can be found at <url href="https://unlicense.org" visual="unlicense.org">the Unlicense</url>.
+	</p>
+	
+	<p>
+      Examples of open source projects using the Unlicense:
+      <ul>
+        <li>
+        <url href="https://github.com/mawww/kakoune/blob/master/UNLICENSE" visual="github.com/mawww/kakoune/blob/master/UNLICENSE">kakoune</url>
+        </li>
+        <li>
+          <url href="https://github.com/ruby-rdf/rdf/blob/master/UNLICENSE" visual="github.com/ruby-rdf/rdf/blob/master/UNLICENSE">(Ruby) RDF.rb</url>
+        </li>
+        <li>
+          <url href="https://github.com/streamich/react-use/blob/master/LICENSE" visual="github.com/streamich/react-use/blob/master/LICENSE">react-use</url>
+        </li>
+      </ul>
+    </p>
+	</paragraphs>
 
   </subsection>
 

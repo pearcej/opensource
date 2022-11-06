@@ -12,7 +12,19 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>Reproducing bugs is one of the best ways to learn how software actually works. A tester who has explored a bug thoroughly, and who can confidently say “this bug only happens when these three conditions are met,” is much more likely to be able to take the next step: namely, to dig in and find the code that actually creates those three conditions.</p>
+<p><pre class="code-block tex2jax_ignore">Bad: When I load the latest Foomail client, it crashes. 
+Also, I'm getting screen lockups in Barchat. I think they're related. 
+
+Good: Bug 1: Foomail client crashes. 
+Bug 2: Lockups in Barchat. 
+
+Best: Bug 1: Foomail client crashes. 
+I think it may be related to lockups in Barchat 
+(and here's some evidence). 
+Bug 2: Lockups in Barchat. 
+I think it might be related to Foomail client crashes 
+(and here's some evidence).
+</pre></p>
 <span class="incontext"><a href="sec_bug_reports.html#p-892" class="internal">in-context</a></span>
 </body>
 </html>

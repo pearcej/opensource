@@ -10,14 +10,18 @@
       If you’re contributing to or extending an existing project, it almost always makes the most sense to continue using that project’s license. Depending on the original project’s license, using the same license might be a requirement, not just the easiest thing to do. (See the “same license” condition of some licenses.) To find a project's license, look for a file called LICENSE or COPYING, and skim the project’s README. If you can’t find a license, ask the maintainers.
     </p>
     <p>
-      Some open source communities have strong preferences for particular licenses. If you want to participate in one of these, it will be easier to use their preferred license, even if you’re starting a brand new project with no existing dependencies. Some examples of such communities include:
+      Some open source communities have strong preferences for particular licenses. If you want to participate in one of these communities, it will be easier to use their preferred license, even if you’re starting a brand new project with no existing dependencies. Some examples of such communities include:
     <ul>
 			<li>
 			<url href="https://www.apache.org/licenses/" visual="www.apache.org/licenses">Apache</url> requires <url href="/licenses/apache-2.0/" visual="/licenses/apache-2.0">Apache License 2.0</url>
 			</li>
 
 			<li>
-			<url href="https://github.com/cncf/foundation/blob/main/charter.md#11-ip-policy" visual="https://github.com/cncf/foundation/blob/main/charter.md#11-ip-policy">Cloud Native Computing Foundation</url> requires <url href="/licenses/apache-2.0/" visual="/licenses/apache-2.0">Apache License 2.0</url>
+			<url href="https://github.com/cncf/foundation/blob/main/charter.md#11-ip-policy" visual="https://github.com/cncf/foundation/blob/main/charter.md#11-ip-policy">Cloud Native Computing Foundation</url> requires <url href="/licenses/apache-2.0/" visual="/licenses/apache-2.0">Apache License 2.0</url>.
+			</li>
+
+			<li>
+			<url href="https://www.mozilla.org/en-US/foundation/licensing/" visual="mozilla.org/en-US/foundation/licensing/">Firefox</url> has an entire guide for helping you choose the right license. For code, they recommend their own license, the Mozilla Public License <url href="https://www.mozilla.org/en-US/MPL/2.0/" visual="mozilla.org/en-US/MPL/2.0" >MPL 2.0</url>  or <url href="/licenses/apache-2.0/" visual="/licenses/apache-2.0">Apache License 2.0</url> and the guide offers guidance on choosing which.
 			</li>
 
 			<li>
@@ -50,7 +54,7 @@
   <subsection xml:id="subsec-changing-licenses">
 	<title>Changing Licenses</title>
 	<p>
-		As an open source software project matures, sometimes the mantainers of the project decide to change open source licenses. This section highlights a case study of one project's change of license and their reasons for that change.
+		As an open source software project matures, sometimes the maintainers of the project decide to change open source licenses. This section highlights a case study of one project's change of license and their reasons for that change.
 	</p>
 	<p>		
 		Some people who are new to working in open source software communities may naively think that the best licenses are those that are the most permissive. Unfortunately, there are pitfalls to tho most permissive licenses when anyone can utilize the software for any purpose. 

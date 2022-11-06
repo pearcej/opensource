@@ -8,10 +8,10 @@
     </p>
 
     <p>
-      When you author a creative work, such as code, the work is under exclusive copyright by default. Unless you include a license that specifies otherwise, <em>nobody</em> else can copy, distribute, or modify your work without being at risk of take-downs, shake-downs, or litigation. Once the work has other contributors (who then each become a copyright holder), “nobody” includes you. 
+      When you author a creative work, such as code, you automatically hold exclusive copyright to the work by default. Unless you include a license that specifies otherwise, <em>nobody</em> else is permitted to copy, distribute, or modify your work without without opening themselves up to legal action by you. Once the work has other contributors (who then each become a copyright holder), “nobody” includes you. 
     </p>
     <p>
-      If that is not a legal mess you want to get into, your code should include a specific statement of copyright.
+      If that is not a legal mess you want to get into, your code should include specific terms and conditions for what different people are allowed to do with it, in the form of a license.
     </p>
 
   </introduction>
@@ -20,10 +20,12 @@
     <p>
       Here we give a few definitions that are important for the remainder of the chapter. These are intended not as legal definitions but to help in understanding the common usage of these terms.
 
+    </p>
+    <p>
       For the first term, <term>Intellectual Property</term>, you can think "property" (like software) that is "intellectual" in nature, but it refers to more than just the property itself.
 
     <definition xml:id="def-Intellectual-Property">
-    <idx>intellectural property</idx>
+    <idx>intellectual property</idx>
             
       <statement>
         <p>
@@ -46,10 +48,10 @@
           </p>
         </statement>
       </definition>
-      This means that as soon as an author makes it and writes it in code or other tangible form, the author holds a copyright to that work. 
+      This means that as soon as someone authors a creative piece of work, in code or other tangible form, they hold a copyright to that work. 
       </p>
       <p>
-      A copyright offers the copyright owner exclusive rights limiting permissions like:	
+      A copyright offers the copyright owner exclusive rights like:	
       <ul>
         <li>
           Private use
@@ -65,7 +67,7 @@
         </li>
 
       </ul>
-      Copyright also provides the owner of copyright the exclusive right to authorize others to utilize these  rights, subject to certain stated conditions and limitations. 
+      Copyright also provides the owner of copyright the exclusive right to authorize others to utilize some or all of these  rights, subject to certain stated conditions and limitations. 
     </p>
 
     <p>
@@ -86,7 +88,13 @@
 
     </p>
 
-    <p>
+    <paragraphs>
+      <title>Some Country-specific IP Terms</title>
+      <p>
+        
+      </p>
+
+      <p>
       Some countries have a notion of <term>fair use</term> or <term>fair dealing</term> which are somewhat difficult to understand but even so are critically important because in many countries limited, specific uses can be made without permission from the copyright owner.
 
     <definition xml:id="def-fair-dealing">
@@ -106,26 +114,23 @@
       <statement>
       <idx>fair use</idx>
         <p>
-          In the United States (US) and a few other countries a notion called <term>fair use</term> allows copying of copyrighted material if done for a "limited" and also “transformative” purpose. 
+          In the United States (US) and a few other countries a notion called <term>fair use</term> allows copying of copyrighted material if done for a "limited" and also “transformative” purpose.  For example, in the US, fair use is often used by various types of critics to quote a limited portion of a work and by professors to make a limited portion of a work available to their students. 
         </p>
       </statement>
     </definition>
     </p>
-      
-    <p>
-      In the US, fair use is often used by various types of critics to quote a limited portion of a work and by professors to make a limited portion of a work available to thier students. 
-    </p>
-      
     <p>
       What do <em>"limited" and “transformative” purpose</em> mean? Well, many millions of US dollars have been spent arguing just that question. If you really want to just see how confusing the notion of fair use is in the US, see <url href="https://en.wikipedia.org/wiki/Google_LLC_v._Oracle_America,_Inc." visual="wikipedia.org/wiki/Google_LLC_v._Oracle_America,_Inc.">Google v. Oracle</url> which ultimately ended up in the US Supreme Court battling exactly that question.
     </p>
-  </subsection>
-
-  <conclusion>
-    <title>Disclaimers</title>
     <p>
       Because the notions of fair use and fair dealing vary significantly by country, researching the laws in your specific country is highly advisable. 
     </p>
+  </paragraphs>
+  </subsection>
+
+  <conclusion>
+    <title>Disclaimer</title>
+
     <p>
       These explanations and definitions are not intended to be used in any legal way and are offered without warranty of any type, either expressed or implied. In no event shall the author or other contributors be held liable for any claim, damages, or other liability arising from or in connection with these definitions or explanations.
     </p>

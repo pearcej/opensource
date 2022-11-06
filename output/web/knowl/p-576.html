@@ -12,7 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>In “detached HEAD” state, if you make changes and then create a commit, the tag will stay the same, but your new commit won’t belong to any branch and will be unreachable, except by the exact commit hash. Thus, if you need to make changes — say you’re fixing a bug on an older version, for instance — you will generally want to create a branch:</p>
+<p><code class="code-inline tex2jax_ignore">git push &lt;remote&gt; --tags</code> will push both lightweight and annotated tags. There is currently no option to push only lightweight tags, but if you use <code class="code-inline tex2jax_ignore">git push &lt;remote&gt; --follow-tags</code> only annotated tags will be pushed to the remote.</p>
 <span class="incontext"><a href="sec_git_basics.html#p-576" class="internal">in-context</a></span>
 </body>
 </html>

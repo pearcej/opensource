@@ -12,7 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>If you want to remove a remote for some reason — you’ve moved the server or are no longer using a particular mirror, or perhaps a contributor isn’t contributing anymore — you can either use <code class="code-inline tex2jax_ignore">git remote remove</code> or <code class="code-inline tex2jax_ignore">git remote rm</code>:</p>
+<p>This command works only if you cloned from a server to which you have write access and if nobody has pushed in the meantime. If you and someone else clone at the same time and they push upstream and then you push upstream, your push will rightly be rejected. You’ll have to fetch their work first and incorporate it into yours before you’ll be allowed to push. See the next section on Git Branching for more detailed information on how to push to remote servers.</p>
 <span class="incontext"><a href="sec_git_basics.html#p-544" class="internal">in-context</a></span>
 </body>
 </html>
