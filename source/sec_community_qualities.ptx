@@ -3,32 +3,32 @@
 <section xml:id="sec_community_qualities" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Qualities of a Community</title>
 <introduction>
-  <p>Each FOSS community has a rich set of defining qualities. Understanding these qualities is essential to evalutating and participating in the community:</p>
+  <p>Each OSS community has a rich set of defining qualities. Understanding these qualities is essential to evaluating and participating in the community:</p>
 </introduction>
 
 <subsection xml:id="subsec_focus">
 <title>Focus</title>
 
-<p>What does the community want to achieve? The stated goals may be broader than the actual interest and focus of the community. For example, a group may state that they&#8217;re developing a Geographic Information System (GIS), which is a broad goal &#8212; but the actual software may be focused on just one particular use of GIS.</p>
+<p>What does the community want to achieve? The stated goals may be broader than the actual interest and focus of the community. For example, a group may state that they're developing a Geographic Information System (GIS), which is a broad goal, but the actual software may be focused on just one particular use of GIS.</p>
 </subsection>
 
 <subsection xml:id="subsec_maturity_history">
   <title>Maturity and History</title>
 
-<p>Is the project new or old? Young communities may not have developed effective procedures and rhythms, or may not yet have attracted contributors other than developers (such as documentation writers, artists, testers, and marketers). On the other hand, older communities may have plateaued with a stable, complete product (good) or stagnated (bad). Some of the oldest FOSS communities, such as the X Windows community, have gone through multiple periods of rapid development, stable releases, stagnation, and rejuvenation.
+<p>Is the project new or old? Young communities may not have developed effective procedures and rhythms, or may not yet have attracted contributors other than developers (such as documentation writers, artists, testers, and marketers). On the other hand, older communities may have plateaued with a stable, complete product (good) or stagnated (bad). Some of the oldest OSS communities, such as the X Windows community, have gone through multiple periods of rapid development, stable releases, stagnation, and rejuvenation.
 </p>
 </subsection>
 
 <subsection xml:id="subsec_types_openness">
 <title>Type of Openness</title>
 
-<p>The term open source is broadly applied, but there are many different types and degrees of openness. Some projects are open in a lob-the-software-over-the-wall sense: the code has been released under an open source license, but no community has formed around it; periodically, a new source tarball comes flying over the wall to play with, and it&#8217;s not obvious how to contribute improvements back to the main source of the code &#8212; or if it&#8217;s even possible at all. Some projects have an active community but a strict management hierarchy anchored by a dictator-for-life or impenetrable core committee, while others have an openness that extends to their management structure. There are also projects where the core source code is tightly controlled, but are extremely open in peripheral areas such translations, documentation, and community support.
+<p>The term open source is broadly applied, but there are many different types and degrees of openness. Some projects are open in a lob-the-software-over-the-wall sense: the code has been released under an open source license, but no community has formed around it; periodically, a new source tarball comes flying over the wall to play with, and it's not obvious how to contribute improvements back to the main source of the code, or if it's even possible at all. Some projects have an active community but a strict management hierarchy anchored by a dictator-for-life or impenetrable core committee, while others have an openness that extends to their management structure. There are also projects where the core source code is tightly controlled, but are extremely open in peripheral areas such translations, documentation, and community support.
 </p>
 </subsection>
 
 <subsection xml:id="subsec_commercial_ties">
 <title>Commercial ties</title>
-<p>Is there a company (or companies) sponsoring the project? Some sponsors provide only resources (funding, equipment, infrastructure), while others provide technology, legal protection, people, or some combination. It&#8217;s important to understand how much influence the sponsors have in the overall direction of the project, and whether the community can continue if the sponsor pulls out (or fails).
+<p>Is there a company (or companies) sponsoring the project? Some sponsors provide only resources (funding, equipment, infrastructure), while others provide technology, legal protection, people, or some combination. It's important to understand how much influence the sponsors have in the overall direction of the project, and whether the community can continue if the sponsor pulls out (or fails).
 </p>
 </subsection>
 
@@ -45,8 +45,35 @@
 
 <subsection xml:id="subsec_mentoring_training">
 <title>Mentoring and Training</title>
-<p>Some communities grow in a haphazard way, while others have clearly-defined, simple on-ramps with purposeful training and mentorship programs.
+<p>Some communities grow in a haphazard way, others offer guidance for new contributors, still others provide clearly-defined, simple on-ramps with purposeful training and mentorship programs.
 </p>
 </subsection>
+
+  <exercise xml:id="exercise-explore-community-qualities">
+    <title>Exercise –  Explore Community Qualities</title>
+
+    <p>
+      Go to your chosen project and research the following, providing links as evidence :
+      <ul>
+        <li><title>Maturity and History</title> Discuss the maturity and the history of the project.
+        </li>
+        <li><title>Focus</title> How the focus of the community changed over time? Has it changed greatly or very little? Explain.
+        </li>
+        <li><title>Type of Openness</title> Describe the type of openness you witness. 
+        </li>
+        <li><title>Commercial ties</title> Are there commercial ties? If so, how much influence do the sponsors have?
+        </li>
+        <li><title>Subgroups</title> Can you identify any formal or informal subgroups that operate on differing tools or aspects?
+        </li>
+        <li><title>Skills</title> Can you identify differentiation of skill sets? Any specific skill sets that are needed?
+        </li>
+        <li><title>Mentoring and Training</title> How does the community work to onboard novice members?
+        </li>
+        After researching the above, use just a paragraph to summarize and reflect on the culture and its overall culture.
+      </ul>
+    </p>
+
+  </exercise>
+
 </section>
 

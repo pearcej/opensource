@@ -113,11 +113,11 @@ main() {
 	<subsection xml:id="subsec_decompilation">
 		<title>On Decompilation</title>
 		<p>
-			The process of reverse engineering a program from its binary code to source code is called <term>decompiling</term>, and the level of difficulty of decompiling a program differs rather significantly by the programming language of the source code. C code is notoriously difficult to decompile, while Java is much easier partly because of far fewer compiler optimizations and partly because the intact metadata including such deetails as data types and method names. 
+			Compilation transforms a high-level language into a low-level language like machine code or byte code. Decompilation is the reverse. The process of reverse engineering a program from its binary code to source code is called <term>decompiling</term>, and the level of difficulty of decompiling a program differs rather significantly by the programming language of the source code. C code is notoriously difficult to decompile, while Java is much easier, partly because of far fewer compiler optimizations and partly because the intact metadata including such details as data types and method names. 
 		</p>
 
 		<p>
-			The challenges of decompilation and the potential security risks inherent in programs that are closed source, led the Research Directorite of the US National Security Agency (NSA) to develop a suite of open source reverse engineering and decompilation tools called <url href="https://ghidra-sre.org/" visual="ghidra-sre.org/">Ghidra</url>. That this work was developed by one of the top cybersecurity agencies in the world and that they released and maintain it as open source software stands as a strong testimonial to the potential security concerns inherent in closed source software.
+			The challenges of decompilation and the potential security risks inherent in programs that are closed source led the Research Directorate of the US National Security Agency (NSA) to develop a suite of open source reverse engineering and decompilation tools called <url href="https://ghidra-sre.org/" visual="ghidra-sre.org/">Ghidra</url>. That this work was developed by one of the top cybersecurity agencies in the world and that they released and maintain it as open source software stands as a very strong testimonial to both the potential security concerns inherent in closed source software and to the potential security benefits of open source software.
 		</p>
 
 		<p>

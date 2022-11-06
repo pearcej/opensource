@@ -1,3 +1,20 @@
 {
-    "cSpell.diagnosticLevel": "Error"
+    "cSpell.diagnosticLevel": "Error",
+    "cSpell.words": [
+        "activecode",
+        "decompilation",
+        "Decompilation",
+        "decompile",
+        "decompiling",
+        "ghidra",
+        "Ghidra",
+        "hexdump",
+        "hexedit",
+        "hexidecimal",
+        "linebreak",
+        "Sode",
+        "sre",
+        "subsec",
+        "UTF"
+    ]
 }

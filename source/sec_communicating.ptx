@@ -38,7 +38,7 @@
         When the last change was made, who made it, and how often are changes submitted. Would you describe this wiki as &#8220;thriving&#8221; or &#8220;languishing&#8221;?
       </li>
     </ol>
-    Authoring and maintaining pages in a wiki (the latter sometimes being referred to as gardening) is a critical part of any FOSS project. If you&#8217;re particularly interested in a project, register an account on the wiki and create a User Profile page. You&#8217;ll want to link this back to your portfolio that you created in the previous chapter.
+    Authoring and maintaining pages in a wiki (the latter sometimes being referred to as gardening) is a critical part of any OSS project. If you&#8217;re particularly interested in a project, register an account on the wiki and create a User Profile page. You&#8217;ll want to link this back to your portfolio that you created in the previous chapter.
     </p>
     </exercise>
   </subsection>
@@ -55,7 +55,7 @@
     <li><url href="https://planet.documentfoundation.org/" visual="https://planet.documentfoundation.org/">The Document Foundation Planet</url></li>
     </ul>
     <p>In most cases, individual blog postings can be tagged or categorized, and separate feeds can be generated for each tag or category. This permits posts to be sent to one or more different planets at the author&#8217;s discretion.</p>
-    <p>As you get into FOSS, you will want to share your news and opinions with others via a blog. You need to represent your thoughts professionally; here are some guidelines:</p>
+    <p>As you get into OSS, you will want to share your news and opinions with others via a blog. You need to represent your thoughts professionally; here are some guidelines:</p>
     <ul>
     <li>Write professionally. Blog postings are less formal than other types of writing, but they are still a reflection of your communications skills.</li>
     <li>Remember that the internet has a long memory. The Planet page is generated periodically, and even if you delete or change your posting, it may be indexed, cached, or reposted until the planet is re-generated. Avoid saying something that might come back to haunt you later &#8212; and remember that future employers may read your old postings (as well as future in-laws, office mates, and so forth).</li>
@@ -73,7 +73,7 @@
 
   <subsection xml:id="subsec-irc">
     <title>IRC</title>
-    <p>IRC stands for Internet Relay Chat and is one of the primary means of synchronous communication between people working on a FOSS project. It&#8217;s an older text-based chat system where clients connect to the servers of one or more networks, and the servers relay messages between themselves within each network (hence the name). Communication is done in channels which individual users join, and users are identified by nicks (nicknames). In addition to human users, various services and bots(robots &#8212; programs) are present in many channels.</p>
+    <p>IRC stands for Internet Relay Chat and is one of the primary means of synchronous communication between people working on a OSS project. It&#8217;s an older text-based chat system where clients connect to the servers of one or more networks, and the servers relay messages between themselves within each network (hence the name). Communication is done in channels which individual users join, and users are identified by nicks (nicknames). In addition to human users, various services and bots(robots &#8212; programs) are present in many channels.</p>
     <p>To use IRC, you&#8217;ll need an IRC client; Wikipedia maintains an excellent list of options. We recommend installing a few on your system and trying them out to see which one you prefer. You&#8217;ll need to select a nickname (nick or handle) &#8212; choose wisely, because you&#8217;ll want to keep your nick for the long run. It&#8217;s strongly recommended that you register your nick so that other people cannot masquerade as you.</p>
     <p>There are a handful of IRC networks used in open source, including ones operated by large projects (such as irc.mozilla.org) and ones which are operated by organizations and shared by many different communities (such as irc.freenode.net and irc.oftc.net). These are open channels and may be logged by one or more entities. Consider anything you say in IRC to be as public as if you said it on a busy street corner, with a megaphone, and seven people videotaping everything.</p>
     <p>Most IRC clients let you perform operations using menus/hotkeys or by typing commands. Commands start with a slash (&#8220;/&#8221;) to distinguish them from text that you are typing into the chat session. Since the commands are the same in all IRC clients, it&#8217;s worthwhile becoming familiar with them &#8212; here are some of the basics:</p>

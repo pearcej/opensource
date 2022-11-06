@@ -8,7 +8,7 @@
     </p>
 
     <p>
-      When you make a creative work, such as code, the work is under exclusive copyright by default. Unless you include a license that specifies otherwise, <em>nobody</em> else can copy, distribute, or modify your work without being at risk of take-downs, shake-downs, or litigation. Once the work has other contributors (who then each become a copyright holder), “nobody” includes you. 
+      When you author a creative work, such as code, the work is under exclusive copyright by default. Unless you include a license that specifies otherwise, <em>nobody</em> else can copy, distribute, or modify your work without being at risk of take-downs, shake-downs, or litigation. Once the work has other contributors (who then each become a copyright holder), “nobody” includes you. 
     </p>
     <p>
       If that is not a legal mess you want to get into, your code should include a specific statement of copyright.
@@ -18,7 +18,7 @@
   <subsection xml:id="subsec_important_IP_Terminology">
     <title>Important IP Terminology</title>
     <p>
-      Here we give a few definitions that are important for the remainder of the chapter. These are intended not as legal defnitions but to help in understanding the common usage of these terms.
+      Here we give a few definitions that are important for the remainder of the chapter. These are intended not as legal definitions but to help in understanding the common usage of these terms.
 
       For the first term, <term>Intellectual Property</term>, you can think "property" (like software) that is "intellectual" in nature, but it refers to more than just the property itself.
 
@@ -87,7 +87,7 @@
     </p>
 
     <p>
-      Some countries have a notion of <term>fair use</term> or <term>fair dealing</term> which are somewhat difficuolt to understand but even so are critically important because in many countries limited, specific uses can be made without permission from the copyright owner.
+      Some countries have a notion of <term>fair use</term> or <term>fair dealing</term> which are somewhat difficult to understand but even so are critically important because in many countries limited, specific uses can be made without permission from the copyright owner.
 
     <definition xml:id="def-fair-dealing">
       <statement>
@@ -117,7 +117,7 @@
     </p>
       
     <p>
-      What do <em>"limited" and “transformative” purpose</em> mean? Well, many millions of US dollars have been spent arguing just that question. If you really want to just see how confusing the notion of fair use is in the US, see <url href="https://en.wikipedia.org/wiki/Google_LLC_v._Oracle_America,_Inc." visual="wikipedia.org/wiki/Google_LLC_v._Oracle_America,_Inc.">Google v. Oracle</url> which ultimately unded up in the US Supreme Court battling exactly that question.
+      What do <em>"limited" and “transformative” purpose</em> mean? Well, many millions of US dollars have been spent arguing just that question. If you really want to just see how confusing the notion of fair use is in the US, see <url href="https://en.wikipedia.org/wiki/Google_LLC_v._Oracle_America,_Inc." visual="wikipedia.org/wiki/Google_LLC_v._Oracle_America,_Inc.">Google v. Oracle</url> which ultimately ended up in the US Supreme Court battling exactly that question.
     </p>
   </subsection>
 

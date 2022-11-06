@@ -5,9 +5,21 @@
   
 <p>Ruth Hill Useem developed the term <url href="http://www.tckworld.com/" visual="tckworld.com">Third Culture Kids (TCKs)</url> forty years ago to describe the children of military, diplomatic, missionary, and other families who exist in a twilight world between their passport countries and the countries in which they live. Often, these children are neither at home in their birth culture nor in the culture in which they live day-to-day, a fact that often becomes evident only upon returning to their native country. TCKs usually feel more at home with other TCKs than with other people.
 </p>
-<p>In a somewhat similar way, FOSS communities often create their own culture, which is not the native culture of any of the participants. When Chinese developers work with Brazilian colleagues day after day, their communication does not usually reflect much of either Chinese nor Brazilian culture. When joined by colleagues from (say) Morocco, Russia, Canada, and Australia, native culture is made even less significant. Over time, the communities build up shared experiences, humor, social norms, and conventions that define that community, building up a synthetic third culture.
+<p>In a somewhat similar way, OSS communities often create their own culture, which is not the native culture of any of the participants. When Chinese developers work with Brazilian colleagues day after day, their communication does not usually reflect much of either Chinese nor Brazilian culture. When joined by colleagues from (say) Morocco, Russia, Canada, and Australia, native culture is made even less significant. Over time, the communities build up shared experiences, humor, social norms, and conventions that define that community, building up a synthetic third culture.
 </p>
-<p>This is not unique &#8212; collaborative groups have always developed their own sense of identity. The difference with most FOSS communities is that the collaboration is remote, so the participants remain in their native cultural context while participating in the synthetic third culture of the FOSS community, and the interaction is high-volume and sustained over a long period of time (decades, in some cases). Obviously, the diversity, intensity, and health of the community play a significant role in the depth and uniqueness of the third culture.
+<p>This is not unique – collaborative groups have always developed their own sense of identity. The difference with most OSS communities is that the collaboration is remote, so the participants remain in their native cultural context while participating in the synthetic third culture of the OSS community, and the interaction is high-volume and sustained over a long period of time (decades, in some cases). Obviously, the diversity, intensity, and health of the community play a significant role in the depth and uniqueness of the third culture.
+</p>
+<p>
+  If you are used to being part of a dominant culture, joining a new culture may be an unfamiliar experience, but the best advice is similar to the advice given to anyone traveling to a different part of the world:
+  <ul>
+
+    <li><title>Open-mindedness</title> Remember that you are new to the culture, so keep an open mind and pay attention to the interactions of those who are more experienced in the culture. Note both the differences from and the similarities with your expectations, but try not to react to them before you reflect on them.
+    </li>
+    <li><title>Gratitude</title> Even if your intentions are good, you are likely to need help learning the culture and the cultural expectations. If people try to help you, be sure to express your gratitude! 
+    </li>
+    <li><title>Attentiveness</title> Try to understand the culture by doing your homework. Read the materials designed to help novices including not just the README and the contribution guide, but also the interactions on the various communication channels, bug reports, etc. 
+    </li>
+  </ul>
 </p>
 
 </section>
