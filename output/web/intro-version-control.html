@@ -137,7 +137,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link">
-<a href="ch_community_communication.html" data-scroll="ch_community_communication" class="internal"><span class="codenumber">2</span> <span class="title">OSS Community and Communication</span></a><ul>
+<a href="ch_community.html" data-scroll="ch_community" class="internal"><span class="codenumber">2</span> <span class="title">OSS Community and Communication</span></a><ul>
 <li><a href="sec_community_global.html" data-scroll="sec_community_global" class="internal">The Challenges of Global Community</a></li>
 <li><a href="sec_oss_third_culture.html" data-scroll="sec_oss_third_culture" class="internal">The Synthetic Third Culture</a></li>
 <li><a href="sec_community_qualities.html" data-scroll="sec_community_qualities" class="internal">Qualities of an OSS Community</a></li>
@@ -199,39 +199,39 @@ eBookConfig.enable_chatcodes =  false;
 <section class="section" id="intro-version-control"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.3</span> <span class="title">Version Control</span>
 </h2>
-<section class="introduction" id="introduction-19"><p id="p-269">Have you ever experienced seomething like this?</p>
+<section class="introduction" id="introduction-19"><p id="p-272">Have you ever experienced seomething like this?</p>
 <ul class="disc">
-<li id="li-120"><p id="p-derived-li-120">You create an important document.</p></li>
-<li id="li-121"><p id="p-derived-li-121">It is important, so you email it to some friends and family for feedback on it.</p></li>
-<li id="li-122"><p id="p-derived-li-122">You re-read it yourself create a new edited version.</p></li>
-<li id="li-123"><p id="p-derived-li-123">Then you get back feedback from someone you sent it to, but the feedback is on your original version.</p></li>
-<li id="li-124"><p id="p-derived-li-124">You then have to merge the two versions <em class="emphasis">by hand</em>.</p></li>
-</ul> `````<p id="p-270">After doing a lot of merging of documents by hand, you might have a folder that looks like the following:<pre class="code-block tex2jax_ignore">mydoc.odt
+<li id="li-125"><p id="p-derived-li-125">You create an important document.</p></li>
+<li id="li-126"><p id="p-derived-li-126">It is important, so you email it to some friends and family for feedback on it.</p></li>
+<li id="li-127"><p id="p-derived-li-127">You re-read it yourself create a new edited version.</p></li>
+<li id="li-128"><p id="p-derived-li-128">Then you get back feedback from someone you sent it to, but the feedback is on your original version.</p></li>
+<li id="li-129"><p id="p-derived-li-129">You then have to merge the two versions <em class="emphasis">by hand</em>.</p></li>
+</ul> `````<p id="p-273">After doing a lot of merging of documents by hand, you might have a folder that looks like the following:<pre class="code-block tex2jax_ignore">mydoc.odt
 mydoc2.odt
 mydoc-moms-edits.odt
 mydoc2-plus-moms-combined.odt
 </pre></p>
-<p id="p-271">Or maybe you have experienced this onlyon a larger scale... for example, three of your friends comment on differnent versions because they share them with the whole group via email. Some comment on the original version, some comment on mom's version, others comment on your brother's verion, etc.</p>
-<p id="p-272">If you have experienced this, you have used version control, which according to Wikipedia <a class="external" href="https://en.wikipedia.org/wiki/Version_control" target="_blank">version control</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-89" id="fn-89"><sup> 1 </sup></a> “is the management of changes to documents, programs, and other information stored as computer files.” But, you have also have come to deeply understand the need for a far easier way to merge in any changes that come on an earlier version.</p>
-<p id="p-273">A system that manages version control for software development is called a <em class="emphasis">source code management system (SCM)</em>. In this chapter, you will learn the basic use of source control management.</p></section><section class="subsection" id="subsec_version_control"><h3 class="heading hide-type">
+<p id="p-274">Or maybe you have experienced this onlyon a larger scale... for example, three of your friends comment on differnent versions because they share them with the whole group via email. Some comment on the original version, some comment on mom's version, others comment on your brother's verion, etc.</p>
+<p id="p-275">If you have experienced this, you have used version control, which according to Wikipedia <a class="external" href="https://en.wikipedia.org/wiki/Version_control" target="_blank">version control</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-93" id="fn-93"><sup> 1 </sup></a> “is the management of changes to documents, programs, and other information stored as computer files.” But, you have also have come to deeply understand the need for a far easier way to merge in any changes that come on an earlier version.</p>
+<p id="p-276">A system that manages version control for software development is called a <em class="emphasis">source code management system (SCM)</em>. In this chapter, you will learn the basic use of source control management.</p></section><section class="subsection" id="subsec_version_control"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.3.1</span> <span class="title">Version Control</span>
 </h3>
-<p id="p-274">The OSS world has developed many excellent SCMs.</p>
-<p id="p-275">You may want to start your own project someday, and you will have to choose an SCM. Right now, though, you will be working with existing projects, which means the SCM has been chosen for you. The following five SCMs have been popular:</p>
-<ul id="p-276" class="disc">
-<li id="li-125"><p id="p-derived-li-125"><a class="external" href="http://subversion.apache.org" target="_blank">Subversion (svn)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-90" id="fn-90"><sup> 2 </sup></a></p></li>
-<li id="li-126"><p id="p-derived-li-126"><a class="external" href="http://bazaar.canonical.com/en/" target="_blank">Bazaar (bzr)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-91" id="fn-91"><sup> 3 </sup></a></p></li>
-<li id="li-127"><p id="p-derived-li-127"><a class="external" href="http://www.nongnu.org/cvs/" target="_blank">Concurrent Version System (cvs)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-92" id="fn-92"><sup> 4 </sup></a></p></li>
-<li id="li-128"><p id="p-derived-li-128"><a class="external" href="https://git-scm.com" target="_blank">Git (git)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-93" id="fn-93"><sup> 5 </sup></a></p></li>
-<li id="li-129"><p id="p-derived-li-129"><a class="external" href="https://www.mercurial-scm.org/" target="_blank">Mercurial (hg)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-94" id="fn-94"><sup> 6 </sup></a></p></li>
-</ul></section><section class="conclusion" id="conclusion-5"><p id="p-277">What has happenened in the recent decade in version control systems has been truly remarkable because Git has come to completely dominate not just the open source world, but also much of the rest of the proprietary software community as well.</p>
-<p id="p-278">For this reason, in the next chapter we will be exploring Git and a cloud hosting site called <a class="external" href="https://www.github.com/" target="_blank">&gt;Github</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-95" id="fn-95"><sup> 7 </sup></a>.</p></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-89"><div class="fn"><code class="code-inline tex2jax_ignore">https://en.wikipedia.org/wiki/Version_control</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-90"><div class="fn"><code class="code-inline tex2jax_ignore">subversion.apache.org</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-91"><div class="fn"><code class="code-inline tex2jax_ignore">bazaar.canonical.com/en</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-92"><div class="fn"><code class="code-inline tex2jax_ignore">www.nongnu.org/cvs</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-93"><div class="fn"><code class="code-inline tex2jax_ignore">git-scm.com</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-94"><div class="fn"><code class="code-inline tex2jax_ignore">www.mercurial-scm.org/</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-95"><div class="fn"><code class="code-inline tex2jax_ignore">www.github.com/</code></div></div>
+<p id="p-277">The OSS world has developed many excellent SCMs.</p>
+<p id="p-278">You may want to start your own project someday, and you will have to choose an SCM. Right now, though, you will be working with existing projects, which means the SCM has been chosen for you. The following five SCMs have been popular:</p>
+<ul id="p-279" class="disc">
+<li id="li-130"><p id="p-derived-li-130"><a class="external" href="http://subversion.apache.org" target="_blank">Subversion (svn)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-94" id="fn-94"><sup> 2 </sup></a></p></li>
+<li id="li-131"><p id="p-derived-li-131"><a class="external" href="http://bazaar.canonical.com/en/" target="_blank">Bazaar (bzr)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-95" id="fn-95"><sup> 3 </sup></a></p></li>
+<li id="li-132"><p id="p-derived-li-132"><a class="external" href="http://www.nongnu.org/cvs/" target="_blank">Concurrent Version System (cvs)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-96" id="fn-96"><sup> 4 </sup></a></p></li>
+<li id="li-133"><p id="p-derived-li-133"><a class="external" href="https://git-scm.com" target="_blank">Git (git)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-97" id="fn-97"><sup> 5 </sup></a></p></li>
+<li id="li-134"><p id="p-derived-li-134"><a class="external" href="https://www.mercurial-scm.org/" target="_blank">Mercurial (hg)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-98" id="fn-98"><sup> 6 </sup></a></p></li>
+</ul></section><section class="conclusion" id="conclusion-5"><p id="p-280">What has happenened in the recent decade in version control systems has been truly remarkable because Git has come to completely dominate not just the open source world, but also much of the rest of the proprietary software community as well.</p>
+<p id="p-281">For this reason, in the next chapter we will be exploring Git and a cloud hosting site called <a class="external" href="https://www.github.com/" target="_blank">&gt;Github</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-99" id="fn-99"><sup> 7 </sup></a>.</p></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-93"><div class="fn"><code class="code-inline tex2jax_ignore">https://en.wikipedia.org/wiki/Version_control</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-94"><div class="fn"><code class="code-inline tex2jax_ignore">subversion.apache.org</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-95"><div class="fn"><code class="code-inline tex2jax_ignore">bazaar.canonical.com/en</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-96"><div class="fn"><code class="code-inline tex2jax_ignore">www.nongnu.org/cvs</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-97"><div class="fn"><code class="code-inline tex2jax_ignore">git-scm.com</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-98"><div class="fn"><code class="code-inline tex2jax_ignore">www.mercurial-scm.org/</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-99"><div class="fn"><code class="code-inline tex2jax_ignore">www.github.com/</code></div></div>
 </div></main>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>

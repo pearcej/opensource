@@ -16,7 +16,7 @@
 
     <xi:include href="./meta_frontmatter.ptx" />
     <xi:include href="./ch1_open_source_software.ptx" />
-    <xi:include href="./ch2_community_communication.ptx"/>
+    <xi:include href="./ch2_community.ptx"/>
     <xi:include href="./ch3_licensing.ptx"/>
     <xi:include href="./ch4_documentation.ptx"/>
     <xi:include href="./ch5_tools_technologies.ptx"/>

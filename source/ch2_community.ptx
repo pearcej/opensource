@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<chapter xml:id="ch_community_communication" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xml:id="ch_community" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>OSS Community and Communication</title>
   <introduction>
     <p>Open Source Software  is as much about community as it is about writing software. Consider the two words that make up the phrase open source: obviously, having source code is not a unique quality, since all software has source code, somewhere. The distinguishing feature of open source software is its openness, but being open is moot unless there is a community using and improving the software. The more people using, collaborating, and contributing to the software, the greater the value of its openness.
