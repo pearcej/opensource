@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec_global_community" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec_community_global" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>The Challenges of Global Community</title>
     <p>Most OSS projects are (or aspire to become) distributed, global communities. This introduces a number of challenges:
    

@@ -19,10 +19,10 @@
     </p>
   </introduction>
 
-  <xi:include href="./sec_global_community.ptx" />
-  <xi:include href="./sec_third_culture.ptx" />
+  <xi:include href="./sec_community_global.ptx" />
+  <xi:include href="./sec_community_third_culture.ptx" />
   <xi:include href="./sec_community_qualities.ptx" />
-  <xi:include href="./sec_communicating.ptx" />
+  <xi:include href="./sec_community_communication.ptx" />
   <!-- TODO: modernize sec_communicating.ptx -->
 
 
