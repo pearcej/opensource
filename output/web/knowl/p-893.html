@@ -12,7 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>Reproducing bugs is one of the best ways to learn how software actually works. A tester who has explored a bug thoroughly, and who can confidently say “this bug only happens when these three conditions are met,” is much more likely to be able to take the next step: namely, to dig in and find the code that actually creates those three conditions.</p>
+<p>Don’t do that. You may very well be right that the issues are related — but you may also be wrong, and in either case, two different issues deserve two different bug reports. In our example above, it may be that the issues with <dfn class="terminology">Foomail</dfn> and <dfn class="terminology">Barchat</dfn> are actually related to a problem with <dfn class="terminology">Bazlib</dfn>, which is a shared component of <dfn class="terminology">Foomail</dfn> and <dfn class="terminology">Barchat</dfn>. Each bug must be fixed and tested in its own context, and that won’t work if they’re all stuffed in the same bug report.</p>
 <span class="incontext"><a href="sec_bug_reports.html#p-893" class="internal">in-context</a></span>
 </body>
 </html>

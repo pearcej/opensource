@@ -105,6 +105,10 @@
       <paragraphs xml:id="why-necessary">
         <title>Why is This Book Necessary?</title>
       <p>
+      <em>Note that this Forward is unchanged from the original forward for <url href="https://quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html/" visual="quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html">Teaching Open Source</url> by Greg DeKoenigsberg, Chris Tyler, Karsten Wade, Max Spevack, Mel Chua, and Jeff Sheltren. These authors have not been involved in the creation of this text, but the stated purpose is exactly the same.</em> 
+      </p>
+      <p>
+
       </p>
       <p>
         In March 2006, David A. Patterson wrote an article entitled “Computer science education in the 21st century.” David A. Patterson was, at the time, the president of the Association for Computer Machinery, the world’s largest educational and scientific computing society. In this article — which, sadly, you cannot read unless you are an ACM member — he advocated for fundamental changes to how computer science is taught. One of the changes to the standard undergraduate computer science curriculum that he advocated for was the inclusion of courses in open source software development.

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_dev_vm_containerization" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Virtual Machines and Containerization</title>
+  <introduction>
+    <p>
+      TBA... talk about the complexity.
+    </p>
+  </introduction>
+
+  <subsection xml:id="subsec_virtual_machines">
+    <title>Virtual Machines</title>
+    <p>
+      TBA
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsec_containerization">
+    <title>Containerization</title>
+    <p>
+      TBA
+    </p>
+  </subsection>
+
+
+</section>
+

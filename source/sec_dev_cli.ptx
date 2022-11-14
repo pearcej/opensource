@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_dev_cli" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Command Line Interface (CLI)</title>
+  <introduction>
+    <p>
+      The Command Line Interface (CLI) is a text-based programming language that can be used to control a computer using a language known as a <term>shell</term> language.  It is called a shell because it is the user interface or the outermost layer "around" aka providing access to the operating system. Given that the Graphical User Interface (GUI) came into widespread use decades ago, it may seem surprising that nearly all software developers utilize the non-graphical CLI. The primary reasons for this include:
+      <ul>
+        <li>
+        <title>Power</title>
+          <p>
+            The CLI facilitates features that are unavailable or difficult to access in a GUI. The mouse only allows for picking among the small set of predetermined options from the screen. However, for most systems many more options are actually available. In addition, most operating systems  prevent you from performing certain tasks which are system protected unless you are using the CLI.
+          </p>
+        </li>
+        <li>
+        <title>Speed</title>
+          <p>
+            The CLI facilitates all commands at the speed one can type them, which is typically many times faster than commands can typically be selected from a menu. In addition, GUIs utilize many more resources than simple text, so even for a slow typist, the CLI is faster.
+          </p>
+        </li>
+        <li><title>Automation</title>
+          <p>
+            If you need to do something that is repetitive or requires combining multiple commands, the CLI facilitates this with ease. Try using a GUI to find all files that contain a particular pattern and then perform some operation on all of them — this easy (often in a single command) with a CLI.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+  </introduction>
+  <subsection xml:id="subsec_os">
+    <title>Accessing the CLI</title>
+    <p>
+      One question you might have is whether you can use your existing machine to contribute to open source. The good news is that whether you are using Mac OS, Linux, or Windows you should be able to set up a development environment and access the CLI.
+ 
+    <ul>
+    <li><title>On a Mac</title>
+      <p>
+        If you are on a Mac, you will need to run the Terminal program to access the CLI.  Opening the Terminal on a Mac works like opening any other program: you can find it in the Applications folder, you can search for it, you can use the Launchpad, or you can use it's shortcut which is command(⌘)+T.
+      </p>
+    </li>
+    <li><title>In Linux</title>
+      <p>
+        In Linux, the CLI is also called the Terminal. You can access it in several ways: 
+        search for the keyword Terminal, right-click  on your desktop and then select "Open Terminal", or use the shortcut Ctrl+Alt+T.
+      </p>
+    </li>
+    <li><title>In Windows</title>
+      <p>
+        If you are running Windows 11 or Windows 10 version 2004 or higher, then following the directions from Microsoft on <url href="https://learn.microsoft.com/en-us/windows/wsl/install" visual="learn.microsoft.com/en-us/windows/wsl/install">Installing Linux on Windows with WSL2 </url> will give you the best experience because WSL2 provides a full Linux kernel that is integrated into the Windows operating system. Installing <url href="https://learn.microsoft.com/en-us/windows/terminal/install" visual="learn.microsoft.com/en-us/windows/terminal/install">the Windows Terminal</url> will further enhance your experience, although it is not strictly necessary. Once you have followed the linked directions to install WSL2 (including the installation of Linux) then the terminal is most easily accessed by searching for Terminal and choosing "Run Terminal". If you first need to update your Windows OS, see <url href="https://support.microsoft.com/en-us/windows/windows-update-faq-8a903416-6f45-0718-f5c7-375e92dddeb2" visual="support.microsoft.com/en-us/windows/windows-update-faq-8a903416-6f45-0718-f5c7-375e92dddeb2"></url>.
+      </p>
+      <p>
+        If you are running an earlier version of Windows and cannot upgrade to Windows 10 version 2004 or higher, then using a Virtual Machine (VM) environment such as <url href="https://www.virtualbox.org/" visual="virtualbox.org/">Virtual Box</url> and installing and running Ubuntu in the VM is highly advisable.
+      </p>
+
+    </li>
+    <li><title>Another OS</title>
+
+      <p>
+        Although Linux, Mac, and Windows (to a lesser extent) are by far the most typical development environments, developing in another OS environment might also be possible. For example, searching on "software development in ChromeOS" will provide several useful links for how to set up a development environment in ChromeOS. Just be aware that developing in another OS environment is likely to offer little in the way of support.
+      </p>
+    </li>
+    </ul></p>
+      
+  </subsection>
+
+
+  <conclusion>
+    <p>
+      TBA
+    </p>
+  </conclusion>
+</section>
+
