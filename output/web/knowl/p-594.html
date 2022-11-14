@@ -12,7 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>If you make some changes and commit again, the next commit stores a pointer to the commit that came immediately before it.</p>
+<p>When you create the commit by running <code class="code-inline tex2jax_ignore">git commit</code>, Git checksums each subdirectory (in this case, just the root project directory) and stores them as a tree object in the Git repository. Git then creates a commit object that has the metadata and a pointer to the root project tree so it can re-create that snapshot when needed.</p>
 <span class="incontext"><a href="sec_git_branching.html#p-594" class="internal">in-context</a></span>
 </body>
 </html>
