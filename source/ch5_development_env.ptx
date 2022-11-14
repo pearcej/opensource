@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch_development_env" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>OSS Development Environment</title>
+  <introduction>
+    <p>
+      This chapter introduces some of the key tools and technologies that are typical to development in open source. Specific tools and technologies tend to change over time, but the concepts tend to remain, so this chapter focuses on the concepts at a high level first, and then offers case studies of specific tools and technologies that are popular at the moment.  (Fortunately, because this book is open source, the specifics can be easily changed by many contributors as time dictates.)
+    </p>
+  </introduction>
+
+  <xi:include href="./sec_os_linux.ptx" />
+  <xi:include href="./sec_container_docker.ptx" />
+  <xi:include href="./sec_intro_version_control_git.ptx" />
+
+</chapter>

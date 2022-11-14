@@ -12,7 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>The first line tells Git to ignore any files ending in “.o” or “.a” — object and archive files that may be the product of building your code. The second line tells Git to ignore all files whose names end with a tilde (<code class="code-inline tex2jax_ignore">~</code>), which is used by many text editors such as Emacs to mark temporary files. You may also include a log, tmp, or pid directory; automatically generated documentation; and so on. Setting up a <code class="code-inline tex2jax_ignore">.gitignore</code> file for your new repository before you get going is generally a good idea so you don’t accidentally commit files that you really don’t want in your Git repository.</p>
+<p>Often, you’ll have a class of files that you don’t want Git to automatically add or even show you as being untracked. These are generally automatically generated files such as log files or files produced by your build system. In such cases, you can create a file listing patterns to match them named <code class="code-inline tex2jax_ignore">.gitignore</code>. Here is an example <code class="code-inline tex2jax_ignore">.gitignore</code> file:</p>
 <span class="incontext"><a href="sec_git_basics.html#p-414" class="internal">in-context</a></span>
 </body>
 </html>

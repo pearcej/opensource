@@ -166,11 +166,20 @@ Many other communication tools exist in OSS, but the following are some of the m
     </p>
     <p>An open-source participant subscribed to several lists in multiple communities can easily receive thousands of messages a day. For this reason, many people choose to use a separate mailbox (such as a Gmail account) or filtering rules to keep their mail under control or sign up to receive only a regular "digest" of the messages.
     </p>
+    </li>
+     </ul>
     <exercise><title>Exercise: Joining the List</title>
     <p>Subscribe to at least one mailing list from each of the three open source communities you are observing, and read through the last few months of message archives for each list. Blog your observations of their communication.</p>
     </exercise>
-    </li>
-   </ul>
+
+  </subsection>
+
+  <subsection xml:id="subsec-synchronous_communication">
+    <title>Synchronous Communications</title>
+    <p>
+      Although pretty much all OSS communities use asynchronous communication, there are some OSS communities that also leverage synchronous communication. Sometimes these sessions are for just a small set of core developers, but other times these are open to all. For example, both the open source textbook platform <url href="https://blog.runestone.academy/" visual="blog.runestone.academy/">Runestone Academy</url> and the open source authoring language <url href="https://pretextbook.org/" visual="pretextbook.org/">PreText</url> both offer video drop in "office hours" open to users and contributors alike. However, as mentioned above, these are not going to be convenient from all regions of the globe, so both of these communities also utilize asynchronous communication methods. Runestone Academy uses Discord, while Pretext uses Google Groups.
+    </p>
+    
   </subsection>
 
 
