@@ -12,7 +12,17 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>Much of a software developer’s life is spent fixing bugs, and there are almost always more bugs than there is time to fix those bugs — which means that having a good way of deciding which bugs are important, at any given time, is crucial.</p>
+<ul class="disc">
+<li><p><em class="emphasis">Summary,</em> a short description of the bug. For example: “Toaster always burns toast”. This short phrase is usually what the developer sees in his or her list of bugs.</p></li>
+<li><p><em class="emphasis">Description,</em> a more detailed description of the bug, ideally with lots of clues. This is where the reporter explains what he or she was doing, what was expected to happen, and what happened instead. For example, “I have a BreadNuke toaster model XZ-38, and it never works. I expect it to brown my toast nicely; but it always burns my toast instead. I’ve tried setting the knob from 0 to 9, and the toast always comes out completely black!”</p></li>
+<li><p><em class="emphasis">Comments,</em> which allow other users or developers to add information to the bug. For example, a user might say “it burns my toast too!” Or, a developer might respond “the docs for the XZ-38 specify that it’s for creating Blackened Toast”. For a complex bug, there can be literally hundreds of comments attached to the bug report.</p></li>
+<li><p><em class="emphasis">Reporter</em> is the email address or account name of the user who reported the bug.</p></li>
+<li><p><em class="emphasis">Owner</em> is the email address or account name of the developer assigned to fix the bug.</p></li>
+<li><p><em class="emphasis">Version</em>. When there are multiple versions of the software, it’s obviously important to know which version the bug appears in.</p></li>
+<li><p><em class="emphasis">Severity</em> and <em class="emphasis">Priority</em>. Severity, usually set initially by the user, indicates the impact that a bug has. Priority, usually set initially by the developer, indicates which bugs receive attention first. In practice, these two can be confusing, and sometimes a project chooses to pay attention to only one of them.</p></li>
+<li><p><em class="emphasis">Status</em>, which describes the state a bug is in. Bugs start with a <em class="emphasis">new</em> status, and then they become <em class="emphasis">assigned</em> when a developer is tasked to work on them. The ultimate goal is to move a bug’s status to <em class="emphasis">closed</em>.</p></li>
+<li><p><em class="emphasis">Resolution</em>, which is particular to closed bugs. <em class="emphasis">Fixed</em> means just that: the bug was fixed.  <em class="emphasis">Nextrelease</em> indicates that a bug has been fixed, but the fix won’t be available to users until the next release of the software. Users often file bugs that aren’t actually bugs, but are the result of user error; such bugs are closed as <em class="emphasis">invalid</em> or <em class="emphasis">notabug</em>. Lots of bugs are duplicates of one another, so bugs are often closed as <em class="emphasis">duplicate</em> with a reference to a single authoritative bug report. Occasionally, a bug is just not worth the work required to close it; these bugs are closed <em class="emphasis">wontfix</em>.</p></li>
+</ul>
 <span class="incontext"><a href="sec_bug_trackers.html#p-859" class="internal">in-context</a></span>
 </body>
 </html>

@@ -3,50 +3,57 @@
 <section xml:id="sec_community_communication" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>OSS Community Communication</title>
   <introduction>
-    <p>Communication in an open-source community takes many forms, but all of these break down into two broad categories: synchronous (live/concurrent) and asynchronous (non-simultaneous). Due to the geographically-dispersed nature of most communities, most communication makes heavy use of asynchronous technologies. Synchronous communications typically includes various forms of audio/video chat, which is not convenient nor efficient for more OSS communities. Asynchronous communications are much more varied and each OSS community often uses more than one asynchronous form of communication. It's no accident that open source in its current form has grown hand-in-hand with the Internet nor that the vast majority of OSS communication is asynchronous.
+    <p>Communication in an open-source community takes many forms, but all of these break down into two broad categories: synchronous (live/concurrent) and asynchronous (non-simultaneous). Due to the geographically-dispersed nature of most communities, most OSS communication makes heavy use of asynchronous technologies. Synchronous communications typically includes various forms of audio/video chat, which is not convenient nor efficient for widely dispersed OSS communities. Asynchronous communications are much more varied and some OSS communities use
+     more than one asynchronous form of communication. It's no accident that open source in its current form has grown hand-in-hand with the Internet nor that the vast majority of OSS communication is asynchronous.
     </p>
   </introduction>
 
   <subsection xml:id="subsec_website">
     <title>Websites</title>
-     <p>The online anchor-point for most OSS communities is a web site. Unfortunately, the nature of traditional HTML pages is that they are often a static, one-to-many form of communication created by a small number of people with write access to the server. This leads to web sites that can become quickly outdated and which do not truly reflect the collaborative nature of the community. 
+     <p>The online anchor-point for most OSS communities is a website. Unfortunately, the nature of traditional HTML pages is that they are often a static, one-to-many form of communication created by a small number of people with write access to the server. This leads to web sites that can become quickly outdated and which do not truly reflect the collaborative nature of the community. 
     </p>
-     <p>To make a website available to all browsers, it must be posted on a web server called a host that serves the page to the Internet. All OSS communities need to have their code hosted in a place where it can be viewed and potentially contributed to. 
+     <p>To make a website available to all browsers, it must be posted on a web server called a <term>host</term> that serves the page to the Internet. 
      </p>
      <p>
-     This is where software engineering collaboration platforms such as <url href="https://bitbucket.org/" visual="bitbucket.org">Bitbucket</url>,  <url href="https://github.com/" visual="github.com/">GitHub</url>, <url href="https://gitlab.com/" visual="gitlab.com/">GitLab</url> step in. One of the many features these software engineering collaboration platforms (SECP) offer is web hosting, which when enabled, facilitates structured collaborative editing of the site. As an example, <url href="https://pages.github.com/" visual="pages.github.com">Github Pages</url> affords hosting as a web site for projects that are managed in GitHub.
+     All OSS communities need to have their code hosted in a place where it can be viewed and potentially contributed to. This is where software engineering collaboration platforms such as <url href="https://bitbucket.org/" visual="bitbucket.org">Bitbucket</url>, <url href="https://gitea.io/" visual="gitea.io">Gitea</url>, <url href="https://github.com/" visual="github.com/">GitHub</url>, <url href="https://gitlab.com/" visual="gitlab.com/">GitLab</url> step in. 
+    </p>
+     <p>
+     One of the many features these software engineering collaboration platforms (SECP) sometimes offer is web hosting, which when enabled, facilitates structured collaborative editing of the site. As an example, <url href="https://pages.github.com/" visual="pages.github.com">Github Pages</url> affords hosting as a web site for projects that are managed in GitHub.
     </p>
 
 </subsection>
 <subsection xml:id="subsec-secp-tools">
     <title>Software Engineering Collaboration Platform (SECP) Tools</title>
   <p>
-    In addition to web hosting, several other forms of asynchronous communication tools are provided as part of the typical OSS software engineering collaboration platform. These tools arise naturally from the need to discuss issues surrounding code and code improvements. While these often include the following, nt all of these area utilized by every project and even when they are utilized, they often exist apart from the SECP:
+    In addition to web hosting, several other forms of asynchronous communication tools are provided as part of the typical OSS software engineering collaboration platform. These tools arise naturally from the need to discuss issues surrounding code and code improvements. While these often include the following, not all of these are utilized by every project and even when they are utilized, they sometimes exist apart from the SECP:
     <ul>
+      <li><title>Code Repositories</title>
+        <p>
+          As mentioned above, it goes without saying that an OSS needs a code base which can be stored in one or more code <term>repository</term>, aka <term>repo</term>. Repos are typically hosted in a SECP, although they after also sometimes self-hosted by the project.
+        </p>
+      </li>
       <li><title>Bug and Issue Trackers</title>
         <p>
           Issue trackers were originally designed to record, track, and resolve user-encountered issues including bugs. However, issue trackers are also often used by users to submit feature-requests.
         </p>
         <p>
-          When an issue is posted, short discussions on the posted issue typically are attached to the issue itself, which facilitates the tracking of that discussion, which is particularly important in larger projects.
+          When an issue is posted, short discussions on the issue often occur. These discussions are most conveniently attached to the issue itself to facilitate the tracking of the discussion, which is particularly important in larger projects.
         </p>
       </li>
       <li><title>Discussion and Project Queues</title>
         <p>
-          Many OSS projects span multiple code repositories. Discussion and project queues afford discussions that limited to a single issue or feature request and/or aren't specific to a single code repository.
+          Many OSS projects span multiple code repositories. Discussion and project queues afford discussions of wider scope that are not limited to a single issue or feature request and/or aren't specific to a single code repository.
         </p>
       </li>
       <li><title>Request for code integration (aka pull request)</title>
         <p>
-          Software developers use <term>pull request</term> to describe a request to initiate the process of requesting an integration of specific code changes into the project repository.  Like issue trackers, pull requests are not merely a notification, instead pull requests typically serves as an entirely separate thread for discussing the new code. 
+          Software developers use the term <term>pull request (PR)</term> to describe a request to initiate the process of requesting an integration of specific code changes into the project repository.  Like issue trackers, pull requests are not merely a notification, they are a request. 
         </p>
         <p>
-          Even in the best of circumstances a typical pull request initiates further discussion and/or recommendation(s) for improvements from the core team of the OSS project. To those new to the OSS world, these discussions might come as a surprise, but they should not. Best practice is to have initiated a far earlier discussion using something like the favored issue tracker or other form or asynchronous communication utilized by the project.
+          Even in the best of circumstances a typical pull request initiates further discussion and/or recommendation(s) for improvements from the core team of the OSS project. To those new to the OSS world, these discussions may come as a surprise, but they should not. Best practice before making a pull request is to have initiated an earlier discussion using something like the favored issue tracker or other form or asynchronous communication utilized by the project. Even then the core OSS term is likely to ask for further refinements. This is normal and to be expected.
         </p>
       </li>
-
     </ul>
-
 </p>
   
 </subsection>
@@ -55,10 +62,10 @@
   <title>Other Asynchronous Communication Tools</title>
 Many other communication tools exist in OSS, but the following are some of the most prevalent:
 <ul>
-<li>    <title>Wikis</title>
+<li> <title>Wikis</title>
     <p>
 
-    Although Wikis can be created from SECPs, they are discussed apart from these because the concept of a wiki is so widely utilized and understood due to the wide popularity of Wikipedia. Simply stated, a wiki is a web site where the pages are a user-editable, easy-to-use, asynchronous way of putting semi-permanent content on the web, so they are ideal for documentation, timelines, status reports, meeting minutes, and conversation logs. For the writer, a wiki provides easy version control, a database backend, simplified markup, and a fast edit-and-post cycle.
+    Although Wikis can be created from many of the SECPs, they are discussed apart from these because the concept of a wiki is so widely utilized and understood due to the wide popularity of <url href="https://www.wikipedia.org/" visual="wikipedia.org">Wikipedia</url>  and <url href="https://www.wikimedia.org/" visual="wikimedia.org">WikiMedia</url> . Simply stated, a wiki is a web site where the pages are a user-editable, easy-to-use, asynchronous way of putting semi-permanent content on the web, so they are useful for documentation, timelines, status reports, meeting minutes, and conversation logs. For the writer, a wiki provides easy version control, a database backend, simplified markup, and a fast edit-and-post cycle.
     </p>
 
 <!--     <exercise xml:id="exercise-project-wikis"><title>Exercise: Project Wikis</title>
@@ -79,15 +86,15 @@ Many other communication tools exist in OSS, but the following are some of the m
       </li>
     </ol> -->
 
-    Authoring and maintaining pages in a wiki (the latter sometimes being referred to as gardening) is a critical part of some wiki-driven OSS projects. If you&#8217;re particularly interested in a project, register an account and start contributing. 
+    Authoring and maintaining pages in a wiki is a critical part of some wiki-driven OSS projects. If you&#8217;re particularly interested in a project, register an account and start contributing. 
     </p>
   </li>
 
   <li>  <title>Collaborative Instant Messaging Platforms</title>
 <p>
 
-  In recent times, collaborative instant messaging platforms like <url href="https://discord.com/" visual="discord.com">Discord</url>, <url href="https://matrix.org/" visual="matrix.org">Matrix</url>, <url href="https://mattermost.com/" visual="mattermost.com">Mattermost</url>, <url href="https://slack.com/" visual="slack.com">Slack</url>, and others have become very heavily leveraged by OSS communities. Each of these platforms has their own flavor, and the choice of which of these to use is largely driven by the OSS community. Discord was originally favored by gamers. Matrix is both decentralized and open source. Mattermost is also open source and is most proud of being dedicated to security, so they highlight users like the US Department of Defense. 
-  Slack was developed for for professional and organizational communications.
+  In recent times, collaborative instant messaging platforms like <url href="https://discord.com/" visual="discord.com">Discord</url>, <url href="https://matrix.org/" visual="matrix.org">Matrix</url>, <url href="https://mattermost.com/" visual="mattermost.com">Mattermost</url>, <url href="https://slack.com/" visual="slack.com">Slack</url>, and others have become very heavily leveraged in OSS communities. Each of these platforms has their own flavor, and the choice of which of these to use is largely driven by the OSS community. Discord was originally favored by gamers. Matrix is both decentralized and open source, and is the primary choice for some larger projects like <url href="https://wiki.mozilla.org/Matrix" visual="wiki.mozilla.org/Matrix">FireFox</url> . Mattermost is also open source and is most proud of being dedicated to security, so the Mattermost website highlights users like the US Department of Defense. 
+  Slack was developed for for professional and organizational communications, and is also very heavily utilized by many OSS projects.
 </p>
   </li>
 
@@ -152,7 +159,7 @@ Many other communication tools exist in OSS, but the following are some of the m
 
     <p>
 
-        Almost all open source communities use an electronic mail list for discussions. These lists are sometimes managed through online services such as Google Groups, but are often managed through private installations of list management software such as MailMan, which provide subscriber management, bounce control, and web-accessible archiving.</p>
+        Many open source communities use an electronic mail list for discussions. These lists are sometimes managed through online services such as Google Groups, but are often managed through private installations of list management software such as the open source <url href="https://www.gnu.org/software/mailman/" visual="gnu.org/software/mailman/">GNU Mailman</url>, which provide subscriber management, bounce control, and web-accessible archiving.</p>
     <p>Surprisingly, there is a significant variation from community to community in terms of list etiquette and even the amount of participation on lists.
     </p>
     <p>Some communities use newsgroups or forums in place of mailing lists, but these are often an e-mail list &#8212; for example, Mozilla uses newsgroups extensively, but many of the Mozilla newsgroup participants actually access the newsgroups as mail.
