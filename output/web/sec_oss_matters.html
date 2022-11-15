@@ -153,24 +153,24 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link">
-<a href="ch_documentation.html" data-scroll="ch_documentation" class="internal"><span class="codenumber">4</span> <span class="title">Documentation</span></a><ul>
-<li><a href="sec_documentation_matters.html" data-scroll="sec_documentation_matters" class="internal">Documentation Matters</a></li>
-<li><a href="sec_documentation_involvement.html" data-scroll="sec_documentation_involvement" class="internal">Documentation as Involvement</a></li>
-</ul>
-</li>
-<li class="link">
-<a href="ch_development_env.html" data-scroll="ch_development_env" class="internal"><span class="codenumber">5</span> <span class="title">OSS Development Environment</span></a><ul>
+<a href="ch_development_env.html" data-scroll="ch_development_env" class="internal"><span class="codenumber">4</span> <span class="title">OSS Development Environment</span></a><ul>
 <li><a href="sec_dev_cli.html" data-scroll="sec_dev_cli" class="internal">The Command Line Interface (CLI)</a></li>
 <li><a href="sec_dev_vm_containerization.html" data-scroll="sec_dev_vm_containerization" class="internal">Virtual Machines and Containerization</a></li>
 <li><a href="intro-version-control.html" data-scroll="intro-version-control" class="internal">Version Control</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="ch_git.html" data-scroll="ch_git" class="internal"><span class="codenumber">6</span> <span class="title">Version Control with Git</span></a><ul>
+<a href="ch_git.html" data-scroll="ch_git" class="internal"><span class="codenumber">5</span> <span class="title">Version Control with Git</span></a><ul>
 <li><a href="sec_git_getting_started.html" data-scroll="sec_git_getting_started" class="internal">Getting Started with Git</a></li>
 <li><a href="sec_git_basics.html" data-scroll="sec_git_basics" class="internal">Git Basics</a></li>
 <li><a href="sec_git_branching.html" data-scroll="sec_git_branching" class="internal">Git Branching</a></li>
 <li><a href="sec_git_github.html" data-scroll="sec_git_github" class="internal">GitHub - Git in the Cloud</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch_documentation.html" data-scroll="ch_documentation" class="internal"><span class="codenumber">6</span> <span class="title">Documentation</span></a><ul>
+<li><a href="sec_documentation_matters.html" data-scroll="sec_documentation_matters" class="internal">Documentation Matters</a></li>
+<li><a href="sec_documentation_involvement.html" data-scroll="sec_documentation_involvement" class="internal">Documentation as Involvement</a></li>
 </ul>
 </li>
 <li class="link">
@@ -207,13 +207,13 @@ eBookConfig.enable_chatcodes =  false;
 <p id="p-53">In the world of OSS, the source code is available to anyone who wants to see it. Not only is the source code available — also available are all of the interesting challenges that go with managing large software projects. In this book, we explore a number of these challenges and help you engage in them in direct and practical ways.</p></section><section class="subsection" id="source-control"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.2.1</span> <span class="title">Source Control</span>
 </h3>
-<p id="p-54">How do fifteen software engineers work on the same piece of software together? When two software engineers decide independently to edit the same line of code, what happens? In the world of OSS, we make use of version control systems to help avoid these kinds of problems. Without version control, it’s a disaster, which is why we cover version control in the chapter <a href="ch_git.html" class="internal" title="Chapter 6: Version Control with Git">Chapter 6</a>.</p></section><section class="subsection" id="build-system"><h3 class="heading hide-type">
+<p id="p-54">How do fifteen software engineers work on the same piece of software together? When two software engineers decide independently to edit the same line of code, what happens? In the world of OSS, we make use of version control systems to help avoid these kinds of problems. Without version control, it’s a disaster, which is why we cover version control in the chapter <a href="ch_git.html" class="internal" title="Chapter 5: Version Control with Git">Chapter 5</a>.</p></section><section class="subsection" id="build-system"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.2.2</span> <span class="title">Build Systems</span>
 </h3>
 <p id="p-55">Complex software is built in different <em class="emphasis">modules</em>. Those modules have different names in every language — <em class="emphasis">modules</em>, <em class="emphasis">packages</em>, <em class="emphasis">libraries</em>, etc. — but modularity is always introduced to help manage the complexity of large projects. One software project may import dozens, or even hundreds, of previously built software modules. What happens when one of those modules changes? If you don’t know how those modules fit together, it’s a disaster. Which is why we cover <em class="emphasis">build management</em> in the chapter <a href="ch_building_code.html" class="internal" title="Chapter 7: Getting and Building the Code">Chapter 7</a>.</p></section><section class="subsection" id="documentation"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.2.3</span> <span class="title">Documentation</span>
 </h3>
-<p id="p-56">There’s  a lot more to good software than just the code. How do you make sure people have the resources and knowledge they need to find and run (and/or contribute to) the software that you make? Beautiful code that doesn’t get used is exactly as useful as code that was never written. Which is why we cover <em class="emphasis">documentation</em> in the chapter <a href="ch_documentation.html" class="internal" title="Chapter 4: Documentation">Chapter 4</a>.</p></section><section class="subsection" id="tracking-bugs"><h3 class="heading hide-type">
+<p id="p-56">There’s  a lot more to good software than just the code. How do you make sure people have the resources and knowledge they need to find and run (and/or contribute to) the software that you make? Beautiful code that doesn’t get used is exactly as useful as code that was never written. Which is why we cover <em class="emphasis">documentation</em> in the chapter <a href="ch_documentation.html" class="internal" title="Chapter 6: Documentation">Chapter 6</a>.</p></section><section class="subsection" id="tracking-bugs"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.2.4</span> <span class="title">Tracking Bugs</span>
 </h3>
 <p id="p-57">Because humans write code and humans are fallible, most code is buggy. Even the very best code can still have bugs, which means the ability to find and eliminate bugs is a critical skill for all software engineers. If you don’t know how to find the bugs your users find, you’re in trouble. Which is why we cover bug hunting and the mechanics of fixing code in the chapter entitled <a href="ch_bugs_and_debugging.html" class="internal" title="Chapter 8: Bugs and Debugging">Chapter 8</a>.</p></section><section class="subsection" id="experiencing-the-software-lifecycle"><h3 class="heading hide-type">
