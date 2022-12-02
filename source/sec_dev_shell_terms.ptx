@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_dev_shell_terms" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Using the Command Line</title>
+  <introduction>
+    <p>
+      In this section, we explain some terminology, explore why developers use the command line, and then get set up to use the command line. If you have worked on the command line, then this entire section may serve as a review. If you have never worked on the command line, then this section is written with you in mind.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec_terms_terminals">
+    <title>Terminals and Related Terms</title>
+<p>
+<ul>
+  <li>
+    <title>What is a <term>terminal</term>?</title>
+    <p>
+      The English word <term>terminal</term> means to be situated at the end of something. In computing, a terminal is situated at the user end of a computer and is a program used for entering information into and receiving information from a computer. 
+    </p>
+  </li>
+  <li>
+  <title>What is a <term>console</term>?</title>
+    <p>
+      The English word <term>console</term> comes from the related verb, <em>to console</em>, which means to provide support. In computing, the original meaning of the <term>console</term> was as a physical device that supported input into and output from a computer. The term is still used that way, but it has also come to be synonymous with terminal in some environments. For example, if you search for console on a Windows machine, you may find the terminal program and/or you may find a security console program.
+    </p>
+  </li>
+  <li>
+  <title>What is a <term>Command Line Interface (CLI)</term>?</title>
+    <p>
+      A <term>CLI</term> is any type of interface that is used to enter text-based commands. We will use a specialized CLI.
+    </p>
+  </li>
+  <li>
+  <title>What is a <term>shell</term>?</title>
+      <p>
+  A <term>shell</term> is a specialized program which parses and interprets the commands you enter in the terminal and then asks the operating system to execute them. In other words, a shell is a highly specialized CLI which serves as the interface between the end-user and the operating system. It is called a shell because it is the user interface or the outermost layer "around" the <term>kernel</term> which is the innermost part of the operating system.
+    </p>
+  </li>
+</ul>
+  Although these terms are distinct from one another as described above, you will often hear people use the terms terminal, CLI, console, and shell almost interchangeably. Don't let it worry you too much because you should almost always be able to understand what is meant from the context.
+</p>
+</subsection> 
+<subsection xml:id="subsec-why_not_gui">
+      <title>Why not a GUI?</title>
+<p>
+  Given that the Graphical User Interface (GUI) came into widespread use decades ago, it may seem surprising that nearly all software developers utilize a non-graphical shell. The primary reasons for this include:
+      <ul>
+        <li>
+        <title>Power</title>
+          <p>
+            The shell facilitates features that are unavailable or difficult to access in a GUI. The mouse only allows for picking among the small set of predetermined options from the screen. However, for most systems many more options are actually available. In addition, most operating systems  prevent you from performing certain tasks which are system protected unless you are using the shell.
+          </p>
+        </li>
+        <li>
+        <title>Speed</title>
+          <p>
+            The shell facilitates all commands at the speed one can type them, which is typically many times faster than commands can typically be selected from a menu. In addition, GUIs utilize many more resources than simple text, so even for a slow typist, the shell is faster.
+          </p>
+        </li>
+        <li><title>Automation</title>
+          <p>
+            If you need to do something that is repetitive or requires combining multiple commands, the shell facilitates this too. For example, it would be hard to a GUI to find all files that contain a particular pattern and then perform some operation on all of them, but this is easy with a shell program.
+          </p>
+        </li>
+      </ul>
+
+    </p>
+</subsection>
+<subsection xml:id="subsec-getting_terminal">
+  <title>Accessing a Terminal Window on your Machine</title>
+
+    <p>
+      One question you might have is whether you can use your existing machine to contribute to open source. The good news is that whether you are using Mac OS, Linux, or Windows you should be able to set up a development environment, open a terminal, and access an appropriate shell.
+ 
+    <ul>
+    <li><title>On a Mac</title>
+      <p>
+        If you are on a Mac, you will need to run the <em>Terminal</em> program to access a shell.  Opening the Terminal on a Mac works like opening any other program: you can find it in the Applications folder, you can search for it, you can use the Launchpad, or you can use it's shortcut which is command(⌘)+T.
+      </p>
+    </li>
+    <li><title>In Linux</title>
+      <p>
+        In Linux, the terminal is also called the <em>Terminal</em>. You can access it in several ways: search for the keyword Terminal, right-click  on your desktop and then select "Open Terminal", or use the shortcut Ctrl+Alt+T.
+      </p>
+    </li>
+    <li><title>In Windows</title>
+      <p>
+        If you are on a Windows machine, getting to an appropriate shell is a bit more complicated. While one can use PowerShell, it is not the typical way to develop in Windows, and technical differences are likely to cause you headaches. The recommended way to develop in Windows is to use a Linux shell.
+        If you are running Windows 11 or Windows 10 version 2004 or higher, then following the directions from Microsoft on <url href="https://learn.microsoft.com/en-us/windows/wsl/install" visual="learn.microsoft.com/en-us/windows/wsl/install">Installing Linux on Windows with WSL2 </url> will give you the best experience. Note that you may first need to update your Windows OS, see <url href="https://bit.ly/Windows-Update-FAQ" visual="https://bit.ly/Windows-Update-FAQ"></url>. WSL2 provides a full Linux kernel that is integrated into the Windows operating system. Installing <url href="https://learn.microsoft.com/en-us/windows/terminal/install" visual="learn.microsoft.com/en-us/windows/terminal/install">the Windows Terminal</url> will further enhance your experience, although it is not strictly necessary. Once you have followed the linked directions to install WSL2, including the installation of Linux (Ubuntu is a good choice),  then the shell is most easily accessed by searching for Ubuntu in the search tool next to the Windows Icon and selecting it when you see it. For convenience, consider right-clicking on the Ubuntu icon and pinning it to your Start menu or to your Taskbar.
+      </p>
+      <p>
+        If you are running an earlier version of Windows and cannot upgrade to Windows 10 version 2004 or higher, then using a Virtual Machine (VM) environment such as <url href="https://www.virtualbox.org/" visual="virtualbox.org/">Virtual Box</url> and installing and running Ubuntu inside the VM is highly advisable.
+      </p>
+
+    </li>
+    <li><title>Another OS</title>
+      <p>
+        Although Linux, Mac, and Windows (to a lesser extent) are by far the most typical development environments, developing in another OS environment might also be possible. For example, searching the Internet on "software development in ChromeOS" will provide several useful links for how to set up a development environment in ChromeOS. Just be aware that developing in an OS environment other than Linux, Mac, or a modern version of Windows is likely to offer little in the way of support, so you might be better off using a Virtual Machine (VM) environment such as <url href="https://www.virtualbox.org/" visual="virtualbox.org/">Virtual Box</url> and installing and running Ubuntu in the VM. 
+      </p>
+    </li>
+    <li>
+    <title>In the Cloud</title>
+      <p>
+        To contribute to most open source projects, you will need to set-up a build environment for local testing. White it is typical to install this on a local machine, it can be done in the cloud for a small monthly fee. More about this later. For the purposes of this chapter, if you cannot quickly set up your local environment, you can practice using a shell at Fabrice Bellard's <url href="https://bellard.org/jslinux/" visual="bellard.org/jslinux/">JSLinux</url> which provides a very small cloud-based virtual machine environment. (Choosing the riscv64 Linux console will work for all of these exercises.) Note that this a free service which has a capped bandwidth of 40 kB/s. You are asked to please be respectful and don't abuse the service. 
+      </p>
+    </li>
+    </ul>
+  </p>
+      
+  </subsection>
+
+<subsection xml:id="subsec-access_shell">
+	<title>Accessing a Shell</title>
+	<p>
+    There are many shells available for Linux, but the most popular is the Bourne-again shell (<term>bash</term>) shell, so this section is focused on bash. If you are using another shell like the <term>zsh</term> shell, which is newer (and also the default shell in modern MacOS), don't worry because there is a very large amount of overlap. Even so, if you wish to change your default shell, you can easily do so as follows:
+    <ul>
+      <li><title>On a Mac</title>
+        <p>
+          In the Terminal app, choose Terminal > Settings, then click General. Next to “shells open with," select "Command", then "complete the path" and enter the complete path to the shell you want to use.
+        </p>
+      </li>
+      <li><title>On Linux or Windows WSL2 Ubuntu</title>
+        <p>
+          The bash shell is the default, but in case you want to change it, you can use <code>chsh</code> to change the shell to another shell.
+        </p>
+      </li>
+    </ul>
+  </p>
+</subsection>
+<conclusion>
+  <p>
+    If you have reached the end of this section, you should be able to open a terminal window and access a shell. In the next section, you will get some practice with the basic shell commands needed for navigation.
+  </p>
+</conclusion>
+</section>
+
+

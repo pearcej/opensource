@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-basic_shell_commands">
+  <title>Basic Shell Commands</title>
+  <introduction>
+  <p>
+    In this section, we will explore shell commands related to files, directories, and navigation.
+  </p>
+  <p>
+    Disclaimer: It is beyond the scope of this book to cover anything but the minimum of shell commands needed for contributions to open source, so the subsections below cover only the bare essentials.
+  </p>
+  </introduction>
+
+<subsection xml:id="subsec-files_directories_privileges">
+  <title>Files, Directories, and Privileges</title>
+  <p>
+    This and subsequent subsections are written to be followed as an extended exercise with explanations given as we go.
+  </p>
+    <exercise xml:id="exercise-try-cli">
+    <title>Exercise: Try shell commands for navigation</title>
+    <p>Try each of the following commands on your own machine.</p>
+  </exercise>
+      <p>
+      First, follow the directions given in <xref ref="subsec-getting_terminal"/> to open a terminal window so you can use your shell. All of the shell commands will be typed in this terminal window.
+      </p>
+      <p> Linux is designed as a multi-user system,so there are users. If you type the following shell command:
+    </p>
+    <pre>
+    whoami
+    </pre>
+    <p>
+      The shell should respond with the username that you created when you set up your system.  For me that is <c>pearcej</c>.
+    </p>
+
+
+    <paragraphs>
+      <title>Directories</title>
+      <p>
+        
+      </p>
+    <p>
+    In a GUI, we are used to using folders to navigate the file system. There are two useful metaphors or mental models to help with our understanding. Note that when using the shell, these "folders" are more typically called <term>directories</term>, but using the "folder" as your mental model for a directory will be very effective. This mental model tells us that inside of a directory, we can find files and possibly additional directories. Technically speaking, a directory is actually just a file that contains a list of other files, so you will see the both files and directories presented similarly by the shell. Using a different metaphor, you can think of all of the directories in your entire system as forming a tree structure which grows downward from a single directory which is known as the <term>root directory</term>. In other words, the top level directory which is the parent of all directories is called the 'root' directory. It is referenced by the use of forward slash symbol (<term>/</term>) when the forward slash symbol is used alone (or at least with nothing prepended in front of it). (As a comparison, the root directory notation in a standard Windows sset-up is the C: directory.)  
+    <notation>
+      <usage><m>/</m></usage>
+      <description>root directory symbol</description>
+    </notation>
+  </p>
+      <p>First, let's get our bearings and see which directory we are currently in. The <c>pwd</c> command stands for <em>print working directory</em> and as the name says it prints the name of the directory you are working in. Try typing:
+      </p>
+      <pre>
+      pwd
+      </pre>
+      <p>
+      When I  type this, I see the following:
+    </p>
+    <pre>
+    /home/pearcej
+    </pre>
+      <p>
+        Reading from right to left, this means I am in a <term>child</term> directory named <c>pearcej</c> which itself is a child of a directory called <c>home</c> which is itself a child of the root directory. If you prefer the folder metaphor to the tree metaphor, you can think of <c>pearcej</c> as being "inside" of the <c>home</c> directory, which is inside of the root directory. Note that position with respect to the forward slash '/' tells us the direction of the relationship – further to the right is further "inside".  
+      </p>
+      <p>
+       Let's try "moving" (i.e. changing our working directory) to the root directory. Use the <c>cd</c> command which stands for <em>change directory</em> followed by the <c>/</c> by typing:
+      </p>
+      <pre>
+      cd /
+      </pre>
+      <p>
+      What you just did should have transported you to the <term>root directory</term> (if you weren't there already.) Note that the term <em>root directory</em> shouldn't be confused with the term <em>root user</em> in a Linux-like system. The <term>root user</term> is a user named <em>root</em>, which is a special superuser account in Linux operating systems that has unrestricted read and write privileges to everything. The <em>root directory</em> should also not be confused with the <c>/root</c> folder which found on some Linux-based OS's, which is the home directory of the root superuser.
+      </p>
+
+      <p>
+      Next type the following <c>ls</c> to get a <em>listing</em> of the files and subdirectories in the <em>root directory</em>.
+      </p>
+      <pre>
+      ls
+      </pre>
+      <p>
+      Many shell commands have options which can be invoked by using a <term>flag</term> or <term>command option</term>. 
+        Try typing the following where the <c>-r</c> flag stands for <c>reverse</c>, and it reverses the sorting order:
+      </p>
+      <pre>
+      ls -r
+      </pre>
+      <p>
+      To try another, try typing the following where the <c>-l</c> option stands for <em>long listing format</em>, meaning that instead of output containing only a names of files and directories the ls command will produce additional information, assuming you have at least one file or directory.
+      </p>
+          
+<pre>
+ls -l
+</pre>
+<p>
+  You are likely to see some lines that look something like this:
+</p>
+<pre>
+drwxr-xr-x  3 root    root     4096 Jun 19 10:55 home
+lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
+-rw-rw-r--  1 pearcej friends    22 Sep 15  2022 hello.txt
+</pre>
+   </paragraphs>
+   <paragraphs>
+    <title>File Permissions</title>
+<p>
+</p>
+<p>
+  Let's explore the permissions portions of the lines produced by the <c>ls -l</c> command. The last item on each of these lines is the filename itself. The first item in each of the lines is a 10 character-long mix of letters and minus signs. The first character of that set indicates the file type where <c>d</c> tells us it is a directory, <c>l</c> indicates it is a symbolic link, and <c>-</c> indicates it is a regular file. The next nine characters display various permissions for the file. The first set of three characters (characters 2-4) are the user's (i.e. the file owner's) permissions, the next three are the group's permissions, and the last three are the permissions for all others. (The user's name  is in the third column and the group name is in the fourth column.) In each of these sets of three characters, the three characters refer to read (<c>r</c>), write (<c>w</c>), and execute (<c>x</c>) respectively. If you see a letter then that permission is allowed, and if you see a '-', the permission is disallowed. For example in the last of the three lines shown above, we see that the file <c>hello.txt</c> has permissions of <c>-rw-rw-r--</c>. This means this is a file that can be read and written (changed) but not executed by the owner <c>pearcej</c> and also by any user who is a member of the <c>friends</c> group, however other users can only read the file.
+</p>
+   </paragraphs>
+
+   <paragraphs>
+    <title>Shell Command Options</title>
+    <p>
+    </p>
+  <p>
+    If you want to see all of the flag options there are two different methods for most commands. You can use the <c>--help</c> flag option on the command or you can use the <term>manual</term> which is accessed using the <c>man</c> command. For example, with the <c>ls</c> command, you can use either one of the following, noting that they work a bit differently because the manual may use paging. If it does, to go to the next page use the space bar.
+  </p>
+      <pre>
+      ls --help
+      man ls
+      </pre>
+      <p>
+        You may be wondering about the use of one minus sign '-' vs the use of two minus signs '--' in shell flags. One is used for single letter commands, while two is used for word-length commands. If you look back at the <c>ls --help</c> results, you may see that the flags <c>-a</c> and <c>--all</c> both list all files including that begin with a '.', which are the hidden files  and directories. Besides brevity, the main advantage to the single minus sign is that to run multiple options at the same time, all you need to do is concatenate them, so <c>ls -lra</c> would return the result with  the <c>-l</c>,  <c>-r</c>, and <c>a</c> option flags all activated. Give it a try!
+      </p>
+      <pre>
+      ls -lra
+      </pre>
+  </paragraphs>
+  <paragraphs>
+    <title>More on Directories</title>
+    <p>
+    </p>
+        <p>
+        Next, let's go to your <term>home</term> directory which is referenced by the special tilde '~' character as follows:
+      <notation>
+      <usage><m>\tilde{}</m></usage>
+      <description>home directory symbol</description>
+    </notation>
+      </p>
+    <pre>
+   cd ~
+    </pre>
+      <p>
+        Then list your files just to see that you have been transported again. 
+      </p>
+
+      <p>
+        You can make a new directory using the <c>mkdir</c> command. For example, let's say you want to make a new directory with the name <em>newdir</em>, you can type the following:
+        </p> 
+        <pre>
+         mkdir newdir
+        </pre>
+        <p>
+          If you get a listing of your files and directories with <c>ls -l</c>, you should see something like the following:
+        </p>
+        <pre>
+        drwxr-xr-x  2 pearcej pearcej   4096 Nov 15 17:00 newdir
+        </pre>
+        <p>
+          Then you can descend into the new directory with:
+      </p>
+        <pre>
+          cd newdir
+        </pre>
+      <p>
+        Of course if you now run the <c>ls</c> command, you will not see any files, but try it with the following options:
+      </p>
+    <pre>
+      ls -la
+    </pre>
+      <p>
+        You are likely to see something like the following:
+      </p>
+    <pre>
+  drwxr-xr-x  2 pearcej pearcej 4096 Nov 16 17:00 .
+  drwxr-xr-x 13 pearcej pearcej 4096 Nov 16 17:00 ..
+    </pre>
+      <p>
+      Note the period at the end of the first line where the filename is expected. A period or dot '.' represents the current directory. The double period or double dot '..' represents the parent directory of the current one.
+      <notation>
+      <usage><m>.</m></usage>
+      <description>current directory symbol</description>
+    </notation>
+      <notation>
+      <usage><m>..</m></usage>
+      <description>parent directory symbol</description>
+    </notation>
+  </p>
+  <p>
+      You can use this dot notation as a reference as well, so <c>ls ..</c>, will list all the files and directories in the parent directory relative to where you are so you don't have to change directories to get the listing from another directory. Try it!
+    </p>
+    <p>
+    You can even use these dots in combination with folder names.
+
+
+    For example, if you are inside of the <c>newdir</c> directory and you want to make a sibling directory called <c>newdir2</c>, you can type the following:
+    </p>
+   <pre>
+   mkdir ../newdir2
+   ls -l ..
+   </pre>
+  <p>
+    Here, the first command says, go up one level in the directory tree structure, and create a new directory one level below that, which makes it a sibling of the original <c>newdir</c> directory. The second lines says produce a long listing of all of the files and directories in the directory that is one level up relative to where I am. 
+    You should see both of the directories that you made. 
+    </p>
+    <p>
+    If you want to delete either of these new directories, you will need to use the <term>remove directory</term> command, <c>rmdir</c> followed by the name of the directory you want to remove. Try it!
+  </p>
+
+  </paragraphs>
+
+
+</subsection>
+
+<conclusion>
+  <p>
+    These shell commands are summarized in Appendix <xref ref="ap_shell_cheat_sheet"/>.
+  </p>
+</conclusion>
+
+</section>
+

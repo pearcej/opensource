@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="intro-version-control" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Version Control</title>
+<section xml:id="dev-why-version-control" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Why Version Control?</title>
   <introduction>
     <p>
-      Have you ever experienced seomething like this?
+      Have you ever experienced something like this?
       <ul>
         <li>
           You create an important document.
@@ -47,11 +47,11 @@
 
   </introduction>
 
-  <subsection xml:id="subsec_version_control">
-    <title>Version Control</title>
+  <subsection xml:id="subsec_source_code_management">
+    <title>Source Code Management</title>
 
      	<p>
-				The OSS world has developed many excellent SCMs. 
+				The OSS world has developed many excellent ways of managing a software project, including not only a history of changes, but also who did what when and why.
 			</p>
 
 			<p>
@@ -86,7 +86,7 @@
 
     <conclusion>
     <p>
-      What has happenened in the recent decade in version control systems has been truly remarkable because Git has come to completely dominate not just the open source world, but also much of the rest of the proprietary software community as well.
+      What has happened in the recent decade in version control systems has been truly remarkable because Git has come to completely dominate not just the open source world, but also much of the rest of the proprietary software community as well.
     </p>
     <p>
       For this reason, in the next chapter we will be exploring Git and a cloud hosting site called <url href="https://www.github.com/" visual="www.github.com/">>Github</url>.

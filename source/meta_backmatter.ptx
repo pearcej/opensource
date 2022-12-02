@@ -23,8 +23,8 @@
 
   <appendix xml:id="ap_cheat_sheets">
     <title>Cheat Sheets</title>
-    <xi:include href="./ap_git_cheat_sheat.ptx" />
-    <xi:include href="./ap_linux_cheat_sheat.ptx" />
+    <xi:include href="./ap_bash_cheat_sheet.ptx" />
+    <xi:include href="./ap_git_cheat_sheet.ptx" />
   </appendix>
 
   <index>

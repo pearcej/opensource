@@ -8,8 +8,9 @@
     </p>
   </introduction>
 
-  <xi:include href="./sec_dev_cli.ptx" />
+  <xi:include href="./sec_dev_shell_terms.ptx" />
+  <xi:include href="./sec_dev_shell_practice.ptx" />
   <xi:include href="./sec_dev_vm_containerization.ptx" />
-  <xi:include href="./sec_intro_version_control_git.ptx" />
+  <xi:include href="./sec_dev_version_control_git.ptx" />
 
 </chapter>

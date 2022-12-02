@@ -154,9 +154,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="link">
 <a href="ch_development_env.html" data-scroll="ch_development_env" class="internal"><span class="codenumber">4</span> <span class="title">OSS Development Environment</span></a><ul>
-<li><a href="sec_dev_cli.html" data-scroll="sec_dev_cli" class="internal">The Command Line Interface (CLI)</a></li>
+<li><a href="sec_dev_shell_terms.html" data-scroll="sec_dev_shell_terms" class="internal">Using the Command Line</a></li>
+<li><a href="sec-basic_shell_commands.html" data-scroll="sec-basic_shell_commands" class="internal">Basic Shell Commands</a></li>
 <li><a href="sec_dev_vm_containerization.html" data-scroll="sec_dev_vm_containerization" class="internal">Virtual Machines and Containerization</a></li>
-<li><a href="intro-version-control.html" data-scroll="intro-version-control" class="internal">Version Control</a></li>
+<li><a href="dev-why-version-control.html" data-scroll="dev-why-version-control" class="internal">Why Version Control?</a></li>
 </ul>
 </li>
 <li class="link">
@@ -187,8 +188,8 @@ eBookConfig.enable_chatcodes =  false;
 <li class="link"><a href="list_of_symbols.html" data-scroll="list_of_symbols" class="internal"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></li>
 <li class="link">
 <a href="ap_cheat_sheets.html" data-scroll="ap_cheat_sheets" class="internal"><span class="codenumber">B</span> <span class="title">Cheat Sheets</span></a><ul>
-<li><a href="ap_git_cheat_sheat.html" data-scroll="ap_git_cheat_sheat" class="internal">Git Cheat Sheat</a></li>
-<li><a href="ap_linux_cheat_sheat.html" data-scroll="ap_linux_cheat_sheat" class="internal">Linux Command Line Cheat Sheat</a></li>
+<li><a href="ap_shell_cheat_sheet.html" data-scroll="ap_shell_cheat_sheet" class="internal">Bash Shell Cheat Sheet</a></li>
+<li><a href="ap_git_cheat_sheet.html" data-scroll="ap_git_cheat_sheet" class="internal">Git Cheat Sheet</a></li>
 </ul>
 </li>
 <li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
@@ -201,14 +202,14 @@ eBookConfig.enable_chatcodes =  false;
 </h2>
 <p id="p-41">This is, first and foremost, a textbook about how people create software collaboratively using a community development model, and about how you can become a member of one of those communities.  When the source code is open to viewing, most people call the result of such work by the name <dfn class="terminology">open source software (OSS)</dfn>.</p>
 <p id="p-42">The following related terms relate to OSS that guarantees additional freedoms:  Some people call <dfn class="terminology">free software</dfn> or use both terms: <dfn class="terminology">free and open source software (FOSS)</dfn>. Some people throw in the word libre to glarify the intended meaning of free, and call it <dfn class="terminology">free/libre open source software (FLOSS)</dfn>.</p>
-<p id="p-43">There are valid reasons for the usage of these different terms in different contexts, but for the sake of breadth, we primarily use the terms <dfn class="terminology">open source</dfn> or <dfn class="terminology">open source software (OSS)</dfn> in this book. If you are interested in additional clarification or on the history of these related types of software and the evolution of the terms, see <a class="external" href="https://www.gnu.org/philosophy/free-sw.html" target="_blank">What is Free Software</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-17" id="fn-17"><sup> 1 </sup></a> by the open source <a class="external" href="https://www.gnu.org/" target="_blank">GNU Operating System</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-18" id="fn-18"><sup> 2 </sup></a>.</p>
+<p id="p-43">There are valid reasons for the usage of these different terms in different contexts, but for the sake of breadth, we primarily use the terms <dfn class="terminology">open source</dfn> or <dfn class="terminology">open source software (OSS)</dfn> in this book. If you are interested in additional clarification or on the history of these related types of software and the evolution of the terms, see <a class="external" href="https://www.gnu.org/philosophy/free-sw.html" target="_blank">What is Free Software</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-19" id="fn-19"><sup> 1 </sup></a> by the open source <a class="external" href="https://www.gnu.org/" target="_blank">GNU Operating System</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-20" id="fn-20"><sup> 2 </sup></a>.</p>
 <p id="p-44">The specific defination of the term as we will use it: <article class="definition definition-like" id="def-open-source"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="period">.</span>
 </h3>
 <p id="p-45"><dfn class="terminology">Open source software (OSS)</dfn> is software that is designed with code that is publicly accessible and openly viewed.</p></article></p>
 <p id="p-46">Open source software is typically developed in a collaborative way. It often relies upon peer review and community member contributions, frequently with community members from all over the world. In addition to seeing the code, often anyone can also freely modify and distribute the code as they see fit as long as the open source license is followed. We will explore licensing details in <a href="ch_licensing.html" class="internal" title="Chapter 3: Open Source Licensing">Chapter 3</a></p>
-<p id="p-47">Enough of the pep talk. Its time to get started.</p></section><div class="hidden-content tex2jax_ignore" id="hk-fn-17"><div class="fn"><code class="code-inline tex2jax_ignore">www.gnu.org/philosophy/free-sw.html</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-18"><div class="fn"><code class="code-inline tex2jax_ignore">www.gnu.org/</code></div></div>
+<p id="p-47">Enough of the pep talk. Its time to get started.</p></section><div class="hidden-content tex2jax_ignore" id="hk-fn-19"><div class="fn"><code class="code-inline tex2jax_ignore">www.gnu.org/philosophy/free-sw.html</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-20"><div class="fn"><code class="code-inline tex2jax_ignore">www.gnu.org/</code></div></div>
 </div></main>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>

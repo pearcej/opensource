@@ -11,27 +11,33 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<section class="paragraphs"><h4 class="heading"><span class="title">The Unlicense.</span></h4>
+<section class="paragraphs"><h4 class="heading"><span class="title">Directories.</span></h4>
 <p></p>
-<p>A license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code.</p>
-<p>The following table summarizes this the Unlicense: <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.4.1<span class="period">.</span></span><span class="space"> </span>The Unlicense Permissions, Conditions, and Limitations</figcaption><div class="tabular-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><table class="tabular">
-<tr class="header-horizontal">
-<th scope="col" class="l m b1 r0 l0 t0 lines">Permissions             </th>
-<th scope="col" class="l m b1 r0 l0 t0 lines">Conditions              </th>
-<th scope="col" class="l m b1 r0 l0 t0 lines">Limitations             </th>
-</tr>
-<tr>
-<td class="l t b0 r0 l0 t0 lines">✓ Commercial use<br>✓ Distribution<br>✓ Modification<br>✓ Private use</td>
-<td class="l t b0 r0 l0 t0 lines">⚠ (None)</td>
-<td class="l t b0 r0 l0 t0 lines">✗ Liability<br>✗ Warranty</td>
-</tr>
-</table></div></figure></p>
-<p>The entire text of the Unlicense can be found at <a class="external" href="https://unlicense.org" target="_blank">the Unlicense</a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-80-hidden.html" title="Footnote 3.4.4"><sup> 4 </sup></a>.</p>
-<p>Examples of open source projects using the Unlicense:</p>
-<ul class="disc">
-<li><p><a class="external" href="https://github.com/mawww/kakoune/blob/master/UNLICENSE" target="_blank">kakoune</a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-81-hidden.html" title="Footnote 3.4.5"><sup> 5 </sup></a></p></li>
-<li><p><a class="external" href="https://github.com/ruby-rdf/rdf/blob/master/UNLICENSE" target="_blank">(Ruby) RDF.rb</a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-82-hidden.html" title="Footnote 3.4.6"><sup> 6 </sup></a></p></li>
-<li><p><a class="external" href="https://github.com/streamich/react-use/blob/master/LICENSE" target="_blank">react-use</a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-83-hidden.html" title="Footnote 3.4.7"><sup> 7 </sup></a></p></li>
-</ul></section><span class="incontext"><a href="sec_licensing_none.html#paragraphs-6" class="internal">in-context</a></span>
+<p>In a GUI, we are used to using folders to navigate the file system. There are two useful metaphors or mental models to help with our understanding. Note that when using the shell, these "folders" are more typically called <dfn class="terminology">directories</dfn>, but using the "folder" as your mental model for a directory will be very effective. This mental model tells us that inside of a directory, we can find files and possibly additional directories. Technically speaking, a directory is actually just a file that contains a list of other files, so you will see the both files and directories presented similarly by the shell. Using a different metaphor, you can think of all of the directories in your entire system as forming a tree structure which grows downward from a single directory which is known as the <dfn class="terminology">root directory</dfn>. In other words, the top level directory which is the parent of all directories is called the 'root' directory. It is referenced by the use of forward slash symbol (<dfn class="terminology">/</dfn>) when the forward slash symbol is used alone (or at least with nothing prepended in front of it). (As a comparison, the root directory notation in a standard Windows sset-up is the C: directory.) </p>
+<p>First, let's get our bearings and see which directory we are currently in. The <code class="code-inline tex2jax_ignore">pwd</code> command stands for <em class="emphasis">print working directory</em> and as the name says it prints the name of the directory you are working in. Try typing:</p>
+<pre class="code-block tex2jax_ignore">pwd
+</pre>
+<p>When I  type this, I see the following:</p>
+<pre class="code-block tex2jax_ignore">/home/pearcej
+</pre>
+<p>Reading from right to left, this means I am in a <dfn class="terminology">child</dfn> directory named <code class="code-inline tex2jax_ignore">pearcej</code> which itself is a child of a directory called <code class="code-inline tex2jax_ignore">home</code> which is itself a child of the root directory. If you prefer the folder metaphor to the tree metaphor, you can think of <code class="code-inline tex2jax_ignore">pearcej</code> as being "inside" of the <code class="code-inline tex2jax_ignore">home</code> directory, which is inside of the root directory. Note that position with respect to the forward slash '/' tells us the direction of the relationship – further to the right is further "inside".</p>
+<p>Let's try "moving" (i.e. changing our working directory) to the root directory. Use the <code class="code-inline tex2jax_ignore">cd</code> command which stands for <em class="emphasis">change directory</em> followed by the <code class="code-inline tex2jax_ignore">/</code> by typing:</p>
+<pre class="code-block tex2jax_ignore">cd /
+</pre>
+<p>What you just did should have transported you to the <dfn class="terminology">root directory</dfn> (if you weren't there already.) Note that the term <em class="emphasis">root directory</em> shouldn't be confused with the term <em class="emphasis">root user</em> in a Linux-like system. The <dfn class="terminology">root user</dfn> is a user named <em class="emphasis">root</em>, which is a special superuser account in Linux operating systems that has unrestricted read and write privileges to everything. The <em class="emphasis">root directory</em> should also not be confused with the <code class="code-inline tex2jax_ignore">/root</code> folder which found on some Linux-based OS's, which is the home directory of the root superuser.</p>
+<p>Next type the following <code class="code-inline tex2jax_ignore">ls</code> to get a <em class="emphasis">listing</em> of the files and subdirectories in the <em class="emphasis">root directory</em>.</p>
+<pre class="code-block tex2jax_ignore">ls
+</pre>
+<p>Many shell commands have options which can be invoked by using a <dfn class="terminology">flag</dfn> or <dfn class="terminology">command option</dfn>. Try typing the following where the <code class="code-inline tex2jax_ignore">-r</code> flag stands for <code class="code-inline tex2jax_ignore">reverse</code>, and it reverses the sorting order:</p>
+<pre class="code-block tex2jax_ignore">ls -r
+</pre>
+<p>To try another, try typing the following where the <code class="code-inline tex2jax_ignore">-l</code> option stands for <em class="emphasis">long listing format</em>, meaning that instead of output containing only a names of files and directories the ls command will produce additional information, assuming you have at least one file or directory.</p>
+<pre class="code-block tex2jax_ignore">ls -l
+</pre>
+<p>You are likely to see some lines that look something like this:</p>
+<pre class="code-block tex2jax_ignore">drwxr-xr-x  3 root    root     4096 Jun 19 10:55 home
+lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -&gt; usr/bin
+-rw-rw-r--  1 pearcej friends    22 Sep 15  2022 hello.txt
+</pre></section><span class="incontext"><a href="sec-basic_shell_commands.html#paragraphs-6" class="internal">in-context</a></span>
 </body>
 </html>

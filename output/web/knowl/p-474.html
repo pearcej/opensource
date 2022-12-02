@@ -12,7 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>Git version 2.23.0 introduced a new command: <code class="code-inline tex2jax_ignore">git restore</code>. It’s basically an alternative to <code class="code-inline tex2jax_ignore">git reset</code> which we just covered. From Git version 2.23.0 onwards, Git will use <code class="code-inline tex2jax_ignore">git restore</code> instead of <code class="code-inline tex2jax_ignore">git reset</code> for many undo operations.</p>
+<p>Git figures out that it’s a rename implicitly, so it doesn’t matter if you rename a file that way or with the <code class="code-inline tex2jax_ignore">mv</code> command. The only real difference is that <code class="code-inline tex2jax_ignore">git mv</code> is one command instead of three — it’s a convenience function. More importantly, you can use any tool you like to rename a file, and address the <code class="code-inline tex2jax_ignore">add</code>/<code class="code-inline tex2jax_ignore">rm</code> later, before you commit.</p>
 <span class="incontext"><a href="sec_git_basics.html#p-474" class="internal">in-context</a></span>
 </body>
 </html>

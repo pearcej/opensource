@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ap_shell_cheat_sheet" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Bash Shell Cheat Sheet</title>
+ <paragraphs>
+  <title>Get help with shell commands</title>
+     <p>
+
+        <dl width="narrow" >
+            <li>
+              <title><c> man &lt;command-name&gt; </c></title>
+              <p>
+               Use built-in <term>manual</term>.
+              </p>
+              <ul>
+                <li>
+                  <p>
+                  e.g. Retrieve manual for changing directories: <c>man cd</c>
+                  </p>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <title><c> &lt;command-name&gt; --help</c> </title>
+              <p>
+               Request <term>help page</term> for specified command.
+              </p>
+              <ul>
+                <li>
+                  <p>
+                  e.g. Retrieve help for change directory command: <c>cd --help</c>
+                  </p>
+                </li>
+              </ul>
+            </li>
+        </dl>
+    </p>
+</paragraphs>
+<paragraphs>
+<title>File and Directory Commands</title>
+  <p>   
+
+    <dl width="narrow" >
+      <li>
+      <title><c>cd &lt;directory-name&gt; or relative position</c></title>
+        <p>
+          <term>Change directory</term> to <c>&lt;directory-name&gt;</c>.  The default <c>&lt;directory-name&gt;</c> is the value of the home shell variable. <ul>
+            <li>
+              <p>
+                e.g. change directory to the root directory: <c>cd / </c>
+              </p>
+            </li>
+            <li>
+              <p>
+                e.g. change directory to the immediate parent directory: <c>cd ..</c>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </li>
+
+      <li>
+      <title><c>ls</c></title>
+        <p>
+          <term>List</term> information about files and directories. 
+          <ul>
+          <li>
+            <p>
+              e.g. List directories and files in current directory: <c>ls</c>
+            </p>
+          </li>
+          <li>
+            <p>
+              e.g. list directories and files in home directory: <c>ls ~</c> 
+            </p>
+          </li>
+        </ul>
+        </p>
+      </li>
+  <li>
+  <title><c>mkdir  &lt;directory-name&gt;</c></title>
+        <p>
+          <term>Make directory</term> with parameter name &lt;directory-name&gt;.
+          <ul>
+          <li>
+            <p>
+              e.g. Make a new directory with the name newdir: <c>mkdir newdir</c>
+            </p>
+          </li>
+        </ul>
+        </p>
+  </li>
+<li>
+  <title> <c>rmdir &lt;directory-name&gt; </c></title>
+        <p>
+          <term>Remove directory</term> with specified name &lt;directory-name&gt;
+          <ul>
+          <li>
+            <p>
+              e.g. Remove (delete) the directory with the name olddir: <c>mkdir olddir</c>
+            </p>
+          </li>
+        </ul>
+        </p>
+      </li>
+
+
+      </dl>
+    </p>
+ </paragraphs>
+
+</section>
+

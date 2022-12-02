@@ -36,19 +36,19 @@
 
       <shortlicense>
         <image source="cc-image.png" width="25%">
-          <description>CC BY-SA 3.0</description>
+          <description>CC BY-SA 4.0</description>
         </image>
         <p>
           
         </p>
         <!-- <image source="../images/by-sa.png" width="15%"/>  -->
-        This work is provisionally licensed under the open source Creative Commons Attribution-ShareAlike 3.0 International License. To view a copy of this license, visit
+        This work is licensed under the open source Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit
         <url 
-          href="https://creativecommons.org/licenses/by-sa/3.0/legalcode"
-          visual="creativecommons.org/licenses/by-sa/3.0/legalcode">
-          CC BY-SA 3.0
+          href="https://creativecommons.org/licenses/by-sa/4.0/legalcode"
+          visual="creativecommons.org/licenses/by-sa/4.0/legalcode">
+          CC BY-SA 4.0
         </url>
-        For a human readable summary see <url href="https://creativecommons.org/licenses/by-sa/3.0/" visual="creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0 Summary</url>.
+        For a human readable summary see <url href="https://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0 Summary</url>.
 
       </shortlicense>
     </copyright>
@@ -67,14 +67,14 @@
       I am also grateful to the software innovation lab <url href="https://www.tweag.io" visual="tweag.io">Tweag</url> for financial support and the time of my Tweag mentors, Michael Gale and Georgios Karachalias.
     </p>
     <p>
-      Several parts of this textbook including the Forward and several portions of chapters 1 and 2 are copied from or modified from Karsten Wade's quiad.fedorapeople.org site <url href="https://quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html/" visual="quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html">Teaching Open Source</url>. Many thanks to the authors Greg DeKoenigsberg, Chris Tyler, Karsten Wade, Max Spevack, Mel Chua, and Jeff Sheltren for releasing this work under the open source  license <url href="http://creativecommons.org/licenses/by-sa/3.0/" visual="creativecommons.org/licenses/by-sa/3.0">Creative Commons Attribution–Share Alike 3.0 Unported license ("CC-BY-SA")</url>.
+      Several parts of this textbook including the Forward and several portions of chapters 1 and 2 are modified from Karsten Wade's quiad.fedorapeople.org site <url href="https://quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html/" visual="quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html">Teaching Open Source</url>. Many thanks to the authors Greg DeKoenigsberg, Chris Tyler, Karsten Wade, Max Spevack, Mel Chua, and Jeff Sheltren for releasing this work under the open source  license <url href="http://creativecommons.org/licenses/by-sa/3.0/" visual="creativecommons.org/licenses/by-sa/3.0">Creative Commons Attribution–Share Alike 3.0 Unported license ("CC-BY-SA")</url> which is listed as compatible with <url href="https://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</url>. See <url href="https://creativecommons.org/share-your-work/licensing-considerations/compatible-licenses" visual="creativecommons.org/share-your-work/licensing-considerations/compatible-licenses">Creative Commons Compatible Licenses</url> where it states, "your contributions to adaptations of BY-SA 3.0 materials may only be licensed under: BY-SA 3.0, or <em>a later version of the BY-SA license</em>." (Emphasis add for clarity.)
     </p>
     <p>
-      With the exception of the <xref ref="sec_licensing_about"/> which is original, nearly all of <xref ref="ch_licensing"/> is either copied verbatim from or modified from <url href="https://choosealicense.com/" visual="choosealicense.com">Choose a License</url> which is curated by <url href="https://github.com/" visual="github.com">Github</url>. Many thanks to Github for all that they do for the open source community and for releasing this work under  the <url href="https://creativecommons.org/licenses/by/3.0/" visual="creativecommons.org/licenses/by/3.0">Creative Commons Attribution 3.0 Unported License</url>.
+      With the exception of the <xref ref="sec_licensing_about"/> which is original, nearly all of <xref ref="ch_licensing"/> is modified from <url href="https://choosealicense.com/" visual="choosealicense.com">Choose a License</url> which is curated by <url href="https://github.com/" visual="github.com">Github</url>. Many thanks to Github for all that they do for the open source community and for releasing this work under  the <url href="https://creativecommons.org/licenses/by/3.0/" visual="creativecommons.org/licenses/by/3.0">Creative Commons Attribution 3.0 Unported License</url>, which as noted in the previous paragraph is compatible with the licensing of this text.
     </p>
 
     <p>
-      Nearly all of <xref ref="ch_git"/> is copied, abridged, and modified from the Second edition of <url href="https://git-scm.com/book/en/v2/" visual="git-scm.com/book/en/v2/">Pro Git</url> which is licensed under the <url href="https://creativecommons.org/licenses/by-nc-sa/3.0/" visual="creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution Non Commercial Share Alike 3.0 license</url>. Many thanks to the authors, Scott Chacon and Ben Straub for making such a tremendous resource available to the open source community. 
+      Nearly all of <xref ref="ch_git"/> is abridged and modified from the Second edition of <url href="https://git-scm.com/book/en/v2/" visual="git-scm.com/book/en/v2/">Pro Git</url> which is licensed under the <url href="https://creativecommons.org/licenses/by-nc-sa/3.0/" visual="creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution Non Commercial Share Alike 3.0 license</url>. Many thanks to the authors, Scott Chacon and Ben Straub for making such a tremendous resource available to the open source community. 
     </p>
 
     <p>
