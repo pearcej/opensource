@@ -3,22 +3,21 @@
 <section xml:id="sec_community_communication" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>OSS Community Communication</title>
   <introduction>
-    <p>Communication in an open-source community takes many forms, but all of these break down into two broad categories: synchronous (live/concurrent) and asynchronous (non-simultaneous). Due to the geographically-dispersed nature of most communities, most OSS communication makes heavy use of asynchronous technologies. Synchronous communications typically includes various forms of audio/video chat, which is not convenient nor efficient for widely dispersed OSS communities. Asynchronous communications are much more varied and some OSS communities use
-     more than one asynchronous form of communication. It's no accident that open source in its current form has grown hand-in-hand with the Internet nor that the vast majority of OSS communication is asynchronous.
+    <p>Communication in an open-source community takes many forms, but all of these break down into two broad categories: synchronous (simultaneous, e.g. in person meetings or video conference meetings) and asynchronous (non-simultaneous, e.g. email or various kinds of messaging services). Due to the geographically-dispersed nature of most communities, most OSS communication makes heavy use of asynchronous technologies. Synchronous communications typically includes various forms of audio/video chat, which is neither convenient nor efficient for widely dispersed OSS communities. Asynchronous communications are much more varied and most OSS communities use more than one asynchronous form of communication. When a software team is made of full-time people who all work the same hours in the same office building, it is easier to have a higher proportion of synchronous discussion, but when some contributors are sleeping while others are working, it is far harder, so it is not a big surprise that nor that the vast majority of OSS communication is asynchronous.
     </p>
   </introduction>
 
   <subsection xml:id="subsec_website">
     <title>Websites</title>
-     <p>The online anchor-point for most OSS communities is a website. Unfortunately, the nature of traditional HTML pages is that they are often a static, one-to-many form of communication created by a small number of people with write access to the server. This leads to web sites that can become quickly outdated and which do not truly reflect the collaborative nature of the community. 
+     <p>The first place where people discover an OSS community is typically a website. Unfortunately, the nature of traditional HTML pages is that they are often a static, one-to-many form of communication created by a small number of people with write access to the server. This leads to web sites that can become quickly outdated and which do not truly reflect the collaborative nature of the community. We will see how OSS communities work around this issue and make their website a collaborative project as well in the next section.
     </p>
-     <p>To make a website available to all browsers, it must be posted on a web server called a <term>host</term> that serves the page to the Internet. 
+     <p>To make a website available to all users, it must be hosted on a web server referred to as a <term>host</term> that serves the page. 
      </p>
      <p>
-     All OSS communities need to have their code hosted in a place where it can be viewed and potentially contributed to. This is where software engineering collaboration platforms such as <url href="https://bitbucket.org/" visual="bitbucket.org">Bitbucket</url>, <url href="https://gitea.io/" visual="gitea.io">Gitea</url>, <url href="https://github.com/" visual="github.com/">GitHub</url>, <url href="https://gitlab.com/" visual="gitlab.com/">GitLab</url> step in. 
+     Additionally, all OSS communities need to have their code hosted in a place where it can be viewed and potentially contributed to. This is where software engineering collaboration platforms such as <url href="https://bitbucket.org/" visual="bitbucket.org">Bitbucket</url>, <url href="https://gitea.io/" visual="gitea.io">Gitea</url>, <url href="https://github.com/" visual="github.com/">GitHub</url>, <url href="https://gitlab.com/" visual="gitlab.com/">GitLab</url> step in. 
     </p>
      <p>
-     One of the many features these software engineering collaboration platforms (SECP) sometimes offer is web hosting, which when enabled, facilitates structured collaborative editing of the site. As an example, <url href="https://pages.github.com/" visual="pages.github.com">Github Pages</url> affords hosting as a web site for projects that are managed in GitHub.
+     One of the many features these software engineering collaboration platforms (SECP) sometimes offer is web hosting, which when enabled, facilitates structured collaborative editing of the site. As an example, <url href="https://pages.github.com/" visual="pages.github.com">GitHub Pages</url> affords hosting as a web site for projects that are managed on GitHub. This means that OSS communities can use their SECP of choice as their a host for their website as well.
     </p>
 
 </subsection>
