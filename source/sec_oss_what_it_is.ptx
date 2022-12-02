@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec_what_is_open_source" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec_oss_what_it_is" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>What is Open Source Software?</title>
       <p>
         This is, first and foremost, a textbook about how people create software collaboratively using a community development model, and about how you can become a member of one of those communities.  When the source code is open to viewing, most people call the result of such work by the name <term>open source software (OSS)</term>.
@@ -12,7 +12,7 @@
         <idx>FOSS</idx>   
         <idx>FLOSS</idx>  
         <idx>free/libre and open source software</idx>   
-       Some people call <term>free software</term> or use both terms: <term>free and open source software (FOSS)</term>. Some people throw in the word libre to glarify the intended meaning of free, and call it <term>free/libre open source software (FLOSS)</term>. 
+       Some people call <term>free software</term> or use both terms: <term>free and open source software (FOSS)</term>. Some people throw in the word libre to clarify the intended meaning of free, and call it <term>free/libre open source software (FLOSS)</term>. 
       </p>
 
       <p>
@@ -20,7 +20,7 @@
       </p>
 
       <p>
-      The specific defination of the term as we will use it: 
+      The specific definition of the term as we will use it: 
 
       <definition xml:id="def-open-source">
         <idx>open source</idx>

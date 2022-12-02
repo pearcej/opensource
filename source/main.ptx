@@ -15,7 +15,7 @@
     <subtitle>What It Is and How to Contribute</subtitle>
 
     <xi:include href="./meta_frontmatter.ptx" />
-    <xi:include href="./ch1_open_source_software.ptx" />
+    <xi:include href="./ch1_oss.ptx" />
     <xi:include href="./ch2_community.ptx"/>
     <xi:include href="./ch3_licensing.ptx"/>
     <xi:include href="./ch4_development_env.ptx"/>

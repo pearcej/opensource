@@ -11,11 +11,11 @@
 	</p>
 
 	<p>
-		Open source software differs from closed source proprietary software where only the owners and those they appoint have access to the source code because it is close-off to others. So, with closed source software, if you want to personally accertain that a game or another piece of software that you want to download and install does not include code that will steal your data or take over your entire system, you are simply out of luck.
+		Open source software differs from closed source proprietary software where only the owners and those they appoint have access to the source code because it is close-off to others. So, with closed source software, if you want to personally ascertain that a game or another piece of software that you want to download and install does not include code that will steal your data or take over your entire system, you are simply out of luck.
 	</p>
 
 	<p>
-		There are more rigorous definitions of OSS and FOSS, and there are many licenses that help to ensure verious freedoms in subtly different ways. We examine many of these details later in <xref ref="ch_licensing"/>. For now, we focus on this one simple idea: the freedom to view the source code is the essential element of open source software. 
+		There are more rigorous definitions of OSS and FOSS, and there are many licenses that help to ensure various freedoms in subtly different ways. We examine many of these details later in <xref ref="ch_licensing"/>. For now, we focus on this one simple idea: the freedom to view the source code is the essential element of open source software. 
 	</p>
 
 	<p>
@@ -51,11 +51,11 @@
   <!-- Sections can be written directly here also -->
 
 
-  <xi:include href="./sec_what_is_open_source.ptx" />
+  <xi:include href="./sec_oss_what_it_is.ptx" />
   <xi:include href="./sec_oss_matters.ptx" />
-  <xi:include href="./sec_source_code.ptx"/>
-  <xi:include href="./sec_share_code.ptx"/>
-  <xi:include href="./sec_contributor_mountain.ptx"/>
-  <xi:include href="./sec_build_portfolio.ptx"/>
+  <xi:include href="./sec_oss_source_code.ptx"/>
+  <xi:include href="./sec_oss_share_code.ptx"/>
+  <xi:include href="./sec_oss_contributor_mountain.ptx"/>
+  <xi:include href="./sec_oss_build_portfolio.ptx"/>
 
 </chapter>

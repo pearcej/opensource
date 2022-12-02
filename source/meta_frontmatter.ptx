@@ -105,7 +105,7 @@
       <paragraphs xml:id="why-necessary">
         <title>Why is This Book Necessary?</title>
       <p>
-      <em>Note that this Forward is unchanged from the original forward for <url href="https://quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html/" visual="quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html">Teaching Open Source</url> by Greg DeKoenigsberg, Chris Tyler, Karsten Wade, Max Spevack, Mel Chua, and Jeff Sheltren. These authors have not been involved in the creation of this text, but the stated purpose is exactly the same.</em> 
+      <em>Note that other than making minor corrections, this Forward is unchanged from the original forward for <url href="https://quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html/" visual="quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html">Teaching Open Source</url> by Greg DeKoenigsberg, Chris Tyler, Karsten Wade, Max Spevack, Mel Chua, and Jeff Sheltren. These authors have not been involved in the creation of this text, but the stated purpose is exactly the same.</em> 
       </p>
       <p>
 
@@ -163,7 +163,7 @@
         To find Really Big Projects, one must venture out into the world, where there are Really Big Problems. The real world is full of gigantic applications that require build systems and revision control and defect tracking and prioritization of work. They are written in languages that one may or may not know, by people one may or may not ever meet. And in order to successfully navigate through these Really Big Projects, the novice developer must possess one skill above all others: the ability, in the words of our colleague David Humphrey, to be “productively lost.”
       </p>
       <p>
-        The great advantage of open source, for the learner, is that the Really Big Projects of the open source world provide unparalleled opportunities to be productively lost. Complex codebases are immediately accessible by anyone who wants to participate. This accessibility is crucial to the learner, as participating in an activity is by far the most effective way to learn that activity.
+        The great advantage of open source, for the learner, is that the Really Big Projects of the open source world provide unparalleled opportunities to be productively lost. Complex code bases are immediately accessible by anyone who wants to participate. This accessibility is crucial to the learner, as participating in an activity is by far the most effective way to learn that activity.
       </p>
       <p>
         Sooner or later, the coder aspirant must work at scale, with teammates. Open source provides that opportunity in a way that nothing else can.

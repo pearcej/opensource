@@ -4,7 +4,7 @@
   <title>Version Control with Git</title>
   <introduction>
     <p>
-    <!-- TODO -need a more appropriate intriduction... that is not just about the first section-->
+    <!-- TODO -need a more appropriate introduction... that is not just about the first section-->
 			This chapter is about version control system with a focus on the Git version control system. We begin by discussing why you need version control, explaining some background on version control tools, move on to how to get Git running on your system, and we finally how to get it set up to start working with. By the end of this chapter you should understand why Git is around, why you should use it, and you should be all set up to do so.
     </p>
   </introduction>

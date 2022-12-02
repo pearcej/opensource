@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec_build_portfolio" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec_oss_build_portfolio" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Building your OSS Portfolio</title>
 	<introduction>
 	<p>
@@ -12,7 +12,7 @@
 		<title>Building Your OSS Portfolio</title>
 
 		<p>
-		One of the big differences between working in OSS and working on proprietary software is that your work is visible to anyone who cares to look. Every mailing list post you write, every blog entry you post, every bug report you file, every word of documenation you improve, every wiki page you edit, and every line of code you write, are available for anyone’s inspection. 
+		One of the big differences between working in OSS and working on proprietary software is that your work is visible to anyone who cares to look. Every mailing list post you write, every blog entry you post, every bug report you file, every word of documentation you improve, every wiki page you edit, and every line of code you write, are available for anyone’s inspection. 
 		</p>
 
 		<p>
