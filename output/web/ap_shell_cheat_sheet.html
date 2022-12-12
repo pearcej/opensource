@@ -155,7 +155,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="link">
 <a href="ch_development_env.html" data-scroll="ch_development_env" class="internal"><span class="codenumber">4</span> <span class="title">OSS Development Environment</span></a><ul>
 <li><a href="sec_dev_shell_terms.html" data-scroll="sec_dev_shell_terms" class="internal">Using the Command Line</a></li>
-<li><a href="sec-basic_shell_commands.html" data-scroll="sec-basic_shell_commands" class="internal">Basic Shell Commands</a></li>
+<li><a href="sec_dev_basic_shell_commands.html" data-scroll="sec_dev_basic_shell_commands" class="internal">Basic Shell Commands</a></li>
 <li><a href="sec_dev_vm_containerization.html" data-scroll="sec_dev_vm_containerization" class="internal">Virtual Machines and Containerization</a></li>
 <li><a href="dev-why-version-control.html" data-scroll="dev-why-version-control" class="internal">Why Version Control?</a></li>
 </ul>
@@ -199,45 +199,45 @@ eBookConfig.enable_chatcodes =  false;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="ap_shell_cheat_sheet"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">B.1</span> <span class="title">Bash Shell Cheat Sheet</span>
 </h2>
-<section class="paragraphs" id="paragraphs-104"><h3 class="heading"><span class="title">Get help with shell commands.</span></h3>
-<dl id="p-963" class="description-list narrow">
-<dt id="li-232"><code class="code-inline tex2jax_ignore"> man &lt;command-name&gt; </code></dt>
+<section class="paragraphs" id="paragraphs-105"><h3 class="heading"><span class="title">Get help with shell commands.</span></h3>
+<dl id="p-976" class="description-list narrow">
+<dt id="li-241"><code class="code-inline tex2jax_ignore"> man &lt;command-name&gt; </code></dt>
 <dd>
-<p id="p-964">Use built-in <dfn class="terminology">manual</dfn>.</p>
-<ul class="disc"><li id="li-233"><p id="p-965">e.g. Retrieve manual for changing directories command: <code class="code-inline tex2jax_ignore">man cd</code></p></li></ul>
+<p id="p-977">Use built-in <dfn class="terminology">manual</dfn>.</p>
+<ul class="disc"><li id="li-242"><p id="p-978">e.g. Retrieve manual for changing directories command: <code class="code-inline tex2jax_ignore">man cd</code></p></li></ul>
 </dd>
-<dt id="li-234"><code class="code-inline tex2jax_ignore"> &lt;command-name&gt; --help</code></dt>
+<dt id="li-243"><code class="code-inline tex2jax_ignore"> &lt;command-name&gt; --help</code></dt>
 <dd>
-<p id="p-966">Request <dfn class="terminology">help page</dfn> for specified command.</p>
-<ul class="disc"><li id="li-235"><p id="p-967">e.g. Retrieve help for change directory command: <code class="code-inline tex2jax_ignore">cd --help</code></p></li></ul>
+<p id="p-979">Request <dfn class="terminology">help page</dfn> for specified command.</p>
+<ul class="disc"><li id="li-244"><p id="p-980">e.g. Retrieve help for change directory command: <code class="code-inline tex2jax_ignore">cd --help</code></p></li></ul>
 </dd>
-</dl></section><section class="paragraphs" id="paragraphs-105"><h3 class="heading"><span class="title">File and Directory Commands.</span></h3>
-<dl id="p-968" class="description-list narrow">
-<dt id="li-236"><code class="code-inline tex2jax_ignore">cd &lt;directory-name&gt; or relative position</code></dt>
+</dl></section><section class="paragraphs" id="paragraphs-106"><h3 class="heading"><span class="title">File and Directory Commands.</span></h3>
+<dl id="p-981" class="description-list narrow">
+<dt id="li-245"><code class="code-inline tex2jax_ignore">cd &lt;directory-name&gt; or relative position</code></dt>
 <dd>
-<p id="p-969"><dfn class="terminology">Change directory</dfn> to <code class="code-inline tex2jax_ignore">&lt;directory-name&gt;</code>.  The default <code class="code-inline tex2jax_ignore">&lt;directory-name&gt;</code> is the value of the home shell variable.</p>
+<p id="p-982"><dfn class="terminology">Change directory</dfn> to <code class="code-inline tex2jax_ignore">&lt;directory-name&gt;</code>.  The default <code class="code-inline tex2jax_ignore">&lt;directory-name&gt;</code> is the value of the home shell variable.</p>
 <ul class="disc">
-<li id="li-237"><p id="p-970">e.g. change directory to the root directory: <code class="code-inline tex2jax_ignore">cd / </code></p></li>
-<li id="li-238"><p id="p-971">e.g. change directory to the immediate parent directory: <code class="code-inline tex2jax_ignore">cd ..</code></p></li>
+<li id="li-246"><p id="p-983">e.g. change directory to the root directory: <code class="code-inline tex2jax_ignore">cd / </code></p></li>
+<li id="li-247"><p id="p-984">e.g. change directory to the immediate parent directory: <code class="code-inline tex2jax_ignore">cd ..</code></p></li>
 </ul>
 </dd>
-<dt id="li-239"><code class="code-inline tex2jax_ignore">ls</code></dt>
+<dt id="li-248"><code class="code-inline tex2jax_ignore">ls</code></dt>
 <dd>
-<p id="p-972"><dfn class="terminology">List</dfn> information about files and directories.</p>
+<p id="p-985"><dfn class="terminology">List</dfn> information about files and directories.</p>
 <ul class="disc">
-<li id="li-240"><p id="p-973">e.g. List directories and files in current directory: <code class="code-inline tex2jax_ignore">ls</code></p></li>
-<li id="li-241"><p id="p-974">e.g. list directories and files in home directory: <code class="code-inline tex2jax_ignore">ls ~</code></p></li>
+<li id="li-249"><p id="p-986">e.g. List directories and files in current directory: <code class="code-inline tex2jax_ignore">ls</code></p></li>
+<li id="li-250"><p id="p-987">e.g. list directories and files in home directory: <code class="code-inline tex2jax_ignore">ls ~</code></p></li>
 </ul>
 </dd>
-<dt id="li-242"><code class="code-inline tex2jax_ignore">mkdir  &lt;directory-name&gt;</code></dt>
+<dt id="li-251"><code class="code-inline tex2jax_ignore">mkdir  &lt;directory-name&gt;</code></dt>
 <dd>
-<p id="p-975"><dfn class="terminology">Make directory</dfn> with parameter name &lt;directory-name&gt;.</p>
-<ul class="disc"><li id="li-243"><p id="p-976">e.g. Make a new directory with the name newdir: <code class="code-inline tex2jax_ignore">mkdir newdir</code></p></li></ul>
+<p id="p-988"><dfn class="terminology">Make directory</dfn> with parameter name &lt;directory-name&gt;.</p>
+<ul class="disc"><li id="li-252"><p id="p-989">e.g. Make a new directory with the name newdir: <code class="code-inline tex2jax_ignore">mkdir newdir</code></p></li></ul>
 </dd>
-<dt id="li-244"><code class="code-inline tex2jax_ignore">rmdir &lt;directory-name&gt; </code></dt>
+<dt id="li-253"><code class="code-inline tex2jax_ignore">rmdir &lt;directory-name&gt; </code></dt>
 <dd>
-<p id="p-977"><dfn class="terminology">Remove directory</dfn> with specified name &lt;directory-name&gt;</p>
-<ul class="disc"><li id="li-245"><p id="p-978">e.g. Remove (delete) the directory with the name olddir: <code class="code-inline tex2jax_ignore">mkdir olddir</code></p></li></ul>
+<p id="p-990"><dfn class="terminology">Remove directory</dfn> with specified name &lt;directory-name&gt;</p>
+<ul class="disc"><li id="li-254"><p id="p-991">e.g. Remove (delete) the directory with the name olddir: <code class="code-inline tex2jax_ignore">mkdir olddir</code></p></li></ul>
 </dd>
 </dl></section></section></div></main>
 </div>

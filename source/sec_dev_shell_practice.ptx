@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-basic_shell_commands">
+<section xml:id="sec_dev_basic_shell_commands">
   <title>Basic Shell Commands</title>
   <introduction>
   <p>
@@ -29,7 +29,7 @@
     whoami
     </pre>
     <p>
-      The shell should respond with the username that you created when you set up your system.  For me that is <c>pearcej</c>.
+      The shell should respond with the username that you created when you set up your system.  For me that is <c>pearcej</c>. 
     </p>
 
 
@@ -38,8 +38,8 @@
       <p>
         
       </p>
-    <p>
-    In a GUI, we are used to using folders to navigate the file system. There are two useful metaphors or mental models to help with our understanding. Note that when using the shell, these "folders" are more typically called <term>directories</term>, but using the "folder" as your mental model for a directory will be very effective. This mental model tells us that inside of a directory, we can find files and possibly additional directories. Technically speaking, a directory is actually just a file that contains a list of other files, so you will see the both files and directories presented similarly by the shell. Using a different metaphor, you can think of all of the directories in your entire system as forming a tree structure which grows downward from a single directory which is known as the <term>root directory</term>. In other words, the top level directory which is the parent of all directories is called the 'root' directory. It is referenced by the use of forward slash symbol (<term>/</term>) when the forward slash symbol is used alone (or at least with nothing prepended in front of it). (As a comparison, the root directory notation in a standard Windows sset-up is the C: directory.)  
+    <p> 
+      A <term>file</term> is just a container for storing information. On a phone or in a GUI, we see typically see files as icons with the filename below or to the right. We might (or might not) be used to using folders to organize our files and to navigate the file system. (On an Iphone or Android phone, you make a new folder by dropping one app on top of another app, on a Mac you long press and then choose new folder, and on a Windows machine, you right-click and choose New > folder.) This type of organization is important to understand, and the folder metaphor is useful. In fact, there are two useful metaphors or mental models to help with our understanding of file systems. Note that when using the shell, these "folders" are more typically called <term>directories</term>, but using the "folder" as your mental model for a directory will be very effective. This mental model tells us that inside of a directory, we can find files and possibly additional directories. Technically speaking, a directory is actually just a file that contains a list of other files, so you will see the both files and directories presented similarly by the shell. Using a different metaphor, you can think of all of the directories in your entire system as forming a tree structure which grows downward from a single directory which is known as the <term>root directory</term>. In other words, the top level directory which is the parent of all directories is called the 'root' directory. It is referenced by the use of forward slash symbol (<term>/</term>) when the forward slash symbol is used alone (or at least with nothing prepended in front of it). (As a comparison, the root directory notation in a standard Windows set-up is the C: directory.)  
     <notation>
       <usage><m>/</m></usage>
       <description>root directory symbol</description>
@@ -57,7 +57,7 @@
     /home/pearcej
     </pre>
       <p>
-        Reading from right to left, this means I am in a <term>child</term> directory named <c>pearcej</c> which itself is a child of a directory called <c>home</c> which is itself a child of the root directory. If you prefer the folder metaphor to the tree metaphor, you can think of <c>pearcej</c> as being "inside" of the <c>home</c> directory, which is inside of the root directory. Note that position with respect to the forward slash '/' tells us the direction of the relationship – further to the right is further "inside".  
+        Reading from right to left, this means I am in a <term>child</term> directory named <c>pearcej</c> which itself is a child of a directory called <c>home</c> which is itself a child of the root directory. If you prefer the folder metaphor to the tree metaphor, you can think of <c>pearcej</c> as being "inside" of the <c>home</c> directory, which is inside of the root directory. Note that the position with respect to the forward slash '/' tells us the direction of the relationship – further to the right is further "inside".  
       </p>
       <p>
        Let's try "moving" (i.e. changing our working directory) to the root directory. Use the <c>cd</c> command which stands for <em>change directory</em> followed by the <c>/</c> by typing:
@@ -104,6 +104,9 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
 </p>
 <p>
   Let's explore the permissions portions of the lines produced by the <c>ls -l</c> command. The last item on each of these lines is the filename itself. The first item in each of the lines is a 10 character-long mix of letters and minus signs. The first character of that set indicates the file type where <c>d</c> tells us it is a directory, <c>l</c> indicates it is a symbolic link, and <c>-</c> indicates it is a regular file. The next nine characters display various permissions for the file. The first set of three characters (characters 2-4) are the user's (i.e. the file owner's) permissions, the next three are the group's permissions, and the last three are the permissions for all others. (The user's name  is in the third column and the group name is in the fourth column.) In each of these sets of three characters, the three characters refer to read (<c>r</c>), write (<c>w</c>), and execute (<c>x</c>) respectively. If you see a letter then that permission is allowed, and if you see a '-', the permission is disallowed. For example in the last of the three lines shown above, we see that the file <c>hello.txt</c> has permissions of <c>-rw-rw-r--</c>. This means this is a file that can be read and written (changed) but not executed by the owner <c>pearcej</c> and also by any user who is a member of the <c>friends</c> group, however other users can only read the file.
+</p>
+<p>
+  Occasionally, you need to change permissions of a file. For example, you might need to change permissions to make a file executable. Changing file permissions is done with the <c>chmod</c> command. 
 </p>
    </paragraphs>
 
@@ -206,6 +209,10 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
     If you want to delete either of these new directories, you will need to use the <term>remove directory</term> command, <c>rmdir</c> followed by the name of the directory you want to remove. Try it!
   </p>
 
+  </paragraphs>
+  <paragraphs>
+    <title>Files</title>
+    
   </paragraphs>
 
 

@@ -40,10 +40,64 @@
                 <li>
                     <title>Issue Trackers</title>
                     <p>
-                        <term>Issue trackers</term> are designed to record, track, and resolve bugs, feature requests, questions, etc.
-          After an issue is posted, discussions on the issue typically occur and are sometimes prolonged. These discussions are most conveniently attached to the issue itself to facilitate the tracking of the discussion, which is particularly important in larger projects. When an issue is posted, it can be discussed by the community to decide on how to proceed with it. The issue can be categorized and linked to other discussions, projects, and engineering work as well. You are definitely advised to read all unresolved issues before posting so you are not duplicating another existing issue. 
-        
+                      <term>Issue trackers</term> are designed to record, track, and resolve bugs, feature requests, questions, etc.
+                      After an issue is posted, discussions on the issue typically occur and are sometimes prolonged. These discussions are most conveniently attached to the issue itself to facilitate the tracking of the discussion, which is particularly important in larger projects. When an issue is posted, it can be discussed by the community to decide on how to proceed with it. The issue can be categorized and linked to other discussions, projects, and engineering work as well. You are definitely advised to read all unresolved issues before posting so you are not duplicating another existing issue. 
                     </p>
+                    <p>
+                      A number of features exist in most issue trackers that facilitate communication among contributors and potential contributors. These include linking, labelling, mentioning a particular user, etc.
+                    </p>
+                    <p>
+                      One important feature that exists in issue trackers is the ability to <term>label</term> the issue with one or more of a set of labels. Github, for example, provides the following default labels:
+                      <ul>
+                        <li>
+                          <p>
+                            <em>bug</em>: indicates an unexpected problem or unintended behavior.
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <em>documentation</em>: indicates a need for improvements or additions to documentation.
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <em>duplicate</em>: indicates similar issues, pull requests, or discussions. These related items are then typically linked for convenience. 
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <em>enhancement</em>: indicates new feature requests.
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <em>good first issue</em>: indicates a good issue for first-time contributors. <em>The mere presence of this label indicates an openness to new contributors, so this is a very important label to look for when you are a potential new contributor.</em> 
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <em>help wanted</em>: indicates that a maintainer wants help on an issue or pull request.
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <em>invalid</em>: indicates that an issue, pull request, or discussion is no longer relevant.
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <em>question</em>: indicates that an issue, pull request, or discussion needs more information.
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <em>wontfix</em>: indicates that work won't continue on an issue, pull request, or discussion.
+                          </p>
+                        </li>
+                      </ul>
+                      Note that although the above default labels are included in every new Github repository, maintainers may or may not use all of them, and many maintainers choose to edit or delete some of the default labels and/or add their own custom labels that make sense for that project.
+                    </p>
+
                 </li>
 
                 <li>
@@ -70,7 +124,9 @@
                         <url href="https://github.com/microsoft/vscode/projects?type=classic" visual="microsoft/vscode/projects?type=classic">Microsoft VSCode Project Boards</url> and 
                         <url href="https://github.com/orgs/Homebrew/projects?type=classic" visual="github.com/orgs/Homebrew/projects?type=classic">Homebrew Project Boards</url>, and 
                         <url href="https://github.com/NixOS/nixpkgs/projects?type=classic" visual="github.com/NixOS/nixpkgs/projects?type=classic">NixOS Project Boards</url> offer good examples of projects that use the SECP's project boards.
-        
+                    </p>
+                    <p> 
+                       If you wonder why some projects don't seem to use project boards, consider that in many OSS projects, there are no paid project leaders who can set goals, organize all of the issues into boards, prioritize tasks, etc. For the majority of OSS projects, there either isn't time to take manage project boards or the project is too small to derive much benefit from their use.
                     </p>
                 </li>
             </ul>

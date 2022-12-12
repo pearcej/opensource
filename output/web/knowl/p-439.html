@@ -12,7 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>If the <code class="code-inline tex2jax_ignore">git status</code> command is too vague for you — you want to know exactly what you changed, not just which files were changed — you can use the <code class="code-inline tex2jax_ignore">git diff</code> command. We’ll cover <code class="code-inline tex2jax_ignore">git diff</code> in more detail later, but you’ll probably use it most often to answer these two questions: What have you changed but not yet staged? And what have you staged that you are about to commit? Although <code class="code-inline tex2jax_ignore">git status</code> answers those questions very generally by listing the file names, <code class="code-inline tex2jax_ignore">git diff</code> shows you the exact lines added and removed — the patch, as it were.</p>
+<p>The first line tells Git to ignore any files ending in “.o” or “.a” — object and archive files that may be the product of building your code. The second line tells Git to ignore all files whose names end with a tilde (<code class="code-inline tex2jax_ignore">~</code>), which is used by many text editors such as Emacs to mark temporary files. You may also include a log, tmp, or pid directory; automatically generated documentation; and so on. Setting up a <code class="code-inline tex2jax_ignore">.gitignore</code> file for your new repository before you get going is generally a good idea so you don’t accidentally commit files that you really don’t want in your Git repository.</p>
 <span class="incontext"><a href="sec_git_basics.html#p-439" class="internal">in-context</a></span>
 </body>
 </html>

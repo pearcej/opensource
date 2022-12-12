@@ -11,13 +11,13 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<section class="paragraphs"><h4 class="heading"><span class="title">Good bugs reports provide relevant system information.</span></h4>
-<p><pre class="code-block tex2jax_ignore">Bad: I'm running Linux, if that matters. 
+<section class="paragraphs"><h4 class="heading"><span class="title">Good bugs reports refer to the version of the software..</span></h4>
+<p><pre class="code-block tex2jax_ignore">Bad: Zombie-buster version... two-something? 
 
-Good: I'm running Gnome 2.28 on Fedora 12. 
+Good: Zombie-buster-1.2.4 
 
-Best: Gnome 2.28, Fedora 12, nVidia Corporation G70 GeForce 7800 GTX (rev a1)
+Best: Zombie-buster-1.2.4 and confirmed in HEAD, git commit 1361
 </pre></p>
-<p>It’s easy to provide way too much of this kind of information, but that’s a forgivable sin: it’s certainly better than providing none at all, which is too frequently the case. Over time, you develop a feel for which information to provide — and if you become a trusted contributor to a project, developers feel more comfortable asking for precisely the information they need. Until developers say otherwise, it’s usually best to err on the side of providing too much info. (Within reason. Dumping the entire contents of gigantic log files into a bug report is clearly bad form, but a relevant log file may be attached to a bug report.)</p></section><span class="incontext"><a href="sec_bug_reports.html#paragraphs-100" class="internal">in-context</a></span>
+<p>Most of the time, the bug tracker you use has a predefined field for version. That field is a good start, but sometimes the entries can be outdated, and even if there’s an entry for <em class="emphasis">HEAD</em> (i.e. the very latest code in the SCM), it’s still important to provide the most detailed version information that you can possibly provide. What you absolutely must NOT do: ignore this field. If you can’t figure out what version of the software you’re running, then you probably shouldn’t even file a bug.</p></section><span class="incontext"><a href="sec_bug_reports.html#paragraphs-100" class="internal">in-context</a></span>
 </body>
 </html>

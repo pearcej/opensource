@@ -11,8 +11,8 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>What the heck? Now <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> is listed as both staged <em class="emphasis">and</em> unstaged. How is that possible? It turns out that Git stages a file exactly as it is when you run the <code class="code-inline tex2jax_ignore">git add</code> command. If you commit now, the version of <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> as it was when you last ran the <code class="code-inline tex2jax_ignore">git add</code> command is how it will go into the commit, not the version of the file as it looks in your working directory when you run <code class="code-inline tex2jax_ignore">git commit</code>. If you modify a file after you run <code class="code-inline tex2jax_ignore">git add</code>, you have to run <code class="code-inline tex2jax_ignore">git add</code> again to stage the latest version of the file:</p>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<p>Remember that each file in your working directory can be in one of two states: <em class="emphasis">tracked</em> or <em class="emphasis">untracked</em>. Tracked files are files that were in the last snapshot, as well as any newly staged files; they can be unmodified, modified, or staged. In short, tracked files are files that Git knows about.</p>
 <span class="incontext"><a href="sec_git_basics.html#p-422" class="internal">in-context</a></span>
 </body>
 </html>
