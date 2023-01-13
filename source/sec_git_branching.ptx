@@ -323,6 +323,14 @@ $ git commit -a -m 'made other changes'</pre><!--</div attr= class="content">-->
 
 			</paragraphs>
 
+		<exercise>
+			<title>Learning Git Branching</title>
+			<p>
+				For a superb interactive tutorial on Git branching, go to <url  href="https://learngitbranching.js.org" >Learn Git Branching</url> and try at least the four tutorials in the interactive sequence. Then blog about what you learned.
+			</p>
+			
+		</exercise>
+
 		</subsection>
 
   <conclusion>

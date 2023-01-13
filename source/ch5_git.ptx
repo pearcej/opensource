@@ -5,14 +5,13 @@
   <introduction>
     <p>
     <!-- TODO -need a more appropriate introduction... that is not just about the first section-->
-			This chapter is about version control system with a focus on the Git version control system. We begin by discussing why you need version control, explaining some background on version control tools, move on to how to get Git running on your system, and we finally how to get it set up to start working with. By the end of this chapter you should understand why Git is around, why you should use it, and you should be all set up to do so.
+			This chapter is about version control with a focus on using Git for version control. We begin by discussing why you need version control, explaining some background on version control tools, move on to how to get Git running on your system, and finally we help you to start working with Git. By the end of this chapter you should understand why version control exists, why you should use one, and you should be all set up to begin to do so.
     </p>
   </introduction>
 
   <xi:include href="./sec_git_getting_started.ptx" />
   <xi:include href="./sec_git_basics.ptx" />
   <xi:include href="./sec_git_branching.ptx" /> 
-  <!-- <xi:include href="./sec_git_distributed.ptx" /> -->
   <xi:include href="./sec_git_github.ptx" />
   <!-- <xi:include href="./sec_scratch.ptx" /> -->
   <!-- <xi:include href="./sec_git_tools.ptx" /> -->

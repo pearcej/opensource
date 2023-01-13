@@ -11,11 +11,20 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<section class="paragraphs"><h4 class="heading"><span class="title">What makes a useful bug report?</span></h4>
-<p></p>
-<p>Take a closer look at the bugs in your project’s bug tracker. In particular, spend some time looking through bugs in the <em class="emphasis">new</em> state.</p>
-<p>It’s certain that some of these bug reports are not be very useful.</p>
-<p>For software to improve over time, good bug reports are absolutely essential. Users who file bugs, while almost always well-meaning, frequently don’t know how to write good bug reports — which is a problem, but also an opportunity for others to make positive contributions. Turning a bad bug report into a good bug report doesn’t require special developer knowledge; it just requires patience, persistence, a solid understanding of how the software works, and an understanding of what good bug reports look like.</p>
-<p>So what does a good bug report look like? Look at some of the characteristics of good bug reports.</p></section><span class="incontext"><a href="sec_bug_reports.html#paragraphs-87" class="internal">in-context</a></span>
+<section class="paragraphs"><h4 class="heading"><span class="title">Good bugs reports are reproducible with the fewest possible steps.</span></h4>
+<p><pre class="code-block tex2jax_ignore">Bad: start it and click around for a while and then it crashes 
+
+Good: Start the application. 
+Click the mouse button and type on the keyboard. 
+Within 45 seconds or less, the application will always crash. 
+
+Best: Start the application. 
+Click the mouse five times, 
+and the application crashes with the following error message in 
+"/var/log/foo.err"...
+</pre></p>
+<p>Anybody can break software. People break software all the time. But it takes a bit of practice and skill to break things predictably, over and over — and if there’s no one exercising this skill on a project’s behalf, it’s much more difficult to improve that project over time. That’s why software companies hire testers (although they almost never hire as many as they should.)</p>
+<p>Reproducing bugs is one of the best ways to learn how software actually works. A tester who has explored a bug thoroughly, and who can confidently say “this bug only happens when these three conditions are met,” is much more likely to be able to take the next step: namely, to dig in and find the code that actually creates those three conditions.</p>
+<p>Sometimes it’s not possible to reproduce a bug 100% of the time. Intermittent bugs are extremely frustrating for both testers and developers; they are frequently the result of complex software interactions, and reproducing the bug is actually the hardest part of fixing it. In such cases, testers should do their best to provide as much information as possible, and be ready to answer a developer’s questions.</p></section><span class="incontext"><a href="sec_bug_reports.html#paragraphs-87" class="internal">in-context</a></span>
 </body>
 </html>

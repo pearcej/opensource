@@ -5,213 +5,27 @@
 
 		<introduction>
 <!-- div attr=-->
-		<p>
-			GitHub is the single largest host for Git repositories, and is the central point of collaboration for millions of developers and projects. A large percentage of all Git repositories are hosted on GitHub, and many open-source projects use it for Git hosting, issue tracking, code review, and other things. So while it’s not a direct part of the Git open source project, there’s a good chance that you’ll want or need to interact with GitHub at some point while using Git professionally. Other hosting services like GitLab work similarly.
+		<p> The most popular SECPs including <url href="https://github.com/" visual="github.com/">GitHub</url>, 
+            <url href="https://gitea.io/" visual="gitea.io">Gitea</url>, 
+            <url href="https://gitlab.com/" visual="gitlab.com/">GitLab</url>, and 
+            <url href="https://bitbucket.org/" visual="bitbucket.org">Bitbucket</url> all use Git for version control and all provide cloud storage space for Git repositories. Of these, GitHub is the single largest host for Git repositories and is the central point of collaboration for millions of developers and projects. A large percentage of all Git repositories are hosted on GitHub, and many open-source projects use it for Git hosting, issue tracking, code review, and other things. So while it’s not a direct part of the Git open source project, there’s a good chance that you’ll want or need to interact with GitHub at some point while using Git professionally. Other hosting services work similarly.
 		</p>
 
 		<p>
 			This section is about using GitHub effectively. We’ll cover signing up for and managing an account, creating and using Git repositories, common workflows to contribute to projects and to accept contributions to yours, GitHub’s programmatic interface and lots of little tips to make your life easier in general.
 		</p>
-
-		<p>
-			If you are not interested in using GitHub to host your own projects or to collaborate with other projects that are hosted on GitHub, you can safely skip to the next section.
-		</p>
+			<p>
+				Obviously, the first thing you need to do is set up a free user account. Simply visit <url href="https://github.com" visual="github.com">https://github.com</url> and follow the directions.
+			</p><!--</div attr= class="paragraph">-->
 		</introduction>
 
-		<subsection xml:id="_account_setup_and_configuration">
-			<title>Account Setup and Configuration</title>
-
-<!-- div attr= class="paragraph"-->
-			<p>
-				The first thing you need to do is set up a free user account. Simply visit <url href="https://github.com" visual="github.com">https://github.com</url>, choose a user name that isn’t already taken, provide an email address and a password, and click the big green “Sign up for GitHub” button.
-			</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="imageblock"-->
-<!-- div attr= class="content"-->
-<figure xml:id="git-github-signup">
-  <caption>The GitHub sign-up form</caption>
-<image source='github-signup.png'/><!--</div attr= class="content">-->
-</figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-			<p>
-				The next thing you’ll see is the pricing page for upgraded plans, but it’s safe to ignore this for now because GitHub provides almost all of its functionality with free accounts, except some advanced features. GitHub will send you an email to verify the address you provided. Go ahead and do this; it’s pretty important (as we’ll see later).
-			</p><!--</div attr= class="paragraph">-->
-
-			<p>
-				GitHub’s paid plans include advanced tools and features as well as increased limits for free services, but we won’t be covering those in this book. To get more information about available plans and their comparison, visit <url href="https://github.com/pricing" visual="github.com/pricing">https://github.com/pricing</url>.
-			</p><!--</div attr= class="paragraph">-->
-
-
-<!-- div attr= class="paragraph"-->
-			<p>
-				Clicking the Octocat logo at the top-left of the screen will take you to your dashboard page. You’re now ready to use GitHub.
-			</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="sect3"-->
-
-			<paragraphs xml:id="_ssh_access_2">
-				<title>SSH Access</title>
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					As of right now, you’re fully able to connect with Git repositories using the <c>https://</c> protocol, authenticating with the username and password you just set up. However, to simply clone public projects, you don’t even need to sign up - the account we just created comes into play when we fork projects and push to our forks a bit later.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					If you’d like to use SSH remotes, you’ll need to configure a public key. If you don’t already have one, see <url href="ch00/_generate_ssh_key">Generating Your SSH Public Key</url>. Open up your account settings using the link at the top-right of the window:
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="imageblock"-->
-<!-- div attr= class="content"-->
-				<figure xml:id="git-account-settings">
-				<caption>The “Account settings” link</caption>
-				<image source='github-account-settings.png'/><!--</div attr= class="content">-->
-				</figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					Then select the “SSH keys” section along the left-hand side.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="imageblock"-->
-<!-- div attr= class="content"-->
-<figure xml:id="git-ssh-keys">
-  <caption>The “SSH keys” link.</caption>
-<image source='github-ssh-keys.png'/><!--</div attr= class="content">-->
-</figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					From there, click the “Add an SSH key” button, give your key a name, paste the contents of your <c>~/.ssh/id_rsa.pub</c> (or whatever you named it) public-key file into the text area, and click “Add key”.
-				</p><!--</div attr= class="paragraph">-->
-
-				<p>
-					Note: Be sure to name your SSH key something you can remember. You can name each of your keys (e.g. "My Laptop" or "Work Account") so that if you need to revoke a key later, you can easily tell which one you’re looking for.
-				</p>
- 
-<!-- div attr= class="sect3"-->
-			</paragraphs>
-
-			<paragraphs xml:id="_personal_avatar">
-				<title>Your Avatar</title>
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					Next, if you wish, you can replace the avatar that is generated for you with an image of your choosing. First go to the “Profile” tab (above the SSH Keys tab) and click “Upload new picture”.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="imageblock"-->
-<!-- div attr= class="content"-->
-			<figure xml:id="github-profile">
-			<caption>The “Profile” link</caption>
-			<image source='github-your-profile.png'/><!--</div attr= class="content">-->
-			</figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					We’ll choose a copy of the Git logo that is on our hard drive and then we get a chance to crop it.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="imageblock"-->
-<!-- div attr= class="content"-->
-<figure xml:id="git-crop-avatar">
-  <caption>Crop your avatar</caption>
-<image source='github-avatar-crop.png'/><!--</div attr= class="content">-->
-</figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					Now anywhere you interact on the site, people will see your avatar next to your username.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					If you happen to have uploaded an avatar to the popular Gravatar service (often used for Wordpress accounts), that avatar will be used by default and you don’t need to do this step.
-				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
-
-<!-- div attr= class="sect3"-->
-			</paragraphs>
-
-			<paragraphs xml:id="_your_email_addresses">
-				<title>Your Email Addresses</title>
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					The way that GitHub maps your Git commits to your user is by email address. If you use multiple email addresses in your commits and you want GitHub to link them up properly, you need to add all the email addresses you have used to the Emails section of the admin section.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= xml:id="_add_email_addresses" class="imageblock"-->
-<!-- div attr= class="content"-->
-<figure xml:id="git-github-emails">
-  <caption>Add email addresses</caption>
-<image source='github-email-settings.png'/><!--</div attr= class="content">-->
-</figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_add_email_addresses" class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					In <url href="ch00/_add_email_addresses">Add email addresses</url> we can see some of the different states that are possible. The top address is verified and set as the primary address, meaning that is where you’ll get any notifications and receipts. The second address is verified and so can be set as the primary if you wish to switch them. The final address is unverified, meaning that you can’t make it your primary address. If GitHub sees any of these in commit messages in any repository on the site, it will be linked to your user now.
-				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
-
-<!-- div attr= class="sect3"-->
-			</paragraphs>
-
-			<paragraphs xml:id="_two_factor_authentication">
-				<title>Two Factor Authentication</title>
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					Finally, for extra security, you should definitely set up Two-factor Authentication or “2FA”. Two-factor Authentication is an authentication mechanism that is becoming more and more popular recently to mitigate the risk of your account being compromised if your password is stolen somehow. Turning it on will make GitHub ask you for two different methods of authentication, so that if one of them is compromised, an attacker will not be able to access your account.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					You can find the Two-factor Authentication setup under the Security tab of your Account settings.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="imageblock"-->
-<!-- div attr= class="content"-->
-<figure xml:id="git-2FA-security-tab">
-  <caption>2FA in the Security Tab</caption>
-<image source='github-2fa-1.png'/><!--</div attr= class="content">-->
-</figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					If you click on the “Set up two-factor authentication” button, it will take you to a configuration page where you can choose to use a phone app to generate your secondary code (a “time based one-time password”), or you can have GitHub send you a code via SMS each time you need to log in.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					After you choose which method you prefer and follow the instructions for setting up 2FA, your account will then be a little more secure and you will have to provide a code in addition to your password whenever you log into GitHub.
-				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
-
-
-			</paragraphs>
-
-		</subsection>
 <!-- TODO -->
 		<subsection xml:id="_contributing_to_a_project">
 			<title>Contributing to a Project</title>
 
 <!-- div attr= class="paragraph"-->
 			<p>
-				Now that our account is set up, let’s walk through some details that could be useful in helping you contribute to an existing project.
+				Now that your account is set up, let’s walk through some details that could be useful in helping you contribute to an existing project.
 			</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="sect3"-->
@@ -221,7 +35,7 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					If you want to contribute to an existing project to which you don’t have push access, you can “fork” the project. When you “fork” a project, GitHub will make a copy of the project that is entirely yours; it lives in your namespace, and you can push to it.
+					If you want to contribute to an existing project to which you don’t have write access (aka push access), you can <term>fork</term> the project. When you “fork” a project, GitHub will make a copy of the project that is entirely yours; it lives in your namespace, and you can push to it.
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="admonitionblock note"-->
@@ -231,7 +45,7 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					This way, projects don’t have to worry about adding users as collaborators to give them push access. People can fork a project, push to it, and contribute their changes back to the original repository by creating what’s called a Pull Request, which we’ll cover next. This opens up a discussion thread with code review, and the owner and the contributor can then communicate about the change until the owner is happy with it, at which point the owner can merge it in.
+					This way, projects don’t have to worry about adding users as collaborators to give them push access. People can fork a project, push to it, and contribute their changes back to the original repository by creating a merge request which in GitHub is called a <term>pull request</term>. We’ll cover this next. Making a pull request opens up a discussion thread with code review, and the owner and the contributor can then communicate about the change until the owner is happy with it, at which point the owner can merge it in.
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -239,14 +53,6 @@
 					To fork a project, visit the project page and click the “Fork” button at the top-right of the page.
 				</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="imageblock"-->
-<!-- div attr= class="content"-->
-                <figure xml:id="github-forkbutton">
-                <caption>The “Fork” button</caption>
-                <image source='github-forkbutton.png'/><!--</div attr= class="content">-->
-                </figure>
-                <!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= class="imageblock">-->
 
 <!-- div attr= class="paragraph"-->
 				<p>
@@ -261,31 +67,31 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					GitHub is designed around a particular collaboration workflow, centered on Pull Requests. This flow works whether you’re collaborating with a tightly-knit team in a single shared repository, or a globally-distributed company or network of strangers contributing to a project through dozens of forks. It is centered on the <url href="ch00/_topic_branch">Topic Branches</url> workflow covered in <url href="ch00/ch03-git-branching">Git Branching</url>.
+					GitHub is designed around a particular collaboration workflow, centered on pull requests. This flow works whether you’re collaborating with a tightly-knit team in a single shared repository, or a globally-distributed company or network of strangers contributing to a project through dozens of forks. This workflow is centered on the the idea of a branching workflow covered in <xref>sec_git_branching</xref>.
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					Here’s how it generally works:
+					After you read any contributor's page and get a sense of the community norms, here’s how the Git park generally works:
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="olist arabic"-->
 				<p><ol>
 					<li>
-									<p>
+					<p>
 					Fork the project.
+					</p>
+					</li>
+
+					<li>
+									<p>
+					Create a topic branch from <c>main</c> (or <c>master</c>, depending upon the project).
 				</p>
 					</li>
 
 					<li>
 									<p>
-					Create a topic branch from <c>master</c>.
-				</p>
-					</li>
-
-					<li>
-									<p>
-					Make some commits to improve the project.
+					Make some commits to improve the project, being sure to follow community expectations.
 				</p>
 					</li>
 
@@ -315,7 +121,7 @@
 
 					<li>
 									<p>
-					Sync the updated master back to your fork.
+					Sync the updated main (or master) back to your fork.
 				</p>
 					</li>
 
@@ -323,7 +129,7 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					This is basically the Integration Manager workflow covered in <url href="ch00/_integration_manager">Integration-Manager Workflow</url>, but instead of using email to communicate and review changes, teams use GitHub’s web based tools.
+<!-- 					This is basically the Integration Manager workflow covered in <url href="ch00/_integration_manager">Integration-Manager Workflow</url>, but instead of using email to communicate and review changes, teams use GitHub’s web based tools. -->
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -474,7 +280,7 @@ To https://github.com/tonychacon/blink
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						We also see a list of the commits in our topic branch that are “ahead” of the <c>master</c> branch (in this case, just the one) and a unified diff of all the changes that will be made should this branch get merged by the project owner.
+						We also see a list of the commits in our topic branch that are “ahead” of the <c>main</c> or  <c>master</c> branch (in this case, just the one) and a unified diff of all the changes that will be made should this branch get merged by the project owner.
 					</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="imageblock"-->
@@ -569,7 +375,8 @@ To https://github.com/tonychacon/blink
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						An interesting thing to notice is that if you click on the “Files Changed” tab on this Pull Request, you’ll get the “unified” diff — that is, the total aggregate difference that would be introduced to your main branch if this topic branch was merged in. In <c>git diff</c> terms, it basically automatically shows you <c>git diff master…​&lt;branch&gt;</c> for the branch this Pull Request is based on. See <url href="ch00/_what_is_introduced">Determining What Is Introduced</url> for more about this type of diff.
+						An interesting thing to notice is that if you click on the “Files Changed” tab on this Pull Request, you’ll get the “unified” diff — that is, the total aggregate difference that would be introduced to your main branch if this topic branch was merged in. In <c>git diff</c> terms, it basically automatically shows you <c>git diff main&lt;branch&gt;</c> for the branch this Pull Request is based on. See 
+						<url href="ch00/_what_is_introduced">Determining What Is Introduced</url> for more about this type of diff.
 					</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -579,7 +386,7 @@ To https://github.com/tonychacon/blink
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						If you would prefer, you can simply pull the branch down and merge it locally. If you merge this branch into the <c>master</c> branch and push it to GitHub, the Pull Request will automatically be closed.
+						If you would prefer, you can simply pull the branch down and merge it locally. If you merge this branch into the <c>main</c> branch and push it to GitHub, the Pull Request will automatically be closed.
 					</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -589,7 +396,7 @@ To https://github.com/tonychacon/blink
 
 <!-- div attr= class="admonitionblock note"-->
 					<p>
-						Note: It’s important to note that you can also open a Pull Request between two branches in the same repository. If you’re working on a feature with someone and you both have write access to the project, you can push a topic branch to the repository and open a Pull Request on it to the <c>master</c> branch of that same project to initiate the code review and discussion process. No forking necessary.
+						Note: It’s important to note that you can also open a Pull Request between two branches in the same repository. If you’re working on a feature with someone and you both have write access to the project, you can push a topic branch to the repository and open a Pull Request on it to the <c>main</c> branch of that same project to initiate the code review and discussion process. No forking necessary.
 					</p>
 
 <!-- div attr= class="sect3"-->
@@ -651,7 +458,7 @@ To https://github.com/tonychacon/blink
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						You have two main options in order to do this. You can either rebase your branch on top of whatever the target branch is (normally the <c>master</c> branch of the repository you forked), or you can merge the target branch into your branch.
+						You have two main options in order to do this. You can either rebase your branch on top of whatever the target branch is (normally the <c>main</c> branch of the repository you forked), or you can merge the target branch into your branch.
 					</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -679,9 +486,9 @@ remote: Compressing objects: 100% (3/3), done.
 Unpacking objects: 100% (3/3), done.
 remote: Total 3 (delta 0), reused 0 (delta 0)
 From https://github.com/schacon/blink
- * [new branch]      master     -&gt; upstream/master
+ * [new branch]      main     -&gt; upstream/main
 
-$ git merge upstream/master (3)
+$ git merge upstream/main (3)
 Auto-merging blink.ino
 CONFLICT (content): Merge conflict in blink.ino
 Automatic merge failed; fix conflicts and then commit the result.
@@ -689,7 +496,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 $ vim blink.ino (4)
 $ git add blink.ino
 $ git commit
-[slow-blink 3c8d735] Merge remote-tracking branch 'upstream/master' \
+[slow-blink 3c8d735] Merge remote-tracking branch 'upstream/main' \
     into slower-blink
 
 $ git push origin slow-blink (5)
@@ -996,91 +803,6 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 <!-- div attr= class="sect4"-->
 				</paragraphs>
 
-				<paragraphs xml:id="_emoji">
-					<title>Emoji</title>
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						Finally, you can also use emoji in your comments. This is actually used quite extensively in comments you see on many GitHub Issues and Pull Requests. There is even an emoji helper in GitHub. If you are typing a comment and you start with a <c>:</c> character, an autocompleter will help you find what you’re looking for.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= xml:id="_md_emoji_auto" class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-markdown-06-emoji-complete">
-                    <caption>Emoji autocompleter in action</caption>
-                    <image source='github-markdown-06-emoji-complete.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_md_emoji_auto" class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						Emojis take the form of <c>:&lt;name&gt;:</c> anywhere in the comment. For instance, you could write something like this:
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-					<pre>I :eyes: that :bug: and I :cold_sweat:.
-
-:trophy: for :microscope: it.
-
-:+1: and :sparkles: on this :ship:, it's :fire::poop:!
-
-:clap::tada::panda_face:</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						When rendered, it would look something like <url href="ch00/_md_emoji">Heavy emoji commenting</url>.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= xml:id="_md_emoji" class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-markdown-07-emoji">
-                    <caption>Heavy emoji commenting</caption>
-                    <image source='github-markdown-07-emoji.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_md_emoji" class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						Not that this is incredibly useful, but it does add an element of fun and emotion to a medium that is otherwise hard to convey emotion in.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="admonitionblock note"-->
-
-					<p>
-						Note: There are actually quite a number of web services that make use of emoji characters these days. A great cheat sheet to reference to find emoji that expresses what you want to say can be found at:
-						<url href="https://www.webfx.com/tools/emoji-cheat-sheet/" visual="https://www.webfx.com/tools/emoji-cheat-sheet/">https://www.webfx.com/tools/emoji-cheat-sheet/</url>
-					</p>
-
-<!-- div attr= class="sect4"-->
-				</paragraphs>
-
-				<paragraphs xml:id="_images">
-					<title>Images</title>
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						This isn’t technically GitHub Flavored Markdown, but it is incredibly useful. In addition to adding Markdown image links to comments, which can be difficult to find and embed URLs for, GitHub allows you to drag and drop images into text areas to embed them.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= xml:id="_md_drag" class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-markdown-08-drag-drop">
-                    <caption>Drag and drop images to upload them and auto-embed them</caption>
-                    <image source='github-markdown-08-drag-drop.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_md_drag" class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						If you look at <url href="ch00/_md_drag">Drag and drop images to upload them and auto-embed them</url>, you can see a small “Parsed as Markdown” hint above the text area. Clicking on that will give you a full cheat sheet of everything you can do with Markdown on GitHub.
-					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">--><!--</div attr= class="sect3">-->
-
-<!-- div attr= class="sect3"-->
-				</paragraphs>
 			</paragraphs>
 
 			<paragraphs xml:id="_fetch_and_push_on_different_repositories">
@@ -1093,7 +815,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
-				<pre>This branch is 5 commits behind progit:master.</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+				<pre>This branch is 5 commits behind progit:main.</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
 <!-- div attr= class="paragraph"-->
 				<p>
@@ -1102,32 +824,32 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					One possibility to do this requires no configuration. For example, if you forked from <url href="https://github.com/progit/progit2.git"><c>https://github.com/progit/progit2.git</c></url>, you can keep your <c>master</c> branch up-to-date like this:
+					One possibility to do this requires no configuration. For example, if you forked from <url href="https://github.com/progit/progit2.git"><c>https://github.com/progit/progit2.git</c></url>, you can keep your default branch up-to-date like this:
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
-				<pre>$ git checkout master (1)
+				<pre>$ git checkout main (1)
 $ git pull https://github.com/progit/progit2.git (2)
-$ git push origin master (3)</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+$ git push origin main (3)</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
 <!-- div attr= class="colist arabic"-->
 				<p><ol>
 					<li>
 									<p>
-					If you were on another branch, return to <c>master</c>.
+					If you were on another branch, return to <c>main</c>.
 				</p>
 					</li>
 
 					<li>
 									<p>
-					Fetch changes from <url href="https://github.com/progit/progit2.git"><c>https://github.com/progit/progit2.git</c></url> and merge them into <c>master</c>.
+					Fetch changes from <url href="https://github.com/progit/progit2.git"><c>https://github.com/progit/progit2.git</c></url> and merge them into <c>main</c>.
 				</p>
 					</li>
 
 					<li>
 									<p>
-					Push your <c>master</c> branch to <c>origin</c>.
+					Push your <c>main</c> branch to <c>origin</c>.
 				</p>
 					</li>
 
@@ -1142,7 +864,7 @@ $ git push origin master (3)</pre><!--</div attr= class="content">--><!--</div a
 <!-- div attr= class="content"-->
 				<pre>$ git remote add progit https://github.com/progit/progit2.git (1)
 $ git fetch progit (2)
-$ git branch --set-upstream-to=progit/master master (3)
+$ git branch --set-upstream-to=progit/main main (3)
 $ git config --local remote.pushDefault origin (4)</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
 <!-- div attr= class="colist arabic"-->
@@ -1155,13 +877,13 @@ $ git config --local remote.pushDefault origin (4)</pre><!--</div attr= class="c
 
 					<li>
 									<p>
-					Get a reference on progit’s branches, in particular <c>master</c>.
+					Get a reference on progit’s branches, in particular <c>main</c>.
 				</p>
 					</li>
 
 					<li>
 									<p>
-					Set your <c>master</c> branch to fetch from the <c>progit</c> remote.
+					Set your <c>main</c> branch to fetch from the <c>progit</c> remote.
 				</p>
 					</li>
 
@@ -1180,7 +902,7 @@ $ git config --local remote.pushDefault origin (4)</pre><!--</div attr= class="c
 
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
-				<pre>$ git checkout master (1)
+				<pre>$ git checkout main (1)
 $ git pull (2)
 $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
@@ -1188,19 +910,19 @@ $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="li
 				<p><ol>
 					<li>
 									<p>
-					If you were on another branch, return to <c>master</c>.
+					If you were on another branch, return to <c>main</c>.
 				</p>
 					</li>
 
 					<li>
 									<p>
-					Fetch changes from <c>progit</c> and merge changes into <c>master</c>.
+					Fetch changes from <c>progit</c> and merge changes into <c>main</c>.
 				</p>
 					</li>
 
 					<li>
 									<p>
-					Push your <c>master</c> branch to <c>origin</c>.
+					Push your <c>main</c> branch to <c>origin</c>.
 				</p>
 					</li>
 
@@ -1208,7 +930,7 @@ $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="li
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					This approach can be useful, but it’s not without downsides. Git will happily do this work for you silently, but it won’t warn you if you make a commit to <c>master</c>, pull from <c>progit</c>, then push to <c>origin</c> — all of those operations are valid with this setup. So you’ll have to take care never to commit directly to <c>master</c>, since that branch effectively belongs to the upstream repository.
+					This approach can be useful, but it’s not without downsides. Git will happily do this work for you silently, but it won’t warn you if you make a commit to <c>main</c>, pull from <c>progit</c>, then push to <c>origin</c> — all of those operations are valid with this setup. So you’ll have to take care never to commit directly to <c>main</c>, since that branch effectively belongs to the upstream repository.
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 
@@ -1409,135 +1131,13 @@ $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="li
 <!-- div attr= class="sect4"-->
 				</paragraphs>
 
-				<paragraphs xml:id="_pr_refs">
-					<title>Pull Request Refs</title>
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						If you’re dealing with a <term>lot</term> of Pull Requests and don’t want to add a bunch of remotes or do one time pulls every time, there is a neat trick that GitHub allows you to do. This is a bit of an advanced trick and we’ll go over the details of this a bit more in <url href="ch00/_refspec">The Refspec</url>, but it can be pretty useful.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						GitHub actually advertises the Pull Request branches for a repository as sort of pseudo-branches on the server. By default you don’t get them when you clone, but they are there in an obscured way and you can access them pretty easily.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						To demonstrate this, we’re going to use a low-level command (often referred to as a “plumbing” command, which we’ll read about more in <url href="ch00/_plumbing_porcelain">Plumbing and Porcelain</url>) called <c>ls-remote</c>. This command is generally not used in day-to-day Git operations but it’s useful to show us what references are present on the server.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						If we run this command against the “blink” repository we were using earlier, we will get a list of all the branches and tags and other references in the repository.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-					<pre>$ git ls-remote https://github.com/schacon/blink
-10d539600d86723087810ec636870a504f4fee4d    HEAD
-10d539600d86723087810ec636870a504f4fee4d    refs/heads/master
-6a83107c62950be9453aac297bb0193fd743cd6e    refs/pull/1/head
-afe83c2d1a70674c9505cc1d8b7d380d5e076ed3    refs/pull/1/merge
-3c8d735ee16296c242be7a9742ebfbc2665adec1    refs/pull/2/head
-15c9f4f80973a2758462ab2066b6ad9fe8dcf03d    refs/pull/2/merge
-a5a7751a33b7e86c5e9bb07b26001bb17d775d1a    refs/pull/4/head
-31a45fc257e8433c8d8804e3e848cf61c9d3166c    refs/pull/4/merge</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						Of course, if you’re in your repository and you run <c>git ls-remote origin</c> or whatever remote you want to check, it will show you something similar to this.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						If the repository is on GitHub and you have any Pull Requests that have been opened, you’ll get these references that are prefixed with <c>refs/pull/</c>. These are basically branches, but since they’re not under <c>refs/heads/</c> you don’t get them normally when you clone or fetch from the server — the process of fetching ignores them normally.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						There are two references per Pull Request - the one that ends in <c>/head</c> points to exactly the same commit as the last commit in the Pull Request branch. So if someone opens a Pull Request in our repository and their branch is named <c>bug-fix</c> and it points to commit <c>a5a775</c>, then in <term>our</term> repository we will not have a <c>bug-fix</c> branch (since that’s in their fork), but we <em>will</em> have <c>pull/&lt;pr#&gt;/head</c> that points to <c>a5a775</c>. This means that we can pretty easily pull down every Pull Request branch in one go without having to add a bunch of remotes.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						Now, you could do something like fetching the reference directly.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-					<pre>$ git fetch origin refs/pull/958/head
-From https://github.com/libgit2/libgit2
- * branch            refs/pull/958/head -&gt; FETCH_HEAD</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						This tells Git, “Connect to the <c>origin</c> remote, and download the ref named <c>refs/pull/958/head</c>.” Git happily obeys, and downloads everything you need to construct that ref, and puts a pointer to the commit you want under <c>.git/FETCH_HEAD</c>. You can follow that up with <c>git merge FETCH_HEAD</c> into a branch you want to test it in, but that merge commit message looks a bit weird. Also, if you’re reviewing a <term>lot</term> of pull requests, this gets tedious.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						There’s also a way to fetch <em>all</em> of the pull requests, and keep them up to date whenever you connect to the remote. Open up <c>.git/config</c> in your favorite editor, and look for the <c>origin</c> remote. It should look a bit like this:
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-					<pre>[remote "origin"]
-    url = https://github.com/libgit2/libgit2
-    fetch = +refs/heads/*:refs/remotes/origin/*</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						That line that begins with <c>fetch =</c> is a “refspec.” It’s a way of mapping names on the remote with names in your local <c>.git</c> directory. This particular one tells Git, "the things on the remote that are under <c>refs/heads</c> should go in my local repository under <c>refs/remotes/origin</c>." You can modify this section to add another refspec:
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-					<pre>[remote "origin"]
-    url = https://github.com/libgit2/libgit2.git
-    fetch = +refs/heads/*:refs/remotes/origin/*
-    fetch = +refs/pull/*/head:refs/remotes/origin/pr/*</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						That last line tells Git, “All the refs that look like <c>refs/pull/123/head</c> should be stored locally like <c>refs/remotes/origin/pr/123</c>.” Now, if you save that file, and do a <c>git fetch</c>:
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-					<pre>$ git fetch
-# …
- * [new ref]         refs/pull/1/head -&gt; origin/pr/1
- * [new ref]         refs/pull/2/head -&gt; origin/pr/2
- * [new ref]         refs/pull/4/head -&gt; origin/pr/4
-# …</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						Now all of the remote pull requests are represented locally with refs that act much like tracking branches; they’re read-only, and they update when you do a fetch. This makes it super easy to try the code from a pull request locally:
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-					<pre>$ git checkout pr/2
-Checking out files: 100% (3769/3769), done.
-Branch pr/2 set up to track remote branch pr/2 from origin.
-Switched to a new branch 'pr/2'</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						The eagle-eyed among you would note the <c>head</c> on the end of the remote portion of the refspec. There’s also a <c>refs/pull/#/merge</c> ref on the GitHub side, which represents the commit that would result if you push the “merge” button on the site. This can allow you to test the merge before even hitting the button.
-					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">-->
-
-<!-- div attr= class="sect4"-->
-				</paragraphs>
 
 				<paragraphs xml:id="_pull_requests_on_pull_requests">
 					<title>Pull Requests on Pull Requests</title>
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						Not only can you open Pull Requests that target the main or <c>master</c> branch, you can actually open a Pull Request targeting any branch in the network. In fact, you can even target another Pull Request.
+						Not only can you open Pull Requests that target the main or <c>main</c> branch, you can actually open a Pull Request targeting any branch in the network. In fact, you can even target another Pull Request.
 					</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -1712,10 +1312,23 @@ X-GitHub-Recipient-Address: tchacon@example.com</pre><!--</div attr= class="cont
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					There are a couple of special files that GitHub will notice if they are present in your repository.
+					There are a number of special files that GitHub will notice if they are present in your repository.
+					We detail a few of the most common ones. Note that these can typically be written in any format that Github recognizes as prose.
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
+			</paragraphs>
+			<paragraphs xml:id="_license">
+				<title>LICENSE</title>
+			<p>
+			The first is the LICENSE file, which can be of nearly any prose format. For example, it could be LICENSE, LICENSE.md, LICENSE.asciidoc, etc. 
+			</p>
+			<p>
+			The license file explains the respostory's legal license, including any legal rights, any copyright restrictions, etc. When you include a detectable license in your repository, people who visit your repository will see it at the top of the repository page.
+			</p>
+			<p>
+				For more information on how to add a license, see <url href="https://help.github.com/articles/adding-a-license-to-a-repository/" visual="help.github.com/articles/adding-a-license-to-a-repository/">Adding a license to a repository</url> 
+			</p>
 			</paragraphs>
 
 			<paragraphs xml:id="_readme">
@@ -1723,7 +1336,9 @@ X-GitHub-Recipient-Address: tchacon@example.com</pre><!--</div attr= class="cont
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					The first is the <c>README</c> file, which can be of nearly any format that GitHub recognizes as prose. For example, it could be <c>README</c>, <c>README.md</c>, <c>README.asciidoc</c>, etc. If GitHub sees a README file in your source, it will render it on the landing page of the project.
+					The <c>README</c> file explains your project, what it does, why it is useful, etc.
+					If GitHub detects a README file in your source, it will render it on the landing page of the project,
+					so this file is often the first item a visitor will see when visiting your repository.
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -1773,12 +1388,19 @@ X-GitHub-Recipient-Address: tchacon@example.com</pre><!--</div attr= class="cont
 <!-- div attr= class="sect3"-->
 			</paragraphs>
 
+			<paragraphs xml:id="_code_of_conduct">
+				<title>CODE_OF_CONDUCT</title>
+				<p>
+					The CODE_OF_CONDUCT explains how one is expected to engage in that particular community. It is typically used to ensure an inclusive environment that respects all people and also typically describes how to address any problems among members of the project's community.
+				</p>
+			</paragraphs>
+
 			<paragraphs xml:id="_contributing">
 				<title>CONTRIBUTING</title>
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					The other special file that GitHub recognizes is the <c>CONTRIBUTING</c> file. If you have a file named <c>CONTRIBUTING</c> with any file extension, GitHub will show <url href="ch00/_contrib_file">Opening a Pull Request when a CONTRIBUTING file exists</url> when anyone starts opening a Pull Request.
+					Another special file that GitHub recognizes is the <c>CONTRIBUTING</c> file. If you have a file named <c>CONTRIBUTING</c> with any file extension, GitHub will show <url href="ch00/_contrib_file">Opening a Pull Request when a CONTRIBUTING file exists</url> when anyone starts opening a Pull Request.
 				</p><!--</div attr= class="paragraph">-->
 
                 <figure xml:id="github-maint-09-contrib">
@@ -1811,7 +1433,7 @@ X-GitHub-Recipient-Address: tchacon@example.com</pre><!--</div attr= class="cont
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						If you are using a branch other than “master” as your default branch that you want people to open Pull Requests on or see by default, you can change that in your repository’s settings page under the “Options” tab.
+						If you are using a branch other than “main” or “master” as your default branch that you want people to open Pull Requests on or see by default, you can change that in your repository’s settings page under the “Options” tab.
 					</p><!--</div attr= class="paragraph">-->
 
                     <figure xml:id="github-maint-10-default-branch">
@@ -1827,33 +1449,6 @@ X-GitHub-Recipient-Address: tchacon@example.com</pre><!--</div attr= class="cont
 					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">-->
 
 <!-- div attr= class="sect4"-->
-				</paragraphs>
-
-				<paragraphs xml:id="_transferring_a_project">
-					<title>Transferring a Project</title>
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						If you would like to transfer a project to another user or an organization in GitHub, there is a “Transfer ownership” option at the bottom of the same “Options” tab of your repository settings page that allows you to do this.
-					</p><!--</div attr= class="paragraph">-->
-
-                    <figure xml:id="github-maint-11-transfer">
-                    <caption>Transfer a project to another GitHub user or Organization</caption>
-                    <image source='github-maint-11-transfer.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_transfer_project" class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						This is helpful if you are abandoning a project and someone wants to take it over, or if your project is getting bigger and want to move it into an organization.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						Not only does this move the repository along with all its watchers and stars to another place, it also sets up a redirect from your URL to the new place. It will also redirect clones and fetches from Git, not just web requests.
-					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">--><!--</div attr= class="sect3">-->
-
 				</paragraphs>
 
 			</paragraphs>

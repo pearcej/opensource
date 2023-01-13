@@ -13,12 +13,9 @@
 <body class="ignore-math">
 <section class="paragraphs"><h4 class="heading"><span class="title">Your Editor.</span></h4>
 <p>Now that your identity is set up, you can configure the default text editor that will be used when Git needs you to type in a message. If not configured, Git uses your system’s default editor.</p>
-<p>If you want to use a different text editor, such as Emacs, you can do the following:</p>
-<pre class="code-block tex2jax_ignore">$ git config --global core.editor emacs
+<p>If you want to use a different text editor, such as VS Code, you can do the following:</p>
+<pre class="code-block tex2jax_ignore">$ git config core.editor "code -n --wait"
 </pre>
-<p>On a Windows system, if you want to use a different text editor, you must specify the full path to its executable file. This can be different depending on how your editor is packaged.</p>
-<p>In the case of Notepad++, a popular programming editor, you are likely to want to use the 32-bit version, since at the time of writing the 64-bit version doesn’t support all plug-ins. If you are on a 32-bit Windows system, or you have a 64-bit editor on a 64-bit system, you’ll type something like this:</p>
-<pre class="code-block tex2jax_ignore">$ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
-</pre></section><span class="incontext"><a href="sec_git_getting_started.html#_editor" class="internal">in-context</a></span>
+<p>Note that on a Windows system, if you want to use a different text editor, you must specify the full path to its executable file. This can be different depending on how your editor is packaged.</p></section><span class="incontext"><a href="sec_git_getting_started.html#_editor" class="internal">in-context</a></span>
 </body>
 </html>
