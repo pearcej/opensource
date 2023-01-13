@@ -67,7 +67,7 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					GitHub is designed around a particular collaboration workflow, centered on pull requests. This flow works whether you’re collaborating with a tightly-knit team in a single shared repository, or a globally-distributed company or network of strangers contributing to a project through dozens of forks. This workflow is centered on the the idea of a branching workflow covered in <xref>sec_git_branching</xref>.
+					GitHub is designed around a particular collaboration workflow, centered on pull requests. This flow works whether you’re collaborating with a tightly-knit team in a single shared repository, or a globally-distributed company or network of strangers contributing to a project through dozens of forks. This workflow is centered on the the idea of a branching workflow covered in <xref ref="sec_git_branching" />.
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
