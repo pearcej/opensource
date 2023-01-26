@@ -12,7 +12,12 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>We can also move files around, make a copy of files, or remove (delete) files from the filesystem using <code class="code-inline tex2jax_ignore">mv</code>, <code class="code-inline tex2jax_ignore">cp</code>, and <code class="code-inline tex2jax_ignore">rm</code> respectively. Let's see how these work. First, list your files. You should have  <em class="emphasis">newfile1.txt</em>, <em class="emphasis">newfile2.txt</em>, and <em class="emphasis">newfile3.txt</em> in your directory.</p>
+<p>Let's look at the contents of the files that we created. The <code class="code-inline tex2jax_ignore">cat</code> command stands for <em class="emphasis">concatenate</em> is used to print on the standard output device (usually your screen for our purposes) or to concatenate files.  To use <code class="code-inline tex2jax_ignore">cat</code> to see the file contents, type the following one at a time:<pre class="code-block tex2jax_ignore">cat newfile1.txt
+cat newfile2.txt
+cat newfile3.txt
+</pre>You can also use the <code class="code-inline tex2jax_ignore">cat</code> command to concatenate files. For example, if you try:<pre class="code-block tex2jax_ignore">cat newfile2.txt newfile3.txt &gt; newfile1.txt
+cat newfile1.txt
+</pre>You should see that <em class="emphasis">newfile1.txt</em> instead of being empty, now contains the concatenation of <em class="emphasis">newfile2.txt</em> and <em class="emphasis">newfile3.txt</em></p>
 <span class="incontext"><a href="sec_dev_basic_shell_commands.html#p-298" class="internal">in-context</a></span>
 </body>
 </html>

@@ -213,6 +213,8 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
   <paragraphs>
     <title>Files</title>
     <p>
+    </p>
+    <p>
     There are a number of ways one can create a new file from the shell. Let's try a few. First, use <c>cd</c> to descend into one of your new directories, if you are not already in one, and type <c>ls</c>. You should be in an empty directory. Then let's try the following commands:
        <pre>
  touch newfile1.txt
@@ -293,7 +295,10 @@ And, if you respond with "n", then the removal will not happen.
 </p>
   </paragraphs>
 <paragraphs>
-  <title>Useful bash commands and other time-saving commands</title>
+  <title>A few time-saving shell commands</title>
+  <p>
+    
+  </p>
   <p>
     The <em>up arrow</em> key retrieves the previous shell command. If you press it multiple times, it will take you back through multiple commands in your shell history. This is a useful way to repeat a command. For example, if you had a typo, you can use the up arrow, edit the command, and push enter to fix the command. Analogously, the <em>down arrow</em> will move you in the reverse direction through the shell command history. For more useful shell commands, type <c>man bash</c> for hints on how to search your shell history, re-execute commands, and much more.
     </p>
