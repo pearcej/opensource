@@ -51,7 +51,7 @@
       pwd
       </pre>
       <p>
-      When I  type this, I see the following:
+      When I type this, I see the following:
     </p>
     <pre>
     /home/pearcej
@@ -66,7 +66,7 @@
       cd /
       </pre>
       <p>
-      What you just did should have transported you to the <term>root directory</term> (if you weren't there already.) Note that the term <em>root directory</em> shouldn't be confused with the term <em>root user</em> in a Linux-like system. The <term>root user</term> is a user named <em>root</em>, which is a special superuser account in Linux operating systems that has unrestricted read and write privileges to everything. The <em>root directory</em> should also not be confused with the <c>/root</c> folder which found on some Linux-based OS's, which is the home directory of the root superuser.
+      What you just did should have transported you to the <term>root directory</term> (if you weren't there already.) Now when you use <c>pwd</c>, you should see <c>/</c> echoed back. Note that the term <em>root directory</em> shouldn't be confused with the term <em>root user</em> in a Linux-like system. The <term>root user</term> is a user named <em>root</em>, which is a special superuser account in Linux operating systems that has unrestricted read and write privileges to everything. The <em>root directory</em> should also not be confused with the <c>/root</c> folder which found on some Linux-based OS's, which is the home directory of the root superuser. (More about this later.)
       </p>
 
       <p>
@@ -122,7 +122,7 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
       man ls
       </pre>
       <p>
-        You may be wondering about the use of one minus sign '-' vs the use of two minus signs '--' in shell flags. One is used for single letter commands, while two is used for word-length commands. If you look back at the <c>ls --help</c> results, you may see that the flags <c>-a</c> and <c>--all</c> both list all files including that begin with a '.', which are the hidden files  and directories. Besides brevity, the main advantage to the single minus sign is that to run multiple options at the same time, all you need to do is concatenate them, so <c>ls -lra</c> would return the result with  the <c>-l</c>,  <c>-r</c>, and <c>a</c> option flags all activated. Give it a try!
+        You may be wondering about the use of one minus sign '-' vs the use of two minus signs '--' in shell flags. One minus sign is used for single letter commands, while two is used for word-length commands. If you look back at the <c>ls --help</c> results, you may see that the flags <c>-a</c> and <c>--all</c> both list all files including that begin with a '.', which are the hidden files  and directories. Besides brevity, the main advantage to the single minus sign is that to run multiple options at the same time, all you need to do is concatenate them, so <c>ls -lra</c> would return the result with  the <c>-l</c>,  <c>-r</c>, and <c>a</c> option flags all activated. Give it a try!
       </p>
       <pre>
       ls -lra
@@ -143,7 +143,7 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
    cd ~
     </pre>
       <p>
-        Then list your files just to see that you have been transported again. 
+        Then print your working directory and list your files just to see that you have been transported again. 
       </p>
 
       <p>
@@ -212,15 +212,125 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
   </paragraphs>
   <paragraphs>
     <title>Files</title>
-    
-  </paragraphs>
+    <p>
+    There are a number of ways one can create a new file from the shell. Let's try a few. First, use <c>cd</c> to descend into one of your new directories, if you are not already in one, and type <c>ls</c>. You should be in an empty directory. Then let's try the following commands:
+       <pre>
+ touch newfile1.txt
+ echo 'I love open source!' > newfile2.txt
+ echo 'I really love open source!' >> newfile3.txt
+   ls
+   </pre>
+   You should now see three new files named <em>newfile1.txt</em>, <em>newfile2.txt</em>, and <em>newfile3.txt</em> respectively. The <c>touch</c> command simply makes an empty file, so the first line we typed is pretty straightforward. The second and third lines that we typed require a bit more explanation. The <c>echo</c> command simply echoes the argument(s), so if we had just typed <c> echo 'I love open source!'</c>, then  'I love open source!' would be repeated on the screen (without the quotation marks.) This might not seem very useful, but it is widely used in shell scripts to output status text or variable values to the screen or to a file. Both <c>></c> and <c>>></c> are used to redirect the output to someplace other than the screen.</p>
 
+    <p>Output redirection with <c>></c> or <c>>></c> is a feature in Linux that allows to change the standard input/output devices. The standard input device is the keyboard, and the standard output device is the screen, but sometimes we want to change this. With output redirection, the above standard output can be changed to go into a file, and that is exactly what we did above. Note that the <c>></c> is the output redirection operator used for <em>overwriting</em> files that might or might not already exist in the directory, while the <c>>></c> is an output operator that appends the data of an existing file (or creates a new file by that name if one did not already exist.) So, <c>></c> should be used judiciously.
+    </p>
+
+    <p>
+      Let's look at the contents of the files that we created. The <c>cat</c> command stands for <em>concatenate</em> is used to print on the standard output device (usually your screen for our purposes) or to concatenate files.  To use <c>cat</c> to see the file contents, type the following one at a time:
+       <pre>
+cat newfile1.txt
+cat newfile2.txt
+cat newfile3.txt
+   </pre>
+You can also use the <c>cat</c> command to concatenate files. For example, if you try:
+       <pre>
+cat newfile2.txt newfile3.txt > newfile1.txt
+cat newfile1.txt
+   </pre>
+
+  You should see that <em>newfile1.txt</em> instead of being empty, now contains the concatenation of <em>newfile2.txt</em> and <em>newfile3.txt</em> 
+    </p>
+<p>
+    We can also move files around, make a copy of files, or remove (delete) files from the filesystem using <c>mv</c>, <c>cp</c>, and <c>rm</c> respectively. Let's see how these work. First, list your files. You should have  <em>newfile1.txt</em>, <em>newfile2.txt</em>, and <em>newfile3.txt</em> in your directory. </p>
+      <p>
+        Let's make a new directory below our current directory and move one of our files there.
+       <pre>
+mkdir subdir
+mv newfile3.txt subdir/newfile3.txt
+ls
+ls subdir
+   </pre>
+You should see that newfile3.txt is now not in the current directory, but it is instead in the subdirectory 
+<em>subdir</em>.
+</p>
+  <p>
+    In addition to moving files around in the directory structure, we can also use the <c>mv</c> command to rename files as follows:
+
+    <pre>
+mv newfile1.txt newfile4.txt
+ ls 
+   </pre>
+   One important thing to watch out for with the <c>mv</c> command is that if the destination filename already exists, it might get overwritten. For this reason, you might want to use the <c>-i</c> flag which stands for interactive. Try it.
+    <pre>
+mv -i newfile1.txt newfile2.txt
+</pre>
+You should see a question like, "overwrite 'newfile2.txt'?"If you respond with "n", then the file will not be overwritten.
+  </p>
+<p>
+The <c>cp</c>command works as you might expect:
+
+    <pre>
+cp newfile2.txt newfile2_cp.txt
+cat newfile2_cp.txt
+   </pre>
+Just like with the <c>mv</c>, command the <c>cp</c> command will overwrite the destination file if it already exists. For this reason, you might want to use the <c>-i</c> flag which stands for interactive. Try it.
+    <pre>
+mv -i newfile4.txt newfile2_cp.txt
+</pre>
+You should see a question like, "overwrite 'newfile2_cp.txt'?" If you respond with "n", the command will not overwrite, so using the <c>-i</c> flag seems a wise safeguard.
+</p>
+<p>
+  The <c>rm</c> command is a useful, but another dangerous command.  Let's try it:
+<pre>
+rm newfile2_cp.txt
+</pre>
+
+Just as with <c>cp</c>, and <c>mv</c>, you are probably wise to use the <c>-i</c> option. 
+<pre>
+rm -i newfile4.txt
+</pre>
+And, if you respond with "n", then the removal will not happen. 
+</p>
+  </paragraphs>
+<paragraphs>
+  <title>Useful bash commands and other time-saving commands</title>
+  <p>
+    The <em>up arrow</em> key retrieves the previous shell command. If you press it multiple times, it will take you back through multiple commands in your shell history. This is a useful way to repeat a command. For example, if you had a typo, you can use the up arrow, edit the command, and push enter to fix the command. Analogously, the <em>down arrow</em> will move you in the reverse direction through the shell command history. For more useful shell commands, type <c>man bash</c> for hints on how to search your shell history, re-execute commands, and much more.
+    </p>
+  <p>
+    Another thing that is very useful in the shell is the use of regular expressions. A regular expression (aka regex) is a sequence of characters that specifies a text search pattern. Regular expressions are quite powerful, and it is not within the scope of this textbook to teach them, instead this paragraph is intended to alert you to how useful they can be. A couple examples of very common regular expressions pattern symbols are the question mark and the asterisk.  The question mark (?) specifies any single character to match, and the asterisk (*) specifies zero or more characters to match.</p>
+      <p>
+        For example, if we type the following:
+        <pre>
+rm -i newfile?.txt
+</pre>
+Then the question mark will match with any single character, and we will see the following prompts:
+<pre>
+rm: remove regular file 'newfile2.txt'?
+rm: remove regular file 'newfile4.txt'?
+</pre>
+If we instead type:
+<pre>
+rm -i newfile*.txt
+</pre> 
+    Then the asterisk will match with any number of characters (including zero), and we will see the following prompts:
+<pre>
+rm: remove regular file 'newfile2.txt'?
+rm: remove regular file 'newfile4.txt'?
+rm: remove regular file 'newfile2_cp.txt'?
+</pre>p
+As you can see, regular expressions give you a lot of power and control. 
+  </p>
+
+  
+  </paragraphs>
 
 </subsection>
 
 <conclusion>
+<title>Conclusion</title>
   <p>
-    These shell commands are summarized in Appendix <xref ref="ap_shell_cheat_sheet"/>.
+    Hopefully, you feel a bit more comfortable using the shell from the command line. The shell commands discussed above are summarized in Appendix <xref ref="ap_shell_cheat_sheet"/>.
   </p>
 </conclusion>
 

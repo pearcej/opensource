@@ -108,11 +108,11 @@ eBookConfig.enable_chatcodes =  false;
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_dev_shell_terms.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch_development_env.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_dev_vm_containerization.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_dev_shell_terms.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch_dev_env.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_dev_vm_containerization.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_dev_shell_terms.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch_development_env.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_dev_vm_containerization.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_dev_shell_terms.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch_dev_env.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_dev_vm_containerization.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -153,7 +153,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link">
-<a href="ch_development_env.html" data-scroll="ch_development_env" class="internal"><span class="codenumber">4</span> <span class="title">OSS Development Environment</span></a><ul>
+<a href="ch_dev_env.html" data-scroll="ch_dev_env" class="internal"><span class="codenumber">4</span> <span class="title">OSS Development Environment</span></a><ul>
 <li><a href="sec_dev_shell_terms.html" data-scroll="sec_dev_shell_terms" class="internal">Using the Command Line</a></li>
 <li><a href="sec_dev_basic_shell_commands.html" data-scroll="sec_dev_basic_shell_commands" class="active">Basic Shell Commands</a></li>
 <li><a href="sec_dev_vm_containerization.html" data-scroll="sec_dev_vm_containerization" class="internal">Virtual Machines and Containerization</a></li>
@@ -218,14 +218,14 @@ eBookConfig.enable_chatcodes =  false;
 <p id="p-267">First, let's get our bearings and see which directory we are currently in. The <code class="code-inline tex2jax_ignore">pwd</code> command stands for <em class="emphasis">print working directory</em> and as the name says it prints the name of the directory you are working in. Try typing:</p>
 <pre class="code-block tex2jax_ignore">pwd
 </pre>
-<p id="p-268">When I  type this, I see the following:</p>
+<p id="p-268">When I type this, I see the following:</p>
 <pre class="code-block tex2jax_ignore">/home/pearcej
 </pre>
 <p id="p-269">Reading from right to left, this means I am in a <dfn class="terminology">child</dfn> directory named <code class="code-inline tex2jax_ignore">pearcej</code> which itself is a child of a directory called <code class="code-inline tex2jax_ignore">home</code> which is itself a child of the root directory. If you prefer the folder metaphor to the tree metaphor, you can think of <code class="code-inline tex2jax_ignore">pearcej</code> as being "inside" of the <code class="code-inline tex2jax_ignore">home</code> directory, which is inside of the root directory. Note that the position with respect to the forward slash '/' tells us the direction of the relationship – further to the right is further "inside".</p>
 <p id="p-270">Let's try "moving" (i.e. changing our working directory) to the root directory. Use the <code class="code-inline tex2jax_ignore">cd</code> command which stands for <em class="emphasis">change directory</em> followed by the <code class="code-inline tex2jax_ignore">/</code> by typing:</p>
 <pre class="code-block tex2jax_ignore">cd /
 </pre>
-<p id="p-271">What you just did should have transported you to the <dfn class="terminology">root directory</dfn> (if you weren't there already.) Note that the term <em class="emphasis">root directory</em> shouldn't be confused with the term <em class="emphasis">root user</em> in a Linux-like system. The <dfn class="terminology">root user</dfn> is a user named <em class="emphasis">root</em>, which is a special superuser account in Linux operating systems that has unrestricted read and write privileges to everything. The <em class="emphasis">root directory</em> should also not be confused with the <code class="code-inline tex2jax_ignore">/root</code> folder which found on some Linux-based OS's, which is the home directory of the root superuser.</p>
+<p id="p-271">What you just did should have transported you to the <dfn class="terminology">root directory</dfn> (if you weren't there already.) Now when you use <code class="code-inline tex2jax_ignore">pwd</code>, you should see <code class="code-inline tex2jax_ignore">/</code> echoed back. Note that the term <em class="emphasis">root directory</em> shouldn't be confused with the term <em class="emphasis">root user</em> in a Linux-like system. The <dfn class="terminology">root user</dfn> is a user named <em class="emphasis">root</em>, which is a special superuser account in Linux operating systems that has unrestricted read and write privileges to everything. The <em class="emphasis">root directory</em> should also not be confused with the <code class="code-inline tex2jax_ignore">/root</code> folder which found on some Linux-based OS's, which is the home directory of the root superuser. (More about this later.)</p>
 <p id="p-272">Next type the following <code class="code-inline tex2jax_ignore">ls</code> to get a <em class="emphasis">listing</em> of the files and subdirectories in the <em class="emphasis">root directory</em>.</p>
 <pre class="code-block tex2jax_ignore">ls
 </pre>
@@ -248,14 +248,14 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -&gt; usr/bin
 <pre class="code-block tex2jax_ignore">ls --help
 man ls
 </pre>
-<p id="p-281">You may be wondering about the use of one minus sign '-' vs the use of two minus signs '--' in shell flags. One is used for single letter commands, while two is used for word-length commands. If you look back at the <code class="code-inline tex2jax_ignore">ls --help</code> results, you may see that the flags <code class="code-inline tex2jax_ignore">-a</code> and <code class="code-inline tex2jax_ignore">--all</code> both list all files including that begin with a '.', which are the hidden files  and directories. Besides brevity, the main advantage to the single minus sign is that to run multiple options at the same time, all you need to do is concatenate them, so <code class="code-inline tex2jax_ignore">ls -lra</code> would return the result with  the <code class="code-inline tex2jax_ignore">-l</code>,  <code class="code-inline tex2jax_ignore">-r</code>, and <code class="code-inline tex2jax_ignore">a</code> option flags all activated. Give it a try!</p>
+<p id="p-281">You may be wondering about the use of one minus sign '-' vs the use of two minus signs '--' in shell flags. One minus sign is used for single letter commands, while two is used for word-length commands. If you look back at the <code class="code-inline tex2jax_ignore">ls --help</code> results, you may see that the flags <code class="code-inline tex2jax_ignore">-a</code> and <code class="code-inline tex2jax_ignore">--all</code> both list all files including that begin with a '.', which are the hidden files  and directories. Besides brevity, the main advantage to the single minus sign is that to run multiple options at the same time, all you need to do is concatenate them, so <code class="code-inline tex2jax_ignore">ls -lra</code> would return the result with  the <code class="code-inline tex2jax_ignore">-l</code>,  <code class="code-inline tex2jax_ignore">-r</code>, and <code class="code-inline tex2jax_ignore">a</code> option flags all activated. Give it a try!</p>
 <pre class="code-block tex2jax_ignore">ls -lra
 </pre></section><section class="paragraphs" id="paragraphs-9"><h4 class="heading"><span class="title">More on Directories.</span></h4>
 <p id="p-282"></p>
 <p id="p-283">Next, let's go to your <dfn class="terminology">home</dfn> directory which is referenced by the special tilde '~' character as follows: </p>
 <pre class="code-block tex2jax_ignore">cd ~
 </pre>
-<p id="p-284">Then list your files just to see that you have been transported again.</p>
+<p id="p-284">Then print your working directory and list your files just to see that you have been transported again.</p>
 <p id="p-285">You can make a new directory using the <code class="code-inline tex2jax_ignore">mkdir</code> command. For example, let's say you want to make a new directory with the name <em class="emphasis">newdir</em>, you can type the following:</p>
 <pre class="code-block tex2jax_ignore">mkdir newdir
 </pre>
@@ -279,7 +279,48 @@ drwxr-xr-x 13 pearcej pearcej 4096 Nov 16 17:00 ..
 ls -l ..
 </pre>
 <p id="p-293">Here, the first command says, go up one level in the directory tree structure, and create a new directory one level below that, which makes it a sibling of the original <code class="code-inline tex2jax_ignore">newdir</code> directory. The second lines says produce a long listing of all of the files and directories in the directory that is one level up relative to where I am. You should see both of the directories that you made.</p>
-<p id="p-294">If you want to delete either of these new directories, you will need to use the <dfn class="terminology">remove directory</dfn> command, <code class="code-inline tex2jax_ignore">rmdir</code> followed by the name of the directory you want to remove. Try it!</p></section><section class="paragraphs" id="paragraphs-10"><h4 class="heading"><span class="title">Files.</span></h4></section></section><section class="conclusion" id="conclusion-5"><p id="p-295">These shell commands are summarized in Appendix <a href="ap_shell_cheat_sheet.html" class="internal" title="Section B.1: Bash Shell Cheat Sheet">Section B.1</a>.</p></section></section></div></main>
+<p id="p-294">If you want to delete either of these new directories, you will need to use the <dfn class="terminology">remove directory</dfn> command, <code class="code-inline tex2jax_ignore">rmdir</code> followed by the name of the directory you want to remove. Try it!</p></section><section class="paragraphs" id="paragraphs-10"><h4 class="heading"><span class="title">Files.</span></h4>
+<p id="p-295">There are a number of ways one can create a new file from the shell. Let's try a few. First, use <code class="code-inline tex2jax_ignore">cd</code> to descend into one of your new directories, if you are not already in one, and type <code class="code-inline tex2jax_ignore">ls</code>. You should be in an empty directory. Then let's try the following commands:<pre class="code-block tex2jax_ignore">touch newfile1.txt
+echo 'I love open source!' &gt; newfile2.txt
+echo 'I really love open source!' &gt;&gt; newfile3.txt
+  ls
+</pre>You should now see three new files named <em class="emphasis">newfile1.txt</em>, <em class="emphasis">newfile2.txt</em>, and <em class="emphasis">newfile3.txt</em> respectively. The <code class="code-inline tex2jax_ignore">touch</code> command simply makes an empty file, so the first line we typed is pretty straightforward. The second and third lines that we typed require a bit more explanation. The <code class="code-inline tex2jax_ignore">echo</code> command simply echoes the argument(s), so if we had just typed <code class="code-inline tex2jax_ignore"> echo 'I love open source!'</code>, then  'I love open source!' would be repeated on the screen (without the quotation marks.) This might not seem very useful, but it is widely used in shell scripts to output status text or variable values to the screen or to a file. Both <code class="code-inline tex2jax_ignore">&gt;</code> and <code class="code-inline tex2jax_ignore">&gt;&gt;</code> are used to redirect the output to someplace other than the screen.</p>
+<p id="p-296">Output redirection with <code class="code-inline tex2jax_ignore">&gt;</code> or <code class="code-inline tex2jax_ignore">&gt;&gt;</code> is a feature in Linux that allows to change the standard input/output devices. The standard input device is the keyboard, and the standard output device is the screen, but sometimes we want to change this. With output redirection, the above standard output can be changed to go into a file, and that is exactly what we did above. Note that the <code class="code-inline tex2jax_ignore">&gt;</code> is the output redirection operator used for <em class="emphasis">overwriting</em> files that might or might not already exist in the directory, while the <code class="code-inline tex2jax_ignore">&gt;&gt;</code> is an output operator that appends the data of an existing file (or creates a new file by that name if one did not already exist.) So, <code class="code-inline tex2jax_ignore">&gt;</code> should be used judiciously.</p>
+<p id="p-297">Let's look at the contents of the files that we created. The <code class="code-inline tex2jax_ignore">cat</code> command stands for <em class="emphasis">concatenate</em> is used to print on the standard output device (usually your screen for our purposes) or to concatenate files.  To use <code class="code-inline tex2jax_ignore">cat</code> to see the file contents, type the following one at a time:<pre class="code-block tex2jax_ignore">cat newfile1.txt
+cat newfile2.txt
+cat newfile3.txt
+</pre>You can also use the <code class="code-inline tex2jax_ignore">cat</code> command to concatenate files. For example, if you try:<pre class="code-block tex2jax_ignore">cat newfile2.txt newfile3.txt &gt; newfile1.txt
+cat newfile1.txt
+</pre>You should see that <em class="emphasis">newfile1.txt</em> instead of being empty, now contains the concatenation of <em class="emphasis">newfile2.txt</em> and <em class="emphasis">newfile3.txt</em></p>
+<p id="p-298">We can also move files around, make a copy of files, or remove (delete) files from the filesystem using <code class="code-inline tex2jax_ignore">mv</code>, <code class="code-inline tex2jax_ignore">cp</code>, and <code class="code-inline tex2jax_ignore">rm</code> respectively. Let's see how these work. First, list your files. You should have  <em class="emphasis">newfile1.txt</em>, <em class="emphasis">newfile2.txt</em>, and <em class="emphasis">newfile3.txt</em> in your directory.</p>
+<p id="p-299">Let's make a new directory below our current directory and move one of our files there.<pre class="code-block tex2jax_ignore">mkdir subdir
+mv newfile3.txt subdir/newfile3.txt
+ls
+ls subdir
+</pre>You should see that newfile3.txt is now not in the current directory, but it is instead in the subdirectory <em class="emphasis">subdir</em>.</p>
+<p id="p-300">In addition to moving files around in the directory structure, we can also use the <code class="code-inline tex2jax_ignore">mv</code> command to rename files as follows:<pre class="code-block tex2jax_ignore">mv newfile1.txt newfile4.txt
+ ls
+</pre>One important thing to watch out for with the <code class="code-inline tex2jax_ignore">mv</code> command is that if the destination filename already exists, it might get overwritten. For this reason, you might want to use the <code class="code-inline tex2jax_ignore">-i</code> flag which stands for interactive. Try it.<pre class="code-block tex2jax_ignore">mv -i newfile1.txt newfile2.txt
+</pre>You should see a question like, "overwrite 'newfile2.txt'?"If you respond with "n", then the file will not be overwritten.</p>
+<p id="p-301">The <code class="code-inline tex2jax_ignore">cp</code>command works as you might expect:<pre class="code-block tex2jax_ignore">cp newfile2.txt newfile2_cp.txt
+cat newfile2_cp.txt
+</pre>Just like with the <code class="code-inline tex2jax_ignore">mv</code>, command the <code class="code-inline tex2jax_ignore">cp</code> command will overwrite the destination file if it already exists. For this reason, you might want to use the <code class="code-inline tex2jax_ignore">-i</code> flag which stands for interactive. Try it.<pre class="code-block tex2jax_ignore">mv -i newfile4.txt newfile2_cp.txt
+</pre>You should see a question like, "overwrite 'newfile2_cp.txt'?" If you respond with "n", the command will not overwrite, so using the <code class="code-inline tex2jax_ignore">-i</code> flag seems a wise safeguard.</p>
+<p id="p-302">The <code class="code-inline tex2jax_ignore">rm</code> command is a useful, but another dangerous command.  Let's try it:<pre class="code-block tex2jax_ignore">rm newfile2_cp.txt
+</pre>Just as with <code class="code-inline tex2jax_ignore">cp</code>, and <code class="code-inline tex2jax_ignore">mv</code>, you are probably wise to use the <code class="code-inline tex2jax_ignore">-i</code> option.<pre class="code-block tex2jax_ignore">rm -i newfile4.txt
+</pre>And, if you respond with "n", then the removal will not happen.</p></section><section class="paragraphs" id="paragraphs-11"><h4 class="heading"><span class="title">Useful bash commands and other time-saving commands.</span></h4>
+<p id="p-303">The <em class="emphasis">up arrow</em> key retrieves the previous shell command. If you press it multiple times, it will take you back through multiple commands in your shell history. This is a useful way to repeat a command. For example, if you had a typo, you can use the up arrow, edit the command, and push enter to fix the command. Analogously, the <em class="emphasis">down arrow</em> will move you in the reverse direction through the shell command history. For more useful shell commands, type <code class="code-inline tex2jax_ignore">man bash</code> for hints on how to search your shell history, re-execute commands, and much more.</p>
+<p id="p-304">Another thing that is very useful in the shell is the use of regular expressions. A regular expression (aka regex) is a sequence of characters that specifies a text search pattern. Regular expressions are quite powerful, and it is not within the scope of this textbook to teach them, instead this paragraph is intended to alert you to how useful they can be. A couple examples of very common regular expressions pattern symbols are the question mark and the asterisk.  The question mark (?) specifies any single character to match, and the asterisk (*) specifies zero or more characters to match.</p>
+<p id="p-305">For example, if we type the following:<pre class="code-block tex2jax_ignore">rm -i newfile?.txt
+</pre>Then the question mark will match with any single character, and we will see the following prompts:<pre class="code-block tex2jax_ignore">rm: remove regular file 'newfile2.txt'?
+rm: remove regular file 'newfile4.txt'?
+</pre>If we instead type:<pre class="code-block tex2jax_ignore">rm -i newfile*.txt
+</pre>Then the asterisk will match with any number of characters (including zero), and we will see the following prompts:<pre class="code-block tex2jax_ignore">rm: remove regular file 'newfile2.txt'?
+rm: remove regular file 'newfile4.txt'?
+rm: remove regular file 'newfile2_cp.txt'?
+</pre>p As you can see, regular expressions give you a lot of power and control.</p></section></section><section class="conclusion" id="conclusion-5"><h3 class="heading">Conclusion.<span></span>
+</h3>
+<p id="p-306">Hopefully, you feel a bit more comfortable using the shell from the command line. The shell commands discussed above are summarized in Appendix <a href="ap_shell_cheat_sheet.html" class="internal" title="Section B.1: Bash Shell Cheat Sheet">Section B.1</a>.</p></section></section></div></main>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>

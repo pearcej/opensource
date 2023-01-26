@@ -12,11 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<ul class="disc">
-<li><p>Switch to an existing branch: <code class="code-inline tex2jax_ignore">git switch testing-branch</code>.</p></li>
-<li><p>Create a new branch and switch to it: <code class="code-inline tex2jax_ignore">git switch -c new-branch</code>. The <code class="code-inline tex2jax_ignore">-c</code> flag stands for create, you can also use the full flag: <code class="code-inline tex2jax_ignore">--create</code>.</p></li>
-<li><p>Return to your previously checked out branch: <code class="code-inline tex2jax_ignore">git switch -</code>.</p></li>
-</ul>
+<p>That command did two things. It moved the HEAD pointer back to point to the <code class="code-inline tex2jax_ignore">master</code> branch, and it reverted the files in your working directory back to the snapshot that <code class="code-inline tex2jax_ignore">master</code> points to. This also means the changes you make from this point forward will diverge from an older version of the project. It essentially rewinds the work you’ve done in your <code class="code-inline tex2jax_ignore">testing</code> branch so you can go in a different direction.</p>
 <span class="incontext"><a href="sec_git_branching.html#p-563" class="internal">in-context</a></span>
 </body>
 </html>

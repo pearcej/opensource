@@ -398,7 +398,15 @@ To https://github.com/tonychacon/blink
 					<p>
 						Note: It’s important to note that you can also open a Pull Request between two branches in the same repository. If you’re working on a feature with someone and you both have write access to the project, you can push a topic branch to the repository and open a Pull Request on it to the <c>main</c> branch of that same project to initiate the code review and discussion process. No forking necessary.
 					</p>
+<p>
+	
 
+					<exercise>
+						<title>Introduction to Github</title>
+						Go to <url href="https://github.com/skills/introduction-to-github" visual="github.com/skills/introduction-to-github">Introduction to Github</url> and try all parts of the exercise. It should take an hour or less. 
+						
+					</exercise>
+</p>
 <!-- div attr= class="sect3"-->
 				</paragraphs>
 			</paragraphs>

@@ -18,7 +18,7 @@
     <xi:include href="./ch1_oss.ptx" />
     <xi:include href="./ch2_community.ptx"/>
     <xi:include href="./ch3_licensing.ptx"/>
-    <xi:include href="./ch4_development_env.ptx"/>
+    <xi:include href="./ch4_dev_env.ptx"/>
     <xi:include href="./ch5_git.ptx"/> 
     <xi:include href="./ch6_documentation.ptx"/>
     <xi:include href="./ch7_building_code.ptx"/>

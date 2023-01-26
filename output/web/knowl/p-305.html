@@ -11,8 +11,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>You may want to start your own project someday, and you will have to choose an SCM. Right now, though, you will be working with existing projects, which means the SCM has been chosen for you. The following five SCMs have been popular:</p>
-<span class="incontext"><a href="dev-why-version-control.html#p-305" class="internal">in-context</a></span>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<p>For example, if we type the following:<pre class="code-block tex2jax_ignore">rm -i newfile?.txt
+</pre>Then the question mark will match with any single character, and we will see the following prompts:<pre class="code-block tex2jax_ignore">rm: remove regular file 'newfile2.txt'?
+rm: remove regular file 'newfile4.txt'?
+</pre>If we instead type:<pre class="code-block tex2jax_ignore">rm -i newfile*.txt
+</pre>Then the asterisk will match with any number of characters (including zero), and we will see the following prompts:<pre class="code-block tex2jax_ignore">rm: remove regular file 'newfile2.txt'?
+rm: remove regular file 'newfile4.txt'?
+rm: remove regular file 'newfile2_cp.txt'?
+</pre>p As you can see, regular expressions give you a lot of power and control.</p>
+<span class="incontext"><a href="sec_dev_basic_shell_commands.html#p-305" class="internal">in-context</a></span>
 </body>
 </html>

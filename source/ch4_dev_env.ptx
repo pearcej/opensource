@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<chapter xml:id="ch_development_env" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xml:id="ch_dev_env" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>OSS Development Environment</title>
   <introduction>
     <p>
@@ -9,7 +9,7 @@
   </introduction>
 
   <xi:include href="./sec_dev_shell_terms.ptx" />
-  <xi:include href="./sec_dev_shell_practice.ptx" />
+  <xi:include href="./sec_dev_basic_shell_commands.ptx" />
   <xi:include href="./sec_dev_vm_containerization.ptx" />
   <xi:include href="./sec_dev_version_control_git.ptx" />
 
