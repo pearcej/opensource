@@ -11,8 +11,8 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>When you create the commit by running <code class="code-inline tex2jax_ignore">git commit</code>, Git checksums each subdirectory (in this case, just the root project directory) and stores them as a tree object in the Git repository. Git then creates a commit object that has the metadata and a pointer to the root project tree so it can re-create that snapshot when needed.</p>
-<span class="incontext"><a href="sec_git_branching.html#p-547" class="internal">in-context</a></span>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<p>This command works only if you cloned from a server to which you have write access and if nobody has pushed in the meantime. If you and someone else clone at the same time and they push upstream and then you push upstream, your push will rightly be rejected. You’ll have to fetch their work first and incorporate it into yours before you’ll be allowed to push. See the next section on Git Branching for more detailed information on how to push to remote servers.</p>
+<span class="incontext"><a href="sec_git_basics.html#p-547" class="internal">in-context</a></span>
 </body>
 </html>

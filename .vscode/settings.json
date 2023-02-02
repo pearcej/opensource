@@ -28,5 +28,11 @@
         "titlepage",
         "tweag",
         "UTF"
+    ],
+    "xml.fileAssociations": [
+        {
+            "pattern": "**/source/**.ptx",
+            "systemId": "C:\\Users\\pearcej\\.ptx\\schema\\pretext.rng"
+        }
     ]
 }

@@ -12,7 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>Unlike many other VCSs, Git doesn’t explicitly track file movement. If you rename a file in Git, no metadata is stored in Git that tells it you renamed the file. However, Git is pretty smart about figuring that out after the fact — we’ll deal with detecting file movement a bit later.</p>
+<p>To remove a file from Git, you have to remove it from your tracked files (more accurately, remove it from your staging area) and then commit. The <code class="code-inline tex2jax_ignore">git rm</code> command does that, and also removes the file from your working directory so you don’t see it as an untracked file the next time around.</p>
 <span class="incontext"><a href="sec_git_basics.html#p-481" class="internal">in-context</a></span>
 </body>
 </html>

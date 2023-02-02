@@ -11,8 +11,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
-<p>If you have experienced this, you have used version control, which according to Wikipedia <a class="external" href="https://en.wikipedia.org/wiki/Version_control" target="_blank">version control</a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-113-hidden.html" title="Footnote 4.4.1"><sup> 1 </sup></a> “is the management of changes to documents, programs, and other information stored as computer files.” But, you have also have come to deeply understand the need for a far easier way to merge in any changes that come on an earlier version.</p>
-<span class="incontext"><a href="dev-why-version-control.html#p-315" class="internal">in-context</a></span>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<p>For example, if we type the following:<pre class="code-block tex2jax_ignore">rm -i newfile?.txt
+</pre>Then the question mark will match with any single character, and we will see the following prompts:<pre class="code-block tex2jax_ignore">rm: remove regular file 'newfile2.txt'?
+rm: remove regular file 'newfile4.txt'?
+</pre>If we instead type:<pre class="code-block tex2jax_ignore">rm -i newfile*.txt
+</pre>Then the asterisk will match with any number of characters (including zero), and we will see the following prompts:<pre class="code-block tex2jax_ignore">rm: remove regular file 'newfile2.txt'?
+rm: remove regular file 'newfile4.txt'?
+rm: remove regular file 'newfile2_cp.txt'?
+</pre>As you can see, regular expressions give you a lot of power and control.</p>
+<span class="incontext"><a href="sec_dev_basic_shell_commands.html#p-315" class="internal">in-context</a></span>
 </body>
 </html>
