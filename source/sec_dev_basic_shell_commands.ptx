@@ -113,7 +113,7 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
   Let's explore the permissions portions of the lines produced by the <c>ls -l</c> command. The last item on each of these lines is the filename itself. The first item in each of the lines is a 10 character-long mix of letters and minus signs. The first character of that set indicates the file type where <c>d</c> tells us it is a directory, <c>l</c> indicates it is a symbolic link, and <c>-</c> indicates it is a regular file. The next nine characters display various permissions for the file. The first set of three characters (characters 2-4) are the user's (i.e. the file owner's) permissions, the next three are the group's permissions, and the last three are the permissions for all others. (The user's name  is in the third column and the group name is in the fourth column.) In each of these sets of three characters, the three characters refer to read (<c>r</c>), write (<c>w</c>), and execute (<c>x</c>) respectively. If you see a letter then that permission is allowed, and if you see a '-', the permission is disallowed. For example in the last of the three lines shown above, we see that the file <c>hello.txt</c> has permissions of <c>-rw-rw-r--</c>. This means this is a file that can be read and written (changed) but not executed by the owner <c>pearcej</c> and also by any user who is a member of the <c>friends</c> group, however other users can only read the file.
 </p>
 <p>
-  Occasionally, you need to change permissions of a file. For example, you might need to change permissions to make a file executable. Changing file permissions is done with the <c>chmod</c> command. 
+  Occasionally, you need to change permissions of a file. For example, you might need to change permissions to make a file executable. Changing file permissions is done with the <c>chmod</c> command. We will explore this in a bit.
 </p>
    </paragraphs>
 
@@ -313,7 +313,7 @@ _end_
 </p>
    -->
   <p>
-  Analogous to output redirection, <term>input redirect</term> in the  shell using <c> &gt; </c> or <c>&gt;&gtp;</c> allows you to redirect the input of a command. 
+  Analogous to output redirection, <term>input redirect</term> in the  shell using <c> &gt; </c> or <c>&gt;&gt;</c> allows you to redirect the input of a command. 
   <!-- Unlike the here document example, often you will redirect to use a file instead of the keyboard.  -->
   So, if we want the response from a command to be written to a file instead of to the screen, we can use input redirection. Let's look at an example using the <c>sort</c> command, which is used to sort lines in a file.
 </p>
@@ -330,6 +330,55 @@ _end_
 </pre>
 
 <p>
+  It is possible to use what we have learned thus far to make an executable script. Let's type the following followed by a control-C:
+</p>
+
+<pre>
+  cat >> helloworld.sh
+  # This is a comment in a bash script that displays Hello World!
+  echo 'Hello World!'
+</pre>
+
+<p>
+  You should now have a file that needs to be made executable. To do this we use the <c>chmad</c> command with the <c>+x</c> option, which stands for 'add execution' as follows:
+</p>
+
+<pre>
+  chmod +x helloworld.sh
+</pre>
+
+<p>
+  To run this script, you need to indicate the directory where to find it, which is the current directory. So, to run it, you can type the following:
+</p>
+<pre>
+./helloworld.sh
+</pre>
+
+<p>
+  We can create a more interactive bash script using the <c>read</c> command which reads text from the keyboard or other standard input. It can be used to make scripts interactive. To do this, we need a variable. In the bash shell, some variables, like environment variables, always exist and you can always access them. 
+  However, you can also create your own variables. You can always use echo to see the value a variable, but you must precede the variable name with the dollar sign ($). Let's see how all this works by trying the following, finishing with a Control-C:
+</p>
+
+<pre>
+  cat >> hellouser.sh
+  # This is a comment in an interactive bash script that says hello to the user by name.
+  echo 'What is your name?'
+  # In the following, USERNAME is a new variable that is created dynamically
+  read USERNAME
+  echo "Hello " $USERNAME
+</pre>
+
+<p>
+  To run this script, you will again need to make it executable.  Then you can run it.
+</p>
+
+<pre>
+  chmod +x hellouser.sh
+  ./hellouser.sh
+</pre>
+<p>
+
+
     We can also move files around, make a copy of files, or remove (delete) files from the filesystem using <c>mv</c>, <c>cp</c>, and <c>rm</c> respectively. Let's see how these work. First, list your files. You should have  <em>newfile1.txt</em>, <em>newfile2.txt</em>, and <em>newfile3.txt</em> in your directory. </p>
       <p>
         Let's make a new directory below our current directory and move one of our files there.

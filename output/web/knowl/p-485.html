@@ -12,7 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>Another useful thing you may want to do is to keep the file in your working tree but remove it from your staging area. In other words, you may want to keep the file on your hard drive but not have Git track it anymore. This is particularly useful if you forgot to add something to your <code class="code-inline tex2jax_ignore">.gitignore</code> file and accidentally staged it, like a large log file or a bunch of <code class="code-inline tex2jax_ignore">.a</code> compiled files. To do this, use the <code class="code-inline tex2jax_ignore">--cached</code> option:</p>
+<p>Notice how you don’t have to run <code class="code-inline tex2jax_ignore">git add</code> on the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file in this case before you commit. That’s because the <code class="code-inline tex2jax_ignore">-a</code> flag includes all changed files. This is convenient, but be careful; sometimes this flag will cause you to include unwanted changes.</p>
 <span class="incontext"><a href="sec_git_basics.html#p-485" class="internal">in-context</a></span>
 </body>
 </html>

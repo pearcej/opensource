@@ -12,7 +12,11 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>The <em class="emphasis">up arrow</em> key retrieves the previous shell command. If you press it multiple times, it will take you back through multiple commands in your shell history. This is a useful way to repeat a command. For example, if you had a typo, you can use the up arrow, edit the command, and push enter to fix the command. Analogously, the <em class="emphasis">down arrow</em> will move you in the reverse direction through the shell command history. For more useful shell commands, type <code class="code-inline tex2jax_ignore">man bash</code> for hints on how to search your shell history, re-execute commands, and much more.</p>
+<p>Let's make a new directory below our current directory and move one of our files there.<pre class="code-block tex2jax_ignore">mkdir subdir
+mv newfile3.txt subdir/newfile3.txt
+ls
+ls subdir
+</pre>You should see that newfile3.txt is now not in the current directory, but it is instead in the subdirectory <em class="emphasis">subdir</em>.</p>
 <span class="incontext"><a href="sec_dev_basic_shell_commands.html#p-313" class="internal">in-context</a></span>
 </body>
 </html>

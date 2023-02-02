@@ -12,14 +12,10 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>For example, if we type the following:<pre class="code-block tex2jax_ignore">rm -i newfile?.txt
-</pre>Then the question mark will match with any single character, and we will see the following prompts:<pre class="code-block tex2jax_ignore">rm: remove regular file 'newfile2.txt'?
-rm: remove regular file 'newfile4.txt'?
-</pre>If we instead type:<pre class="code-block tex2jax_ignore">rm -i newfile*.txt
-</pre>Then the asterisk will match with any number of characters (including zero), and we will see the following prompts:<pre class="code-block tex2jax_ignore">rm: remove regular file 'newfile2.txt'?
-rm: remove regular file 'newfile4.txt'?
-rm: remove regular file 'newfile2_cp.txt'?
-</pre>As you can see, regular expressions give you a lot of power and control.</p>
+<p>The <code class="code-inline tex2jax_ignore">cp</code>command works as you might expect:<pre class="code-block tex2jax_ignore">cp newfile2.txt newfile2_cp.txt
+cat newfile2_cp.txt
+</pre>Just like with the <code class="code-inline tex2jax_ignore">mv</code>, command the <code class="code-inline tex2jax_ignore">cp</code> command will overwrite the destination file if it already exists. For this reason, you might want to use the <code class="code-inline tex2jax_ignore">-i</code> flag which stands for interactive. Try it.<pre class="code-block tex2jax_ignore">mv -i newfile4.txt newfile2_cp.txt
+</pre>You should see a question like, "overwrite 'newfile2_cp.txt'?" If you respond with "n", the command will not overwrite, so using the <code class="code-inline tex2jax_ignore">-i</code> flag seems a wise safeguard.</p>
 <span class="incontext"><a href="sec_dev_basic_shell_commands.html#p-315" class="internal">in-context</a></span>
 </body>
 </html>
