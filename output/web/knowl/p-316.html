@@ -12,10 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>The <code class="code-inline tex2jax_ignore">cp</code>command works as you might expect:<pre class="code-block tex2jax_ignore">cp newfile2.txt newfile2_cp.txt
-cat newfile2_cp.txt
-</pre>Just like with the <code class="code-inline tex2jax_ignore">mv</code>, command the <code class="code-inline tex2jax_ignore">cp</code> command will overwrite the destination file if it already exists. For this reason, you might want to use the <code class="code-inline tex2jax_ignore">-i</code> flag which stands for interactive. Try it.<pre class="code-block tex2jax_ignore">mv -i newfile4.txt newfile2_cp.txt
-</pre>You should see a question like, "overwrite 'newfile2_cp.txt'?" If you respond with "n", the command will not overwrite, so using the <code class="code-inline tex2jax_ignore">-i</code> flag seems a wise safeguard.</p>
+<p>You should now have a file that needs to be made executable. To do this we use the <code class="code-inline tex2jax_ignore">chmad</code> command. The <code class="code-inline tex2jax_ignore">chmod</code> stands for <em class="emphasis">change file mode bits</em>.  To add execution, we will need the <code class="code-inline tex2jax_ignore">+x</code> option, which stands for 'add execution'. So, run the following in your shell to make it an executable file:</p>
 <span class="incontext"><a href="sec_dev_basic_shell_commands.html#p-316" class="internal">in-context</a></span>
 </body>
 </html>

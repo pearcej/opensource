@@ -13,12 +13,16 @@
 <body class="ignore-math">
 <section class="paragraphs"><h4 class="heading"><span class="title">Shell Command Options.</span></h4>
 <p></p>
-<p>If you want to see all of the flag options there are two different methods for most commands. You can use the <code class="code-inline tex2jax_ignore">--help</code> flag option on the command or you can use the <dfn class="terminology">manual</dfn> which is accessed using the <code class="code-inline tex2jax_ignore">man</code> command. For example, with the <code class="code-inline tex2jax_ignore">ls</code> command, you can use either one of the following, noting that they work a bit differently because the manual may use paging. If it does, to go to the next page use the space bar.</p>
-<pre class="code-block tex2jax_ignore">ls --help
-man ls
+<p>Many shell commands have options which can be invoked by using a <dfn class="terminology">flag</dfn> or <dfn class="terminology">command option</dfn>. Let's try using an option with <code class="code-inline tex2jax_ignore">ls</code>, the listing command. Try typing the following where the <code class="code-inline tex2jax_ignore">-r</code> flag stands for <code class="code-inline tex2jax_ignore">reverse</code>, and it reverses the sorting order:</p>
+<pre class="code-block tex2jax_ignore">ls -r
 </pre>
-<p>You may be wondering about the use of one minus sign '-' vs the use of two minus signs '--' in shell flags. One minus sign is used for single letter commands, while two is used for word-length commands. If you look back at the <code class="code-inline tex2jax_ignore">ls --help</code> results, you may see that the flags <code class="code-inline tex2jax_ignore">-a</code> and <code class="code-inline tex2jax_ignore">--all</code> both list all files including that begin with a '.', which are the hidden files  and directories. Besides brevity, the main advantage to the single minus sign is that to run multiple options at the same time, all you need to do is concatenate them, so <code class="code-inline tex2jax_ignore">ls -lra</code> would return the result with  the <code class="code-inline tex2jax_ignore">-l</code>,  <code class="code-inline tex2jax_ignore">-r</code>, and <code class="code-inline tex2jax_ignore">a</code> option flags all activated. Give it a try!</p>
-<pre class="code-block tex2jax_ignore">ls -lra
+<p>To try another, try typing the following where the <code class="code-inline tex2jax_ignore">-l</code> option stands for <em class="emphasis">long listing format</em>, meaning that instead of output containing only the names of files and directories, the <code class="code-inline tex2jax_ignore">ls</code> command will produce additional information, assuming you have at least one file or directory.</p>
+<pre class="code-block tex2jax_ignore">ls -l
+</pre>
+<p>You are likely to see some lines that look something like this:</p>
+<pre class="code-block tex2jax_ignore">drwxr-xr-x  3 root    root     4096 Jun 19 10:55 home
+lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -&gt; usr/bin
+-rw-rw-r--  1 pearcej friends    22 Sep 15  2022 hello.txt
 </pre></section><span class="incontext"><a href="sec_dev_basic_shell_commands.html#paragraphs-8" class="internal">in-context</a></span>
 </body>
 </html>

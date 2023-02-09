@@ -2,9 +2,6 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-09-11T18:48:02-04:00       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -14,13 +11,18 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<section class="paragraphs"><h4 class="heading"><span class="title">Good bugs reports refer to the version of the software..</span></h4>
-<p><pre class="code-block tex2jax_ignore">Bad: Zombie-buster version... two-something? 
-
-Good: Zombie-buster-1.2.4 
-
-Best: Zombie-buster-1.2.4 and confirmed in HEAD, git commit 1361
-</pre></p>
-<p>Most of the time, the bug tracker you use has a predefined field for version. That field is a good start, but sometimes the entries can be outdated, and even if there’s an entry for <em class="emphasis">HEAD</em> (i.e. the very latest code in the SCM), it’s still important to provide the most detailed version information that you can possibly provide. What you absolutely must NOT do: ignore this field. If you can’t figure out what version of the software you’re running, then you probably shouldn’t even file a bug.</p></section><span class="incontext"><a href="sec_bug_reports.html#paragraphs-23" class="internal">in-context</a></span>
+<section class="paragraphs"><h4 class="heading"><span class="title">Git Areas.</span></h4>
+<p>This leads us to the three main subsections of a Git project: the working tree, the staging area, and the Git directory.</p>
+<figure class="figure figure-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/areas.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.1.6<span class="period">.</span></span><span class="space"> </span>Working tree, staging area, and Git directory</figcaption></figure><p>The working tree is a single checkout of one version of the project. These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify.</p>
+<p>The staging area is a file, generally contained in your Git directory, that stores information about what will go into your next commit. Its technical name in Git parlance is the “index”, but the phrase “staging area” works just as well.</p>
+<p>The Git directory is where Git stores the metadata and object database for your project. This is the most important part of Git, and it is what is copied when you <em class="emphasis">clone</em> a repository from another computer.</p>
+<p>The basic Git workflow goes something like this:</p>
+<ol class="decimal">
+<li><p>You modify files in your working tree.</p></li>
+<li><p>You selectively stage just those changes you want to be part of your next commit, which adds <em class="emphasis">only</em> those changes to the staging area.</p></li>
+<li><p>You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your local Git directory (on your computer). Note that in <a href="sec_git_github.html" class="internal" title="Section 5.4: GitHub - Git in the Cloud">Section 5.4</a>, we will learn how to push your work to a remote copy of the repository.</p></li>
+</ol>
+<p>If a particular version of a file is in the Git directory, it’s considered <em class="emphasis">committed</em>. If it has been modified and was added to the staging area, it is <em class="emphasis">staged</em>. And if it was changed since it was checked out but has not been staged, it is <em class="emphasis">modified</em>. In Git Basics you’ll learn more about these states and how you can either take advantage of them or skip the staged part entirely.</p></section><span class="incontext"><a href="sec_git_getting_started.html#paragraphs-23" class="internal">in-context</a></span>
 </body>
 </html>

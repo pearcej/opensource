@@ -11,8 +11,11 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>In this section, we introduce virtualization, including both virtual machines (VMs) and containerization. You may run across these technologies while you are setting up a development environment to contribute to an open source project. The goal of this section is just one of familiarization with the terminology because a strong open source community that is welcoming to new contributors will have a README file that you can follow that will help you to get set up.</p>
-<span class="incontext"><a href="sec_dev_virtualization.html#p-323" class="internal">in-context</a></span>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<p>In addition to moving files around in the directory structure, we can also use the <code class="code-inline tex2jax_ignore">mv</code> command to rename files as follows:<pre class="code-block tex2jax_ignore">mv newfile1.txt newfile4.txt
+ ls
+</pre>One important thing to watch out for with the <code class="code-inline tex2jax_ignore">mv</code> command is that if the destination filename already exists, it might get overwritten. For this reason, you might want to use the <code class="code-inline tex2jax_ignore">-i</code> flag which stands for interactive. Try it.<pre class="code-block tex2jax_ignore">mv -i newfile1.txt newfile2.txt
+</pre>You should see a question like, "overwrite 'newfile2.txt'?"If you respond with "n", then the file will not be overwritten.</p>
+<span class="incontext"><a href="sec_dev_basic_shell_commands.html#p-323" class="internal">in-context</a></span>
 </body>
 </html>

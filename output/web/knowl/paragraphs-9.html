@@ -11,35 +11,9 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<section class="paragraphs"><h4 class="heading"><span class="title">More on Directories.</span></h4>
+<section class="paragraphs"><h4 class="heading"><span class="title">File Permissions.</span></h4>
 <p></p>
-<p>Next, let's go to your <dfn class="terminology">home</dfn> directory which is referenced by the special tilde '~' character as follows: </p>
-<pre class="code-block tex2jax_ignore">cd ~
-</pre>
-<p>Then print your working directory and list your files just to see that you have been transported again.</p>
-<p>You can make a new directory using the <code class="code-inline tex2jax_ignore">mkdir</code> command. For example, let's say you want to make a new directory with the name <em class="emphasis">newdir</em>, you can type the following:</p>
-<pre class="code-block tex2jax_ignore">mkdir newdir
-</pre>
-<p>If you get a listing of your files and directories with <code class="code-inline tex2jax_ignore">ls -l</code>, you should see something like the following:</p>
-<pre class="code-block tex2jax_ignore">drwxr-xr-x  2 pearcej pearcej   4096 Nov 15 17:00 newdir
-</pre>
-<p>Then you can descend into the new directory with:</p>
-<pre class="code-block tex2jax_ignore">cd newdir
-</pre>
-<p>Of course if you now run the <code class="code-inline tex2jax_ignore">ls</code> command, you will not see any files, but try it with the following options:</p>
-<pre class="code-block tex2jax_ignore">ls -la
-</pre>
-<p>You are likely to see something like the following:</p>
-<pre class="code-block tex2jax_ignore">drwxr-xr-x  2 pearcej pearcej 4096 Nov 16 17:00 .
-drwxr-xr-x 13 pearcej pearcej 4096 Nov 16 17:00 ..
-</pre>
-<p>Note the period at the end of the first line where the filename is expected. A period or dot '.' represents the current directory. The double period or double dot '..' represents the parent directory of the current one. </p>
-<p>You can use this dot notation as a reference as well, so <code class="code-inline tex2jax_ignore">ls ..</code>, will list all the files and directories in the parent directory relative to where you are so you don't have to change directories to get the listing from another directory. Try it!</p>
-<p>You can even use these dots in combination with folder names. For example, if you are inside of the <code class="code-inline tex2jax_ignore">newdir</code> directory and you want to make a sibling directory called <code class="code-inline tex2jax_ignore">newdir2</code>, you can type the following:</p>
-<pre class="code-block tex2jax_ignore">mkdir ../newdir2
-ls -l ..
-</pre>
-<p>Here, the first command says, go up one level in the directory tree structure, and create a new directory one level below that, which makes it a sibling of the original <code class="code-inline tex2jax_ignore">newdir</code> directory. The second lines says produce a long listing of all of the files and directories in the directory that is one level up relative to where I am. You should see both of the directories that you made.</p>
-<p>If you want to delete either of these new directories, you will need to use the <dfn class="terminology">remove directory</dfn> command, <code class="code-inline tex2jax_ignore">rmdir</code> followed by the name of the directory you want to remove. Try it!</p></section><span class="incontext"><a href="sec_dev_basic_shell_commands.html#paragraphs-9" class="internal">in-context</a></span>
+<p>Let's explore the permissions portions of the lines produced by the <code class="code-inline tex2jax_ignore">ls -l</code> command. The last item on each of these lines is the filename itself. The first item in each of the lines is a 10 character-long mix of letters and minus signs. The first character of that set indicates the file type where <code class="code-inline tex2jax_ignore">d</code> tells us it is a directory, <code class="code-inline tex2jax_ignore">l</code> indicates it is a symbolic link, and <code class="code-inline tex2jax_ignore">-</code> indicates it is a regular file. The next nine characters display various permissions for the file. The first set of three characters (characters 2-4) are the user's (i.e. the file owner's) permissions, the next three are the group's permissions, and the last three are the permissions for all others. (The user's name  is in the third column and the group name is in the fourth column.) In each of these sets of three characters, the three characters refer to read (<code class="code-inline tex2jax_ignore">r</code>), write (<code class="code-inline tex2jax_ignore">w</code>), and execute (<code class="code-inline tex2jax_ignore">x</code>) respectively. If you see a letter then that permission is allowed, and if you see a '-', the permission is disallowed. For example in the last of the three lines shown above, we see that the file <code class="code-inline tex2jax_ignore">hello.txt</code> has permissions of <code class="code-inline tex2jax_ignore">-rw-rw-r--</code>. This means this is a file that can be read and written (changed) but not executed by the owner <code class="code-inline tex2jax_ignore">pearcej</code> and also by any user who is a member of the <code class="code-inline tex2jax_ignore">friends</code> group, however other users can only read the file.</p>
+<p>Occasionally, you need to change permissions of a file. For example, you might need to change permissions to make a file executable. Changing file permissions is done with the <code class="code-inline tex2jax_ignore">chmod</code> command. We will explore this in a bit.</p></section><span class="incontext"><a href="sec_dev_basic_shell_commands.html#paragraphs-9" class="internal">in-context</a></span>
 </body>
 </html>

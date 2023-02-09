@@ -11,79 +11,14 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<section class="paragraphs"><h4 class="heading"><span class="title">Files.</span></h4>
+<section class="paragraphs"><h4 class="heading"><span class="title">Learning More About Command Options.</span></h4>
 <p></p>
-<p>There are a number of ways one can create a new file from the shell. Let's try a few. First, use <code class="code-inline tex2jax_ignore">cd</code> to descend into one of your new directories, if you are not already in one, and type <code class="code-inline tex2jax_ignore">ls</code>. You should be in an empty directory. Then let's try the following commands:<pre class="code-block tex2jax_ignore">touch newfile1.txt
-echo 'I love open source!' &gt; newfile2.txt
-echo 'I really love open source!' &gt;&gt; newfile3.txt
-ls
-</pre>You should now see three new files named <em class="emphasis">newfile1.txt</em>, <em class="emphasis">newfile2.txt</em>, and <em class="emphasis">newfile3.txt</em> respectively. The <code class="code-inline tex2jax_ignore">touch</code> command simply makes an empty file, so the first line we typed is pretty straightforward. The second and third lines that we typed require a bit more explanation. The <code class="code-inline tex2jax_ignore">echo</code> command simply echoes the argument(s), so if we had just typed <code class="code-inline tex2jax_ignore"> echo 'I love open source!'</code>, then  'I love open source!' would be repeated on the screen (without the quotation marks.) This might not seem very useful, but it is widely used in shell scripts to output status text or variable values to the screen or to a file. Both <code class="code-inline tex2jax_ignore">&gt;</code> and <code class="code-inline tex2jax_ignore">&gt;&gt;</code> are used to redirect the output to someplace other than the screen.</p>
-<p>At first glance, the <code class="code-inline tex2jax_ignore">echo</code> command might not seem very useful. One typical use is to echo the values of a variety of variables including environment variables, which are variables that are part of the environment in which a process runs. For example, typing the following will print the value of the home directory followed by the value of the working directory on the screen:</p>
-<pre class="code-block tex2jax_ignore">echo $HOME
-echo $PWD
+<p>If you want to see all of the flag options there are two different methods for most commands. You can use the <code class="code-inline tex2jax_ignore">--help</code> flag option on the command or you can use the <dfn class="terminology">manual</dfn> which is accessed using the <code class="code-inline tex2jax_ignore">man</code> command. For example, with the <code class="code-inline tex2jax_ignore">ls</code> command, you can use either one of the following, noting that they work a bit differently because the manual may use paging. If it does, to go to the next page use the spacebar.</p>
+<pre class="code-block tex2jax_ignore">ls --help
+man ls
 </pre>
-<p><dfn class="terminology">Output redirection</dfn> with <code class="code-inline tex2jax_ignore">&gt;</code> or <code class="code-inline tex2jax_ignore">&gt;&gt;</code> is a feature in the shell that allows to change the standard input/output devices. The standard input device is the keyboard, and the standard output device is the screen, but sometimes we want to change this. With output redirection, the above standard output can be changed to go into a file, and that is exactly what we did above. Note that the <code class="code-inline tex2jax_ignore">&gt;</code> is the output redirection operator used for <em class="emphasis">overwriting</em> files that might or might not already exist in the directory, while the <code class="code-inline tex2jax_ignore">&gt;&gt;</code> is an output operator that appends the data of an existing file (or creates a new file by that name if one did not already exist.) So, <code class="code-inline tex2jax_ignore">&gt;</code> should be used judiciously.</p>
-<p>Let's look at the contents of the files that we created. The <code class="code-inline tex2jax_ignore">cat</code> command, which stands for <em class="emphasis">concatenate</em>, is used to concatenate standard input (typically the keyboard) or file(s) to the standard output (typically the screen). To use <code class="code-inline tex2jax_ignore">cat</code> to see the file contents, type the following one at a time:<pre class="code-block tex2jax_ignore">cat newfile1.txt
-cat newfile2.txt
-cat newfile3.txt
-</pre>Like the name suggests, you can also use the <code class="code-inline tex2jax_ignore">cat</code> command to concatenate files. For example, if you try:<pre class="code-block tex2jax_ignore">cat newfile2.txt newfile3.txt &gt; newfile1.txt
-cat newfile1.txt
-</pre>You should see that <em class="emphasis">newfile1.txt</em> instead of being empty, now contains the concatenation of <em class="emphasis">newfile2.txt</em> and <em class="emphasis">newfile3.txt</em></p>
-<p>You can also use the <code class="code-inline tex2jax_ignore">cat</code> command in combination with output redirection to create a multi-line file as follows:</p>
-<pre class="code-block tex2jax_ignore">cat &gt;&gt; newfile_multi.txt
-these
-are
-multiple
-lines
-</pre>
-<p>The  shell command <code class="code-inline tex2jax_ignore">wc</code>, which stands for <em class="emphasis">word count</em>, is a command that s the name suggests can be used for counting. However, it does more than count words! It actually provides the line count, the word count, and the character count in the file(s) specified in the file arguments. By default, it displays all this in four-columnar output with the file name in the final column. Let's try this command with <em class="emphasis">newfile2.txt</em>.</p>
-<pre class="code-block tex2jax_ignore">wc newfile2.txt
-</pre>
-<p>Will reply with <code class="code-inline tex2jax_ignore">1  4 20 newfile2.txt</code> because the contents of <em class="emphasis">newfile2.txt</em> is 'I love open source!' which is 1 line, 4 words, and 20 characters.</p>
-<p>Analogous to output redirection, <dfn class="terminology">input redirect</dfn> in the  shell using <code class="code-inline tex2jax_ignore"> &gt; </code> or <code class="code-inline tex2jax_ignore">&gt;&gt;</code> allows you to redirect the input of a command.  So, if we want the response from a command to be written to a file instead of to the screen, we can use input redirection. Let's look at an example using the <code class="code-inline tex2jax_ignore">sort</code> command, which is used to sort lines in a file.</p>
-<p>TODO: need a good example of input redirect that is needed, not just an option.</p>
-<p>A <dfn class="terminology">pipe (|)</dfn> in the bash shell allows you to redirect the output of one command as the input of another command. Let's see an example:</p>
-<pre class="code-block tex2jax_ignore">TODO: need a good example of input redirect that is needed, not just an option.
-</pre>
-<p>It is possible to use what we have learned thus far to make an executable script. Let's type the following followed by a control-C:</p>
-<pre class="code-block tex2jax_ignore">cat &gt;&gt; helloworld.sh
-# This is a comment in a bash script that displays Hello World!
-echo 'Hello World!'
-</pre>
-<p>You should now have a file that needs to be made executable. To do this we use the <code class="code-inline tex2jax_ignore">chmad</code> command with the <code class="code-inline tex2jax_ignore">+x</code> option, which stands for 'add execution' as follows:</p>
-<pre class="code-block tex2jax_ignore">chmod +x helloworld.sh
-</pre>
-<p>To run this script, you need to indicate the directory where to find it, which is the current directory. So, to run it, you can type the following:</p>
-<pre class="code-block tex2jax_ignore">./helloworld.sh
-</pre>
-<p>We can create a more interactive bash script using the <code class="code-inline tex2jax_ignore">read</code> command which reads text from the keyboard or other standard input. It can be used to make scripts interactive. To do this, we need a variable. In the bash shell, some variables, like environment variables, always exist and you can always access them. However, you can also create your own variables. You can always use echo to see the value a variable, but you must precede the variable name with the dollar sign ($). Let's see how all this works by trying the following, finishing with a Control-C:</p>
-<pre class="code-block tex2jax_ignore">cat &gt;&gt; hellouser.sh
-# This is a comment in an interactive bash script that says hello to the user by name.
-echo 'What is your name?'
-# In the following, USERNAME is a new variable that is created dynamically
-read USERNAME
-echo "Hello " $USERNAME
-</pre>
-<p>To run this script, you will again need to make it executable.  Then you can run it.</p>
-<pre class="code-block tex2jax_ignore">chmod +x hellouser.sh
-./hellouser.sh
-</pre>
-<p>We can also move files around, make a copy of files, or remove (delete) files from the filesystem using <code class="code-inline tex2jax_ignore">mv</code>, <code class="code-inline tex2jax_ignore">cp</code>, and <code class="code-inline tex2jax_ignore">rm</code> respectively. Let's see how these work. First, list your files. You should have  <em class="emphasis">newfile1.txt</em>, <em class="emphasis">newfile2.txt</em>, and <em class="emphasis">newfile3.txt</em> in your directory.</p>
-<p>Let's make a new directory below our current directory and move one of our files there.<pre class="code-block tex2jax_ignore">mkdir subdir
-mv newfile3.txt subdir/newfile3.txt
-ls
-ls subdir
-</pre>You should see that newfile3.txt is now not in the current directory, but it is instead in the subdirectory <em class="emphasis">subdir</em>.</p>
-<p>In addition to moving files around in the directory structure, we can also use the <code class="code-inline tex2jax_ignore">mv</code> command to rename files as follows:<pre class="code-block tex2jax_ignore">mv newfile1.txt newfile4.txt
- ls
-</pre>One important thing to watch out for with the <code class="code-inline tex2jax_ignore">mv</code> command is that if the destination filename already exists, it might get overwritten. For this reason, you might want to use the <code class="code-inline tex2jax_ignore">-i</code> flag which stands for interactive. Try it.<pre class="code-block tex2jax_ignore">mv -i newfile1.txt newfile2.txt
-</pre>You should see a question like, "overwrite 'newfile2.txt'?"If you respond with "n", then the file will not be overwritten.</p>
-<p>The <code class="code-inline tex2jax_ignore">cp</code>command works as you might expect:<pre class="code-block tex2jax_ignore">cp newfile2.txt newfile2_cp.txt
-cat newfile2_cp.txt
-</pre>Just like with the <code class="code-inline tex2jax_ignore">mv</code>, command the <code class="code-inline tex2jax_ignore">cp</code> command will overwrite the destination file if it already exists. For this reason, you might want to use the <code class="code-inline tex2jax_ignore">-i</code> flag which stands for interactive. Try it.<pre class="code-block tex2jax_ignore">mv -i newfile4.txt newfile2_cp.txt
-</pre>You should see a question like, "overwrite 'newfile2_cp.txt'?" If you respond with "n", the command will not overwrite, so using the <code class="code-inline tex2jax_ignore">-i</code> flag seems a wise safeguard.</p>
-<p>The <code class="code-inline tex2jax_ignore">rm</code> command is a useful, but another dangerous command.  Let's try it:<pre class="code-block tex2jax_ignore">rm newfile2_cp.txt
-</pre>Just as with <code class="code-inline tex2jax_ignore">cp</code>, and <code class="code-inline tex2jax_ignore">mv</code>, you are probably wise to use the <code class="code-inline tex2jax_ignore">-i</code> option.<pre class="code-block tex2jax_ignore">rm -i newfile4.txt
-</pre>And, if you respond with "n", then the removal will not happen.</p></section><span class="incontext"><a href="sec_dev_basic_shell_commands.html#paragraphs-10" class="internal">in-context</a></span>
+<p>You may be wondering about the use of one minus sign '-' vs the use of two minus signs '--' in shell flags. One minus sign is used for single letter commands, while two is used for word-length commands. If you look back at the <code class="code-inline tex2jax_ignore">ls --help</code> results, you may see that the flags <code class="code-inline tex2jax_ignore">-a</code> and <code class="code-inline tex2jax_ignore">--all</code> both list all files including that begin with a '.', which are the hidden files  and directories. Besides brevity, the main advantage to the single minus sign is that to run multiple options at the same time, all you need to do is concatenate them, so <code class="code-inline tex2jax_ignore">ls -lra</code> would return the result with  the <code class="code-inline tex2jax_ignore">-l</code>,  <code class="code-inline tex2jax_ignore">-r</code>, and <code class="code-inline tex2jax_ignore">-a</code> option flags all activated. Give it a try!</p>
+<pre class="code-block tex2jax_ignore">ls -lra
+</pre></section><span class="incontext"><a href="sec_dev_basic_shell_commands.html#paragraphs-10" class="internal">in-context</a></span>
 </body>
 </html>

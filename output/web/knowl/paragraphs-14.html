@@ -2,9 +2,6 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-09-11T17:04:26-04:00       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -14,13 +11,17 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<section class="paragraphs"><h4 class="heading"><span class="title">Good bugs reports refer to the version of the software..</span></h4>
-<p><pre class="code-block tex2jax_ignore">Bad: Zombie-buster version... two-something? 
-
-Good: Zombie-buster-1.2.4 
-
-Best: Zombie-buster-1.2.4 and confirmed in HEAD, git commit 1361
-</pre></p>
-<p>Most of the time, the bug tracker you use has a predefined field for version. That field is a good start, but sometimes the entries can be outdated, and even if there’s an entry for <em class="emphasis">HEAD</em> (i.e. the very latest code in the SCM), it’s still important to provide the most detailed version information that you can possibly provide. What you absolutely must NOT do: ignore this field. If you can’t figure out what version of the software you’re running, then you probably shouldn’t even file a bug.</p></section><span class="incontext"><a href="sec_bug_reports.html#paragraphs-14" class="internal">in-context</a></span>
+<section class="paragraphs"><h4 class="heading"><span class="title">A few time-saving shell commands.</span></h4>
+<p></p>
+<p>The <em class="emphasis">up arrow</em> key retrieves the previous shell command. If you press it multiple times, it will take you back through multiple commands in your shell history. This is a useful way to repeat a command. For example, if you had a typo, you can use the up arrow, edit the command, and push enter to fix the command. Analogously, the <em class="emphasis">down arrow</em> will move you in the reverse direction through the shell command history. For more useful shell commands, type <code class="code-inline tex2jax_ignore">man bash</code> for hints on how to search your shell history, re-execute commands, and much more.</p>
+<p>Another thing that is very useful in the shell is the use of regular expressions. A <dfn class="terminology">regular expression</dfn> (aka <dfn class="terminology">regex</dfn>) is a sequence of characters that specifies a text search pattern. Regular expressions are quite powerful, and it is not within the scope of this textbook to teach them, instead this paragraph is intended to alert you to how useful they can be. A couple examples of very common regular expressions pattern symbols are the question mark and the asterisk.  The question mark (?) specifies any single character to match, and the asterisk (*) specifies zero or more characters to match.</p>
+<p>For example, if we type the following:<pre class="code-block tex2jax_ignore">rm -i newfile?.txt
+</pre>Then the question mark will match with any single character, and we will see the following prompts:<pre class="code-block tex2jax_ignore">rm: remove regular file 'newfile2.txt'?
+rm: remove regular file 'newfile4.txt'?
+</pre>If we instead type:<pre class="code-block tex2jax_ignore">rm -i newfile*.txt
+</pre>Then the asterisk will match with any number of characters (including zero), and we will see the following prompts:<pre class="code-block tex2jax_ignore">rm: remove regular file 'newfile2.txt'?
+rm: remove regular file 'newfile4.txt'?
+rm: remove regular file 'newfile2_cp.txt'?
+</pre>As you can see, regular expressions give you a lot of power and control.</p></section><span class="incontext"><a href="sec_dev_basic_shell_commands.html#paragraphs-14" class="internal">in-context</a></span>
 </body>
 </html>

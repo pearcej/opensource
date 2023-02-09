@@ -49,9 +49,9 @@
   Given that the Graphical User Interface (GUI) came into widespread use decades ago, it may seem surprising that nearly all software developers utilize a non-graphical shell. The primary reasons for this include:
       <ul>
         <li>
-          <title>Speed uf Use</title>
+          <title>Speed of Use</title>
         <p>
-          The shell facilitates all commands at the speed one can type them, which is typically many times faster than commands can typically be selected from a menu. 
+          The speed one can type a command is typically many times faster than the speed at which one can select a command from a menu. 
         </p>
       </li>
         <li>
