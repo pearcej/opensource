@@ -4,7 +4,7 @@
   <title>Using the Command Line</title>
   <introduction>
     <p>
-      In this section, we explain some terminology, explore why developers use the command line, and then get set up to use the command line. If you have worked on the command line, then this entire section may serve as a review. If you have never worked on the command line, then this section is written with you in mind.
+      In this section, we explain some terminology related to the command line, why developers use it, and then get set up to use it ourselves. If you have worked with the command line previously, then this entire section may serve as a review. Otherwise, this section is written with you in mind.
     </p>
   </introduction>
   <subsection xml:id="subsec_terms_terminals">
@@ -14,8 +14,12 @@
   <li>
     <title>What is a <term>terminal</term>?</title>
     <p>
-      The English word <term>terminal</term> means to be situated at the end of something. In computing, a terminal is situated at the user end of a computer and is a program used for entering information into and receiving information from a computer. 
+      The English word <term>terminal</term> means to be situated at the end of something, and the term's meaning in computing has evolved since it was originally coined in the 1960s.
     </p>
+      
+    <p>Prior to the development of the first programmable electronic computers, computers were people (mostly women) who used mechanical calculators to compute complex mathematical computations quickly and accurately. The earliest electronic computers, such as Colossus and ENIAC, required specialized technical knowledge and skill to program because programming these machines was a complex process that involved physically entering commands flipping switches, pushing buttons, and manually moving patch cords. The development of the <term>terminal interface</term> in the 1960s marked a significant shift in the way users interacted with computers because the terminal provided a convenient and much more accessible way to provide input and obtain output, allowing users to remotely interact with a computer via a keyboard and screen.  Back when the terminal was first used in computing, what we refer to as the terminal today was the only interface available to the user, while now it is used to refer to a specific type of text-based programming interface. In particular, today a <term>terminal</term> simply refers to a text-based interface that allows a user to interact with a computer by entering commands and receiving output on a display screen. 
+    </p>
+    
   </li>
   <li>
   <title>What is a <term>console</term>?</title>
@@ -45,15 +49,15 @@
   Given that the Graphical User Interface (GUI) came into widespread use decades ago, it may seem surprising that nearly all software developers utilize a non-graphical shell. The primary reasons for this include:
       <ul>
         <li>
-        <title>Power</title>
+          <title>Speed uf Use</title>
+        <p>
+          The shell facilitates all commands at the speed one can type them, which is typically many times faster than commands can typically be selected from a menu. 
+        </p>
+      </li>
+        <li>
+        <title>Expressiveness</title>
           <p>
             The shell facilitates features that are unavailable or difficult to access in a GUI. The mouse only allows for picking among the small set of predetermined options from the screen. However, for most systems many more options are actually available. In addition, most operating systems  prevent you from performing certain tasks which are system protected unless you are using the shell.
-          </p>
-        </li>
-        <li>
-        <title>Speed</title>
-          <p>
-            The shell facilitates all commands at the speed one can type them, which is typically many times faster than commands can typically be selected from a menu. In addition, GUIs utilize many more resources than simple text, so even for a slow typist, the shell is faster.
           </p>
         </li>
         <li><title>Automation</title>
@@ -69,7 +73,7 @@
   <title>Accessing a Terminal Window on your Machine</title>
 
     <p>
-      One question you might have is whether you can use your existing machine to contribute to open source. The good news is that whether you are using Mac OS, Linux, or Windows you should be able to set up a development environment, open a terminal, and access an appropriate shell.
+      One question you might have is whether you can use your existing machine to contribute to open source. The good news is that whether you are using macOS, Linux, or Windows you should be able to set up a development environment, open a terminal, and access an appropriate shell.
  
     <ul>
     <li><title>On a Mac</title>
@@ -111,7 +115,7 @@
 <subsection xml:id="subsec-access_shell">
 	<title>Accessing a Shell</title>
 	<p>
-    There are many shells available for Linux, but the most popular is the Bourne-again shell (<term>bash</term>) shell, so this section is focused on bash. If you are using another shell like the <term>zsh</term> shell, which is newer (and also the default shell in modern MacOS), don't worry because there is a very large amount of overlap. Even so, if you wish to change your default shell, you can easily do so as follows:
+    There are many shells available for Linux, but the most popular is the Bourne-again shell (<term>bash</term>) shell, so this section is focused on bash. If you are using another shell like the <term>zsh</term> shell, which is newer (and also the default shell in modern macOS), don't worry because there is a very large amount of overlap. Even so, if you wish to change your default shell, you can easily do so as follows:
     <ul>
       <li><title>On a Mac</title>
         <p>

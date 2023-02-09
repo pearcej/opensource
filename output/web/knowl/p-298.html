@@ -12,7 +12,11 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>At first glance, the <code class="code-inline tex2jax_ignore">echo</code> command might not seem very useful. One typical use is to echo the values of a variety of variables including environment variables, which are variables that are part of the environment in which a process runs. For example, typing the following will print the value of the home directory followed by the value of the working directory on the screen:</p>
+<p>There are a number of ways one can create a new file from the shell. Let's try a few. First, use <code class="code-inline tex2jax_ignore">cd</code> to descend into one of your new directories, if you are not already in one, and type <code class="code-inline tex2jax_ignore">ls</code>. You should be in an empty directory. Then let's try the following commands:<pre class="code-block tex2jax_ignore">touch newfile1.txt
+echo 'I love open source!' &gt; newfile2.txt
+echo 'I really love open source!' &gt;&gt; newfile3.txt
+ls
+</pre>You should now see three new files named <em class="emphasis">newfile1.txt</em>, <em class="emphasis">newfile2.txt</em>, and <em class="emphasis">newfile3.txt</em> respectively. The <code class="code-inline tex2jax_ignore">touch</code> command simply makes an empty file, so the first line we typed is pretty straightforward. The second and third lines that we typed require a bit more explanation. The <code class="code-inline tex2jax_ignore">echo</code> command simply echoes the argument(s), so if we had just typed <code class="code-inline tex2jax_ignore"> echo 'I love open source!'</code>, then  'I love open source!' would be repeated on the screen (without the quotation marks.) This might not seem very useful, but it is widely used in shell scripts to output status text or variable values to the screen or to a file. Both <code class="code-inline tex2jax_ignore">&gt;</code> and <code class="code-inline tex2jax_ignore">&gt;&gt;</code> are used to redirect the output to someplace other than the screen.</p>
 <span class="incontext"><a href="sec_dev_basic_shell_commands.html#p-298" class="internal">in-context</a></span>
 </body>
 </html>
