@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_dev_editors" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>We All Need an Editor!</title>
+
+      <p>
+        Text editors are programs that help the user create and edit text files. Popular editors like Microsoft Word do not have the features that are needed by software developers and can not easily be used for editing source code because they can cause problems with the code itself due to the way they store formatted text.
+      </p>
+      <p>
+        Professional software developers use text editors that are specifically designed to work with source code and are often called <term>code editors</term> or just <term>editors</term>. Code editors typically include many special features for writing and editing code that go well beyond the typical uses such as finding and replacing, undoing, deleting, etc. Some of professional developers prefer to use a single purpose editor while others prefer to use 
+        an <term>Integrated Development Environment (IDE)</term> which is a tool that combines commonly used developer tools in a single application. Because some editors are so highly configurable using a variety of plug-ins and extensions, the line between a code editor and an IDE has become quite blurred in recent years, however, some of the main tools found in an IDE include:
+      </p> 
+      <ul>
+        <li>
+          <p>
+            <em>code editor</em> - which in addition to the standard find, replace, undo, redo, delete, etc, typically has block features like block indentation and dedentation, block commenting and uncommenting, and code refactoring. 
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>code debugger</em> - offers built-in tools to detect and diagnose errors in the code, including features such as variable inspection, stepping over and into code during execution, and setting break-points.
+          </p>
+        </li>
+        <li> 
+          <p>
+            <em>compiler or interpreter integration</em> - Is able to convert the programming language to machine code and run the code from within the idE.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>terminal integration</em> - offers access to the shell directly from within the IDE.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>version control integration</em> - facilitates the tracking and management of all code changes without leaving the IDE.
+          </p>
+        </li>
+      </ul>
+      
+      <p>
+        Professional developers all have their favorite editor, and searching for something like "best editor to use for software development" will bring up a host of answers and lists of popular editors. In addition to the code editor, code interpreter/compiler, code debugger,  integrated terminal, and tools for version control, the following is a list of other popular features in an IDE: 
+    </p>
+    <ul>
+      <li>
+        <p>
+          <em>code completion</em> - offering suggestions based on the context of the code being written.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>code folding</em> - the ability to collapse sections of code to better focus the workspace.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>code snippets</em> - which are pre-written code blocks that can inserted into the code quickly.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>file explorer </em>- a visual representation of the file system for easy navigation.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>multi-language support</em> - the ability to work effectively with a variety of programming languages and their varying syntaxes.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>search</em> - the ability to search through an entire codebase for a search term.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>syntax highlighting</em> - where different colors and/or styles of text are used to differentiate between comments, keywords, strings, etc.
+        </p>
+      </li>
+    </ul>
+    <p>
+      The most popular editors used by contributors to open source projects include <url href="https://www.gnu.org/software/emacs/download.html" visual="www.gnu.org/software/emacs">Emacs</url>, <url href="https://www.vim.org/" visual="www.vim.org">Vim</url>, and <url href="https://code.visualstudio.com/Download" visual="code.visualstudio.com">Visual Studio Code aka VSCode</url>. (Warning, Visual Studio Code is not the same software as as Visual Studio. This clearly causes a lot of confusion!) For novices contributors to open source, <url href="https://code.visualstudio.com/Download" visual="code.visualstudio.com">VSCode</url> is recommended as a first choice because it is cross-platform and has reasonably shallow learning curve. It also happens to be open-source!
+    </p>
+  
+</section>
+

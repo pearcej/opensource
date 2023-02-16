@@ -9,6 +9,7 @@
     </p>
   </introduction>
 
+  <xi:include href="./sec_git_why_version_control.ptx" />
   <xi:include href="./sec_git_getting_started.ptx" />
   <xi:include href="./sec_git_basics.ptx" />
   <xi:include href="./sec_git_branching.ptx" /> 

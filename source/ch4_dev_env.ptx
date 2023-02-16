@@ -10,7 +10,9 @@
 
   <xi:include href="./sec_dev_shell_terms.ptx" />
   <xi:include href="./sec_dev_basic_shell_commands.ptx" />
+  <xi:include href="./sec_dev_editors.ptx" />
   <xi:include href="./sec_dev_virtualization.ptx" />
-  <xi:include href="./sec_dev_version_control_git.ptx" />
+
+
 
 </chapter>
