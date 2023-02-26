@@ -12,7 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>Analogous to output redirection, <dfn class="terminology">input redirection</dfn> in the  shell using <code class="code-inline tex2jax_ignore"> &lt; </code> or <code class="code-inline tex2jax_ignore">&lt;&lt;</code> allows you to redirect the input of a command.  So, if we want the response from a command to be written to a file instead of to the screen, we can use output redirection, but if we want the input to a command to come from a file instead of from the keyboard, we use input redirection. Let's look at an example using the <code class="code-inline tex2jax_ignore">wc</code> command:</p>
+<p><dfn class="terminology">Output redirection</dfn> with <code class="code-inline tex2jax_ignore">&gt;</code> or <code class="code-inline tex2jax_ignore">&gt;&gt;</code> is a feature in the shell that allows the user to redirect the output. With output redirection, the output can be redirected to go into a file, and that is exactly what we did above. Both will create a new file by that name if one does not already exist. Note that the <code class="code-inline tex2jax_ignore">&gt;</code> is the output redirection operator used for <em class="emphasis">overwriting</em> a file that might or might not already exist, while the <code class="code-inline tex2jax_ignore">&gt;&gt;</code> is an output operator that <em class="emphasis">appends</em> the output to an existing file or creates a new one if one does not already exist.  So, <code class="code-inline tex2jax_ignore">&gt;</code> should be used judiciously!</p>
 <span class="incontext"><a href="sec_dev_basic_shell_commands.html#p-311" class="internal">in-context</a></span>
 </body>
 </html>

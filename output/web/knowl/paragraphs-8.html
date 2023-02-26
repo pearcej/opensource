@@ -13,13 +13,13 @@
 <body class="ignore-math">
 <section class="paragraphs"><h4 class="heading"><span class="title">Shell Command Options.</span></h4>
 <p></p>
-<p>Many shell commands have options which can be invoked by using a <dfn class="terminology">flag</dfn> or <dfn class="terminology">command option</dfn>. Let's try using an option with <code class="code-inline tex2jax_ignore">ls</code>, the listing command. Try typing the following where the <code class="code-inline tex2jax_ignore">-r</code> flag stands for <code class="code-inline tex2jax_ignore">reverse</code>, and it reverses the sorting order:</p>
+<p>Many shell commands have options which can be invoked by using a <dfn class="terminology">command option</dfn>, which is also called a <dfn class="terminology">flag</dfn>. Let's try using a command option with <code class="code-inline tex2jax_ignore">ls</code>, the listing command. Try typing the following where the <code class="code-inline tex2jax_ignore">-r</code> option stands for <code class="code-inline tex2jax_ignore">reverse</code>, and it reverses the sorting order:</p>
 <pre class="code-block tex2jax_ignore">ls -r
 </pre>
 <p>To try another, try typing the following where the <code class="code-inline tex2jax_ignore">-l</code> option stands for <em class="emphasis">long listing format</em>, meaning that instead of output containing only the names of files and directories, the <code class="code-inline tex2jax_ignore">ls</code> command will produce additional information, assuming you have at least one file or directory.</p>
 <pre class="code-block tex2jax_ignore">ls -l
 </pre>
-<p>You are likely to see some lines that look something like this:</p>
+<p>You are likely to see some lines that look something like this, each of which corresponds to one file or subdirectory in your current working directory. The exact output you get will vary based on the directory you are in and what files and folders exist on your machine::</p>
 <pre class="code-block tex2jax_ignore">drwxr-xr-x  3 root    root     4096 Jun 19 10:55 home
 lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -&gt; usr/bin
 -rw-rw-r--  1 pearcej friends    22 Sep 15  2022 hello.txt

@@ -4,10 +4,10 @@
   <title>Basic Shell Commands</title>
   <introduction>
   <p>
-    In this section, we will explore basic shell commands related to files, directories, and navigation.
+    In this section, we explore basic shell commands related to files, directories, and navigation.
   </p>
   <p>
-    Disclaimer: It is beyond the scope of this book to cover anything but the minimum of shell commands needed for contributions to open source, so the subsections below cover only the bare essentials.
+    Disclaimer: It is beyond the scope of this book to cover anything but a small of shell commands needed for contributions to open source, so the subsections below cover only the  essentials.
   </p>
   </introduction>
 
@@ -28,17 +28,17 @@
         <p>
         </p>
       <p>
-        Shell commands are simply commands that are typed into the shell. As our very first shell command to try, let's try the <c>echo</c> command which simply echos or displays the argument to the screen.  Try the following (exactly as written):
+        Shell commands are simply commands that are typed into the shell. As our very first shell command to try, let's try the <c>echo</c> command which simply echos or displays the argument to the terminal.  Try the following (exactly as written):
       </p>
       <pre>
       echo "I love open source!"
       </pre>
       <p>
-        You should have seen the text "I love open source!" printed on the screen. Now if that were all the echo command could do, it would be a fairly pointless command. The <c>echo</c> command's real power is in displaying the contents of variables and files as we will soon see.
+        You should have seen the text "I love open source!" printed in he terminal. Now if that were all the <c>echo</c> command could do, it would be a fairly pointless command. The <c>echo</c> command's real power is in displaying the contents of variables and files as we will soon see.
       </p>
 
 
-      <p> The shell is designed to work in a multi-user environment, so there are users. If you type the following shell command:
+      <p> The shell is designed to work in a multi-user environment, so it is designed to support users. If you type the following shell command:
     </p>
     <pre>
     whoami
@@ -48,7 +48,7 @@
     </p>
  
     <p>
-      Note that the shell is <term>case sensitive</term>, which means that it discriminates between uppercase and lowercase letters, so two words that in letter cases only, are not considered equal. This means that <c>Echo</c>, <c>ECHO</c>, <c>WhoAmI</c>, and <c>WHOAMI</c>  are not shell commands, so if you accidentally type one of these, you will likely elicit a response like:
+      Note that your environment might be <term>case sensitive</term>, which means that it might discriminate between uppercase and lowercase letters, where two words that in letter cases only, are not considered equal. This means that <c>Echo</c>, <c>ECHO</c>, <c>WhoAmI</c>, and <c>WHOAMI</c>  might not be recognized as  shell commands, so you are in a case sensitive environment if you accidentally type one of these, you will elicit a response like:
       </p>
 
       <pre>
@@ -56,7 +56,7 @@
       </pre>
 
     <p>
-      or if you are lucky, you might get something more helpful like:
+      or if you are in a case sensitive environment and you are lucky, you might get something more helpful like:
     </p>
     <pre>
       Command 'Echo' not found, did you mean:
@@ -64,22 +64,37 @@
     </pre>
 
       <p>
-        You might wonder how the operating system keeps track of its users. For each user, there is a user environment variable called USER that is specific only to the currently logged-in user. It can be accessed using the echo command that we already saw.  Try the following:
+        You might wonder how the operating system keeps track of its users. For each user, there is a user environment variable called USER that is specific only to the currently logged-in user. An <term>environment variable</term> is a value that contain information about the system environment or the currently logged in user. Having environment variables is a way of keeping track of information about the system environment and serves as a way to pass information about the environment to programs.
+        The USER environment variables can be accessed using the echo command that we already saw.  Try the following:
       </p>
 
       <pre>
         echo $USER
       </pre>
     <p>
-      You should see the same result as you saw with the <c>whoami</c> command! Note that you must precede the variable name with a dollar sign $ whenever you reference the value it contains. Isn't it interesting to peek inside the variable in that way? 
+      You should see the same result as you saw with the <c>whoami</c> command! Note that you must precede the variable name with a dollar sign $ whenever you reference the value it contains. Isn't it interesting to peek inside the environment variable in that way? 
     </p>
+    <p>
+      In fact, one of the key uses of the <c>echo</c> command is to echo the values of a variety of variables. For example, typing the following will print the values of a few environment variables on the terminal. Let's see another example:
+     </p>
+  
+     <pre>
+     echo $SHELL
+     </pre>
+     <p>
+     The SHELL environment variable stores the location of the shell program. This location, called the <term>file path</term>, is given in the form of the path needed to find the location. We explore how this path is described in the next section. 
+     </p>
+
   </paragraphs>
     <paragraphs>
-      <title>File Systems</title>
+      <title>Files and File Systems</title>
       <p>
       </p>
     <p> 
-      We all likely understand that a <term>file</term> is just a container for storing information. On a phone or in a GUI, we typically see files as icons with the filename below or to the right. We might (or might not) be familiar with using folders to organize our files and to navigate the file system. (On an Iphone or Android phone, you make a new folder by dropping one app on top of another app, on a Mac you long press and then choose new folder, and on a Windows machine, you right-click and choose New > folder.) This type of organization is important to understand, and the folder metaphor is useful. In fact, there are two useful metaphors or mental models to help with our understanding of file systems. Note that when using the shell, these "folders" are more typically called <term>directories</term>, but using the "folder" as your mental model for a directory will be very effective. This mental model tells us that inside of a directory, we can find files and possibly additional directories. Technically speaking, a directory is actually just a file that contains a list of other files, so you will see the both files and directories presented similarly by the shell. Using a different metaphor, you can think of all of the directories in your entire system as forming a tree structure which grows downward from a single directory which is known as the <term>root directory</term>. In other words, the top level directory which is the parent of all directories is called the 'root' directory. It is referenced by the use of forward slash symbol (<term>/</term>) when the forward slash symbol is used alone (or at least with nothing prepended in front of it). (As a comparison, the root directory notation in a standard Windows set-up is the C: directory.)  
+      We all likely understand that a <term>file</term> is just a container for storing information. In a GUI environment, files typically either display as icons that relate to the program that opens that file or they display a thumbnail image of the file itself. For example, all PDF files might appear the same or they might offer a tiny view of specific file contents. 
+    </p>
+     <p>
+      We might (or might not) be familiar with using folders to organize our files and to navigate the file system. (On an iphone or Android phone, you make a new folder by dropping one app on top of another app, on a Mac you long press and then choose new folder, and on a Windows machine, you right-click and choose New > folder.) This type of organization is important to understand, and the folder metaphor is useful. In fact, there are two useful metaphors to help with our understanding of file systems. Note that when using the shell,  "folders" are more typically called <term>directories</term>, but the two terms are basically equivalent. Hence, inside of a directory, we can find files and possibly additional directories. Technically speaking, a directory is actually just a file that contains a list of other files, so you will see the both files and directories presented similarly by the shell. Using a different metaphor, you can think of all of the directories in your entire system as forming a tree structure which grows downward from a single directory which is known as the <term>root directory</term>. In other words, the top level directory which is the parent of all directories is called the 'root' directory. It is referenced by the use of forward slash symbol (<term>/</term>) when the forward slash symbol is used alone (or at least with nothing prepended in front of it). 
     <notation>
       <usage><m>/</m></usage>
       <description>root directory symbol</description>
@@ -97,7 +112,8 @@
     /home/pearcej
     </pre>
       <p>
-        Reading from right to left, this means I am in a <term>child</term> directory named <c>pearcej</c> which itself is a child of a directory called <c>home</c> which is itself a child of the root directory. If you prefer the folder metaphor to the tree metaphor, you can think of <c>pearcej</c> as being "inside" of the <c>home</c> directory, which is inside of the root directory. Note that the position with respect to the forward slash '/' tells us the direction of the relationship – further to the right is further "inside".  
+        
+        Reading from right to left, using the folder metaphor, this means I am in a directory named <c>pearcej</c> which itself is a inside of a directory called <c>home</c> which is itself inside of the root directory, <c>/</c>. Note that the position with respect to the forward slash '/' tells us the direction of the relationship – further to the right is further inside.  To use the tree terminology, a directory that has a file or second directory directly inside of it is called a <term>parent</term> of the file or second directory that is inside, while the file or second directory is called the <term>child</term> of the parent directory. Hence, <c>pearcej</c>  is a child of <c>home</c> and <c>home</c> is a child of the root directory <c>/</c> in our example.
       </p>
       <p>
        Let's try "moving" (i.e. changing our working directory) to the root directory. Use the <c>cd</c> command which stands for <em>change directory</em> followed by the <c>/</c> by typing:
@@ -106,10 +122,10 @@
       cd /
       </pre>
       <p>
-      This should transport you to the <term>root directory</term> (if you weren't there already.) Now when you use <c>pwd</c>, you should see <c>/</c> echoed back. Note that the term <em>root directory</em> shouldn't be confused with the term <em>root user</em> in a Linux-like system. The <term>root user</term> is a user named <em>root</em>, which is a special superuser account in Linux operating systems that has unrestricted read and write privileges to everything. The <em>root directory</em> should also not be confused with the <c>/root</c> folder which is found on some Linux-based sytems and which is the home directory of the root superuser. 
+      This should transport you to the <term>root directory</term> (if you weren't there already.) Now when you use <c>pwd</c>, you should see <c>/</c> echoed back. Note that the term <em>root directory</em> shouldn't be confused with the term <em>root user</em> in a Linux-like system. The <term>root user</term> is a user named <em>root</em>, which is a special superuser account in Linux operating systems that has unrestricted read and write privileges to everything. The <em>root directory</em> should also not be confused with the <c>/root</c> folder which is found on some Linux-based systems and which is the home directory of the root superuser. 
       </p>
       <p>
-      Next type the following <c>ls</c> to get a <em>listing</em> of the files and subdirectories in the <em>root directory</em>.
+      Next type the following <c>ls</c> to get a <em>listing</em> of the files and subdirectories in the <em>current working directory</em>.
       </p>
       <pre>
       ls
@@ -121,8 +137,8 @@
         <p>
         </p>
         <p>
-      Many shell commands have options which can be invoked by using a <term>flag</term> or <term>command option</term>. 
-        Let's try using an option with <c>ls</c>, the listing command. Try typing the following where the <c>-r</c> flag stands for <c>reverse</c>, and it reverses the sorting order:
+      Many shell commands have options which can be invoked by using a <term>command option</term>, which is also called a <term>flag</term>.
+        Let's try using a command option with <c>ls</c>, the listing command. Try typing the following where the <c>-r</c> option stands for <c>reverse</c>, and it reverses the sorting order:
       </p>
       <pre>
       ls -r
@@ -135,7 +151,7 @@
 ls -l
 </pre>
 <p>
-  You are likely to see some lines that look something like this:
+  You are likely to see some lines that look something like this, each of which corresponds to one file or subdirectory in your current working directory. The exact output you get will vary based on the directory you are in and what files and folders exist on your machine::
 </p>
 <pre>
 drwxr-xr-x  3 root    root     4096 Jun 19 10:55 home
@@ -147,8 +163,9 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
     <title>File Permissions</title>
 <p>
 </p>
-<p>
-  Let's explore the permissions portions of the lines produced by the <c>ls -l</c> command. The last item on each of these lines is the filename itself. The first item in each of the lines is a 10 character-long mix of letters and minus signs. The first character of that set indicates the file type where <c>d</c> tells us it is a directory, <c>l</c> indicates it is a symbolic link, and <c>-</c> indicates it is a regular file. The next nine characters display various permissions for the file. The first set of three characters (characters 2-4) are the user's (i.e. the file owner's) permissions, the next three are the group's permissions, and the last three are the permissions for all others. (The user's name  is in the third column and the group name is in the fourth column.) In each of these sets of three characters, the three characters refer to read (<c>r</c>), write (<c>w</c>), and execute (<c>x</c>) respectively. If you see a letter then that permission is allowed, and if you see a '-', the permission is disallowed. For example in the last of the three lines shown above, we see that the file <c>hello.txt</c> has permissions of <c>-rw-rw-r--</c>. This means this is a file that can be read and written (changed) but not executed by the owner <c>pearcej</c> and also by any user who is a member of the <c>friends</c> group, however other users can only read the file.
+<p>Let's explore what we get in a long listing.
+  in particular, let's explore the permissions portions of the lines produced by the <c>ls -l</c> command. The last item on each of these lines is the filename itself. The first item in each of the lines is a 10 character-long mix of letters and minus signs. The first character of that set indicates the file type where <c>d</c> tells us it is a directory, <c>l</c> indicates it is a symbolic link, and <c>-</c> indicates it is a regular file. (Note that a <term>symbolic link</term>, aka <term>simlink</term> or <term>soft link</term> is a special type of file that acts as a shortcut by pointing to some other file or directory.)
+  The next nine characters display various permissions for the file. The first set of three characters (characters 2-4) are the user's (i.e. the file owner's) permissions, the next three are the group's permissions, and the last three are the permissions for all others. (The user's name  is in the third column and the group name is in the fourth column.) In each of these sets of three characters, the three characters refer to read (<c>r</c>), write (<c>w</c>), and execute (<c>x</c>) respectively. If you see a letter then that permission is allowed, and if you see a '-', the permission is disallowed. For example in the last of the three lines shown above, we see that the file <c>hello.txt</c> has permissions of <c>-rw-rw-r--</c>. This means this is a file that can be read and written (changed) but not executed by the owner <c>pearcej</c> and also by any user who is a member of the <c>friends</c> group, however other users can only read the file.
 </p>
 <p>
   Occasionally, you need to change permissions of a file. For example, you might need to change permissions to make a file executable. Changing file permissions is done with the <c>chmod</c> command. We will explore this in a bit.
@@ -160,14 +177,18 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
     <p>
     </p>
   <p>
-    If you want to see all of the flag options there are two different methods for most commands. You can use the <c>--help</c> flag option on the command or you can use the <term>manual</term> which is accessed using the <c>man</c> command. For example, with the <c>ls</c> command, you can use either one of the following, noting that they work a bit differently because the manual may use paging. If it does, to go to the next page use the spacebar.
+    If you want to see all of the command options for a given commnd, there are two different methods for many commands. You can often, but not always, use the <c>--help</c> option on the command or you can use the <term>manual</term> which is accessed using the <c>man</c> command. For example, with the <c>ls</c> command, you can use either one of the following, noting that they work a bit differently because the manual may use paging. If it does, to go to the next page use the space bar.
   </p>
       <pre>
       ls --help
       man ls
       </pre>
       <p>
-        You may be wondering about the use of one minus sign '-' vs the use of two minus signs '--' in shell flags. One minus sign is used for single letter commands, while two is used for word-length commands. If you look back at the <c>ls --help</c> results, you may see that the flags <c>-a</c> and <c>--all</c> both list all files including that begin with a '.', which are the hidden files  and directories. Besides brevity, the main advantage to the single minus sign is that to run multiple options at the same time, all you need to do is concatenate them, so <c>ls -lra</c> would return the result with  the <c>-l</c>,  <c>-r</c>, and <c>-a</c> option flags all activated. Give it a try!
+        Note that since both <c>--help</c> and <c>man</c> are not consistently both available, it is worth knowing both. That way, if one doesn't work, you can try the other.
+      </p>
+      <p>
+      You may be wondering about the use of one minus sign '-' vs the use of two minus signs '--' in shell options. One minus sign is typically used for single letter commands, while two is typically used for word-length commands, although even this is not a hard and fast rule. You'll occasionally get programs that also use a single `-` for word-length commands.
+        If you look back at the <c>ls --help</c> results, you may see that the options <c>-a</c> and <c>--all</c> both list all files including that begin with a '.', which are the hidden files  and directories. Besides brevity, one advantage the single minus sign often offers, is that to run multiple options at the same time, all you often need to do is concatenate them. Note that this is also program-specific; not all programs will allow this, but it is convenient when it is offered! For example, <c>ls -lra</c> returns the result with  the <c>-l</c>,  <c>-r</c>, and <c>-a</c> option flags all activated. Give it a try!
       </p>
       <pre>
       ls -lra
@@ -192,32 +213,23 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
       </p>
 
       <p>
-        An important use of the <c>echo</c> command is to echo the values of a variety of variables. For example, typing the following will print the values of the HOME and PWD environment variables on the screen:
-       </p>
-    
-       <pre>
-       echo $HOME
-       echo $PWD
-       </pre>
-
-      <p>
         You can make a new directory using the <c>mkdir</c> command. For example, let's say you want to make a new directory with the name <em>newdir</em>, you can type the following:
         </p> 
         <pre>
          mkdir newdir
         </pre>
         <p>
-          If you get a listing of your files and directories with <c>ls -l</c>, you should see something like the following:
+          To check that the directory was created as expected, you can get a fresh listing of your files and directories with <c>ls -l</c>. The output should include a line that ends in `newdir`. Try it!
         </p>
         <pre>
         drwxr-xr-x  2 pearcej pearcej   4096 Nov 15 17:00 newdir
         </pre>
         <p>
-          Then you can descend into the new directory with:
+          Then you can descend into the new directory and see where you are with:
       </p>
         <pre>
           cd newdir
-          echo $PWD
+          pwd
         </pre>
 
       <p> You should note that your working directory has changed!
@@ -234,7 +246,7 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
   drwxr-xr-x 13 pearcej pearcej 4096 Nov 16 17:00 ..
     </pre>
       <p>
-      Note the period at the end of the first line where the filename is expected. A period or dot '.' represents the current directory. The double period or double dot '..' represents the parent directory of the current one.
+      Note the period at the end of the first line where the filename is expected. A period or dot (.) represents the current directory. The double period or double dot (..) represents the parent directory of the current one.
       <notation>
       <usage><m>.</m></usage>
       <description>current directory symbol</description>
@@ -262,7 +274,7 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
     You should see both of the directories that you made listed as subdirectories.
     </p>
     <p>
-    If you want to delete either of these new directories, you will need to use the <term>remove directory</term> command, <c>rmdir</c> followed by the name of the directory you want to remove. Try it!
+    If you want to delete either of these new empty directories, you can use the <term>remove directory</term> command, <c>rmdir</c> followed by the name of the directory you want to remove. Note that there are other ways to remove directories, but <term>remove directory</term> is useful because it refuses to delete a directory that is not empty. Give it a try!
   </p>
 
   </paragraphs>
@@ -271,14 +283,17 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
     <p>
     </p>
     <p>
-    There are a number of ways one can create a new file. Let's try a few. First, use <c>cd</c> to descend into one of your new directories if you are not already in one so that you are in an empty directory. Then let's try the following commands:
+    There are a number of ways one can create a new file. Let's try some. First, use <c>cd</c> to descend into one of your new directories if you are not already in one so that you are in an empty directory. Then let's try the following commands:
+    </p>
        <pre>
  touch newfile1.txt
  echo 'I love open source!' > newfile2.txt
  echo 'I really love open source!' >> newfile3.txt
  ls
    </pre>
-   You should now see three new files named <em>newfile1.txt</em>, <em>newfile2.txt</em>, and <em>newfile3.txt</em> respectively. The <c>touch</c> command simply makes an empty file, so understanding the result of the first line we typed is pretty straightforward. The second and third lines that we typed require a bit more explanation. As we learned  above, the <c>echo</c> command simply echoes the argument(s) to the screen, but here the <c>echo</c> command has been used in combination with output redirection into a file.</p>
+   <p>
+   You should now see three new files named <em>newfile1.txt</em>, <em>newfile2.txt</em>, and <em>newfile3.txt</em> respectively. The <c>touch</c> command simply makes an empty file if no file by that name already exists in the directory. Otherwise <c>touch</c>> changes the last accessed/modified date .
+   Understanding the result of the first line we typed is pretty straightforward. The second and third lines that we typed require a bit more explanation. As we learned  above, the <c>echo</c> command simply outputs (or echoes) the argument(s) to the terminal, but here the <c>echo</c> command has been used in combination with output redirection into a file.</p>
 
 
     <p><term>Output redirection</term> with <c>></c> or <c>>></c> is a feature in the shell that allows the user to redirect the output. With output redirection, the output can be redirected to go into a file, and that is exactly what we did above. Both will create a new file by that name if one does not already exist. Note that the <c>></c> is the output redirection operator used for <em>overwriting</em> a file that might or might not already exist, while the <c>>></c> is an output operator that <em>appends</em> the output to an existing file or creates a new one if one does not already exist.  So, <c>></c> should be used judiciously!
@@ -286,30 +301,35 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
   
     <p>
       Let's look at the contents of the files that we created. The <c>cat</c> command, which stands for <em>concatenate</em>, is used to concatenate standard input (typically the keyboard) or file(s) to the standard output. To use <c>cat</c> to see the file contents, type the following one at a time:
+    </p>
        <pre>
 cat newfile1.txt
 cat newfile2.txt
 cat newfile3.txt
    </pre>
+   <p>
 Like the name suggests, you can also use the <c>cat</c> command to concatenate files. For example, if you try:
+   </p>
        <pre>
 cat newfile2.txt newfile3.txt > newfile1.txt
 cat newfile1.txt
    </pre>
-
+<p>
   You should see that <em>newfile1.txt</em> instead of being empty, now contains the concatenation of <em>newfile2.txt</em> and <em>newfile3.txt</em> 
     </p>
 <p>
-  You can also use the <c>cat</c> command in combination with output redirection to create a multi-line file as follows:
+  You can also use the <c>cat</c> command in combination with output redirection to create a multi-line file. When using <c>cat</c>> this way, th
 </p>
 <pre>
-cat >> newfile_multi.txt
+cat > newfile_multi.txt
 these
 are
 multiple
 lines
 </pre>
-
+<p>
+  You should have a new file called <em>newfile_multi.txt</em>.
+</p>
 
   <p>
     The  shell command <c>wc</c>, which stands for <em>word count</em>, is a command that s the name suggests can be used for counting. However, it does more than count words! It actually provides the line count, the word count, and the character count in the file(s) specified in the file arguments.
@@ -321,7 +341,7 @@ lines
   <p>
     Analogous to output redirection, <term>input redirection</term> in the  shell using <c> &lt; </c> or <c>&lt;&lt;</c> allows you to redirect the input of a command. 
     <!-- Unlike the here document example, often you will redirect to use a file instead of the keyboard.  -->
-    So, if we want the response from a command to be written to a file instead of to the screen, we can use output redirection, but if we want the input to a command to come from a file instead of from the keyboard, we use input redirection. Let's look at an example using the <c>wc</c> command:
+    So, if we want the response from a command to be written to a file instead of to the terminal, we can use output redirection, but if we want the input to a command to come from a file instead of from the keyboard, we use input redirection. Let's look at an example using the <c>wc</c> command:
   </p>
 
 <pre>
@@ -364,11 +384,20 @@ _end_
   Here documents are our first example of a kind of input redirection because we have redirected the command's input using the '<<' so the command takes a list that we create from the keyboard as its parameter.
 </p>
    -->
-
+<p>
+  Let's practice with input and output redirection using a temporary file. Let's redirect the output of the <c>ls</c> command into a temporary file, and then use input redirection with <c>wc -w</c> to get the word count of this file. (This is one way to count the number of files in your current directory.) 
+  
+  Let's try the following:
+</p>
+<pre>
+ls > temp.txt
+wc -w &lt; temp.txt
+</pre>
 
 
 <p>
-  A <term>pipe (|)</term> in the bash shell allows you to redirect or pipe the output of one command into the input of another command. Let's see an example:
+  If you  are wondering if there is a better way than using a temporary file, there is. 
+  A <term>pipe (|)</term> in the bash shell allows you to redirect (aka pipe) the output of one command into the input of another command. Let's see an example:
 </p>
 
 <pre>
@@ -376,11 +405,11 @@ _end_
 </pre>
 
 <p>
-  This gives us the word count in the listing of the current directory. What good is this? It is the number of files in the directory!
+   Try it! This is an improvement because it is faster and avoids the use of a temporary file.
 </p>
 
 <p>
-  It is possible to use what we have learned thus far to make an executable script. Let's type the following followed by a control-C:
+  It is possible to use what we have learned thus far to make an executable script. Let's type the following followed by a <c>Ctrl</c>+<c>C</c>>.:
 </p>
 
 <pre>
@@ -390,7 +419,7 @@ _end_
 </pre>
 
 <p>
-  You should now have a file that needs to be made executable. To do this we use the <c>chmad</c> command. The <c>chmod</c> stands for <em>change file mode bits</em>.  To add execution, we will need the <c>+x</c> option, which stands for 'add execution'. So, run the following in your shell to make it an executable file:
+  You should now have new file. However, we would like to make it executable so we can run it as a script. To make it executable, we use the <c>chmod</c> command. The <c>chmod</c> stands for <em>change file mode bits</em>.  To add execution, we will need the <c>+x</c> option, which stands for 'add execution' and will change it to being executable. So, run the following in your shell to make it an executable file for all users:
 </p>
 
 <pre>
@@ -435,52 +464,62 @@ _end_
 <p>
     We can  move files around, make a copy of files, or remove (delete) files from the filesystem using <c>mv</c>, <c>cp</c>, and <c>rm</c> respectively. Let's see how these work. First, list your files. You should have  <em>newfile1.txt</em>, <em>newfile2.txt</em>, and <em>newfile3.txt</em> in your directory. </p>
       <p>
-        Let's make a new directory below our current directory and move one of our files there.
+        Let's make a new directory named <em>subdir</em> below our current directory and move one of our files there.
+      </p>
        <pre>
 mkdir subdir
 mv newfile3.txt subdir/newfile3.txt
 ls
 ls subdir
    </pre>
-You should see that newfile3.txt is now not in the current directory, but it is instead in the subdirectory 
-<em>subdir</em>.
+   <p>
+Note that the command <c>ls subdir</c> provides a listing of the subdirectory named <em>subdir</em>. You should see that newfile3.txt is now not in the current directory, but it is instead in the subdirectory <em>subdir</em>.
 </p>
   <p>
     In addition to moving files around in the directory structure, we can also use the <c>mv</c> command to rename files as follows:
-
+  </p>
     <pre>
 mv newfile1.txt newfile4.txt
- ls 
+ls 
    </pre>
+   <p>
    One important thing to watch out for with the <c>mv</c> command is that if the destination filename already exists, it might get overwritten. For this reason, you might want to use the <c>-i</c> flag which stands for interactive. Try it.
+   </p>
     <pre>
 mv -i newfile1.txt newfile2.txt
 </pre>
+<p>
 You should see a question like, "overwrite 'newfile2.txt'?"If you respond with "n", then the file will not be overwritten.
   </p>
 <p>
 The <c>cp</c> command works as you might expect:
-
+</p>
     <pre>
 cp newfile2.txt newfile2_cp.txt
 cat newfile2_cp.txt
    </pre>
-Just like with the <c>mv</c> command, the <c>cp</c> command will overwrite the destination file if it already exists. For this reason, you might want to use the <c>-i</c> flag which stands for interactive. Try it.
+   <p>
+Just like with the <c>mv</c> command, the <c>cp</c> command will overwrite the destination file if it already exists. For this reason, you might want to use the <c>-i</c> flag which stands for interactive here too. Try it.
+   </p>
     <pre>
-mv -i newfile4.txt newfile2_cp.txt
+cp -i newfile4.txt newfile2_cp.txt
 </pre>
+<p>
 You should see a question like, "overwrite 'newfile2_cp.txt'?" If you respond with "n", the command will not be overwritten, so using the <c>-i</c> flag seems a wise safeguard.
 </p>
 <p>
   The <c>rm</c> command is a useful, but another dangerous command.  Let's try it:
+</p>
 <pre>
 rm newfile2_cp.txt
 </pre>
-
+<p>
 Just as with <c>cp</c>, and <c>mv</c>, you are probably wise to use the <c>-i</c> option. 
+</p>
 <pre>
 rm -i newfile4.txt
 </pre>
+<p>
 And, if you respond with "n", then the removal will not happen. 
 </p>
   </paragraphs>
@@ -493,27 +532,36 @@ And, if you respond with "n", then the removal will not happen.
     The <em>up arrow</em> key retrieves the previous shell command. If you press it multiple times, it will take you back through multiple commands in your shell history. This is a useful way to repeat a command. For example, if you had a typo, you can use the up arrow, edit the command, and push enter to fix the command. Analogously, the <em>down arrow</em> will move you in the reverse direction through the shell command history. For more useful shell commands, type <c>man bash</c> for hints on how to search your shell history, re-execute commands, and much more.
     </p>
   <p>
-    Another thing that is very useful in the shell is the use of regular expressions. A <term>regular expression</term> (aka <term>regex</term>) is a sequence of characters that specifies a text search pattern. Regular expressions are quite powerful, and it is not within the scope of this textbook to teach them, instead this paragraph is intended to alert you to how useful they can be. A couple examples of very common regular expressions pattern symbols are the question mark and the asterisk.  The question mark (?) specifies any single character to match, and the asterisk (*) specifies zero or more characters to match.</p>
+    Another thing that is very useful in the shell is the use of regular expressions. A <term>regular expression</term> (aka <term>regex</term>) is a sequence of characters that specifies a text search pattern. Regular expressions are quite powerful, and it is not within the scope of this textbook to teach them, instead this paragraph is intended to alert you to how useful they can be. A couple examples of very common regular expressions patterns are using wildcards for zero or more characters or for a single character.  The asterisk (*) specifies zero or more characters to match. In bash the question mark (?) is used for matching exactly one single character, although this is not typical regex behavior.
+    </p>
       <p>
         For example, if we type the following:
+      </p>
         <pre>
 rm -i newfile?.txt
 </pre>
+<p>
 Then the question mark will match with any single character, and we will see the following prompts:
+</p>
 <pre>
 rm: remove regular file 'newfile2.txt'?
 rm: remove regular file 'newfile4.txt'?
 </pre>
+<p>
 If we instead type:
+</p>
 <pre>
 rm -i newfile*.txt
 </pre> 
+<p>
     Then the asterisk will match with any number of characters (including zero), and we will see the following prompts:
+</p>
 <pre>
 rm: remove regular file 'newfile2.txt'?
 rm: remove regular file 'newfile4.txt'?
 rm: remove regular file 'newfile2_cp.txt'?
 </pre>
+<p>
 As you can see, regular expressions give you a lot of power and control. 
   </p>
 

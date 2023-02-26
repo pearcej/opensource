@@ -12,11 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>There are a number of ways one can create a new file. Let's try a few. First, use <code class="code-inline tex2jax_ignore">cd</code> to descend into one of your new directories if you are not already in one so that you are in an empty directory. Then let's try the following commands:<pre class="code-block tex2jax_ignore">touch newfile1.txt
-echo 'I love open source!' &gt; newfile2.txt
-echo 'I really love open source!' &gt;&gt; newfile3.txt
-ls
-</pre>You should now see three new files named <em class="emphasis">newfile1.txt</em>, <em class="emphasis">newfile2.txt</em>, and <em class="emphasis">newfile3.txt</em> respectively. The <code class="code-inline tex2jax_ignore">touch</code> command simply makes an empty file, so understanding the result of the first line we typed is pretty straightforward. The second and third lines that we typed require a bit more explanation. As we learned  above, the <code class="code-inline tex2jax_ignore">echo</code> command simply echoes the argument(s) to the screen, but here the <code class="code-inline tex2jax_ignore">echo</code> command has been used in combination with output redirection into a file.</p>
+<p>Here, the first command directs us up to move up one level in the directory tree structure and to create a new directory named <code class="code-inline tex2jax_ignore">newdir2</code>. This makes <code class="code-inline tex2jax_ignore">newdir2</code> a sibling of the original <code class="code-inline tex2jax_ignore">newdir</code> directory because both have the same parent directory. The second line produces a long listing of all of the files and directories in the directory that is one level up relative to the current working  directory. You should see both of the directories that you made listed as subdirectories.</p>
 <span class="incontext"><a href="sec_dev_basic_shell_commands.html#p-306" class="internal">in-context</a></span>
 </body>
 </html>
