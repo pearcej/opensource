@@ -12,7 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>Anybody can break software. People break software all the time. But it takes a bit of practice and skill to break things predictably, over and over — and if there’s no one exercising this skill on a project’s behalf, it’s much more difficult to improve that project over time. That’s why software companies hire testers (although they almost never hire as many as they should.)</p>
+<p>Don’t do that. You may very well be right that the issues are related — but you may also be wrong, and in either case, two different issues deserve two different bug reports. In our example above, it may be that the issues with <dfn class="terminology">Foomail</dfn> and <dfn class="terminology">Barchat</dfn> are actually related to a problem with <dfn class="terminology">Bazlib</dfn>, which is a shared component of <dfn class="terminology">Foomail</dfn> and <dfn class="terminology">Barchat</dfn>. Each bug must be fixed and tested in its own context, and that won’t work if they’re all stuffed in the same bug report.</p>
 <span class="incontext"><a href="sec_bug_reports.html#p-919" class="internal">in-context</a></span>
 </body>
 </html>

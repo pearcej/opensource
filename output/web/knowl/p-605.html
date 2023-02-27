@@ -12,7 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>When you have your project at a point that you want to share, you have to push it upstream. The command for this is simple: <code class="code-inline tex2jax_ignore">git push &lt;remote&gt; &lt;branch&gt;</code>. If you want to push your <code class="code-inline tex2jax_ignore">master</code> branch to your <code class="code-inline tex2jax_ignore">origin</code> server (again, cloning generally sets up both of those names for you automatically), then you can run this to push any commits you’ve done back up to the server:</p>
+<p>If your current branch is set up to track a remote branch (see the next section on Git Branching for more information), you can use the <code class="code-inline tex2jax_ignore">git pull</code> command to automatically fetch and then merge that remote branch into your current branch. This may be an easier or more comfortable workflow for you; and by default, the <code class="code-inline tex2jax_ignore">git clone</code> command automatically sets up your local <code class="code-inline tex2jax_ignore">master</code> branch to track the remote <code class="code-inline tex2jax_ignore">master</code> branch (or whatever the default branch is called) on the server you cloned from. Running <code class="code-inline tex2jax_ignore">git pull</code> generally fetches data from the server you originally cloned from and automatically tries to merge it into the code you’re currently working on.</p>
 <span class="incontext"><a href="sec_git_basics.html#p-605" class="internal">in-context</a></span>
 </body>
 </html>

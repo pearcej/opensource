@@ -79,7 +79,10 @@
       </li>
     </ul>
     <p>
-      The most popular editors used by contributors to open source projects include <url href="https://www.gnu.org/software/emacs/download.html" visual="www.gnu.org/software/emacs">Emacs</url>, <url href="https://www.vim.org/" visual="www.vim.org">Vim</url>, and <url href="https://code.visualstudio.com/Download" visual="code.visualstudio.com">Visual Studio Code aka VSCode</url>. (Warning, Visual Studio Code is not the same software as as Visual Studio. This clearly causes a lot of confusion!) For novices contributors to open source, <url href="https://code.visualstudio.com/Download" visual="code.visualstudio.com">VSCode</url> is recommended as a first choice because it is cross-platform and has reasonably shallow learning curve. It also happens to be open-source!
+      The most popular editors used by contributors to open source projects include <url href="https://www.gnu.org/software/emacs/download.html" visual="www.gnu.org/software/emacs">Emacs</url>, <url href="https://www.vim.org/" visual="www.vim.org">Vim</url>, and <url href="https://code.visualstudio.com/Download" visual="code.visualstudio.com">Visual Studio Code aka VSCode</url>. (Warning, Visual Studio Code is not the same software as as Visual Studio. This clearly causes a lot of confusion!) For novices contributors to open source, <url href="https://code.visualstudio.com/Download" visual="code.visualstudio.com">VSCode</url> is recommended as a first choice because it is cross-platform and has reasonably shallow learning curve. It also happens to be open-source! 
+    </p>
+    <p>
+      If you are interested in getting started with VSCode, you might begin with <url href="https://code.visualstudio.com/docs/introvideos/basics" visual="code.visualstudio.com/docs/introvideos/basics">VSCode's Getting Started Videos and Guide.</url>
     </p>
   
 </section>

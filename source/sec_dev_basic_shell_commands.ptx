@@ -75,7 +75,7 @@
       You should see the same result as you saw with the <c>whoami</c> command! Note that you must precede the variable name with a dollar sign $ whenever you reference the value it contains. Isn't it interesting to peek inside the environment variable in that way? 
     </p>
     <p>
-      In fact, one of the key uses of the <c>echo</c> command is to echo the values of a variety of variables. For example, typing the following will print the values of a few environment variables on the terminal. Let's see another example:
+      In fact, one of the key uses of the <c>echo</c> command is to echo the values of a variety of variables. Let's see another example:
      </p>
   
      <pre>
@@ -94,7 +94,13 @@
       We all likely understand that a <term>file</term> is just a container for storing information. In a GUI environment, files typically either display as icons that relate to the program that opens that file or they display a thumbnail image of the file itself. For example, all PDF files might appear the same or they might offer a tiny view of specific file contents. 
     </p>
      <p>
-      We might (or might not) be familiar with using folders to organize our files and to navigate the file system. (On an iphone or Android phone, you make a new folder by dropping one app on top of another app, on a Mac you long press and then choose new folder, and on a Windows machine, you right-click and choose New > folder.) This type of organization is important to understand, and the folder metaphor is useful. In fact, there are two useful metaphors to help with our understanding of file systems. Note that when using the shell,  "folders" are more typically called <term>directories</term>, but the two terms are basically equivalent. Hence, inside of a directory, we can find files and possibly additional directories. Technically speaking, a directory is actually just a file that contains a list of other files, so you will see the both files and directories presented similarly by the shell. Using a different metaphor, you can think of all of the directories in your entire system as forming a tree structure which grows downward from a single directory which is known as the <term>root directory</term>. In other words, the top level directory which is the parent of all directories is called the 'root' directory. It is referenced by the use of forward slash symbol (<term>/</term>) when the forward slash symbol is used alone (or at least with nothing prepended in front of it). 
+      We might (or might not) be familiar with using folders to organize our files and to navigate the file system. (On an iphone or Android phone, you make a new folder by dropping one app on top of another app, on a Mac you long press and then choose new folder, and on a Windows machine, you right-click and choose New > folder.) This type of organization is important to understand, and the folder metaphor is useful. In fact, there are two useful metaphors to help with our understanding of file systems. Note that when using the shell,  "folders" are more typically called <term>directories</term>, but the two terms are equivalent. 
+     </p>
+     <p>
+      You might wonder why a folder is typically referred to as a directory in the shell. If is due to the structure and the uses of a folder and directory in the Linux OS. In the world, a folder is used as a container that can multiple documents while a directory is a type of index that allows you to look up items. In Linux, a directory does not really contain files. A directory is a special file that keeps track of the location of a file's content in memory. Hence, it is called a directory in the shell. Hence, a directory stores the list of items, but not always the actual items themselves. Nevertheless, the terms directory and folder are used interchangeably in computing. 
+     </p>
+      <p>
+      Inside of a directory, we can find files and possibly additional directories. Depending upon your system, a directory may actually just be a file that contains a list of other files, so you will see the both files and directories presented similarly by the shell. Using a different metaphor, you can think of all of the directories in your entire system as forming a tree structure which grows downward from a single directory which is known as the <term>root directory</term>. In other words, the top level directory which is the parent of all directories is called the 'root' directory. It is referenced by the use of forward slash symbol (<term>/</term>) when the forward slash symbol is used alone (or at least with nothing prepended in front of it). 
     <notation>
       <usage><m>/</m></usage>
       <description>root directory symbol</description>
@@ -177,7 +183,7 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
     <p>
     </p>
   <p>
-    If you want to see all of the command options for a given commnd, there are two different methods for many commands. You can often, but not always, use the <c>--help</c> option on the command or you can use the <term>manual</term> which is accessed using the <c>man</c> command. For example, with the <c>ls</c> command, you can use either one of the following, noting that they work a bit differently because the manual may use paging. If it does, to go to the next page use the space bar.
+    If you want to see all of the command options for a given command, there are two different methods for many commands. You can often, but not always, use the <c>--help</c> option on the command or you can use the <term>manual</term> which is accessed using the <c>man</c> command. For example, with the <c>ls</c> command, you can use either one of the following, noting that they work a bit differently because the manual may use paging. If it does, to go to the next page use the space bar.
   </p>
       <pre>
       ls --help
@@ -276,6 +282,13 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
     <p>
     If you want to delete either of these new empty directories, you can use the <term>remove directory</term> command, <c>rmdir</c> followed by the name of the directory you want to remove. Note that there are other ways to remove directories, but <term>remove directory</term> is useful because it refuses to delete a directory that is not empty. Give it a try!
   </p>
+  <p>
+    A handy use of the <c>cd</c> command is to use <c>cd -</c> which  will take you to your previous working directory. This is handy if you need to move between two distant locations. Try it followed by <c>pwd</c>a couple of times.
+  </p>
+  <pre>
+  cd -
+  pwd
+  </pre>
 
   </paragraphs>
   <paragraphs>
