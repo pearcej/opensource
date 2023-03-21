@@ -7,25 +7,25 @@
   <title>Types of Version Control</title>
   <introduction>
 			<p>
-				What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this chapter, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.
+	A <term>version control system (VCS)</term> records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this chapter, you will use software source code as the files being version controlled, although in reality you can do this with nearly any type of file on a computer.
 			</p>
 
-			<p>
-				If you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), a version control system (VCS) is a very wise thing to use. It allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also generally means that if you screw things up or lose files, you can easily recover. In addition, you get all this for very little overhead.
-			</p>
+<p>
+	For example, if you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), a <term>version control system (VCS)</term> is a very wise thing to use. It allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also generally means that if you screw things up or lose files, you can easily recover. In addition, you get all this for very little overhead.
+</p>
   </introduction>
 
-			<paragraphs xml:id="sec_local_version_control_systems">
-				<title>Local Version Control Systems (VCS)</title>
+<paragraphs xml:id="sec_local_version_control_systems">
+	<title>Local Version Control Systems (VCS)</title>
 
-				<p>
-					Many people’s version-control method of choice is to copy files into another directory (perhaps a time-stamped directory, if they’re clever). This approach is very common because it is so simple, but it is also incredibly error prone. It is easy to forget which directory you’re in and accidentally write to the wrong file or copy over files you don’t mean to.
-				</p>
+	<p>
+		Many people’s version-control method of choice is to copy files into another directory or up into the cloud. These approaches are common because they are simple, but they are also  error prone. It is easy to forget which directory you’re in and accidentally write to the wrong file or copy over files you don’t mean to.
+	</p>
 
 
-				<p>
-					To deal with this issue, programmers long ago developed local version control systems (VCSs) that had a simple database that kept all the changes to files under revision control.
-				</p>
+	<p>
+		To deal with this issue, programmers long ago developed local version control systems (VCSs) that had a simple database that kept all the changes to files under revision control.
+	</p>
 
 
 				<figure xml:id="git-local">
@@ -380,15 +380,15 @@
 			<!--TODO add directions on how to get to a terminal in all environments-->
 
 
-		</subsection>
+	</subsection>
 
-		<subsection xml:id="git_installing">
-			<title>Installing Git</title>
+	<subsection xml:id="git_installing">
+		<title>Installing Git</title>
 
 <!-- div attr= class="paragraph"-->
-			<p>
-				Before you start using Git, you have to make it available on your computer. Even if it’s already installed, it’s probably a good idea to update to the latest version. You can either install it as a package or via another installer, or download the source code and compile it yourself. If you are a beginner, we strongly recommend using an installer.
-			</p><!--</div attr= class="paragraph">-->
+		<p>
+			Before you start using Git, you have to make it available on your computer. Even if it’s already installed, it’s probably a good idea to update to the latest version. You can either install it as a package or via another installer, or download the source code and compile it yourself. If you are a beginner, we strongly recommend using an installer.
+		</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="admonitionblock note"-->
 <!-- 			<table>
@@ -411,128 +411,128 @@ Note
 
 <!-- div attr= class="sect3"-->
 
-			<paragraphs xml:id="git_installing_on_linux">
-				<title>Installing on Linux</title>
+	<paragraphs xml:id="git_installing_on_linux">
+		<title>Installing on Linux</title>
 
-<!-- div attr= class="paragraph"-->
-				<p>
-					If you want to install the basic Git tools on Linux via a binary installer, you can generally do so through the package management tool that comes with your distribution. If you’re on Fedora (or any closely-related RPM-based distribution, such as RHEL or CentOS), you can use <c>dnf</c>:
-				</p><!--</div attr= class="paragraph">-->
+	<!-- div attr= class="paragraph"-->
+		<p>
+			If you want to install the basic Git tools on Linux via a binary installer, you can generally do so through the package management tool that comes with your distribution. If you’re on Fedora (or any closely-related RPM-based distribution, such as RHEL or CentOS), you can use <c>dnf</c>:
+		</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-				<pre>$ sudo dnf install git-all</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+	<!-- div attr= class="listingblock"-->
+	<!-- div attr= class="content"-->
+		<pre>$ sudo dnf install git-all</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
-<!-- div attr= class="paragraph"-->
-				<p>
-					If you’re on a Debian-based distribution, such as Ubuntu, try <c>apt</c>:
-				</p><!--</div attr= class="paragraph">-->
+	<!-- div attr= class="paragraph"-->
+		<p>
+			If you’re on a Debian-based distribution, such as Ubuntu, try <c>apt</c>:
+		</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-				<pre>$ sudo apt install git-all</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+	<!-- div attr= class="listingblock"-->
+	<!-- div attr= class="content"-->
+		<pre>$ sudo apt install git-all</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
-<!-- div attr= class="paragraph"-->
-				<p>
-					For more options, there are instructions for installing on several different Unix distributions on the Git website, at <url href="https://git-scm.com/download/linux" visual="git-scm.com/download/linux">https://git-scm.com/download/linux</url>.
-				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
+	<!-- div attr= class="paragraph"-->
+		<p>
+			For more options, there are instructions for installing on several different Unix distributions on the Git website, at <url href="https://git-scm.com/download/linux" visual="git-scm.com/download/linux">https://git-scm.com/download/linux</url>.
+		</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
+
+	<!-- div attr= class="sect3"-->
+	</paragraphs>
+
+	<paragraphs xml:id="git_installing_on_macos">
+		<title>Installing on MacOS</title>
+
+	<!-- div attr= class="paragraph"-->
+		<p>
+			There are several ways to install Git on a Mac. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run <c>git</c> from the Terminal the very first time.
+		</p><!--</div attr= class="paragraph">-->
+
+	<!-- div attr= class="listingblock"-->
+	<!-- div attr= class="content"-->
+		<pre>$ git --version</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+	<!-- div attr= class="paragraph"-->
+		<p>
+			If you don’t have it installed already, it will prompt you to install it.
+		</p><!--</div attr= class="paragraph">-->
+
+	<!-- div attr= class="paragraph"-->
+		<p>
+			If you want a more up to date version, you can also install it via a binary installer. A macOS Git installer is maintained and available for download at the Git website, at <url href="https://git-scm.com/download/mac" visual="git-scm.com/download/mac">https://git-scm.com/download/mac</url>.
+		</p><!--</div attr= class="paragraph">-->
+
+
+	<!-- div attr= class="sect3"-->
+	</paragraphs>
+
+	<paragraphs xml:id="_installing_on_windows">
+		<title>Installing on Windows</title>
+
+	<!-- div attr= class="paragraph"-->
+		<p>
+			There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to <url href="https://git-scm.com/download/win" visual="git-scm.com/download/win">https://git-scm.com/download/win</url> and the download will start automatically. Note that this is a project called Git for Windows, which is separate from Git itself; for more information on it, go to <url href="https://gitforwindows.org" visual="gitforwindows.org">https://gitforwindows.org</url>.
+		</p><!--</div attr= class="paragraph">-->
+
+	<!-- div attr= class="paragraph"-->
+		<p>
+			To get an automated installation you can use the <url href="https://chocolatey.org/packages/git" visual="chocolatey.org/packages/git">Git Chocolatey package</url>. Note that the Chocolatey package is community maintained.
+		</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
+
+	<!-- div attr= class="sect3"-->
+	</paragraphs>
+	</subsection>
+	<subsection xml:id="git_initial_set-up">
+
+	<title>Git Initial Set-up</title>
+
+	<paragraphs xml:id="_your_identity">
+		<title>Your Identity</title>
+
+	<!-- div attr= class="paragraph"-->
+		<p>
+			The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:
+		</p><!--</div attr= class="paragraph">-->
+
+	<!-- div attr= class="listingblock"-->
+	<!-- div attr= class="content"-->
+		<pre>$ git config --global user.name "John Doe"
+	$ git config --global user.email johndoe@example.com</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+	<!-- div attr= class="paragraph"-->
+		<p>
+			Again, you need to do this only once if you pass the <c>--global</c> option, because then Git will always use that information for anything you do on that system. If you want to override this with a different name or email address for specific projects, you can run the command without the <c>--global</c> option when you’re in that project.
+		</p><!--</div attr= class="paragraph">-->
+
+	<!-- div attr= class="paragraph"-->
+		<p>
+			Many of the GUI tools will help you do this when you first run them.
+		</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+	</paragraphs>
 
-			<paragraphs xml:id="git_installing_on_macos">
-				<title>Installing on MacOS</title>
+	<paragraphs xml:id="_editor">
+		<title>Your Editor</title>
 
 <!-- div attr= class="paragraph"-->
-				<p>
-					There are several ways to install Git on a Mac. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run <c>git</c> from the Terminal the very first time.
-				</p><!--</div attr= class="paragraph">-->
+	<p>
+		Now that your identity is set up, you can configure the default text editor that will be used when Git needs you to type in a message. If not configured, Git uses your system’s default editor.
+	</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+	<p>
+		If you want to use a different text editor, such as VS Code, you can do the following:
+	</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
-				<pre>$ git --version</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+	<pre>$ git config core.editor "code -n --wait"</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
 <!-- div attr= class="paragraph"-->
-				<p>
-					If you don’t have it installed already, it will prompt you to install it.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					If you want a more up to date version, you can also install it via a binary installer. A macOS Git installer is maintained and available for download at the Git website, at <url href="https://git-scm.com/download/mac" visual="git-scm.com/download/mac">https://git-scm.com/download/mac</url>.
-				</p><!--</div attr= class="paragraph">-->
-
-
-<!-- div attr= class="sect3"-->
-			</paragraphs>
-
-			<paragraphs xml:id="_installing_on_windows">
-				<title>Installing on Windows</title>
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to <url href="https://git-scm.com/download/win" visual="git-scm.com/download/win">https://git-scm.com/download/win</url> and the download will start automatically. Note that this is a project called Git for Windows, which is separate from Git itself; for more information on it, go to <url href="https://gitforwindows.org" visual="gitforwindows.org">https://gitforwindows.org</url>.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					To get an automated installation you can use the <url href="https://chocolatey.org/packages/git" visual="chocolatey.org/packages/git">Git Chocolatey package</url>. Note that the Chocolatey package is community maintained.
-				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
-
-<!-- div attr= class="sect3"-->
-			</paragraphs>
-		</subsection>
-		<subsection xml:id="git_initial_set-up">
-
-			<title>Git Initial Set-up</title>
-
-			<paragraphs xml:id="_your_identity">
-				<title>Your Identity</title>
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-				<pre>$ git config --global user.name "John Doe"
-$ git config --global user.email johndoe@example.com</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					Again, you need to do this only once if you pass the <c>--global</c> option, because then Git will always use that information for anything you do on that system. If you want to override this with a different name or email address for specific projects, you can run the command without the <c>--global</c> option when you’re in that project.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					Many of the GUI tools will help you do this when you first run them.
-				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
-
-<!-- div attr= class="sect3"-->
-			</paragraphs>
-
-			<paragraphs xml:id="_editor">
-				<title>Your Editor</title>
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					Now that your identity is set up, you can configure the default text editor that will be used when Git needs you to type in a message. If not configured, Git uses your system’s default editor.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					If you want to use a different text editor, such as VS Code, you can do the following:
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-				<pre>$ git config core.editor "code -n --wait"</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					Note that on a Windows system, if you want to use a different text editor, you must specify the full path to its executable file. This can be different depending on how your editor is packaged.
-				</p><!--</div attr= class="paragraph">-->
+	<p>
+		Note that on a Windows system, if you want to use a different text editor, you must specify the full path to its executable file. This will differ depending on how your computer is configured and how your editor is packaged.
+	</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
 
