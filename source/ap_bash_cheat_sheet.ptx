@@ -2,10 +2,10 @@
 
 <section xml:id="ap_shell_cheat_sheet" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Bash Shell Cheat Sheet</title>
- <paragraphs>
-  <title>Get help with shell commands</title>
-     <p>
 
+ <paragraphs>
+  <title>Getting help with shell commands</title>
+     <p>
         <dl width="narrow" >
             <li>
               <title><c> man &lt;command-name&gt; </c></title>
@@ -37,18 +37,90 @@
         </dl>
     </p>
 </paragraphs>
+
 <paragraphs>
 <title>File and Directory Commands</title>
-  <p>   
+<p>
+  <dl width="narrow" >
+      <li>
+        <title><c>pwd </c></title>
+        <p>
+          <term>Print working directory</term> displays the name of the current working directory.
+        </p>
+        <ul>
+          <li>
+            <p>
+            e.g. Print the path of the current working directory: <c>pwd</c>
+            </p>
+          </li>
+        </ul>
+      </li>
 
-    <dl width="narrow" >
+      <li>
+        <title><c>whoami </c></title>
+        <p>
+          The <term>whoami</term> prints the userid of the current user.
+        </p>
+        <ul>
+          <li>
+            <p>
+            e.g. Print the userid: <c>whoami</c>
+            </p>
+          </li>
+        </ul>
+      </li>
+  
+      <li>
+  <title><c>ls</c></title>
+    <p>
+      <term>List</term> displays basic information about files and directories. 
+    </p>
+    <p>
+      <ul>
+      <li>
+        <p>
+          e.g. List directories and files in the current directory: <c>ls</c>
+        </p>
+      </li>
+      <li>
+        <p>
+          e.g. list directories and files in the current directory using a long listing: <c>ls -l</c> 
+        </p>
+      </li>
+      <li>
+        <p>
+          e.g. list directories and files in home directory: <c>ls ~</c> 
+        </p>
+      </li>
+    </ul>
+    </p>
+    </li>
+      <li>
+        <title><c>touch &lt;file-name&gt;</c></title>
+        <p>         
+The <term>touch</term> is commonly used for file creation. Its intended primary function is to update its timestamp, by "touching" it. See <c>man touch</c> for more information on the intended use.
+        </p>
+        <ul>
+          <li>
+            <p>
+            e.g. <c>touch newfile.txt</c>
+            </p>
+          </li>
+        </ul>
+      </li>
       <li>
       <title><c>cd &lt;directory-name&gt; or relative position</c></title>
         <p>
-          <term>Change directory</term> to <c>&lt;directory-name&gt;</c>.  The default <c>&lt;directory-name&gt;</c> is the value of the home shell variable. <ul>
+          <term>Change directory</term> to <c>&lt;directory-name&gt;</c>.   
+          <ul>
             <li>
               <p>
                 e.g. change directory to the root directory: <c>cd / </c>
+              </p>
+            </li>
+            <li>
+              <p>
+                e.g. change directory to the home directory: <c>cd ~ </c>
               </p>
             </li>
             <li>
@@ -59,25 +131,34 @@
           </ul>
         </p>
       </li>
+            <li>
+              <title><c>mv &lt;old-name&gt; &lt;new-name&gt;</c></title>
+              <p>
+                <term>Move</term> (rename) files or directories.
+              <ul>
+                <li>
+                  <p>
+                  e.g. Change the name of <em>old.txt</em> to <em>new.txt</em>: <c>mv old.txt new.txt</c>
+                  </p>
+                </li>
+              </ul>
+            </p>
+            </li>
 
-      <li>
-      <title><c>ls</c></title>
-        <p>
-          <term>List</term> information about files and directories. 
-          <ul>
-          <li>
-            <p>
-              e.g. List directories and files in current directory: <c>ls</c>
+            <li>
+              <title><c>rm &lt;file-name&gt;</c></title>
+              <p>
+                <term>Remove</term> deletes a file or directory.
+              <ul>
+                <li>
+                  <p>
+                  e.g. Remove the file named <em>junk.txt</em>: <c>rm junk.txt</c>
+                  </p>
+                </li>
+              </ul>
             </p>
-          </li>
-          <li>
-            <p>
-              e.g. list directories and files in home directory: <c>ls ~</c> 
-            </p>
-          </li>
-        </ul>
-        </p>
-      </li>
+            </li>
+
   <li>
   <title><c>mkdir  &lt;directory-name&gt;</c></title>
         <p>
@@ -104,11 +185,199 @@
         </ul>
         </p>
       </li>
-
-
       </dl>
     </p>
  </paragraphs>
 
+ <paragraphs>
+  <title>The Basics: Reading, Writing, Counting, etc</title>
+     <p>
+        <dl width="narrow" >
+            <li>
+              <title><c>echo &lt;text&gt;</c></title>
+              <p>
+                The <term>echo</term> command displays a line of text and/or the value of a variable. Often used with output redirection.
+
+              <ul>
+                <li>
+                  <p>
+                  e.g. Print the text 'Hello World!' on the screen: <c>echo 'Hello World!'</c>
+                  </p>
+                </li>
+                  <li>
+                    <p>
+                    e.g. Print the value of the USER environment variable on the screen: <c>echo $USER</c>
+                    </p>
+                  </li>
+              </ul>
+            </p>
+            </li>
+ 
+          <li>
+            <title><c>cat &lt;file-name&gt;</c></title>
+            <p>
+              The <term>concatenate</term> prints file contents on the screen after concatenation. Note that with a single file, it just prints that file. It is often used with output redirection.
+            <ul>
+              <li>
+                <p>
+                e.g. Print the contents of <em>file.txt</em> on the screen: <c>cat file.txt</c>
+                </p>
+              </li>
+              <li>
+                <p>
+                e.g. Print the contents of the concatenation of <em>file1.txt</em> and <em>file2.txt</em> on the screen: <c>cat file1.txt file2.txt</c>
+                </p>
+              </li>
+            </ul>
+          </p>
+          </li>
+        <li>
+          <title><c>read &lt;variable-name&gt;</c></title>
+          <p>
+            The <term>read</term> command reads a line or variable from the keyboard. It is often used with scripts or input redirection.
+          <ul>
+            <li>
+              <p>
+              e.g. Take input from the keyboard and direct it into a variable called MYVAR: <c>read MYVAR</c>
+              </p>
+            </li>
+          </ul>
+        </p>
+        </li>
+        <li>
+          <title><c>wc &lt;file-name&gt;</c></title>
+          <p>
+            The <term>word count</term> command performs a count of lines, words, and bytes for each file.
+          <ul>
+            <li>
+              <p>
+              e.g. Report the count of lines, words, and bytes in  <em>file.txt</em>: <c>wc file.txt</c>
+              </p>
+            </li>
+          </ul>
+        </p>
+        </li>
+    </dl>
+</p>
+</paragraphs>
+
+<paragraphs>
+  <title>Input and Output Redirection</title>
+     <p>
+        <dl width="narrow" >
+          <li>
+            <title>Input redirection using <c>&lt;</c></title>
+            <p>
+              Input redirection uses using <c>&lt;</c>to allow the user to redirect the input from a file rather than the keyboard.
+            <ul>
+              <li>
+                <p>
+                e.g. Perform the <c>wc</c> command on the information in the file <em>info2count.txt</em>: <c>wc &lt; info2count.txt</c>
+                </p>
+              </li>
+            </ul>
+          </p>
+          </li>
+            <li>
+              <title>Output redirection using <c>&gt;</c> or <c>&gt;&gt;</c></title>
+              <p>
+                Output redirection allows the user to redirect the output from the screen to a file using <c>&gt;</c> for overwriting or <c>&gt;&gt;</c> for appending.
+              <ul>
+                <li>
+                  <p>
+                  e.g. Write the line 'I love open source!' into the file <em>file.txt</em> replacing the current contents or making a new file if it doesn't already exist: <c>echo 'I love open source!' > file.txt</c>
+                  </p>
+                </li>
+              </ul>
+            </p>
+            </li>
+            <li>
+              <title>Piping <c>|</c></title>
+              <p>
+                A <term>pipe</term> <c>|</c> in the bash shell allows you to redirect (pipe) the output of one command into the input of another command.
+              <ul>
+                <li>
+                  <p>
+                  e.g. Run the command <c>ls</c>>and use the output of the <c>ls</c> command as the input into the <c>wc</c> command: <c>ls | wc</c>
+                  </p>
+                </li>
+              </ul>
+            </p>
+            </li>
+        </dl>
+    </p>
+</paragraphs>
+
+ <paragraphs>
+  <title>File Permissions</title>
+     <p>
+
+        <dl width="narrow" >
+            <li>
+              <title><c> chown &lt;newuser:newgroup&gt; &lt;file-name&gt; </c></title>
+              <p>
+                The <term>chown</term> command is used to change the file owner and/or group.
+
+              <ul>
+                <li>
+                  <p>
+                  e.g. Change the owner of <em>file.txt</em> to pearcej: <c>chmod pearcej file.txt</c>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                  e.g. Change the group of <em>file.txt</em> to friends: <c>chmod :friends file.txt</c>
+                  </p>
+                </li>
+              </ul>
+            </p>
+            </li>
+
+            <li>
+              <title><c> chmod &lt;change&gt;&lt;which&gt; &lt;file-name&gt; </c></title>
+              <p>
+                The <c>chmod</c> command is used to change permissions. The following symbols are the most commonly used:
+              </p>
+              <p>
+                <c>+</c> change by adding permission
+              </p>
+              <p>
+                <c>-</c> change by removing permission
+              </p>
+              <p>
+                <c>r</c> which permission: read
+              </p>
+              <p>
+                <c>w</c> which permission: write
+              </p>
+              <p>             
+                <c>x</c> which permission: execute
+              </p>
+              <p>
+              <ul>
+                <li>
+                  <p>
+                  e.g. The following adds execute permission for all users to the <em>helloworld.sh</em> file: <c>chmod +x helloworld.sh</c>
+                  </p>
+                </li>
+              </ul>
+            </p>
+            </li>
+        </dl>
+    </p>
+</paragraphs>
+
+<paragraphs>
+  <title>Need more detail?</title>
+  <p>
+    
+  </p>
+  <p>
+    For more information on any of these commands, see <xref ref="sec_dev_basic_shell_commands"/> or use the <c>man</c> pages.
+  </p>
+</paragraphs>
+
 </section>
+
+
 

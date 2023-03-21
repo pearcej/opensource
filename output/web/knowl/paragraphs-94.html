@@ -11,17 +11,33 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<section class="paragraphs"><h3 class="heading"><span class="title">Get help with shell commands.</span></h3>
+<section class="paragraphs"><h3 class="heading"><span class="title">The Basics: Reading, Writing, Counting, etc.</span></h3>
 <dl class="description-list narrow">
-<dt><code class="code-inline tex2jax_ignore"> man &lt;command-name&gt; </code></dt>
+<dt><code class="code-inline tex2jax_ignore">echo &lt;text&gt;</code></dt>
 <dd>
-<p>Use built-in <dfn class="terminology">manual</dfn>.</p>
-<ul class="disc"><li><p>e.g. Retrieve manual for changing directories command: <code class="code-inline tex2jax_ignore">man cd</code></p></li></ul>
+<p>The <dfn class="terminology">echo</dfn> command displays a line of text and/or the value of a variable. Often used with output redirection.</p>
+<ul class="disc">
+<li><p>e.g. Print the text 'Hello World!' on the screen: <code class="code-inline tex2jax_ignore">echo 'Hello World!'</code></p></li>
+<li><p>e.g. Print the value of the USER environment variable on the screen: <code class="code-inline tex2jax_ignore">echo $USER</code></p></li>
+</ul>
 </dd>
-<dt><code class="code-inline tex2jax_ignore"> &lt;command-name&gt; --help</code></dt>
+<dt><code class="code-inline tex2jax_ignore">cat &lt;file-name&gt;</code></dt>
 <dd>
-<p>Request <dfn class="terminology">help page</dfn> for specified command.</p>
-<ul class="disc"><li><p>e.g. Retrieve help for change directory command: <code class="code-inline tex2jax_ignore">cd --help</code></p></li></ul>
+<p>The <dfn class="terminology">concatenate</dfn> prints file contents on the screen after concatenation. Note that with a single file, it just prints that file. It is often used with output redirection.</p>
+<ul class="disc">
+<li><p>e.g. Print the contents of <em class="emphasis">file.txt</em> on the screen: <code class="code-inline tex2jax_ignore">cat file.txt</code></p></li>
+<li><p>e.g. Print the contents of the concatenation of <em class="emphasis">file1.txt</em> and <em class="emphasis">file2.txt</em> on the screen: <code class="code-inline tex2jax_ignore">cat file1.txt file2.txt</code></p></li>
+</ul>
+</dd>
+<dt><code class="code-inline tex2jax_ignore">read &lt;variable-name&gt;</code></dt>
+<dd>
+<p>The <dfn class="terminology">read</dfn> command reads a line or variable from the keyboard. It is often used with scripts or input redirection.</p>
+<ul class="disc"><li><p>e.g. Take input from the keyboard and direct it into a variable called MYVAR: <code class="code-inline tex2jax_ignore">read MYVAR</code></p></li></ul>
+</dd>
+<dt><code class="code-inline tex2jax_ignore">wc &lt;file-name&gt;</code></dt>
+<dd>
+<p>The <dfn class="terminology">word count</dfn> command performs a count of lines, words, and bytes for each file.</p>
+<ul class="disc"><li><p>e.g. Report the count of lines, words, and bytes in  <em class="emphasis">file.txt</em>: <code class="code-inline tex2jax_ignore">wc file.txt</code></p></li></ul>
 </dd>
 </dl></section><span class="incontext"><a href="ap_shell_cheat_sheet.html#paragraphs-94" class="internal">in-context</a></span>
 </body>
