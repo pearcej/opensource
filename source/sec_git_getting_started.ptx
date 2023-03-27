@@ -11,7 +11,7 @@
 			</p>
 
 <p>
-	For example, if you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), a <term>version control system (VCS)</term> is a very wise thing to use. It allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also generally means that if you screw things up or lose files, you can easily recover. In addition, you get all this for very little overhead.
+	For example, if you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), a VCS is a very wise thing to use. It allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also generally means that if you screw things up or lose files, you can easily recover. In addition, you get all this for very little overhead.
 </p>
   </introduction>
 
@@ -19,7 +19,7 @@
 	<title>Local Version Control Systems (VCS)</title>
 
 	<p>
-		Many people’s version-control method of choice is to copy files into another directory or up into the cloud. These approaches are common because they are simple, but they are also  error prone. It is easy to forget which directory you’re in and accidentally write to the wrong file or copy over files you don’t mean to.
+		Many people’s personal version-control method of choice is to copy files into another directory or up into the cloud. These approaches are common because they are simple, but they are also  error prone. It is easy to forget which directory you’re in and accidentally write to the wrong file or copy over files you don’t mean to. 
 	</p>
 
 
@@ -622,7 +622,7 @@ file:/home/johndoe/.gitconfig   false</pre></cell>
 
 <!-- div attr= class="paragraph"-->
 			<p>
-				If you ever need help while using Git, there are three equivalent ways to get the comprehensive manual page (manpage) help for any of the Git commands:
+				If you ever need help while using Git, there are three equivalent ways to get help for any of the Git commands:
 			</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="listingblock"-->
@@ -633,21 +633,15 @@ $ man git-&lt;verb&gt;</pre><!--</div attr= class="content">--><!--</div attr= c
 
 <!-- div attr= class="paragraph"-->
 			<p>
-				For example, you can get the manpage help for the <c>git config</c> command by running this:
+				For example, you can get help for the <c>git config</c> command by running this:
 			</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
 			<pre>$ git help config</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
 <!-- div attr= class="paragraph"-->
 			<p>
-				These commands are nice because you can access them anywhere, even offline. If the manpages and this book aren’t enough and you need in-person help, you can try the <c>#git</c>, <c>#github</c>, or <c>#gitlab</c> channels on the Libera Chat IRC server, which can be found at <url href="https://libera.chat/" visual="libera.chat/">https://libera.chat/</url>. These channels are regularly filled with hundreds of people who are all very knowledgeable about Git and are often willing to help.
-			</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-			<p>
-				In addition, if you don’t need the full-blown manpage help, but just need a quick refresher on the available options for a Git command, you can ask for the more concise “help” output with the <c>-h</c> option, as in:
+				If you don’t need the full-blown manpage help, but just need a quick refresher on the available options for a Git command, you can ask for the more concise “help” output with the <c>-h</c> option, as in:
 			</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="listingblock"-->

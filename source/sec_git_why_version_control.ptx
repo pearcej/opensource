@@ -10,7 +10,7 @@
           You create an important document.
         </li>
         <li>
-          It is important, so you email it to some friends or family or colleagues for feedback on it.
+          Because its important you email it to some friends or family or colleagues for feedback on it.
         </li>
         <li>
           You re-read it yourself create a new edited version.
@@ -23,8 +23,7 @@
         </li>
       </ul>
     </p>
-  
-`````<p>
+    <p>
     After doing a lot of merging of documents by hand, you might have a folder that looks like the following:
   </p>
     <pre>
@@ -34,28 +33,28 @@
       mydoc2-plus-moms-combined.odt
     </pre>
     <p>
-      Or maybe you have experienced this on a larger scale... For example, three of your friends comment on different versions and then they each share their edits with the whole group via email. Some comment on the original version, some comment on mom's version, others comment on your brother's version, etc.
+      Or maybe you have experienced this on a larger scale... For example, three of your friends comment on different versions and then they each share their edits with the whole group via email. Some comment on the original version, some comment on your mom's version, others comment on your brother's version, etc.
     </p>
     <p>
-      If you have experienced this, you have used version control, which according to Wikipedia <url href="https://en.wikipedia.org/wiki/Version_control" visual="https://en.wikipedia.org/wiki/Version_control">version control</url> “is the management of changes to documents, programs, and other information stored as computer files.” But, if you have experienced anything like this, then you have also have come to deeply understand the need for a far easier way to merge in any changes that come on an earlier version.
+      If you have experienced this, you have used version control, which according to Wikipedia <url href="https://en.wikipedia.org/wiki/Version_control" visual="https://en.wikipedia.org/wiki/Version_control">version control</url> “is the management of changes to documents, programs, and other information stored as computer files.” But, if you have experienced anything like this, then you have also have come to deeply understand the need for a better and easier way to merge in any changes that come on an earlier version.
     </p>
 
     <p>
       A <term>version control system (VCS)</term> is a system that stores all of the versions of a project along with comments on those version that explain the reasons for the changes. 
-      A system that manages version control for software development is sometimes called a <em>source code management system (SCM)</em>, but we will typically use the more general term. In this chapter, you will learn the basics of version control.
+      A system that manages version control for software development is sometimes called a <em>source code management (SCM)</em> system, but we will typically use the more general term. In this chapter, you will learn the basics of version control.
     </p>
 
   </introduction>
 
-  <subsection xml:id="subsec_source_code_management">
-    <title>Source Code Management</title>
+  <subsection xml:id="subsec_historic_vcs">
+    <title>Historic Version Control Systems</title>
 
      	<p>
 				The OSS world has developed many excellent ways of managing a software project, including not only a history of changes, but also who did what when and why.
 			</p>
 
 			<p>
-				You may want to start your own project someday, and you will have to choose an SCM. When you work with existing projects, the SCM has been chosen for you. The following five SCMs have been popular:
+				You may want to start your own project someday, and you will have to choose an VCS. When you work with existing projects, the VCS has been chosen for you. The following five VCSs have been popular over the past few decades:
 			</p>
 
 			<p><ul>

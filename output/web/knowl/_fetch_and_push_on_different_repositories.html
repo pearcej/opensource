@@ -16,14 +16,14 @@
 <pre class="code-block tex2jax_ignore">This branch is 5 commits behind progit:main.
 </pre>
 <p>But your GitHub repository will never be automatically updated by GitHub; this is something that you must do yourself. Fortunately, this is very easy to do.</p>
-<p>One possibility to do this requires no configuration. For example, if you forked from <a class="external" href="https://github.com/progit/progit2.git" target="_blank"><code class="code-inline tex2jax_ignore">https://github.com/progit/progit2.git</code></a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-170-hidden.html" title="Footnote 5.5.25"><sup> 25 </sup></a>, you can keep your default branch up-to-date like this:</p>
+<p>One possibility to do this requires no configuration. For example, if you forked from <a class="external" href="https://github.com/progit/progit2.git" target="_blank"><code class="code-inline tex2jax_ignore">https://github.com/progit/progit2.git</code></a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-169-hidden.html" title="Footnote 5.5.25"><sup> 25 </sup></a>, you can keep your default branch up-to-date like this:</p>
 <pre class="code-block tex2jax_ignore">$ git checkout main (1)
 $ git pull https://github.com/progit/progit2.git (2)
 $ git push origin main (3)
 </pre>
 <ol class="decimal">
 <li><p>If you were on another branch, return to <code class="code-inline tex2jax_ignore">main</code>.</p></li>
-<li><p>Fetch changes from <a class="external" href="https://github.com/progit/progit2.git" target="_blank"><code class="code-inline tex2jax_ignore">https://github.com/progit/progit2.git</code></a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-171-hidden.html" title="Footnote 5.5.26"><sup> 26 </sup></a> and merge them into <code class="code-inline tex2jax_ignore">main</code>.</p></li>
+<li><p>Fetch changes from <a class="external" href="https://github.com/progit/progit2.git" target="_blank"><code class="code-inline tex2jax_ignore">https://github.com/progit/progit2.git</code></a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-170-hidden.html" title="Footnote 5.5.26"><sup> 26 </sup></a> and merge them into <code class="code-inline tex2jax_ignore">main</code>.</p></li>
 <li><p>Push your <code class="code-inline tex2jax_ignore">main</code> branch to <code class="code-inline tex2jax_ignore">origin</code>.</p></li>
 </ol>
 <p>This works, but it is a little tedious having to spell out the fetch URL every time. You can automate this work with a bit of configuration:</p>

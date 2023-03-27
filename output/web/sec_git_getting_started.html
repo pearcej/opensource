@@ -205,8 +205,8 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Subsection</span> <span class="codenumber">5.2.1</span> <span class="title">Types of Version Control</span>
 </h3>
 <section class="introduction" id="introduction-19"><p id="p-399">A <dfn class="terminology">version control system (VCS)</dfn> records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this chapter, you will use software source code as the files being version controlled, although in reality you can do this with nearly any type of file on a computer.</p>
-<p id="p-400">For example, if you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), a <dfn class="terminology">version control system (VCS)</dfn> is a very wise thing to use. It allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also generally means that if you screw things up or lose files, you can easily recover. In addition, you get all this for very little overhead.</p></section><section class="paragraphs" id="sec_local_version_control_systems"><h4 class="heading"><span class="title">Local Version Control Systems (VCS).</span></h4>
-<p id="p-401">Many people’s version-control method of choice is to copy files into another directory or up into the cloud. These approaches are common because they are simple, but they are also  error prone. It is easy to forget which directory you’re in and accidentally write to the wrong file or copy over files you don’t mean to.</p>
+<p id="p-400">For example, if you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), a VCS is a very wise thing to use. It allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also generally means that if you screw things up or lose files, you can easily recover. In addition, you get all this for very little overhead.</p></section><section class="paragraphs" id="sec_local_version_control_systems"><h4 class="heading"><span class="title">Local Version Control Systems (VCS).</span></h4>
+<p id="p-401">Many people’s personal version-control method of choice is to copy files into another directory or up into the cloud. These approaches are common because they are simple, but they are also  error prone. It is easy to forget which directory you’re in and accidentally write to the wrong file or copy over files you don’t mean to.</p>
 <p id="p-402">To deal with this issue, programmers long ago developed local version control systems (VCSs) that had a simple database that kept all the changes to files under revision control.</p>
 <figure class="figure figure-like" id="git-local"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/local.png" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.2.1<span class="period">.</span></span><span class="space"> </span>Local Version Control</figcaption></figure></section><section class="paragraphs" id="sec_centralized_version_control_systems"><h4 class="heading"><span class="title">Centralized Version Control Systems.</span></h4>
@@ -326,16 +326,15 @@ John Doe
 </pre></section></section><section class="subsection" id="_git_help"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.2.7</span> <span class="title">Getting Help</span>
 </h3>
-<p id="p-469">If you ever need help while using Git, there are three equivalent ways to get the comprehensive manual page (manpage) help for any of the Git commands:</p>
+<p id="p-469">If you ever need help while using Git, there are three equivalent ways to get help for any of the Git commands:</p>
 <pre class="code-block tex2jax_ignore">$ git help &lt;verb&gt;
 $ git &lt;verb&gt; --help
 $ man git-&lt;verb&gt;
 </pre>
-<p id="p-470">For example, you can get the manpage help for the <code class="code-inline tex2jax_ignore">git config</code> command by running this:</p>
+<p id="p-470">For example, you can get help for the <code class="code-inline tex2jax_ignore">git config</code> command by running this:</p>
 <pre class="code-block tex2jax_ignore">$ git help config
 </pre>
-<p id="p-471">These commands are nice because you can access them anywhere, even offline. If the manpages and this book aren’t enough and you need in-person help, you can try the <code class="code-inline tex2jax_ignore">#git</code>, <code class="code-inline tex2jax_ignore">#github</code>, or <code class="code-inline tex2jax_ignore">#gitlab</code> channels on the Libera Chat IRC server, which can be found at <a class="external" href="https://libera.chat/" target="_blank">https://libera.chat/</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-142" id="fn-142"><sup> 6 </sup></a>. These channels are regularly filled with hundreds of people who are all very knowledgeable about Git and are often willing to help.</p>
-<p id="p-472">In addition, if you don’t need the full-blown manpage help, but just need a quick refresher on the available options for a Git command, you can ask for the more concise “help” output with the <code class="code-inline tex2jax_ignore">-h</code> option, as in:</p>
+<p id="p-471">If you don’t need the full-blown manpage help, but just need a quick refresher on the available options for a Git command, you can ask for the more concise “help” output with the <code class="code-inline tex2jax_ignore">-h</code> option, as in:</p>
 <pre class="code-block tex2jax_ignore">$ git add -h
 usage: git add [&lt;options&gt;] [--] &lt;pathspec&gt;...
 
@@ -359,12 +358,11 @@ usage: git add [&lt;options&gt;] [--] &lt;pathspec&gt;...
     --pathspec-file-nul         with --pathspec-from-file, pathspec elements are separated with NUL character
 </pre></section><section class="conclusion" id="conclusion-7"><h3 class="heading">Section Summary.<span></span>
 </h3>
-<p id="p-473">You should have a basic understanding of what Git is and how it’s different from other centralized version control systems. You should also now have a working version of Git on your system that’s set up with your personal identity. It’s now time to learn some Git basics.</p></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-137"><div class="fn"><code class="code-inline tex2jax_ignore">git-scm.com/download/linux</code></div></div>
+<p id="p-472">You should have a basic understanding of what Git is and how it’s different from other centralized version control systems. You should also now have a working version of Git on your system that’s set up with your personal identity. It’s now time to learn some Git basics.</p></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-137"><div class="fn"><code class="code-inline tex2jax_ignore">git-scm.com/download/linux</code></div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-138"><div class="fn"><code class="code-inline tex2jax_ignore">git-scm.com/download/mac</code></div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-139"><div class="fn"><code class="code-inline tex2jax_ignore">git-scm.com/download/win</code></div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-140"><div class="fn"><code class="code-inline tex2jax_ignore">gitforwindows.org</code></div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-141"><div class="fn"><code class="code-inline tex2jax_ignore">chocolatey.org/packages/git</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-142"><div class="fn"><code class="code-inline tex2jax_ignore">libera.chat/</code></div></div>
 </div></main>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
