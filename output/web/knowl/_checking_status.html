@@ -18,12 +18,12 @@ On branch main
 Your branch is up-to-date with 'origin/main'.
 nothing to commit, working tree clean
 </pre>
-<p>This means you have a clean working directory; in other words, none of your tracked files are modified. Git also doesn’t see any untracked files, or they would be listed here. Finally, the command tells you which branch you’re on and informs you that it has not diverged from the same branch on the server. That branch is typically <code class="code-inline tex2jax_ignore">main</code>, which is the current default. It could also be <code class="code-inline tex2jax_ignore">master</code>, which was the default until October 1, 2020. Don't worry about it here.  The next section on Git Branching will go over branches and references in detail.</p>
+<p>This means you have a clean working directory; in other words, none of your tracked files are modified. Git also doesn’t see any untracked files, or they would be listed here. Finally, the command tells you which branch you’re on and informs you that it has not diverged from the same branch on the server. That branch is typically <code class="code-inline tex2jax_ignore">main</code>, which is the current default. It could also be <code class="code-inline tex2jax_ignore">main</code>, which was the default until October 1, 2020. Don't worry about it here.  The next section on Git Branching will go over branches and references in detail.</p>
 <p>Let’s say you add a new file to your project, a simple <code class="code-inline tex2jax_ignore">README</code> file. If the file didn’t exist before, and you run <code class="code-inline tex2jax_ignore">git status</code>, you see your untracked file like so:</p>
 <pre class="code-block tex2jax_ignore">$ echo 'My Project' &gt; README
 $ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch main
+Your branch is up-to-date with 'origin/main'.
 Untracked files:
   (use "git add &lt;file&gt;..." to include in what will be committed)
 

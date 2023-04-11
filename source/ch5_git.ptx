@@ -13,6 +13,7 @@
   <xi:include href="./sec_git_getting_started.ptx" />
   <xi:include href="./sec_git_basics.ptx" />
   <xi:include href="./sec_git_branching.ptx" /> 
+  <xi:include href="./sec_git_undoing.ptx" /> 
   <xi:include href="./sec_git_github.ptx" />
   <!-- <xi:include href="./sec_scratch.ptx" /> -->
   <!-- <xi:include href="./sec_git_tools.ptx" /> -->

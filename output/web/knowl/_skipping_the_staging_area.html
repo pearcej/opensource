@@ -14,8 +14,8 @@
 <section class="paragraphs"><h4 class="heading"><span class="title">Skipping the Staging Area.</span></h4>
 <p>Although it can be amazingly useful for crafting commits exactly how you want them, the staging area is sometimes a bit more complex than you need in your workflow. If you want to skip the staging area, Git provides a simple shortcut. Adding the <code class="code-inline tex2jax_ignore">-a</code> option to the <code class="code-inline tex2jax_ignore">git commit</code> command makes Git automatically stage every file that is already tracked before doing the commit, letting you skip the <code class="code-inline tex2jax_ignore">git add</code> part:</p>
 <pre class="code-block tex2jax_ignore">$ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch main
+Your branch is up-to-date with 'origin/main'.
 Changes not staged for commit:
   (use "git add &lt;file&gt;..." to update what will be committed)
   (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
@@ -24,7 +24,7 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 $ git commit -a -m 'Add new benchmarks'
-[master 83e38c7] Add new benchmarks
+[main 83e38c7] Add new benchmarks
  1 file changed, 5 insertions(+), 0 deletions(-)
 </pre>
 <p>Notice how you don’t have to run <code class="code-inline tex2jax_ignore">git add</code> on the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file in this case before you commit. That’s because the <code class="code-inline tex2jax_ignore">-a</code> flag includes all changed files. This is convenient, but be careful; sometimes this flag will cause you to include unwanted changes.</p></section><span class="incontext"><a href="sec_git_basics.html#_skipping_the_staging_area" class="internal">in-context</a></span>

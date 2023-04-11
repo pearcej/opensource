@@ -203,7 +203,7 @@ nothing to commit, working tree clean</pre><!--</div attr= class="content">--><!
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					This means you have a clean working directory; in other words, none of your tracked files are modified. Git also doesn’t see any untracked files, or they would be listed here. Finally, the command tells you which branch you’re on and informs you that it has not diverged from the same branch on the server. That branch is typically <c>main</c>, which is the current default. It could also be <c>master</c>, which was the default until October 1, 2020. Don't worry about it here. <!-- TODO --> The next section on Git Branching will go over branches and references in detail.
+					This means you have a clean working directory; in other words, none of your tracked files are modified. Git also doesn’t see any untracked files, or they would be listed here. Finally, the command tells you which branch you’re on and informs you that it has not diverged from the same branch on the server. That branch is typically <c>main</c>, which is the current default. It could also be <c>main</c>, which was the default until October 1, 2020. Don't worry about it here. <!-- TODO --> The next section on Git Branching will go over branches and references in detail.
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -215,8 +215,8 @@ nothing to commit, working tree clean</pre><!--</div attr= class="content">--><!
 <!-- div attr= class="content"-->
 				<pre>$ echo 'My Project' &gt; README
 $ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch main
+Your branch is up-to-date with 'origin/main'.
 Untracked files:
   (use "git add &lt;file&gt;..." to include in what will be committed)
 
@@ -252,8 +252,8 @@ nothing added to commit but untracked files present (use "git add" to track)</pr
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
 				<pre>$ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch main
+Your branch is up-to-date with 'origin/main'.
 Changes to be committed:
   (use "git restore --staged &lt;file&gt;..." to unstage)
 
@@ -278,8 +278,8 @@ Changes to be committed:
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
 				<pre>$ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch main
+Your branch is up-to-date with 'origin/main'.
 Changes to be committed:
   (use "git reset HEAD &lt;file&gt;..." to unstage)
 
@@ -300,8 +300,8 @@ Changes not staged for commit:
 <!-- div attr= class="content"-->
 				<pre>$ git add CONTRIBUTING.md
 $ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch main
+Your branch is up-to-date with 'origin/main'.
 Changes to be committed:
   (use "git reset HEAD &lt;file&gt;..." to unstage)
 
@@ -317,8 +317,8 @@ Changes to be committed:
 <!-- div attr= class="content"-->
 				<pre>$ vim CONTRIBUTING.md
 $ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch main
+Your branch is up-to-date with 'origin/main'.
 Changes to be committed:
   (use "git reset HEAD &lt;file&gt;..." to unstage)
 
@@ -340,8 +340,8 @@ Changes not staged for commit:
 <!-- div attr= class="content"-->
 				<pre>$ git add CONTRIBUTING.md
 $ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch main
+Your branch is up-to-date with 'origin/main'.
 Changes to be committed:
   (use "git reset HEAD &lt;file&gt;..." to unstage)
 
@@ -500,8 +500,8 @@ doc/**/*.pdf</pre><!--</div attr= class="content">--><!--</div attr= class="list
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
 				<pre>$ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch main
+Your branch is up-to-date with 'origin/main'.
 Changes to be committed:
   (use "git reset HEAD &lt;file&gt;..." to unstage)
 
@@ -572,8 +572,8 @@ index 0000000..03902a1
 				<pre>$ git add CONTRIBUTING.md
 $ echo '# test line' &gt;&gt; CONTRIBUTING.md
 $ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch main
+Your branch is up-to-date with 'origin/main'.
 Changes to be committed:
   (use "git reset HEAD &lt;file&gt;..." to unstage)
 
@@ -670,8 +670,8 @@ index 8ebb991..643e24f 100644
 <!-- div attr= class="content"-->
 				<pre># Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
-# On branch master
-# Your branch is up-to-date with 'origin/master'.
+# On branch main
+# Your branch is up-to-date with 'origin/main'.
 #
 # Changes to be committed:
 #   new file:   README
@@ -705,13 +705,13 @@ index 8ebb991..643e24f 100644
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
 				<pre>$ git commit -m "Story 182: fix benchmarks for speed"
-[master 463dc4f] Story 182: fix benchmarks for speed
+[main 463dc4f] Story 182: fix benchmarks for speed
  2 files changed, 2 insertions(+)
  create mode 100644 README</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					Now you’ve created your first commit! You can see that the commit has given you some output about itself: which branch you committed to (<c>master</c>), what SHA-1 checksum the commit has (<c>463dc4f</c>), how many files were changed, and statistics about lines added and removed in the commit.
+					Now you’ve created your first commit! You can see that the commit has given you some output about itself: which branch you committed to (<c>main</c>), what SHA-1 checksum the commit has (<c>463dc4f</c>), how many files were changed, and statistics about lines added and removed in the commit.
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -733,8 +733,8 @@ index 8ebb991..643e24f 100644
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
 				<pre>$ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch main
+Your branch is up-to-date with 'origin/main'.
 Changes not staged for commit:
   (use "git add &lt;file&gt;..." to update what will be committed)
   (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
@@ -743,7 +743,7 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 $ git commit -a -m 'Add new benchmarks'
-[master 83e38c7] Add new benchmarks
+[main 83e38c7] Add new benchmarks
  1 file changed, 5 insertions(+), 0 deletions(-)</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
 <!-- div attr= class="paragraph"-->
@@ -771,8 +771,8 @@ $ git commit -a -m 'Add new benchmarks'
 <!-- div attr= class="content"-->
 				<pre>$ rm PROJECTS.md
 $ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch main
+Your branch is up-to-date with 'origin/main'.
 Changes not staged for commit:
   (use "git add/rm &lt;file&gt;..." to update what will be committed)
   (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
@@ -791,8 +791,8 @@ no changes added to commit (use "git add" and/or "git commit -a")</pre><!--</div
 				<pre>$ git rm PROJECTS.md
 rm 'PROJECTS.md'
 $ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch main
+Your branch is up-to-date with 'origin/main'.
 Changes to be committed:
   (use "git reset HEAD &lt;file&gt;..." to unstage)
 
@@ -864,8 +864,8 @@ Changes to be committed:
 <!-- div attr= class="content"-->
 				<pre>$ git mv README.md README
 $ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch main
+Your branch is up-to-date with 'origin/main'.
 Changes to be committed:
   (use "git reset HEAD &lt;file&gt;..." to unstage)
 
@@ -1000,281 +1000,7 @@ index a0a60ae..47c6340 100644
 				This option displays the same information but with a diff directly following each entry. This is very helpful for code review or to quickly browse what happened during a series of commits that a collaborator has added. 
 			</p>
 
-
-
 		</subsection>
-		<subsection xml:id="_undoing">
-			<title>Undoing Changes</title>
-
-<!-- div attr= class="paragraph"-->
-			<p>
-				At any stage, you may want to undo something. Here, we’ll review a few basic tools for undoing changes that you’ve made. Be careful, because you can’t always undo some of these undos. This is one of the few areas in Git where you may lose some work if you do it wrong.
-			</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-			<p>
-				One of the common undos takes place when you commit too early and possibly forget to add some files, or you mess up your commit message. If you want to redo that commit, make the additional changes you forgot, stage them, and commit again using the <c>--amend</c> option:
-			</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-			<pre>$ git commit --amend
-      </pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-			<p>
-				This command takes your staging area and uses it for the commit. If you’ve made no changes since your last commit (for instance, you run this command immediately after your previous commit), then your snapshot will look exactly the same, and all you’ll change is your commit message.
-			</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-			<p>
-				The same commit-message editor fires up, but it already contains the message of your previous commit. You can edit the message the same as always, but it overwrites your previous commit.
-			</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-			<p>
-				As an example, if you commit and then realize you forgot to stage the changes in a file you wanted to add to this commit, you can do something like this:
-			</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-			<pre>$ git commit -m 'Initial commit'
-$ git add forgotten_file
-$ git commit --amend
-      </pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-			<p>
-				You end up with a single commit — the second commit replaces the results of the first.
-			</p><!--</div attr= class="paragraph">-->
-
-			<p>
-				Note: It’s important to understand that when you’re amending your last commit, you’re not so much fixing it as <em>replacing</em> it entirely with a new, improved commit that pushes the old commit out of the way and puts the new commit in its place. Effectively, it’s as if the previous commit never happened, and it won’t show up in your repository history.
-			</p><!--</div attr= class="paragraph">-->
-
-			<p>
-				The obvious value to amending commits is to make minor improvements to your last commit, without cluttering your repository history with commit messages of the form, “Oops, forgot to add a file” or “Darn, fixing a typo in last commit”.
-			</p>
-
-			<p>
-				Note: Only amend commits that are still local and have not been pushed somewhere. Amending previously pushed commits and force pushing the branch will cause problems for your collaborators. 
-<!--         For more on what happens when you do this and how to recover if you’re on the receiving end read <url href="ch00/_rebase_peril">The Perils of Rebasing</url>. -->
-			</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="sect3"-->
-
-			<paragraphs xml:id="_unstaging">
-				<title>Unstaging a Staged File</title>
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					The next two sections demonstrate how to work with your staging area and working directory changes. The nice part is that the command you use to determine the state of those two areas also reminds you how to undo changes to them. For example, let’s say you’ve changed two files and want to commit them as two separate changes, but you accidentally type <c>git add *</c> and stage them both. How can you unstage one of the two? The <c>git status</c> command reminds you:
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-				<pre>$ git add *
-$ git status
-On branch master
-Changes to be committed:
-  (use "git reset HEAD &lt;file&gt;..." to unstage)
-
-    renamed:    README.md -&gt; README
-    modified:   CONTRIBUTING.md</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					Right below the “Changes to be committed” text, it says use <c>git reset HEAD &lt;file&gt;…​</c> to unstage. So, let’s use that advice to unstage the <c>CONTRIBUTING.md</c> file:
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-				<pre>$ git reset HEAD CONTRIBUTING.md
-Unstaged changes after reset:
-M   CONTRIBUTING.md
-$ git status
-On branch master
-Changes to be committed:
-  (use "git reset HEAD &lt;file&gt;..." to unstage)
-
-    renamed:    README.md -&gt; README
-
-Changes not staged for commit:
-  (use "git add &lt;file&gt;..." to update what will be committed)
-  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
-
-    modified:   CONTRIBUTING.md</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					The command is a bit strange, but it works. The <c>CONTRIBUTING.md</c> file is modified but once again unstaged.
-				</p><!--</div attr= class="paragraph">-->
-
-				<p>
-					Note: It’s true that <c>git reset</c> can be a dangerous command, especially if you provide the <c>--hard</c> flag. However, in the scenario described above, the file in your working directory is not touched, so it’s relatively safe.
-				</p>
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					For now this magic invocation is all you need to know about the <c>git reset</c> command. 
-				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
-
-<!-- div attr= class="sect3"-->
-			</paragraphs>
-
-			<paragraphs xml:id="_unmodifying_a_modified_file">
-				<title>Unmodifying a Modified File</title>
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					What if you realize that you don’t want to keep your changes to the <c>CONTRIBUTING.md</c> file? How can you easily unmodify it — revert it back to what it looked like when you last committed (or initially cloned, or however you got it into your working directory)? Luckily, <c>git status</c> tells you how to do that, too. In the last example output, the unstaged area looks like this:
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-				<pre>Changes not staged for commit:
-  (use "git add &lt;file&gt;..." to update what will be committed)
-  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
-
-    modified:   CONTRIBUTING.md</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					It tells you pretty explicitly how to discard the changes you’ve made. Let’s do what it says:
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-				<pre>$ git checkout -- CONTRIBUTING.md
-$ git status
-On branch master
-Changes to be committed:
-  (use "git reset HEAD &lt;file&gt;..." to unstage)
-
-    renamed:    README.md -&gt; README</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					You can see that the changes have been reverted.
-				</p><!--</div attr= class="paragraph">-->
-
-				<p>
-					Important: It’s important to understand that <c>git checkout -- &lt;file&gt;</c> is a dangerous command. Any local changes you made to that file are gone — Git just replaced that file with the last staged or committed version. Don’t ever use this command unless you absolutely know that you don’t want those unsaved local changes.
-				</p>
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					If you would like to keep the changes you’ve made to that file but still need to get it out of the way for now, we’ll go over stashing and branching in the following section on Git Branching; these are generally better ways to go.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					Remember, anything that is <em>committed</em> in Git can almost always be recovered. Even commits that were on branches that were deleted or commits that were overwritten with an <c>--amend</c> commit can be recovered. However, anything you lose that was never committed is likely never to be seen again.
-				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
-
-<!-- div attr= class="sect3"-->
-			</paragraphs>
-
-			<paragraphs xml:id="undoing_git_restore">
-				<title>Undoing things with git restore</title>
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					Git version 2.23.0 introduced a new command: <c>git restore</c>. It’s basically an alternative to <c>git reset</c> which we just covered. From Git version 2.23.0 onwards, Git will use <c>git restore</c> instead of <c>git reset</c> for many undo operations.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					Let’s retrace our steps, and undo things with <c>git restore</c> instead of <c>git reset</c>.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="sect4"-->
-        </paragraphs>
-
-				<paragraphs xml:id="_unstaging_a_staged_file_with_git_restore">
-					<title>Unstaging a Staged File with git restore</title>
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						The next two sections demonstrate how to work with your staging area and working directory changes with <c>git restore</c>. The nice part is that the command you use to determine the state of those two areas also reminds you how to undo changes to them. For example, let’s say you’ve changed two files and want to commit them as two separate changes, but you accidentally type <c>git add *</c> and stage them both. How can you unstage one of the two? The <c>git status</c> command reminds you:
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-					<pre>$ git add *
-$ git status
-On branch master
-Changes to be committed:
-  (use "git restore --staged &lt;file&gt;..." to unstage)
-    modified:   CONTRIBUTING.md
-    renamed:    README.md -&gt; README</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						Right below the “Changes to be committed” text, it says use <c>git restore --staged &lt;file&gt;…​</c> to unstage. So, let’s use that advice to unstage the <c>CONTRIBUTING.md</c> file:
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-					<pre>$ git restore --staged CONTRIBUTING.md
-$ git status
-On branch master
-Changes to be committed:
-  (use "git restore --staged &lt;file&gt;..." to unstage)
-    renamed:    README.md -&gt; README
-
-Changes not staged for commit:
-  (use "git add &lt;file&gt;..." to update what will be committed)
-  (use "git restore &lt;file&gt;..." to discard changes in working directory)
-    modified:   CONTRIBUTING.md</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						The <c>CONTRIBUTING.md</c> file is modified but once again unstaged.
-					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">-->
-
-<!-- div attr= class="sect4"-->
-				</paragraphs>
-
-				<paragraphs xml:id="_unmodifying_a_modified_file_with_git_restore">
-					<title>Unmodifying a Modified File with git restore</title>
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						What if you realize that you don’t want to keep your changes to the <c>CONTRIBUTING.md</c> file? How can you easily unmodify it — revert it back to what it looked like when you last committed (or initially cloned, or however you got it into your working directory)? Luckily, <c>git status</c> tells you how to do that, too. In the last example output, the unstaged area looks like this:
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-					<pre>Changes not staged for commit:
-  (use "git add &lt;file&gt;..." to update what will be committed)
-  (use "git restore &lt;file&gt;..." to discard changes in working directory)
-    modified:   CONTRIBUTING.md</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						It tells you pretty explicitly how to discard the changes you’ve made. Let’s do what it says:
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-					<pre>$ git restore CONTRIBUTING.md
-$ git status
-On branch master
-Changes to be committed:
-  (use "git restore --staged &lt;file&gt;..." to unstage)
-    renamed:    README.md -&gt; README
-    </pre>
-    
-
-
-        <p>
-          Important: It’s important to understand that <c>git restore &lt;file&gt;</c> is a dangerous command. Any local changes you made to that file are gone — Git just replaced that file with the last staged or committed version. Don’t ever use this command unless you absolutely know that you don’t want those unsaved local changes.
-        </p>
-				</paragraphs>
-
-		</subsection>
-
 		<subsection xml:id="_remote_repos">
 			<title>Working with Remotes</title>
 
@@ -1383,12 +1109,12 @@ remote: Compressing objects: 100% (36/36), done.
 remote: Total 43 (delta 10), reused 31 (delta 5)
 Unpacking objects: 100% (43/43), done.
 From https://github.com/paulboone/ticgit
- * [new branch]      master     -&gt; pb/master
+ * [new branch]      main     -&gt; pb/main
  * [new branch]      ticgit     -&gt; pb/ticgit</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					Paul’s <c>master</c> branch is now accessible locally as <c>pb/master</c> — you can merge it into one of your branches, or you can check out a local branch at that point if you want to inspect it. We’ll go over what branches are and how to use them in much more detail in the next subsection on Git Branching.
+					Paul’s <c>main</c> branch is now accessible locally as <c>pb/main</c> — you can merge it into one of your branches, or you can check out a local branch at that point if you want to inspect it. We’ll go over what branches are and how to use them in much more detail in the next subsection on Git Branching.
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
@@ -1418,7 +1144,7 @@ From https://github.com/paulboone/ticgit
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					If your current branch is set up to track a remote branch (see the next section on Git Branching for more information), you can use the <c>git pull</c> command to automatically fetch and then merge that remote branch into your current branch. This may be an easier or more comfortable workflow for you; and by default, the <c>git clone</c> command automatically sets up your local <c>master</c> branch to track the remote <c>master</c> branch (or whatever the default branch is called) on the server you cloned from. Running <c>git pull</c> generally fetches data from the server you originally cloned from and automatically tries to merge it into the code you’re currently working on.
+					If your current branch is set up to track a remote branch (see the next section on Git Branching for more information), you can use the <c>git pull</c> command to automatically fetch and then merge that remote branch into your current branch. This may be an easier or more comfortable workflow for you; and by default, the <c>git clone</c> command automatically sets up your local <c>main</c> branch to track the remote <c>main</c> branch (or whatever the default branch is called) on the server you cloned from. Running <c>git pull</c> generally fetches data from the server you originally cloned from and automatically tries to merge it into the code you’re currently working on.
 				</p><!--</div attr= class="paragraph">-->
 
 
@@ -1445,12 +1171,12 @@ From https://github.com/paulboone/ticgit
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					When you have your project at a point that you want to share, you have to push it upstream. The command for this is simple: <c>git push &lt;remote&gt; &lt;branch&gt;</c>. If you want to push your <c>master</c> branch to your <c>origin</c> server (again, cloning generally sets up both of those names for you automatically), then you can run this to push any commits you’ve done back up to the server:
+					When you have your project at a point that you want to share, you have to push it upstream. The command for this is simple: <c>git push &lt;remote&gt; &lt;branch&gt;</c>. If you want to push your <c>main</c> branch to your <c>origin</c> server (again, cloning generally sets up both of those names for you automatically), then you can run this to push any commits you’ve done back up to the server:
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
-				<pre>$ git push origin master</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+				<pre>$ git push origin main</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
 <!-- div attr= class="paragraph"-->
 				<p>

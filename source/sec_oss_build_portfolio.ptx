@@ -24,16 +24,16 @@
 		</p>
 	</subsection>
 
-	<exercise xml:id="exercise-learn-about-a-projects-leaders">
+	<exercise xml:id="ex-learn-about-a-projects-leaders">
 		<title>Exercise: Learn about a project’s leaders</title>
 
 		<p>
-		Revisit the project you blogged about in <xref ref="exercise-finding-a-project" />, and spend some time figuring out who some of the project leaders are. Read through the project wiki, mailing lists, and so on. What can you find out about the project leaders? What information do they make available about themselves? Given what you’ve read, what do you think about their work?
+		Revisit the project you blogged about in <xref ref="ex-finding-a-project" />, and spend some time figuring out who some of the project leaders are. Read through the project wiki, mailing lists, and so on. What can you find out about the project leaders? What information do they make available about themselves? Given what you’ve read, what do you think about their work?
 		</p>
 
     </exercise>
 
-	<exercise xml:id="exercise-write-your-own-oss-bio">
+	<exercise xml:id="ex-write-your-own-oss-bio">
 		<title>Exercise: Write your own OSS bio</title>
 
 		<p>

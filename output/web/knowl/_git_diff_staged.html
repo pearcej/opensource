@@ -15,8 +15,8 @@
 <p>If the <code class="code-inline tex2jax_ignore">git status</code> command is too vague for you — you want to know exactly what you changed, not just which files were changed — you can use the <code class="code-inline tex2jax_ignore">git diff</code> command. We’ll cover <code class="code-inline tex2jax_ignore">git diff</code> in more detail later, but you’ll probably use it most often to answer these two questions: What have you changed but not yet staged? And what have you staged that you are about to commit? Although <code class="code-inline tex2jax_ignore">git status</code> answers those questions very generally by listing the file names, <code class="code-inline tex2jax_ignore">git diff</code> shows you the exact lines added and removed — the patch, as it were.</p>
 <p>Let’s say you edit and stage the <code class="code-inline tex2jax_ignore">README</code> file again and then edit the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file without staging it. If you run your <code class="code-inline tex2jax_ignore">git status</code> command, you once again see something like this:</p>
 <pre class="code-block tex2jax_ignore">$ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch main
+Your branch is up-to-date with 'origin/main'.
 Changes to be committed:
   (use "git reset HEAD &lt;file&gt;..." to unstage)
 
@@ -61,8 +61,8 @@ index 0000000..03902a1
 <pre class="code-block tex2jax_ignore">$ git add CONTRIBUTING.md
 $ echo '# test line' &gt;&gt; CONTRIBUTING.md
 $ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch main
+Your branch is up-to-date with 'origin/main'.
 Changes to be committed:
   (use "git reset HEAD &lt;file&gt;..." to unstage)
 

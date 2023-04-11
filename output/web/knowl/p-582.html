@@ -11,8 +11,8 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>What if you realize that you don’t want to keep your changes to the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file? How can you easily unmodify it — revert it back to what it looked like when you last committed (or initially cloned, or however you got it into your working directory)? Luckily, <code class="code-inline tex2jax_ignore">git status</code> tells you how to do that, too. In the last example output, the unstaged area looks like this:</p>
-<span class="incontext"><a href="sec_git_basics.html#p-582" class="internal">in-context</a></span>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<p>When you create the commit by running <code class="code-inline tex2jax_ignore">git commit</code>, Git checksums each subdirectory (in this case, just the root project directory) and stores them as a tree object in the Git repository. Git then creates a commit object that has the metadata and a pointer to the root project tree so it can re-create that snapshot when needed.</p>
+<span class="incontext"><a href="sec_git_branching.html#p-582" class="internal">in-context</a></span>
 </body>
 </html>
