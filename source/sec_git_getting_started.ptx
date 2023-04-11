@@ -168,7 +168,7 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					The major difference between Git and most other VCS (Subversion and friends included) is the way Git thinks about its data. Conceptually, most other systems store information as a list of file-based changes. These other systems (CVS, Subversion, Perforce, Bazaar, and so on) think of the information they store as a set of files and the changes made to each file over time (this is commonly described as <em>delta-based</em> version control).
+					The major difference between Git and most other VCSs is the way Git thinks about its data. Conceptually, most other systems store information as a list of file-based changes. These other systems (CVS, Subversion, Perforce, Bazaar, and so on) think of the information they store as a set of files and the changes made to each file over time (This is commonly described as <em>delta-based</em> version control).
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="imageblock"-->
@@ -249,7 +249,7 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					When you make actions correctly in Git, nearly all of them only <em>add</em> data to the Git database. It is intended to be hard to get the system to do anything that is not undoable or to make it erase data in any way. As with any VCS, you can lose or mess up changes you haven’t committed yet, but after you commit a snapshot into Git, it is more difficult to lose, especially if you regularly push your database to another repository.
+					When you make actions correctly in Git, nearly all of them only <em>add</em> data to the Git database. It is intended to be hard to get Git to do anything that is not undoable or to make it erase data in any way. As with any VCS, you can lose or mess up changes you haven’t committed yet, but after you commit a snapshot into Git, it is more difficult to lose, especially if you regularly push your database to another repository. Having said this, novices can get themselves into a mess. Some advice is to always make sure you are working on a branch <em>other than main or master</em>, and always check to be sure you are on the intended branch before you begin working.
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -474,207 +474,68 @@ Note
 			There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to <url href="https://git-scm.com/download/win" visual="git-scm.com/download/win">https://git-scm.com/download/win</url> and the download will start automatically. Note that this is a project called Git for Windows, which is separate from Git itself; for more information on it, go to <url href="https://gitforwindows.org" visual="gitforwindows.org">https://gitforwindows.org</url>.
 		</p><!--</div attr= class="paragraph">-->
 
-	<!-- div attr= class="paragraph"-->
-		<p>
-			To get an automated installation you can use the <url href="https://chocolatey.org/packages/git" visual="chocolatey.org/packages/git">Git Chocolatey package</url>. Note that the Chocolatey package is community maintained.
-		</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
-
 	<!-- div attr= class="sect3"-->
 	</paragraphs>
 	</subsection>
-	<subsection xml:id="git_initial_set-up">
 
-	<title>Git Initial Set-up</title>
-
-	<paragraphs xml:id="_your_identity">
-		<title>Your Identity</title>
-
-	<!-- div attr= class="paragraph"-->
-		<p>
-			The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:
-		</p><!--</div attr= class="paragraph">-->
-
-	<!-- div attr= class="listingblock"-->
-	<!-- div attr= class="content"-->
-		<pre>$ git config --global user.name "John Doe"
-	$ git config --global user.email johndoe@example.com</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-	<!-- div attr= class="paragraph"-->
-		<p>
-			Again, you need to do this only once if you pass the <c>--global</c> option, because then Git will always use that information for anything you do on that system. If you want to override this with a different name or email address for specific projects, you can run the command without the <c>--global</c> option when you’re in that project.
-		</p><!--</div attr= class="paragraph">-->
-
-	<!-- div attr= class="paragraph"-->
-		<p>
-			Many of the GUI tools will help you do this when you first run them.
-		</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
-
-<!-- div attr= class="sect3"-->
-	</paragraphs>
-
-	<paragraphs xml:id="_editor">
-		<title>Your Editor</title>
+<subsection xml:id="_git_help">
+<title>Getting Help</title>
 
 <!-- div attr= class="paragraph"-->
-	<p>
-		Now that your identity is set up, you can configure the default text editor that will be used when Git needs you to type in a message. If not configured, Git uses your system’s default editor.
-	</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-	<p>
-		If you want to use a different text editor, such as VS Code, you can do the following:
-	</p><!--</div attr= class="paragraph">-->
+<p>
+If you ever need help while using Git, there are three equivalent ways to get help for any of the Git commands:
+</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
-	<pre>$ git config core.editor "code -n --wait"</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-	<p>
-		Note that on a Windows system, if you want to use a different text editor, you must specify the full path to its executable file. This will differ depending on how your computer is configured and how your editor is packaged.
-	</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-
-
-<!-- div attr= class="sect3"-->
-			</paragraphs>
-
-			<paragraphs xml:id="_your_default_branch_name">
-				<title>Your default branch name</title>
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					By default Git will create a branch called <em>main</em> when you create a new repository with <c>git init</c>. From Git version 2.28 onwards, you can set a different name for the initial branch.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					To set <em>production</em> as the default branch name do:
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-				<pre>$ git config --global init.defaultBranch production</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">--><!--</div attr= class="sect3">-->
-
-<!-- div attr= class="sect3"-->
-			</paragraphs>
-
-			<paragraphs xml:id="_checking_your_settings">
-				<title>Checking Your Settings</title>
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					If you want to check your configuration settings, you can use the <c>git config --list</c> command to list all the settings Git can find at that point:
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-				<pre>$ git config --list
-user.name=John Doe
-user.email=johndoe@example.com
-color.status=auto
-color.branch=auto
-color.interactive=auto
-color.diff=auto
-...</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					You may see keys more than once, because Git reads the same key from different files (<c>[path]/etc/gitconfig</c> and <c>~/.gitconfig</c>, for example). In this case, Git uses the last value for each unique key it sees.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					You can also check what Git thinks a specific key’s value is by typing <c>git config &lt;key&gt;</c>:
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-				<pre>$ git config user.name
-John Doe</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-
-<!-- 				<table>
-					<caption></caption>
-<col width="50%" />
-<col width="50%" />
-					<tabular>
-					<row class="odd">
-						<cell halign="left">
-Note</cell>
-						<cell halign="left">
-				<p>
-					Since Git might read the same configuration variable value from more than one file, it’s possible that you have an unexpected value for one of these values and you don’t know why. In cases like that, you can query Git as to the <em>origin</em> for that value, and it will tell you which configuration file had the final say in setting that value:
-				</p>
-				<pre>$ git config - -show-origin rerere.autoUpdate
-file:/home/johndoe/.gitconfig   false</pre></cell>
-					</row>
-					</tabular>
-				</table>
-
- -->
-			</paragraphs>
-		</subsection>
-
-		<subsection xml:id="_git_help">
-			<title>Getting Help</title>
-
-<!-- div attr= class="paragraph"-->
-			<p>
-				If you ever need help while using Git, there are three equivalent ways to get help for any of the Git commands:
-			</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-			<pre>$ git help &lt;verb&gt;
+<pre>$ git help &lt;verb&gt;
 $ git &lt;verb&gt; --help
 $ man git-&lt;verb&gt;</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
 <!-- div attr= class="paragraph"-->
-			<p>
-				For example, you can get help for the <c>git config</c> command by running this:
-			</p><!--</div attr= class="paragraph">-->
+<p>
+For example, you can get help for the <c>git config</c> command by running this:
+</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
-			<pre>$ git help config</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+<pre>$ git help config</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 <!-- div attr= class="paragraph"-->
-			<p>
-				If you don’t need the full-blown manpage help, but just need a quick refresher on the available options for a Git command, you can ask for the more concise “help” output with the <c>-h</c> option, as in:
-			</p><!--</div attr= class="paragraph">-->
+<p>
+If you don’t need the full-blown manpage help, but just need a quick refresher on the available options for a Git command, you can ask for the more concise “help” output with the <c>-h</c> option, as in:
+</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
-			<pre>$ git add -h
+<pre>$ git add -h
 usage: git add [&lt;options&gt;] [--] &lt;pathspec&gt;...
 
-    -n, --dry-run               dry run
-    -v, --verbose               be verbose
+-n, --dry-run               dry run
+-v, --verbose               be verbose
 
-    -i, --interactive           interactive picking
-    -p, --patch                 select hunks interactively
-    -e, --edit                  edit current diff and apply
-    -f, --force                 allow adding otherwise ignored files
-    -u, --update                update tracked files
-    --renormalize               renormalize EOL of tracked files (implies -u)
-    -N, --intent-to-add         record only the fact that the path will be added later
-    -A, --all                   add changes from all tracked and untracked files
-    --ignore-removal            ignore paths removed in the working tree (same as --no-all)
-    --refresh                   don't add, only refresh the index
-    --ignore-errors             just skip files which cannot be added because of errors
-    --ignore-missing            check if - even missing - files are ignored in dry run
-    --chmod (+|-)x              override the executable bit of the listed files
-    --pathspec-from-file &lt;file&gt; read pathspec from file
-    --pathspec-file-nul         with --pathspec-from-file, pathspec elements are separated with NUL character</pre>
+-i, --interactive           interactive picking
+-p, --patch                 select hunks interactively
+-e, --edit                  edit current diff and apply
+-f, --force                 allow adding otherwise ignored files
+-u, --update                update tracked files
+--renormalize               renormalize EOL of tracked files (implies -u)
+-N, --intent-to-add         record only the fact that the path will be added later
+-A, --all                   add changes from all tracked and untracked files
+--ignore-removal            ignore paths removed in the working tree (same as --no-all)
+--refresh                   don't add, only refresh the index
+--ignore-errors             just skip files which cannot be added because of errors
+--ignore-missing            check if - even missing - files are ignored in dry run
+--chmod (+|-)x              override the executable bit of the listed files
+--pathspec-from-file &lt;file&gt; read pathspec from file
+--pathspec-file-nul         with --pathspec-from-file, pathspec elements are separated with NUL character</pre>
 
-		</subsection>
+</subsection>
 
 <conclusion>
 	<title>Section Summary</title>
 	
 	<p>
-	You should have a basic understanding of what Git is and how it’s different from other centralized version control systems. You should also now have a working version of Git on your system that’s set up with your personal identity. It’s now time to learn some Git basics.
+	You should now have a basic understanding of what Git is and how it’s different from other centralized version control systems. You should also now have a working version of Git on your system that’s set up with your personal identity. It’s now time to learn some Git basics.
 	</p>
 </conclusion>
 

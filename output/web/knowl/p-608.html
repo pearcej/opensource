@@ -11,8 +11,8 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>If you clone a repository, the command automatically adds that remote repository under the name “origin”. So, <code class="code-inline tex2jax_ignore">git fetch origin</code> fetches any new work that has been pushed to that server since you cloned (or last fetched from) it. It’s important to note that the <code class="code-inline tex2jax_ignore">git fetch</code> command only downloads the data to your local repository — it doesn’t automatically merge it with any of your work or modify what you’re currently working on. You have to merge it manually into your work when you’re ready.</p>
-<span class="incontext"><a href="sec_git_basics.html#p-608" class="internal">in-context</a></span>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<p>When you make a commit, Git stores a commit object that contains a pointer to the snapshot of the content you staged. This object also contains the author’s name and email address, the message that you typed, and pointers to the commit or commits that directly came before this commit (its parent or parents): zero parents for the initial commit, one parent for a normal commit, and multiple parents for a commit that results from a merge of two or more branches.</p>
+<span class="incontext"><a href="sec_git_branching.html#p-608" class="internal">in-context</a></span>
 </body>
 </html>

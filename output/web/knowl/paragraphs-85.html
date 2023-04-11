@@ -11,11 +11,21 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<section class="paragraphs"><h4 class="heading"><span class="title">What makes a useful bug report?</span></h4>
-<p></p>
-<p>Take a closer look at the bugs in your project’s bug tracker. In particular, spend some time looking through bugs in the <em class="emphasis">new</em> state.</p>
-<p>It’s certain that some of these bug reports are not be very useful.</p>
-<p>For software to improve over time, good bug reports are absolutely essential. Users who file bugs, while almost always well-meaning, frequently don’t know how to write good bug reports — which is a problem, but also an opportunity for others to make positive contributions. Turning a bad bug report into a good bug report doesn’t require special developer knowledge; it just requires patience, persistence, a solid understanding of how the software works, and an understanding of what good bug reports look like.</p>
-<p>So what does a good bug report look like? Look at some of the characteristics of good bug reports.</p></section><span class="incontext"><a href="sec_bug_reports.html#paragraphs-85" class="internal">in-context</a></span>
+<section class="paragraphs"><h4 class="heading"><span class="title">Good bugs reports only report a single issue.</span></h4>
+<p><pre class="code-block tex2jax_ignore">Bad: When I load the latest Foomail client, it crashes. 
+Also, I'm getting screen lockups in Barchat. I think they're related. 
+
+Good: Bug 1: Foomail client crashes. 
+Bug 2: Lockups in Barchat. 
+
+Best: Bug 1: Foomail client crashes. 
+I think it may be related to lockups in Barchat 
+(and here's some evidence). 
+Bug 2: Lockups in Barchat. 
+I think it might be related to Foomail client crashes 
+(and here's some evidence).
+</pre></p>
+<p>It’s tempting sometimes to see multiple issues, convince yourself that they are related, and then file a single bug on the whole thing.</p>
+<p>Don’t do that. You may very well be right that the issues are related — but you may also be wrong, and in either case, two different issues deserve two different bug reports. In our example above, it may be that the issues with <dfn class="terminology">Foomail</dfn> and <dfn class="terminology">Barchat</dfn> are actually related to a problem with <dfn class="terminology">Bazlib</dfn>, which is a shared component of <dfn class="terminology">Foomail</dfn> and <dfn class="terminology">Barchat</dfn>. Each bug must be fixed and tested in its own context, and that won’t work if they’re all stuffed in the same bug report.</p></section><span class="incontext"><a href="sec_bug_reports.html#paragraphs-85" class="internal">in-context</a></span>
 </body>
 </html>

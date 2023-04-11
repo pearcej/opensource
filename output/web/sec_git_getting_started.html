@@ -289,80 +289,45 @@ eBookConfig.enable_chatcodes =  false;
 </pre>
 <p id="p-454">If you don’t have it installed already, it will prompt you to install it.</p>
 <p id="p-455">If you want a more up to date version, you can also install it via a binary installer. A macOS Git installer is maintained and available for download at the Git website, at <a class="external" href="https://git-scm.com/download/mac" target="_blank">https://git-scm.com/download/mac</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-138" id="fn-138"><sup> 2 </sup></a>.</p></section><section class="paragraphs" id="_installing_on_windows"><h4 class="heading"><span class="title">Installing on Windows.</span></h4>
-<p id="p-456">There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to <a class="external" href="https://git-scm.com/download/win" target="_blank">https://git-scm.com/download/win</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-139" id="fn-139"><sup> 3 </sup></a> and the download will start automatically. Note that this is a project called Git for Windows, which is separate from Git itself; for more information on it, go to <a class="external" href="https://gitforwindows.org" target="_blank">https://gitforwindows.org</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-140" id="fn-140"><sup> 4 </sup></a>.</p>
-<p id="p-457">To get an automated installation you can use the <a class="external" href="https://chocolatey.org/packages/git" target="_blank">Git Chocolatey package</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-141" id="fn-141"><sup> 5 </sup></a>. Note that the Chocolatey package is community maintained.</p></section></section><section class="subsection" id="git_initial_set-up"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">5.2.6</span> <span class="title">Git Initial Set-up</span>
+<p id="p-456">There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to <a class="external" href="https://git-scm.com/download/win" target="_blank">https://git-scm.com/download/win</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-139" id="fn-139"><sup> 3 </sup></a> and the download will start automatically. Note that this is a project called Git for Windows, which is separate from Git itself; for more information on it, go to <a class="external" href="https://gitforwindows.org" target="_blank">https://gitforwindows.org</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-140" id="fn-140"><sup> 4 </sup></a>.</p></section></section><section class="subsection" id="_git_help"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.2.6</span> <span class="title">Getting Help</span>
 </h3>
-<section class="paragraphs" id="_your_identity"><h4 class="heading"><span class="title">Your Identity.</span></h4>
-<p id="p-458">The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:</p>
-<pre class="code-block tex2jax_ignore">$ git config --global user.name "John Doe"
-	$ git config --global user.email johndoe@example.com
-</pre>
-<p id="p-459">Again, you need to do this only once if you pass the <code class="code-inline tex2jax_ignore">--global</code> option, because then Git will always use that information for anything you do on that system. If you want to override this with a different name or email address for specific projects, you can run the command without the <code class="code-inline tex2jax_ignore">--global</code> option when you’re in that project.</p>
-<p id="p-460">Many of the GUI tools will help you do this when you first run them.</p></section><section class="paragraphs" id="_editor"><h4 class="heading"><span class="title">Your Editor.</span></h4>
-<p id="p-461">Now that your identity is set up, you can configure the default text editor that will be used when Git needs you to type in a message. If not configured, Git uses your system’s default editor.</p>
-<p id="p-462">If you want to use a different text editor, such as VS Code, you can do the following:</p>
-<pre class="code-block tex2jax_ignore">$ git config core.editor "code -n --wait"
-</pre>
-<p id="p-463">Note that on a Windows system, if you want to use a different text editor, you must specify the full path to its executable file. This will differ depending on how your computer is configured and how your editor is packaged.</p></section><section class="paragraphs" id="_your_default_branch_name"><h4 class="heading"><span class="title">Your default branch name.</span></h4>
-<p id="p-464">By default Git will create a branch called <em class="emphasis">main</em> when you create a new repository with <code class="code-inline tex2jax_ignore">git init</code>. From Git version 2.28 onwards, you can set a different name for the initial branch.</p>
-<p id="p-465">To set <em class="emphasis">production</em> as the default branch name do:</p>
-<pre class="code-block tex2jax_ignore">$ git config --global init.defaultBranch production
-</pre></section><section class="paragraphs" id="_checking_your_settings"><h4 class="heading"><span class="title">Checking Your Settings.</span></h4>
-<p id="p-466">If you want to check your configuration settings, you can use the <code class="code-inline tex2jax_ignore">git config --list</code> command to list all the settings Git can find at that point:</p>
-<pre class="code-block tex2jax_ignore">$ git config --list
-user.name=John Doe
-user.email=johndoe@example.com
-color.status=auto
-color.branch=auto
-color.interactive=auto
-color.diff=auto
-...
-</pre>
-<p id="p-467">You may see keys more than once, because Git reads the same key from different files (<code class="code-inline tex2jax_ignore">[path]/etc/gitconfig</code> and <code class="code-inline tex2jax_ignore">~/.gitconfig</code>, for example). In this case, Git uses the last value for each unique key it sees.</p>
-<p id="p-468">You can also check what Git thinks a specific key’s value is by typing <code class="code-inline tex2jax_ignore">git config &lt;key&gt;</code>:</p>
-<pre class="code-block tex2jax_ignore">$ git config user.name
-John Doe
-</pre></section></section><section class="subsection" id="_git_help"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">5.2.7</span> <span class="title">Getting Help</span>
-</h3>
-<p id="p-469">If you ever need help while using Git, there are three equivalent ways to get help for any of the Git commands:</p>
+<p id="p-457">If you ever need help while using Git, there are three equivalent ways to get help for any of the Git commands:</p>
 <pre class="code-block tex2jax_ignore">$ git help &lt;verb&gt;
 $ git &lt;verb&gt; --help
 $ man git-&lt;verb&gt;
 </pre>
-<p id="p-470">For example, you can get help for the <code class="code-inline tex2jax_ignore">git config</code> command by running this:</p>
+<p id="p-458">For example, you can get help for the <code class="code-inline tex2jax_ignore">git config</code> command by running this:</p>
 <pre class="code-block tex2jax_ignore">$ git help config
 </pre>
-<p id="p-471">If you don’t need the full-blown manpage help, but just need a quick refresher on the available options for a Git command, you can ask for the more concise “help” output with the <code class="code-inline tex2jax_ignore">-h</code> option, as in:</p>
+<p id="p-459">If you don’t need the full-blown manpage help, but just need a quick refresher on the available options for a Git command, you can ask for the more concise “help” output with the <code class="code-inline tex2jax_ignore">-h</code> option, as in:</p>
 <pre class="code-block tex2jax_ignore">$ git add -h
 usage: git add [&lt;options&gt;] [--] &lt;pathspec&gt;...
 
-    -n, --dry-run               dry run
-    -v, --verbose               be verbose
+-n, --dry-run               dry run
+-v, --verbose               be verbose
 
-    -i, --interactive           interactive picking
-    -p, --patch                 select hunks interactively
-    -e, --edit                  edit current diff and apply
-    -f, --force                 allow adding otherwise ignored files
-    -u, --update                update tracked files
-    --renormalize               renormalize EOL of tracked files (implies -u)
-    -N, --intent-to-add         record only the fact that the path will be added later
-    -A, --all                   add changes from all tracked and untracked files
-    --ignore-removal            ignore paths removed in the working tree (same as --no-all)
-    --refresh                   don't add, only refresh the index
-    --ignore-errors             just skip files which cannot be added because of errors
-    --ignore-missing            check if - even missing - files are ignored in dry run
-    --chmod (+|-)x              override the executable bit of the listed files
-    --pathspec-from-file &lt;file&gt; read pathspec from file
-    --pathspec-file-nul         with --pathspec-from-file, pathspec elements are separated with NUL character
+-i, --interactive           interactive picking
+-p, --patch                 select hunks interactively
+-e, --edit                  edit current diff and apply
+-f, --force                 allow adding otherwise ignored files
+-u, --update                update tracked files
+--renormalize               renormalize EOL of tracked files (implies -u)
+-N, --intent-to-add         record only the fact that the path will be added later
+-A, --all                   add changes from all tracked and untracked files
+--ignore-removal            ignore paths removed in the working tree (same as --no-all)
+--refresh                   don't add, only refresh the index
+--ignore-errors             just skip files which cannot be added because of errors
+--ignore-missing            check if - even missing - files are ignored in dry run
+--chmod (+|-)x              override the executable bit of the listed files
+--pathspec-from-file &lt;file&gt; read pathspec from file
+--pathspec-file-nul         with --pathspec-from-file, pathspec elements are separated with NUL character
 </pre></section><section class="conclusion" id="conclusion-7"><h3 class="heading">Section Summary.<span></span>
 </h3>
-<p id="p-472">You should have a basic understanding of what Git is and how it’s different from other centralized version control systems. You should also now have a working version of Git on your system that’s set up with your personal identity. It’s now time to learn some Git basics.</p></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-137"><div class="fn"><code class="code-inline tex2jax_ignore">git-scm.com/download/linux</code></div></div>
+<p id="p-460">You should have a basic understanding of what Git is and how it’s different from other centralized version control systems. You should also now have a working version of Git on your system that’s set up with your personal identity. It’s now time to learn some Git basics.</p></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-137"><div class="fn"><code class="code-inline tex2jax_ignore">git-scm.com/download/linux</code></div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-138"><div class="fn"><code class="code-inline tex2jax_ignore">git-scm.com/download/mac</code></div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-139"><div class="fn"><code class="code-inline tex2jax_ignore">git-scm.com/download/win</code></div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-140"><div class="fn"><code class="code-inline tex2jax_ignore">gitforwindows.org</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-141"><div class="fn"><code class="code-inline tex2jax_ignore">chocolatey.org/packages/git</code></div></div>
 </div></main>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
