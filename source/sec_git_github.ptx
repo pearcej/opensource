@@ -8,14 +8,14 @@
 		<p> The most popular SECPs including <url href="https://github.com/" visual="github.com/">GitHub</url>, 
             <url href="https://gitea.io/" visual="gitea.io">Gitea</url>, 
             <url href="https://gitlab.com/" visual="gitlab.com/">GitLab</url>, and 
-            <url href="https://bitbucket.org/" visual="bitbucket.org">Bitbucket</url> all use Git for version control and all provide cloud storage space for Git repositories. Of these, GitHub is the single largest host for Git repositories and is the central point of collaboration for millions of developers and projects. A large percentage of all Git repositories are hosted on GitHub, and many open-source projects use it for Git hosting, issue tracking, code review, and other things. So while it’s not a direct part of the Git open source project, there’s a good chance that you’ll want or need to interact with GitHub at some point while using Git professionally. Other hosting services work similarly.
+            <url href="https://bitbucket.org/" visual="bitbucket.org">Bitbucket</url>. All of these use Git for version control and all provide cloud storage space for Git repositories. Of these, GitHub is the single largest host for Git repositories and is the central point of collaboration for millions of developers and projects. A large percentage of all Git repositories are hosted on GitHub, and many open-source projects use it for Git hosting, issue tracking, code review, and other things. So while it’s not a direct part of the Git open source project, there’s a good chance that you’ll want or need to interact with GitHub at some point while using Git professionally. Other hosting services work similarly.
 		</p>
 
 		<p>
 			This section is about using GitHub effectively. We’ll cover signing up for and managing an account, creating and using Git repositories, common workflows to contribute to projects and to accept contributions to yours, GitHub’s programmatic interface and lots of little tips to make your life easier in general.
 		</p>
 			<p>
-				Obviously, the first thing you need to do is set up a free user account. Simply visit <url href="https://github.com" visual="github.com">https://github.com</url> and follow the directions.
+				Obviously, the first thing you need to do is set up a free user account. If you do not already have one, simply visit <url href="https://github.com" visual="github.com">https://github.com</url> and follow the directions.
 			</p><!--</div attr= class="paragraph">-->
 		</introduction>
 
@@ -25,7 +25,7 @@
 
 <!-- div attr= class="paragraph"-->
 			<p>
-				Now that your account is set up, let’s walk through some details that could be useful in helping you contribute to an existing project.
+				Next, let’s walk through some details that could be useful in helping you contribute to an existing open source project.
 			</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="sect3"-->
@@ -40,7 +40,7 @@
 
 <!-- div attr= class="admonitionblock note"-->
 				<p>
-					Note: Historically, the term “fork” has been somewhat negative in context, meaning that someone took an open source project in a different direction, sometimes creating a competing project and splitting the contributors. In GitHub, a “fork” is simply the same project in your own namespace, allowing you to make changes to a project publicly as a way to contribute in a more open manner.
+					In GitHub, a “fork” is simply the same project in your own namespace, allowing you to make changes to a project publicly as a way to contribute in a more open manner. Note: Historically, the term “fork” has been somewhat negative in context, meaning that someone took an open source project in a different direction, sometimes creating a competing project and splitting the contributors. 
 				</p>
 
 <!-- div attr= class="paragraph"-->
@@ -72,7 +72,7 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					After you read any contributor's page and get a sense of the community norms, here’s how the Git park generally works:
+					After you read the project's README contributor's page and get a sense of the community norms, here’s how the Git workflow generally works:
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="olist arabic"-->
@@ -91,7 +91,7 @@
 
 					<li>
 									<p>
-					Make some commits to improve the project, being sure to follow community expectations.
+					Make some commits to improve the project, being sure to follow community expectations, linking the issue that you are fixing.
 				</p>
 					</li>
 
@@ -140,7 +140,7 @@
 <!-- div attr= class="admonitionblock tip"-->
 
 				<p>
-					Note: You can use the official <term>GitHub CLI</term> tool instead of the GitHub web interface for most things. The tool can be used on Windows, MacOS, and Linux systems. Go to the <url href="https://cli.github.com/">GitHub CLI homepage</url> for installation instructions and the manual.
+					Note: You can use the official <term>GitHub CLI </term> tool instead of the GitHub web interface for most things. The tool can be used on Windows, MacOS, and Linux systems. Go to the <url href="https://cli.github.com/">GitHub CLI homepage</url> for installation instructions and the manual.
 				</p>
 
 <!-- div attr= class="sect4"-->
@@ -398,15 +398,13 @@ To https://github.com/tonychacon/blink
 					<p>
 						Note: It’s important to note that you can also open a Pull Request between two branches in the same repository. If you’re working on a feature with someone and you both have write access to the project, you can push a topic branch to the repository and open a Pull Request on it to the <c>main</c> branch of that same project to initiate the code review and discussion process. No forking necessary.
 					</p>
-<p>
 	
 
-					<exercise>
+					<exercise xml:id="ex-intro-github">
 						<title>Introduction to Github</title>
-						Go to <url href="https://github.com/skills/introduction-to-github" visual="github.com/skills/introduction-to-github">Introduction to Github</url> and try all parts of the exercise. It should take an hour or less. 
+						Go to <url href="https://github.com/skills/introduction-to-github" visual="github.com/skills/introduction-to-github">Introduction to Github</url> and try all parts of the exercise. It should take an hour or less.
 						
 					</exercise>
-</p>
 <!-- div attr= class="sect3"-->
 				</paragraphs>
 			</paragraphs>
