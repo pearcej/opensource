@@ -10,6 +10,10 @@
             <url href="https://gitlab.com/" visual="gitlab.com/">GitLab</url>, and 
             <url href="https://bitbucket.org/" visual="bitbucket.org">Bitbucket</url>. All of these use Git for version control and all provide cloud storage space for Git repositories. Of these, GitHub is the single largest host for Git repositories and is the central point of collaboration for millions of developers and projects. A large percentage of all Git repositories are hosted on GitHub, and many open-source projects use it for Git hosting, issue tracking, code review, and other things. So while it’s not a direct part of the Git open source project, there’s a good chance that you’ll want or need to interact with GitHub at some point while using Git professionally. Other hosting services work similarly.
 		</p>
+		<figure xml:id="video-what-is-github">
+			<caption>What is Github?</caption>
+			<video youtube="pBy1zgt0XPc" width="80%" />
+		</figure>
 
 		<p>
 			This section is about using GitHub effectively. We’ll cover signing up for and managing an account, creating and using Git repositories, common workflows to contribute to projects and to accept contributions to yours, GitHub’s programmatic interface and lots of little tips to make your life easier in general.
