@@ -5,19 +5,19 @@
 
 		<introduction>
 <!-- div attr=-->
-		<p> The most popular SECPs including <url href="https://github.com/" visual="github.com/">GitHub</url>, 
+		<p> The most popular SECPs include <url href="https://github.com/" visual="github.com/">GitHub</url>, 
             <url href="https://gitea.io/" visual="gitea.io">Gitea</url>, 
             <url href="https://gitlab.com/" visual="gitlab.com/">GitLab</url>, and 
             <url href="https://bitbucket.org/" visual="bitbucket.org">Bitbucket</url>. All of these use Git for version control and all provide cloud storage space for Git repositories. Of these, GitHub is the single largest host for Git repositories and is the central point of collaboration for millions of developers and projects. A large percentage of all Git repositories are hosted on GitHub, and many open-source projects use it for Git hosting, issue tracking, code review, and other things. So while it’s not a direct part of the Git open source project, there’s a good chance that you’ll want or need to interact with GitHub at some point while using Git professionally. Other hosting services work similarly.
+		</p>
+		<p>
+			Watch the following video from Github to learn more.
 		</p>
 		<figure xml:id="video-what-is-github">
 			<caption>What is Github?</caption>
 			<video youtube="pBy1zgt0XPc" width="80%" />
 		</figure>
 
-		<p>
-			This section is about using GitHub effectively. We’ll cover signing up for and managing an account, creating and using Git repositories, common workflows to contribute to projects and to accept contributions to yours, GitHub’s programmatic interface and lots of little tips to make your life easier in general.
-		</p>
 			<p>
 				Obviously, the first thing you need to do is set up a free user account. If you do not already have one, simply visit <url href="https://github.com" visual="github.com">https://github.com</url> and follow the directions.
 			</p><!--</div attr= class="paragraph">-->
@@ -44,7 +44,7 @@
 
 <!-- div attr= class="admonitionblock note"-->
 				<p>
-					In GitHub, a “fork” is simply the same project in your own namespace, allowing you to make changes to a project publicly as a way to contribute in a more open manner. Note: Historically, the term “fork” has been somewhat negative in context, meaning that someone took an open source project in a different direction, sometimes creating a competing project and splitting the contributors. 
+					In GitHub, a “fork” is simply a copy of the project in your own namespace, allowing you to make changes to a project publicly as a way to contribute in an open manner. Note: Historically, the term “fork” has sometimes had a negative connotation if it meant that someone took an open source project in a different direction, creating a competing project and splitting the contributors. 
 				</p>
 
 <!-- div attr= class="paragraph"-->
@@ -54,15 +54,22 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					To fork a project, visit the project page and click the “Fork” button at the top-right of the page.
+					To fork a project, visit the project page and click the “Fork” button at the top-right of the page. This gives you a copy of the project in the Github cloud.
 				</p><!--</div attr= class="paragraph">-->
 
-
-<!-- div attr= class="paragraph"-->
 				<p>
-					After a few seconds, you’ll be taken to your new project page, with your own writeable copy of the code.
-				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
-
+					Once you have your own fork on Github, you need to <term>clone</term> a local copy down to a place where you can edit it, most typically your own local computer. <em>Note that while you can make small changes in Github, it is not a good practice to do so.</em>
+				</p><!--</div attr= class="paragraph">-->
+				<p>
+					Let's try this!
+				</p>
+				<exercise xml:id="exercise-github-forking">
+					<title><term>Exercise – Fork a Repo</term></title>
+			
+					<p>
+						Go to <url href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">Github: Fork a Repo</url> and complete the provided exercise with the octocat/Spoon-Knife repository.
+					</p>
+				  </exercise>
 <!-- div attr= class="sect3"-->
 			</paragraphs>
 
@@ -71,7 +78,7 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					GitHub is designed around a particular collaboration workflow, centered on pull requests. This flow works whether you’re collaborating with a tightly-knit team in a single shared repository, or a globally-distributed company or network of strangers contributing to a project through dozens of forks. This workflow is centered on the the idea of a branching workflow covered in <xref ref="sec_git_branching" />.
+					GitHub is designed around a particular collaboration workflow, centered on pull requests and idea of a branches as covered in <xref ref="sec_git_branching" />.. This flow works whether you’re collaborating with a tightly-knit team in a single shared repository, or a globally-distributed company or network of strangers contributing to a project through dozens of forks. 
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -89,19 +96,19 @@
 
 					<li>
 									<p>
-					Create a topic branch from <c>main</c> (or <c>master</c>, depending upon the project).
+					Create your own topic branch from <c>main</c> (or <c>master</c> or another branch name, depending upon the project).
 				</p>
 					</li>
 
 					<li>
 									<p>
-					Make some commits to improve the project, being sure to follow community expectations, linking the issue that you are fixing.
+					Make some commits to improve the project, being sure to follow community expectations, such as linking the issue that you are fixing.
 				</p>
 					</li>
 
 					<li>
 									<p>
-					Push this branch to your GitHub project.
+					Push this branch to your GitHub fork.
 				</p>
 					</li>
 
@@ -119,7 +126,7 @@
 
 					<li>
 									<p>
-					The project owner merges or closes the Pull Request.
+					Hopefully, the project owner eventually merges or closes the Pull Request.
 				</p>
 					</li>
 
@@ -133,166 +140,31 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-<!-- 					This is basically the Integration Manager workflow covered in <url href="ch00/_integration_manager">Integration-Manager Workflow</url>, but instead of using email to communicate and review changes, teams use GitHub’s web based tools. -->
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
 					Let’s walk through an example of proposing a change to an open source project hosted on GitHub using this flow.
 				</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="admonitionblock tip"-->
+				<exercise xml:id="exercise-github-flow">
+					<title><term>Exercise – Github Flow</term></title>
+			
+					<p>
+						Go to <url href="https://docs.github.com/en/get-started/quickstart/github-flow ">Github Flow</url> and complete the provided exercise with one of your own repositories. 
+					</p>
+				</exercise>
 
-				<p>
-					Note: You can use the official <term>GitHub CLI </term> tool instead of the GitHub web interface for most things. The tool can be used on Windows, MacOS, and Linux systems. Go to the <url href="https://cli.github.com/">GitHub CLI homepage</url> for installation instructions and the manual.
-				</p>
-
-<!-- div attr= class="sect4"-->
 
 				<paragraphs xml:id="_creating_a_pull_request">
 					<title>Creating a Pull Request</title>
 
-<!-- div attr= class="paragraph"-->
 					<p>
-						Tony is looking for code to run on his Arduino programmable microcontroller and has found a great program file on GitHub at <url href="https://github.com/schacon/blink">https://github.com/schacon/blink</url>.
+						You can always go to the “Branches” page at <c>https://github.com/&lt;user&gt;/&lt;project&gt;/branches</c> to locate your branch and open a new Pull Request from there.
 					</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-blink-01-start">
-                    <caption>The project we want to contribute to</caption>
-                    <image source='github-blink-01-start.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= class="imageblock">-->
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						The only problem is that the blinking rate is too fast. We think it’s much nicer to wait 3 seconds instead of 1 in between each state change. So let’s improve the program and submit it back to the project as a proposed change.
+						You can also see a list of the commits in our topic branch that are “ahead” of the <c>main</c> or  <c>master</c> branch (in this case, just the one) and a unified diff of all the changes that will be made should this branch get merged by the project owner.
 					</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="paragraph"-->
-					<p>
-						First, we click the 'Fork' button as mentioned earlier to get our own copy of the project. Our user name here is “tonychacon” so our copy of this project is at <url href="https://github.com/tonychacon/blink"><c>https://github.com/tonychacon/blink</c></url> and that’s where we can edit it. We will clone it locally, create a topic branch, make the code change and finally push that change back up to GitHub.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-					<pre>$ git clone https://github.com/tonychacon/blink (1)
-Cloning into 'blink'...
-
-$ cd blink
-$ git checkout -b slow-blink (2)
-Switched to a new branch 'slow-blink'
-
-$ sed -i '' 's/1000/3000/' blink.ino (macOS) (3)
-# If you're on a Linux system, do this instead:
-# $ sed -i 's/1000/3000/' blink.ino (3)
-
-$ git diff --word-diff (4)
-diff --git a/blink.ino b/blink.ino
-index 15b9911..a6cc5a5 100644
---- a/blink.ino
-+++ b/blink.ino
-@@ -18,7 +18,7 @@ void setup() {
-// the loop routine runs over and over again forever:
-void loop() {
-  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
-  [-delay(1000);-]{+delay(3000);+}               // wait for a second
-  digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
-  [-delay(1000);-]{+delay(3000);+}               // wait for a second
-}
-
-$ git commit -a -m 'Change delay to 3 seconds' (5)
-[slow-blink 5ca509d] Change delay to 3 seconds
- 1 file changed, 2 insertions(+), 2 deletions(-)
-
-$ git push origin slow-blink (6)
-Username for 'https://github.com': tonychacon
-Password for 'https://tonychacon@github.com':
-Counting objects: 5, done.
-Delta compression using up to 8 threads.
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 340 bytes | 0 bytes/s, done.
-Total 3 (delta 1), reused 0 (delta 0)
-To https://github.com/tonychacon/blink
- * [new branch]      slow-blink -&gt; slow-blink</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="colist arabic"-->
-					<p><ol>
-						<li>
-											<p>
-						Clone our fork of the project locally.
-					</p>
-						</li>
-
-						<li>
-											<p>
-						Create a descriptive topic branch.
-					</p>
-						</li>
-
-						<li>
-											<p>
-						Make our change to the code.
-					</p>
-						</li>
-
-						<li>
-											<p>
-						Check that the change is good.
-					</p>
-						</li>
-
-						<li>
-											<p>
-						Commit our change to the topic branch.
-					</p>
-						</li>
-
-						<li>
-											<p>
-						Push our new topic branch back up to our GitHub fork.
-					</p>
-						</li>
-
-					</ol></p><!--</div attr= class="colist arabic">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						Now if we go back to our fork on GitHub, we can see that GitHub noticed that we pushed a new topic branch up and presents us with a big green button to check out our changes and open a Pull Request to the original project.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						You can alternatively go to the “Branches” page at <c>https://github.com/&lt;user&gt;/&lt;project&gt;/branches</c> to locate your branch and open a new Pull Request from there.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-blink-02-pr">
-                    <caption>Pull Request button</caption>
-                    <image source='github-blink-02-pr.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						If we click that green button, we’ll see a screen that asks us to give our Pull Request a title and description. It is almost always worthwhile to put some effort into this, since a good description helps the owner of the original project determine what you were trying to do, whether your proposed changes are correct, and whether accepting the changes would improve the original project.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						We also see a list of the commits in our topic branch that are “ahead” of the <c>main</c> or  <c>master</c> branch (in this case, just the one) and a unified diff of all the changes that will be made should this branch get merged by the project owner.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-blink-03-pull-request-open">
-                    <caption>Pull Request creation page</caption>
-                    <image source='github-blink-03-pull-request-open.png'/><!--</div attr= class="content">-->
-                    </figure>
 
 <!-- div attr= class="paragraph"-->
 					<p>
@@ -302,8 +174,17 @@ To https://github.com/tonychacon/blink
 <!-- div attr= class="admonitionblock note"-->
 
 					<p>
-						Note: Though Pull Requests are used commonly for public projects like this when the contributor has a complete change ready to be made, it’s also often used in internal projects <em>at the beginning</em> of the development cycle. Since you can keep pushing to the topic branch even <term>after</term> the Pull Request is opened, it’s often opened early and used as a way to iterate on work as a team within a context, rather than opened at the very end of the process.
+						Note: Though Pull Requests are used commonly for public projects when the contributor has a complete change ready to be made, it’s also often used in internal projects <em>at the beginning</em> of the development cycle. Since you can keep pushing to the topic branch even <term>after</term> the Pull Request is opened, it’s often opened early and used as a way to iterate on work as a team within a context, rather than opened at the very end of the process.
 					</p>
+
+					<p>
+						Let's give this a try!
+					</p>
+
+					<exercise xml:id="ex-intro-github">
+						<title>Introduction to Github</title>
+						Go to <url href="https://github.com/skills/introduction-to-github" visual="github.com/skills/introduction-to-github">Introduction to Github</url> and try all parts of the exercise. It should take an hour or less.
+					</exercise>
 
 <!-- div attr= class="sect4"-->
 				</paragraphs>
@@ -321,76 +202,46 @@ To https://github.com/tonychacon/blink
 						Where this conversation may take place over email in the workflows presented in <url href="ch00/ch05-distributed-git">Distributed Git</url>, on GitHub this happens online. The project owner can review the unified diff and leave a comment by clicking on any of the lines.
 					</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-blink-04-pr-comment">
-                    <caption>Comment on a specific line of code in a Pull Request</caption>
-                    <image source='github-blink-04-pr-comment.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= class="imageblock">-->
+
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						Once the maintainer makes this comment, the person who opened the Pull Request (and indeed, anyone else watching the repository) will get a notification. We’ll go over customizing this later, but if he had email notifications turned on, Tony would get an email like this:
+						Once the maintainer makes a  comment, the person who opened the Pull Request (and indeed, anyone else watching the repository) will get a notification. 
 					</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= xml:id="_email_notification" class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-blink-04-email">
-                    <caption>Comments sent as email notifications</caption>
-                    <image source='github-blink-04-email.png'/><!--</div attr= class="content">-->
-                    </figure>
 <!-- div attr= class="title"-->
 <!--</div attr= class="title">--><!--</div attr= xml:id="_email_notification" class="imageblock">-->
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						Anyone can also leave general comments on the Pull Request. In <url href="ch00/_pr_discussion">Pull Request discussion page</url> we can see an example of the project owner both commenting on a line of code and then leaving a general comment in the discussion section. You can see that the code comments are brought into the conversation as well.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= xml:id="_pr_discussion" class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-blink-05-general-comment">
-                    <caption>Pull Request discussion page</caption>
-                    <image source='github-blink-05-general-comment.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_pr_discussion" class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						Now the contributor can see what they need to do in order to get their change accepted. Luckily this is very straightforward. Where over email you may have to re-roll your series and resubmit it to the mailing list, with GitHub you simply commit to the topic branch again and push, which will automatically update the Pull Request. In <url href="ch00/_pr_final">Pull Request final</url> you can also see that the old code comment has been collapsed in the updated Pull Request, since it was made on a line that has since been changed.
+						Note that anyone can also leave general comments on the Pull Request. 
 					</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						Adding commits to an existing Pull Request doesn’t trigger a notification, so once Tony has pushed his corrections he decides to leave a comment to inform the project owner that he made the requested change.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= xml:id="_pr_final" class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-blink-06-final">
-                    <caption>Pull Request final</caption>
-                    <image source='github-blink-06-final.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_pr_final" class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						An interesting thing to notice is that if you click on the “Files Changed” tab on this Pull Request, you’ll get the “unified” diff — that is, the total aggregate difference that would be introduced to your main branch if this topic branch was merged in. In <c>git diff</c> terms, it basically automatically shows you <c>git diff main&lt;branch&gt;</c> for the branch this Pull Request is based on. See 
-						<url href="ch00/_what_is_introduced">Determining What Is Introduced</url> for more about this type of diff.
+						Now the contributor can see what they need to do in order to get their change accepted. Luckily this is very straightforward. With GitHub you simply commit to the same topic branch again and push, which will automatically update the Pull Request. 
 					</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						The other thing you’ll notice is that GitHub checks to see if the Pull Request merges cleanly and provides a button to do the merge for you on the server. This button only shows up if you have write access to the repository and a trivial merge is possible. If you click it GitHub will perform a “non-fast-forward” merge, meaning that even if the merge <term>could</term> be a fast-forward, it will still create a merge commit.
+						Adding commits to an existing Pull Request doesn’t trigger a notification, so once you push corrections you might want to to leave a comment to inform the project owner that you made the requested change.
+					</p><!--</div attr= class="paragraph">-->
+
+
+
+<!-- div attr= class="paragraph"-->
+					<p>
+						An interesting thing to notice is that if you click on the “Files Changed” tab on any Pull Request, you’ll get a “unified” diff — that is, the total aggregate difference that would be introduced the main branch if this topic branch was merged in. In <c>git diff</c> terms, it basically automatically shows you <c>git diff main&lt;branch&gt;</c> for the branch this Pull Request is based on. 
 					</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						If you would prefer, you can simply pull the branch down and merge it locally. If you merge this branch into the <c>main</c> branch and push it to GitHub, the Pull Request will automatically be closed.
+						GitHub always checks to see if the Pull Request merges cleanly and provides a button to do the merge for you on the server. This button only shows up if you have write access to the repository and a trivial merge is possible. If you click it GitHub will perform a “non-fast-forward” merge, meaning that even if the merge <term>could</term> be a fast-forward, it will still create a merge commit.
+					</p><!--</div attr= class="paragraph">-->
+
+<!-- div attr= class="paragraph"-->
+					<p>
+						If you  prefer, you can simply pull the branch down and merge it locally. If you merge this branch into the <c>main</c> branch and push it to GitHub, the Pull Request will automatically be closed.
 					</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -403,12 +254,6 @@ To https://github.com/tonychacon/blink
 						Note: It’s important to note that you can also open a Pull Request between two branches in the same repository. If you’re working on a feature with someone and you both have write access to the project, you can push a topic branch to the repository and open a Pull Request on it to the <c>main</c> branch of that same project to initiate the code review and discussion process. No forking necessary.
 					</p>
 	
-
-					<exercise xml:id="ex-intro-github">
-						<title>Introduction to Github</title>
-						Go to <url href="https://github.com/skills/introduction-to-github" visual="github.com/skills/introduction-to-github">Introduction to Github</url> and try all parts of the exercise. It should take an hour or less.
-						
-					</exercise>
 <!-- div attr= class="sect3"-->
 				</paragraphs>
 			</paragraphs>
@@ -433,12 +278,12 @@ To https://github.com/tonychacon/blink
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						This is an important distinction, because generally the change is suggested before the code is thought to be perfect, which is far more rare with mailing list based patch series contributions. This enables an earlier conversation with the maintainers so that arriving at the proper solution is more of a community effort. When code is proposed with a Pull Request and the maintainers or community suggest a change, the patch series is generally not re-rolled, but instead the difference is pushed as a new commit to the branch, moving the conversation forward with the context of the previous work intact.
+						This is an important distinction, because generally the change is suggested before the code is thought to be perfect. This depends wholely on the community. In communities where it is used, it enables an earlier conversation with the maintainers so that arriving at the proper solution is more of a community effort. When code is proposed with a Pull Request and the maintainers or community suggest a change, the patch series is generally not re-rolled, but instead the difference is pushed as a new commit to the branch, moving the conversation forward with the context of the previous work intact.
 					</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						For instance, if you go back and look again at <url href="ch00/_pr_final">Pull Request final</url>, you’ll notice that the contributor did not rebase his commit and send another Pull Request. Instead they added new commits and pushed them to the existing branch. This way if you go back and look at this Pull Request in the future, you can easily find all of the context of why decisions were made. Pushing the “Merge” button on the site purposefully creates a merge commit that references the Pull Request so that it’s easy to go back and research the original conversation if necessary.
+						This way if you go back and look at this Pull Request in the future, you can easily find all of the context of why decisions were made. Pushing the “Merge” button on the site purposefully creates a merge commit that references the Pull Request so that it’s easy to go back and research the original conversation if necessary.
 					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">-->
 
 <!-- div attr= class="sect4"-->
@@ -452,18 +297,11 @@ To https://github.com/tonychacon/blink
 						If your Pull Request becomes out of date or otherwise doesn’t merge cleanly, you will want to fix it so the maintainer can easily merge it. GitHub will test this for you and let you know at the bottom of every Pull Request if the merge is trivial or not.
 					</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= xml:id="_pr_fail" class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-pr-01-fail">
-                    <caption>Pull Request does not merge cleanly</caption>
-                    <image source='github-pr-01-fail.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_pr_fail" class="imageblock">-->
+
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						If you see something like <url href="ch00/_pr_fail">Pull Request does not merge cleanly</url>, you’ll want to fix your branch so that it turns green and the maintainer doesn’t have to do extra work.
+						If your Pull Request does not merge cleanly you’ll want to fix your branch so that it turns green.
 					</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -481,42 +319,8 @@ To https://github.com/tonychacon/blink
 						If you want to merge in the target branch to make your Pull Request mergeable, you would add the original repository as a new remote, fetch from it, merge the main branch of that repository into your topic branch, fix any issues and finally push it back up to the same branch you opened the Pull Request on.
 					</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="paragraph"-->
-					<p>
-						For example, let’s say that in the “tonychacon” example we were using before, the original author made a change that would create a conflict in the Pull Request. Let’s go through those steps.
-					</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-					<pre>$ git remote add upstream https://github.com/schacon/blink (1)
 
-$ git fetch upstream (2)
-remote: Counting objects: 3, done.
-remote: Compressing objects: 100% (3/3), done.
-Unpacking objects: 100% (3/3), done.
-remote: Total 3 (delta 0), reused 0 (delta 0)
-From https://github.com/schacon/blink
- * [new branch]      main     -&gt; upstream/main
-
-$ git merge upstream/main (3)
-Auto-merging blink.ino
-CONFLICT (content): Merge conflict in blink.ino
-Automatic merge failed; fix conflicts and then commit the result.
-
-$ vim blink.ino (4)
-$ git add blink.ino
-$ git commit
-[slow-blink 3c8d735] Merge remote-tracking branch 'upstream/main' \
-    into slower-blink
-
-$ git push origin slow-blink (5)
-Counting objects: 6, done.
-Delta compression using up to 8 threads.
-Compressing objects: 100% (6/6), done.
-Writing objects: 100% (6/6), 682 bytes | 0 bytes/s, done.
-Total 6 (delta 2), reused 0 (delta 0)
-To https://github.com/tonychacon/blink
-   ef4725c..3c8d735  slower-blink -&gt; slow-blink</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
 <!-- div attr= class="colist arabic"-->
 					<p><ol>
@@ -557,14 +361,7 @@ To https://github.com/tonychacon/blink
 						Once you do that, the Pull Request will be automatically updated and re-checked to see if it merges cleanly.
 					</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= xml:id="_pr_merge_fix" class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-github-pr-02-merge-fix">
-                    <caption>Pull Request now merges cleanly</caption>
-                    <image source='github-pr-02-merge-fix.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_pr_merge_fix" class="imageblock">-->
+
 
 <!-- div attr= class="paragraph"-->
 					<p>
@@ -573,7 +370,7 @@ To https://github.com/tonychacon/blink
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						If you absolutely wish to rebase the branch to clean it up, you can certainly do so, but it is highly encouraged to not force push over the branch that the Pull Request is already opened on. If other people have pulled it down and done more work on it, you run into all of the issues outlined in <url href="ch00/_rebase_peril">The Perils of Rebasing</url>. Instead, push the rebased branch to a new branch on GitHub and open a brand new Pull Request referencing the old one, then close the original.
+						If you absolutely wish to rebase the branch to clean it up, you can certainly do so, but it is highly encouraged to not force push over the branch that the Pull Request is already opened on. If other people have pulled it down and done more work on it, you will run into major problems! Instead, push the rebased branch to a new branch on GitHub and open a brand new Pull Request referencing the old one, then close the original.
 					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">-->
 
 <!-- div attr= class="sect4"-->
@@ -592,52 +389,6 @@ To https://github.com/tonychacon/blink
 						Let’s start with how to cross-reference another Pull Request or an Issue. All Pull Requests and Issues are assigned numbers and they are unique within the project. For example, you can’t have Pull Request #3 <em>and</em> Issue #3. If you want to reference any Pull Request or Issue from any other one, you can simply put <c>#&lt;num&gt;</c> in any comment or description. You can also be more specific if the Issue or Pull request lives somewhere else; write <c>username#&lt;num&gt;</c> if you’re referring to an Issue or Pull Request in a fork of the repository you’re in, or <c>username/repo#&lt;num&gt;</c> to reference something in another repository.
 					</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="paragraph"-->
-					<p>
-						Let’s look at an example. Say we rebased the branch in the previous example, created a new pull request for it, and now we want to reference the old pull request from the new one. We also want to reference an issue in the fork of the repository and an issue in a completely different project. We can fill out the description just like <url href="ch00/_pr_references">Cross references in a Pull Request</url>.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= xml:id="_pr_references" class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-mentions-01-syntax">
-                    <caption>Cross references in a Pull Request</caption>
-                    <image source='github-mentions-01-syntax.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_pr_references" class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						When we submit this pull request, we’ll see all of that rendered like <url href="ch00/_pr_references_render">Cross references rendered in a Pull Request</url>.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= xml:id="_pr_references_render" class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-mentions-02-render">
-                    <caption>Cross references rendered in a Pull Request</caption>
-                    <image source='github-mentions-02-render.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_pr_references_render" class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						Notice that the full GitHub URL we put in there was shortened to just the information needed.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						Now if Tony goes back and closes out the original Pull Request, we can see that by mentioning it in the new one, GitHub has automatically created a trackback event in the Pull Request timeline. This means that anyone who visits this Pull Request and sees that it is closed can easily link back to the one that superseded it. The link will look something like <url href="ch00/_pr_closed">Link back to the new Pull Request in the closed Pull Request timeline</url>.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= xml:id="_pr_closed" class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-mentions-03-closed">
-                    <caption>Link back to the new Pull Request in the closed Pull Request timeline</caption>
-                    <image source='github-mentions-03-closed.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_pr_closed" class="imageblock">-->
 
 <!-- div attr= class="paragraph"-->
 					<p>
@@ -656,19 +407,6 @@ To https://github.com/tonychacon/blink
 					Linking to other Issues is just the beginning of interesting things you can do with almost any text box on GitHub. In Issue and Pull Request descriptions, comments, code comments and more, you can use what is called “GitHub Flavored Markdown”. Markdown is like writing in plain text but which is rendered richly.
 				</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="paragraph"-->
-				<p>
-					See <url href="ch00/_example_markdown">An example of GitHub Flavored Markdown as written and as rendered</url> for an example of how comments or text can be written and then rendered using Markdown.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= xml:id="_example_markdown" class="imageblock"-->
-<!-- div attr= class="content"-->
-                <figure xml:id="github-markdown-01-example">
-                <caption>An example of GitHub Flavored Markdown as written and as rendered</caption>
-                <image source='github-markdown-01-example.png'/><!--</div attr= class="content">-->
-                </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_example_markdown" class="imageblock">-->
 
 <!-- div attr= class="paragraph"-->
 				<p>
@@ -682,52 +420,20 @@ To https://github.com/tonychacon/blink
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						The first really useful GitHub specific Markdown feature, especially for use in Pull Requests, is the Task List. A task list is a list of checkboxes of things you want to get done. Putting them into an Issue or Pull Request normally indicates things that you want to get done before you consider the item complete.
+						A useful GitHub specific Markdown feature, especially for use in Pull Requests, is the <url href="https://docs.github.com/en/issues/tracking-your-work-with-issues/about-tasklists">Task List</url>. A <term>task list</term> is a list of checkboxes of things you want to get done. Putting them into an Issue or Pull Request normally indicates things that you want to get done before you consider the item complete.
+					</p><!--</div attr= class="paragraph">-->
+
+
+<!-- div attr= class="paragraph"-->
+					<p>
+						These are often used in Pull Requests to indicate what all you would like to get done on the branch before the Pull Request will be ready to merge. The really cool part is that you can simply click the checkboxes to update the comment — you don’t have to edit the Markdown directly to check tasks off.
 					</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						You can create a task list like this:
+						What’s more, GitHub will look for task lists in your Issues and Pull Requests and show them as metadata on the pages that list them out. For example, if you have a Pull Request with tasks and you look at the overview page of all Pull Requests, you can see how far done it is. This helps people break down Pull Requests into subtasks and helps other people track the progress of the branch. 
 					</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-					<pre>- [X] Write the code
-- [ ] Write all the tests
-- [ ] Document the code</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						If we include this in the description of our Pull Request or Issue, we’ll see it rendered like <url href="ch00/_eg_task_lists">Task lists rendered in a Markdown comment</url>.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= xml:id="_eg_task_lists" class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-markdown-02-tasks">
-                    <caption>Task lists rendered in a Markdown comment</caption>
-                    <image source='github-markdown-02-tasks.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_eg_task_lists" class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						This is often used in Pull Requests to indicate what all you would like to get done on the branch before the Pull Request will be ready to merge. The really cool part is that you can simply click the checkboxes to update the comment — you don’t have to edit the Markdown directly to check tasks off.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						What’s more, GitHub will look for task lists in your Issues and Pull Requests and show them as metadata on the pages that list them out. For example, if you have a Pull Request with tasks and you look at the overview page of all Pull Requests, you can see how far done it is. This helps people break down Pull Requests into subtasks and helps other people track the progress of the branch. You can see an example of this in <url href="ch00/_task_list_progress">Task list summary in the Pull Request list</url>.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= xml:id="_task_list_progress" class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-markdown-03-task-summary">
-                    <caption>Task list summary in the Pull Request list</caption>
-                    <image source='github-markdown-03-task-summary.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_task_list_progress" class="imageblock">-->
 
 <!-- div attr= class="paragraph"-->
 					<p>
@@ -764,14 +470,6 @@ for(int i=0 ; i &lt; 5 ; i++)
 						If you add a language name like we did there with 'java', GitHub will also try to syntax highlight the snippet. In the case of the above example, it would end up rendering like <url href="ch00/_md_code">Rendered fenced code example</url>.
 					</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= xml:id="_md_code" class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-markdown-04-fenced-code">
-                    <caption>Rendered fenced code example</caption>
-                    <image source='github-markdown-04-fenced-code.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_md_code" class="imageblock">--><!--</div attr= class="sect4">-->
 
 <!-- div attr= class="sect4"-->
 				</paragraphs>
@@ -796,19 +494,6 @@ for(int i=0 ; i &lt; 5 ; i++)
 
 How big are these slings and in particular, these arrows?</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
-<!-- div attr= class="paragraph"-->
-					<p>
-						Once rendered, the comment will look like <url href="ch00/_md_quote">Rendered quoting example</url>.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= xml:id="_md_quote" class="imageblock"-->
-<!-- div attr= class="content"-->
-                <figure xml:id="github-markdown-05-quote">
-                <caption>Rendered quoting example</caption>
-                <image source='github-markdown-05-quote.png'/><!--</div attr= class="content">-->
-                </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_md_quote" class="imageblock">--><!--</div attr= class="sect4">-->
 
 <!-- div attr= class="sect4"-->
 				</paragraphs>
@@ -832,116 +517,6 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 					But your GitHub repository will never be automatically updated by GitHub; this is something that you must do yourself. Fortunately, this is very easy to do.
 				</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="paragraph"-->
-				<p>
-					One possibility to do this requires no configuration. For example, if you forked from <url href="https://github.com/progit/progit2.git"><c>https://github.com/progit/progit2.git</c></url>, you can keep your default branch up-to-date like this:
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-				<pre>$ git checkout main (1)
-$ git pull https://github.com/progit/progit2.git (2)
-$ git push origin main (3)</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="colist arabic"-->
-				<p><ol>
-					<li>
-									<p>
-					If you were on another branch, return to <c>main</c>.
-				</p>
-					</li>
-
-					<li>
-									<p>
-					Fetch changes from <url href="https://github.com/progit/progit2.git"><c>https://github.com/progit/progit2.git</c></url> and merge them into <c>main</c>.
-				</p>
-					</li>
-
-					<li>
-									<p>
-					Push your <c>main</c> branch to <c>origin</c>.
-				</p>
-					</li>
-
-				</ol></p><!--</div attr= class="colist arabic">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					This works, but it is a little tedious having to spell out the fetch URL every time. You can automate this work with a bit of configuration:
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-				<pre>$ git remote add progit https://github.com/progit/progit2.git (1)
-$ git fetch progit (2)
-$ git branch --set-upstream-to=progit/main main (3)
-$ git config --local remote.pushDefault origin (4)</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="colist arabic"-->
-				<p><ol>
-					<li>
-									<p>
-					Add the source repository and give it a name. Here, I have chosen to call it <c>progit</c>.
-				</p>
-					</li>
-
-					<li>
-									<p>
-					Get a reference on progit’s branches, in particular <c>main</c>.
-				</p>
-					</li>
-
-					<li>
-									<p>
-					Set your <c>main</c> branch to fetch from the <c>progit</c> remote.
-				</p>
-					</li>
-
-					<li>
-									<p>
-					Define the default push repository to <c>origin</c>.
-				</p>
-					</li>
-
-				</ol></p><!--</div attr= class="colist arabic">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					Once this is done, the workflow becomes much simpler:
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-				<pre>$ git checkout main (1)
-$ git pull (2)
-$ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="colist arabic"-->
-				<p><ol>
-					<li>
-									<p>
-					If you were on another branch, return to <c>main</c>.
-				</p>
-					</li>
-
-					<li>
-									<p>
-					Fetch changes from <c>progit</c> and merge changes into <c>main</c>.
-				</p>
-					</li>
-
-					<li>
-									<p>
-					Push your <c>main</c> branch to <c>origin</c>.
-				</p>
-					</li>
-
-				</ol></p><!--</div attr= class="colist arabic">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					This approach can be useful, but it’s not without downsides. Git will happily do this work for you silently, but it won’t warn you if you make a commit to <c>main</c>, pull from <c>progit</c>, then push to <c>origin</c> — all of those operations are valid with this setup. So you’ll have to take care never to commit directly to <c>main</c>, since that branch effectively belongs to the upstream repository.
-				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 
 			</paragraphs>
@@ -968,25 +543,6 @@ $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="li
 					Let’s create a new repository to share our project code with. Start by clicking the “New repository” button on the right-hand side of the dashboard, or from the <c>+</c> button in the top toolbar next to your username as seen in <url href="ch00/_new_repo_dropdown">The “New repository” dropdown</url>.
 				</p>
 
-
-                <figure xml:id="github-repos-area">
-                <caption>The “Your repositories” area</caption>
-                <image source='github-newrepo.png'/><!--</div attr= class="content">-->
-                </figure>
-
-                <figure xml:id="github-new-repos-dropdown">
-                <caption>The “New repository” dropdown</caption>
-                <image source='github-new-repo.png'/><!--</div attr= class="content">-->
-                </figure>
-
-                <p>
-                This takes you to the “new repository” form:
-                </p><!--</div attr= class="paragraph">-->
-
-                <figure xml:id="github-newrepoform">
-                <caption>The “new repository” form</caption>
-                <image source='github-newrepoform.png'/><!--</div attr= class="content">-->
-                </figure>
 
 
 <!-- div attr= class="paragraph"-->
@@ -1026,17 +582,11 @@ $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="li
 					Click the “Settings” link at the bottom of the right-hand sidebar.
 				</p><!--</div attr= class="paragraph">-->
 
-                <figure xml:id="github-reposettingslink">
-                <caption>The repository settings link</caption>
-                <image source='github-reposettingslink.png'/><!--</div attr= class="content">-->
-                </figure>
+
                 <p>
 					Then select “Collaborators” from the menu on the left-hand side. Then, just type a username into the box, and click “Add collaborator.” You can repeat this as many times as you like to grant access to everyone you like. If you need to revoke access, just click the “X” on the right-hand side of their row.
 				</p><!--</div attr= class="paragraph">-->
-                <figure xml:id="github-collaborators">
-                <caption>Repository collaborators</caption>
-                <image source='github-collaborators.png'/><!--</div attr= class="content">-->
-                </figure>
+      
 
 
 <!-- div attr= class="sect3"-->
@@ -1055,11 +605,6 @@ $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="li
 					Pull Requests can either come from a branch in a fork of your repository or they can come from another branch in the same repository. The only difference is that the ones in a fork are often from people where you can’t push to their branch and they can’t push to yours, whereas with internal Pull Requests generally both parties can access the branch.
 				</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="paragraph"-->
-				<p>
-					For these examples, let’s assume you are “tonychacon” and you’ve created a new Arduino code project named “fade”.
-				</p><!--</div attr= class="paragraph">-->
-
 <!-- div attr= class="sect4"-->
 
 				<paragraphs xml:id="_email_notifications">
@@ -1067,34 +612,15 @@ $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="li
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						Someone comes along and makes a change to your code and sends you a Pull Request. You should get an email notifying you about the new Pull Request and it should look something like <url href="ch00/_email_pr">Email notification of a new Pull Request</url>.
+						Someone comes along and makes a change to your code and sends you a Pull Request. You should get an email notifying you about the new Pull Request.
 					</p><!--</div attr= class="paragraph">-->
 
-                    <figure xml:id="github-maint-01-email">
-                    <caption>Email notification of a new Pull Request</caption>
-                    <image source='github-maint-01-email.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_email_pr" class="imageblock">-->
 
 <!-- div attr= class="paragraph"-->
 					<p>
 						There are a few things to notice about this email. It will give you a small diffstat — a list of files that have changed in the Pull Request and by how much. It gives you a link to the Pull Request on GitHub. It also gives you a few URLs that you can use from the command line.
 					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						If you notice the line that says <c>git pull &lt;url&gt; patch-1</c>, this is a simple way to merge in a remote branch without having to add a remote. We went over this quickly in <url href="ch00/_checking_out_remotes">Checking Out Remote Branches</url>. If you wish, you can create and switch to a topic branch and then run this command to merge in the Pull Request changes.
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						The other interesting URLs are the <c>.diff</c> and <c>.patch</c> URLs, which as you may guess, provide unified diff and patch versions of the Pull Request. You could technically merge in the Pull Request work with something like this:
-					</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-					<pre>$ curl https://github.com/tonychacon/fade/pull/1.patch | git am</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">--><!--</div attr= class="sect4">-->
+gblock">--><!--</div attr= class="sect4">-->
 
 <!-- div attr= class="sect4"-->
 				</paragraphs>
@@ -1104,7 +630,7 @@ $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="li
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						As we covered in <url href="ch00/ch06-github_flow">The GitHub Flow</url>, you can now have a conversation with the person who opened the Pull Request. You can comment on specific lines of code, comment on whole commits or comment on the entire Pull Request itself, using GitHub Flavored Markdown everywhere.
+						As we covered above, you can now have a conversation with the person who opened the Pull Request. You can comment on specific lines of code, comment on whole commits or comment on the entire Pull Request itself, using GitHub Flavored Markdown everywhere.
 					</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -1112,13 +638,7 @@ $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="li
 						Every time someone else comments on the Pull Request you will continue to get email notifications so you know there is activity happening. They will each have a link to the Pull Request where the activity is happening and you can also directly respond to the email to comment on the Pull Request thread.
 					</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-maint-03-email-resp">
-                    <caption>Responses to emails are included in the thread</caption>
-                    <image source='github-maint-03-email-resp.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="paragraph"-->
+
 					<p>
 						Once the code is in a place you like and want to merge it in, you can either pull the code down and merge it locally, either with the <c>git pull &lt;url&gt; &lt;branch&gt;</c> syntax we saw earlier, or by adding the fork as a remote and fetching and merging.
 					</p><!--</div attr= class="paragraph">-->
@@ -1127,11 +647,6 @@ $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="li
 					<p>
 						If the merge is trivial, you can also just hit the “Merge” button on the GitHub site. This will do a “non-fast-forward” merge, creating a merge commit even if a fast-forward merge was possible. This means that no matter what, every time you hit the merge button, a merge commit is created. As you can see in <url href="ch00/_merge_button">Merge button and instructions for merging a Pull Request manually</url>, GitHub gives you all of this information if you click the hint link.
 					</p><!--</div attr= class="paragraph">-->
-
-                <figure xml:id="github-maint-02-merge">
-                <caption>Merge button and instructions for merging a Pull Request manually</caption>
-                <image source='github-maint-02-merge.png'/><!--</div attr= class="content">-->
-                </figure>
 
 <!-- div attr= class="paragraph"-->
 					<p>
@@ -1160,20 +675,6 @@ $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="li
 						When you go to open a Pull Request, there is a box at the top of the page that specifies which branch you’re requesting to pull to and which you’re requesting to pull from. If you hit the “Edit” button at the right of that box you can change not only the branches but also which fork.
 					</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= xml:id="_pr_targets" class="imageblock"-->
-<!-- div attr= class="content"-->
-                    <figure xml:id="github-github-maint-04-target">
-                    <caption>Manually change the Pull Request target fork and branch</caption>
-                    <image source='github-maint-04-target.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_pr_targets" class="imageblock">-->
-
-<!-- div attr= class="paragraph"-->
-					<p>
-						Here you can fairly easily specify to merge your new branch into another Pull Request or another fork of the project.
-					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">--><!--</div attr= class="sect3">-->
-
 <!-- div attr= class="sect3"-->
 				</paragraphs>
 			</paragraphs>
@@ -1191,12 +692,6 @@ $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="li
 					In any comment you can start typing a <c>@</c> character and it will begin to autocomplete with the names and usernames of people who are collaborators or contributors in the project.
 				</p><!--</div attr= class="paragraph">-->
 
-                <figure xml:id="github-maint-05-mentions">
-                <caption>Start typing @ to mention someone</caption>
-                <image source='github-maint-05-mentions.png'/><!--</div attr= class="content">-->
-                </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= class="imageblock">-->
 
 <!-- div attr= class="paragraph"-->
 				<p>
@@ -1213,10 +708,6 @@ $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="li
 					If someone gets mentioned on a Pull Request or Issue, they will be “subscribed” to it and will continue getting notifications any time some activity occurs on it. You will also be subscribed to something if you opened it, if you’re watching the repository or if you comment on something. If you no longer wish to receive notifications, there is an “Unsubscribe” button on the page you can click to stop receiving updates on it.
 				</p><!--</div attr= class="paragraph">-->
 
-                <figure xml:id="github--maint-06-unsubscribe">
-                <caption>Unsubscribe from an Issue or Pull Request</caption>
-                <image source='github-maint-06-unsubscribe.png'/><!--</div attr= class="content">-->
-                </figure>
 
 				<paragraphs xml:id="_the_notifications_page">
 					<title>The Notifications Page</title>
@@ -1226,10 +717,6 @@ $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="li
 						When we mention “notifications” here with respect to GitHub, we mean a specific way that GitHub tries to get in touch with you when events happen and there are a few different ways you can configure them. If you go to the “Notification center” tab from the settings page, you can see some of the options you have.
 					</p><!--</div attr= class="paragraph">-->
 
-                    <figure xml:id="github-maint-07-notifications">
-                    <caption>Notification center options</caption>
-                    <image source='github-maint-07-notifications.png'/><!--</div attr= class="content">-->
-                    </figure>
 
 
 <!-- div attr= class="paragraph"-->
@@ -1244,15 +731,9 @@ $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="li
 
 <!-- div attr= class="paragraph"-->
 						<p>
-							Web notifications only exist on GitHub and you can only check them on GitHub. If you have this option selected in your preferences and a notification is triggered for you, you will see a small blue dot over your notifications icon at the top of your screen as seen in <url href="ch00/_not_center">Notification center</url>.
+							Web notifications only exist on GitHub and you can only check them on GitHub. If you have this option selected in your preferences and a notification is triggered for you, you will see a small blue dot over your notifications icon at the top of your screen.
 						</p><!--</div attr= class="paragraph">-->
 
-                        <figure xml:id="github-maint-08-notifications-page">
-                        <caption>Notification center</caption>
-                        <image source='github-maint-08-notifications-page.png'/><!--</div attr= class="content">-->
-                        </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_not_center" class="imageblock">-->
 
 <!-- div attr= class="paragraph"-->
 						<p>
@@ -1271,7 +752,7 @@ $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="li
 
 <!-- div attr= class="paragraph"-->
 							<p>
-								Email notifications are the other way you can handle notifications through GitHub. If you have this turned on you will get emails for each notification. We saw examples of this in <url href="ch00/_email_notification">Comments sent as email notifications</url> and <url href="ch00/_email_pr">Email notification of a new Pull Request</url>. The emails will also be threaded properly, which is nice if you’re using a threading email client.
+								Email notifications are the other way you can handle notifications through GitHub. If you have this turned on you will get emails for each notification. The emails will also be threaded properly, which is nice if you’re using a threading email client.
 							</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -1280,24 +761,8 @@ $ git push (3)</pre><!--</div attr= class="content">--><!--</div attr= class="li
 							</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
-							<p>
-								For instance, if we look at the actual email headers sent to Tony in the email shown in <url href="ch00/_email_pr">Email notification of a new Pull Request</url>, we will see the following among the information sent:
-							</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-							<pre>To: tonychacon/fade &lt;fade@noreply.github.com&gt;
-Message-ID: &lt;tonychacon/fade/pull/1@github.com&gt;
-Subject: [fade] Wait longer to see the dimming effect better (#1)
-X-GitHub-Recipient: tonychacon
-List-ID: tonychacon/fade &lt;fade.tonychacon.github.com&gt;
-List-Archive: https://github.com/tonychacon/fade
-List-Post: &lt;mailto:reply+i-4XXX@reply.github.com&gt;
-List-Unsubscribe: &lt;mailto:unsub+i-XXX@reply.github.com&gt;,...
-X-GitHub-Recipient-Address: tchacon@example.com</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-							<p>
+			<p>
 								There are a couple of interesting things here. If you want to highlight or re-route emails to this particular project or even Pull Request, the information in <c>Message-ID</c> gives you all the data in <c>&lt;user&gt;/&lt;project&gt;/&lt;type&gt;/&lt;id&gt;</c> format. If this were an issue, for example, the <c>&lt;type&gt;</c> field would have been “issues” rather than “pull”.
 							</p><!--</div attr= class="paragraph">-->
 
@@ -1413,10 +878,7 @@ X-GitHub-Recipient-Address: tchacon@example.com</pre><!--</div attr= class="cont
 					Another special file that GitHub recognizes is the <c>CONTRIBUTING</c> file. If you have a file named <c>CONTRIBUTING</c> with any file extension, GitHub will show <url href="ch00/_contrib_file">Opening a Pull Request when a CONTRIBUTING file exists</url> when anyone starts opening a Pull Request.
 				</p><!--</div attr= class="paragraph">-->
 
-                <figure xml:id="github-maint-09-contrib">
-                <caption>Opening a Pull Request when a CONTRIBUTING file exists</caption>
-                <image source='github-maint-09-contrib.png'/><!--</div attr= class="content">-->
-                </figure>
+
 <!-- div attr= class="title"-->
 <!--</div attr= class="title">--><!--</div attr= xml:id="_contrib_file" class="imageblock">-->
 
@@ -1445,13 +907,6 @@ X-GitHub-Recipient-Address: tchacon@example.com</pre><!--</div attr= class="cont
 					<p>
 						If you are using a branch other than “main” or “master” as your default branch that you want people to open Pull Requests on or see by default, you can change that in your repository’s settings page under the “Options” tab.
 					</p><!--</div attr= class="paragraph">-->
-
-                    <figure xml:id="github-maint-10-default-branch">
-                    <caption>Change the default branch for a project</caption>
-                    <image source='github-maint-10-default-branch.png'/><!--</div attr= class="content">-->
-                    </figure>
-<!-- div attr= class="title"-->
-<!--</div attr= class="title">--><!--</div attr= xml:id="_default_branch" class="imageblock">-->
 
 <!-- div attr= class="paragraph"-->
 					<p>
