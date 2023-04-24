@@ -30,13 +30,13 @@
   <li>
   <title>What is a <term>Command Line Interface (CLI)</term>?</title>
     <p>
-      A <term>CLI</term> is any type of interface that is used to enter text-based commands. We will use a specialized CLI.
+      A <term>CLI</term> refers to any interface that works with text-based commands and text-based output. We will be using a <term>shell</term>, which is an example of a CLI.
     </p>
   </li>
   <li>
   <title>What is a <term>shell</term>?</title>
       <p>
-  A <term>shell</term> is a specialized program which parses and interprets the commands you enter in the terminal and then asks the operating system to execute them. In other words, a shell is a highly specialized CLI which serves as the interface between the end-user and the operating system. It is called a shell because it is the user interface or the outermost layer "around" the <term>kernel</term> which is the innermost part of the operating system.
+  A <term>shell</term> is a program which parses and interprets the commands you enter in the terminal and then executes them, often using functionality provided directly by the operating system. In other words, a shell is a CLI which serves as the interface between the end-user and the operating system. It is called a shell because it is a user interface layer directly surrounding the <term>kernel</term>, which is the innermost part of the operating system
     </p>
   </li>
 </ul>
@@ -46,7 +46,7 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
 <subsection xml:id="subsec-why_not_gui">
       <title>Why not a GUI?</title>
 <p>
-  Given that the Graphical User Interface (GUI) came into widespread use decades ago, it may seem surprising that nearly all software developers utilize a non-graphical shell. The primary reasons for this include:
+  Given that Graphical User Interfaces (GUIs) came into widespread use decades ago, it may seem surprising that nearly all software developers utilize a non-graphical shell. The primary reasons for this include:
       <ul>
         <li>
           <title>Speed of Use</title>
@@ -57,12 +57,12 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
         <li>
         <title>Expressiveness</title>
           <p>
-            The shell facilitates features that are unavailable or difficult to access in a GUI. The mouse only allows for picking among the small set of predetermined options from the screen. However, for most systems many more options are actually available. In addition, most operating systems  prevent you from performing certain tasks which are system protected unless you are using the shell.
+            The shell facilitates features that are unavailable or difficult to access in a GUI. The mouse only allows for picking among the small set of predetermined options from the screen. However, for most systems many more options are actually available.
           </p>
         </li>
         <li><title>Automation</title>
           <p>
-            If you need to do something that is repetitive or requires combining multiple commands, the shell facilitates this too. For example, it would be hard to a GUI to find all files that contain a particular pattern and then perform some operation on all of them, but this is easy with a shell program.
+            If you need to do something that is repetitive or requires combining multiple commands, the shell facilitates this too since shells can be programmed using a scripting language, allowing repetitive and/or complex tasks to be automated via a script.
           </p>
         </li>
       </ul>
@@ -73,43 +73,52 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
   <title>Accessing a Terminal Window on your Machine</title>
 
     <p>
-      One question you might have is whether you can use your existing machine to contribute to open source. The good news is that whether you are using macOS, Linux, or Windows you should be able to set up a development environment, open a terminal, and access an appropriate shell.
- 
+      Regardless of whether you are using macOS, Linux, or Windows, you are able to set up a development environment, open a terminal, and access a shell. Some good news is that all of these OSs offer shells that are largely compatible. This is useful for a variety of reasons,including being able to find find a useful answer when searching on how to accomplish various tasks on the Internet.
+
     <ul>
     <li><title>On a Mac</title>
       <p>
-        If you are on a Mac, you have a couple of good options.  With any Mac, the built-in <em>Terminal</em> program, will allow you to access a shell, and on newer Macs, you  might want to consider <url href="https://iterm2.com/downloads.html" visual="iterm2.com/downloads.html">iTerm2</url>, a much improved replacement for Terminal that works on Macs with macOS 10.14 or newer. Opening the Terminal on a Mac works like opening any other program: you can find it in the Applications folder, you can search for it, you can use the Launchpad, or you can use it's shortcut which is command(⌘)+T.
+        If you are on a Mac, you have a couple of good options. With any Mac, the built-in <em>Terminal</em> program allows you to access a shell.  If you are looking for a more customizable and feature-rich terminal program, then you might want to consider <url href="https://iterm2.com/downloads.html" visual="iterm2.com/downloads.html">iTerm2</url>. Opening the Terminal on a Mac works like opening any other program: you can find it in the Applications folder, you can search for it, you can use the Launchpad, or you can use it's shortcut which is command(⌘)+T.
       </p>
     </li>
-    <li><title>In Linux</title>
+    <li><title>On a Linux machine</title>
       <p>
-        In Linux, the terminal is also called the <em>Terminal</em>. You can access it in several ways: search for the keyword Terminal, right-click  on your desktop and then select "Open Terminal", or use the shortcut Ctrl+Alt+T.
+        On a machine running Linux, the terminal is often also called the <em>Terminal</em>, although depending upon the Linux environment, the name may differ. <em>Konsole</em> may also be used. Regardless of what it is called, you can typically access the terminal in several ways: search for the keyword Terminal, right-click  on your desktop and then select "Open Terminal", or use the shortcut Ctrl+Alt+T.
       </p>
     </li>
-    <li><title>In Windows</title>
+    <li><title>On a Windows machine</title>
       <p>
-        If you are on a Windows machine, getting to an appropriate shell is a bit more complicated. On Windows, the terminal/shell is historically called the <term>command prompt (cmd)</term>, although a newer very different terminal/shell called <term>PowerShell</term> was first widely released in 2016. Neither of these terminal/shells are compatible with the default shell programs available on macOS and Linux. For OSS development, it will be preferable to have access to such a shell.
-        
-        If you are running Windows 11 or Windows 10 version 2004 or higher, then following the directions from Microsoft on <url href="https://learn.microsoft.com/en-us/windows/wsl/install" visual="learn.microsoft.com/en-us/windows/wsl/install">Installing Linux on Windows with WSL2 </url> will give you the best experience. Note that you may first need to update your Windows OS, see <url href="https://bit.ly/Windows-Update-FAQ" visual="https://bit.ly/Windows-Update-FAQ"></url>. WSL2 provides a full Linux kernel that is integrated into the Windows operating system. Installing <url href="https://learn.microsoft.com/en-us/windows/terminal/install" visual="learn.microsoft.com/en-us/windows/terminal/install">the Windows Terminal</url> will further enhance your experience, although it is not strictly necessary. Once you have followed the linked directions to install WSL2, including the installation of Linux (Ubuntu is a good choice),  then the shell is most easily accessed by searching for Ubuntu in the search tool next to the Windows Icon and selecting it when you see it. For convenience, consider right-clicking on the Ubuntu icon and pinning it to your Start menu or to your Taskbar.
+        If you are on a Windows machine, you have a number of options. On Windows, the terminal/shell is historically called the <term>command prompt (cmd)</term>, although a newer very different terminal/shell called <term>PowerShell</term> has also been around for decades. Neither of these terminal/shells are compatible with the default shell programs available on macOS and Linux. For OSS development, it will be preferable to have access to a shell that is compatible with the macOS and Linux ones.
+        </p>
+
+        <p>
+        If you are running Windows 10 or Windows 11, then following the directions from Microsoft on <url href="https://learn.microsoft.com/en-us/windows/wsl/install" visual="learn.microsoft.com/en-us/windows/wsl/install">Installing Linux on Windows with WSL2 </url> will give you the best experience. Note that you may first need to update your version of Windows, see <url href="https://bit.ly/Windows-Update-FAQ" visual="https://bit.ly/Windows-Update-FAQ"></url>. WSL2 provides a full Linux kernel that is integrated into the Windows operating system. Installing <url href="https://learn.microsoft.com/en-us/windows/terminal/install" visual="learn.microsoft.com/en-us/windows/terminal/install">the Windows Terminal</url> will further enhance your experience, although it is not strictly necessary. Once you have followed the linked directions to install WSL2, including the installation of Linux (Ubuntu is a good choice),  then the shell is most easily accessed by searching for Ubuntu in the search tool next to the Windows Icon and selecting it when you see it. For convenience, consider right-clicking on the Ubuntu icon and pinning it to your Start menu or to your Taskbar.
       </p>
       <p>
-        If you are running an earlier version of Windows and cannot upgrade to Windows 10 version 2004 or higher, then you have several choices. For simpler development environments, using <url href="https://mingw.osdn.io/index.html" visual="mingw.osdn.io/">MinGW</url> provides a lightweight solution, so you might try this first. 
+       If you are running an earlier version of Windows, or an outdated version of Windows 10 that you cannot update, then you have several choices. For simpler development environments, using <url href="https://mingw.osdn.io/index.html" visual="mingw.osdn.io/">MinGW</url> provides a lightweight solution, so you might try this first. 
         For a more complicated development environment such as one that utilizes virtualization, using a Virtual Machine (VM) environment such as <url href="https://www.virtualbox.org/" visual="virtualbox.org/">Virtual Box</url> and installing and running Ubuntu inside the VM is advisable. For a cloud option, see below.
       </p>
 
     </li>
     <li><title>Another OS</title>
       <p>
-        Although Linux, Mac, and Windows (to a lesser extent) are by far the most typical development environments, developing in another OS environment might also be possible. For example, searching the Internet on "software development in ChromeOS" will provide several useful links for how to set up a development environment in ChromeOS. Just be aware that developing in an OS environment other than Linux, Mac, or a modern version of Windows is likely to offer little in the way of support, so you might be better off using a Virtual Machine (VM) environment such as <url href="https://www.virtualbox.org/" visual="virtualbox.org/">Virtual Box</url> and installing and running Ubuntu in the VM. Of course, another option is to turn to cloud development, which is discussed next.
+        Although Linux, Mac, and Windows (to a lesser extent) are by far the most typical OSs, developing in another OS environment might also be possible. For example, searching the Internet on "software development in ChromeOS" will provide several useful links for how to set up a development environment in ChromeOS. Just be aware that developing in an OS environment other than Linux, Mac, or a modern version of Windows is likely to offer little in the way of support, so you might be better off using a cloud-based development environment or a virtual machine (VM) environment.
+        </p>
+        </li>
+    <li><title>Installing Linux in a Virtual Machine (VM) Environment</title>
+        <p>
+          If you have sufficient RAM and secondary storage available, then you might consider installing Linux in a VM. This may be a particularly good choice if you are on an older Windows machine and want to develop off-line. 
+         such as <url href="https://www.virtualbox.org/" visual="virtualbox.org/">Virtual Box</url> and installing and running Ubuntu in the VM. 
       </p>
     </li>
     <li>
     <title>In the Cloud</title>
       <p>
-        To contribute to most open source projects, you will need to set-up a build environment for local testing. White it is typical to install this on a local machine, it can be done in the cloud typically for free for low usage or for a small monthly fee, which might be waived for a trial period or for students. 
+        To contribute to most open source projects, you will need to set-up a build environment for local testing. While it is typical to have a local development environment to work in, there has recently been an influx of cloud providers which offer solutions for cloud-based development environments. These have the benefit that they require less setup than a local development environment, but are often only free within constraints and otherwise incur a monthly fee, which might be waived for a trial period or for students.
       </p>
       <p>
-        <term>Cloud Development Environments (CDEs)</term> are full development environments in the cloud. A few of the more popular such environments include <url href="https://aws.amazon.com/cloud9/" visual="aws.amazon.com/cloud9">AWS Cloud9</url>, <url href="https://github.com/features/codespaces" visual="github.com/features/codespaces">Github Codespaces</url> and <url href="https://www.gitpod.io/" visual="www.gitpod.io">Gitpod</url>. These environments try to help you set up your development environment with ease, and you can mostly likely find a way to at least try them for free. 
+        <term>Cloud Development Environments (CDEs)</term> are full development environments in the cloud. The best known and most feature-rich is <url href="https://github.com/features/codespaces" visual="github.com/features/codespaces">GitHub Codespaces.</url> 
+        A couple of the other popular cloud development environments include <url href="https://aws.amazon.com/cloud9/" visual="aws.amazon.com/cloud9">AWS Cloud9</url> and <url href="https://www.gitpod.io/" visual="www.gitpod.io">Gitpod.</url> All of these environments try to help you set up your development environment with ease, and you can mostly likely find a way to at least try them for free. 
       </p>
         <p>
         For the purposes of this chapter, if you cannot quickly set up your local environment or cloud environment, you can practice using a shell at Fabrice Bellard's <url href="https://bellard.org/jslinux/" visual="bellard.org/jslinux/">JSLinux</url> which provides a very small cloud-based virtual machine environment. (Choosing the riscv64 Linux console will work for all of these exercises.) Note that this a free service which has a capped bandwidth of 40 kB/s. You are asked to please be respectful and don't abuse the service. 
@@ -121,14 +130,14 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
   </subsection>
 
 <subsection xml:id="subsec-access_shell">
-	<title>Accessing a Shell</title>
+	<title>Your Shell</title>
 	<p>
-    The default shell on your system will open when you open the terminal program. There are many shells available for Linux, but the most popular is the Bourne-again shell (<term>bash</term>) shell, so this section is focused on bash. If you are using another shell like the <term>zsh</term> shell, which is the default shell in modern macOS, don't worry because there is a very large amount of overlap. Even so, if you wish to change your default shell, you can easily do so, but it is not necessary to do so.
+    Many shells are available for Linux, but the most popular is the Bourne-again shell (<term>bash</term>) shell, the next section is focused on bash. If you are using another shell like <term>zsh</term>, which is now the default on macOS and many people's preference over bash, then don't worry. The different shells available on Linux and macOS are largely compatible with each other and you will almost certainly not run into any issues by using zsh.
   </p>
 </subsection>
 <conclusion>
   <p>
-    If you have reached the end of this section, you should be able to open a terminal window to access a shell. In the next section, you will get some practice with the basic shell commands needed for navigation.
+    If you have reached the end of this section, you should be able to open a terminal window to access a shell. In the next section, you will get some practice with some basic shell commands.
   </p>
 </conclusion>
 </section>

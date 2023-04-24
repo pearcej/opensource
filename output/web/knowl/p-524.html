@@ -12,7 +12,22 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>Now that your staging area is set up the way you want it, you can commit your changes. Remember that anything that is still unstaged — any files you have created or modified that you haven’t run <code class="code-inline tex2jax_ignore">git add</code> on since you edited them — won’t go into this commit. They will stay as modified files on your disk. In this case, let’s say that the last time you ran <code class="code-inline tex2jax_ignore">git status</code>, you saw that everything was staged, so you’re ready to commit your changes. The simplest way to commit is to type <code class="code-inline tex2jax_ignore">git commit</code>:</p>
+<p> <pre class="code-block tex2jax_ignore">$ git diff --cached
+diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
+index 8ebb991..643e24f 100644
+--- a/CONTRIBUTING.md
++++ b/CONTRIBUTING.md
+@@ -65,7 +65,8 @@ branch directly, things can get messy.
+ Please include a nice description of your changes when you submit your PR;
+ if we have to read the whole diff to figure out why you're contributing
+ in the first place, you're less likely to get feedback and have your change
+-merged in.
++merged in. Also, split your changes into comprehensive chunks if your patch is
++longer than a dozen lines.
+
+ If you are starting to work on a particular area, feel free to submit a PR
+ that highlights your work in progress (and note in the PR title that it is so.
+</pre></p>
 <span class="incontext"><a href="sec_git_basics.html#p-524" class="internal">in-context</a></span>
 </body>
 </html>

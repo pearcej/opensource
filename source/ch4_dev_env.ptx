@@ -6,13 +6,14 @@
     <p>
       This chapter introduces some of the key tools and technologies that are typical to development in open source. Specific tools and technologies tend to change over time, but the concepts tend to remain, so this chapter focuses on the concepts at a high level first, and then offers case studies of specific tools and technologies that are popular at the moment.  (Fortunately, because this book is open source, the specifics can be easily changed by many contributors as time dictates.)
     </p>
+    <p>
+      It is perhaps worth noting that the tools and technologies discussed in this chapter are not just specific to open source development. They are relevant to software engineering more generally, so what readers learn here is also broadly applicable to development work in industry.
+    </p>
   </introduction>
 
   <xi:include href="./sec_dev_shell_terms.ptx" />
   <xi:include href="./sec_dev_basic_shell_commands.ptx" />
   <xi:include href="./sec_dev_editors.ptx" />
   <xi:include href="./sec_dev_virtualization.ptx" />
-
-
 
 </chapter>
