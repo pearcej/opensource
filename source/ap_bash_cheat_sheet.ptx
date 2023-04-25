@@ -10,12 +10,12 @@
             <li>
               <title><c> man &lt;command-name&gt; </c></title>
               <p>
-               Use built-in <term>manual</term>.
+               Use the built-in <term>manual</term>.
               </p>
               <ul>
                 <li>
                   <p>
-                  e.g. Retrieve manual for changing directories command: <c>man cd</c>
+                  e.g. <c>man cd</c> retrieves the manual for the change directory command.
                   </p>
                 </li>
               </ul>
@@ -24,12 +24,12 @@
             <li>
               <title><c> &lt;command-name&gt; --help</c> </title>
               <p>
-               Request <term>help page</term> for specified command.
+               Request the <term>help page</term> (when it exists) for the specified command. Note that not every command supports <c>--help</c>. 
               </p>
               <ul>
                 <li>
                   <p>
-                  e.g. Retrieve help for change directory command: <c>cd --help</c>
+                  e.g. <c>cd --help</c> retrieves help for the change directory command. 
                   </p>
                 </li>
               </ul>
@@ -45,12 +45,12 @@
       <li>
         <title><c>pwd </c></title>
         <p>
-          <term>Print working directory</term> displays the name of the current working directory.
+          <term>Print working directory</term> displays the path of the current working directory.
         </p>
         <ul>
           <li>
             <p>
-            e.g. Print the path of the current working directory: <c>pwd</c>
+            e.g. <c>pwd</c> prints the path of the current working directory. 
             </p>
           </li>
         </ul>
@@ -64,7 +64,7 @@
         <ul>
           <li>
             <p>
-            e.g. Print the userid: <c>whoami</c>
+            e.g. <c>whoami</c> prints the userid. 
             </p>
           </li>
         </ul>
@@ -79,17 +79,17 @@
       <ul>
       <li>
         <p>
-          e.g. List directories and files in the current directory: <c>ls</c>
+          e.g. <c>ls</c> lists directories and files in the current directory. 
         </p>
       </li>
       <li>
         <p>
-          e.g. list directories and files in the current directory using a long listing: <c>ls -l</c> 
+          e.g. <c>ls -l</c>  lists directories and files in the current directory using a long listing. 
         </p>
       </li>
       <li>
         <p>
-          e.g. list directories and files in home directory: <c>ls ~</c> 
+          e.g. <c>ls ~</c> lists directories and files in the user's home directory.
         </p>
       </li>
     </ul>
@@ -98,34 +98,34 @@
       <li>
         <title><c>touch &lt;file-name&gt;</c></title>
         <p>         
-The <term>touch</term> is commonly used for file creation. Its intended primary function is to update its timestamp, by "touching" it. See <c>man touch</c> for more information on the intended use.
+The <term>touch</term> command is commonly used for file creation. Its intended primary function is to update its timestamp, by "touching" it. See <c>man touch</c> for more information on the intended use.
         </p>
         <ul>
           <li>
             <p>
-            e.g. <c>touch newfile.txt</c>
+            e.g. <c>touch newfile.txt</c> creates an empty file named newfile.txt.
             </p>
           </li>
         </ul>
       </li>
       <li>
-      <title><c>cd &lt;directory-name&gt; or relative position</c></title>
+      <title><c>cd &lt;directory-name&gt;</c></title>
         <p>
           <term>Change directory</term> to <c>&lt;directory-name&gt;</c>.   
           <ul>
             <li>
               <p>
-                e.g. change directory to the root directory: <c>cd / </c>
+                e.g. <c>cd / </c> changes the current directory to the root directory.
               </p>
             </li>
             <li>
               <p>
-                e.g. change directory to the home directory: <c>cd ~ </c>
+                e.g. <c>cd ~ </c> changes the current directory to the user's home directory.
               </p>
             </li>
             <li>
               <p>
-                e.g. change directory to the immediate parent directory: <c>cd ..</c>
+                e.g. <c>cd ..</c> changes the directory to the immediate parent directory. 
               </p>
             </li>
           </ul>
@@ -138,7 +138,7 @@ The <term>touch</term> is commonly used for file creation. Its intended primary 
               <ul>
                 <li>
                   <p>
-                  e.g. Change the name of <em>old.txt</em> to <em>new.txt</em>: <c>mv old.txt new.txt</c>
+                  e.g. <c>mv old.txt new.txt</c> changes the name of old.txt to new.txt. 
                   </p>
                 </li>
               </ul>
@@ -152,7 +152,7 @@ The <term>touch</term> is commonly used for file creation. Its intended primary 
               <ul>
                 <li>
                   <p>
-                  e.g. Remove the file named <em>junk.txt</em>: <c>rm junk.txt</c>
+                  e.g. <c>rm junk.txt</c> removes the file named junk.txt.
                   </p>
                 </li>
               </ul>
@@ -162,11 +162,11 @@ The <term>touch</term> is commonly used for file creation. Its intended primary 
   <li>
   <title><c>mkdir  &lt;directory-name&gt;</c></title>
         <p>
-          <term>Make directory</term> with parameter name &lt;directory-name&gt;.
+          <term>Make directory</term> with name &lt;directory-name&gt;.
           <ul>
           <li>
             <p>
-              e.g. Make a new directory with the name newdir: <c>mkdir newdir</c>
+              e.g. <c>mkdir newdir</c> makes a new directory with the name newdir.
             </p>
           </li>
         </ul>
@@ -179,7 +179,7 @@ The <term>touch</term> is commonly used for file creation. Its intended primary 
           <ul>
           <li>
             <p>
-              e.g. Remove (delete) the directory with the name olddir: <c>mkdir olddir</c>
+              e.g. <c>mkdir olddir</c> removes (deletes) the directory with the name olddir. 
             </p>
           </li>
         </ul>
@@ -196,17 +196,17 @@ The <term>touch</term> is commonly used for file creation. Its intended primary 
             <li>
               <title><c>echo &lt;text&gt;</c></title>
               <p>
-                The <term>echo</term> command displays a line of text and/or the value of a variable. Often used with output redirection.
+                The <term>echo</term> command displays a line of text and/or requests the value of a variable from the shell and displays its value. Often used with output redirection.
 
               <ul>
                 <li>
                   <p>
-                  e.g. Print the text 'Hello World!' on the screen: <c>echo 'Hello World!'</c>
+                  e.g. <c>echo 'Hello World!'</c> print the text 'Hello World!' on the standard output. 
                   </p>
                 </li>
                   <li>
                     <p>
-                    e.g. Print the value of the USER environment variable on the screen: <c>echo $USER</c>
+                    e.g. <c>echo $USER</c> prints the value of the USER environment variable on the standard output. 
                     </p>
                   </li>
               </ul>
@@ -216,16 +216,15 @@ The <term>touch</term> is commonly used for file creation. Its intended primary 
           <li>
             <title><c>cat &lt;file-name&gt;</c></title>
             <p>
-              The <term>concatenate</term> prints file contents on the screen after concatenation. Note that with a single file, it just prints that file. It is often used with output redirection.
+              The <term>concatenate</term> prints file contents on the standard output after concatenation. Note that with a single file, it just prints that file. It is often used with output redirection.
             <ul>
               <li>
                 <p>
-                e.g. Print the contents of <em>file.txt</em> on the screen: <c>cat file.txt</c>
-                </p>
+                e.g. <c>cat file.txt</c> prints the contents of file.txt on the standard output.                </p>
               </li>
               <li>
                 <p>
-                e.g. Print the contents of the concatenation of <em>file1.txt</em> and <em>file2.txt</em> on the screen: <c>cat file1.txt file2.txt</c>
+                e.g. <c>cat file1.txt file2.txt</c> prints the contents of the concatenation of file1.txt and file2.txt on the standard output.
                 </p>
               </li>
             </ul>
@@ -238,7 +237,7 @@ The <term>touch</term> is commonly used for file creation. Its intended primary 
           <ul>
             <li>
               <p>
-              e.g. Take input from the keyboard and direct it into a variable called MYVAR: <c>read MYVAR</c>
+              e.g. <c>read MYVAR</c> takes input from the keyboard and directs it into a variable called MYVAR.
               </p>
             </li>
           </ul>
@@ -251,7 +250,7 @@ The <term>touch</term> is commonly used for file creation. Its intended primary 
           <ul>
             <li>
               <p>
-              e.g. Report the count of lines, words, and bytes in  <em>file.txt</em>: <c>wc file.txt</c>
+              e.g. <c>wc file.txt</c> reports the count of lines, words, and bytes in  file.txt.
               </p>
             </li>
           </ul>
@@ -272,7 +271,7 @@ The <term>touch</term> is commonly used for file creation. Its intended primary 
             <ul>
               <li>
                 <p>
-                e.g. Perform the <c>wc</c> command on the information in the file <em>info2count.txt</em>: <c>wc &lt; info2count.txt</c>
+                e.g. <c>wc &lt; info2count.txt</c> performs the <c>wc</c> command on the information in the file info2count.txt.
                 </p>
               </li>
             </ul>
@@ -281,11 +280,11 @@ The <term>touch</term> is commonly used for file creation. Its intended primary 
             <li>
               <title>Output redirection using <c>&gt;</c> or <c>&gt;&gt;</c></title>
               <p>
-                Output redirection allows the user to redirect the output from the screen to a file using <c>&gt;</c> for overwriting or <c>&gt;&gt;</c> for appending.
+                Output redirection allows the user to redirect the output from the standard output to a file using <c>&gt;</c> for overwriting or <c>&gt;&gt;</c> for appending.
               <ul>
                 <li>
                   <p>
-                  e.g. Write the line 'I love open source!' into the file <em>file.txt</em> replacing the current contents or making a new file if it doesn't already exist: <c>echo 'I love open source!' > file.txt</c>
+                  e.g. <c>echo 'I love open source!' > file.txt</c> writes the line 'I love open source!' into the file file.txt replacing the current contents or making a new file if it doesn't already exist.
                   </p>
                 </li>
               </ul>
@@ -298,7 +297,7 @@ The <term>touch</term> is commonly used for file creation. Its intended primary 
               <ul>
                 <li>
                   <p>
-                  e.g. Run the command <c>ls</c>>and use the output of the <c>ls</c> command as the input into the <c>wc</c> command: <c>ls | wc</c>
+                  e.g. <c>ls | wc</c> runs the command <c>ls</c>>and uses the output of the <c>ls</c> command as the input into the <c>wc</c> command.
                   </p>
                 </li>
               </ul>
@@ -321,12 +320,12 @@ The <term>touch</term> is commonly used for file creation. Its intended primary 
               <ul>
                 <li>
                   <p>
-                  e.g. Change the owner of <em>file.txt</em> to pearcej: <c>chmod pearcej file.txt</c>
+                  e.g. <c>chmod pearcej file.txt</c> changes the owner of file.txt to pearcej.
                   </p>
                 </li>
                 <li>
                   <p>
-                  e.g. Change the group of <em>file.txt</em> to friends: <c>chmod :friends file.txt</c>
+                  e.g. <c>chmod :friends file.txt</c> changes the group of file.txt to friends. 
                   </p>
                 </li>
               </ul>
@@ -357,7 +356,7 @@ The <term>touch</term> is commonly used for file creation. Its intended primary 
               <ul>
                 <li>
                   <p>
-                  e.g. The following adds execute permission for all users to the <em>helloworld.sh</em> file: <c>chmod +x helloworld.sh</c>
+                  e.g. <c>chmod +x helloworld.sh</c> adds execute permission for all users to the helloworld.sh file.
                   </p>
                 </li>
               </ul>
