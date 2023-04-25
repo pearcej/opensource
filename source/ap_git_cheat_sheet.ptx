@@ -17,13 +17,13 @@
         <li>
           <title><c>git init &lt;directory-name&gt;</c></title>
           <p>
-            Create an empty git repo in a new directory named <c>directory-name</c>. Take care with the <c>directory-name</c>; it is typical to use a short, descriptive, name using only lower case letters and the "-" character. Note that if you leave off the directory name then the current directory will be initialized as a git repository.        
+            Create an empty git repo in a new directory named <c>directory-name</c>. Take care with the <c>directory-name</c>; it is typical to use a short, descriptive, name using only lower case letters and the "-" character. Note that if you leave off the directory name then the current directory will be initialized as a git repository. For more detail see <url href="https://github.com/git-guides/git-init" visual="github.com/git-guides/git-init">Git Guides: Git Init</url>
           </p>
         </li>
         <li>
         <title><c>git clone &lt;repository-url&gt;</c></title>
         <p>
-          Clone a repository from the cloud to your local system. Note that if you are planning to contribute to a project that is not yours, you will likely want to <term>fork</term> the repository into your own cloud account first. 
+          Clone a repository from a repository in the cloud to your local system. Note that if you are planning to contribute to a project that is not yours, you will likely want to <term>fork</term> the repository into your own account first. For example, to contribute to a project hosted on GitHub, go to that repository and fork it into your own GitHub account. For more detail see <url href="https://github.com/git-guides/git-clone" visual="github.com/git-guides/git-clone">Git Guides: Git Clone</url>
         </p>
       </li>
 
@@ -46,7 +46,7 @@
       <li>
         <title><c>git status</c></title>
         <p>
-        Check the status to see if there are files that have been changed but not added (staged).
+        Check the status to see if there are files that have been changed but not added (staged). This command will also list all staged changes. For more detail see <url href="https://github.com/git-guides/git-status" visual="github.com/git-guides/git-status">Git Guides: Git Status</url>
         </p>
       </li>
       <li>
@@ -56,30 +56,36 @@
         </p>
       </li>
       <li>
-        <title><c>git pull &lt;remote-repo&gt;</c></title>
+        <title><c>git pull</c></title>
         <p>
-          Download content from the remote repository &lt;remote-repo&gt; and integrate changes into the local repository.
+          Download content from the remote repository and integrate these changes into the local repository. This command should be used regularly because without it your local branch won't have any of the updates that are present on the remote. For more detail see <url href="https://github.com/git-guides/git-pull" visual="github.com/git-guides/git-pull">Git Guides: Git Pull</url>
         </p>
       </li>
 
       <li>
-        <title><c>git add .</c></title>
+        <title><c>git add &lt;filename&gt;</c></title>
         <p>
-          Add all current changes to the those staged for the next commit. Replace the <c>.</c> with a filename to stage a single file.
+          Add all current changes in &lt;filename&gt;to the those staged for the next commit. For more detail see <url href="https://github.com/git-guides/git-add" visual="github.com/git-guides/git-add">Git Guides: Git Add</url>
         </p>
       </li>
 
       <li>
         <title><c>git commit -m "&lt;commit-message&gt;"</c></title>
         <p>
-          Commit all staged files to the local repository.
+          Commit all staged files to the local repository. For more detail see <url href="https://github.com/git-guides/git-commit" visual="github.com/git-guides/git-commit">Git Guides: Git Commit</url>
         </p>
       </li>
 
       <li>
-        <title><c>git push &lt;remote-repo&gt;</c></title>
+        <title><c>git push</c></title>
         <p>
-          Push the current branch and all commits to the remote repository.
+          Push the current branch and all commits to the remote repository. Note that <c>git push</c> only updates the corresponding branch on the remote.
+        </p>
+      </li>
+            <li>
+        <title><c>git push -u origin &lt;branchname&gt;</c></title>
+        <p>
+          Here <c>-u</c> stands for set upstream. It is used to push a new branch named &lt;branchname&gt; by creating an upstream tracking branch that is related to your current local branch. For more detail see <url href="https://github.com/git-guides/git-push" visual="github.com/git-guides/git-push">Git Guides: Git Push</url>
         </p>
       </li>
 
