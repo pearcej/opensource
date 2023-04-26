@@ -12,13 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<ul class="disc">
-<li><p>Blank lines or lines starting with <code class="code-inline tex2jax_ignore">#</code> are ignored.</p></li>
-<li><p>Standard glob patterns work, and will be applied recursively throughout the entire working tree.</p></li>
-<li><p>You can start patterns with a forward slash (<code class="code-inline tex2jax_ignore">/</code>) to avoid recursivity.</p></li>
-<li><p>You can end patterns with a forward slash (<code class="code-inline tex2jax_ignore">/</code>) to specify a directory.</p></li>
-<li><p>You can negate a pattern by starting it with an exclamation point (<code class="code-inline tex2jax_ignore">!</code>).</p></li>
-</ul>
+<p>What the heck? Now <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> is listed as both staged <em class="emphasis">and</em> unstaged. How is that possible? It turns out that Git stages a file exactly as it is when you run the <code class="code-inline tex2jax_ignore">git add</code> command. If you commit now, the version of <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> as it was when you last ran the <code class="code-inline tex2jax_ignore">git add</code> command is how it will go into the commit, not the version of the file as it looks in your working directory when you run <code class="code-inline tex2jax_ignore">git commit</code>. If you modify a file after you run <code class="code-inline tex2jax_ignore">git add</code>, you have to run <code class="code-inline tex2jax_ignore">git add</code> again to stage the latest version of the file:</p>
 <span class="incontext"><a href="sec_git_basics.html#p-504" class="internal">in-context</a></span>
 </body>
 </html>

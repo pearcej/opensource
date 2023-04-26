@@ -202,62 +202,62 @@ eBookConfig.enable_chatcodes =  false;
 <section class="section" id="sec_git_basics"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.3</span> <span class="title">Git Basics</span>
 </h2>
-<section class="introduction" id="introduction-21"><p id="p-464">If you could read only one section to get going with Git, this would be the one to read. This section covers every basic command you need to do the vast majority of the things you’ll eventually spend your time doing with Git. By the end of this section, you should be able to configure and initialize a repository, begin and stop tracking files, and stage and commit changes. You will also learn how to set up Git to ignore certain files and file patterns, how to undo mistakes quickly and easily, how to browse the history of your project and view changes between commits, and how to push and pull from remote repositories.</p></section><section class="subsection" id="_getting_a_repo"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-21"><p id="p-470">If you could read only one section to get going with Git, this would be the one to read. This section covers every basic command you need to do the vast majority of the things you’ll eventually spend your time doing with Git. By the end of this section, you should be able to configure and initialize a repository, begin and stop tracking files, and stage and commit changes. You will also learn how to set up Git to ignore certain files and file patterns, how to undo mistakes quickly and easily, how to browse the history of your project and view changes between commits, and how to push and pull from remote repositories.</p></section><section class="subsection" id="_getting_a_repo"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.3.1</span> <span class="title">Getting a Git Repository</span>
 </h3>
-<p id="p-465">You typically obtain an existing Git repository in one of two ways:</p>
-<ol id="p-466" class="decimal">
-<li id="li-127"><p id="p-467">You can take an existing local directory that is currently not under version control, and turn it into a Git repository, or</p></li>
-<li id="li-128"><p id="p-468">You can <em class="emphasis">clone</em> an existing Git repository from elsewhere.</p></li>
+<p id="p-471">You typically obtain an existing Git repository in one of two ways:</p>
+<ol id="p-472" class="decimal">
+<li id="li-127"><p id="p-473">You can take an existing local directory that is currently not under version control, and turn it into a Git repository, or</p></li>
+<li id="li-128"><p id="p-474">You can <em class="emphasis">clone</em> an existing Git repository from elsewhere.</p></li>
 </ol>
-<p id="p-469">In either case, you end up with a Git repository on your local machine, ready for work.</p>
+<p id="p-475">In either case, you end up with a Git repository on your local machine, ready for work.</p>
 <section class="paragraphs" id="_initializing_a_repository_in_an_existing_directory"><h4 class="heading"><span class="title">Initializing a Repository in an Existing Directory.</span></h4>
-<p id="p-470">If you have a project directory that is currently not under version control and you want to start controlling it with Git, you first need to go to that project’s directory. If you’ve never done this, it looks a little different depending on which system you’re running:</p>
-<p id="p-471">for Linux:</p>
+<p id="p-476">If you have a project directory that is currently not under version control and you want to start controlling it with Git, you first need to go to that project’s directory. If you’ve never done this, it looks a little different depending on which system you’re running:</p>
+<p id="p-477">for Linux:</p>
 <pre class="code-block tex2jax_ignore">$ cd /home/user/my_project
 </pre>
-<p id="p-472">for macOS:</p>
+<p id="p-478">for macOS:</p>
 <pre class="code-block tex2jax_ignore">$ cd /Users/user/my_project
 </pre>
-<p id="p-473">for Windows:</p>
+<p id="p-479">for Windows:</p>
 <pre class="code-block tex2jax_ignore">$ cd C:/Users/user/my_project
 </pre>
-<p id="p-474">and type:</p>
+<p id="p-480">and type:</p>
 <pre class="code-block tex2jax_ignore">$ git init
 </pre>
-<p id="p-475">This creates a new subdirectory named <code class="code-inline tex2jax_ignore">.git</code> that contains all of your necessary repository files — a Git repository skeleton. At this point, nothing in your project is tracked yet.</p>
-<p id="p-476">If you want to start version-controlling existing files (as opposed to an empty directory), you should probably begin tracking those files and do an initial commit. You can accomplish that with a few <code class="code-inline tex2jax_ignore">git add</code> commands that specify the files you want to track, followed by a <code class="code-inline tex2jax_ignore">git commit</code>:</p>
+<p id="p-481">This creates a new subdirectory named <code class="code-inline tex2jax_ignore">.git</code> that contains all of your necessary repository files — a Git repository skeleton. At this point, nothing in your project is tracked yet.</p>
+<p id="p-482">If you want to start version-controlling existing files (as opposed to an empty directory), you should probably begin tracking those files and do an initial commit. You can accomplish that with a few <code class="code-inline tex2jax_ignore">git add</code> commands that specify the files you want to track, followed by a <code class="code-inline tex2jax_ignore">git commit</code>:</p>
 <pre class="code-block tex2jax_ignore">$ git add *.c
 $ git add LICENSE
 $ git commit -m 'Initial project version'
 </pre>
-<p id="p-477">We’ll go over what these commands do in just a minute. At this point, you have a Git repository with tracked files and an initial commit.</p></section><section class="paragraphs" id="_git_cloning"><h4 class="heading"><span class="title">Cloning an Existing Repository.</span></h4>
-<p id="p-478">If you want to get a copy of an existing Git repository — for example, a project you’d like to contribute to — the command you need is <code class="code-inline tex2jax_ignore">git clone</code>. If you’re familiar with other VCSs such as Subversion, you’ll notice that the command is "clone" and not "checkout". This is an important distinction — instead of getting just a working copy, Git receives a full copy of nearly all data that the server has. Every version of every file for the history of the project is pulled down by default when you run <code class="code-inline tex2jax_ignore">git clone</code>.</p>
-<p id="p-479">You clone a repository with <code class="code-inline tex2jax_ignore">git clone &lt;url&gt;</code>. For example, if you want to clone the Git linkable library called <code class="code-inline tex2jax_ignore">libgit2</code>, you can do so like this:</p>
+<p id="p-483">We’ll go over what these commands do in just a minute. At this point, you have a Git repository with tracked files and an initial commit.</p></section><section class="paragraphs" id="_git_cloning"><h4 class="heading"><span class="title">Cloning an Existing Repository.</span></h4>
+<p id="p-484">If you want to get a copy of an existing Git repository — for example, a project you’d like to contribute to — the command you need is <code class="code-inline tex2jax_ignore">git clone</code>. If you’re familiar with other VCSs such as Subversion, you’ll notice that the command is "clone" and not "checkout". This is an important distinction — instead of getting just a working copy, Git receives a full copy of nearly all data that the server has. Every version of every file for the history of the project is pulled down by default when you run <code class="code-inline tex2jax_ignore">git clone</code>.</p>
+<p id="p-485">You clone a repository with <code class="code-inline tex2jax_ignore">git clone &lt;url&gt;</code>. For example, if you want to clone the Git linkable library called <code class="code-inline tex2jax_ignore">libgit2</code>, you can do so like this:</p>
 <pre class="code-block tex2jax_ignore">$ git clone https://github.com/libgit2/libgit2
 </pre>
-<p id="p-480">That creates a directory named <code class="code-inline tex2jax_ignore">libgit2</code>, initializes a <code class="code-inline tex2jax_ignore">.git</code> directory inside it, pulls down all the data for that repository, and checks out a working copy of the latest version. If you go into the new <code class="code-inline tex2jax_ignore">libgit2</code> directory that was just created, you’ll see the project files in there, ready to be worked on or used.</p>
-<p id="p-481">If you want to clone the repository into a directory named something other than <code class="code-inline tex2jax_ignore">libgit2</code>, you can specify the new directory name as an additional argument:</p>
+<p id="p-486">That creates a directory named <code class="code-inline tex2jax_ignore">libgit2</code>, initializes a <code class="code-inline tex2jax_ignore">.git</code> directory inside it, pulls down all the data for that repository, and checks out a working copy of the latest version. If you go into the new <code class="code-inline tex2jax_ignore">libgit2</code> directory that was just created, you’ll see the project files in there, ready to be worked on or used.</p>
+<p id="p-487">If you want to clone the repository into a directory named something other than <code class="code-inline tex2jax_ignore">libgit2</code>, you can specify the new directory name as an additional argument:</p>
 <pre class="code-block tex2jax_ignore">$ git clone https://github.com/libgit2/libgit2 mylibgit
 </pre>
-<p id="p-482">That command does the same thing as the previous one, but the target directory is called <code class="code-inline tex2jax_ignore">mylibgit</code>.</p>
-<p id="p-483">Git has a number of different transfer protocols you can use. The previous example uses the <code class="code-inline tex2jax_ignore">https://</code> protocol, but you may also see <code class="code-inline tex2jax_ignore">git://</code> or <code class="code-inline tex2jax_ignore">user@server:path/to/repo.git</code>, which uses the SSH transfer protocol.</p></section></section><section class="subsection" id="_recording_changes_to_the_repository"><h3 class="heading hide-type">
+<p id="p-488">That command does the same thing as the previous one, but the target directory is called <code class="code-inline tex2jax_ignore">mylibgit</code>.</p>
+<p id="p-489">Git has a number of different transfer protocols you can use. The previous example uses the <code class="code-inline tex2jax_ignore">https://</code> protocol, but you may also see <code class="code-inline tex2jax_ignore">git://</code> or <code class="code-inline tex2jax_ignore">user@server:path/to/repo.git</code>, which uses the SSH transfer protocol.</p></section></section><section class="subsection" id="_recording_changes_to_the_repository"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.3.2</span> <span class="title">Recording Changes to the Repository</span>
 </h3>
-<p id="p-484">At this point, you should have a <em class="emphasis">bona fide</em> Git repository on your local machine, and a checkout or <em class="emphasis">working copy</em> of all of its files in front of you. Typically, you’ll want to start making changes and committing snapshots of those changes into your repository each time the project reaches a state you want to record.</p>
-<p id="p-485">Remember that each file in your working directory can be in one of two states: <em class="emphasis">tracked</em> or <em class="emphasis">untracked</em>. Tracked files are files that were in the last snapshot, as well as any newly staged files; they can be unmodified, modified, or staged. In short, tracked files are files that Git knows about.</p>
-<p id="p-486">Untracked files are everything else — any files in your working directory that were not in your last snapshot and are not in your staging area. When you first clone a repository, all of your files will be tracked and unmodified because Git just checked them out and you haven’t edited anything.</p>
-<p id="p-487">As you edit files, Git sees them as modified, because you’ve changed them since your last commit. As you work, you selectively stage these modified files and then commit all those staged changes, and the cycle repeats.</p>
+<p id="p-490">At this point, you should have a <em class="emphasis">bona fide</em> Git repository on your local machine, and a checkout or <em class="emphasis">working copy</em> of all of its files in front of you. Typically, you’ll want to start making changes and committing snapshots of those changes into your repository each time the project reaches a state you want to record.</p>
+<p id="p-491">Remember that each file in your working directory can be in one of two states: <em class="emphasis">tracked</em> or <em class="emphasis">untracked</em>. Tracked files are files that were in the last snapshot, as well as any newly staged files; they can be unmodified, modified, or staged. In short, tracked files are files that Git knows about.</p>
+<p id="p-492">Untracked files are everything else — any files in your working directory that were not in your last snapshot and are not in your staging area. When you first clone a repository, all of your files will be tracked and unmodified because Git just checked them out and you haven’t edited anything.</p>
+<p id="p-493">As you edit files, Git sees them as modified, because you’ve changed them since your last commit. As you work, you selectively stage these modified files and then commit all those staged changes, and the cycle repeats.</p>
 <figure class="figure figure-like" id="git-lifecycle"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/lifecycle.png" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3.1<span class="period">.</span></span><span class="space"> </span>The lifecycle of the status of your files</figcaption></figure><section class="paragraphs" id="_checking_status"><h4 class="heading"><span class="title">Checking the Status of Your Files.</span></h4>
-<p id="p-488">The main tool you use to determine which files are in which state is the <code class="code-inline tex2jax_ignore">git status</code> command. If you run this command directly after a clone, you should see something like this:</p>
+<p id="p-494">The main tool you use to determine which files are in which state is the <code class="code-inline tex2jax_ignore">git status</code> command. If you run this command directly after a clone, you should see something like this:</p>
 <pre class="code-block tex2jax_ignore">$ git status
 On branch main
 Your branch is up-to-date with 'origin/main'.
 nothing to commit, working tree clean
 </pre>
-<p id="p-489">This means you have a clean working directory; in other words, none of your tracked files are modified. Git also doesn’t see any untracked files, or they would be listed here. Finally, the command tells you which branch you’re on and informs you that it has not diverged from the same branch on the server. That branch is typically <code class="code-inline tex2jax_ignore">main</code>, which is the current default. It could also be <code class="code-inline tex2jax_ignore">main</code>, which was the default until October 1, 2020. Don't worry about it here.  The next section on Git Branching will go over branches and references in detail.</p>
-<p id="p-490">Let’s say you add a new file to your project, a simple <code class="code-inline tex2jax_ignore">README</code> file. If the file didn’t exist before, and you run <code class="code-inline tex2jax_ignore">git status</code>, you see your untracked file like so:</p>
+<p id="p-495">This means you have a clean working directory; in other words, none of your tracked files are modified. Git also doesn’t see any untracked files, or they would be listed here. Finally, the command tells you which branch you’re on and informs you that it has not diverged from the same branch on the server. That branch is typically <code class="code-inline tex2jax_ignore">main</code>, which is the current default. It could also be <code class="code-inline tex2jax_ignore">main</code>, which was the default until October 1, 2020. Don't worry about it here.  The next section on Git Branching will go over branches and references in detail.</p>
+<p id="p-496">Let’s say you add a new file to your project, a simple <code class="code-inline tex2jax_ignore">README</code> file. If the file didn’t exist before, and you run <code class="code-inline tex2jax_ignore">git status</code>, you see your untracked file like so:</p>
 <pre class="code-block tex2jax_ignore">$ echo 'My Project' &gt; README
 $ git status
 On branch main
@@ -269,11 +269,11 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 </pre>
-<p id="p-491">You can see that your new <code class="code-inline tex2jax_ignore">README</code> file is untracked, because it’s under the “Untracked files” heading in your status output. Untracked basically means that Git sees a file you didn’t have in the previous snapshot (commit), and which hasn’t yet been staged; Git won’t start including it in your commit snapshots until you explicitly tell it to do so. It does this so you don’t accidentally begin including generated binary files or other files that you did not mean to include. You do want to start including <code class="code-inline tex2jax_ignore">README</code>, so let’s start tracking the file.</p></section><section class="paragraphs" id="_tracking_files"><h4 class="heading"><span class="title">Tracking New Files.</span></h4>
-<p id="p-492">In order to begin tracking a new file, you use the command <code class="code-inline tex2jax_ignore">git add</code>. To begin tracking the <code class="code-inline tex2jax_ignore">README</code> file, you can run this:</p>
+<p id="p-497">You can see that your new <code class="code-inline tex2jax_ignore">README</code> file is untracked, because it’s under the “Untracked files” heading in your status output. Untracked basically means that Git sees a file you didn’t have in the previous snapshot (commit), and which hasn’t yet been staged; Git won’t start including it in your commit snapshots until you explicitly tell it to do so. It does this so you don’t accidentally begin including generated binary files or other files that you did not mean to include. You do want to start including <code class="code-inline tex2jax_ignore">README</code>, so let’s start tracking the file.</p></section><section class="paragraphs" id="_tracking_files"><h4 class="heading"><span class="title">Tracking New Files.</span></h4>
+<p id="p-498">In order to begin tracking a new file, you use the command <code class="code-inline tex2jax_ignore">git add</code>. To begin tracking the <code class="code-inline tex2jax_ignore">README</code> file, you can run this:</p>
 <pre class="code-block tex2jax_ignore">$ git add README
 </pre>
-<p id="p-493">If you run your status command again, you can see that your <code class="code-inline tex2jax_ignore">README</code> file is now tracked and staged to be committed:</p>
+<p id="p-499">If you run your status command again, you can see that your <code class="code-inline tex2jax_ignore">README</code> file is now tracked and staged to be committed:</p>
 <pre class="code-block tex2jax_ignore">$ git status
 On branch main
 Your branch is up-to-date with 'origin/main'.
@@ -282,8 +282,8 @@ Changes to be committed:
 
     new file:   README
 </pre>
-<p id="p-494">You can tell that it’s staged because it’s under the “Changes to be committed” heading. If you commit at this point, the version of the file at the time you ran <code class="code-inline tex2jax_ignore">git add</code> is what will be in the subsequent historical snapshot. You may recall that when you ran <code class="code-inline tex2jax_ignore">git init</code> earlier, you then ran <code class="code-inline tex2jax_ignore">git add &lt;files&gt;</code> — that was to begin tracking files in your directory. The <code class="code-inline tex2jax_ignore">git add</code> command takes a path name for either a file or a directory; if it’s a directory, the command adds all the files in that directory recursively.</p></section><section class="paragraphs" id="_staging_modified_files"><h4 class="heading"><span class="title">Staging Modified Files.</span></h4>
-<p id="p-495">Let’s change a file that was already tracked. If you change a previously tracked file called <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> and then run your <code class="code-inline tex2jax_ignore">git status</code> command again, you get something that looks like this:</p>
+<p id="p-500">You can tell that it’s staged because it’s under the “Changes to be committed” heading. If you commit at this point, the version of the file at the time you ran <code class="code-inline tex2jax_ignore">git add</code> is what will be in the subsequent historical snapshot. You may recall that when you ran <code class="code-inline tex2jax_ignore">git init</code> earlier, you then ran <code class="code-inline tex2jax_ignore">git add &lt;files&gt;</code> — that was to begin tracking files in your directory. The <code class="code-inline tex2jax_ignore">git add</code> command takes a path name for either a file or a directory; if it’s a directory, the command adds all the files in that directory recursively.</p></section><section class="paragraphs" id="_staging_modified_files"><h4 class="heading"><span class="title">Staging Modified Files.</span></h4>
+<p id="p-501">Let’s change a file that was already tracked. If you change a previously tracked file called <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> and then run your <code class="code-inline tex2jax_ignore">git status</code> command again, you get something that looks like this:</p>
 <pre class="code-block tex2jax_ignore">$ git status
 On branch main
 Your branch is up-to-date with 'origin/main'.
@@ -298,7 +298,7 @@ Changes not staged for commit:
 
     modified:   CONTRIBUTING.md
 </pre>
-<p id="p-496">The <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file appears under a section named “Changes not staged for commit” — which means that a file that is tracked has been modified in the working directory but not yet staged. To stage it, you run the <code class="code-inline tex2jax_ignore">git add</code> command. <code class="code-inline tex2jax_ignore">git add</code> is a multipurpose command — you use it to begin tracking new files, to stage files, and to do other things like marking merge-conflicted files as resolved. It may be helpful to think of it more as “add precisely this content to the next commit” rather than “add this file to the project”. Let’s run <code class="code-inline tex2jax_ignore">git add</code> now to stage the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file, and then run <code class="code-inline tex2jax_ignore">git status</code> again:</p>
+<p id="p-502">The <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file appears under a section named “Changes not staged for commit” — which means that a file that is tracked has been modified in the working directory but not yet staged. To stage it, you run the <code class="code-inline tex2jax_ignore">git add</code> command. <code class="code-inline tex2jax_ignore">git add</code> is a multipurpose command — you use it to begin tracking new files, to stage files, and to do other things like marking merge-conflicted files as resolved. It may be helpful to think of it more as “add precisely this content to the next commit” rather than “add this file to the project”. Let’s run <code class="code-inline tex2jax_ignore">git add</code> now to stage the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file, and then run <code class="code-inline tex2jax_ignore">git status</code> again:</p>
 <pre class="code-block tex2jax_ignore">$ git add CONTRIBUTING.md
 $ git status
 On branch main
@@ -309,7 +309,7 @@ Changes to be committed:
     new file:   README
     modified:   CONTRIBUTING.md
 </pre>
-<p id="p-497">Both files are staged and will go into your next commit. At this point, suppose you remember one little change that you want to make in <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> before you commit it. You open it again and make that change, and you’re ready to commit. However, let’s run <code class="code-inline tex2jax_ignore">git status</code> one more time:</p>
+<p id="p-503">Both files are staged and will go into your next commit. At this point, suppose you remember one little change that you want to make in <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> before you commit it. You open it again and make that change, and you’re ready to commit. However, let’s run <code class="code-inline tex2jax_ignore">git status</code> one more time:</p>
 <pre class="code-block tex2jax_ignore">$ vim CONTRIBUTING.md
 $ git status
 On branch main
@@ -326,7 +326,7 @@ Changes not staged for commit:
 
     modified:   CONTRIBUTING.md
 </pre>
-<p id="p-498">What the heck? Now <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> is listed as both staged <em class="emphasis">and</em> unstaged. How is that possible? It turns out that Git stages a file exactly as it is when you run the <code class="code-inline tex2jax_ignore">git add</code> command. If you commit now, the version of <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> as it was when you last ran the <code class="code-inline tex2jax_ignore">git add</code> command is how it will go into the commit, not the version of the file as it looks in your working directory when you run <code class="code-inline tex2jax_ignore">git commit</code>. If you modify a file after you run <code class="code-inline tex2jax_ignore">git add</code>, you have to run <code class="code-inline tex2jax_ignore">git add</code> again to stage the latest version of the file:</p>
+<p id="p-504">What the heck? Now <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> is listed as both staged <em class="emphasis">and</em> unstaged. How is that possible? It turns out that Git stages a file exactly as it is when you run the <code class="code-inline tex2jax_ignore">git add</code> command. If you commit now, the version of <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> as it was when you last ran the <code class="code-inline tex2jax_ignore">git add</code> command is how it will go into the commit, not the version of the file as it looks in your working directory when you run <code class="code-inline tex2jax_ignore">git commit</code>. If you modify a file after you run <code class="code-inline tex2jax_ignore">git add</code>, you have to run <code class="code-inline tex2jax_ignore">git add</code> again to stage the latest version of the file:</p>
 <pre class="code-block tex2jax_ignore">$ git add CONTRIBUTING.md
 $ git status
 On branch main
@@ -337,7 +337,7 @@ Changes to be committed:
     new file:   README
     modified:   CONTRIBUTING.md
 </pre></section><section class="paragraphs" id="_short_status"><h4 class="heading"><span class="title">Short Status.</span></h4>
-<p id="p-499">While the <code class="code-inline tex2jax_ignore">git status</code> output is pretty comprehensive, it’s also quite wordy. Git also has a short status flag so you can see your changes in a more compact way. If you run <code class="code-inline tex2jax_ignore">git status -s</code> or <code class="code-inline tex2jax_ignore">git status --short</code> you get a far more simplified output from the command:</p>
+<p id="p-505">While the <code class="code-inline tex2jax_ignore">git status</code> output is pretty comprehensive, it’s also quite wordy. Git also has a short status flag so you can see your changes in a more compact way. If you run <code class="code-inline tex2jax_ignore">git status -s</code> or <code class="code-inline tex2jax_ignore">git status --short</code> you get a far more simplified output from the command:</p>
 <pre class="code-block tex2jax_ignore">$ git status -s
  M README
 MM Rakefile
@@ -345,23 +345,23 @@ A  lib/git.rb
 M  lib/simplegit.rb
 ?? LICENSE.txt
 </pre>
-<p id="p-500">New files that aren’t tracked have a <code class="code-inline tex2jax_ignore">??</code> next to them, new files that have been added to the staging area have an <code class="code-inline tex2jax_ignore">A</code>, modified files have an <code class="code-inline tex2jax_ignore">M</code> and so on. There are two columns to the output — the left-hand column indicates the status of the staging area and the right-hand column indicates the status of the working tree. So for example in that output, the <code class="code-inline tex2jax_ignore">README</code> file is modified in the working directory but not yet staged, while the <code class="code-inline tex2jax_ignore">lib/simplegit.rb</code> file is modified and staged. The <code class="code-inline tex2jax_ignore">Rakefile</code> was modified, staged and then modified again, so there are changes to it that are both staged and unstaged.</p></section><section class="paragraphs" id="_ignoring"><h4 class="heading"><span class="title">Ignoring Files.</span></h4>
-<p id="p-501">Often, you’ll have a class of files that you don’t want Git to automatically add or even show you as being untracked. These are generally automatically generated files such as log files or files produced by your build system. In such cases, you can create a file listing patterns to match them named <code class="code-inline tex2jax_ignore">.gitignore</code>. Here is an example <code class="code-inline tex2jax_ignore">.gitignore</code> file:</p>
+<p id="p-506">New files that aren’t tracked have a <code class="code-inline tex2jax_ignore">??</code> next to them, new files that have been added to the staging area have an <code class="code-inline tex2jax_ignore">A</code>, modified files have an <code class="code-inline tex2jax_ignore">M</code> and so on. There are two columns to the output — the left-hand column indicates the status of the staging area and the right-hand column indicates the status of the working tree. So for example in that output, the <code class="code-inline tex2jax_ignore">README</code> file is modified in the working directory but not yet staged, while the <code class="code-inline tex2jax_ignore">lib/simplegit.rb</code> file is modified and staged. The <code class="code-inline tex2jax_ignore">Rakefile</code> was modified, staged and then modified again, so there are changes to it that are both staged and unstaged.</p></section><section class="paragraphs" id="_ignoring"><h4 class="heading"><span class="title">Ignoring Files.</span></h4>
+<p id="p-507">Often, you’ll have a class of files that you don’t want Git to automatically add or even show you as being untracked. These are generally automatically generated files such as log files or files produced by your build system. In such cases, you can create a file listing patterns to match them named <code class="code-inline tex2jax_ignore">.gitignore</code>. Here is an example <code class="code-inline tex2jax_ignore">.gitignore</code> file:</p>
 <pre class="code-block tex2jax_ignore">$ cat .gitignore
 *.[oa]
 *~
 </pre>
-<p id="p-502">The first line tells Git to ignore any files ending in “.o” or “.a” — object and archive files that may be the product of building your code. The second line tells Git to ignore all files whose names end with a tilde (<code class="code-inline tex2jax_ignore">~</code>), which is used by some text editors  to mark temporary files. You may also include a log, tmp, or pid directory; automatically generated documentation; and so on. Setting up a <code class="code-inline tex2jax_ignore">.gitignore</code> file for your new repository before you get going is generally a good idea so you don’t accidentally commit files that you really don’t want in your Git repository.</p>
-<p id="p-503">The rules for the patterns you can put in the <code class="code-inline tex2jax_ignore">.gitignore</code> file are as follows:</p>
-<ul id="p-504" class="disc">
-<li id="li-129"><p id="p-505">Blank lines or lines starting with <code class="code-inline tex2jax_ignore">#</code> are ignored.</p></li>
-<li id="li-130"><p id="p-506">Standard glob patterns work, and will be applied recursively throughout the entire working tree.</p></li>
-<li id="li-131"><p id="p-507">You can start patterns with a forward slash (<code class="code-inline tex2jax_ignore">/</code>) to avoid recursivity.</p></li>
-<li id="li-132"><p id="p-508">You can end patterns with a forward slash (<code class="code-inline tex2jax_ignore">/</code>) to specify a directory.</p></li>
-<li id="li-133"><p id="p-509">You can negate a pattern by starting it with an exclamation point (<code class="code-inline tex2jax_ignore">!</code>).</p></li>
+<p id="p-508">The first line tells Git to ignore any files ending in “.o” or “.a” — object and archive files that may be the product of building your code. The second line tells Git to ignore all files whose names end with a tilde (<code class="code-inline tex2jax_ignore">~</code>), which is used by some text editors  to mark temporary files. You may also include a log, tmp, or pid directory; automatically generated documentation; and so on. Setting up a <code class="code-inline tex2jax_ignore">.gitignore</code> file for your new repository before you get going is generally a good idea so you don’t accidentally commit files that you really don’t want in your Git repository.</p>
+<p id="p-509">The rules for the patterns you can put in the <code class="code-inline tex2jax_ignore">.gitignore</code> file are as follows:</p>
+<ul id="p-510" class="disc">
+<li id="li-129"><p id="p-511">Blank lines or lines starting with <code class="code-inline tex2jax_ignore">#</code> are ignored.</p></li>
+<li id="li-130"><p id="p-512">Standard glob patterns work, and will be applied recursively throughout the entire working tree.</p></li>
+<li id="li-131"><p id="p-513">You can start patterns with a forward slash (<code class="code-inline tex2jax_ignore">/</code>) to avoid recursivity.</p></li>
+<li id="li-132"><p id="p-514">You can end patterns with a forward slash (<code class="code-inline tex2jax_ignore">/</code>) to specify a directory.</p></li>
+<li id="li-133"><p id="p-515">You can negate a pattern by starting it with an exclamation point (<code class="code-inline tex2jax_ignore">!</code>).</p></li>
 </ul>
-<p id="p-510">Glob patterns are like simplified regular expressions that shells use. An asterisk (<code class="code-inline tex2jax_ignore">*</code>) matches zero or more characters; <code class="code-inline tex2jax_ignore">[abc]</code> matches any character inside the brackets (in this case a, b, or c); a question mark (<code class="code-inline tex2jax_ignore">?</code>) matches a single character; and brackets enclosing characters separated by a hyphen (<code class="code-inline tex2jax_ignore">[0-9]</code>) matches any character between them (in this case 0 through 9). You can also use two asterisks to match nested directories; <code class="code-inline tex2jax_ignore">a/**/z</code> would match <code class="code-inline tex2jax_ignore">a/z</code>, <code class="code-inline tex2jax_ignore">a/b/z</code>, <code class="code-inline tex2jax_ignore">a/b/c/z</code>, and so on.</p>
-<p id="p-511">Here is another example <code class="code-inline tex2jax_ignore">.gitignore</code> file:</p>
+<p id="p-516">Glob patterns are like simplified regular expressions that shells use. An asterisk (<code class="code-inline tex2jax_ignore">*</code>) matches zero or more characters; <code class="code-inline tex2jax_ignore">[abc]</code> matches any character inside the brackets (in this case a, b, or c); a question mark (<code class="code-inline tex2jax_ignore">?</code>) matches a single character; and brackets enclosing characters separated by a hyphen (<code class="code-inline tex2jax_ignore">[0-9]</code>) matches any character between them (in this case 0 through 9). You can also use two asterisks to match nested directories; <code class="code-inline tex2jax_ignore">a/**/z</code> would match <code class="code-inline tex2jax_ignore">a/z</code>, <code class="code-inline tex2jax_ignore">a/b/z</code>, <code class="code-inline tex2jax_ignore">a/b/c/z</code>, and so on.</p>
+<p id="p-517">Here is another example <code class="code-inline tex2jax_ignore">.gitignore</code> file:</p>
 <pre class="code-block tex2jax_ignore"># ignore all .a files
 *.a
 
@@ -380,11 +380,11 @@ doc/*.txt
 # ignore all .pdf files in the doc/ directory and any of its subdirectories
 doc/**/*.pdf
 </pre>
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-1" id="hint-1"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-1"><div class="hint solution-like"><p id="p-512">Tip: GitHub maintains a fairly comprehensive list of good <code class="code-inline tex2jax_ignore">.gitignore</code> file examples for dozens of projects and languages at <a class="external" href="https://github.com/github/gitignore" target="_blank">https://github.com/github/gitignore</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-141" id="fn-141"><sup> 1 </sup></a> if you want a starting point for your project.</p></div></div>
-<p id="p-513">Note: In the simple case, a repository might have a single <code class="code-inline tex2jax_ignore">.gitignore</code> file in its root directory, which applies recursively to the entire repository. However, it is also possible to have additional <code class="code-inline tex2jax_ignore">.gitignore</code> files in subdirectories. The rules in these nested <code class="code-inline tex2jax_ignore">.gitignore</code> files apply only to the files under the directory where they are located. The Linux kernel source repository has 206 <code class="code-inline tex2jax_ignore">.gitignore</code> files.</p>
-<p id="p-514">It is beyond the scope of this book to get into the details of multiple <code class="code-inline tex2jax_ignore">.gitignore</code> files; see <code class="code-inline tex2jax_ignore">man gitignore</code> for the details.</p></section><section class="paragraphs" id="_git_diff_staged"><h4 class="heading"><span class="title">Viewing Your Staged and Unstaged Changes.</span></h4>
-<p id="p-515">If the <code class="code-inline tex2jax_ignore">git status</code> command is too vague for you — you want to know exactly what you changed, not just which files were changed — you can use the <code class="code-inline tex2jax_ignore">git diff</code> command. We’ll cover <code class="code-inline tex2jax_ignore">git diff</code> in more detail later, but you’ll probably use it most often to answer these two questions: What have you changed but not yet staged? And what have you staged that you are about to commit? Although <code class="code-inline tex2jax_ignore">git status</code> answers those questions very generally by listing the file names, <code class="code-inline tex2jax_ignore">git diff</code> shows you the exact lines added and removed — the patch, as it were.</p>
-<p id="p-516">Let’s say you edit and stage the <code class="code-inline tex2jax_ignore">README</code> file again and then edit the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file without staging it. If you run your <code class="code-inline tex2jax_ignore">git status</code> command, you once again see something like this:</p>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-1" id="hint-1"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-1"><div class="hint solution-like"><p id="p-518">Tip: GitHub maintains a fairly comprehensive list of good <code class="code-inline tex2jax_ignore">.gitignore</code> file examples for dozens of projects and languages at <a class="external" href="https://github.com/github/gitignore" target="_blank">https://github.com/github/gitignore</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-141" id="fn-141"><sup> 1 </sup></a> if you want a starting point for your project.</p></div></div>
+<p id="p-519">Note: In the simple case, a repository might have a single <code class="code-inline tex2jax_ignore">.gitignore</code> file in its root directory, which applies recursively to the entire repository. However, it is also possible to have additional <code class="code-inline tex2jax_ignore">.gitignore</code> files in subdirectories. The rules in these nested <code class="code-inline tex2jax_ignore">.gitignore</code> files apply only to the files under the directory where they are located. The Linux kernel source repository has 206 <code class="code-inline tex2jax_ignore">.gitignore</code> files.</p>
+<p id="p-520">It is beyond the scope of this book to get into the details of multiple <code class="code-inline tex2jax_ignore">.gitignore</code> files; see <code class="code-inline tex2jax_ignore">man gitignore</code> for the details.</p></section><section class="paragraphs" id="_git_diff_staged"><h4 class="heading"><span class="title">Viewing Your Staged and Unstaged Changes.</span></h4>
+<p id="p-521">If the <code class="code-inline tex2jax_ignore">git status</code> command is too vague for you — you want to know exactly what you changed, not just which files were changed — you can use the <code class="code-inline tex2jax_ignore">git diff</code> command. We’ll cover <code class="code-inline tex2jax_ignore">git diff</code> in more detail later, but you’ll probably use it most often to answer these two questions: What have you changed but not yet staged? And what have you staged that you are about to commit? Although <code class="code-inline tex2jax_ignore">git status</code> answers those questions very generally by listing the file names, <code class="code-inline tex2jax_ignore">git diff</code> shows you the exact lines added and removed — the patch, as it were.</p>
+<p id="p-522">Let’s say you edit and stage the <code class="code-inline tex2jax_ignore">README</code> file again and then edit the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file without staging it. If you run your <code class="code-inline tex2jax_ignore">git status</code> command, you once again see something like this:</p>
 <pre class="code-block tex2jax_ignore">$ git status
 On branch main
 Your branch is up-to-date with 'origin/main'.
@@ -399,7 +399,7 @@ Changes not staged for commit:
 
     modified:   CONTRIBUTING.md
 </pre>
-<p id="p-517">To see what you’ve changed but not yet staged, type <code class="code-inline tex2jax_ignore">git diff</code> with no other arguments:</p>
+<p id="p-523">To see what you’ve changed but not yet staged, type <code class="code-inline tex2jax_ignore">git diff</code> with no other arguments:</p>
 <pre class="code-block tex2jax_ignore">$ git diff
 diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
 index 8ebb991..643e24f 100644
@@ -416,8 +416,8 @@ index 8ebb991..643e24f 100644
  If you are starting to work on a particular area, feel free to submit a PR
  that highlights your work in progress (and note in the PR title that it's
 </pre>
-<p id="p-518">That command compares what is in your working directory with what is in your staging area. The result tells you the changes you’ve made that you haven’t yet staged.</p>
-<p id="p-519">If you want to see what you’ve staged that will go into your next commit, you can use <code class="code-inline tex2jax_ignore">git diff --staged</code>. This command compares your staged changes to your last commit:</p>
+<p id="p-524">That command compares what is in your working directory with what is in your staging area. The result tells you the changes you’ve made that you haven’t yet staged.</p>
+<p id="p-525">If you want to see what you’ve staged that will go into your next commit, you can use <code class="code-inline tex2jax_ignore">git diff --staged</code>. This command compares your staged changes to your last commit:</p>
 <pre class="code-block tex2jax_ignore">$ git diff --staged
 diff --git a/README b/README
 new file mode 100644
@@ -427,8 +427,8 @@ index 0000000..03902a1
 @@ -0,0 +1 @@
 +My Project
 </pre>
-<p id="p-520">It’s important to note that <code class="code-inline tex2jax_ignore">git diff</code> by itself doesn’t show all changes made since your last commit — only changes that are still unstaged. If you’ve staged all of your changes, <code class="code-inline tex2jax_ignore">git diff</code> will give you no output.</p>
-<p id="p-521">For another example, if you stage the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file and then edit it, you can use <code class="code-inline tex2jax_ignore">git diff</code> to see the changes in the file that are staged and the changes that are unstaged. If our environment looks like this:</p>
+<p id="p-526">It’s important to note that <code class="code-inline tex2jax_ignore">git diff</code> by itself doesn’t show all changes made since your last commit — only changes that are still unstaged. If you’ve staged all of your changes, <code class="code-inline tex2jax_ignore">git diff</code> will give you no output.</p>
+<p id="p-527">For another example, if you stage the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file and then edit it, you can use <code class="code-inline tex2jax_ignore">git diff</code> to see the changes in the file that are staged and the changes that are unstaged. If our environment looks like this:</p>
 <pre class="code-block tex2jax_ignore">$ git add CONTRIBUTING.md
 $ echo '# test line' &gt;&gt; CONTRIBUTING.md
 $ git status
@@ -445,7 +445,7 @@ Changes not staged for commit:
 
     modified:   CONTRIBUTING.md
 </pre>
-<p id="p-522">Now you can use <code class="code-inline tex2jax_ignore">git diff</code> to see what is still unstaged:</p>
+<p id="p-528">Now you can use <code class="code-inline tex2jax_ignore">git diff</code> to see what is still unstaged:</p>
 <pre class="code-block tex2jax_ignore">$ git diff
 diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
 index 643e24f..87f08c8 100644
@@ -457,8 +457,8 @@ index 643e24f..87f08c8 100644
  See our [projects list](https://github.com/libgit2/libgit2/blob/development/PROJECTS.md).
 +# test line
 </pre>
-<p id="p-523">and <code class="code-inline tex2jax_ignore">git diff --cached</code> to see what you’ve staged so far (<code class="code-inline tex2jax_ignore">--staged</code> and <code class="code-inline tex2jax_ignore">--cached</code> are synonyms):</p>
-<p id="p-524"> <pre class="code-block tex2jax_ignore">$ git diff --cached
+<p id="p-529">and <code class="code-inline tex2jax_ignore">git diff --cached</code> to see what you’ve staged so far (<code class="code-inline tex2jax_ignore">--staged</code> and <code class="code-inline tex2jax_ignore">--cached</code> are synonyms):</p>
+<p id="p-530"> <pre class="code-block tex2jax_ignore">$ git diff --cached
 diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
 index 8ebb991..643e24f 100644
 --- a/CONTRIBUTING.md
@@ -474,14 +474,14 @@ index 8ebb991..643e24f 100644
  If you are starting to work on a particular area, feel free to submit a PR
  that highlights your work in progress (and note in the PR title that it is so.
 </pre></p>
-<p id="p-525">Note: Git Diff in an External Tool</p>
-<p id="p-526">We will continue to use the <code class="code-inline tex2jax_ignore">git diff</code> command in various ways throughout the rest of the book. There is another way to look at these diffs if you prefer a graphical or external diff viewing program instead. If you run <code class="code-inline tex2jax_ignore">git difftool</code> instead of <code class="code-inline tex2jax_ignore">git diff</code>, you can view any of these diffs in software like emerge, vimdiff and many more (including commercial products). Run <code class="code-inline tex2jax_ignore">git difftool --tool-help</code> to see what is available on your system.</p></section><section class="paragraphs" id="_committing_changes"><h4 class="heading"><span class="title">Committing Your Changes.</span></h4>
-<p id="p-527">Now that your staging area is set up the way you want it, you can commit your changes. Remember that anything that is still unstaged — any files you have created or modified that you haven’t run <code class="code-inline tex2jax_ignore">git add</code> on since you edited them — won’t go into this commit. They will stay as modified files on your disk. In this case, let’s say that the last time you ran <code class="code-inline tex2jax_ignore">git status</code>, you saw that everything was staged, so you’re ready to commit your changes. The simplest way to commit is to type <code class="code-inline tex2jax_ignore">git commit</code>:</p>
+<p id="p-531">Note: Git Diff in an External Tool</p>
+<p id="p-532">We will continue to use the <code class="code-inline tex2jax_ignore">git diff</code> command in various ways throughout the rest of the book. There is another way to look at these diffs if you prefer a graphical or external diff viewing program instead. If you run <code class="code-inline tex2jax_ignore">git difftool</code> instead of <code class="code-inline tex2jax_ignore">git diff</code>, you can view any of these diffs in software like emerge, vimdiff and many more (including commercial products). Run <code class="code-inline tex2jax_ignore">git difftool --tool-help</code> to see what is available on your system.</p></section><section class="paragraphs" id="_committing_changes"><h4 class="heading"><span class="title">Committing Your Changes.</span></h4>
+<p id="p-533">Now that your staging area is set up the way you want it, you can commit your changes. Remember that anything that is still unstaged — any files you have created or modified that you haven’t run <code class="code-inline tex2jax_ignore">git add</code> on since you edited them — won’t go into this commit. They will stay as modified files on your disk. In this case, let’s say that the last time you ran <code class="code-inline tex2jax_ignore">git status</code>, you saw that everything was staged, so you’re ready to commit your changes. The simplest way to commit is to type <code class="code-inline tex2jax_ignore">git commit</code>:</p>
 <pre class="code-block tex2jax_ignore">$ git commit
 </pre>
-<p id="p-528">Doing so launches your editor of choice.</p>
-<p id="p-529">Note: This is set by your shell’s <code class="code-inline tex2jax_ignore">EDITOR</code> environment variable, although you can configure it with whatever you want using the <code class="code-inline tex2jax_ignore">git config - -global core.editor</code> command as you saw in the previous section.</p>
-<p id="p-530">The editor displays the following text (this example is a Vim screen):</p>
+<p id="p-534">Doing so launches your editor of choice.</p>
+<p id="p-535">Note: This is set by your shell’s <code class="code-inline tex2jax_ignore">EDITOR</code> environment variable, although you can configure it with whatever you want using the <code class="code-inline tex2jax_ignore">git config - -global core.editor</code> command as you saw in the previous section.</p>
+<p id="p-536">The editor displays the following text (this example is a Vim screen):</p>
 <pre class="code-block tex2jax_ignore"># Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
 # On branch main
@@ -496,18 +496,18 @@ index 8ebb991..643e24f 100644
 ~
 ".git/COMMIT_EDITMSG" 9L, 283C
 </pre>
-<p id="p-531">You can see that the default commit message contains the latest output of the <code class="code-inline tex2jax_ignore">git status</code> command commented out and one empty line on top. You can remove these comments and type your commit message, or you can leave them there to help you remember what you’re committing.</p>
-<p id="p-532">Note: For an even more explicit reminder of what you’ve modified, you can pass the <code class="code-inline tex2jax_ignore">-v</code> option to <code class="code-inline tex2jax_ignore">git commit</code>. Doing so also puts the diff of your change in the editor so you can see exactly what changes you’re committing.</p>
-<p id="p-533">When you exit the editor, Git creates your commit with that commit message (with the comments and diff stripped out).</p>
-<p id="p-534">Alternatively, you can type your commit message inline with the <code class="code-inline tex2jax_ignore">commit</code> command by specifying it after a <code class="code-inline tex2jax_ignore">-m</code> flag, like this:</p>
+<p id="p-537">You can see that the default commit message contains the latest output of the <code class="code-inline tex2jax_ignore">git status</code> command commented out and one empty line on top. You can remove these comments and type your commit message, or you can leave them there to help you remember what you’re committing.</p>
+<p id="p-538">Note: For an even more explicit reminder of what you’ve modified, you can pass the <code class="code-inline tex2jax_ignore">-v</code> option to <code class="code-inline tex2jax_ignore">git commit</code>. Doing so also puts the diff of your change in the editor so you can see exactly what changes you’re committing.</p>
+<p id="p-539">When you exit the editor, Git creates your commit with that commit message (with the comments and diff stripped out).</p>
+<p id="p-540">Alternatively, you can type your commit message inline with the <code class="code-inline tex2jax_ignore">commit</code> command by specifying it after a <code class="code-inline tex2jax_ignore">-m</code> flag, like this:</p>
 <pre class="code-block tex2jax_ignore">$ git commit -m "Story 182: fix benchmarks for speed"
 [main 463dc4f] Story 182: fix benchmarks for speed
  2 files changed, 2 insertions(+)
  create mode 100644 README
 </pre>
-<p id="p-535">Now you’ve created your first commit! You can see that the commit has given you some output about itself: which branch you committed to (<code class="code-inline tex2jax_ignore">main</code>), what SHA-1 checksum the commit has (<code class="code-inline tex2jax_ignore">463dc4f</code>), how many files were changed, and statistics about lines added and removed in the commit.</p>
-<p id="p-536">Remember that the commit records the snapshot you set up in your staging area. Anything you didn’t stage is still sitting there modified; you can do another commit to add it to your history. Every time you perform a commit, you’re recording a snapshot of your project that you can revert to or compare to later.</p></section><section class="paragraphs" id="_skipping_the_staging_area"><h4 class="heading"><span class="title">Skipping the Staging Area.</span></h4>
-<p id="p-537">Although it can be amazingly useful for crafting commits exactly how you want them, the staging area is sometimes a bit more complex than you need in your workflow. If you want to skip the staging area, Git provides a simple shortcut. Adding the <code class="code-inline tex2jax_ignore">-a</code> option to the <code class="code-inline tex2jax_ignore">git commit</code> command makes Git automatically stage every file that is already tracked before doing the commit, letting you skip the <code class="code-inline tex2jax_ignore">git add</code> part:</p>
+<p id="p-541">Now you’ve created your first commit! You can see that the commit has given you some output about itself: which branch you committed to (<code class="code-inline tex2jax_ignore">main</code>), what SHA-1 checksum the commit has (<code class="code-inline tex2jax_ignore">463dc4f</code>), how many files were changed, and statistics about lines added and removed in the commit.</p>
+<p id="p-542">Remember that the commit records the snapshot you set up in your staging area. Anything you didn’t stage is still sitting there modified; you can do another commit to add it to your history. Every time you perform a commit, you’re recording a snapshot of your project that you can revert to or compare to later.</p></section><section class="paragraphs" id="_skipping_the_staging_area"><h4 class="heading"><span class="title">Skipping the Staging Area.</span></h4>
+<p id="p-543">Although it can be amazingly useful for crafting commits exactly how you want them, the staging area is sometimes a bit more complex than you need in your workflow. If you want to skip the staging area, Git provides a simple shortcut. Adding the <code class="code-inline tex2jax_ignore">-a</code> option to the <code class="code-inline tex2jax_ignore">git commit</code> command makes Git automatically stage every file that is already tracked before doing the commit, letting you skip the <code class="code-inline tex2jax_ignore">git add</code> part:</p>
 <pre class="code-block tex2jax_ignore">$ git status
 On branch main
 Your branch is up-to-date with 'origin/main'.
@@ -522,9 +522,9 @@ $ git commit -a -m 'Add new benchmarks'
 [main 83e38c7] Add new benchmarks
  1 file changed, 5 insertions(+), 0 deletions(-)
 </pre>
-<p id="p-538">Notice how you don’t have to run <code class="code-inline tex2jax_ignore">git add</code> on the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file in this case before you commit. That’s because the <code class="code-inline tex2jax_ignore">-a</code> flag includes all changed files. This is convenient, but be careful; sometimes this flag will cause you to include unwanted changes.</p></section><section class="paragraphs" id="_removing_files"><h4 class="heading"><span class="title">Removing Files.</span></h4>
-<p id="p-539">To remove a file from Git, you have to remove it from your tracked files (more accurately, remove it from your staging area) and then commit. The <code class="code-inline tex2jax_ignore">git rm</code> command does that, and also removes the file from your working directory so you don’t see it as an untracked file the next time around.</p>
-<p id="p-540">If you simply remove the file from your working directory, it shows up under the “Changes not staged for commit” (that is, <em class="emphasis">unstaged</em>) area of your <code class="code-inline tex2jax_ignore">git status</code> output:</p>
+<p id="p-544">Notice how you don’t have to run <code class="code-inline tex2jax_ignore">git add</code> on the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file in this case before you commit. That’s because the <code class="code-inline tex2jax_ignore">-a</code> flag includes all changed files. This is convenient, but be careful; sometimes this flag will cause you to include unwanted changes.</p></section><section class="paragraphs" id="_removing_files"><h4 class="heading"><span class="title">Removing Files.</span></h4>
+<p id="p-545">To remove a file from Git, you have to remove it from your tracked files (more accurately, remove it from your staging area) and then commit. The <code class="code-inline tex2jax_ignore">git rm</code> command does that, and also removes the file from your working directory so you don’t see it as an untracked file the next time around.</p>
+<p id="p-546">If you simply remove the file from your working directory, it shows up under the “Changes not staged for commit” (that is, <em class="emphasis">unstaged</em>) area of your <code class="code-inline tex2jax_ignore">git status</code> output:</p>
 <pre class="code-block tex2jax_ignore">$ rm PROJECTS.md
 $ git status
 On branch main
@@ -537,7 +537,7 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 </pre>
-<p id="p-541">Then, if you run <code class="code-inline tex2jax_ignore">git rm</code>, it stages the file’s removal:</p>
+<p id="p-547">Then, if you run <code class="code-inline tex2jax_ignore">git rm</code>, it stages the file’s removal:</p>
 <pre class="code-block tex2jax_ignore">$ git rm PROJECTS.md
 rm 'PROJECTS.md'
 $ git status
@@ -548,22 +548,22 @@ Changes to be committed:
 
     deleted:    PROJECTS.md
 </pre>
-<p id="p-542">The next time you commit, the file will be gone and no longer tracked. If you modified the file or had already added it to the staging area, you must force the removal with the <code class="code-inline tex2jax_ignore">-f</code> option. This is a safety feature to prevent accidental removal of data that hasn’t yet been recorded in a snapshot and that can’t be recovered from Git.</p>
-<p id="p-543">Another useful thing you may want to do is to keep the file in your working tree but remove it from your staging area. In other words, you may want to keep the file on your hard drive but not have Git track it anymore. This is particularly useful if you forgot to add something to your <code class="code-inline tex2jax_ignore">.gitignore</code> file and accidentally staged it, like a large log file or a bunch of <code class="code-inline tex2jax_ignore">.a</code> compiled files. To do this, use the <code class="code-inline tex2jax_ignore">--cached</code> option:</p>
+<p id="p-548">The next time you commit, the file will be gone and no longer tracked. If you modified the file or had already added it to the staging area, you must force the removal with the <code class="code-inline tex2jax_ignore">-f</code> option. This is a safety feature to prevent accidental removal of data that hasn’t yet been recorded in a snapshot and that can’t be recovered from Git.</p>
+<p id="p-549">Another useful thing you may want to do is to keep the file in your working tree but remove it from your staging area. In other words, you may want to keep the file on your hard drive but not have Git track it anymore. This is particularly useful if you forgot to add something to your <code class="code-inline tex2jax_ignore">.gitignore</code> file and accidentally staged it, like a large log file or a bunch of <code class="code-inline tex2jax_ignore">.a</code> compiled files. To do this, use the <code class="code-inline tex2jax_ignore">--cached</code> option:</p>
 <pre class="code-block tex2jax_ignore">$ git rm --cached README
 </pre>
-<p id="p-544">You can pass files, directories, and file-glob patterns to the <code class="code-inline tex2jax_ignore">git rm</code> command. That means you can do things such as:</p>
+<p id="p-550">You can pass files, directories, and file-glob patterns to the <code class="code-inline tex2jax_ignore">git rm</code> command. That means you can do things such as:</p>
 <pre class="code-block tex2jax_ignore">$ git rm log/\*.log
 </pre>
-<p id="p-545">Note the backslash (<code class="code-inline tex2jax_ignore">\</code>) in front of the <code class="code-inline tex2jax_ignore">*</code>. This is necessary because Git does its own filename expansion in addition to your shell’s filename expansion. This command removes all files that have the <code class="code-inline tex2jax_ignore">.log</code> extension in the <code class="code-inline tex2jax_ignore">log/</code> directory. Or, you can do something like this:</p>
+<p id="p-551">Note the backslash (<code class="code-inline tex2jax_ignore">\</code>) in front of the <code class="code-inline tex2jax_ignore">*</code>. This is necessary because Git does its own filename expansion in addition to your shell’s filename expansion. This command removes all files that have the <code class="code-inline tex2jax_ignore">.log</code> extension in the <code class="code-inline tex2jax_ignore">log/</code> directory. Or, you can do something like this:</p>
 <pre class="code-block tex2jax_ignore">$ git rm \*~
 </pre>
-<p id="p-546">This command removes all files whose names end with a <code class="code-inline tex2jax_ignore">~</code>.</p></section><section class="paragraphs" id="_git_mv"><h4 class="heading"><span class="title">Moving Files.</span></h4>
-<p id="p-547">Unlike many other VCSs, Git doesn’t explicitly track file movement. If you rename a file in Git, no metadata is stored in Git that tells it you renamed the file. However, Git is pretty smart about figuring that out after the fact — we’ll deal with detecting file movement a bit later.</p>
-<p id="p-548">Thus it’s a bit confusing that Git has a <code class="code-inline tex2jax_ignore">mv</code> command. If you want to rename a file in Git, you can run something like:</p>
+<p id="p-552">This command removes all files whose names end with a <code class="code-inline tex2jax_ignore">~</code>.</p></section><section class="paragraphs" id="_git_mv"><h4 class="heading"><span class="title">Moving Files.</span></h4>
+<p id="p-553">Unlike many other VCSs, Git doesn’t explicitly track file movement. If you rename a file in Git, no metadata is stored in Git that tells it you renamed the file. However, Git is pretty smart about figuring that out after the fact — we’ll deal with detecting file movement a bit later.</p>
+<p id="p-554">Thus it’s a bit confusing that Git has a <code class="code-inline tex2jax_ignore">mv</code> command. If you want to rename a file in Git, you can run something like:</p>
 <pre class="code-block tex2jax_ignore">$ git mv file_from file_to
 </pre>
-<p id="p-549">and it works fine. In fact, if you run something like this and look at the status, you’ll see that Git considers it a renamed file:</p>
+<p id="p-555">and it works fine. In fact, if you run something like this and look at the status, you’ll see that Git considers it a renamed file:</p>
 <pre class="code-block tex2jax_ignore">$ git mv README.md README
 $ git status
 On branch main
@@ -573,19 +573,19 @@ Changes to be committed:
 
     renamed:    README.md -&gt; README
 </pre>
-<p id="p-550">However, this is equivalent to running something like this:</p>
+<p id="p-556">However, this is equivalent to running something like this:</p>
 <pre class="code-block tex2jax_ignore">$ mv README.md README
 $ git rm README.md
 $ git add README
 </pre>
-<p id="p-551">Git figures out that it’s a rename implicitly, so it doesn’t matter if you rename a file that way or with the <code class="code-inline tex2jax_ignore">mv</code> command. The only real difference is that <code class="code-inline tex2jax_ignore">git mv</code> is one command instead of three — it’s a convenience function. More importantly, you can use any tool you like to rename a file, and address the <code class="code-inline tex2jax_ignore">add</code>/<code class="code-inline tex2jax_ignore">rm</code> later, before you commit.</p></section></section><section class="subsection" id="_viewing_history"><h3 class="heading hide-type">
+<p id="p-557">Git figures out that it’s a rename implicitly, so it doesn’t matter if you rename a file that way or with the <code class="code-inline tex2jax_ignore">mv</code> command. The only real difference is that <code class="code-inline tex2jax_ignore">git mv</code> is one command instead of three — it’s a convenience function. More importantly, you can use any tool you like to rename a file, and address the <code class="code-inline tex2jax_ignore">add</code>/<code class="code-inline tex2jax_ignore">rm</code> later, before you commit.</p></section></section><section class="subsection" id="_viewing_history"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.3.3</span> <span class="title">Viewing the Commit History</span>
 </h3>
-<p id="p-552">After you have created several commits, or if you have cloned a repository with an existing commit history, you’ll probably want to look back to see what has happened. The most basic and powerful tool to do this is the <code class="code-inline tex2jax_ignore">git log</code> command.</p>
-<p id="p-553">These examples use a very simple project called “simplegit”. To get the project, run:</p>
+<p id="p-558">After you have created several commits, or if you have cloned a repository with an existing commit history, you’ll probably want to look back to see what has happened. The most basic and powerful tool to do this is the <code class="code-inline tex2jax_ignore">git log</code> command.</p>
+<p id="p-559">These examples use a very simple project called “simplegit”. To get the project, run:</p>
 <pre class="code-block tex2jax_ignore">$ git clone https://github.com/schacon/simplegit-progit
 </pre>
-<p id="p-554">When you run <code class="code-inline tex2jax_ignore">git log</code> in this project, you should get output that looks something like this:</p>
+<p id="p-560">When you run <code class="code-inline tex2jax_ignore">git log</code> in this project, you should get output that looks something like this:</p>
 <pre class="code-block tex2jax_ignore">$ git log
 commit ca82a6dff817ec66f44342007202690a93763949
 Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
@@ -605,10 +605,10 @@ Date:   Sat Mar 15 10:31:28 2008 -0700
 
     Initial commit
 </pre>
-<p id="p-555">By default, with no arguments, <code class="code-inline tex2jax_ignore">git log</code> lists the commits made in that repository in reverse chronological order; that is, the most recent commits show up first. As you can see, this command lists each commit with its SHA-1 checksum, the author’s name and email, the date written, and the commit message.</p>
-<p id="p-556">A huge number and variety of options to the <code class="code-inline tex2jax_ignore">git log</code> command are available to show you exactly what you’re looking for. If interested, see <a class="external" href="https://www.git-scm.com/docs/git-log" target="_blank">git-log - Show commit logs</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-142" id="fn-142"><sup> 2 </sup></a> for the details, but don't worry about the overwhelming number of options — be reassured that you don't need them right now.</p>
-<p id="p-557">Here, we’ll show you only the most popular.</p>
-<p id="p-558">One of the more helpful options is <code class="code-inline tex2jax_ignore">-p</code> or <code class="code-inline tex2jax_ignore">--patch</code>, which shows the difference (the <em class="emphasis">patch</em> output) introduced in each commit. You can also limit the number of log entries displayed, such as using <code class="code-inline tex2jax_ignore">-2</code> to show only the last two entries.</p>
+<p id="p-561">By default, with no arguments, <code class="code-inline tex2jax_ignore">git log</code> lists the commits made in that repository in reverse chronological order; that is, the most recent commits show up first. As you can see, this command lists each commit with its SHA-1 checksum, the author’s name and email, the date written, and the commit message.</p>
+<p id="p-562">A huge number and variety of options to the <code class="code-inline tex2jax_ignore">git log</code> command are available to show you exactly what you’re looking for. If interested, see <a class="external" href="https://www.git-scm.com/docs/git-log" target="_blank">git-log - Show commit logs</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-142" id="fn-142"><sup> 2 </sup></a> for the details, but don't worry about the overwhelming number of options — be reassured that you don't need them right now.</p>
+<p id="p-563">Here, we’ll show you only the most popular.</p>
+<p id="p-564">One of the more helpful options is <code class="code-inline tex2jax_ignore">-p</code> or <code class="code-inline tex2jax_ignore">--patch</code>, which shows the difference (the <em class="emphasis">patch</em> output) introduced in each commit. You can also limit the number of log entries displayed, such as using <code class="code-inline tex2jax_ignore">-2</code> to show only the last two entries.</p>
 <pre class="code-block tex2jax_ignore">$ git log -p -2
 commit ca82a6dff817ec66f44342007202690a93763949
 Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
@@ -650,13 +650,13 @@ index a0a60ae..47c6340 100644
 -  puts git.show
 -end
 </pre>
-<p id="p-559">This option displays the same information but with a diff directly following each entry. This is very helpful for code review or to quickly browse what happened during a series of commits that a collaborator has added.</p></section><section class="subsection" id="_remote_repos"><h3 class="heading hide-type">
+<p id="p-565">This option displays the same information but with a diff directly following each entry. This is very helpful for code review or to quickly browse what happened during a series of commits that a collaborator has added.</p></section><section class="subsection" id="_remote_repos"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.3.4</span> <span class="title">Working with Remotes</span>
 </h3>
-<p id="p-560">To be able to collaborate on any Git project, you need to know how to manage your remote repositories. Remote repositories are versions of your project that are hosted on the Internet or network somewhere. You can have several of them, each of which generally is either read-only or read/write for you. Collaborating with others involves managing these remote repositories and pushing and pulling data to and from them when you need to share work. Managing remote repositories includes knowing how to add remote repositories, remove remotes that are no longer valid, manage various remote branches and define them as being tracked or not, and more. In this section, we’ll cover some of these remote-management skills.</p>
-<p id="p-561"><em class="emphasis">Remote repositories can be on your local machine.</em> It is entirely possible that you can be working with a “remote” repository that is, in fact, on the same host you are. The word “remote” does not necessarily imply that the repository is somewhere else on the network or Internet, only that it is elsewhere. Working with such a remote repository would still involve all the standard pushing, pulling and fetching operations as with any other remote.</p>
+<p id="p-566">To be able to collaborate on any Git project, you need to know how to manage your remote repositories. Remote repositories are versions of your project that are hosted on the Internet or network somewhere. You can have several of them, each of which generally is either read-only or read/write for you. Collaborating with others involves managing these remote repositories and pushing and pulling data to and from them when you need to share work. Managing remote repositories includes knowing how to add remote repositories, remove remotes that are no longer valid, manage various remote branches and define them as being tracked or not, and more. In this section, we’ll cover some of these remote-management skills.</p>
+<p id="p-567"><em class="emphasis">Remote repositories can be on your local machine.</em> It is entirely possible that you can be working with a “remote” repository that is, in fact, on the same host you are. The word “remote” does not necessarily imply that the repository is somewhere else on the network or Internet, only that it is elsewhere. Working with such a remote repository would still involve all the standard pushing, pulling and fetching operations as with any other remote.</p>
 <section class="paragraphs" id="_showing_your_remotes"><h4 class="heading"><span class="title">Showing Your Remotes.</span></h4>
-<p id="p-562">To see which remote servers you have configured, you can run the <code class="code-inline tex2jax_ignore">git remote</code> command. It lists the shortnames of each remote handle you’ve specified. If you’ve cloned your repository, you should at least see <code class="code-inline tex2jax_ignore">origin</code> — that is the default name Git gives to the server you cloned from:</p>
+<p id="p-568">To see which remote servers you have configured, you can run the <code class="code-inline tex2jax_ignore">git remote</code> command. It lists the shortnames of each remote handle you’ve specified. If you’ve cloned your repository, you should at least see <code class="code-inline tex2jax_ignore">origin</code> — that is the default name Git gives to the server you cloned from:</p>
 <pre class="code-block tex2jax_ignore">$ git clone https://github.com/schacon/ticgit
 Cloning into 'ticgit'...
 remote: Reusing existing pack: 1857, done.
@@ -668,12 +668,12 @@ $ cd ticgit
 $ git remote
 origin
 </pre>
-<p id="p-563">You can also specify <code class="code-inline tex2jax_ignore">-v</code>, which shows you the URLs that Git has stored for the shortname to be used when reading and writing to that remote:</p>
+<p id="p-569">You can also specify <code class="code-inline tex2jax_ignore">-v</code>, which shows you the URLs that Git has stored for the shortname to be used when reading and writing to that remote:</p>
 <pre class="code-block tex2jax_ignore">$ git remote -v
 origin  https://github.com/schacon/ticgit (fetch)
 origin  https://github.com/schacon/ticgit (push)
 </pre>
-<p id="p-564">If you have more than one remote, the command lists them all. For example, a repository with multiple remotes for working with several collaborators might look something like this.</p>
+<p id="p-570">If you have more than one remote, the command lists them all. For example, a repository with multiple remotes for working with several collaborators might look something like this.</p>
 <pre class="code-block tex2jax_ignore">$ cd grit
 $ git remote -v
 bakkdoor  https://github.com/bakkdoor/grit (fetch)
@@ -687,8 +687,8 @@ koke      git://github.com/koke/grit.git (push)
 origin    git@github.com:mojombo/grit.git (fetch)
 origin    git@github.com:mojombo/grit.git (push)
 </pre>
-<p id="p-565">This means we can pull contributions from any of these users pretty easily. We may additionally have permission to push to one or more of these, though we can’t tell that here.</p></section><section class="paragraphs" id="_adding_remote_repositories"><h4 class="heading"><span class="title">Adding Remote Repositories.</span></h4>
-<p id="p-566">We’ve mentioned and given some demonstrations of how the <code class="code-inline tex2jax_ignore">git clone</code> command implicitly adds the <code class="code-inline tex2jax_ignore">origin</code> remote for you. Here’s how to add a new remote explicitly. To add a new remote Git repository as a shortname you can reference easily, run <code class="code-inline tex2jax_ignore">git remote add &lt;shortname&gt; &lt;url&gt;</code>:</p>
+<p id="p-571">This means we can pull contributions from any of these users pretty easily. We may additionally have permission to push to one or more of these, though we can’t tell that here.</p></section><section class="paragraphs" id="_adding_remote_repositories"><h4 class="heading"><span class="title">Adding Remote Repositories.</span></h4>
+<p id="p-572">We’ve mentioned and given some demonstrations of how the <code class="code-inline tex2jax_ignore">git clone</code> command implicitly adds the <code class="code-inline tex2jax_ignore">origin</code> remote for you. Here’s how to add a new remote explicitly. To add a new remote Git repository as a shortname you can reference easily, run <code class="code-inline tex2jax_ignore">git remote add &lt;shortname&gt; &lt;url&gt;</code>:</p>
 <pre class="code-block tex2jax_ignore">$ git remote
 origin
 $ git remote add pb https://github.com/paulboone/ticgit
@@ -698,7 +698,7 @@ origin  https://github.com/schacon/ticgit (push)
 pb  https://github.com/paulboone/ticgit (fetch)
 pb  https://github.com/paulboone/ticgit (push)
 </pre>
-<p id="p-567">Now you can use the string <code class="code-inline tex2jax_ignore">pb</code> on the command line in lieu of the whole URL. For example, if you want to fetch all the information that Paul has but that you don’t yet have in your repository, you can run <code class="code-inline tex2jax_ignore">git fetch pb</code>:</p>
+<p id="p-573">Now you can use the string <code class="code-inline tex2jax_ignore">pb</code> on the command line in lieu of the whole URL. For example, if you want to fetch all the information that Paul has but that you don’t yet have in your repository, you can run <code class="code-inline tex2jax_ignore">git fetch pb</code>:</p>
 <pre class="code-block tex2jax_ignore">$ git fetch pb
 remote: Counting objects: 43, done.
 remote: Compressing objects: 100% (36/36), done.
@@ -708,22 +708,22 @@ From https://github.com/paulboone/ticgit
  * [new branch]      main     -&gt; pb/main
  * [new branch]      ticgit     -&gt; pb/ticgit
 </pre>
-<p id="p-568">Paul’s <code class="code-inline tex2jax_ignore">main</code> branch is now accessible locally as <code class="code-inline tex2jax_ignore">pb/main</code> — you can merge it into one of your branches, or you can check out a local branch at that point if you want to inspect it. We’ll go over what branches are and how to use them in much more detail in the next subsection on Git Branching.</p></section><section class="paragraphs" id="_fetching_and_pulling"><h4 class="heading"><span class="title">Fetching and Pulling from Your Remotes.</span></h4>
-<p id="p-569">As you just saw, to get data from your remote projects, you can run:</p>
+<p id="p-574">Paul’s <code class="code-inline tex2jax_ignore">main</code> branch is now accessible locally as <code class="code-inline tex2jax_ignore">pb/main</code> — you can merge it into one of your branches, or you can check out a local branch at that point if you want to inspect it. We’ll go over what branches are and how to use them in much more detail in the next subsection on Git Branching.</p></section><section class="paragraphs" id="_fetching_and_pulling"><h4 class="heading"><span class="title">Fetching and Pulling from Your Remotes.</span></h4>
+<p id="p-575">As you just saw, to get data from your remote projects, you can run:</p>
 <pre class="code-block tex2jax_ignore">$ git fetch &lt;remote&gt;
 </pre>
-<p id="p-570">The command goes out to that remote project and pulls down all the data from that remote project that you don’t have yet. After you do this, you should have references to all the branches from that remote, which you can merge in or inspect at any time.</p>
-<p id="p-571">If you clone a repository, the command automatically adds that remote repository under the name “origin”. So, <code class="code-inline tex2jax_ignore">git fetch origin</code> fetches any new work that has been pushed to that server since you cloned (or last fetched from) it. It’s important to note that the <code class="code-inline tex2jax_ignore">git fetch</code> command only downloads the data to your local repository — it doesn’t automatically merge it with any of your work or modify what you’re currently working on. You have to merge it manually into your work when you’re ready.</p>
-<p id="p-572">If your current branch is set up to track a remote branch (see the next section on Git Branching for more information), you can use the <code class="code-inline tex2jax_ignore">git pull</code> command to automatically fetch and then merge that remote branch into your current branch. This may be an easier or more comfortable workflow for you; and by default, the <code class="code-inline tex2jax_ignore">git clone</code> command automatically sets up your local <code class="code-inline tex2jax_ignore">main</code> branch to track the remote <code class="code-inline tex2jax_ignore">main</code> branch (or whatever the default branch is called) on the server you cloned from. Running <code class="code-inline tex2jax_ignore">git pull</code> generally fetches data from the server you originally cloned from and automatically tries to merge it into the code you’re currently working on.</p>
-<p id="p-573">Note: From git version 2.27 onward, <code class="code-inline tex2jax_ignore">git pull</code> will give a warning if the <code class="code-inline tex2jax_ignore">pull.rebase</code> variable is not set. Git will keep warning you until you set the variable.</p>
-<p id="p-574">If you want the default behavior of git (fast-forward if possible, else create a merge commit): <code class="code-inline tex2jax_ignore">git config --global pull.rebase "false"</code></p>
-<p id="p-575">If you want to rebase when pulling: <code class="code-inline tex2jax_ignore">git config --global pull.rebase "true"</code></p></section><section class="paragraphs" id="_pushing_remotes"><h4 class="heading"><span class="title">Pushing to Your Remotes.</span></h4>
-<p id="p-576">When you have your project at a point that you want to share, you have to push it upstream. The command for this is simple: <code class="code-inline tex2jax_ignore">git push &lt;remote&gt; &lt;branch&gt;</code>. If you want to push your <code class="code-inline tex2jax_ignore">main</code> branch to your <code class="code-inline tex2jax_ignore">origin</code> server (again, cloning generally sets up both of those names for you automatically), then you can run this to push any commits you’ve done back up to the server:</p>
+<p id="p-576">The command goes out to that remote project and pulls down all the data from that remote project that you don’t have yet. After you do this, you should have references to all the branches from that remote, which you can merge in or inspect at any time.</p>
+<p id="p-577">If you clone a repository, the command automatically adds that remote repository under the name “origin”. So, <code class="code-inline tex2jax_ignore">git fetch origin</code> fetches any new work that has been pushed to that server since you cloned (or last fetched from) it. It’s important to note that the <code class="code-inline tex2jax_ignore">git fetch</code> command only downloads the data to your local repository — it doesn’t automatically merge it with any of your work or modify what you’re currently working on. You have to merge it manually into your work when you’re ready.</p>
+<p id="p-578">If your current branch is set up to track a remote branch (see the next section on Git Branching for more information), you can use the <code class="code-inline tex2jax_ignore">git pull</code> command to automatically fetch and then merge that remote branch into your current branch. This may be an easier or more comfortable workflow for you; and by default, the <code class="code-inline tex2jax_ignore">git clone</code> command automatically sets up your local <code class="code-inline tex2jax_ignore">main</code> branch to track the remote <code class="code-inline tex2jax_ignore">main</code> branch (or whatever the default branch is called) on the server you cloned from. Running <code class="code-inline tex2jax_ignore">git pull</code> generally fetches data from the server you originally cloned from and automatically tries to merge it into the code you’re currently working on.</p>
+<p id="p-579">Note: From git version 2.27 onward, <code class="code-inline tex2jax_ignore">git pull</code> will give a warning if the <code class="code-inline tex2jax_ignore">pull.rebase</code> variable is not set. Git will keep warning you until you set the variable.</p>
+<p id="p-580">If you want the default behavior of git (fast-forward if possible, else create a merge commit): <code class="code-inline tex2jax_ignore">git config --global pull.rebase "false"</code></p>
+<p id="p-581">If you want to rebase when pulling: <code class="code-inline tex2jax_ignore">git config --global pull.rebase "true"</code></p></section><section class="paragraphs" id="_pushing_remotes"><h4 class="heading"><span class="title">Pushing to Your Remotes.</span></h4>
+<p id="p-582">When you have your project at a point that you want to share, you have to push it upstream. The command for this is simple: <code class="code-inline tex2jax_ignore">git push &lt;remote&gt; &lt;branch&gt;</code>. If you want to push your <code class="code-inline tex2jax_ignore">main</code> branch to your <code class="code-inline tex2jax_ignore">origin</code> server (again, cloning generally sets up both of those names for you automatically), then you can run this to push any commits you’ve done back up to the server:</p>
 <pre class="code-block tex2jax_ignore">$ git push origin main
 </pre>
-<p id="p-577">This command works only if you cloned from a server to which you have write access and if nobody has pushed in the meantime. If you and someone else clone at the same time and they push upstream and then you push upstream, your push will rightly be rejected. You’ll have to fetch their work first and incorporate it into yours before you’ll be allowed to push. See the next section on Git Branching for more detailed information on how to push to remote servers.</p></section></section><section class="conclusion" id="conclusion-8"><h3 class="heading">Section Summary.<span></span>
+<p id="p-583">This command works only if you cloned from a server to which you have write access and if nobody has pushed in the meantime. If you and someone else clone at the same time and they push upstream and then you push upstream, your push will rightly be rejected. You’ll have to fetch their work first and incorporate it into yours before you’ll be allowed to push. See the next section on Git Branching for more detailed information on how to push to remote servers.</p></section></section><section class="conclusion" id="conclusion-8"><h3 class="heading">Section Summary.<span></span>
 </h3>
-<p id="p-578">At this point, you can do all the basic local Git operations — creating or cloning a repository, making changes, staging and committing those changes, and viewing the history of all the changes the repository has been through. Next, we’ll cover Git’s killer feature: its branching model.</p></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-141"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/github/gitignore</code></div></div>
+<p id="p-584">At this point, you can do all the basic local Git operations — creating or cloning a repository, making changes, staging and committing those changes, and viewing the history of all the changes the repository has been through. Next, we’ll cover Git’s killer feature: its branching model.</p></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-141"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/github/gitignore</code></div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-142"><div class="fn"><code class="code-inline tex2jax_ignore">www.git-scm.com/docs/git-log</code></div></div>
 </div></main>
 </div>

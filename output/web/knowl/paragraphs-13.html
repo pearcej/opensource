@@ -11,38 +11,32 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<section class="paragraphs"><h4 class="heading"><span class="title">File Management.</span></h4>
+<section class="paragraphs"><h4 class="heading"><span class="title">Shell Scripts.</span></h4>
 <p></p>
-<p>We can  move files around, make a copy of files, or remove (delete) files from the filesystem using <code class="code-inline tex2jax_ignore">mv</code>, <code class="code-inline tex2jax_ignore">cp</code>, and <code class="code-inline tex2jax_ignore">rm</code> respectively. Let's see how these work. First, list your files. You should have  <em class="emphasis">newfile1.txt</em>, <em class="emphasis">newfile2.txt</em>, and <em class="emphasis">newfile3.txt</em> in your directory.</p>
-<p>Let's make a new directory named <em class="emphasis">subdir</em> below our current directory and move one of our files there.</p>
-<pre class="code-block tex2jax_ignore">mkdir subdir
-mv newfile3.txt subdir/newfile3.txt
-ls
-ls subdir
+<p>TODO: need introduction to shell scripts</p>
+<p>It is possible to use what we have learned thus far to make an executable script. Let's try it! Typing <code class="code-inline tex2jax_ignore"> cat &gt;&gt; helloworld.sh</code> will tell the shell to open a new file named <code class="code-inline tex2jax_ignore"> helloworld.sh</code> and to expect multiple lines of input from the keyboard. Type the following lines:</p>
+<pre class="code-block tex2jax_ignore">cat &gt;&gt; helloworld.sh
+# This is a comment in a bash script that displays Hello World!
+echo 'Hello World!'
 </pre>
-<p>Note that the command <code class="code-inline tex2jax_ignore">ls subdir</code> provides a listing of the subdirectory named <em class="emphasis">subdir</em>. You should see that newfile3.txt is now not in the current directory, but it is instead in the subdirectory <em class="emphasis">subdir</em>.</p>
-<p>In addition to moving files around in the directory structure, we can also use the <code class="code-inline tex2jax_ignore">mv</code> command to rename files as follows:</p>
-<pre class="code-block tex2jax_ignore">mv newfile1.txt newfile4.txt
-ls
+<p>End the <code class="code-inline tex2jax_ignore">cat &gt;&gt; helloworld.sh</code> command sequence by typing <code class="code-inline tex2jax_ignore">Ctrl+D</code>. This will cause the file named <code class="code-inline tex2jax_ignore">helloworld.sh</code> to be completed and closed.</p>
+<p>You should now have new file named  <code class="code-inline tex2jax_ignore">helloworld.sh</code>. However, we would like to make it executable so we can run it as a script. To make it executable, we use the <code class="code-inline tex2jax_ignore">chmod</code> command. The <code class="code-inline tex2jax_ignore">chmod</code> stands for <em class="emphasis">change file mode bits</em>.  To add execution, we will need the <code class="code-inline tex2jax_ignore">+x</code> option, which stands for 'add execution' and will change it to being executable. So, run the following in your shell to make it an executable file for all users:</p>
+<pre class="code-block tex2jax_ignore">chmod +x helloworld.sh
 </pre>
-<p>One important thing to watch out for with the <code class="code-inline tex2jax_ignore">mv</code> command is that if the destination filename already exists, it might get overwritten. For this reason, you might want to use the <code class="code-inline tex2jax_ignore">-i</code> flag which stands for interactive. Try it.</p>
-<pre class="code-block tex2jax_ignore">mv -i newfile1.txt newfile2.txt
+<p>To execute this script, you need to indicate the directory where to find it, which is the current directory. So, to run it, you can type the following:</p>
+<pre class="code-block tex2jax_ignore">./helloworld.sh
 </pre>
-<p>You should see a question like, "overwrite 'newfile2.txt'?"If you respond with "n", then the file will not be overwritten.</p>
-<p>The <code class="code-inline tex2jax_ignore">cp</code> command works as you might expect:</p>
-<pre class="code-block tex2jax_ignore">cp newfile2.txt newfile2_cp.txt
-cat newfile2_cp.txt
+<p>We can create a more interactive bash script using the <code class="code-inline tex2jax_ignore">read</code> command which reads text from the keyboard. It is frequently used to make scripts interactive. However, we need a variable to store the result. In the bash shell, some variables, like environment variables, always exist and you can always access them. However, you can also create your own variables. As we have seen, you can use echo to see the value of a variable, but you must precede the variable name with the dollar sign ($). Let's see how all this works by trying the following, finishing with a <code class="code-inline tex2jax_ignore">Control+D</code>:</p>
+<pre class="code-block tex2jax_ignore">cat &gt;&gt; hellouser.sh
+# This is a comment in an interactive bash script that says hello to the user by name.
+echo 'What is your first name?'
+# In the next line, USERNAME is dynamically created as a new variable
+read USERNAME
+echo "Hello " $USERNAME
 </pre>
-<p>Just like with the <code class="code-inline tex2jax_ignore">mv</code> command, the <code class="code-inline tex2jax_ignore">cp</code> command will overwrite the destination file if it already exists. For this reason, you might want to use the <code class="code-inline tex2jax_ignore">-i</code> flag which stands for interactive here too. Try it.</p>
-<pre class="code-block tex2jax_ignore">cp -i newfile4.txt newfile2_cp.txt
-</pre>
-<p>You should see a question like, "overwrite 'newfile2_cp.txt'?" If you respond with "n", the command will not be overwritten, so using the <code class="code-inline tex2jax_ignore">-i</code> flag seems a wise safeguard.</p>
-<p>The <code class="code-inline tex2jax_ignore">rm</code> command is a useful, but another dangerous command.  Let's try it:</p>
-<pre class="code-block tex2jax_ignore">rm newfile2_cp.txt
-</pre>
-<p>Just as with <code class="code-inline tex2jax_ignore">cp</code>, and <code class="code-inline tex2jax_ignore">mv</code>, you are probably wise to use the <code class="code-inline tex2jax_ignore">-i</code> option.</p>
-<pre class="code-block tex2jax_ignore">rm -i newfile4.txt
-</pre>
-<p>And, if you respond with "n", then the removal will not happen.</p></section><span class="incontext"><a href="sec_dev_basic_shell_commands.html#paragraphs-13" class="internal">in-context</a></span>
+<p>To run this new script, you will again need to make it executable.  Then you can run it.</p>
+<pre class="code-block tex2jax_ignore">chmod +x hellouser.sh
+./hellouser.sh
+</pre></section><span class="incontext"><a href="sec_dev_basic_shell_commands.html#paragraphs-13" class="internal">in-context</a></span>
 </body>
 </html>

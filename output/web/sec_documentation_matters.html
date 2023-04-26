@@ -202,24 +202,24 @@ eBookConfig.enable_chatcodes =  false;
 <section class="section" id="sec_documentation_matters"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6.1</span> <span class="title">Documentation Matters</span>
 </h2>
-<section class="introduction" id="introduction-26"><p id="p-781">People might tell you documentation doesn’t matter. In a perfect world, it might not. If all code were self-evident and all programs worked for users without needing help, if all work and communities were easy to participate in, perhaps we could do without documentation. Of course, that would require all people to think and act in similar ways; we may never be without documentation simply because we are a diverse species.</p></section><section class="subsection" id="subsec_why_needed"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-26"><p id="p-787">People might tell you documentation doesn’t matter. In a perfect world, it might not. If all code were self-evident and all programs worked for users without needing help, if all work and communities were easy to participate in, perhaps we could do without documentation. Of course, that would require all people to think and act in similar ways; we may never be without documentation simply because we are a diverse species.</p></section><section class="subsection" id="subsec_why_needed"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.1.1</span> <span class="title">Why Documentation is Needed</span>
 </h3>
-<p id="p-782">In open source, documentation is a key tool of transparency and participation. You have to document everything that you do in a open source project, not just with the code. Next year when you need to remember why a technical decision was made, the answer is coming from a combination of mailing list archives, wiki page history, and well written version control log messages. A question of why you have specific commit rules or code styles? Mailing list archive and wiki page history are your friends.</p>
-<p id="p-783">There are two main ends in the spectrum of documentation:</p>
-<ol id="p-784" class="decimal">
+<p id="p-788">In open source, documentation is a key tool of transparency and participation. You have to document everything that you do in a open source project, not just with the code. Next year when you need to remember why a technical decision was made, the answer is coming from a combination of mailing list archives, wiki page history, and well written version control log messages. A question of why you have specific commit rules or code styles? Mailing list archive and wiki page history are your friends.</p>
+<p id="p-789">There are two main ends in the spectrum of documentation:</p>
+<ol id="p-790" class="decimal">
 <li id="li-161"><p id="p-derived-li-161">Content written ad hoc and in the flow of working; it captures the moment; examples are comments in source code, commit log messages, and notes taken during a meeting.</p></li>
 <li id="li-162"><p id="p-derived-li-162">Content planned as a document of some size; it captures a version in time; it follows a more rigorous process with a higher quality result.</p></li>
 </ol>
-<p id="p-785">Part of your journey is learning when to practice each end of the spectrum. Properly done, the ad hoc just-in-time components add up to coherent whole that approaches a full document, but it usually requires a restructuring and culling of content to make it gain the higher quality.</p>
-<p id="p-786">From a practical standpoint, here’s a piece of code. What does it do? Take 2 minutes and see how far you can get just by looking at the code snippet alone.</p>
+<p id="p-791">Part of your journey is learning when to practice each end of the spectrum. Properly done, the ad hoc just-in-time components add up to coherent whole that approaches a full document, but it usually requires a restructuring and culling of content to make it gain the higher quality.</p>
+<p id="p-792">From a practical standpoint, here’s a piece of code. What does it do? Take 2 minutes and see how far you can get just by looking at the code snippet alone.</p>
 <pre class="code-block tex2jax_ignore">def findAllPrevious(self, name=None, attrs={}, text=None, limit=None, 
 **kwargs): 
 return self._findAll(name, attrs, text, limit, self.previousGenerator, 
 **kwargs)
 </pre>
-<p id="p-787">Even if you had written this code yourself six months ago, how likely would you be to remember what it does now?</p>
-<p id="p-788">How about this?</p>
+<p id="p-793">Even if you had written this code yourself six months ago, how likely would you be to remember what it does now?</p>
+<p id="p-794">How about this?</p>
 <pre class="code-block tex2jax_ignore">def findAllPrevious(self, name=None, attrs={}, text=None, limit=None, 
 **kwargs): 
 """Returns all items that match the given criteria and appear 
@@ -227,21 +227,21 @@ before this Tag in the document."""
 return self._findAll(name, attrs, text, limit, self.previousGenerator, 
 **kwargs)
 </pre>
-<p id="p-789">Now go to this link.</p>
-<p id="p-790"><a class="external" href="http://www.crummy.com/software/BeautifulSoup/documentation.html#findAllPrevious(name,%20attrs,%20text,%20limit,%20**kwargs)%20and%20findPrevious(name,%20attrs,%20text,%20**kwargs)" target="_blank">http://www.crummy.com/software/BeautifulSoup/documentation.html#findAllPrevious(name,%20attrs,%20text,%20limit,%20**kwargs)%20and%20findPrevious(name,%20attrs,%20text,%20**kwargs)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-161" id="fn-161"><sup> 1 </sup></a></p>
-<p id="p-791">Which of those methods gives you the quickest idea of how to use that particular piece of code? If you had to figure out how to use this XML parsing library and make something in the next ten minutes, which level of documentation do you hope the code would have?</p>
-<p id="p-792">Apply the same thinking to the processes and proceedings of a open source community. If you had to find out in the next ten minutes who had done a particular commit to the code in version control and why they did it, you would want the project to use tools and processes taught in this book. Any time you want to understand why a page in Wikipedia is edited a certain way, the <em class="emphasis">history</em> and <em class="emphasis">discussion</em> buttons reveal a rich level of information and interaction that are the backbone of what makes it a useful and reliable source:</p>
-<ul id="p-793" class="disc">
+<p id="p-795">Now go to this link.</p>
+<p id="p-796"><a class="external" href="http://www.crummy.com/software/BeautifulSoup/documentation.html#findAllPrevious(name,%20attrs,%20text,%20limit,%20**kwargs)%20and%20findPrevious(name,%20attrs,%20text,%20**kwargs)" target="_blank">http://www.crummy.com/software/BeautifulSoup/documentation.html#findAllPrevious(name,%20attrs,%20text,%20limit,%20**kwargs)%20and%20findPrevious(name,%20attrs,%20text,%20**kwargs)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-161" id="fn-161"><sup> 1 </sup></a></p>
+<p id="p-797">Which of those methods gives you the quickest idea of how to use that particular piece of code? If you had to figure out how to use this XML parsing library and make something in the next ten minutes, which level of documentation do you hope the code would have?</p>
+<p id="p-798">Apply the same thinking to the processes and proceedings of a open source community. If you had to find out in the next ten minutes who had done a particular commit to the code in version control and why they did it, you would want the project to use tools and processes taught in this book. Any time you want to understand why a page in Wikipedia is edited a certain way, the <em class="emphasis">history</em> and <em class="emphasis">discussion</em> buttons reveal a rich level of information and interaction that are the backbone of what makes it a useful and reliable source:</p>
+<ul id="p-799" class="disc">
 <li id="li-163"><p id="p-derived-li-163"><a class="external" href="http://en.wikipedia.org/w/index.php?title=Software_documentation&amp;limit=500&amp;action=history" target="_blank">History of the Wikipedia page on ‘software documentation’</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-162" id="fn-162"><sup> 2 </sup></a></p></li>
 <li id="li-164"><p id="p-derived-li-164"><a class="external" href="https://en.wikipedia.org/wiki/Talk:Software_documentation" target="_blank">Discussion or talk page on ‘software documentation’</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-163" id="fn-163"><sup> 3 </sup></a></p></li>
 <li id="li-165"><p id="p-derived-li-165"><a class="external" href="https://en.wikipedia.org/w/index.php?title=Talk:Software_documentation&amp;action=history" target="_blank">History of ‘Talk:Software_documentation’</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-164" id="fn-164"><sup> 4 </sup></a></p></li>
 </ul>
-<p id="p-794"><a class="external" href="https://en.wikipedia.org/wiki/Software_documentation" target="_blank">According to Wikipedia</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-165" id="fn-165"><sup> 5 </sup></a>, documentation “is written text that accompanies computer software. It either explains how it operates or how to use it.” For software engineering purposes, operate/use includes manipulating the source code as well as using the application. Documentation is a sanity-preserving tool for users of and potential contributors to your project, including your future self … and perhaps your future boss or coworker.</p>
-<p id="p-795">In open source projects, documentation is a way of life. It is more than developer documentation in code and README files. Practicing the kind of radical transparency that makes open source successful means all of these things and more:</p>
-<ul id="p-796" class="disc">
+<p id="p-800"><a class="external" href="https://en.wikipedia.org/wiki/Software_documentation" target="_blank">According to Wikipedia</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-165" id="fn-165"><sup> 5 </sup></a>, documentation “is written text that accompanies computer software. It either explains how it operates or how to use it.” For software engineering purposes, operate/use includes manipulating the source code as well as using the application. Documentation is a sanity-preserving tool for users of and potential contributors to your project, including your future self … and perhaps your future boss or coworker.</p>
+<p id="p-801">In open source projects, documentation is a way of life. It is more than developer documentation in code and README files. Practicing the kind of radical transparency that makes open source successful means all of these things and more:</p>
+<ul id="p-802" class="disc">
 <li id="li-166"><p id="p-derived-li-166">If your code is poorly commented and opaque, people know and tell you;</p></li>
 <li id="li-167">
-<p id="p-797">When ideas that become decisions are documented throughout the entire discussion, everyone can see and understand the logic; these ideas are:</p>
+<p id="p-803">When ideas that become decisions are documented throughout the entire discussion, everyone can see and understand the logic; these ideas are:</p>
 <ul class="circle">
 <li id="li-168"><p id="p-derived-li-168">Better accepted;</p></li>
 <li id="li-169"><p id="p-derived-li-169">Better liked; and</p></li>
@@ -250,7 +250,7 @@ return self._findAll(name, attrs, text, limit, self.previousGenerator,
 </li>
 <li id="li-171"><p id="p-derived-li-171">You can share the burden of documentation with fellow developers, making lighter work for all;</p></li>
 <li id="li-172">
-<p id="p-798">The extra effort of documenting meetings and proceedings pays off many, many times over when:</p>
+<p id="p-804">The extra effort of documenting meetings and proceedings pays off many, many times over when:</p>
 <ul class="circle">
 <li id="li-173"><p id="p-derived-li-173">You can’t be there and still want to participate/know;</p></li>
 <li id="li-174"><p id="p-derived-li-174">A decision needs to be explained and reviewed;</p></li>
@@ -260,42 +260,42 @@ return self._findAll(name, attrs, text, limit, self.previousGenerator,
 </ul>
 </li>
 </ul>
-<p id="p-799">There is also content written to document an event, such as notes for a class or technical conference, or minutes from the proceedings of a meeting. In open source projects, similar tools and processes are used in this type of documenting. Keeping transparent proceedings of meetings and similar events is a useful skill for open source developers.</p>
-<p id="p-800">Kat Walsh: “Not just encourage other people to discover and use it themselves, but make them want to share it with other people and go ‘hey, look how good this is.'”</p>
-<p id="p-801">Every technical effort has a requirement for documentation. The project’s ability to make writing, editing, and publishing as easy as possible is the main key to attracting and retaining contributors.</p>
-<p id="p-802">According to Mozilla, developer contributions to documentation greatly increased along with a new community of writers, editors, and translators. This all resulted from reducing the barriers to success that made even experienced developers too frustrated to document properly.</p>
+<p id="p-805">There is also content written to document an event, such as notes for a class or technical conference, or minutes from the proceedings of a meeting. In open source projects, similar tools and processes are used in this type of documenting. Keeping transparent proceedings of meetings and similar events is a useful skill for open source developers.</p>
+<p id="p-806">Kat Walsh: “Not just encourage other people to discover and use it themselves, but make them want to share it with other people and go ‘hey, look how good this is.'”</p>
+<p id="p-807">Every technical effort has a requirement for documentation. The project’s ability to make writing, editing, and publishing as easy as possible is the main key to attracting and retaining contributors.</p>
+<p id="p-808">According to Mozilla, developer contributions to documentation greatly increased along with a new community of writers, editors, and translators. This all resulted from reducing the barriers to success that made even experienced developers too frustrated to document properly.</p>
 <article class="exercise exercise-like" id="exercise-practice-good-code-commenting"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-practice-good-code-commenting"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Exercise: Practice good code commenting.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-practice-good-code-commenting"><article class="exercise exercise-like"><p id="p-803">Throughout all the exercises in this book practice doing good commenting and documentation for your coding efforts.</p>
-<ol id="p-804" class="decimal">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-practice-good-code-commenting"><article class="exercise exercise-like"><p id="p-809">Throughout all the exercises in this book practice doing good commenting and documentation for your coding efforts.</p>
+<ol id="p-810" class="decimal">
 <li id="li-178"><p id="p-derived-li-178">Write thorough comments in all your source code.</p></li>
 <li id="li-179"><p id="p-derived-li-179">Trade sources with another student and attempt to make sense of the source from the documentation alone.</p></li>
 <li id="li-180"><p id="p-derived-li-180">Write at least one wiki page of developer documentation for each program you write or work on: Share this burden with other students working on the same code base. Contribute this to any open source projects you work on.</p></li>
 </ol></article></div></section><section class="subsection" id="common-tools-and-processes-for-open-source-documentation"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.1.2</span> <span class="title">Common tools and processes for open source documentation</span>
 </h3>
-<p id="p-805">Documentation requires tools that are very similar to those used in coding.</p>
-<ul id="p-806" class="disc">
+<p id="p-811">Documentation requires tools that are very similar to those used in coding.</p>
+<ul id="p-812" class="disc">
 <li id="li-181"><p id="p-derived-li-181">Editor to write content in.</p></li>
 <li id="li-182"><p id="p-derived-li-182">Means to collaborate with other writers and technical contributors.</p></li>
 <li id="li-183"><p id="p-derived-li-183">Version control.</p></li>
 <li id="li-184"><p id="p-derived-li-184">Means to markup, build, and publish draft and finished documents.</p></li>
 <li id="li-185"><p id="p-derived-li-185">Processes to use these tools as part of a collaboration.</p></li>
 </ul>
-<p id="p-807">Typical thinking about documentation focuses on certain parts of the tools, such as the editor (Emacs, Vi, etc.) or the markup-build-publish tools (XHTML, TeX, Docbook, etc.). A content management system (CMS) such as Drupal or WordPress has all of the requirements built in one tool. The structure of the tooling enforces a loose, strict, or customizable process.</p>
-<p id="p-808">For example, WordPress is a CMS that is focused on one or a group of writers producing content that appears in news fashion on a website. The tools loosely enforce a process of editing drafts, previewing, categorizing and tagging, organizing by date etc., and scheduling or pushing to publish.</p>
+<p id="p-813">Typical thinking about documentation focuses on certain parts of the tools, such as the editor (Emacs, Vi, etc.) or the markup-build-publish tools (XHTML, TeX, Docbook, etc.). A content management system (CMS) such as Drupal or WordPress has all of the requirements built in one tool. The structure of the tooling enforces a loose, strict, or customizable process.</p>
+<p id="p-814">For example, WordPress is a CMS that is focused on one or a group of writers producing content that appears in news fashion on a website. The tools loosely enforce a process of editing drafts, previewing, categorizing and tagging, organizing by date etc., and scheduling or pushing to publish.</p>
 <section class="paragraphs" id="five-steps-for-technical-writing"><h4 class="heading"><span class="title">Five steps for technical writing.</span></h4>
-<p id="p-809">(Adapted from <a class="external" href="https://fossdocs.wordpress.com/2009/08/07/creating-technical-documentation-in-five-easy-steps/" target="_blank">Creating technical documentation in five easy steps</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-166" id="fn-166"><sup> 6 </sup></a> and <a class="external" href="https://fossdocs.wordpress.com/2009/10/20/magic-waterfalls/" target="_blank">Magic waterfalls</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-167" id="fn-167"><sup> 7 </sup></a> under <a class="external" href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">Creative Commons Attribution-Share Alike 3.0.</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-168" id="fn-168"><sup> 8 </sup></a>)</p>
-<p id="p-810">Technical writing is more of a scientific process than an artistic one, which is good news. You can learn how to do it with a little practice, and there are methods you can follow. The method in this book is one that is common to good software projects, whether open source or not. It is a waterfall method and applies from large to small efforts, sets of books down to a five paragraph section on a wiki.:</p>
-<ol id="p-811" class="decimal">
+<p id="p-815">(Adapted from <a class="external" href="https://fossdocs.wordpress.com/2009/08/07/creating-technical-documentation-in-five-easy-steps/" target="_blank">Creating technical documentation in five easy steps</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-166" id="fn-166"><sup> 6 </sup></a> and <a class="external" href="https://fossdocs.wordpress.com/2009/10/20/magic-waterfalls/" target="_blank">Magic waterfalls</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-167" id="fn-167"><sup> 7 </sup></a> under <a class="external" href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">Creative Commons Attribution-Share Alike 3.0.</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-168" id="fn-168"><sup> 8 </sup></a>)</p>
+<p id="p-816">Technical writing is more of a scientific process than an artistic one, which is good news. You can learn how to do it with a little practice, and there are methods you can follow. The method in this book is one that is common to good software projects, whether open source or not. It is a waterfall method and applies from large to small efforts, sets of books down to a five paragraph section on a wiki.:</p>
+<ol id="p-817" class="decimal">
 <li id="li-186"><p id="p-derived-li-186">Planning – Who is the audience? What are the goals?</p></li>
 <li id="li-187"><p id="p-derived-li-187">Content – What is the work about? Where will you get the information?</p></li>
 <li id="li-188"><p id="p-derived-li-188">Writing – First draft, review, second draft ...</p></li>
 <li id="li-189"><p id="p-derived-li-189">Internationalisation/Internationalization – What spelling conventions will be used? Will the work be translated? If so, into what languages?</p></li>
 <li id="li-190"><p id="p-derived-li-190">Review – What worked? What didn’t? How will the work be maintained?</p></li>
 </ol>
-<p id="p-812">It’s called a waterfall model because if you start at the top, the results of the first step are used to move into the second step, just like water flowing down a series of steps into a pool.</p>
-<p id="p-813">Anyone with a scientific or engineering mind can create technical documentation, they might not enjoy it, but they are more than capable of creating it.</p></section></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-161"><div class="fn"><code class="code-inline tex2jax_ignore">www.crummy.com/software/BeautifulSoup/documentation.html#findAllPrevious(name,%20attrs,%20text,%20limit,%20**kwargs)%20and%20findPrevious(name,%20attrs,%20text,%20**kwargs)</code></div></div>
+<p id="p-818">It’s called a waterfall model because if you start at the top, the results of the first step are used to move into the second step, just like water flowing down a series of steps into a pool.</p>
+<p id="p-819">Anyone with a scientific or engineering mind can create technical documentation, they might not enjoy it, but they are more than capable of creating it.</p></section></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-161"><div class="fn"><code class="code-inline tex2jax_ignore">www.crummy.com/software/BeautifulSoup/documentation.html#findAllPrevious(name,%20attrs,%20text,%20limit,%20**kwargs)%20and%20findPrevious(name,%20attrs,%20text,%20**kwargs)</code></div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-162"><div class="fn"><code class="code-inline tex2jax_ignore">en.wikipedia.org/w/index.php?title=Software_documentation&amp;limit=500&amp;action=history</code></div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-163"><div class="fn"><code class="code-inline tex2jax_ignore">en.wikipedia.org/wiki/Talk:Software_documentation</code></div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-164"><div class="fn"><code class="code-inline tex2jax_ignore">en.wikipedia.org/w/index.php?title=Talk:Software_documentation&amp;action=history</code></div></div>
