@@ -355,7 +355,7 @@ multiple
 lines
 </pre>
 <p id="p-329">You can complete this command sequence by pressing <code class="code-inline tex2jax_ignore">Control+D</code> on your keyboard which will cause the new file to be closed. You should now have a new file called <em class="emphasis">newfile_multi.txt</em>.</p>
-<p id="p-330">Analogous to output redirection, <dfn class="terminology">input redirection</dfn> in the  shell using <code class="code-inline tex2jax_ignore"> &lt; </code> or <code class="code-inline tex2jax_ignore">&lt;&lt;</code> allows you to redirect the input of a command.  So, if we want the response from a command to be written to a file instead of to the terminal, we can use output redirection, but if we want the input to a command to come from a file instead of from the keyboard, we use input redirection.</p>
+<p id="p-330">Analogous to output redirection, <dfn class="terminology">input redirection</dfn> in the  shell using <code class="code-inline tex2jax_ignore">&lt;</code> or <code class="code-inline tex2jax_ignore">&lt;&lt;</code> allows you to redirect the input of a command.  So, if we want the response from a command to be written to a file instead of to the terminal, we can use output redirection, but if we want the input to a command to come from a file instead of from the keyboard, we use input redirection.</p>
 <p id="p-331">Let's look at an example of input redirection using the  shell command <code class="code-inline tex2jax_ignore">wc</code>, which stands for <em class="emphasis">word count</em>. This a command that as the name suggests can be used for counting. However, it does more than count words! It actually provides the line count, the word count, and the character count in the file(s) specified in the file arguments. By default, it displays all this in four-columnar output with the file name in the final column.</p>
 <p id="p-332">Let's try the following:</p>
 <pre class="code-block tex2jax_ignore">wc &lt; newfile2.txt
@@ -370,24 +370,24 @@ wc -w &lt; temp.txt
 <p id="p-335">If you  are wondering if there is a better way than using a temporary file, there is. A <dfn class="terminology">pipe (|)</dfn> in the shell allows you to redirect (aka to pipe) the output of one command into the input of another command. Let's see an example:</p>
 <pre class="code-block tex2jax_ignore">ls | wc -w
 </pre>
-<p id="p-336">Try it! This is an improvement because it is faster and avoids the use of a temporary file.</p></section><section class="paragraphs" id="paragraphs-13"><h4 class="heading"><span class="title">Shell Scripts.</span></h4>
+<p id="p-336">Try it! This is an improvement because it is faster and avoids the use of a temporary file.</p></section><section class="paragraphs" id="paragraphs-13"><h4 class="heading"><span class="title">Scripts.</span></h4>
 <p id="p-337"></p>
-<p id="p-338">TODO: need introduction to shell scripts</p>
-<p id="p-339">It is possible to use what we have learned thus far to make an executable script. Let's try it! Typing <code class="code-inline tex2jax_ignore"> cat &gt;&gt; helloworld.sh</code> will tell the shell to open a new file named <code class="code-inline tex2jax_ignore"> helloworld.sh</code> and to expect multiple lines of input from the keyboard. Type the following lines:</p>
+<p id="p-338">It is possible to use what we have learned thus far to make an executable script. A <dfn class="terminology">script</dfn> is a text file that contains a sequence of commands for the operating system. Shell scripts can be useful to bring together common sets of tasks and to make repetitive tasks faster and easier.</p>
+<p id="p-339">Let's try it! Typing <code class="code-inline tex2jax_ignore">cat &gt;&gt; helloworld.sh</code> will tell the shell to open a new file named <code class="code-inline tex2jax_ignore">helloworld.sh</code> and to expect multiple lines of input from the keyboard. Type the following lines:</p>
 <pre class="code-block tex2jax_ignore">cat &gt;&gt; helloworld.sh
-# This is a comment in a bash script that displays Hello World!
+# This is a comment in a script typically used to explain the purpose
 echo 'Hello World!'
 </pre>
-<p id="p-340">End the <code class="code-inline tex2jax_ignore">cat &gt;&gt; helloworld.sh</code> command sequence by typing <code class="code-inline tex2jax_ignore">Ctrl+D</code>. This will cause the file named <code class="code-inline tex2jax_ignore">helloworld.sh</code> to be completed and closed.</p>
+<p id="p-340">End the <code class="code-inline tex2jax_ignore">cat &gt;&gt; helloworld.sh</code> command sequence by pressing <code class="code-inline tex2jax_ignore">Ctrl+D</code> on your keyboard. This will cause the file named <code class="code-inline tex2jax_ignore">helloworld.sh</code> to be completed and closed.</p>
 <p id="p-341">You should now have new file named  <code class="code-inline tex2jax_ignore">helloworld.sh</code>. However, we would like to make it executable so we can run it as a script. To make it executable, we use the <code class="code-inline tex2jax_ignore">chmod</code> command. The <code class="code-inline tex2jax_ignore">chmod</code> stands for <em class="emphasis">change file mode bits</em>.  To add execution, we will need the <code class="code-inline tex2jax_ignore">+x</code> option, which stands for 'add execution' and will change it to being executable. So, run the following in your shell to make it an executable file for all users:</p>
 <pre class="code-block tex2jax_ignore">chmod +x helloworld.sh
 </pre>
 <p id="p-342">To execute this script, you need to indicate the directory where to find it, which is the current directory. So, to run it, you can type the following:</p>
 <pre class="code-block tex2jax_ignore">./helloworld.sh
 </pre>
-<p id="p-343">We can create a more interactive bash script using the <code class="code-inline tex2jax_ignore">read</code> command which reads text from the keyboard. It is frequently used to make scripts interactive. However, we need a variable to store the result. In the bash shell, some variables, like environment variables, always exist and you can always access them. However, you can also create your own variables. As we have seen, you can use echo to see the value of a variable, but you must precede the variable name with the dollar sign ($). Let's see how all this works by trying the following, finishing with a <code class="code-inline tex2jax_ignore">Control+D</code>:</p>
+<p id="p-343">We can create a more interactive script using the <code class="code-inline tex2jax_ignore">read</code> command which reads text from the keyboard. It is frequently used to make scripts interactive. However, we need a variable to store the result. In the shell, some variables, like environment variables, always exist and you can always access them. However, you can also create your own variables. As we have seen, you can use echo to ask the shell to provide the value of a variable, but you must precede the variable name with the dollar sign ($). Let's see how all this works by trying the following, finishing by pressing <code class="code-inline tex2jax_ignore">Control+D</code>:</p>
 <pre class="code-block tex2jax_ignore">cat &gt;&gt; hellouser.sh
-# This is a comment in an interactive bash script that says hello to the user by name.
+# Says hello to the user by name.
 echo 'What is your first name?'
 # In the next line, USERNAME is dynamically created as a new variable
 read USERNAME
@@ -398,7 +398,7 @@ echo "Hello " $USERNAME
 ./hellouser.sh
 </pre></section><section class="paragraphs" id="paragraphs-14"><h4 class="heading"><span class="title">File Management.</span></h4>
 <p id="p-345"></p>
-<p id="p-346">We can  move files around, make a copy of files, or remove (delete) files from the filesystem using <code class="code-inline tex2jax_ignore">mv</code>, <code class="code-inline tex2jax_ignore">cp</code>, and <code class="code-inline tex2jax_ignore">rm</code> respectively. Let's see how these work. First, list your files. You should have  <em class="emphasis">newfile1.txt</em>, <em class="emphasis">newfile2.txt</em>, and <em class="emphasis">newfile3.txt</em> in your directory.</p>
+<p id="p-346">We can  move files around, make copies of files, or remove (delete) files from the filesystem using <code class="code-inline tex2jax_ignore">mv</code>, <code class="code-inline tex2jax_ignore">cp</code>, and <code class="code-inline tex2jax_ignore">rm</code> respectively. Let's see how these work. First, list your files. You should have  <em class="emphasis">newfile1.txt</em>, <em class="emphasis">newfile2.txt</em>, and <em class="emphasis">newfile3.txt</em> in your directory from the previous exercise.</p>
 <p id="p-347">Let's make a new directory named <em class="emphasis">subdir</em> below our current directory and move one of our files there.</p>
 <pre class="code-block tex2jax_ignore">mkdir subdir
 mv newfile3.txt subdir/newfile3.txt
@@ -431,7 +431,7 @@ cat newfile2_cp.txt
 <p id="p-357">And, if you respond with "n", then the removal will not happen.</p></section><section class="paragraphs" id="paragraphs-15"><h4 class="heading"><span class="title">A few time-saving shell commands.</span></h4>
 <p id="p-358"></p>
 <p id="p-359">The <em class="emphasis">up arrow</em> key retrieves the previous shell command. If you press it multiple times, it will take you back through multiple commands in your shell history. This is a useful way to repeat a command. For example, if you had a typo, you can use the up arrow, edit the command, and push enter to fix the command. Analogously, the <em class="emphasis">down arrow</em> will move you in the reverse direction through the shell command history. For more useful shell commands, type <code class="code-inline tex2jax_ignore">man bash</code> for hints on how to search your shell history, re-execute commands, and much more.</p>
-<p id="p-360">Another thing that is very useful in the shell is the use of regular expressions. A <dfn class="terminology">regular expression</dfn> (aka <dfn class="terminology">regex</dfn>) is a sequence of characters that specifies a text search pattern. Regular expressions are quite powerful, and it is not within the scope of this textbook to teach them, instead this paragraph is intended to alert you to how useful they can be. A couple examples of very common regular expression patterns are using wildcards for zero or more characters or for a single character.  The asterisk (*) specifies zero or more characters to match. In bash the question mark (?) is used for matching exactly one single character, although this is not typical regex behavior.</p>
+<p id="p-360">This paragraph is intended to alert you to some useful search features. A couple examples of very common search patterns are using wildcards for zero or more characters or for a single character.  The asterisk (*) specifies zero or more characters to match. In bash the question mark (?) is used for matching exactly one single character.</p>
 <p id="p-361">For example, if we type the following:</p>
 <pre class="code-block tex2jax_ignore">rm -i newfile?.txt
 </pre>
@@ -447,7 +447,7 @@ rm: remove regular file 'newfile4.txt'?
 rm: remove regular file 'newfile4.txt'?
 rm: remove regular file 'newfile2_cp.txt'?
 </pre>
-<p id="p-365">As you can see, regular expressions give you a lot of power and control.</p></section></section><section class="conclusion" id="conclusion-5"><h3 class="heading">Conclusion.<span></span>
+<p id="p-365">As you can see, these search patterns give you a lot of power and control.</p></section></section><section class="conclusion" id="conclusion-5"><h3 class="heading">Conclusion.<span></span>
 </h3>
 <p id="p-366">Hopefully, you now feel a bit more comfortable using the shell. The shell commands discussed above are summarized in Appendix <a href="ap_shell_cheat_sheet.html" class="internal" title="Section B.1: Bash Shell Cheat Sheet">Section B.1</a>.</p></section></section></div></main>
 </div>

@@ -539,7 +539,7 @@ wc -w &lt; temp.txt
   </p>
 
 <p>
-    We can  move files around, make a copy of files, or remove (delete) files from the filesystem using <c>mv</c>, <c>cp</c>, and <c>rm</c> respectively. Let's see how these work. First, list your files. You should have  <em>newfile1.txt</em>, <em>newfile2.txt</em>, and <em>newfile3.txt</em> in your directory. </p>
+    We can  move files around, make copies of files, or remove (delete) files from the filesystem using <c>mv</c>, <c>cp</c>, and <c>rm</c> respectively. Let's see how these work. First, list your files. You should have  <em>newfile1.txt</em>, <em>newfile2.txt</em>, and <em>newfile3.txt</em> in your directory from the previous exercise.</p>
       <p>
         Let's make a new directory named <em>subdir</em> below our current directory and move one of our files there.
       </p>
@@ -609,7 +609,7 @@ And, if you respond with "n", then the removal will not happen.
     The <em>up arrow</em> key retrieves the previous shell command. If you press it multiple times, it will take you back through multiple commands in your shell history. This is a useful way to repeat a command. For example, if you had a typo, you can use the up arrow, edit the command, and push enter to fix the command. Analogously, the <em>down arrow</em> will move you in the reverse direction through the shell command history. For more useful shell commands, type <c>man bash</c> for hints on how to search your shell history, re-execute commands, and much more.
     </p>
   <p>
-    Another thing that is very useful in the shell is the use of regular expressions. A <term>regular expression</term> (aka <term>regex</term>) is a sequence of characters that specifies a text search pattern. Regular expressions are quite powerful, and it is not within the scope of this textbook to teach them, instead this paragraph is intended to alert you to how useful they can be. A couple examples of very common regular expression patterns are using wildcards for zero or more characters or for a single character.  The asterisk (*) specifies zero or more characters to match. In bash the question mark (?) is used for matching exactly one single character, although this is not typical regex behavior.
+    This paragraph is intended to alert you to some useful search features. A couple examples of very common search patterns are using wildcards for zero or more characters or for a single character.  The asterisk (*) specifies zero or more characters to match. In bash the question mark (?) is used for matching exactly one single character.
     </p>
       <p>
         For example, if we type the following:
@@ -639,7 +639,7 @@ rm: remove regular file 'newfile4.txt'?
 rm: remove regular file 'newfile2_cp.txt'?
 </pre>
 <p>
-As you can see, regular expressions give you a lot of power and control. 
+As you can see, these search patterns give you a lot of power and control. 
   </p>
 
   

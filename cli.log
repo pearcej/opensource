@@ -1,13 +1,20 @@
 INFO    : PreTeXt project found in `C:\Users\pearcej\opensource`.
-INFO    : Now preparing local server to preview directory `C:\Users\pearcej\opensource\output\web`.
-INFO    :   (Reminder: use `pretext deploy` to deploy your built project to a public
-INFO    :   GitHub Pages site that can be shared with readers who cannot access your
-INFO    :   personal computer.)
+WARNING : Assets like latex-images will not be regenerated for this build
+WARNING : (previously generated assets will be used if they exist).
+WARNING : To generate these assets before building, run `pretext build -g`.
+INFO    : Preparing to build into C:\Users\pearcej\opensource\output\web.
 INFO    : 
-INFO    : Success! The most recent build of your project can be viewed in a web browser at the following url:
-INFO    :     http://localhost:8000
-INFO    : This page should open in a new tab automatically.
-INFO    : Use [Ctrl]+[C] to halt the server.
+Now building HTML into C:\Users\pearcej\opensource\output\web
 
+INFO    : discovering source file's directory name: C:\Users\pearcej\opensource\source
+INFO    : verifying and expanding input directory: C:\Users\pearcej\opensource\source\../generated-assets
+INFO    : input directory expanded to absolute path: C:\Users\pearcej\opensource\generated-assets
+INFO    : verifying and expanding input directory: C:\Users\pearcej\opensource\source\../assets
+INFO    : input directory expanded to absolute path: C:\Users\pearcej\opensource\assets
+INFO    : converting C:\Users\pearcej\opensource\source\main.ptx to HTML in C:\Users\pearcej\AppData\Local\Temp\tmpqmm2z47j
+INFO    : XSL conversion of C:\Users\pearcej\opensource\source\main.ptx by C:\Users\pearcej\.ptx\xsl\pretext-html.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of C:\Users\pearcej\.ptx\xsl\pretext-html.xsl
 INFO    : 
-Closing server...
+Success! Run `pretext view web` to see the results.
+
