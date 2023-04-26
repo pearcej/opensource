@@ -12,17 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p><pre class="code-block tex2jax_ignore">Bad: start it and click around for a while and then it crashes 
-
-Good: Start the application. 
-Click the mouse button and type on the keyboard. 
-Within 45 seconds or less, the application will always crash. 
-
-Best: Start the application. 
-Click the mouse five times, 
-and the application crashes with the following error message in 
-"/var/log/foo.err"...
-</pre></p>
+<p>Don’t do that. You may very well be right that the issues are related — but you may also be wrong, and in either case, two different issues deserve two different bug reports. In our example above, it may be that the issues with <dfn class="terminology">Foomail</dfn> and <dfn class="terminology">Barchat</dfn> are actually related to a problem with <dfn class="terminology">Bazlib</dfn>, which is a shared component of <dfn class="terminology">Foomail</dfn> and <dfn class="terminology">Barchat</dfn>. Each bug must be fixed and tested in its own context, and that won’t work if they’re all stuffed in the same bug report.</p>
 <span class="incontext"><a href="sec_bug_reports.html#p-882" class="internal">in-context</a></span>
 </body>
 </html>
