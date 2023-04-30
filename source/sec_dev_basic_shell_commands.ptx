@@ -97,7 +97,8 @@
       <p>
       </p>
     <p> 
-      Before computers became popular, a <term>file</term> and a <term>folder</term> referred to a container for a collection of documents. Operating systems use these terms very similarly. A file refers to a document and a folder or, synonymously, a <term>directory</term> refers to a collection of files and sub-directories. The operating system handles how files and directories are represented on a physical storage medium, how they are read from, and written to. You may be most familiar with accessing files through a graphical user interface. Often, when opening an application that deals with documents, it will suggest documents you have recently worked with. These each correspond to a file, each of which is stored in a directory somewhere. Creating a new document corresponds to creating a new file.
+      Before computers became popular, a <term>file</term> and a <term>folder</term> referred to a container for a collection of documents. Operating systems use these terms very similarly. A file refers to a document and a folder or, synonymously, a <term>directory</term> refers to a collection of files and sub-directories. The operating system handles how files and directories are represented on a physical storage medium, how they are read from, and written to. You may be most familiar with accessing files through a graphical user interface. Creating a new document corresponds to creating a new file.
+      Often, when opening an application that deals with documents, it will suggest documents you have recently worked with. These each correspond to a file, each of which is stored in a directory somewhere, and knowing where files are in your file directory will be important to working on open source. 
     </p>
      <p>
       You might (or might not) be familiar with using folders to organize our files and to navigate the file system. (On an iphone or Android phone, you make a new folder by dropping one app on top of another app, on a Mac you long press and then choose new folder, and on a Windows machine, you right-click and choose New > folder.) This type of organization is important to understand, and the folder metaphor is useful. In fact, there are two useful metaphors to help with our understanding of file systems. 
@@ -105,10 +106,7 @@
      <p>
       When using the shell,  "folders" are more typically called "directories", but the two terms are equivalent. 
      </p>
-     <p>
-      A folder is typically referred to as a directory in the shell due to the structure and the uses of a folder and directory in the Linux kernel. In the physical world, a folder is used as a container that can hold multiple documents while a directory is a type of index that allows you to look up items. Directories are implemented as a special type of file, so the terms directory and folder are used interchangeably in computing. 
-     </p>
-      <p>
+         <p>
       Inside of a directory, we can find files and possibly additional directories. Since directories may contain other directories in addition to files, the directories on your computer form a hierarchy. Each directory is contained within another directory, which we refer to as its <term>parent</term>. The only exception to this rule is the  <term>root directory</term>, which can be a parent to other directories, but has no parent itself. It is therefore the top-level directory from which we can reach any other directory. Each file and directory in the file system can be referred to by its unique <term>path</term>. 
       The root directory always has the path <term>/</term>, and a file can thus be identified by its path through the file system beginning from the root node. 
       If there is a folder named <c>myfolder</c> located in the root directory, its path would be <c>/myfolder</c>. If <c>myfolder</c> then contains a file named <c>hello.txt</c>, its path would be <c>/myfolder/hello.txt</c>. If <c>/myfolder</c> contains a directory named <c>/mydocuments</c>, its path would be <c>/myfolder/mydocuments</c>. And so on."
@@ -235,7 +233,7 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
       </p>
       <p>
       You may be wondering about the use of one minus sign '-' vs the use of two minus signs '--' in shell options. One minus sign is typically used for single letter commands, while two is typically used for word-length commands, although even this is not a hard and fast rule. You'll occasionally get programs that also use a single `-` for word-length commands.
-        If you look back at the <c>ls --help</c> results, you may see that the options <c>-a</c> and <c>--all</c> both list all files including that begin with a '.', which are the hidden files  and directories. Besides brevity, one advantage the single minus sign often offers, is that to run multiple options at the same time, all you often need to do is concatenate them. Note that this is also program-specific; not all programs will allow this, but it is convenient when it is offered! For example, <c>ls -lra</c> returns the result with  the <c>-l</c>,  <c>-r</c>, and <c>-a</c> option flags all activated. Give it a try!
+        If you look back at the help and/or manual results for <c>ls</c>, you may see that the options <c>-a</c> and <c>--all</c> both list all files including that begin with a '.', which are the hidden files  and directories. Besides brevity, one advantage the single minus sign often offers, is that to run multiple options at the same time, all you often need to do is concatenate them. Note that this is also program-specific; not all programs will allow this, but it is convenient when it is offered! For example, <c>ls -lra</c> returns the result with  the <c>-l</c>,  <c>-r</c>, and <c>-a</c> option flags all activated. Give it a try!
       </p>
       <pre>
       ls -lra

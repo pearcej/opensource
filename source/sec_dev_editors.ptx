@@ -7,8 +7,8 @@
         <term>Text editors</term> are programs that help the user create and edit text files. Popular editors like Microsoft Word do not have the features that are needed by software developers and can not easily be used for editing source code because they can cause problems with the code itself due to the way they store formatted text. In short, Microsoft word is not a text editor and should never be used to edit source code because source code is a text file.
       </p>
       <p>
-        Professional software developers use text editors that are specifically designed to work with source code and are sometimes called <term>source code editors</term>, <term>code editors</term> or just <term>editors</term>. Code editors typically include many special features for writing and editing code that go well beyond the typical uses such as finding and replacing, undoing, deleting, etc. it is worth noting that some professional developers prefer to use a text editor while others prefer to use 
-        an <term>Integrated Development Environment (IDE)</term> which is a tool that in addition to having source code editor functionality combines other commonly used developer tools in a single application. Because some text editors are so highly configurable using a variety of plug-ins and extensions, the line between text editors and IDEs has become quite blurred in recent years. However, some of the main tools found in an IDE include:
+        Professional software developers use text editors that are specifically designed to work with source code. These are sometimes called <term>source code editors</term>, <term>code editors</term> or just <term>editors</term>. Code editors typically include many special features for writing and editing code that go well beyond the typical uses such as finding and replacing, undoing, deleting, etc. It is worth noting that some professional developers prefer to use a text editor cofigured for working with code while others prefer to use 
+        an <term>Integrated Development Environment (IDE)</term> which is a tool that in addition to having source code editor functionality combines other commonly used developer tools in a single application. Because some text editors are so highly configurable using a variety of plug-ins and extensions, the line between text editors and IDEs has become quite blurred in recent years. Nevertheless, some of the main tools found in IDEs include:
       </p> 
       <ul>
         <li>
@@ -55,7 +55,7 @@
       </ul>
       
       <p>
-        Professional developers all have their favorite editor, and searching for something like "best editor to use for software development" will bring up a host of answers and lists of popular editors. In addition to the code editor, code interpreter/compiler, code debugger,  integrated terminal, and tools for version control, the following is a list of other popular features in an IDE: 
+        Professional developers all have their favorite editor, and searching for something like "best editor to use for software development" will bring up a host of answers and lists of popular editors. In addition to the code editor, code interpreter/compiler, code debugger,  integrated terminal, and tools for version control, the following is a list of other popular features in IDEs: 
     </p>
     <ul>
       <li>
