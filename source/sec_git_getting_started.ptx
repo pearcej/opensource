@@ -7,67 +7,83 @@
   <title>Types of Version Control</title>
   <introduction>
 			<p>
-	A <term>version control system (VCS)</term> records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this chapter, you will use software source code as the files being version controlled, although in reality you can do this with nearly any type of file on a computer.
+	Using a formal <term>version control system (VCS)</term> has many advantages over using just an informal system of version control like the one we described in the last section. Some of the important advantages of VCSs include:
+	<ul>
+		<li>
+			<title>Versioning</title>
+			<p>
+				They allow users to track changes to a codebase over time. Users can see why changes were made and can go back to a previous version of the code if needed.
 			</p>
-
-<p>
-	For example, if you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), a VCS is a very wise thing to use. It allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also generally means that if you screw things up or lose files, you can easily recover. In addition, you get all this for very little overhead.
+		</li>
+		<li>
+			<title>Collaboration</title>
+			<p>
+				They allow multiple people to work on the same project at the same time, make changes to the code, and track the changes made by others. This facilitates collaboration.
+			</p>
+		</li>
+		<li>
+			<title>Branching and Merging</title>
+			<p>
+				 They allow users to create different branches of the codebase, which enables developers to work on separate features or fixes without affecting the main codebase. Once changes are completed and approved, the branches can be merged back into the main codebase.
+			</p>
+		</li>
+	</ul>
+	
+	For the examples in this chapter, we will use software source code as the files being version controlled, although in reality you can do this with nearly any type of file or set of files. For example, if you are a web site designer and want to keep every version of the site, a VCS is a very wise thing to use. It allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also generally means that if you mess things up or lose files, you can easily recover. 
 </p>
   </introduction>
 
 <paragraphs xml:id="sec_local_version_control_systems">
-	<title>Local Version Control Systems (VCS)</title>
-
+	<title>Local VCSs</title>
+<p>
+	
+</p>
 	<p>
-		Many people’s personal version-control method of choice is to copy files into another directory or up into the cloud. These approaches are common because they are simple, but they are also  error prone. It is easy to forget which directory you’re in and accidentally write to the wrong file or copy over files you don’t mean to. 
+		Many people’s first personal version-control method of choice is to copy files into another directory or up into the cloud. These informal approaches are common because they are simple, but they are also  error prone. It is easy to forget which directory you’re in and accidentally write to the wrong file or copy over files you don’t mean to. 
 	</p>
 
-
 	<p>
-		To deal with this issue, programmers long ago developed local version control systems (VCSs) that had a simple database that kept all the changes to files under revision control.
+		To deal with this issue, programmers long ago developed local VCSs that provide a more automatic, less error-prone and more structured way of keeping all the changes to files under revision control on the local computer.
+		Local VCSs typically operate quickly because they do not have to communicate with a remote server. With a local system, developers have access to the entire history of the codebase on their local machine, and they can work on the codebase offline, without an internet connection. 
 	</p>
-
-
-				<figure xml:id="git-local">
-					<image source='local.png'/> 
-					<caption>Local Version Control</caption>
-				</figure>
-
-<!-- 				<p>
-					One of the most popular VCS tools was a system called RCS, which is still distributed with many computers today. <url href="https://www.gnu.org/software/rcs/" visual="https://www.gnu.org/software/rcs/">RCS</url> works by keeping patch sets (that is, the differences between files) in a special format on disk; it can then re-create what any file looked like at any point in time by adding up all the patches.
-				</p> -->
+	<p>
+		However, there are significant disadvantages to using local VCSs. For example, local VCSs do not support collaboration because multiple developers cannot easily work on the same codebase at the same time. So. local VCSs are more suited for individual developers who are working on their own projects. Local VCSs store code data locally, which increases the risk of data loss due to machine failure or corruption because whenever you have the entire history of a project in a single place, you risk losing everything.
+		In addition, local systems are not scalable, so as the codebase grows in size, the performance of the local system may degrade.
+	</p>
+		
 			</paragraphs>
 
 			<paragraphs xml:id="sec_centralized_version_control_systems">
-				<title>Centralized Version Control Systems</title>
-
-
-				<p>
-					The next major issue that people encounter is that they need to collaborate with developers on other systems. To deal with this problem, centralized version control systems (CVCSs) were developed. These systems (such as CVS, Subversion, and Perforce) have a single server that contains all the versioned files, and a number of clients that check out files from that central place. For many years, this was the standard for version control.
-				</p>
-
-				<figure xml:id="git_centralized">
-					<caption>Centralized Version Control</caption>
-					<image source='centralized.png'/>
-
-				</figure>
+				<title>Centralized VCSs</title>
+<p>
+	
+</p>
 
 				<p>
-					This centralized setup offers many advantages, especially over local VCSs. For example, everyone knows to a certain degree what everyone else on the project is doing. Administrators have fine-grained control over who can do what, and it’s far easier to administer a CVCS than it is to deal with local databases on every client.
+					Many developers need to collaborate with other developers on other systems. To deal with this, centralized VCss) were developed. These systems (such as CVS, Subversion, and Perforce) have a single server that contains all the versioned files, and a number of clients check out files from that central server. For many years, this was the standard for version control.
+				</p>
+
+					<p>
+					Centralized VCSs offer many advantages local VCSs. For example, everyone knows or can see to a certain degree what everyone else on the project is doing. Administrators have fine-grained control over who can do what.
+				</p>
+
+					<p>
+					However, centralized VCSs also have some serious downsides. Conflict resolution can be a challenge because if individual copies of the repository diverge significantly from one another, conflicts can arise when merging changes is attempted. This lead to a process of resolving the conflicts, which can be time-consuming even when using conflict resolution tools. In fact, resolution of conflicts can delay the development process. To mitigate this, developers must communicate regarding direction and must also synchronize copies of the codebase regularly by merging changes  often. Effective communication and frequent updating can help prevent significant divergence and reduce the risk of conflicts in centralized VCSs.
 				</p>
 
 				<p>
-					However, this setup also has some serious downsides. The most obvious is the single point of failure that the centralized server represents. If that server goes down for an hour, then during that hour nobody can collaborate at all or save versioned changes to anything they’re working on. If the disk the central database is on becomes corrupted, and proper backups haven’t been kept, you lose absolutely everything — the entire history of the project except whatever single snapshots people happen to have on their local machines. Local VCSs suffer from this same problem — whenever you have the entire history of the project in a single place, you risk losing everything.
+					Another obvious is that like local VCSs, the centralized server represents a single point of failure. If that server goes down for an time, then during that downtime nobody can collaborate at all and no one can save versioned changes to anything they’re working on. If the disk of the central server becomes corrupted, and proper backups haven’t been kept, the project could lose absolutely everything — the entire history of the project except whatever single snapshots people happen to have on their local machines. 
 				</p>
-
 
 			</paragraphs>
 
 			<paragraphs xml:id="sec_distributed_version_control_systems">
-				<title>Distributed Version Control Systems</title>
-
+				<title>Distributed VCSs</title>
+<p>
+	
+</p>
 				<p>
-					This is where distributed version control systems (DVCS) step in. In a DVCS (such as Git, Mercurial, Bazaar or Darcs), clients don’t just check out the latest snapshot of the files; rather, they fully mirror the repository, including its full history. Thus, if any server dies, and these systems were collaborating via that server, any of the client repositories can be copied back up to the server to restore it. Every clone is really a full backup of all the data.
+					This is where distributed VCSs step in. In a distributed VCS (such as Git, Mercurial, Bazaar or Darcs), clients don’t just check out the latest snapshot of the files; rather, they fully mirror the repository, including its full history. Thus, if any server dies, and these systems were collaborating via that server, any of the client repositories can be copied back up to the server to restore it. Every clone is really a full backup of all the data.
 				</p>
 
 
@@ -78,7 +94,7 @@
 				</figure>
 
 				<p>
-					Furthermore, many of these systems deal pretty well with having several remote repositories they can work with, so you can collaborate with different groups of people in different ways simultaneously within the same project. This allows you to set up several types of workflows that aren’t possible in centralized systems, such as hierarchical models.
+					Furthermore, many of these distributed systems deal pretty well with having several remote repositories they can work with, so you can collaborate with different groups of people in different ways simultaneously within the same project. This allows you to set up several types of workflows that aren’t possible in centralized systems, such as hierarchical models.
 				</p>
 
 		</paragraphs>
@@ -87,7 +103,9 @@
 
 	<subsection xml:id="_a_short_history_of_git">
 			<title>A Short History of Git</title>
-
+<p>
+	
+</p>
 <!-- div attr= class="paragraph"-->
 			<p>
 				As with many great things in life, Git began with a bit of creative destruction and fiery controversy.
@@ -95,8 +113,8 @@
 
 <!-- div attr= class="paragraph"-->
 			<p>
-				The bridge of communication in a Linux system between the user applications and the underlying hardware is called the Linux kernel, and it is an open source software project of fairly large scope. 
-				During the early years of the Linux kernel maintenance (1991–2002), changes to the software were passed around as patches and archived files. In 2002, the Linux kernel project began using a proprietary DVCS called BitKeeper.
+				The bridge of communication in a Linux system between the user applications and the underlying hardware is called the  kernel, and the Linux kernel is an open source software project of fairly large scope. 
+				During the early years of kernel maintenance (1991–2002), changes to the software were passed around by email as descriptions of the differences in source files. In 2002, the Linux kernel project began using a proprietary distributed VCS called BitKeeper.
 			</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -165,7 +183,9 @@
 
 			<paragraphs xml:id="sec_snapshots_not_differences">
 				<title>Snapshots, Not Differences</title>
-
+<p>
+	
+</p>
 <!-- div attr= class="paragraph"-->
 				<p>
 					The major difference between Git and most other VCSs is the way Git thinks about its data. Conceptually, most other systems store information as a list of file-based changes. These other systems (CVS, Subversion, Perforce, Bazaar, and so on) think of the information they store as a set of files and the changes made to each file over time (This is commonly described as <em>delta-based</em> version control).
@@ -200,7 +220,9 @@
 
 			<paragraphs xml:id="sec_nearly_every_operation_is_local">
 				<title>Nearly Every Operation Is Local</title>
-
+<p>
+	
+</p>
 <!-- div attr= class="paragraph"-->
 				<p>
 					Most operations in Git need only local files and resources to operate — generally no information is needed from another computer on your network. Because you have the entire history of the project right there on your local disk, most operations seem almost instantaneous.
@@ -208,12 +230,12 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					For example, to browse the history of the project, Git doesn’t need to go out to the server to get the history and display it for you — it simply reads it directly from your local database. This means you see the project history almost instantly. If you want to see the changes introduced between the current version of a file and the file a month ago, Git can look up the file a month ago and do a local difference calculation, instead of having to either ask a remote server to do it or pull an older version of the file from the remote server to do it locally.
+					For example, to browse the history of the project, Git doesn’t need to go out to the server to get the history and display it for you — it simply reads it directly from your local repository. This means you see the project history almost instantly. If you want to see the changes introduced between the current version of a file and the file a month ago, Git can look up the file a month ago and do a local difference calculation, instead of having to either ask a remote server to do it or pull an older version of the file from the remote server to do it locally.
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					This also means that there is very little you can’t do if you’re offline or off VPN. If you get on an airplane or a train and want to do a little work, you can commit happily (to your <em>local</em> copy, remember?) until you get to a network connection to upload. If you go home and can’t get your VPN client working properly, you can still work. In many other systems, doing so is either impossible or painful. In Perforce, for example, you can’t do much when you aren’t connected to the server; in Subversion and CVS, you can edit files, but you can’t commit changes to your database (because your database is offline). This may not seem like a huge deal, but you may be surprised what a big difference it can make.
+					This also means that there is very little you can’t do if you’re offline. If you get on an airplane or a train and want to do a little work, you can commit happily (to your <em>local</em> copy, remember?) until you get to a network connection to upload. 
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
@@ -221,15 +243,17 @@
 
 			<paragraphs xml:id="sec_git_has_integrity">
 				<title>Git Has Integrity</title>
-
+<p>
+	
+</p>
 <!-- div attr= class="paragraph"-->
 				<p>
-					Everything in Git is checksummed before it is stored and is then referred to by that checksum. This means it’s impossible to change the contents of any file or directory without Git knowing about it. This functionality is built into Git at the lowest levels and is integral to its philosophy. You can’t lose information in transit or get file corruption without Git being able to detect it.
+					Everything in Git is stored via a unique digital fingerprint of the data. This means it’s impossible to change the contents of any file or directory without Git knowing about it. This functionality is built into Git at the lowest levels and is integral to its philosophy. You can’t lose information in transit or get file corruption without Git being able to detect it.
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					The mechanism that Git uses for this checksumming is called a SHA-1 hash. This is a 40-character string composed of hexadecimal characters (0–9 and a–f) and calculated based on the contents of a file or directory structure in Git. A SHA-1 hash looks something like this:
+					The mechanism that Git uses for creating this unique digital fingerprint of the data is called a <term>SHA-1 hash</term>. This is a 40-character string composed of hexadecimal characters (0–9 and a–f) and calculated based on the contents of a file or directory structure in Git. A SHA-1 hash looks something like this:
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="listingblock"-->
@@ -238,7 +262,7 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					You will see these hash values all over the place in Git because it uses them so much. In fact, Git stores everything in its database not by file name but by the hash value of its contents.
+					You will see these hash values all over the place in Git because it uses them so much. In fact, Git stores everything in its repository not by file name but by the hash value of its contents. Because they are a long incomprehensible strings, they look strange, but try not to let that bother you.
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
@@ -246,33 +270,35 @@
 
 			<paragraphs xml:id="sec_git_generally_only_adds_data">
 				<title>Git Generally Only Adds Data</title>
-
+<p>
+	
+</p>
 <!-- div attr= class="paragraph"-->
 				<p>
-					When you make actions correctly in Git, nearly all of them only <em>add</em> data to the Git database. It is intended to be hard to get Git to do anything that is not undoable or to make it erase data in any way. As with any VCS, you can lose or mess up changes you haven’t committed yet, but after you commit a snapshot into Git, it is more difficult to lose, especially if you regularly push your database to another repository. Having said this, novices can get themselves into a mess. Some advice is to always make sure you are working on a branch <em>other than main or master</em>, and always check to be sure you are on the intended branch before you begin working.
+					During ordinary use of Git, nearly all of your actions only add data. It is intended to be hard to get Git to do anything that is not undoable or to make it erase data in any way. As with any VCS, you can lose or mess up changes you haven’t committed yet, but after you commit a snapshot into Git, it is more difficult to lose, specially if you regularly push the state of your repository to a remote. Having said this, novices can get themselves into a mess. Some advice is to always make sure you are working on a branch <em>other than main or master</em>, and always check to be sure you are on the intended branch before you begin working.
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
-				<p>
-					For a more in-depth look at how Git stores its data and how you can recover data that seems lost, see <!--TODO-->Undoing Things.
-				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
+
 
 <!-- div attr= class="sect3"-->
 			</paragraphs>
 
 			<paragraphs xml:id="sec_the_three_states">
-				<title>The Three States</title>
-
+				<title>The Three File States</title>
+<p>
+	
+</p>
 <!-- div attr= class="paragraph"-->
 				<p>
-					Pay attention now — here is the main set of concepts to remember about Git if you want the rest of your learning process to go smoothly. Git has three main states that your files can reside in, <em>modified</em>, <em>staged</em>, and <em>committed</em>:
+					Pay attention now — here is the main set of concepts to remember about files in Git if you want the rest of your learning process to go smoothly. Git has three main states that your files can reside in, <em>modified</em>, <em>staged</em>, and <em>committed</em>:
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="ulist"-->
 				<p><ul>
 					<li>
 									<p>
-					<term>Modified</term> means that you have changed the file but have not committed it to your database yet.
+					<term>Modified</term> means that you have changed the file but have not committed it to your repository yet.
 				</p>
 					</li>
 
@@ -284,7 +310,7 @@
 
 					<li>
 									<p>
-					<term>Committed</term> means that the data is safely stored in your local database.
+					<term>Committed</term> means that the data is safely stored in your local repository.
 				</p>
 					</li>
 
@@ -298,34 +324,47 @@
 				Once you have made all of your shopping choices and are ready to commit to paying for the items in your shopping cart, you go through the process of paying. This is analogous to <em>committing</em> — you have made a commitment to receive the items that you paid for, and the online store keeps a record of your purchase. Of course, once you receive the shirt and it isn't quite what you had hoped for, you can still return the shirt, but it is more complicated to do so than before you made the purchase and a record will be made of the return as well. This is also analogous to how Git works. 
 				
 				</p><!--</div attr= class="ulist">-->
+				<p>
+					The concepts of modified, staged, and committed describe the different stages that files can go through as they are modified and committed to the repository. Next, let's discuss how Git is organized.
+				</p>
 			</paragraphs>
 			<paragraphs>
-				<title>Git Areas</title>
-
+				<title>How Git is Organized</title>
+<p>
+	
+</p>
 <!-- div attr= class="paragraph"-->
 				<p>
-					This leads us to the three main subsections of a Git project: the working tree, the staging area, and the Git directory.
+					A Git repository is more than just a set of files. It is also more than just a set of snapshots of files. It's a complete history of a project's development, which includes information about who made what changes, when those changes were made, and why they were made because the repository includes not only the committed snapshots of files, but also the metadata that accompanies those snapshots, such as commit messages and author information. Additionally, the repository includes information about the branches and tags that have been created to manage the development of the project. 
+				</p>
+				<p>
+					This leads us to three key components of a Git VCS: the Git working tree, the Git staging area, and the Git directory.
 				</p><!--</div attr= class="paragraph">-->
 
 
 				<figure xml:id="git-areas">
-					<caption>Working tree, staging area, and Git directory</caption>
+					<caption>Git working tree, Git staging area, and Git directory</caption>
 
 				<image source='areas.png'/><!--</div attr= class="content">-->
 				</figure>
 
 				<p>
-					The working tree is a single checkout of one version of the project. These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify.
+					The <term>Git working tree</term> refers to the set of files and directories that are currently being worked on in a local repository, but it is more than just the set of files and directories. It is also a service that continuously monitors the resource status of the files and the file system in that local repository. For example, the Git working tree logs when a new file is added or deleted or modified. 
 				</p><!--</div attr= class="paragraph">-->
+				<p>
+					When you use stage changes, Git copies the changes from the modified files that are in the working tree to the staging area.
+				</p>
+<!-- div attr= class="paragraph"-->
+				<p>
+					The <term>Git staging area </term>, also known as the <term>Git index</term>, is a file where the changes to files that have been staged are stored and stand ready to be committed.
+				</p><!--</div attr= class="paragraph">-->
+				<p>
+					Once changes have been staged in the staging area, you can create a new commit. This then takes the staged changes and creates a new snapshot of the files in the Git directory.
+				</p>
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					The staging area is a file, generally contained in your Git directory, that stores information about what will go into your next commit. Its technical name in Git parlance is the “index”, but the phrase “staging area” works just as well.
-				</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="paragraph"-->
-				<p>
-					The Git directory is where Git stores the metadata and object database for your project. This is the most important part of Git, and it is what is copied when you <em>clone</em> a repository from another computer.
+					The <term>Git directory</term> is where all the committed snapshots of the project are stored along with the associated metadata, such as commit messages and author information.  This is the most important part of Git. Along with the files and file directory, the Git directory is copied when you <em>clone</em> a repository from another computer.
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -349,7 +388,7 @@
 
 					<li>
 									<p>
-					You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your local Git directory (on your computer). Note that in <xref ref="sec_git_github"/>, we will learn how to push your work to a remote copy of the repository.
+					You then do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your local Git directory (on your computer). Note that in <xref ref="sec_git_github"/>, we will learn how to push your work to a remote copy of the repository.
 				</p>
 					</li>
 
@@ -357,7 +396,7 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					If a particular version of a file is in the Git directory, it’s considered <em>committed</em>. If it has been modified and was added to the staging area, it is <em>staged</em>. And if it was changed since it was checked out but has not been staged, it is <em>modified</em>. In <!--TODO-->Git Basics you’ll learn more about these states and how you can either take advantage of them or skip the staged part entirely.
+					If a particular version of a file is in the Git directory, it’s considered <em>committed</em>. If it has been modified and was added to the staging area, it is <em>staged</em>. And if it was changed since it was checked out but has not been staged, it is <em>modified</em>. In <!--TODO--> <xref ref="sec_git_basics"/> you’ll learn more about these states and how you can either take advantage of them or skip the staged part entirely.
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 
@@ -413,10 +452,23 @@ Note
 
 	<paragraphs xml:id="git_installing_on_linux">
 		<title>Installing on Linux</title>
-
+<p>
+	
+</p>
 	<!-- div attr= class="paragraph"-->
 		<p>
-			If you want to install the basic Git tools on Linux via a binary installer, you can generally do so through the package management tool that comes with your distribution. If you’re on Fedora (or any closely-related RPM-based distribution, such as RHEL or CentOS), you can use <c>dnf</c>:
+			Using your Linux distribution's preferred package manager is the simplest process for installing Git on Linux.
+					
+			</p>
+		<p>
+			If you’re on a Debian-based distribution, such as Ubuntu, try <c>apt</c>:
+		</p><!--</div attr= class="paragraph">-->
+
+		<pre>$ sudo apt install git-all</pre>
+
+		
+			<p>
+			If you’re on Fedora (or any closely-related RPM-based distribution, such as RHEL or CentOS), you can use <c>dnf</c>:
 		</p><!--</div attr= class="paragraph">-->
 
 	<!-- div attr= class="listingblock"-->
@@ -424,17 +476,11 @@ Note
 		<pre>$ sudo dnf install git-all</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
 	<!-- div attr= class="paragraph"-->
-		<p>
-			If you’re on a Debian-based distribution, such as Ubuntu, try <c>apt</c>:
-		</p><!--</div attr= class="paragraph">-->
 
-	<!-- div attr= class="listingblock"-->
-	<!-- div attr= class="content"-->
-		<pre>$ sudo apt install git-all</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
 	<!-- div attr= class="paragraph"-->
 		<p>
-			For more options, there are instructions for installing on several different Unix distributions on the Git website, at <url href="https://git-scm.com/download/linux" visual="git-scm.com/download/linux">https://git-scm.com/download/linux</url>.
+			For more options, there are instructions for installing on many different Linux distributions on the Git website, at <url href="https://git-scm.com/download/linux" visual="git-scm.com/download/linux">https://git-scm.com/download/linux</url>.
 		</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 	<!-- div attr= class="sect3"-->
@@ -442,24 +488,35 @@ Note
 
 	<paragraphs xml:id="git_installing_on_macos">
 		<title>Installing on MacOS</title>
-
+<p>
+	
+</p>
 	<!-- div attr= class="paragraph"-->
 		<p>
-			There are several ways to install Git on a Mac. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run <c>git</c> from the Terminal the very first time.
-		</p><!--</div attr= class="paragraph">-->
+			There are several ways to install Git on a Mac. 
+		</p>
 
-	<!-- div attr= class="listingblock"-->
-	<!-- div attr= class="content"-->
+		<p>
+			One way is to install homebrew if you don't already have it. Go to <url href="https://brew.sh/" visual="brew.sh"></url> and follow the directions. Then open a Terminal and type:</p>
+			<pre>
+			brew install git
+			</pre>
+			
+			<p>
+			Another excellent way is to install the Xcode Command Line Tools, which is an Apple package with useful developer tools that run on the command line. Apply has made this very easy to do simply by trying to run Git from the Terminal the very first time. If you open a terminal and type the following:
+		</p>
+
+
 		<pre>$ git --version</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
 	<!-- div attr= class="paragraph"-->
 		<p>
-			If you don’t have it installed already, it will prompt you to install it.
+			When you run that command, if you don’t have Git installed already, it will prompt you to install it.
 		</p><!--</div attr= class="paragraph">-->
 
 	<!-- div attr= class="paragraph"-->
 		<p>
-			If you want a more up to date version, you can also install it via a binary installer. A macOS Git installer is maintained and available for download at the Git website, at <url href="https://git-scm.com/download/mac" visual="git-scm.com/download/mac">https://git-scm.com/download/mac</url>.
+			For these and additional options visit <url href="https://git-scm.com/download/mac" visual="git-scm.com/download/mac">https://git-scm.com/download/mac</url>.
 		</p><!--</div attr= class="paragraph">-->
 
 
@@ -468,10 +525,19 @@ Note
 
 	<paragraphs xml:id="_installing_on_windows">
 		<title>Installing on Windows</title>
-
+<p>
+	
+</p>
 	<!-- div attr= class="paragraph"-->
 		<p>
-			There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to <url href="https://git-scm.com/download/win" visual="git-scm.com/download/win">https://git-scm.com/download/win</url> and the download will start automatically. Note that this is a project called Git for Windows, which is separate from Git itself; for more information on it, go to <url href="https://gitforwindows.org" visual="gitforwindows.org">https://gitforwindows.org</url>.
+			There are also a few ways to install Git on Windows that depend upon where your development environment is.
+		</p>
+		<p>
+			If you are using WSL2 or are developing in a VM, then open a terminal in that environment and follow the directions for installing Git in Ubuntu from the Linux section above. 
+		</p>
+			
+		<p>
+			If you are working in WSL2, Git for Windows might also be useful. Git for Windows provides a native set of tools that bring the full feature set of the Git SCM to Windows as well as bash emulation which can be used to run Git from the command line. To install go to <url href="https://gitforwindows.org" visual="gitforwindows.org">https://gitforwindows.org</url>. Not that Git for Windows will not be useful to you if you are developing in a VM running Ubuntu.
 		</p><!--</div attr= class="paragraph">-->
 
 	<!-- div attr= class="sect3"-->
@@ -502,40 +568,22 @@ For example, you can get help for the <c>git config</c> command by running this:
 <pre>$ git help config</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 <!-- div attr= class="paragraph"-->
 <p>
-If you don’t need the full-blown manpage help, but just need a quick refresher on the available options for a Git command, you can ask for the more concise “help” output with the <c>-h</c> option, as in:
+If you don’t need the full-blown manpage help, but just need a quick refresher on the available options for a specific Git command, you can ask for the more concise “help” output with the <c>-h</c> option, as in the following for the Git <c>add command:</c>:
 </p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
 <pre>$ git add -h
-usage: git add [&lt;options&gt;] [--] &lt;pathspec&gt;...
-
--n, --dry-run               dry run
--v, --verbose               be verbose
-
--i, --interactive           interactive picking
--p, --patch                 select hunks interactively
--e, --edit                  edit current diff and apply
--f, --force                 allow adding otherwise ignored files
--u, --update                update tracked files
---renormalize               renormalize EOL of tracked files (implies -u)
--N, --intent-to-add         record only the fact that the path will be added later
--A, --all                   add changes from all tracked and untracked files
---ignore-removal            ignore paths removed in the working tree (same as --no-all)
---refresh                   don't add, only refresh the index
---ignore-errors             just skip files which cannot be added because of errors
---ignore-missing            check if - even missing - files are ignored in dry run
---chmod (+|-)x              override the executable bit of the listed files
---pathspec-from-file &lt;file&gt; read pathspec from file
---pathspec-file-nul         with --pathspec-from-file, pathspec elements are separated with NUL character</pre>
+</pre>
 
 </subsection>
 
 <conclusion>
-	<title>Section Summary</title>
-	
+<title>Conclusion</title>
+
+
 	<p>
-	You should now have a basic understanding of what Git is and how it’s different from other centralized version control systems. You should also now have a working version of Git on your system that’s set up with your personal identity. It’s now time to learn some Git basics.
+	You should now have a basic understanding of different types of VCSs, as well as some of their advantages and disadvantages. You should also now know what Git is and should also now have a working version of Git set-up on your system. In the next section, we will learn some Git basics.
 	</p>
 </conclusion>
 

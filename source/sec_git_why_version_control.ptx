@@ -33,10 +33,10 @@
       mydoc2-plus-moms-combined.odt
     </pre>
     <p>
-      Or maybe you have experienced this on a larger scale... For example, three of your friends comment on different versions and then they each share their edits with the whole group via email. Some comment on the original version, some comment on your mom's version, others comment on your brother's version, etc.
+      Or maybe you have experienced this on a larger scale... For example, three of your friends comment on different versions, and then they each share their edits with the whole group via email. Some comment on the original version, some comment on your mom's version, others comment on your brother's version, etc.
     </p>
     <p>
-      If you have experienced this, you have used version control, which according to Wikipedia <url href="https://en.wikipedia.org/wiki/Version_control" visual="https://en.wikipedia.org/wiki/Version_control">version control</url> “is the management of changes to documents, programs, and other information stored as computer files.” But, if you have experienced anything like this, then you have also have come to deeply understand the need for a better and easier way to merge in any changes that come on an earlier version.
+      If you have experienced this, you have used version control, which according to Wikipedia <url href="https://en.wikipedia.org/wiki/Version_control" visual="https://en.wikipedia.org/wiki/Version_control">version control</url> “is the management of changes to documents, programs, and other information stored as computer files.” But, if you have experienced anything like this, then you have also have come to deeply understand the need for a better and easier way to merge in any changes that come on an earlier version. Formal software systems that are designed for version control have many advantages over the kind of informal system that we just described.
     </p>
 
     <p>
@@ -46,8 +46,8 @@
 
   </introduction>
 
-  <subsection xml:id="subsec_historic_vcs">
-    <title>Historic Version Control Systems</title>
+  <subsection xml:id="subsec_vcs_intro">
+    <title>Version Control Systems</title>
 
      	<p>
 				The OSS world has developed many excellent ways of managing a software project, including not only a history of changes, but also who did what when and why.
@@ -87,14 +87,8 @@
     <p>
       What has happened in the recent decade in version control systems has been truly remarkable because Git has come to completely dominate not just the open source world, but also much of the rest of the proprietary software community as well.
     </p>
-    <p>
-      For this reason, in the next chapter we will be exploring Git and a cloud hosting site called <url href="https://www.github.com/" visual="www.github.com/">Github</url>.
-    </p>
+
     </conclusion>
-
-
-
-
 
 </section>
 
