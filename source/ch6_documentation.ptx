@@ -3,36 +3,39 @@
 <chapter xml:id="ch_documentation" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Documentation</title>
   <introduction>
-				<p>
-					By the time you finish this chapter you should be able to …
-				</p>
+	<p>
+		
+		For many reasons documentation is of utmost importance in open source projects. It acts as a historical record for decisions made as well as a communication link between programmers and users by offering directions, explanations, and advice. New potential contributors can use documentation to understand the project's goals and functions as well as how the community functions. 
+		</p>
+		<p>
+		Effective up-to-date documentation is crucial in creating a thriving and encouraging ecosystem around the open source project by enhancing usability, encouraging collaboration, and lowering entry barriers to contribution.By offering usage instructions and troubleshooting assistance, documentation enables users to get the most out of the project's features.
+	</p>
 
-				<p><ol>
-					<li>
-				  Use documentation as a way to become immediately useful as a project newcomer.
-					</li>
-					<li>
-					Document your project in a way that encourages other people to discover, use, and contribute to it.
-					</li>
-					<li>
-					Follow a good methodology for technical writing, including writing good commit log messages, and documenting your contributions as you make them.
-					</li>
-					<li>
-					Engage in an open collaboration on documentation, whether in source code or on a wiki.
-					</li>
-					<li>
-					Participate as part of a community in documenting a proceeding or event.
-					</li>
-					<li>
-					Explain the value of documentation to open source software.
-					</li>
+	<p>
+		By the time you finish this chapter you should be able to:
+	</p>
 
-				</ol></p>
+	<p><ol>
+		<li>
+		Explain both the historical and current value of documentation to open source software.
+		</li>
+		<li>
+		Leverage documentation as a way to become quickly useful as a project newcomer.
+		</li>
+		<li>
+		Follow an approved methodology for technical writing, including writing effective commit log messages to document your contributions as you make them.
+		</li>
+
+	</ol></p>
 
 
   </introduction>
 
-  <xi:include href="./sec_documentation_matters.ptx" />
-  <xi:include href="./sec_documentation_as_involvement.ptx" />
+  <xi:include href="./sec_docu_historical.ptx" />
+  <xi:include href="./sec_docu_involvement.ptx" />
+  <xi:include href="./sec_docu_build.ptx" />
+  <xi:include href="./sec_docu_bug_trackers.ptx" />
+  <xi:include href="./sec_docu_bug_reports.ptx" />
+  <xi:include href="./sec_docu_bug_triage.ptx" />
 
 </chapter>

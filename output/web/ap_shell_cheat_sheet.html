@@ -172,15 +172,9 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="link">
 <a href="ch_documentation.html" data-scroll="ch_documentation" class="internal"><span class="codenumber">6</span> <span class="title">Documentation</span></a><ul>
-<li><a href="sec_documentation_matters.html" data-scroll="sec_documentation_matters" class="internal">Documentation Matters</a></li>
+<li><a href="sec_documentation_matters.html" data-scroll="sec_documentation_matters" class="internal">Project History Matters</a></li>
 <li><a href="sec_documentation_involvement.html" data-scroll="sec_documentation_involvement" class="internal">Documentation as Involvement</a></li>
-</ul>
-</li>
-<li class="link">
-<a href="ch_building_code.html" data-scroll="ch_building_code" class="internal"><span class="codenumber">7</span> <span class="title">Getting and Building the Code</span></a><ul><li><a href="sec_source_to_executable.html" data-scroll="sec_source_to_executable" class="internal">From Source to Executable</a></li></ul>
-</li>
-<li class="link">
-<a href="ch_bugs_and_debugging.html" data-scroll="ch_bugs_and_debugging" class="internal"><span class="codenumber">8</span> <span class="title">Bugs and Debugging</span></a><ul>
+<li><a href="sec_source_to_executable.html" data-scroll="sec_source_to_executable" class="internal">From Source to Executable</a></li>
 <li><a href="sec_bug_trackers.html" data-scroll="sec_bug_trackers" class="internal">Bug Trackers</a></li>
 <li><a href="sec_bug_reports.html" data-scroll="sec_bug_reports" class="internal">Bug Reports</a></li>
 <li><a href="sec_bug_triage.html" data-scroll="sec_bug_triage" class="internal">Bug Triage</a></li>
@@ -202,143 +196,143 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span> <span class="codenumber">B.1</span> <span class="title">Bash Shell Cheat Sheet</span>
 </h2>
 <section class="paragraphs" id="paragraphs-89"><h3 class="heading"><span class="title">Getting help with shell commands.</span></h3>
-<dl id="p-927" class="description-list narrow">
-<dt id="li-243"><code class="code-inline tex2jax_ignore"> man &lt;command-name&gt; </code></dt>
+<dl id="p-926" class="description-list narrow">
+<dt id="li-238"><code class="code-inline tex2jax_ignore"> man &lt;command-name&gt; </code></dt>
 <dd>
-<p id="p-928">Use the built-in <dfn class="terminology">manual</dfn>.</p>
-<ul class="disc"><li id="li-244"><p id="p-929">e.g. <code class="code-inline tex2jax_ignore">man cd</code> retrieves the manual for the change directory command.</p></li></ul>
+<p id="p-927">Use the built-in <dfn class="terminology">manual</dfn>.</p>
+<ul class="disc"><li id="li-239"><p id="p-928">e.g. <code class="code-inline tex2jax_ignore">man cd</code> retrieves the manual for the change directory command.</p></li></ul>
 </dd>
-<dt id="li-245"><code class="code-inline tex2jax_ignore"> &lt;command-name&gt; --help</code></dt>
+<dt id="li-240"><code class="code-inline tex2jax_ignore"> &lt;command-name&gt; --help</code></dt>
 <dd>
-<p id="p-930">Request the <dfn class="terminology">help page</dfn> (when it exists) for the specified command. Note that not every command supports <code class="code-inline tex2jax_ignore">--help</code>.</p>
-<ul class="disc"><li id="li-246"><p id="p-931">e.g. <code class="code-inline tex2jax_ignore">cd --help</code> retrieves help for the change directory command.</p></li></ul>
+<p id="p-929">Request the <dfn class="terminology">help page</dfn> (when it exists) for the specified command. Note that not every command supports <code class="code-inline tex2jax_ignore">--help</code>.</p>
+<ul class="disc"><li id="li-241"><p id="p-930">e.g. <code class="code-inline tex2jax_ignore">cd --help</code> retrieves help for the change directory command.</p></li></ul>
 </dd>
 </dl></section><section class="paragraphs" id="paragraphs-90"><h3 class="heading"><span class="title">File and Directory Commands.</span></h3>
-<dl id="p-932" class="description-list narrow">
-<dt id="li-247"><code class="code-inline tex2jax_ignore">pwd </code></dt>
+<dl id="p-931" class="description-list narrow">
+<dt id="li-242"><code class="code-inline tex2jax_ignore">pwd </code></dt>
 <dd>
-<p id="p-933"><dfn class="terminology">Print working directory</dfn> displays the path of the current working directory.</p>
-<ul class="disc"><li id="li-248"><p id="p-934">e.g. <code class="code-inline tex2jax_ignore">pwd</code> prints the path of the current working directory.</p></li></ul>
+<p id="p-932"><dfn class="terminology">Print working directory</dfn> displays the path of the current working directory.</p>
+<ul class="disc"><li id="li-243"><p id="p-933">e.g. <code class="code-inline tex2jax_ignore">pwd</code> prints the path of the current working directory.</p></li></ul>
 </dd>
-<dt id="li-249"><code class="code-inline tex2jax_ignore">whoami </code></dt>
+<dt id="li-244"><code class="code-inline tex2jax_ignore">whoami </code></dt>
 <dd>
-<p id="p-935">The <dfn class="terminology">whoami</dfn> prints the userid of the current user.</p>
-<ul class="disc"><li id="li-250"><p id="p-936">e.g. <code class="code-inline tex2jax_ignore">whoami</code> prints the userid.</p></li></ul>
+<p id="p-934">The <dfn class="terminology">whoami</dfn> prints the userid of the current user.</p>
+<ul class="disc"><li id="li-245"><p id="p-935">e.g. <code class="code-inline tex2jax_ignore">whoami</code> prints the userid.</p></li></ul>
 </dd>
-<dt id="li-251"><code class="code-inline tex2jax_ignore">ls</code></dt>
+<dt id="li-246"><code class="code-inline tex2jax_ignore">ls</code></dt>
 <dd>
-<p id="p-937"><dfn class="terminology">List</dfn> displays basic information about files and directories.</p>
-<ul id="p-938" class="disc">
-<li id="li-252"><p id="p-939">e.g. <code class="code-inline tex2jax_ignore">ls</code> lists directories and files in the current directory.</p></li>
-<li id="li-253"><p id="p-940">e.g. <code class="code-inline tex2jax_ignore">ls -l</code>  lists directories and files in the current directory using a long listing.</p></li>
-<li id="li-254"><p id="p-941">e.g. <code class="code-inline tex2jax_ignore">ls ~</code> lists directories and files in the user's home directory.</p></li>
+<p id="p-936"><dfn class="terminology">List</dfn> displays basic information about files and directories.</p>
+<ul id="p-937" class="disc">
+<li id="li-247"><p id="p-938">e.g. <code class="code-inline tex2jax_ignore">ls</code> lists directories and files in the current directory.</p></li>
+<li id="li-248"><p id="p-939">e.g. <code class="code-inline tex2jax_ignore">ls -l</code>  lists directories and files in the current directory using a long listing.</p></li>
+<li id="li-249"><p id="p-940">e.g. <code class="code-inline tex2jax_ignore">ls ~</code> lists directories and files in the user's home directory.</p></li>
 </ul>
 </dd>
-<dt id="li-255"><code class="code-inline tex2jax_ignore">touch &lt;file-name&gt;</code></dt>
+<dt id="li-250"><code class="code-inline tex2jax_ignore">touch &lt;file-name&gt;</code></dt>
 <dd>
-<p id="p-942">The <dfn class="terminology">touch</dfn> command is commonly used for file creation. Its intended primary function is to update its timestamp, by "touching" it. See <code class="code-inline tex2jax_ignore">man touch</code> for more information on the intended use.</p>
-<ul class="disc"><li id="li-256"><p id="p-943">e.g. <code class="code-inline tex2jax_ignore">touch newfile.txt</code> creates an empty file named newfile.txt.</p></li></ul>
+<p id="p-941">The <dfn class="terminology">touch</dfn> command is commonly used for file creation. Its intended primary function is to update its timestamp, by "touching" it. See <code class="code-inline tex2jax_ignore">man touch</code> for more information on the intended use.</p>
+<ul class="disc"><li id="li-251"><p id="p-942">e.g. <code class="code-inline tex2jax_ignore">touch newfile.txt</code> creates an empty file named newfile.txt.</p></li></ul>
 </dd>
-<dt id="li-257"><code class="code-inline tex2jax_ignore">cd &lt;directory-name&gt;</code></dt>
+<dt id="li-252"><code class="code-inline tex2jax_ignore">cd &lt;directory-name&gt;</code></dt>
 <dd>
-<p id="p-944"><dfn class="terminology">Change directory</dfn> to <code class="code-inline tex2jax_ignore">&lt;directory-name&gt;</code>.</p>
+<p id="p-943"><dfn class="terminology">Change directory</dfn> to <code class="code-inline tex2jax_ignore">&lt;directory-name&gt;</code>.</p>
 <ul class="disc">
-<li id="li-258"><p id="p-945">e.g. <code class="code-inline tex2jax_ignore">cd / </code> changes the current directory to the root directory.</p></li>
-<li id="li-259"><p id="p-946">e.g. <code class="code-inline tex2jax_ignore">cd ~ </code> changes the current directory to the user's home directory.</p></li>
-<li id="li-260"><p id="p-947">e.g. <code class="code-inline tex2jax_ignore">cd ..</code> changes the directory to the immediate parent directory.</p></li>
+<li id="li-253"><p id="p-944">e.g. <code class="code-inline tex2jax_ignore">cd / </code> changes the current directory to the root directory.</p></li>
+<li id="li-254"><p id="p-945">e.g. <code class="code-inline tex2jax_ignore">cd ~ </code> changes the current directory to the user's home directory.</p></li>
+<li id="li-255"><p id="p-946">e.g. <code class="code-inline tex2jax_ignore">cd ..</code> changes the directory to the immediate parent directory.</p></li>
 </ul>
 </dd>
-<dt id="li-261"><code class="code-inline tex2jax_ignore">mv &lt;old-name&gt; &lt;new-name&gt;</code></dt>
+<dt id="li-256"><code class="code-inline tex2jax_ignore">mv &lt;old-name&gt; &lt;new-name&gt;</code></dt>
 <dd>
-<p id="p-948"><dfn class="terminology">Move</dfn> (rename) files or directories.</p>
-<ul class="disc"><li id="li-262"><p id="p-949">e.g. <code class="code-inline tex2jax_ignore">mv old.txt new.txt</code> changes the name of old.txt to new.txt.</p></li></ul>
+<p id="p-947"><dfn class="terminology">Move</dfn> (rename) files or directories.</p>
+<ul class="disc"><li id="li-257"><p id="p-948">e.g. <code class="code-inline tex2jax_ignore">mv old.txt new.txt</code> changes the name of old.txt to new.txt.</p></li></ul>
 </dd>
-<dt id="li-263"><code class="code-inline tex2jax_ignore">rm &lt;file-name&gt;</code></dt>
+<dt id="li-258"><code class="code-inline tex2jax_ignore">rm &lt;file-name&gt;</code></dt>
 <dd>
-<p id="p-950"><dfn class="terminology">Remove</dfn> deletes a file or directory.</p>
-<ul class="disc"><li id="li-264"><p id="p-951">e.g. <code class="code-inline tex2jax_ignore">rm junk.txt</code> removes the file named junk.txt.</p></li></ul>
+<p id="p-949"><dfn class="terminology">Remove</dfn> deletes a file or directory.</p>
+<ul class="disc"><li id="li-259"><p id="p-950">e.g. <code class="code-inline tex2jax_ignore">rm junk.txt</code> removes the file named junk.txt.</p></li></ul>
 </dd>
-<dt id="li-265"><code class="code-inline tex2jax_ignore">mkdir  &lt;directory-name&gt;</code></dt>
+<dt id="li-260"><code class="code-inline tex2jax_ignore">mkdir  &lt;directory-name&gt;</code></dt>
 <dd>
-<p id="p-952"><dfn class="terminology">Make directory</dfn> with name &lt;directory-name&gt;.</p>
-<ul class="disc"><li id="li-266"><p id="p-953">e.g. <code class="code-inline tex2jax_ignore">mkdir newdir</code> makes a new directory with the name newdir.</p></li></ul>
+<p id="p-951"><dfn class="terminology">Make directory</dfn> with name &lt;directory-name&gt;.</p>
+<ul class="disc"><li id="li-261"><p id="p-952">e.g. <code class="code-inline tex2jax_ignore">mkdir newdir</code> makes a new directory with the name newdir.</p></li></ul>
 </dd>
-<dt id="li-267"><code class="code-inline tex2jax_ignore">rmdir &lt;directory-name&gt; </code></dt>
+<dt id="li-262"><code class="code-inline tex2jax_ignore">rmdir &lt;directory-name&gt; </code></dt>
 <dd>
-<p id="p-954"><dfn class="terminology">Remove directory</dfn> with specified name &lt;directory-name&gt;</p>
-<ul class="disc"><li id="li-268"><p id="p-955">e.g. <code class="code-inline tex2jax_ignore">mkdir olddir</code> removes (deletes) the directory with the name olddir.</p></li></ul>
+<p id="p-953"><dfn class="terminology">Remove directory</dfn> with specified name &lt;directory-name&gt;</p>
+<ul class="disc"><li id="li-263"><p id="p-954">e.g. <code class="code-inline tex2jax_ignore">mkdir olddir</code> removes (deletes) the directory with the name olddir.</p></li></ul>
 </dd>
 </dl></section><section class="paragraphs" id="paragraphs-91"><h3 class="heading"><span class="title">The Basics: Reading, Writing, Counting, etc.</span></h3>
-<dl id="p-956" class="description-list narrow">
-<dt id="li-269"><code class="code-inline tex2jax_ignore">echo &lt;text&gt;</code></dt>
+<dl id="p-955" class="description-list narrow">
+<dt id="li-264"><code class="code-inline tex2jax_ignore">echo &lt;text&gt;</code></dt>
 <dd>
-<p id="p-957">The <dfn class="terminology">echo</dfn> command displays a line of text and/or requests the value of a variable from the shell and displays its value. Often used with output redirection.</p>
+<p id="p-956">The <dfn class="terminology">echo</dfn> command displays a line of text and/or requests the value of a variable from the shell and displays its value. Often used with output redirection.</p>
 <ul class="disc">
-<li id="li-270"><p id="p-958">e.g. <code class="code-inline tex2jax_ignore">echo 'Hello World!'</code> print the text 'Hello World!' on the standard output.</p></li>
-<li id="li-271"><p id="p-959">e.g. <code class="code-inline tex2jax_ignore">echo $USER</code> prints the value of the USER environment variable on the standard output.</p></li>
+<li id="li-265"><p id="p-957">e.g. <code class="code-inline tex2jax_ignore">echo 'Hello World!'</code> print the text 'Hello World!' on the standard output.</p></li>
+<li id="li-266"><p id="p-958">e.g. <code class="code-inline tex2jax_ignore">echo $USER</code> prints the value of the USER environment variable on the standard output.</p></li>
 </ul>
 </dd>
-<dt id="li-272"><code class="code-inline tex2jax_ignore">cat &lt;file-name&gt;</code></dt>
+<dt id="li-267"><code class="code-inline tex2jax_ignore">cat &lt;file-name&gt;</code></dt>
 <dd>
-<p id="p-960">The <dfn class="terminology">concatenate</dfn> prints file contents on the standard output after concatenation. Note that with a single file, it just prints that file. It is often used with output redirection.</p>
+<p id="p-959">The <dfn class="terminology">concatenate</dfn> prints file contents on the standard output after concatenation. Note that with a single file, it just prints that file. It is often used with output redirection.</p>
 <ul class="disc">
-<li id="li-273"><p id="p-961">e.g. <code class="code-inline tex2jax_ignore">cat file.txt</code> prints the contents of file.txt on the standard output.</p></li>
-<li id="li-274"><p id="p-962">e.g. <code class="code-inline tex2jax_ignore">cat file1.txt file2.txt</code> prints the contents of the concatenation of file1.txt and file2.txt on the standard output.</p></li>
+<li id="li-268"><p id="p-960">e.g. <code class="code-inline tex2jax_ignore">cat file.txt</code> prints the contents of file.txt on the standard output.</p></li>
+<li id="li-269"><p id="p-961">e.g. <code class="code-inline tex2jax_ignore">cat file1.txt file2.txt</code> prints the contents of the concatenation of file1.txt and file2.txt on the standard output.</p></li>
 </ul>
 </dd>
-<dt id="li-275"><code class="code-inline tex2jax_ignore">read &lt;variable-name&gt;</code></dt>
+<dt id="li-270"><code class="code-inline tex2jax_ignore">read &lt;variable-name&gt;</code></dt>
 <dd>
-<p id="p-963">The <dfn class="terminology">read</dfn> command reads a line or variable from the keyboard. It is often used with scripts or input redirection.</p>
-<ul class="disc"><li id="li-276"><p id="p-964">e.g. <code class="code-inline tex2jax_ignore">read MYVAR</code> takes input from the keyboard and directs it into a variable called MYVAR.</p></li></ul>
+<p id="p-962">The <dfn class="terminology">read</dfn> command reads a line or variable from the keyboard. It is often used with scripts or input redirection.</p>
+<ul class="disc"><li id="li-271"><p id="p-963">e.g. <code class="code-inline tex2jax_ignore">read MYVAR</code> takes input from the keyboard and directs it into a variable called MYVAR.</p></li></ul>
 </dd>
-<dt id="li-277"><code class="code-inline tex2jax_ignore">wc &lt;file-name&gt;</code></dt>
+<dt id="li-272"><code class="code-inline tex2jax_ignore">wc &lt;file-name&gt;</code></dt>
 <dd>
-<p id="p-965">The <dfn class="terminology">word count</dfn> command performs a count of lines, words, and bytes for each file.</p>
-<ul class="disc"><li id="li-278"><p id="p-966">e.g. <code class="code-inline tex2jax_ignore">wc file.txt</code> reports the count of lines, words, and bytes in  file.txt.</p></li></ul>
+<p id="p-964">The <dfn class="terminology">word count</dfn> command performs a count of lines, words, and bytes for each file.</p>
+<ul class="disc"><li id="li-273"><p id="p-965">e.g. <code class="code-inline tex2jax_ignore">wc file.txt</code> reports the count of lines, words, and bytes in  file.txt.</p></li></ul>
 </dd>
 </dl></section><section class="paragraphs" id="paragraphs-92"><h3 class="heading"><span class="title">Input and Output Redirection.</span></h3>
-<dl id="p-967" class="description-list narrow">
-<dt id="li-279">Input redirection using <code class="code-inline tex2jax_ignore">&lt;</code>
+<dl id="p-966" class="description-list narrow">
+<dt id="li-274">Input redirection using <code class="code-inline tex2jax_ignore">&lt;</code>
 </dt>
 <dd>
-<p id="p-968">Input redirection uses using <code class="code-inline tex2jax_ignore">&lt;</code>to allow the user to redirect the input from a file rather than the keyboard.</p>
-<ul class="disc"><li id="li-280"><p id="p-969">e.g. <code class="code-inline tex2jax_ignore">wc &lt; info2count.txt</code> performs the <code class="code-inline tex2jax_ignore">wc</code> command on the information in the file info2count.txt.</p></li></ul>
+<p id="p-967">Input redirection uses using <code class="code-inline tex2jax_ignore">&lt;</code>to allow the user to redirect the input from a file rather than the keyboard.</p>
+<ul class="disc"><li id="li-275"><p id="p-968">e.g. <code class="code-inline tex2jax_ignore">wc &lt; info2count.txt</code> performs the <code class="code-inline tex2jax_ignore">wc</code> command on the information in the file info2count.txt.</p></li></ul>
 </dd>
-<dt id="li-281">Output redirection using <code class="code-inline tex2jax_ignore">&gt;</code> or <code class="code-inline tex2jax_ignore">&gt;&gt;</code>
+<dt id="li-276">Output redirection using <code class="code-inline tex2jax_ignore">&gt;</code> or <code class="code-inline tex2jax_ignore">&gt;&gt;</code>
 </dt>
 <dd>
-<p id="p-970">Output redirection allows the user to redirect the output from the standard output to a file using <code class="code-inline tex2jax_ignore">&gt;</code> for overwriting or <code class="code-inline tex2jax_ignore">&gt;&gt;</code> for appending.</p>
-<ul class="disc"><li id="li-282"><p id="p-971">e.g. <code class="code-inline tex2jax_ignore">echo 'I love open source!' &gt; file.txt</code> writes the line 'I love open source!' into the file file.txt replacing the current contents or making a new file if it doesn't already exist.</p></li></ul>
+<p id="p-969">Output redirection allows the user to redirect the output from the standard output to a file using <code class="code-inline tex2jax_ignore">&gt;</code> for overwriting or <code class="code-inline tex2jax_ignore">&gt;&gt;</code> for appending.</p>
+<ul class="disc"><li id="li-277"><p id="p-970">e.g. <code class="code-inline tex2jax_ignore">echo 'I love open source!' &gt; file.txt</code> writes the line 'I love open source!' into the file file.txt replacing the current contents or making a new file if it doesn't already exist.</p></li></ul>
 </dd>
-<dt id="li-283">Piping <code class="code-inline tex2jax_ignore">|</code>
+<dt id="li-278">Piping <code class="code-inline tex2jax_ignore">|</code>
 </dt>
 <dd>
-<p id="p-972">A <dfn class="terminology">pipe</dfn> <code class="code-inline tex2jax_ignore">|</code> in the bash shell allows you to redirect (pipe) the output of one command into the input of another command.</p>
-<ul class="disc"><li id="li-284"><p id="p-973">e.g. <code class="code-inline tex2jax_ignore">ls | wc</code> runs the command <code class="code-inline tex2jax_ignore">ls</code>&gt;and uses the output of the <code class="code-inline tex2jax_ignore">ls</code> command as the input into the <code class="code-inline tex2jax_ignore">wc</code> command.</p></li></ul>
+<p id="p-971">A <dfn class="terminology">pipe</dfn> <code class="code-inline tex2jax_ignore">|</code> in the bash shell allows you to redirect (pipe) the output of one command into the input of another command.</p>
+<ul class="disc"><li id="li-279"><p id="p-972">e.g. <code class="code-inline tex2jax_ignore">ls | wc</code> runs the command <code class="code-inline tex2jax_ignore">ls</code>&gt;and uses the output of the <code class="code-inline tex2jax_ignore">ls</code> command as the input into the <code class="code-inline tex2jax_ignore">wc</code> command.</p></li></ul>
 </dd>
 </dl></section><section class="paragraphs" id="paragraphs-93"><h3 class="heading"><span class="title">File Permissions.</span></h3>
-<dl id="p-974" class="description-list narrow">
-<dt id="li-285"><code class="code-inline tex2jax_ignore"> chown &lt;newuser:newgroup&gt; &lt;file-name&gt; </code></dt>
+<dl id="p-973" class="description-list narrow">
+<dt id="li-280"><code class="code-inline tex2jax_ignore"> chown &lt;newuser:newgroup&gt; &lt;file-name&gt; </code></dt>
 <dd>
-<p id="p-975">The <dfn class="terminology">chown</dfn> command is used to change the file owner and/or group.</p>
+<p id="p-974">The <dfn class="terminology">chown</dfn> command is used to change the file owner and/or group.</p>
 <ul class="disc">
-<li id="li-286"><p id="p-976">e.g. <code class="code-inline tex2jax_ignore">chmod pearcej file.txt</code> changes the owner of file.txt to pearcej.</p></li>
-<li id="li-287"><p id="p-977">e.g. <code class="code-inline tex2jax_ignore">chmod :friends file.txt</code> changes the group of file.txt to friends.</p></li>
+<li id="li-281"><p id="p-975">e.g. <code class="code-inline tex2jax_ignore">chmod pearcej file.txt</code> changes the owner of file.txt to pearcej.</p></li>
+<li id="li-282"><p id="p-976">e.g. <code class="code-inline tex2jax_ignore">chmod :friends file.txt</code> changes the group of file.txt to friends.</p></li>
 </ul>
 </dd>
-<dt id="li-288"><code class="code-inline tex2jax_ignore"> chmod &lt;change&gt;&lt;which&gt; &lt;file-name&gt; </code></dt>
+<dt id="li-283"><code class="code-inline tex2jax_ignore"> chmod &lt;change&gt;&lt;which&gt; &lt;file-name&gt; </code></dt>
 <dd>
-<p id="p-978">The <code class="code-inline tex2jax_ignore">chmod</code> command is used to change permissions. The following symbols are the most commonly used:</p>
-<p id="p-979"><code class="code-inline tex2jax_ignore">+</code> change by adding permission</p>
-<p id="p-980"><code class="code-inline tex2jax_ignore">-</code> change by removing permission</p>
-<p id="p-981"><code class="code-inline tex2jax_ignore">r</code> which permission: read</p>
-<p id="p-982"><code class="code-inline tex2jax_ignore">w</code> which permission: write</p>
-<p id="p-983"><code class="code-inline tex2jax_ignore">x</code> which permission: execute</p>
-<ul id="p-984" class="disc"><li id="li-289"><p id="p-985">e.g. <code class="code-inline tex2jax_ignore">chmod +x helloworld.sh</code> adds execute permission for all users to the helloworld.sh file.</p></li></ul>
+<p id="p-977">The <code class="code-inline tex2jax_ignore">chmod</code> command is used to change permissions. The following symbols are the most commonly used:</p>
+<p id="p-978"><code class="code-inline tex2jax_ignore">+</code> change by adding permission</p>
+<p id="p-979"><code class="code-inline tex2jax_ignore">-</code> change by removing permission</p>
+<p id="p-980"><code class="code-inline tex2jax_ignore">r</code> which permission: read</p>
+<p id="p-981"><code class="code-inline tex2jax_ignore">w</code> which permission: write</p>
+<p id="p-982"><code class="code-inline tex2jax_ignore">x</code> which permission: execute</p>
+<ul id="p-983" class="disc"><li id="li-284"><p id="p-984">e.g. <code class="code-inline tex2jax_ignore">chmod +x helloworld.sh</code> adds execute permission for all users to the helloworld.sh file.</p></li></ul>
 </dd>
 </dl></section><section class="paragraphs" id="paragraphs-94"><h3 class="heading"><span class="title">Need more detail?</span></h3>
-<p id="p-986"></p>
-<p id="p-987">For more information on any of these commands, see <a href="sec_dev_basic_shell_commands.html" class="internal" title="Section 4.2: Basic Shell Commands">Section 4.2</a> or use the <code class="code-inline tex2jax_ignore">man</code> pages.</p></section></section></div></main>
+<p id="p-985"></p>
+<p id="p-986">For more information on any of these commands, see <a href="sec_dev_basic_shell_commands.html" class="internal" title="Section 4.2: Basic Shell Commands">Section 4.2</a> or use the <code class="code-inline tex2jax_ignore">man</code> pages.</p></section></section></div></main>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>

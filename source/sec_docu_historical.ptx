@@ -1,35 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec_documentation_matters" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Documentation Matters</title>
+  <title>Project History Matters</title>
   <introduction>
-			<p>
-				People might tell you documentation doesn’t matter. In a perfect world, it might not. If all code were self-evident and all programs worked for users without needing help, if all work and communities were easy to participate in, perhaps we could do without documentation. Of course, that would require all people to think and act in similar ways; we may never be without documentation simply because we are a diverse species.
+	<p>
+	Quality documentation is essential because it is impossible to remember every decision anyone has ever made. Even seasoned developers might write some complicated code, and if they come back to it six months later, even they might not easily remember why a particular change was made or understand how it works without good documentation.
     </p>
+		<p>
+		In open source, documentation is a key tool. Documentation needs to exist to explain why decisions were made, how to get things running, how the code is organized and works, and what steps must be taken to contribute. You have to document everything that you do in a open source project, not just with the code. Next year when you need to remember why a technical decision was made, the answer should be readily available in the documentation.
+	</p>
   </introduction>
+
   <subsection xml:id="subsec_why_needed">
-    <title>Why Documentation is Needed</title>
-			<p>
-				In open source, documentation is a key tool of transparency and participation. You have to document everything that you do in a open source project, not just with the code. Next year when you need to remember why a technical decision was made, the answer is coming from a combination of mailing list archives, wiki page history, and well written version control log messages. A question of why you have specific commit rules or code styles? Mailing list archive and wiki page history are your friends.
-			</p>
+    <title>Historical Documentation is Needed</title>
+
 
 			<p>
-				There are two main ends in the spectrum of documentation:
-			</p>
-
-			<p><ol>
-				<li>
-				Content written ad hoc and in the flow of working; it captures the moment; examples are comments in source code, commit log messages, and notes taken during a meeting.
-				</li>
-
-				<li>
-				Content planned as a document of some size; it captures a version in time; it follows a more rigorous process with a higher quality result.
-				</li>
-
-			</ol></p>
-
-			<p>
-				Part of your journey is learning when to practice each end of the spectrum. Properly done, the ad hoc just-in-time components add up to coherent whole that approaches a full document, but it usually requires a restructuring and culling of content to make it gain the higher quality.
+				Part of your journey is learning how to document well. 
 			</p>
 
 			<p>
@@ -97,7 +84,7 @@ return self._findAll(name, attrs, text, limit, self.previousGenerator,
 
 			<p><ul>
 				<li>
-				If your code is poorly commented and opaque, people know and tell you;
+				If your project is poorly commented and opaque, people know and tell you;
 				</li>
 
 				<li>
@@ -163,14 +150,12 @@ return self._findAll(name, attrs, text, limit, self.previousGenerator,
 			</p>
 
 			<p>
-				Every technical effort has a requirement for documentation. The project’s ability to make writing, editing, and publishing as easy as possible is the main key to attracting and retaining contributors.
+				Every technical effort has requirements for different types of documentation. The project’s ability to make writing, editing, and publishing as easy as possible is the main key to attracting and retaining contributors.
 			</p>
 
 			<p>
 				According to Mozilla, developer contributions to documentation greatly increased along with a new community of writers, editors, and translators. This all resulted from reducing the barriers to success that made even experienced developers too frustrated to document properly.
 			</p>
-
-
 
 
 				<exercise xml:id="exercise-practice-good-code-commenting">
