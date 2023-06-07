@@ -12,11 +12,8 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>The <dfn class="terminology">echo</dfn> command displays a line of text and/or requests the value of a variable from the shell and displays its value. Often used with output redirection.</p>
-<ul class="disc">
-<li><p>e.g. <code class="code-inline tex2jax_ignore">echo 'Hello World!'</code> print the text 'Hello World!' on the standard output.</p></li>
-<li><p>e.g. <code class="code-inline tex2jax_ignore">echo $USER</code> prints the value of the USER environment variable on the standard output.</p></li>
-</ul>
+<p>A <dfn class="terminology">pipe</dfn> <code class="code-inline tex2jax_ignore">|</code> in the bash shell allows you to redirect (pipe) the output of one command into the input of another command.</p>
+<ul class="disc"><li><p>e.g. <code class="code-inline tex2jax_ignore">ls | wc</code> runs the command <code class="code-inline tex2jax_ignore">ls</code>&gt;and uses the output of the <code class="code-inline tex2jax_ignore">ls</code> command as the input into the <code class="code-inline tex2jax_ignore">wc</code> command.</p></li></ul>
 <span class="incontext"><a href="ap_shell_cheat_sheet.html#p-956" class="internal">in-context</a></span>
 </body>
 </html>

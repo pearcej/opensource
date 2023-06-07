@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec_source_to_executable" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec_docu_build" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>From Source to Executable</title>
   <introduction>
     <p>
-      Now you know how version control works, and you’ve got a gigantic pile of source code sitting in a directory or a set of directories?
-    </p>
-    <p>
-      What do you do with it?
-    </p>
-    <p>
-      That's the topic of this section.
+      Now you know how version control works, and you’ve got source code sitting in a repository?
+      What you do with it is the topic of this section.
     </p>
   </introduction>
   <subsection xml:id="subsec_what_is_building">
@@ -19,6 +14,9 @@
       <p>
         The process of turning source code into executable binary code can be complicated. The larger the project and the more source code you have, the more complicated that process is. Almost every serious piece of software has its own build process, that every developer must follow — and woe be unto the developer who repeatedly breaks the build for everyone else.
       </p>
+	  <p>
+		Where do you find build directions? 
+	  </p>
     </introduction>
     <p>
       There are many steps in the process of turning source code into a binary executable. Some examples of tasks that you might encounter during a typical build process:
@@ -77,8 +75,11 @@
 			</p>
 
 			<p><ul>
+				<li><term>Start with the README.</term> 
+				Start with the README file which serves to explain the project, what it does, why it is useful, etc. If GitHub detects a README file in the source, it will render it on the landing page of the project, so this file is often the first item a visitor will see when visiting the repository. Although build instructions are often found elsewhere, the README will at least link to the page that details how to get set up to locally build the project.
+				</li>
 				<li>
-				<term>Read instructions carefully.</term> Almost every sizable FOSS project has a README or an INSTALL file that provides instructions for how to build and install the software. Read those instructions, and do your best to follow them to the letter. Understand that even the best instructions may leave out a step or two — and these are opportunities to improve the project.
+				<term>Read instructions carefully.</term> Almost every sizable OSS project has a README or an INSTALL file that provides instructions for how to build and install the software. Read those instructions, and do your best to follow them to the letter. Understand that even the best instructions may leave out a step or two — and these are opportunities to improve the project.
 				</li>
 
 				<li>

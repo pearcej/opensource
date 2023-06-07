@@ -15,7 +15,7 @@
 			</p>
 
 			<p>
-				Documentation has a reputation as being an easy way to begin contributing to a project. This is more true where the new contributor is already experienced or an expert in the material. It is much less likely to be true where the project has not considered how to enable good and easy documentation, or the content is very technical.
+				Documentation has a reputation as being an easy way to begin contributing to a project. Newcomers can often make improvements to the documentation for such things as how to get a thing to run/compile because they will be going through that process and might run into an issue or outdated part of documentation. They are then in a great position to improve it based on their experience.
 			</p>
 
 			<p>
@@ -23,17 +23,19 @@
 			</p>
 
 			<p><ol>
-				<li>
-				The tools are painful to use.
-				</li>
 
 				<li>
 				Writing is not a principal skill.
 				</li>
 
 				<li>
-				It takes too much time, usually because of 1 and 2.
+				Developers often don't like technical writing and want to get on with new engineering problems instead. In OSS, developers are volunteers and writing documentation takes up more of their free time.
 				</li>
+				<li>
+				For commercial projects, priorities may be on releasing new features and there may be little to no time to write documentation as it is not viewed by management as valuable.
+				</li>
+
+
 
 			</ol></p>
 
@@ -43,7 +45,7 @@
 
 			<p><ol>
 				<li>
-				Focus on making the tools easy to use and aligned with the developer team’s preferred methods or built in to the workflow.
+				Focus on making the tools aligned with the developer team’s preferred methods or built in to the workflow.
 				</li>
 
 				<li>
