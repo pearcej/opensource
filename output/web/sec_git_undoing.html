@@ -175,9 +175,7 @@ eBookConfig.enable_chatcodes =  false;
 <li><a href="sec_documentation_matters.html" data-scroll="sec_documentation_matters" class="internal">Documentation Matters!</a></li>
 <li><a href="sec_documentation_involvement.html" data-scroll="sec_documentation_involvement" class="internal">Documentation as Involvement</a></li>
 <li><a href="sec_docu_build.html" data-scroll="sec_docu_build" class="internal">From Source to Executable</a></li>
-<li><a href="sec_bug_trackers.html" data-scroll="sec_bug_trackers" class="internal">Bug Trackers</a></li>
-<li><a href="sec_bug_reports.html" data-scroll="sec_bug_reports" class="internal">Bug Reports</a></li>
-<li><a href="sec_bug_triage.html" data-scroll="sec_bug_triage" class="internal">Bug Triage</a></li>
+<li><a href="sec_issues_bugs.html" data-scroll="sec_issues_bugs" class="internal">Issues and Bugs</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="meta_backmatter.html" data-scroll="meta_backmatter" class="internal"><span class="title">Appendices</span></a></li>
@@ -196,25 +194,25 @@ eBookConfig.enable_chatcodes =  false;
 <section class="section" id="sec_git_undoing"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.5</span> <span class="title">"Undoing" in Git</span>
 </h2>
-<section class="introduction" id="introduction-23"><p id="p-652">At any stage, you may want to undo something. Here, we’ll review a few tools for undoing changes that you’ve made. Be careful though. This is one of the areas in Git where you may lose some work if you do it wrong, because you can’t always undo some of these undos.</p></section><section class="section" id="_undoing"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-23"><p id="p-650">At any stage, you may want to undo something. Here, we’ll review a few tools for undoing changes that you’ve made. Be careful though. This is one of the areas in Git where you may lose some work if you do it wrong, because you can’t always undo some of these undos.</p></section><section class="section" id="_undoing"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.5.1</span> <span class="title">Undoing Changes</span>
 </h3>
-<p id="p-653">One of the common undos takes place when you commit too early and possibly forget to add some files, or you mess up your commit message. If you want to redo that commit, make the additional changes you forgot, stage them, and commit again using the <code class="code-inline tex2jax_ignore">--amend</code> option:</p>
+<p id="p-651">One of the common undos takes place when you commit too early and possibly forget to add some files, or you mess up your commit message. If you want to redo that commit, make the additional changes you forgot, stage them, and commit again using the <code class="code-inline tex2jax_ignore">--amend</code> option:</p>
 <pre class="code-block tex2jax_ignore">$ git commit --amend
 </pre>
-<p id="p-654">This command takes your staging area and uses it for the commit. If you’ve made no changes since your last commit (for instance, you run this command immediately after your previous commit), then your snapshot will look exactly the same, and all you’ll change is your commit message.</p>
-<p id="p-655">The same commit-message editor fires up, but it already contains the message of your previous commit. You can edit the message the same as always, but it overwrites your previous commit.</p>
-<p id="p-656">As an example, if you commit and then realize you forgot to stage the changes in a file you wanted to add to this commit, you can do something like this:</p>
+<p id="p-652">This command takes your staging area and uses it for the commit. If you’ve made no changes since your last commit (for instance, you run this command immediately after your previous commit), then your snapshot will look exactly the same, and all you’ll change is your commit message.</p>
+<p id="p-653">The same commit-message editor fires up, but it already contains the message of your previous commit. You can edit the message the same as always, but it overwrites your previous commit.</p>
+<p id="p-654">As an example, if you commit and then realize you forgot to stage the changes in a file you wanted to add to this commit, you can do something like this:</p>
 <pre class="code-block tex2jax_ignore">$ git commit -m 'Initial commit'
 $ git add forgotten_file
 $ git commit --amend
 </pre>
-<p id="p-657">You end up with a single commit — the second commit replaces the results of the first.</p>
-<p id="p-658">Note: It’s important to understand that when you’re amending your last commit, you’re not so much fixing it as <em class="emphasis">replacing</em> it entirely with a new, improved commit that pushes the old commit out of the way and puts the new commit in its place. Effectively, it’s as if the previous commit never happened, and it won’t show up in your repository history.</p>
-<p id="p-659">The obvious value to amending commits is to make minor improvements to your last commit, without cluttering your repository history with commit messages of the form, “Oops, forgot to add a file” or “Darn, fixing a typo in last commit”.</p>
-<p id="p-660">Note: Only amend commits that are still local and have not been pushed somewhere. Amending previously pushed commits and force pushing the branch will cause problems for your collaborators. </p>
+<p id="p-655">You end up with a single commit — the second commit replaces the results of the first.</p>
+<p id="p-656">Note: It’s important to understand that when you’re amending your last commit, you’re not so much fixing it as <em class="emphasis">replacing</em> it entirely with a new, improved commit that pushes the old commit out of the way and puts the new commit in its place. Effectively, it’s as if the previous commit never happened, and it won’t show up in your repository history.</p>
+<p id="p-657">The obvious value to amending commits is to make minor improvements to your last commit, without cluttering your repository history with commit messages of the form, “Oops, forgot to add a file” or “Darn, fixing a typo in last commit”.</p>
+<p id="p-658">Note: Only amend commits that are still local and have not been pushed somewhere. Amending previously pushed commits and force pushing the branch will cause problems for your collaborators. </p>
 <section class="paragraphs" id="_unstaging"><h4 class="heading"><span class="title">Unstaging a Staged File.</span></h4>
-<p id="p-661">The next two sections demonstrate how to work with your staging area and working directory changes. The nice part is that the command you use to determine the state of those two areas also reminds you how to undo changes to them. For example, let’s say you’ve changed two files and want to commit them as two separate changes, but you accidentally type <code class="code-inline tex2jax_ignore">git add *</code> and stage them both. How can you unstage one of the two? The <code class="code-inline tex2jax_ignore">git status</code> command reminds you:</p>
+<p id="p-659">The next two sections demonstrate how to work with your staging area and working directory changes. The nice part is that the command you use to determine the state of those two areas also reminds you how to undo changes to them. For example, let’s say you’ve changed two files and want to commit them as two separate changes, but you accidentally type <code class="code-inline tex2jax_ignore">git add *</code> and stage them both. How can you unstage one of the two? The <code class="code-inline tex2jax_ignore">git status</code> command reminds you:</p>
 <pre class="code-block tex2jax_ignore">$ git add *
 $ git status
 On branch main
@@ -224,7 +222,7 @@ Changes to be committed:
     renamed:    README.md -&gt; README
     modified:   CONTRIBUTING.md
 </pre>
-<p id="p-662">Right below the “Changes to be committed” text, it says use <code class="code-inline tex2jax_ignore">git reset HEAD &lt;file&gt;…​</code> to unstage. So, let’s use that advice to unstage the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file:</p>
+<p id="p-660">Right below the “Changes to be committed” text, it says use <code class="code-inline tex2jax_ignore">git reset HEAD &lt;file&gt;…​</code> to unstage. So, let’s use that advice to unstage the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file:</p>
 <pre class="code-block tex2jax_ignore">$ git reset HEAD CONTRIBUTING.md
 Unstaged changes after reset:
 M   CONTRIBUTING.md
@@ -241,17 +239,17 @@ Changes not staged for commit:
 
     modified:   CONTRIBUTING.md
 </pre>
-<p id="p-663">The command is a bit strange, but it works. The <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file is modified but once again unstaged.</p>
-<p id="p-664">Note: It’s true that <code class="code-inline tex2jax_ignore">git reset</code> can be a dangerous command, especially if you provide the <code class="code-inline tex2jax_ignore">--hard</code> flag. However, in the scenario described above, the file in your working directory is not touched, so it’s relatively safe.</p>
-<p id="p-665">For now this magic invocation is all you need to know about the <code class="code-inline tex2jax_ignore">git reset</code> command.</p></section><section class="paragraphs" id="_unmodifying_a_modified_file"><h4 class="heading"><span class="title">Unmodifying a Modified File.</span></h4>
-<p id="p-666">What if you realize that you don’t want to keep your changes to the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file? How can you easily unmodify it — revert it back to what it looked like when you last committed (or initially cloned, or however you got it into your working directory)? Luckily, <code class="code-inline tex2jax_ignore">git status</code> tells you how to do that, too. In the last example output, the unstaged area looks like this:</p>
+<p id="p-661">The command is a bit strange, but it works. The <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file is modified but once again unstaged.</p>
+<p id="p-662">Note: It’s true that <code class="code-inline tex2jax_ignore">git reset</code> can be a dangerous command, especially if you provide the <code class="code-inline tex2jax_ignore">--hard</code> flag. However, in the scenario described above, the file in your working directory is not touched, so it’s relatively safe.</p>
+<p id="p-663">For now this magic invocation is all you need to know about the <code class="code-inline tex2jax_ignore">git reset</code> command.</p></section><section class="paragraphs" id="_unmodifying_a_modified_file"><h4 class="heading"><span class="title">Unmodifying a Modified File.</span></h4>
+<p id="p-664">What if you realize that you don’t want to keep your changes to the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file? How can you easily unmodify it — revert it back to what it looked like when you last committed (or initially cloned, or however you got it into your working directory)? Luckily, <code class="code-inline tex2jax_ignore">git status</code> tells you how to do that, too. In the last example output, the unstaged area looks like this:</p>
 <pre class="code-block tex2jax_ignore">Changes not staged for commit:
   (use "git add &lt;file&gt;..." to update what will be committed)
   (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
 
     modified:   CONTRIBUTING.md
 </pre>
-<p id="p-667">It tells you pretty explicitly how to discard the changes you’ve made. Let’s do what it says:</p>
+<p id="p-665">It tells you pretty explicitly how to discard the changes you’ve made. Let’s do what it says:</p>
 <pre class="code-block tex2jax_ignore">$ git checkout -- CONTRIBUTING.md
 $ git status
 On branch main
@@ -260,13 +258,13 @@ Changes to be committed:
 
     renamed:    README.md -&gt; README
 </pre>
-<p id="p-668">You can see that the changes have been reverted.</p>
-<p id="p-669">Important: It’s important to understand that <code class="code-inline tex2jax_ignore">git checkout -- &lt;file&gt;</code> is a dangerous command. Any local changes you made to that file are gone — Git just replaced that file with the last staged or committed version. Don’t ever use this command unless you absolutely know that you don’t want those unsaved local changes.</p>
-<p id="p-670">If you would like to keep the changes you’ve made to that file but still need to get it out of the way for now, we’ll go over stashing and branching in the following section on Git Branching; these are generally better ways to go.</p>
-<p id="p-671">Remember, anything that is <em class="emphasis">committed</em> in Git can almost always be recovered. Even commits that were on branches that were deleted or commits that were overwritten with an <code class="code-inline tex2jax_ignore">--amend</code> commit can be recovered. However, anything you lose that was never committed is likely never to be seen again.</p></section><section class="paragraphs" id="undoing_git_restore"><h4 class="heading"><span class="title">Undoing things with git restore.</span></h4>
-<p id="p-672">Git version 2.23.0 introduced a new command: <code class="code-inline tex2jax_ignore">git restore</code>. It’s basically an alternative to <code class="code-inline tex2jax_ignore">git reset</code> which we just covered. From Git version 2.23.0 onwards, Git will use <code class="code-inline tex2jax_ignore">git restore</code> instead of <code class="code-inline tex2jax_ignore">git reset</code> for many undo operations.</p>
-<p id="p-673">Let’s retrace our steps, and undo things with <code class="code-inline tex2jax_ignore">git restore</code> instead of <code class="code-inline tex2jax_ignore">git reset</code>.</p></section><section class="paragraphs" id="_unstaging_a_staged_file_with_git_restore"><h4 class="heading"><span class="title">Unstaging a Staged File with git restore.</span></h4>
-<p id="p-674">The next two sections demonstrate how to work with your staging area and working directory changes with <code class="code-inline tex2jax_ignore">git restore</code>. The nice part is that the command you use to determine the state of those two areas also reminds you how to undo changes to them. For example, let’s say you’ve changed two files and want to commit them as two separate changes, but you accidentally type <code class="code-inline tex2jax_ignore">git add *</code> and stage them both. How can you unstage one of the two? The <code class="code-inline tex2jax_ignore">git status</code> command reminds you:</p>
+<p id="p-666">You can see that the changes have been reverted.</p>
+<p id="p-667">Important: It’s important to understand that <code class="code-inline tex2jax_ignore">git checkout -- &lt;file&gt;</code> is a dangerous command. Any local changes you made to that file are gone — Git just replaced that file with the last staged or committed version. Don’t ever use this command unless you absolutely know that you don’t want those unsaved local changes.</p>
+<p id="p-668">If you would like to keep the changes you’ve made to that file but still need to get it out of the way for now, we’ll go over stashing and branching in the following section on Git Branching; these are generally better ways to go.</p>
+<p id="p-669">Remember, anything that is <em class="emphasis">committed</em> in Git can almost always be recovered. Even commits that were on branches that were deleted or commits that were overwritten with an <code class="code-inline tex2jax_ignore">--amend</code> commit can be recovered. However, anything you lose that was never committed is likely never to be seen again.</p></section><section class="paragraphs" id="undoing_git_restore"><h4 class="heading"><span class="title">Undoing things with git restore.</span></h4>
+<p id="p-670">Git version 2.23.0 introduced a new command: <code class="code-inline tex2jax_ignore">git restore</code>. It’s basically an alternative to <code class="code-inline tex2jax_ignore">git reset</code> which we just covered. From Git version 2.23.0 onwards, Git will use <code class="code-inline tex2jax_ignore">git restore</code> instead of <code class="code-inline tex2jax_ignore">git reset</code> for many undo operations.</p>
+<p id="p-671">Let’s retrace our steps, and undo things with <code class="code-inline tex2jax_ignore">git restore</code> instead of <code class="code-inline tex2jax_ignore">git reset</code>.</p></section><section class="paragraphs" id="_unstaging_a_staged_file_with_git_restore"><h4 class="heading"><span class="title">Unstaging a Staged File with git restore.</span></h4>
+<p id="p-672">The next two sections demonstrate how to work with your staging area and working directory changes with <code class="code-inline tex2jax_ignore">git restore</code>. The nice part is that the command you use to determine the state of those two areas also reminds you how to undo changes to them. For example, let’s say you’ve changed two files and want to commit them as two separate changes, but you accidentally type <code class="code-inline tex2jax_ignore">git add *</code> and stage them both. How can you unstage one of the two? The <code class="code-inline tex2jax_ignore">git status</code> command reminds you:</p>
 <pre class="code-block tex2jax_ignore">$ git add *
 $ git status
 On branch main
@@ -275,7 +273,7 @@ Changes to be committed:
     modified:   CONTRIBUTING.md
     renamed:    README.md -&gt; README
 </pre>
-<p id="p-675">Right below the “Changes to be committed” text, it says use <code class="code-inline tex2jax_ignore">git restore --staged &lt;file&gt;…​</code> to unstage. So, let’s use that advice to unstage the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file:</p>
+<p id="p-673">Right below the “Changes to be committed” text, it says use <code class="code-inline tex2jax_ignore">git restore --staged &lt;file&gt;…​</code> to unstage. So, let’s use that advice to unstage the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file:</p>
 <pre class="code-block tex2jax_ignore">$ git restore --staged CONTRIBUTING.md
 $ git status
 On branch main
@@ -288,14 +286,14 @@ Changes not staged for commit:
   (use "git restore &lt;file&gt;..." to discard changes in working directory)
     modified:   CONTRIBUTING.md
 </pre>
-<p id="p-676">The <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file is modified but once again unstaged.</p></section><section class="paragraphs" id="_unmodifying_a_modified_file_with_git_restore"><h4 class="heading"><span class="title">Unmodifying a Modified File with git restore.</span></h4>
-<p id="p-677">What if you realize that you don’t want to keep your changes to the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file? How can you easily unmodify it — revert it back to what it looked like when you last committed (or initially cloned, or however you got it into your working directory)? Luckily, <code class="code-inline tex2jax_ignore">git status</code> tells you how to do that, too. In the last example output, the unstaged area looks like this:</p>
+<p id="p-674">The <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file is modified but once again unstaged.</p></section><section class="paragraphs" id="_unmodifying_a_modified_file_with_git_restore"><h4 class="heading"><span class="title">Unmodifying a Modified File with git restore.</span></h4>
+<p id="p-675">What if you realize that you don’t want to keep your changes to the <code class="code-inline tex2jax_ignore">CONTRIBUTING.md</code> file? How can you easily unmodify it — revert it back to what it looked like when you last committed (or initially cloned, or however you got it into your working directory)? Luckily, <code class="code-inline tex2jax_ignore">git status</code> tells you how to do that, too. In the last example output, the unstaged area looks like this:</p>
 <pre class="code-block tex2jax_ignore">Changes not staged for commit:
   (use "git add &lt;file&gt;..." to update what will be committed)
   (use "git restore &lt;file&gt;..." to discard changes in working directory)
     modified:   CONTRIBUTING.md
 </pre>
-<p id="p-678">It tells you pretty explicitly how to discard the changes you’ve made. Let’s do what it says:</p>
+<p id="p-676">It tells you pretty explicitly how to discard the changes you’ve made. Let’s do what it says:</p>
 <pre class="code-block tex2jax_ignore">$ git restore CONTRIBUTING.md
 $ git status
 On branch main
@@ -303,12 +301,12 @@ Changes to be committed:
   (use "git restore --staged &lt;file&gt;..." to unstage)
     renamed:    README.md -&gt; README
 </pre>
-<p id="p-679">Important: It’s important to understand that <code class="code-inline tex2jax_ignore">git restore &lt;file&gt;</code> is a dangerous command. Any local changes you made to that file are gone — Git just replaced that file with the last staged or committed version. Don’t ever use this command unless you absolutely know that you don’t want those unsaved local changes.</p>
+<p id="p-677">Important: It’s important to understand that <code class="code-inline tex2jax_ignore">git restore &lt;file&gt;</code> is a dangerous command. Any local changes you made to that file are gone — Git just replaced that file with the last staged or committed version. Don’t ever use this command unless you absolutely know that you don’t want those unsaved local changes.</p>
 <article class="exercise exercise-like" id="ex_git_oh_shit_git"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-ex_git_oh_shit_git"><h5 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">Read External Git Undoing Summary.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex_git_oh_shit_git"><article class="exercise exercise-like"><p id="p-680">For a humorous summary of undoing in Git, go to <a class="external" href="https://ohshitgit.com/" target="_blank">Oh Shit, Git!?!</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-142" id="fn-142"><sup> 1 </sup></a></p></article></div></section></section><section class="conclusion" id="conclusion-10"><h3 class="heading">Section Summary.<span></span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex_git_oh_shit_git"><article class="exercise exercise-like"><p id="p-678">For a humorous summary of undoing in Git, go to <a class="external" href="https://ohshitgit.com/" target="_blank">Oh Shit, Git!?!</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-142" id="fn-142"><sup> 1 </sup></a></p></article></div></section></section><section class="conclusion" id="conclusion-10"><h3 class="heading">Section Summary.<span></span>
 </h3>
-<p id="p-681">As you have learned from this section, Git provides several tools for undoing changes that you have made. One of the most common undos is when you commit too early and forget to add some files, or you mess up your commit message or if you accidentally stage a file that you didn't mean to. However, it's important to be careful when using these commands because you can't always undo some of these undos.</p></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-142"><div class="fn"><code class="code-inline tex2jax_ignore">ohshitgit.com/</code></div></div>
+<p id="p-679">As you have learned from this section, Git provides several tools for undoing changes that you have made. One of the most common undos is when you commit too early and forget to add some files, or you mess up your commit message or if you accidentally stage a file that you didn't mean to. However, it's important to be careful when using these commands because you can't always undo some of these undos.</p></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-142"><div class="fn"><code class="code-inline tex2jax_ignore">ohshitgit.com/</code></div></div>
 </div></main>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>

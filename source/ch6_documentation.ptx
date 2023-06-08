@@ -34,8 +34,6 @@
   <xi:include href="./sec_docu_historical.ptx" />
   <xi:include href="./sec_docu_involvement.ptx" />
   <xi:include href="./sec_docu_build.ptx" />
-  <xi:include href="./sec_docu_bug_trackers.ptx" />
-  <xi:include href="./sec_docu_bug_reports.ptx" />
-  <xi:include href="./sec_docu_bug_triage.ptx" />
-
+  <xi:include href="./sec_docu_issues_bugs.ptx" />
+ 
 </chapter>

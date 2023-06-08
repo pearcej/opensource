@@ -175,9 +175,7 @@ eBookConfig.enable_chatcodes =  false;
 <li><a href="sec_documentation_matters.html" data-scroll="sec_documentation_matters" class="internal">Documentation Matters!</a></li>
 <li><a href="sec_documentation_involvement.html" data-scroll="sec_documentation_involvement" class="internal">Documentation as Involvement</a></li>
 <li><a href="sec_docu_build.html" data-scroll="sec_docu_build" class="internal">From Source to Executable</a></li>
-<li><a href="sec_bug_trackers.html" data-scroll="sec_bug_trackers" class="internal">Bug Trackers</a></li>
-<li><a href="sec_bug_reports.html" data-scroll="sec_bug_reports" class="internal">Bug Reports</a></li>
-<li><a href="sec_bug_triage.html" data-scroll="sec_bug_triage" class="internal">Bug Triage</a></li>
+<li><a href="sec_issues_bugs.html" data-scroll="sec_issues_bugs" class="internal">Issues and Bugs</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="meta_backmatter.html" data-scroll="meta_backmatter" class="internal"><span class="title">Appendices</span></a></li>
@@ -201,37 +199,37 @@ eBookConfig.enable_chatcodes =  false;
 </h3>
 <dl class="description-list narrow">
 <dt id="li-263"><code class="code-inline tex2jax_ignore">git init &lt;directory-name&gt;</code></dt>
-<dd><p id="p-972">Create an empty git repo in a new directory named <code class="code-inline tex2jax_ignore">directory-name</code>. Take care with the <code class="code-inline tex2jax_ignore">directory-name</code>; it is typical to use a short, descriptive, name using only lower case letters and the "-" character. Note that if you leave off the directory name then the current directory will be initialized as a git repository. For more detail see <a class="external" href="https://github.com/git-guides/git-init" target="_blank">Git Guides: Git Init</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-170" id="fn-170"><sup> 1 </sup></a></p></dd>
+<dd><p id="p-969">Create an empty git repo in a new directory named <code class="code-inline tex2jax_ignore">directory-name</code>. Take care with the <code class="code-inline tex2jax_ignore">directory-name</code>; it is typical to use a short, descriptive, name using only lower case letters and the "-" character. Note that if you leave off the directory name then the current directory will be initialized as a git repository. For more detail see <a class="external" href="https://github.com/git-guides/git-init" target="_blank">Git Guides: Git Init</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-170" id="fn-170"><sup> 1 </sup></a></p></dd>
 <dt id="li-264"><code class="code-inline tex2jax_ignore">git clone &lt;repository-url&gt;</code></dt>
-<dd><p id="p-973">Clone a repository from a repository in the cloud to your local system. Note that if you are planning to contribute to a project that is not yours, you will likely want to <dfn class="terminology">fork</dfn> the repository into your own account first. For example, to contribute to a project hosted on GitHub, go to that repository and fork it into your own GitHub account. For more detail see <a class="external" href="https://github.com/git-guides/git-clone" target="_blank">Git Guides: Git Clone</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-171" id="fn-171"><sup> 2 </sup></a></p></dd>
+<dd><p id="p-970">Clone a repository from a repository in the cloud to your local system. Note that if you are planning to contribute to a project that is not yours, you will likely want to <dfn class="terminology">fork</dfn> the repository into your own account first. For example, to contribute to a project hosted on GitHub, go to that repository and fork it into your own GitHub account. For more detail see <a class="external" href="https://github.com/git-guides/git-clone" target="_blank">Git Guides: Git Clone</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-171" id="fn-171"><sup> 2 </sup></a></p></dd>
 </dl></section><section class="subsection" id="sec-gitcs-state"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">B.2.2</span> <span class="title">Current state</span>
 </h3>
 <dl class="description-list narrow">
 <dt id="li-265"><code class="code-inline tex2jax_ignore">git diff</code></dt>
-<dd><p id="p-974">List the changes to files that have not yet been added (staged).</p></dd>
+<dd><p id="p-971">List the changes to files that have not yet been added (staged).</p></dd>
 <dt id="li-266"><code class="code-inline tex2jax_ignore">git status</code></dt>
-<dd><p id="p-975">Check the status to see if there are files that have been changed but not added (staged). This command will also list all staged changes. For more detail see <a class="external" href="https://github.com/git-guides/git-status" target="_blank">Git Guides: Git Status</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-172" id="fn-172"><sup> 3 </sup></a></p></dd>
+<dd><p id="p-972">Check the status to see if there are files that have been changed but not added (staged). This command will also list all staged changes. For more detail see <a class="external" href="https://github.com/git-guides/git-status" target="_blank">Git Guides: Git Status</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-172" id="fn-172"><sup> 3 </sup></a></p></dd>
 <dt id="li-267"><code class="code-inline tex2jax_ignore">git log</code></dt>
-<dd><p id="p-976">List recent commits.</p></dd>
+<dd><p id="p-973">List recent commits.</p></dd>
 <dt id="li-268"><code class="code-inline tex2jax_ignore">git pull</code></dt>
-<dd><p id="p-977">Download content from the remote repository and integrate these changes into the local repository. This command should be used regularly because without it your local branch won't have any of the updates that are present on the remote. For more detail see <a class="external" href="https://github.com/git-guides/git-pull" target="_blank">Git Guides: Git Pull</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-173" id="fn-173"><sup> 4 </sup></a></p></dd>
+<dd><p id="p-974">Download content from the remote repository and integrate these changes into the local repository. This command should be used regularly because without it your local branch won't have any of the updates that are present on the remote. For more detail see <a class="external" href="https://github.com/git-guides/git-pull" target="_blank">Git Guides: Git Pull</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-173" id="fn-173"><sup> 4 </sup></a></p></dd>
 <dt id="li-269"><code class="code-inline tex2jax_ignore">git add &lt;filename&gt;</code></dt>
-<dd><p id="p-978">Add all current changes in &lt;filename&gt;to the those staged for the next commit. For more detail see <a class="external" href="https://github.com/git-guides/git-add" target="_blank">Git Guides: Git Add</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-174" id="fn-174"><sup> 5 </sup></a></p></dd>
+<dd><p id="p-975">Add all current changes in &lt;filename&gt;to the those staged for the next commit. For more detail see <a class="external" href="https://github.com/git-guides/git-add" target="_blank">Git Guides: Git Add</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-174" id="fn-174"><sup> 5 </sup></a></p></dd>
 <dt id="li-270"><code class="code-inline tex2jax_ignore">git commit -m "&lt;commit-message&gt;"</code></dt>
-<dd><p id="p-979">Commit all staged files to the local repository. For more detail see <a class="external" href="https://github.com/git-guides/git-commit" target="_blank">Git Guides: Git Commit</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-175" id="fn-175"><sup> 6 </sup></a></p></dd>
+<dd><p id="p-976">Commit all staged files to the local repository. For more detail see <a class="external" href="https://github.com/git-guides/git-commit" target="_blank">Git Guides: Git Commit</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-175" id="fn-175"><sup> 6 </sup></a></p></dd>
 <dt id="li-271"><code class="code-inline tex2jax_ignore">git push</code></dt>
-<dd><p id="p-980">Push the current branch and all commits to the remote repository. Note that <code class="code-inline tex2jax_ignore">git push</code> only updates the corresponding branch on the remote.</p></dd>
+<dd><p id="p-977">Push the current branch and all commits to the remote repository. Note that <code class="code-inline tex2jax_ignore">git push</code> only updates the corresponding branch on the remote.</p></dd>
 <dt id="li-272"><code class="code-inline tex2jax_ignore">git push -u origin &lt;branchname&gt;</code></dt>
-<dd><p id="p-981">Here <code class="code-inline tex2jax_ignore">-u</code> stands for set upstream. It is used to push a new branch named &lt;branchname&gt; by creating an upstream tracking branch that is related to your current local branch. For more detail see <a class="external" href="https://github.com/git-guides/git-push" target="_blank">Git Guides: Git Push</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-176" id="fn-176"><sup> 7 </sup></a></p></dd>
+<dd><p id="p-978">Here <code class="code-inline tex2jax_ignore">-u</code> stands for set upstream. It is used to push a new branch named &lt;branchname&gt; by creating an upstream tracking branch that is related to your current local branch. For more detail see <a class="external" href="https://github.com/git-guides/git-push" target="_blank">Git Guides: Git Push</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-176" id="fn-176"><sup> 7 </sup></a></p></dd>
 </dl></section><section class="subsection" id="sec-gitcs-branching"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">B.2.3</span> <span class="title">Git branching</span>
 </h3>
 <dl class="description-list narrow">
 <dt id="li-273"><code class="code-inline tex2jax_ignore">git branch</code></dt>
-<dd><p id="p-982">List all existing branches.</p></dd>
+<dd><p id="p-979">List all existing branches.</p></dd>
 <dt id="li-274"><code class="code-inline tex2jax_ignore">git checkout -b &lt;branch-name&gt;</code></dt>
-<dd><p id="p-983">Create a new branch called <code class="code-inline tex2jax_ignore">&lt;branch-name&gt;</code> and switch to that branch. Without the <code class="code-inline tex2jax_ignore">-b</code> flag will allow you to checkout an existing branch.</p></dd>
+<dd><p id="p-980">Create a new branch called <code class="code-inline tex2jax_ignore">&lt;branch-name&gt;</code> and switch to that branch. Without the <code class="code-inline tex2jax_ignore">-b</code> flag will allow you to checkout an existing branch.</p></dd>
 </dl></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-170"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/git-guides/git-init</code></div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-171"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/git-guides/git-clone</code></div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-172"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/git-guides/git-status</code></div></div>
