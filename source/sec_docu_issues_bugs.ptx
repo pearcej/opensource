@@ -1,74 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec_issues_bugs" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Issues and Bugs</title>
+  <title>Issue and Bug Documentation</title>
   <introduction>
+  <p>
+	Open source software communities use documentation to enhance the software they produce in part via Issue and/or Bug Queues. When software doesn't perform as you'd expect, users might file a report. They can report inaccurate documentation, suggest new software features, report a bug, or note a potential security hole in a piece of software by filing an issue report. 
+  </p>
     <p>
-      Some open source projects use issue queues that are attached to repositories to keep track of bugs, other projects use a special bug tracking system. Both serve the same purpose, namely tracking bugs and related issues like new feature requests.
+      Issue trackers are a common component of platforms like Github for working together on open source software projects. Other stand-alone bug trackers and issue trackers include <url href="https://www.bugzilla.org/" visual="bugzilla.org">Bugzilla</url>, <url href="https://www.redmine.org/" visual="redmine.org">Redmine</url>, and <url href="https://trac.edgewall.org/" visual="trac.edgewall.org">Trac</url>.
+	  Both serve the same purpose, namely tracking bugs and issues like new feature requests.
     </p>
-    <p>
-      Take a closer look at the bugs in your project’s bug tracker. In particular, spend some time looking through bugs in the <em>new</em> state.
-    </p>
-
-    <p>
-      It’s certain that some of these bug reports are not be very useful.
-    </p>
-
-    <p>
-      For software to improve over time, good bug reports are absolutely essential. Users who file bugs, while almost always well-meaning, frequently don’t know how to write good bug reports — which is a problem, but also an opportunity for others to make positive contributions. Turning a bad bug report into a good bug report doesn’t require special developer knowledge; it just requires patience, persistence, a solid understanding of how the software works, and an understanding of what good bug reports look like.
-    </p>
-
-    <p>
-      So what does a good bug report look like? Look at some of the characteristics of good bug reports.
-    </p>
-  </introduction>
+ 
+  </introduction><subsection xml:id="subsec_issues_bugs_overview">
+	<title>Issues and Bugs, Oh My!</title>
+	<p>
+		In any given OSS project, you might encounter terms like, issue, bug, defect, etc. In the broader context of OSS, these terms are often used interchangeably, but they can have slightly different connotations depending on the specific project and its development practices. 
+</p>
+<p>
+	An <term>issue</term> typically refers to any problem, request, or task that is tracked and managed within the project's issue tracking system. While issues can include bugs and defects, they are not limited to technical problems alone. Issues can encompass a wide range of things, including feature requests, bug reports, documentation improvements, or even general discussions about the project. They serve as a centralized way for contributors and maintainers to communicate and collaborate on various aspects of the project. 
+</p>
+<p>
+	A <term>bug</term> is when software produces problematic results. Bugs cause unintended behaviors that deviate from the expected or specified functionality. Bugs can arise due to programming mistakes, logical errors, compatibility issues, or unexpected interactions between different components of the software. In open source projects, bug reports are often filed as issues, and developers work to identify, reproduce, and fix them.
+		</p>
+	<p>
+	Some projects also differentiate <term>defect</term>, from bug. A defect refers to a flaw or problem in software that lead to undesired behavior. However, the term defect is sometimes used in a broader sense to encompass not only software errors but also issues related to design, architecture, documentation, or other aspects of the software development process. Defects can be thought of as any deviation from the expected quality standards or requirements of the project. They can include functional or non-functional issues that impact the overall performance, usability, security, or reliability of the software.
+	</p>
+	
+  </subsection>
 
   <subsection xml:id="sec_bug_trackers" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Bug Trackers</title>
+  <title>Issue and Bug Trackers</title>
 
+<introduction>
+
+
+     <p>
+      Take a closer look at the issues in an OSS project’s issue tracker. In particular, spend some time looking through those that are in the <em>open</em> state.
+    </p>
+
+    <p>
+      It’s certain that some of these reports are not be very useful for a variety of reasons.
+    </p>
+
+    <p>
+      For software to improve over time, good issue and bug reports are absolutely essential. Users who file issues, while almost always well-meaning, frequently don’t know how to write good issue reports — which is a problem, but also an opportunity for others to make positive contributions. Turning a bad issue or bug report into a good issue or bug report doesn’t require special developer knowledge; it just requires patience, persistence, a solid understanding of how the software works, and an understanding of what good issue and bug reports look like.
+    </p>
+
+    <p>
+      So what does a good issue or bug report look like? Look at some of the characteristics.
+    </p>
+</introduction>
 			<p>
-				Any project worth your time has a bug tracker of some kind. Almost every provider of open source project infrastructure provides access to bug tracking software, for free. If the project doesn’t have a bug tracker, it’s a pretty good indication that they’re Doing It Wrong, and you should stay away. Far, far away.
+				Any project worth your time utilizes an issue tracker of some kind. 
 			</p>
 						<p>
-				It would be foolhardy to try to teach the practice of software quality assurance in one chapter. It’s a vast field, and there are plenty of places to learn about the difference between <em>white-box</em> and <em>black-box</em> testing, or how to write the best possible <em>regression tests</em>. Those are all worthy fields of study, and you should pursue them — but they are far beyond the scope of this chapter.
+				It would be foolhardy to try to teach the practice of software quality assurance in one chapter. It’s a vast field, and there are plenty of places to learn about the difference between <em>white-box</em> and <em>black-box</em> testing, or how to write the best possible <em>regression tests</em>. Those are all worthy fields of study, and you should pursue them — but they are far beyond the scope of this section.
 			</p>
 
 			<p>
-				Besides, the simple fact is that for most software projects, bugs are not so uncommon that you need to go looking for them. They find you. Sometimes in bunches.
+				Besides, the simple fact is that for most software projects, issues and bugs are not so uncommon that you need to go looking for them. They find you. 
 			</p>
 
 			<p>
-				What makes open source interesting, and different, is that <em>you can actually do something about the bugs</em>.
+				What makes open source interesting, and different, is that <em>you can actually do something about the issues and bugs</em>.
 			</p>
 
 			<p>
-				Eric S. Raymond once said that “with enough eyes, all bugs are shallow.” This aphorism has become one of the central tenets of open source — but it’s only half of the story. The real strength of open source lies in the ability of motivated individuals to record, research, and resolve those bugs. Seeing bugs is one thing; reporting them is another; fixing them is something else.
+				Eric S. Raymond once said that “with enough eyes, all bugs are shallow.” This aphorism has become one of the central tenets of OSS — but it’s only half of the story. The real strength of open source lies in the ability of motivated individuals to record, research, and resolve those bugs. Seeing bugs is one thing; reporting them is another; fixing them is something else.
 			</p>
 
 			<p>
-				In this section, you learn some of the practical techniques that open source developers use to find, report, investigate, and fix bugs — and you begin to contribute, in earnest, to real open source projects. You will join the global collaborative effort to solve real problems, for real users, in real software.
+				In this section, you learn some of the practical techniques that OSS developers use to find, report, investigate, and fix bugs — and you can begin to contribute to real OSS projects. You will join the global collaborative effort to solve real problems, for real users, in real software.
 
       </p>
   </subsection>
 
-			<subsection xml:id="what-is-a-bug-tracker-exactly">
-				<title><term>What is a Bug Tracker, Exactly?</term></title>
+			<subsection xml:id="what-issue-tracker-exactly">
+				<title><term>What is an Issue Tracker, Exactly?</term></title>
 
 				<p>
 					A bug tracker for a open source project is a web application that allows users to enter bug reports about a software project. These bug reports then go into a database, where they can be tracked and managed as the developers work to fix them.
 				</p>
 
 				<p>
-					There are many different bug trackers available for use by open source projects. Most of them collect very similar information:
+					There are many different issue trackers available for use by open source projects. Most of them collect very similar information:
 				</p>
 
 				<p><ul>
 					<li>
-					<em>Summary,</em> a short description of the bug. For example: “Toaster always burns toast”. This short phrase is usually what the developer sees in his or her list of bugs.
+					<em>Summary,</em> a short description of the issue or bug. For example: “Toaster always burns toast”. This short phrase is usually what the developer sees in his or her list of bugs.
 					</li>
 
 					<li>
-					<em>Description,</em> a more detailed description of the bug, ideally with lots of clues. This is where the reporter explains what he or she was doing, what was expected to happen, and what happened instead. For example, “I have a BreadNuke toaster model XZ-38, and it never works. I expect it to brown my toast nicely; but it always burns my toast instead. I’ve tried setting the knob from 0 to 9, and the toast always comes out completely black!”
+					<em>Description,</em> a more detailed description of the issue or bug, ideally with lots of detail. This is where the reporter explains what they were doing, what was expected to happen, and what happened instead. For example, “I have a BreadNuke toaster model XZ-38, and it never works. I expect it to brown my toast nicely; but it always burns my toast instead. I’ve tried setting the knob from 0 to 9, and the toast always comes out completely black!”
 					</li>
 
 					<li>
@@ -76,23 +100,23 @@
 					</li>
 
 					<li>
-					<em>Reporter</em> is the email address or account name of the user who reported the bug.
+					<em>Reporter</em> is the username or email address or account name of the user who reported the bug. This is often collected automatically.
 					</li>
 
 					<li>
-					<em>Owner</em> is the email address or account name of the developer assigned to fix the bug.
+					<em>Owner</em> is the username or email address or of the developer assigned to fix the bug.
 					</li>
 
 					<li>
-					<em>Version</em>. When there are multiple versions of the software, it’s obviously important to know which version the bug appears in.
+					<em>Version</em>. When there are multiple versions of the software, it’s obviously important to know which version the issue or bug report is referencing.
 					</li>
 
 					<li>
-					<em>Severity</em> and <em>Priority</em>. Severity, usually set initially by the user, indicates the impact that a bug has. Priority, usually set initially by the developer, indicates which bugs receive attention first. In practice, these two can be confusing, and sometimes a project chooses to pay attention to only one of them.
+					<em>Severity</em> and <em>Priority</em>. Severity, usually set initially by the user, indicates the impact that an issue or bug has. Priority, usually set initially by the developer, indicates which issues or bugs receive attention first. 
 					</li>
 
 					<li>
-					<em>Status</em>, which describes the state a bug is in. Bugs start with a <em>new</em> status, and then they become <em>assigned</em> when a developer is tasked to work on them. The ultimate goal is to move a bug’s status to <em>closed</em>.
+					<em>Status</em>, which describes the state a bug is in. Bugs start with a <em>new</em>  or <em>open</em> status, and then they become <em>assigned</em> when a developer is tasked to work on them. The ultimate goal is to move a bug’s status to <em>closed</em>.
 					</li>
 
 					<li>
@@ -106,15 +130,15 @@
 				</p>
         </subsection>
 
-				<subsection xml:id="sorting-through-the-bugs">
-					<title><term>Sorting Through the Bugs</term></title>
+				<subsection xml:id="sorting-through-the-issues">
+					<title><term>Sorting through the Issues</term></title>
 
 					<p>
-						Much of a software developer’s life is spent fixing bugs, and there are almost always more bugs than there is time to fix those bugs — which means that having a good way of deciding which bugs are important, at any given time, is crucial.
+						Much of a software developer’s time is spent fixing bugs, and there are almost always more bugs than there is time to fix those bugs — which means that having a good way of deciding which bugs are important, at any given time, is crucial.
 					</p>
 
 					<p>
-						All bug trackers have functionality for searching bugs by detailed criteria. Some common searches that developers might run, for instance:
+						All issue and bug trackers have functionality for searching by detailed criteria. Some common searches that developers might run, for instance:
 					</p>
 
 					<p><ul>
@@ -146,10 +170,10 @@
 
 				</exercise>
 
-        <exercise xml:id="exercise-create-your-bug-tracker-account">
-  			<title>Exercise – Create Your Bug Tracker Account</title>   
+        <exercise xml:id="exercise-identify-the-issue-tracker">
+  			<title>Exercise – Identify the Issue Tracker</title>   
           <p>
-            Figure out how to create a new account on the bug tracker of your chosen project. You’ll need that account very soon. 
+            Identify the issue tracker of your chosen project. 
 					</p>
         </exercise>
 
@@ -162,7 +186,7 @@
       <p>
       </p>
 			<p>
-				Take a closer look at the bugs in your project’s bug tracker. In particular, spend some time looking through bugs in the <em>new</em> state.
+				Take a closer look at the bugs in your project’s issue or bug tracker. In particular, spend some time looking through bugs in the <em>new</em> state.
 			</p>
 
 			<p>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec_docu_build" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>From Source to Executable</title>
+  <title>Build Documentation</title>
   <introduction>
     <p>
       Now you know how version control works, and you’ve got source code sitting in a repository?
@@ -40,14 +40,14 @@
 				</li>
 
 				<li>
-				<em>Packaging and/or Deploying.</em> Sometimes you want to install the program you just compiled so that it can be run from anyhere on the system, and other programs or users can find it. Or sometimes you want to bundle it up into a format that allows anyone to take your executable and install it easily for themselves. You don’t want to do this for every build, but when you know that your build is good, one of the important final steps is to put the executable, and all documentation, in a central location.
+				<em>Packaging and/or Deploying.</em> Sometimes you want to install the program you just compiled so that it can be run from anywhere on the system, and other programs or users can find it. Or sometimes you want to bundle it up into a format that allows anyone to take your executable and install it easily for themselves. You don’t want to do this for every build, but when you know that your build is good, one of the important final steps is to put the executable, and all documentation, in a central location.
 				</li>
 
 			</ul>
       </p>
 
 			<p>
-				Performing all of these tasks by hand would be time-consuming and difficult.  Build automation tools allow the developer to handle all of these tasks automatically — and thus, to manage projects with a much higher degree of complexity.
+				Performing all of these tasks by hand would be time-consuming and difficult. Build automation tools allow the developer to handle all of these tasks automatically — and thus, to manage projects with a much higher degree of complexity.
 			</p>
   </subsection>
 
@@ -102,9 +102,4 @@
 
 		</subsection>
 
-  <conclusion>
-    <p>
-      TBA
-    </p>
-  </conclusion>
 </section>

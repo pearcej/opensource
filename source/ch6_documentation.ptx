@@ -31,7 +31,7 @@
 
   </introduction>
 
-  <xi:include href="./sec_docu_historical.ptx" />
+  <xi:include href="./sec_docu_scope.ptx" />
   <xi:include href="./sec_docu_involvement.ptx" />
   <xi:include href="./sec_docu_build.ptx" />
   <xi:include href="./sec_docu_issues_bugs.ptx" />
