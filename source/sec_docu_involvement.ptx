@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec_documentation_involvement" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec_docu_involvement" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Documentation as Involvement</title>
   <introduction>
 
@@ -11,11 +11,11 @@
 		<subsection xml:id="using-documentation-as-a-way-to-get-involved">
 			<title>Using documentation as a way to get involved</title>
 			<p>
-				🔗To contribute to an open source project ranges from being technically fairly easy to requiring a long series of steps including many interconnected software installations and several interconnected code bases.
+				Getting set up to contribute to an open source project ranges from being technically fairly easy to requiring a long series of steps including many interconnected software installations and several interconnected codebases.
 			</p>
 
 			<p>
-				Documentation has a reputation as being an easy way to begin contributing to a project. Newcomers can often make improvements to the documentation for such things as how to get a thing to run/compile because they will be going through that process and might run into an issue or outdated part of documentation. They are then in a great position to improve it based on their experience.
+				Repairing or improving documentation has a reputation as being an easy way to begin contributing to a project. Newcomers can often make improvements to the documentation for such things as how to get a thing to run/compile because they will be going through that process and might run into an issue or outdated part of documentation. They are then in a great position to improve it based on their experience.
 			</p>
 
 			<p>

@@ -4,11 +4,11 @@
   <title>Issue and Bug Documentation</title>
   <introduction>
   <p>
-	Open source software communities use documentation to enhance the software they produce in part via Issue and/or Bug Queues. When software doesn't perform as you'd expect, users might file a report. They can report inaccurate documentation, suggest new software features, report a bug, or note a potential security hole in a piece of software by filing an issue report. 
+	Open source software communities use documentation to enhance the software they produce in part via issue and/or bug trackers. When software doesn't perform as you'd expect, users might file a report. They can report inaccurate documentation, suggest new software features, report a bug, or note a potential security hole in a piece of software by filing an issue report. 
   </p>
     <p>
       Issue trackers are a common component of platforms like Github for working together on open source software projects. Other stand-alone bug trackers and issue trackers include <url href="https://www.bugzilla.org/" visual="bugzilla.org">Bugzilla</url>, <url href="https://www.redmine.org/" visual="redmine.org">Redmine</url>, and <url href="https://trac.edgewall.org/" visual="trac.edgewall.org">Trac</url>.
-	  Both serve the same purpose, namely tracking bugs and issues like new feature requests.
+	  All serve the same purpose, namely tracking bugs and issues like new feature requests.
     </p>
  
   </introduction><subsection xml:id="subsec_issues_bugs_overview">
@@ -23,7 +23,7 @@
 	A <term>bug</term> is when software produces problematic results. Bugs cause unintended behaviors that deviate from the expected or specified functionality. Bugs can arise due to programming mistakes, logical errors, compatibility issues, or unexpected interactions between different components of the software. In open source projects, bug reports are often filed as issues, and developers work to identify, reproduce, and fix them.
 		</p>
 	<p>
-	Some projects also differentiate <term>defect</term>, from bug. A defect refers to a flaw or problem in software that lead to undesired behavior. However, the term defect is sometimes used in a broader sense to encompass not only software errors but also issues related to design, architecture, documentation, or other aspects of the software development process. Defects can be thought of as any deviation from the expected quality standards or requirements of the project. They can include functional or non-functional issues that impact the overall performance, usability, security, or reliability of the software.
+	Some projects also differentiate <term>defect</term>, from bug. A defect refers to a flaw or problem in software that leads to undesired behavior. However, the term defect is sometimes used in a broader sense to encompass not only software errors but also issues related to design, architecture, documentation, or other aspects of the software development process. Defects can be thought of as any deviation from the expected quality standards or requirements of the project. They can include functional or non-functional issues that impact the overall performance, usability, security, or reliability of the software.
 	</p>
 	
   </subsection>
@@ -79,7 +79,7 @@
 				<title><term>What is an Issue Tracker, Exactly?</term></title>
 
 				<p>
-					A bug tracker for a open source project is a web application that allows users to enter bug reports about a software project. These bug reports then go into a database, where they can be tracked and managed as the developers work to fix them.
+					A bug or issue tracker for a open source project is a web application that allows users to enter bug reports about a software project. These bug reports then go into a database, where they can be tracked and managed as the developers work to fix them.
 				</p>
 
 				<p>
