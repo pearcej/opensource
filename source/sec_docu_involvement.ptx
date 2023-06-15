@@ -8,10 +8,10 @@
 
   </introduction>
 
-		<subsection xml:id="using-documentation-as-a-way-to-get-involved">
-			<title>Using documentation as a way to get involved</title>
+		<subsection xml:id="sub-sec-how-documentation-suffers">
+			<title>How Documentation Suffers</title>
 			<p>
-				Getting set up to contribute to an open source project ranges from being technically fairly easy to requiring a long series of steps including many interconnected software installations and several interconnected codebases.
+				Getting set up to contribute to an open source project ranges from being technically fairly easy to requiring a long series of steps including many interconnected software installations and several interconnected codebases. 
 			</p>
 
 			<p>
@@ -25,11 +25,12 @@
 			<p><ol>
 
 				<li>
-				Writing is not a principal skill.
+				Developers often don't like technical writing for think that writing is not a principal skill.
 				</li>
 
+
 				<li>
-				Developers often don't like technical writing and want to get on with new engineering problems instead. In OSS, developers are volunteers and writing documentation takes up more of their free time.
+				 Developers want to get on with new engineering problems instead. In OSS, developers are volunteers and writing documentation takes up more of their free time.
 				</li>
 				<li>
 				For commercial projects, priorities may be on releasing new features and there may be little to no time to write documentation as it is not viewed by management as valuable.
@@ -40,23 +41,9 @@
 			</ol></p>
 
 			<p>
-				The techniques for creating a successful community documentation project that attracts contributions from actual project developers are mirrored answers to these problems:
+				The techniques for creating an OSS community that attracts contributions from project developers are mirrored answers to the above-mentioned problems.
 			</p>
 
-			<p><ol>
-				<li>
-				Focus on making the tools aligned with the developer team’s preferred methods or built in to the workflow.
-				</li>
-
-				<li>
-				Turn writing in to a brain dump, that is, an outpouring of information without too much concern to writing standards (grammar, spelling, or structure).
-				</li>
-
-				<li>
-				Enable non-developers to provide significant contributions by saving the developers from the actual work of writing, which is structuring and editing.
-				</li>
-
-			</ol></p>
 
 			<p>
 				Dumping down words in to a text editor is not very hard; many developers write copiously in email, for example. The documentor’s challenge is finding this content wherever it is (mailing lists, IRC discussions, random wiki pages) and editing it in to something comprehensive that reveals content holes for filling. The documentation project’s success hinges on the ability to restructure rambling content and make all of that accessible to new writing contributors, so they can begin meaningful work from the very start.
@@ -65,6 +52,66 @@
 			<p>
 				A metric of this success is when any random experienced contributor is asked a question by a new contributor, and in answering, insists that the answer be documented, for example, on the project wiki using existing templates, etc. In this way new contributors are turned in to documentors who share the work burden from the existing contributors.
 			</p>
+
+					
+		</subsection>
+
+			<subsection xml:id="subsec-steps-to">
+				<title>Getting Involved Through Documentation</title>
+				<p>
+					Once you have identified an OSS project with an active and welcoming community, what steps should you take to become involved? Communication is the key to a healthy community, so here are some steps you can take to begin:
+					<ol>
+						<li>
+							<p>
+								The first step is to learn to use the software. For web-based applications, this is often trivial. We all know how to use the Firefox browser, for example. For software that requires installation, you will likely follow directions on the website or in an INSTALL file from the repo. If needed, check out the examples and tutorials. Seeing an example of how the software works will help your understanding of the overall project.    
+							</p>
+						</li>
+						<li>
+							<title>Asynchronous Communication Channels</title>
+							<p>
+								Familiarize yourself with the communication channels employed by the community. If they have a Discord or Slack Channel, Google Group or other mailing list, sign up and read through other recent posts there. If this is a community, you want to stay engaged with, turn on notifications for some of the most relevant channels.
+							</p>
+						</li>
+						
+						<li>
+							<p>
+								Starting with the README, CONTRIBUTING, and CODE_OF_CONDUCT, read the documentation that seems most relevant to your goals. 
+							</p>
+						</li>
+
+						<li>
+							<title>Following the Documentation</title>
+							<p>
+								Because opening issues about unclear, incorrect, or out-of-date documentation is an excellent place to begin contributing, if you want to start contributing, follow the documentation very slowly and deliberately, taking note of places where you experience confusion. 
+							</p>
+						</li>
+						<li>
+							<title>Synchronous Communication</title>
+			
+							<p>
+								Some groups also have IRC and/or drop in video conferences that are open to all. Once you have a sense of the community, you can drop into these which will help you to become more integrated into the community.
+							</p>
+						</li>
+						<li>
+							<p>
+								Once you have something you want to contribute to the community, with the goal of setting up your development environment (see <xref ref="ch_dev_env"/>),  and slowly and deliberately follow the directions provided by the community to set up your development environment. Here again, take note of places where you experience confusion. 
+							</p>
+						</li>
+						<li>
+							<title>Open an Issue</title>
+							
+							<p>
+								Once you have identified a place that documentation is confusing, wrong, etc, you are ready to open an issue. In opening an issue, most projects will have a standard format that you will want to be sure to follow.
+							</p>
+							<p>
+								
+							</p>
+						</li>
+
+					</ol>
+				</p>
+
+		
 
 
 			<exercise xml:id="exercise-getting-involved">
