@@ -11,9 +11,7 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<section class="paragraphs"><h4 class="heading"><span class="title">Showing Your Remotes.</span></h4>
-<p>To see which remote servers you have configured, you can run the <code class="code-inline tex2jax_ignore">git remote</code> command. It lists the shortnames of each remote handle you’ve specified. If you’ve cloned your repository, you should at least see <code class="code-inline tex2jax_ignore">origin</code> — that is the default name Git gives to the server you cloned from:</p>
-<pre class="code-block tex2jax_ignore">$ git clone https://github.com/schacon/ticgit
+<section class="paragraphs"><h4 class="heading"><span class="title">Showing Your Remotes.</span></h4>  <div class="para">To see which remote servers you have configured, you can run the <code class="code-inline tex2jax_ignore">git remote</code> command. It lists the shortnames of each remote handle you’ve specified. If you’ve cloned your repository, you should at least see <code class="code-inline tex2jax_ignore">origin</code> — that is the default name Git gives to the server you cloned from:</div>  <pre class="code-block tex2jax_ignore">$ git clone https://github.com/schacon/ticgit
 Cloning into 'ticgit'...
 remote: Reusing existing pack: 1857, done.
 remote: Total 1857 (delta 0), reused 0 (delta 0)
@@ -23,14 +21,10 @@ Checking connectivity... done.
 $ cd ticgit
 $ git remote
 origin
-</pre>
-<p>You can also specify <code class="code-inline tex2jax_ignore">-v</code>, which shows you the URLs that Git has stored for the shortname to be used when reading and writing to that remote:</p>
-<pre class="code-block tex2jax_ignore">$ git remote -v
+</pre> <div class="para">You can also specify <code class="code-inline tex2jax_ignore">-v</code>, which shows you the URLs that Git has stored for the shortname to be used when reading and writing to that remote:</div>  <pre class="code-block tex2jax_ignore">$ git remote -v
 origin  https://github.com/schacon/ticgit (fetch)
 origin  https://github.com/schacon/ticgit (push)
-</pre>
-<p>If you have more than one remote, the command lists them all. For example, a repository with multiple remotes for working with several collaborators might look something like this.</p>
-<pre class="code-block tex2jax_ignore">$ cd grit
+</pre> <div class="para">If you have more than one remote, the command lists them all. For example, a repository with multiple remotes for working with several collaborators might look something like this.</div>  <pre class="code-block tex2jax_ignore">$ cd grit
 $ git remote -v
 bakkdoor  https://github.com/bakkdoor/grit (fetch)
 bakkdoor  https://github.com/bakkdoor/grit (push)
@@ -42,7 +36,6 @@ koke      git://github.com/koke/grit.git (fetch)
 koke      git://github.com/koke/grit.git (push)
 origin    git@github.com:mojombo/grit.git (fetch)
 origin    git@github.com:mojombo/grit.git (push)
-</pre>
-<p>This means we can pull contributions from any of these users pretty easily. We may additionally have permission to push to one or more of these, though we can’t tell that here.</p></section><span class="incontext"><a href="sec_git_basics.html#_showing_your_remotes" class="internal">in-context</a></span>
+</pre> <div class="para">This means we can pull contributions from any of these users pretty easily. We may additionally have permission to push to one or more of these, though we can’t tell that here.</div> </section><span class="incontext"><a href="sec_git_basics.html#_showing_your_remotes" class="internal">in-context</a></span>
 </body>
 </html>
