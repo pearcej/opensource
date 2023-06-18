@@ -85,15 +85,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.0.0dev3';
+eBookConfig.runestone_version = '6.5.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runtime.71ffd81c0faeb38b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runestone.e543e0dd19670ae2.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runestone.1f1f63d2cda36a4d.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/runtime.ead78978a4e3c14b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/runestone.9ae535a5cdffdcb5.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.5.0/637.0fa6cababf056764.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.5.0/runestone.828206f80e9e88d8.css">
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -226,7 +226,7 @@ eBookConfig.enable_chatcodes =  false;
 <li>
 <div class="toc-item"><a href="meta_frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Open Source License</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Open Source Licensing</span></a></div></li>
 <li><div class="toc-item"><a href="dedication-1.html" class="internal"><span class="title">Dedication</span></a></div></li>
 <li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
 <li><div class="toc-item"><a href="meta_frontmatter-preface.html" class="internal"><span class="title">Preface</span></a></div></li>
@@ -234,7 +234,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="ch_intro_2_oss.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Open Source Software (OSS)</span></a></div>
+<div class="toc-item"><a href="ch_intro_oss.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Open Source Software (OSS)</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="sec_oss_what_it_is.html" class="internal"><span class="codenumber">1.1</span> <span class="title">What is Open Source Software?</span></a></div></li>
 <li>
@@ -473,45 +473,45 @@ eBookConfig.enable_chatcodes =  false;
 <section class="introduction" id="introduction-27"></section><section class="subsection" id="sub-sec-how-documentation-suffers"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.2.1</span> <span class="title">How Documentation Suffers</span>
 </h3>
-<div class="para" id="p-855">Getting set up to contribute to an open source project ranges from being technically fairly easy to requiring a long series of steps including many interconnected software installations and several interconnected codebases.</div>
-<div class="para" id="p-856">Repairing or improving documentation has a reputation as being an easy way to begin contributing to a project. Newcomers can often make improvements to the documentation for such things as how to get a thing to run/compile because they will be going through that process and might run into an issue or outdated part of documentation. They are then in a great position to improve it based on their experience.</div>
-<div class="para" id="p-857">When developers resist documenting, it is usually around several themes:</div>
-<div class="para logical" id="p-858"><ol class="decimal">
+<div class="para" id="p-859">Getting set up to contribute to an open source project ranges from being technically fairly easy to requiring a long series of steps including many interconnected software installations and several interconnected codebases.</div>
+<div class="para" id="p-860">Repairing or improving documentation has a reputation as being an easy way to begin contributing to a project. Newcomers can often make improvements to the documentation for such things as how to get a thing to run/compile because they will be going through that process and might run into an issue or outdated part of documentation. They are then in a great position to improve it based on their experience.</div>
+<div class="para" id="p-861">When developers resist documenting, it is usually around several themes:</div>
+<div class="para logical" id="p-862"><ol class="decimal">
 <li id="li-190"><div class="para" id="p-derived-li-190">Developers often don’t like technical writing for think that writing is not a principal skill.</div></li>
 <li id="li-191"><div class="para" id="p-derived-li-191">Developers want to get on with new engineering problems instead. In OSS, developers are volunteers and writing documentation takes up more of their free time.</div></li>
 <li id="li-192"><div class="para" id="p-derived-li-192">For commercial projects, priorities may be on releasing new features and there may be little to no time to write documentation as it is not viewed by management as valuable.</div></li>
 </ol></div>
-<div class="para" id="p-859">The techniques for creating an OSS community that attracts contributions from project developers are mirrored answers to the above-mentioned problems.</div>
-<div class="para" id="p-860">Dumping down words in to a text editor is not very hard; many developers write copiously in email, for example. The documentor’s challenge is finding this content wherever it is (mailing lists, IRC discussions, random wiki pages) and editing it in to something comprehensive that reveals content holes for filling. The documentation project’s success hinges on the ability to restructure rambling content and make all of that accessible to new writing contributors, so they can begin meaningful work from the very start.</div>
-<div class="para" id="p-861">A metric of this success is when any random experienced contributor is asked a question by a new contributor, and in answering, insists that the answer be documented, for example, on the project wiki using existing templates, etc. In this way new contributors are turned in to documentors who share the work burden from the existing contributors.</div></section><section class="subsection" id="subsec-steps-to"><h3 class="heading hide-type">
+<div class="para" id="p-863">The techniques for creating an OSS community that attracts contributions from project developers are mirrored answers to the above-mentioned problems.</div>
+<div class="para" id="p-864">Dumping down words in to a text editor is not very hard; many developers write copiously in email, for example. The documentor’s challenge is finding this content wherever it is (mailing lists, IRC discussions, random wiki pages) and editing it in to something comprehensive that reveals content holes for filling. The documentation project’s success hinges on the ability to restructure rambling content and make all of that accessible to new writing contributors, so they can begin meaningful work from the very start.</div>
+<div class="para" id="p-865">A metric of this success is when any random experienced contributor is asked a question by a new contributor, and in answering, insists that the answer be documented, for example, on the project wiki using existing templates, etc. In this way new contributors are turned in to documentors who share the work burden from the existing contributors.</div></section><section class="subsection" id="subsec-steps-to"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.2.2</span> <span class="title">Getting Involved Through Documentation</span>
 </h3>
-<div class="para logical" id="p-862">
+<div class="para logical" id="p-866">
 <div class="para">Once you have identified an OSS project with an active and welcoming community, what steps should you take to become involved? Communication is the key to a healthy community, so here are some steps you can take to begin:</div>
 <ol class="decimal">
-<li id="li-193"><div class="para" id="p-863">The first step is to learn to use the software. For web-based applications, this is often trivial. We all know how to use the Firefox browser, for example. For software that requires installation, you will likely follow directions on the website or in an INSTALL file from the repo. If needed, check out the examples and tutorials. Seeing an example of how the software works will help your understanding of the overall project.</div></li>
+<li id="li-193"><div class="para" id="p-867">The first step is to learn to use the software. For web-based applications, this is often trivial. We all know how to use the Firefox browser, for example. For software that requires installation, you will likely follow directions on the website or in an INSTALL file from the repo. If needed, check out the examples and tutorials. Seeing an example of how the software works will help your understanding of the overall project.</div></li>
 <li id="li-194">
-<span class="heading"><span class="title">Asynchronous Communication Channels.</span></span><div class="para" id="p-864">Familiarize yourself with the communication channels employed by the community. If they have a Discord or Slack Channel, Google Group or other mailing list, sign up and read through other recent posts there. If this is a community, you want to stay engaged with, turn on notifications for some of the most relevant channels.</div>
+<span class="heading"><span class="title">Asynchronous Communication Channels.</span></span><div class="para" id="p-868">Familiarize yourself with the communication channels employed by the community. If they have a Discord or Slack Channel, Google Group or other mailing list, sign up and read through other recent posts there. If this is a community, you want to stay engaged with, turn on notifications for some of the most relevant channels.</div>
 </li>
-<li id="li-195"><div class="para" id="p-865">Starting with the README, CONTRIBUTING, and CODE_OF_CONDUCT, read the documentation that seems most relevant to your goals.</div></li>
+<li id="li-195"><div class="para" id="p-869">Starting with the README, CONTRIBUTING, and CODE_OF_CONDUCT, read the documentation that seems most relevant to your goals.</div></li>
 <li id="li-196">
-<span class="heading"><span class="title">Following the Documentation.</span></span><div class="para" id="p-866">Because opening issues about unclear, incorrect, or out-of-date documentation is an excellent place to begin contributing, if you want to start contributing, follow the documentation very slowly and deliberately, taking note of places where you experience confusion.</div>
+<span class="heading"><span class="title">Following the Documentation.</span></span><div class="para" id="p-870">Because opening issues about unclear, incorrect, or out-of-date documentation is an excellent place to begin contributing, if you want to start contributing, follow the documentation very slowly and deliberately, taking note of places where you experience confusion.</div>
 </li>
 <li id="li-197">
-<span class="heading"><span class="title">Synchronous Communication.</span></span><div class="para" id="p-867">Some groups also have IRC and/or drop in video conferences that are open to all. Once you have a sense of the community, you can drop into these which will help you to become more integrated into the community.</div>
+<span class="heading"><span class="title">Synchronous Communication.</span></span><div class="para" id="p-871">Some groups also have IRC and/or drop in video conferences that are open to all. Once you have a sense of the community, you can drop into these which will help you to become more integrated into the community.</div>
 </li>
-<li id="li-198"><div class="para" id="p-868">Once you have something you want to contribute to the community, with the goal of setting up your development environment (see <a href="ch_dev_env.html" class="internal" title="Chapter 4: OSS Development Environment">Chapter 4</a>),  slowly and deliberately follow the directions provided by the community to set up your development environment. Here again, take note of places where you experience confusion.</div></li>
+<li id="li-198"><div class="para" id="p-872">Once you have something you want to contribute to the community, with the goal of setting up your development environment (see <a href="ch_dev_env.html" class="internal" title="Chapter 4: OSS Development Environment">Chapter 4</a>),  slowly and deliberately follow the directions provided by the community to set up your development environment. Here again, take note of places where you experience confusion.</div></li>
 <li id="li-199">
-<span class="heading"><span class="title">Open an Issue.</span></span><div class="para" id="p-869">Once you have identified a place that documentation is confusing, wrong, etc, you are ready to open an issue. In opening an issue, most projects will have a standard format that you will want to be sure to follow.</div>
-<div class="para" id="p-870"></div>
+<span class="heading"><span class="title">Open an Issue.</span></span><div class="para" id="p-873">Once you have identified a place that documentation is confusing, wrong, etc, you are ready to open an issue. In opening an issue, most projects will have a standard format that you will want to be sure to follow.</div>
+<div class="para" id="p-874"></div>
 </li>
 </ol>
 </div>
 <article class="exercise exercise-like" id="exercise-getting-involved"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-getting-involved"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Exercise: Getting involved.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-getting-involved"><article class="exercise exercise-like"><div class="para logical" id="p-871"><ol class="decimal">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-getting-involved"><article class="exercise exercise-like"><div class="para logical" id="p-875"><ol class="decimal">
 <li id="li-200">
-<div class="para" id="p-872">Take a technical document content plan and prepare it to show to developers.</div>
+<div class="para" id="p-876">Take a technical document content plan and prepare it to show to developers.</div>
 <ul class="disc">
 <li id="li-201"><div class="para" id="p-derived-li-201">For example, create a personal user namespace on an open source project’s wiki “User:Username/New_page”.</div></li>
 <li id="li-202"><div class="para" id="p-derived-li-202">Alternately, prepare it for inclusion in email.</div></li>

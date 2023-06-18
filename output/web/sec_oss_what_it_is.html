@@ -85,15 +85,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.0.0dev3';
+eBookConfig.runestone_version = '6.5.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runtime.71ffd81c0faeb38b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runestone.e543e0dd19670ae2.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runestone.1f1f63d2cda36a4d.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/runtime.ead78978a4e3c14b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/runestone.9ae535a5cdffdcb5.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.5.0/637.0fa6cababf056764.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.5.0/runestone.828206f80e9e88d8.css">
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -209,7 +209,7 @@ eBookConfig.enable_chatcodes =  false;
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="ch_intro_2_oss.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ch_intro_2_oss.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="sec_oss_matters.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="ch_intro_oss.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ch_intro_oss.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="sec_oss_matters.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
 </div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
@@ -226,7 +226,7 @@ eBookConfig.enable_chatcodes =  false;
 <li>
 <div class="toc-item"><a href="meta_frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Open Source License</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Open Source Licensing</span></a></div></li>
 <li><div class="toc-item"><a href="dedication-1.html" class="internal"><span class="title">Dedication</span></a></div></li>
 <li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
 <li><div class="toc-item"><a href="meta_frontmatter-preface.html" class="internal"><span class="title">Preface</span></a></div></li>
@@ -234,7 +234,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="ch_intro_2_oss.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Open Source Software (OSS)</span></a></div>
+<div class="toc-item"><a href="ch_intro_oss.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Open Source Software (OSS)</span></a></div>
 <ul class="structural">
 <li class="active"><div class="toc-item"><a href="sec_oss_what_it_is.html" class="internal"><span class="codenumber">1.1</span> <span class="title">What is Open Source Software?</span></a></div></li>
 <li>
@@ -471,21 +471,21 @@ eBookConfig.enable_chatcodes =  false;
 <section class="section" id="sec_oss_what_it_is"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1.1</span> <span class="title">What is Open Source Software?</span>
 </h2>
-<div class="para" id="p-41">This is, first and foremost, a textbook about how people create software collaboratively using a community development model, and about how you can become a member of one of those communities.  When the source code is open to viewing, most people call the result of such work by the name <dfn class="terminology">open source software (OSS)</dfn>.</div>
-<div class="para" id="p-42">The following related terms relate to OSS that guarantees additional freedoms:  Some people call <dfn class="terminology">free software</dfn> or use both terms: <dfn class="terminology">free and open source software (FOSS)</dfn>. Some people throw in the word libre to clarify the intended meaning of free, and call it <dfn class="terminology">free/libre open source software (FLOSS)</dfn>.</div>
-<div class="para" id="p-43">There are valid reasons for the usage of these different terms in different contexts, but for the sake of breadth, we primarily use the terms <dfn class="terminology">open source</dfn> or <dfn class="terminology">open source software (OSS)</dfn> in this book. If you are interested in additional clarification or on the history of these related types of software and the evolution of the terms, see <a class="external" href="https://www.gnu.org/philosophy/free-sw.html" target="_blank">What is Free Software</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-19" id="fn-19"><sup> 1 </sup></a> by the open source <a class="external" href="https://www.gnu.org/" target="_blank">GNU Operating System</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-20" id="fn-20"><sup> 2 </sup></a>.</div>
-<div class="para" id="p-44">The specific definition of the term as we will use it: <article class="definition definition-like" id="def-open-source"><h3 class="heading">
+<div class="para" id="p-43">This is, first and foremost, a textbook about how people create software collaboratively using a community development model, and about how you can become a member of one of those communities.  When the source code is open to viewing, most people call the result of such work by the name <dfn class="terminology">open source software (OSS)</dfn>.</div>
+<div class="para" id="p-44">The following related terms relate to OSS that guarantees additional freedoms:  Some people call <dfn class="terminology">free software</dfn> or use both terms: <dfn class="terminology">free and open source software (FOSS)</dfn>. Some people throw in the word libre to clarify the intended meaning of free, and call it <dfn class="terminology">free/libre open source software (FLOSS)</dfn>.</div>
+<div class="para" id="p-45">There are valid reasons for the usage of these different terms in different contexts, but for the sake of breadth, we primarily use the terms <dfn class="terminology">open source</dfn> or <dfn class="terminology">open source software (OSS)</dfn> in this book. If you are interested in additional clarification or on the history of these related types of software and the evolution of the terms, see <a class="external" href="https://www.gnu.org/philosophy/free-sw.html" target="_blank">What is Free Software</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-20" id="fn-20"><sup> 1 </sup></a> by the open source <a class="external" href="https://www.gnu.org/" target="_blank">GNU Operating System</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-21" id="fn-21"><sup> 2 </sup></a>.</div>
+<div class="para" id="p-46">The specific definition of the term as we will use it: <article class="definition definition-like" id="def-open-source"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="period">.</span>
-</h3> <div class="para" id="p-45">
+</h3> <div class="para" id="p-47">
 <dfn class="terminology">Open source software (OSS)</dfn> is software that is designed with code that is publicly accessible and openly viewed.</div></article>
 </div>
-<div class="para" id="p-46">Open source software is typically developed in a collaborative way. It often relies upon peer review and community member contributions, frequently with community members from all over the world. In addition to seeing the code, often anyone can also freely modify and distribute the code as they see fit as long as the open source license is followed. We will explore licensing details in <a href="ch_licensing.html" class="internal" title="Chapter 3: Open Source Licensing">Chapter 3</a>
+<div class="para" id="p-48">Open source software is typically developed in a collaborative way. It often relies upon peer review and community member contributions, frequently with community members from all over the world. In addition to seeing the code, often anyone can also freely modify and distribute the code as they see fit as long as the open source license is followed. We will explore licensing details in <a href="ch_licensing.html" class="internal" title="Chapter 3: Open Source Licensing">Chapter 3</a>
 </div>
-<div class="para" id="p-47">Enough of the pep talk. Its time to get started.</div></section><div class="hidden-content tex2jax_ignore" id="hk-fn-19"><div class="fn"><code class="code-inline tex2jax_ignore">www.gnu.org/philosophy/free-sw.html</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-20"><div class="fn"><code class="code-inline tex2jax_ignore">www.gnu.org/</code></div></div>
+<div class="para" id="p-49">Enough of the pep talk. Its time to get started.</div></section><div class="hidden-content tex2jax_ignore" id="hk-fn-20"><div class="fn"><code class="code-inline tex2jax_ignore">www.gnu.org/philosophy/free-sw.html</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-21"><div class="fn"><code class="code-inline tex2jax_ignore">www.gnu.org/</code></div></div>
 </div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="ch_intro_2_oss.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_oss_matters.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+<a class="previous-button button" href="ch_intro_oss.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_oss_matters.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

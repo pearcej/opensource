@@ -85,15 +85,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.0.0dev3';
+eBookConfig.runestone_version = '6.5.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runtime.71ffd81c0faeb38b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runestone.e543e0dd19670ae2.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runestone.1f1f63d2cda36a4d.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/runtime.ead78978a4e3c14b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/runestone.9ae535a5cdffdcb5.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.5.0/637.0fa6cababf056764.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.5.0/runestone.828206f80e9e88d8.css">
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -226,7 +226,7 @@ eBookConfig.enable_chatcodes =  false;
 <li>
 <div class="toc-item"><a href="meta_frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Open Source License</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Open Source Licensing</span></a></div></li>
 <li><div class="toc-item"><a href="dedication-1.html" class="internal"><span class="title">Dedication</span></a></div></li>
 <li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
 <li><div class="toc-item"><a href="meta_frontmatter-preface.html" class="internal"><span class="title">Preface</span></a></div></li>
@@ -234,7 +234,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="ch_intro_2_oss.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Open Source Software (OSS)</span></a></div>
+<div class="toc-item"><a href="ch_intro_oss.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Open Source Software (OSS)</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="sec_oss_what_it_is.html" class="internal"><span class="codenumber">1.1</span> <span class="title">What is Open Source Software?</span></a></div></li>
 <li>
@@ -470,11 +470,11 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_docu_build"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6.3</span> <span class="title">Build Documentation</span>
 </h2>
-<section class="introduction" id="introduction-28"><div class="para" id="p-873">You learned how version control works in <a href="ch_git.html" class="internal" title="Chapter 5: Version Control with Git">Chapter 5</a>. What you do with it is the topic of this section.</div></section><section class="subsection" id="subsec_what_is_building"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-28"><div class="para" id="p-877">You learned how version control works in <a href="ch_git.html" class="internal" title="Chapter 5: Version Control with Git">Chapter 5</a>. What you do with it is the topic of this section.</div></section><section class="subsection" id="subsec_what_is_building"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.3.1</span> <span class="title">What is Building, Exactly?</span>
 </h3>
-<section class="introduction" id="introduction-29"><div class="para" id="p-874">The process of turning source code into executable binary code can be complicated. The larger the project and the more source code you have, the more complicated that process is. Almost every serious piece of software has its own build process, that every developer must follow — and woe be unto the developer who repeatedly breaks the build for everyone else.</div> <div class="para" id="p-875">Where do you find build directions?</div></section><div class="para" id="p-876">There are many steps in the process of turning source code into a binary executable. Some examples of tasks that you might encounter during a typical build process:</div>
-<div class="para logical" id="p-877"><ul class="disc">
+<section class="introduction" id="introduction-29"><div class="para" id="p-878">The process of turning source code into executable binary code can be complicated. The larger the project and the more source code you have, the more complicated that process is. Almost every serious piece of software has its own build process, that every developer must follow — and woe be unto the developer who repeatedly breaks the build for everyone else.</div> <div class="para" id="p-879">Where do you find build directions?</div></section><div class="para" id="p-880">There are many steps in the process of turning source code into a binary executable. Some examples of tasks that you might encounter during a typical build process:</div>
+<div class="para logical" id="p-881"><ul class="disc">
 <li id="li-208"><div class="para" id="p-derived-li-208">
 <em class="emphasis">Compiling the code.</em> Source code must somehow become machine code, ultimately. Sometimes this is handled in real-time by an interpreter, as in the case of scripting languages such as Perl or Javascript. For more complex applications, though, this work is usually handled by a compiler. Therefore, you must ensure that you have a proper compiler installed, and that you are calling the compiler properly with the correct compiler options.</div></li>
 <li id="li-209"><div class="para" id="p-derived-li-209">
@@ -486,15 +486,15 @@ eBookConfig.enable_chatcodes =  false;
 <li id="li-212"><div class="para" id="p-derived-li-212">
 <em class="emphasis">Packaging and/or Deploying.</em> Sometimes you want to install the program you just compiled so that it can be run from anywhere on the system, and other programs or users can find it. Or sometimes you want to bundle it up into a format that allows anyone to take your executable and install it easily for themselves. You don’t want to do this for every build, but when you know that your build is good, one of the important final steps is to put the executable, and all documentation, in a central location.</div></li>
 </ul></div>
-<div class="para" id="p-878">Performing all of these tasks by hand would be time-consuming and difficult. Build automation tools allow the developer to handle all of these tasks automatically — and thus, to manage projects with a much higher degree of complexity.</div></section><section class="subsection" id="living-with-complexity"><h3 class="heading hide-type">
+<div class="para" id="p-882">Performing all of these tasks by hand would be time-consuming and difficult. Build automation tools allow the developer to handle all of these tasks automatically — and thus, to manage projects with a much higher degree of complexity.</div></section><section class="subsection" id="living-with-complexity"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.3.2</span> <span class="title">Living With Complexity</span>
 </h3>
-<div class="para" id="p-879">Fair warning: sometimes code doesn’t compile. Sometimes you follow all the instructions, and it still doesn’t work. What then?</div>
-<div class="para" id="p-880">If this is your first experience dealing with a large codebase written by someone else, then welcome to the real world. As you run your first build, you may have very little idea of what’s actually going on. Don’t get discouraged. Have patience; you’ll soon begin to figure it all out.</div>
-<div class="para" id="p-881">You are about to walk through a software build process. The typical build command might return hundreds, or even thousands, of log entries, all of which scroll across the screen at lightning speed. You may understand all, some, or none of those entries.</div>
-<div class="para" id="p-882">That’s okay. Everyone starts somewhere.</div>
-<div class="para" id="p-883">Here are some points to keep in mind.</div>
-<div class="para logical" id="p-884"><ul class="disc">
+<div class="para" id="p-883">Fair warning: sometimes code doesn’t compile. Sometimes you follow all the instructions, and it still doesn’t work. What then?</div>
+<div class="para" id="p-884">If this is your first experience dealing with a large codebase written by someone else, then welcome to the real world. As you run your first build, you may have very little idea of what’s actually going on. Don’t get discouraged. Have patience; you’ll soon begin to figure it all out.</div>
+<div class="para" id="p-885">You are about to walk through a software build process. The typical build command might return hundreds, or even thousands, of log entries, all of which scroll across the screen at lightning speed. You may understand all, some, or none of those entries.</div>
+<div class="para" id="p-886">That’s okay. Everyone starts somewhere.</div>
+<div class="para" id="p-887">Here are some points to keep in mind.</div>
+<div class="para logical" id="p-888"><ul class="disc">
 <li id="li-213"><div class="para" id="p-derived-li-213">
 <dfn class="terminology">Start with the README.</dfn>  Start with the README file which serves to explain the project, what it does, why it is useful, etc. If GitHub detects a README file in the source, it will render it on the landing page of the project, so this file is typically the first item one will see when visiting the repository. Although build instructions are sometimes found elsewhere, the README will likely at least link to the page that details how to get set up to locally build the project.</div></li>
 <li id="li-214"><div class="para" id="p-derived-li-214">

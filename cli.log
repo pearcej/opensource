@@ -1,7 +1,4 @@
 INFO    : PreTeXt project found in `C:\Users\pearcej\opensource`.
-WARNING : Using CLI version 1.6.0 but project's `requirements.txt`
-WARNING : is configured to use 1.0.4. Consider either installing
-WARNING : CLI version 1.0.4 or changing `requirements.txt` to match 1.6.0.
 WARNING : Assets like latex-images will not be regenerated for this build
 WARNING : (previously generated assets will be used if they exist).
 WARNING : To generate these assets before building, run `pretext build -g`.
@@ -15,12 +12,11 @@ INFO    : input directory expanded to absolute path: C:\Users\pearcej\opensource
 INFO    : verifying and expanding input directory: C:\Users\pearcej\opensource\source\../assets
 INFO    : input directory expanded to absolute path: C:\Users\pearcej\opensource\assets
 INFO    : Runestone Services (via PreTeXt repository): version 6.5.0
-INFO    : Runestone Services (using newer, via online CDN query): version 7.0.0dev3
-INFO    : converting C:\Users\pearcej\opensource\source\main.ptx to HTML in C:\Users\pearcej\AppData\Local\Temp\tmpmvcxt4bf
+INFO    : converting C:\Users\pearcej\opensource\source\main.ptx to HTML in C:\Users\pearcej\AppData\Local\Temp\tmprh8ryq0z
 INFO    : XSL conversion of C:\Users\pearcej\opensource\source\main.ptx by C:\Users\pearcej\.ptx\xsl\pretext-html.xsl
 INFO    : comprehensive messages, warnings, and errors:
 INFO    : successful application of C:\Users\pearcej\.ptx\xsl\pretext-html.xsl
-INFO    : Removing temporary directory C:\Users\pearcej\AppData\Local\Temp\tmpmvcxt4bf
+INFO    : Removing temporary directory C:\Users\pearcej\AppData\Local\Temp\tmprh8ryq0z
 INFO    : 
 Success! Run `pretext view web` to see the results.
 

@@ -85,15 +85,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.0.0dev3';
+eBookConfig.runestone_version = '6.5.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runtime.71ffd81c0faeb38b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runestone.e543e0dd19670ae2.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runestone.1f1f63d2cda36a4d.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/runtime.ead78978a4e3c14b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/runestone.9ae535a5cdffdcb5.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.5.0/637.0fa6cababf056764.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.5.0/runestone.828206f80e9e88d8.css">
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -226,7 +226,7 @@ eBookConfig.enable_chatcodes =  false;
 <li>
 <div class="toc-item"><a href="meta_frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Open Source License</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Open Source Licensing</span></a></div></li>
 <li><div class="toc-item"><a href="dedication-1.html" class="internal"><span class="title">Dedication</span></a></div></li>
 <li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
 <li><div class="toc-item"><a href="meta_frontmatter-preface.html" class="internal"><span class="title">Preface</span></a></div></li>
@@ -234,7 +234,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="ch_intro_2_oss.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Open Source Software (OSS)</span></a></div>
+<div class="toc-item"><a href="ch_intro_oss.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Open Source Software (OSS)</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="sec_oss_what_it_is.html" class="internal"><span class="codenumber">1.1</span> <span class="title">What is Open Source Software?</span></a></div></li>
 <li>
@@ -467,10 +467,11 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="ch_documentation"><h2 class="heading">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="chapter" id="ch_documentation"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">6</span> <span class="title">Documentation</span>
 </h2>
-<section class="introduction" id="introduction-25"><div class="para" id="p-809">For many reasons documentation is of utmost importance in open source projects. It acts as a historical record for decisions made as well as a communication link between programmers and users by offering directions, explanations, and advice. New potential contributors can use documentation to understand the project’s goals and functions as well as how the community functions.</div> <div class="para" id="p-810">Effective up-to-date documentation is crucial in creating a thriving and encouraging ecosystem around the open source project by enhancing usability, encouraging collaboration, and lowering entry barriers to contribution.By offering usage instructions and troubleshooting assistance, documentation enables users to get the most out of the project’s features.</div> <div class="para" id="p-811">By the time you finish this chapter you should be able to:</div> <div class="para logical" id="p-812"><ol class="decimal">
+<section class="introduction" id="introduction-25"><div class="para" id="p-813">For many reasons documentation is of utmost importance in open source projects. It acts as a historical record for decisions made as well as a communication link between programmers and users by offering directions, explanations, and advice. New potential contributors can use documentation to understand the project’s goals and functions as well as how the community functions.</div> <div class="para" id="p-814">Effective up-to-date documentation is crucial in creating a thriving and encouraging ecosystem around the open source project by enhancing usability, encouraging collaboration, and lowering entry barriers to contribution.By offering usage instructions and troubleshooting assistance, documentation enables users to get the most out of the project’s features.</div> <div class="para" id="p-815">By the time you finish this chapter you should be able to:</div> <div class="para logical" id="p-816"><ol class="decimal">
 <li id="li-161"><div class="para" id="p-derived-li-161">Explain both the historical and current value of documentation to open source software.</div></li>
 <li id="li-162"><div class="para" id="p-derived-li-162">Leverage documentation as a way to become quickly useful as a project newcomer.</div></li>
 <li id="li-163"><div class="para" id="p-derived-li-163">Follow an approved methodology for technical communication, including writing effective issue and commit messages to document your contributions as you make them.</div></li>
@@ -479,7 +480,11 @@ eBookConfig.enable_chatcodes =  false;
 <li><a href="sec_docu_involvement.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Documentation as Involvement</span></a></li>
 <li><a href="sec_docu_build.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Build Documentation</span></a></li>
 <li><a href="sec_issues_bugs.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Issue and Bug Documentation</span></a></li>
-</ul></nav></section></div>
+</ul></nav><section class="conclusion" id="conclusion-15"><h2 class="heading">Chapter License.<span></span>
+</h2> <div class="para" id="p-949">
+<a class="external" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA 4.0</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-175" id="fn-175"><sup> 14 </sup></a>
+</div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-175"><div class="fn"><code class="code-inline tex2jax_ignore">creativecommons.org/licenses/by-sa/4.0/</code></div></div>
+</div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_git_github.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_docu_scope.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

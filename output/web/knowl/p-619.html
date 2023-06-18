@@ -12,7 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Note: The “master” or "main" branch in Git is not a special branch. It is exactly like any other branch. The only reason nearly every repository has one or the other is that the <code class="code-inline tex2jax_ignore">git init</code> command creates one by default and most people don’t bother to change its name. However, Git 2.28.0, released in July 2020, introduced the <code class="code-inline tex2jax_ignore">init.defaultBranch</code> configuration option, which allows Git users to define and configure a default branch name other than the one chosen by Git.</div>
+<div class="para">When you create the commit by running <code class="code-inline tex2jax_ignore">git commit</code>, Git checksums each subdirectory (in this case, just the root project directory) and stores them as a tree object in the Git repository. Git then creates a commit object that has the metadata and a pointer to the root project tree so it can re-create that snapshot when needed.</div>
 <span class="incontext"><a href="sec_git_branching.html#p-619" class="internal">in-context</a></span>
 </body>
 </html>

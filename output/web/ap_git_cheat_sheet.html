@@ -85,15 +85,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.0.0dev3';
+eBookConfig.runestone_version = '6.5.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runtime.71ffd81c0faeb38b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runestone.e543e0dd19670ae2.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runestone.1f1f63d2cda36a4d.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/runtime.ead78978a4e3c14b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/runestone.9ae535a5cdffdcb5.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.5.0/637.0fa6cababf056764.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.5.0/runestone.828206f80e9e88d8.css">
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -226,7 +226,7 @@ eBookConfig.enable_chatcodes =  false;
 <li>
 <div class="toc-item"><a href="meta_frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Open Source License</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Open Source Licensing</span></a></div></li>
 <li><div class="toc-item"><a href="dedication-1.html" class="internal"><span class="title">Dedication</span></a></div></li>
 <li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
 <li><div class="toc-item"><a href="meta_frontmatter-preface.html" class="internal"><span class="title">Preface</span></a></div></li>
@@ -234,7 +234,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="ch_intro_2_oss.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Open Source Software (OSS)</span></a></div>
+<div class="toc-item"><a href="ch_intro_oss.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Open Source Software (OSS)</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="sec_oss_what_it_is.html" class="internal"><span class="codenumber">1.1</span> <span class="title">What is Open Source Software?</span></a></div></li>
 <li>
@@ -476,51 +476,51 @@ eBookConfig.enable_chatcodes =  false;
 </h3>
 <dl class="description-list narrow">
 <dt id="li-288"><code class="code-inline tex2jax_ignore">git init &lt;directory-name&gt;</code></dt>
-<dd><div class="para" id="p-1006">Create an empty git repo in a new directory named <code class="code-inline tex2jax_ignore">directory-name</code>. Take care with the <code class="code-inline tex2jax_ignore">directory-name</code>; it is typical to use a short, descriptive, name using only lower case letters and the "-" character. Note that if you leave off the directory name then the current directory will be initialized as a git repository. For more detail see <a class="external" href="https://github.com/git-guides/git-init" target="_blank">Git Guides: Git Init</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-172" id="fn-172"><sup> 1 </sup></a>
+<dd><div class="para" id="p-1011">Create an empty git repo in a new directory named <code class="code-inline tex2jax_ignore">directory-name</code>. Take care with the <code class="code-inline tex2jax_ignore">directory-name</code>; it is typical to use a short, descriptive, name using only lower case letters and the "-" character. Note that if you leave off the directory name then the current directory will be initialized as a git repository. For more detail see <a class="external" href="https://github.com/git-guides/git-init" target="_blank">Git Guides: Git Init</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-176" id="fn-176"><sup> 1 </sup></a>
 </div></dd>
 <dt id="li-289"><code class="code-inline tex2jax_ignore">git clone &lt;repository-url&gt;</code></dt>
-<dd><div class="para" id="p-1007">Clone a repository from a repository in the cloud to your local system. Note that if you are planning to contribute to a project that is not yours, you will likely want to <dfn class="terminology">fork</dfn> the repository into your own account first. For example, to contribute to a project hosted on GitHub, go to that repository and fork it into your own GitHub account. For more detail see <a class="external" href="https://github.com/git-guides/git-clone" target="_blank">Git Guides: Git Clone</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-173" id="fn-173"><sup> 2 </sup></a>
+<dd><div class="para" id="p-1012">Clone a repository from a repository in the cloud to your local system. Note that if you are planning to contribute to a project that is not yours, you will likely want to <dfn class="terminology">fork</dfn> the repository into your own account first. For example, to contribute to a project hosted on GitHub, go to that repository and fork it into your own GitHub account. For more detail see <a class="external" href="https://github.com/git-guides/git-clone" target="_blank">Git Guides: Git Clone</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-177" id="fn-177"><sup> 2 </sup></a>
 </div></dd>
 </dl></section><section class="subsection" id="sec-gitcs-state"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">B.2.2</span> <span class="title">Current state</span>
 </h3>
 <dl class="description-list narrow">
 <dt id="li-290"><code class="code-inline tex2jax_ignore">git diff</code></dt>
-<dd><div class="para" id="p-1008">List the changes to files that have not yet been added (staged).</div></dd>
+<dd><div class="para" id="p-1013">List the changes to files that have not yet been added (staged).</div></dd>
 <dt id="li-291"><code class="code-inline tex2jax_ignore">git status</code></dt>
-<dd><div class="para" id="p-1009">Check the status to see if there are files that have been changed but not added (staged). This command will also list all staged changes. For more detail see <a class="external" href="https://github.com/git-guides/git-status" target="_blank">Git Guides: Git Status</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-174" id="fn-174"><sup> 3 </sup></a>
+<dd><div class="para" id="p-1014">Check the status to see if there are files that have been changed but not added (staged). This command will also list all staged changes. For more detail see <a class="external" href="https://github.com/git-guides/git-status" target="_blank">Git Guides: Git Status</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-178" id="fn-178"><sup> 3 </sup></a>
 </div></dd>
 <dt id="li-292"><code class="code-inline tex2jax_ignore">git log</code></dt>
-<dd><div class="para" id="p-1010">List recent commits.</div></dd>
+<dd><div class="para" id="p-1015">List recent commits.</div></dd>
 <dt id="li-293"><code class="code-inline tex2jax_ignore">git pull</code></dt>
-<dd><div class="para" id="p-1011">Download content from the remote repository and integrate these changes into the local repository. This command should be used regularly because without it your local branch won’t have any of the updates that are present on the remote. For more detail see <a class="external" href="https://github.com/git-guides/git-pull" target="_blank">Git Guides: Git Pull</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-175" id="fn-175"><sup> 4 </sup></a>
+<dd><div class="para" id="p-1016">Download content from the remote repository and integrate these changes into the local repository. This command should be used regularly because without it your local branch won’t have any of the updates that are present on the remote. For more detail see <a class="external" href="https://github.com/git-guides/git-pull" target="_blank">Git Guides: Git Pull</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-179" id="fn-179"><sup> 4 </sup></a>
 </div></dd>
 <dt id="li-294"><code class="code-inline tex2jax_ignore">git add &lt;filename&gt;</code></dt>
-<dd><div class="para" id="p-1012">Add all current changes in &lt;filename&gt;to the those staged for the next commit. For more detail see <a class="external" href="https://github.com/git-guides/git-add" target="_blank">Git Guides: Git Add</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-176" id="fn-176"><sup> 5 </sup></a>
+<dd><div class="para" id="p-1017">Add all current changes in &lt;filename&gt;to the those staged for the next commit. For more detail see <a class="external" href="https://github.com/git-guides/git-add" target="_blank">Git Guides: Git Add</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-180" id="fn-180"><sup> 5 </sup></a>
 </div></dd>
 <dt id="li-295"><code class="code-inline tex2jax_ignore">git commit -m "&lt;commit-message&gt;"</code></dt>
-<dd><div class="para" id="p-1013">Commit all staged files to the local repository. For more detail see <a class="external" href="https://github.com/git-guides/git-commit" target="_blank">Git Guides: Git Commit</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-177" id="fn-177"><sup> 6 </sup></a>
+<dd><div class="para" id="p-1018">Commit all staged files to the local repository. For more detail see <a class="external" href="https://github.com/git-guides/git-commit" target="_blank">Git Guides: Git Commit</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-181" id="fn-181"><sup> 6 </sup></a>
 </div></dd>
 <dt id="li-296"><code class="code-inline tex2jax_ignore">git push</code></dt>
-<dd><div class="para" id="p-1014">Push the current branch and all commits to the remote repository. Note that <code class="code-inline tex2jax_ignore">git push</code> only updates the corresponding branch on the remote.</div></dd>
+<dd><div class="para" id="p-1019">Push the current branch and all commits to the remote repository. Note that <code class="code-inline tex2jax_ignore">git push</code> only updates the corresponding branch on the remote.</div></dd>
 <dt id="li-297"><code class="code-inline tex2jax_ignore">git push -u origin &lt;branchname&gt;</code></dt>
-<dd><div class="para" id="p-1015">Here <code class="code-inline tex2jax_ignore">-u</code> stands for set upstream. It is used to push a new branch named &lt;branchname&gt; by creating an upstream tracking branch that is related to your current local branch. For more detail see <a class="external" href="https://github.com/git-guides/git-push" target="_blank">Git Guides: Git Push</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-178" id="fn-178"><sup> 7 </sup></a>
+<dd><div class="para" id="p-1020">Here <code class="code-inline tex2jax_ignore">-u</code> stands for set upstream. It is used to push a new branch named &lt;branchname&gt; by creating an upstream tracking branch that is related to your current local branch. For more detail see <a class="external" href="https://github.com/git-guides/git-push" target="_blank">Git Guides: Git Push</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-182" id="fn-182"><sup> 7 </sup></a>
 </div></dd>
 </dl></section><section class="subsection" id="sec-gitcs-branching"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">B.2.3</span> <span class="title">Git branching</span>
 </h3>
 <dl class="description-list narrow">
 <dt id="li-298"><code class="code-inline tex2jax_ignore">git branch</code></dt>
-<dd><div class="para" id="p-1016">List all existing branches.</div></dd>
+<dd><div class="para" id="p-1021">List all existing branches.</div></dd>
 <dt id="li-299"><code class="code-inline tex2jax_ignore">git checkout -b &lt;branch-name&gt;</code></dt>
-<dd><div class="para" id="p-1017">Create a new branch called <code class="code-inline tex2jax_ignore">&lt;branch-name&gt;</code> and switch to that branch. Without the <code class="code-inline tex2jax_ignore">-b</code> flag will allow you to checkout an existing branch.</div></dd>
-</dl></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-172"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/git-guides/git-init</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-173"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/git-guides/git-clone</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-174"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/git-guides/git-status</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-175"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/git-guides/git-pull</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-176"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/git-guides/git-add</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-177"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/git-guides/git-commit</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-178"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/git-guides/git-push</code></div></div>
+<dd><div class="para" id="p-1022">Create a new branch called <code class="code-inline tex2jax_ignore">&lt;branch-name&gt;</code> and switch to that branch. Without the <code class="code-inline tex2jax_ignore">-b</code> flag will allow you to checkout an existing branch.</div></dd>
+</dl></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-176"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/git-guides/git-init</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-177"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/git-guides/git-clone</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-178"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/git-guides/git-status</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-179"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/git-guides/git-pull</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-180"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/git-guides/git-add</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-181"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/git-guides/git-commit</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-182"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/git-guides/git-push</code></div></div>
 </div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ap_shell_cheat_sheet.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="index-1.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

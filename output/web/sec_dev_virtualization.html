@@ -85,15 +85,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.0.0dev3';
+eBookConfig.runestone_version = '6.5.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runtime.71ffd81c0faeb38b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runestone.e543e0dd19670ae2.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runestone.1f1f63d2cda36a4d.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/runtime.ead78978a4e3c14b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/runestone.9ae535a5cdffdcb5.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.5.0/637.0fa6cababf056764.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.5.0/runestone.828206f80e9e88d8.css">
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -226,7 +226,7 @@ eBookConfig.enable_chatcodes =  false;
 <li>
 <div class="toc-item"><a href="meta_frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Open Source License</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Open Source Licensing</span></a></div></li>
 <li><div class="toc-item"><a href="dedication-1.html" class="internal"><span class="title">Dedication</span></a></div></li>
 <li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
 <li><div class="toc-item"><a href="meta_frontmatter-preface.html" class="internal"><span class="title">Preface</span></a></div></li>
@@ -234,7 +234,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="ch_intro_2_oss.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Open Source Software (OSS)</span></a></div>
+<div class="toc-item"><a href="ch_intro_oss.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Open Source Software (OSS)</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="sec_oss_what_it_is.html" class="internal"><span class="codenumber">1.1</span> <span class="title">What is Open Source Software?</span></a></div></li>
 <li>
@@ -471,40 +471,40 @@ eBookConfig.enable_chatcodes =  false;
 <section class="section" id="sec_dev_virtualization"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.4</span> <span class="title">Virtualization</span>
 </h2>
-<section class="introduction" id="introduction-16"><div class="para" id="p-384">In this section, we introduce several types of virtualization. You may run across these technologies while you are setting up a development environment to contribute to an open source project. The goal of this section is just one of familiarization with the terminology because a strong open source community that is welcoming to new contributors will have a README file that you can follow that will help you to get set up.</div></section><section class="subsection" id="subsec_virtualizaton"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-16"><div class="para" id="p-388">In this section, we introduce several types of virtualization. You may run across these technologies while you are setting up a development environment to contribute to an open source project. The goal of this section is just one of familiarization with the terminology because a strong open source community that is welcoming to new contributors will have a README file that you can follow that will help you to get set up.</div></section><section class="subsection" id="subsec_virtualizaton"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.4.1</span> <span class="title">The What and Why of Virtualization</span>
 </h3>
-<div class="para" id="p-385">
+<div class="para" id="p-389">
 <dfn class="terminology">Virtualization</dfn> is a technique that allows for one or more virtual (or simulated) environments to run on a given physical hardware system. Virtualization refers to the creation of virtual versions of system resources, such as operating systems, CPU cores, memory, storage devices, etc.  In a virtualized system, each virtualized environment shares the actual system resources while operating as if it has dedicated resources such as memory, processing power, and storage. In part, because we can create just the right environment for a given application without running into conflicts when different applications have conflicting requirements, virtualization can provide cost-savings, flexibility, and increased efficiency.</div>
-<div class="para" id="p-386">You may encounter an open source community that uses some of these virtualization techniques because doing so provides benefits to them, perhaps the most important of which is portability. VM images and container images, for example, can typically be easily be moved between different environments, making it easier to develop and test software in a consistent environment.</div></section><section class="subsection" id="subsec_virtual_machines"><h3 class="heading hide-type">
+<div class="para" id="p-390">You may encounter an open source community that uses some of these virtualization techniques because doing so provides benefits to them, perhaps the most important of which is portability. VM images and container images, for example, can typically be easily be moved between different environments, making it easier to develop and test software in a consistent environment.</div></section><section class="subsection" id="subsec_virtual_machines"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.4.2</span> <span class="title">Virtual Machines</span>
 </h3>
-<div class="para" id="p-387">A <dfn class="terminology">virtual machine (VM)</dfn> is a simulation of a physical computer that runs its own operating system and applications as if it were a completely separate physical computer. VMs rely on a <dfn class="terminology">hypervisor</dfn> (aka a <dfn class="terminology">virtualizer</dfn>) which is a type of computer software, firmware or hardware that creates and runs virtual machines. When using a VM, the physical computer is called the <dfn class="terminology">host machine</dfn> and the virtual machine is called the <dfn class="terminology">guest machine</dfn>. Virtual machines are managed by a software component called a <dfn class="terminology">hypervisor</dfn> which makes sure that each virtual machine gets the needed resources without interfering with any real or other virtual systems.</div>
-<div class="para" id="p-388">If you are running an older version of Windows that does not support WSL2, and you are planning to set-up a development environment, then you are advised to use a VM running Ubuntu Linux. In the absence of other recommendations, <a class="external" href="https://www.virtualbox.org/" target="_blank">VirtualBox</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-123" id="fn-123"><sup> 1 </sup></a> is a very well-respected and popular open source multi-platform VM environment, so if you are running an older version of Windows, VirtualBox is a recommended VM.</div></section><section class="subsection" id="subsec_containerization"><h3 class="heading hide-type">
+<div class="para" id="p-391">A <dfn class="terminology">virtual machine (VM)</dfn> is a simulation of a physical computer that runs its own operating system and applications as if it were a completely separate physical computer. VMs rely on a <dfn class="terminology">hypervisor</dfn> (aka a <dfn class="terminology">virtualizer</dfn>) which is a type of computer software, firmware or hardware that creates and runs virtual machines. When using a VM, the physical computer is called the <dfn class="terminology">host machine</dfn> and the virtual machine is called the <dfn class="terminology">guest machine</dfn>. Virtual machines are managed by a software component called a <dfn class="terminology">hypervisor</dfn> which makes sure that each virtual machine gets the needed resources without interfering with any real or other virtual systems.</div>
+<div class="para" id="p-392">If you are running an older version of Windows that does not support WSL2, and you are planning to set-up a development environment, then you are advised to use a VM running Ubuntu Linux. In the absence of other recommendations, <a class="external" href="https://www.virtualbox.org/" target="_blank">VirtualBox</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-126" id="fn-126"><sup> 1 </sup></a> is a very well-respected and popular open source multi-platform VM environment, so if you are running an older version of Windows, VirtualBox is a recommended VM.</div></section><section class="subsection" id="subsec_containerization"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.4.3</span> <span class="title">Containerization</span>
 </h3>
-<div class="para" id="p-389">A <dfn class="terminology">container</dfn> leverages virtualization at the level of the operating system where every application is provided with its own view of the operating system. Containerization packages an application and its dependencies into a single self-contained unit called a <dfn class="terminology">container image</dfn>, which can be run on almost any host machine with the appropriate software.</div>
-<div class="para" id="p-390">Containers are lightweight and fast because they share the host machine’s operating system and do not require their own operating system to be installed like VMs do. This makes containers highly portable, as well as easier to manage and deploy.</div>
-<div class="para logical" id="p-391">
+<div class="para" id="p-393">A <dfn class="terminology">container</dfn> leverages virtualization at the level of the operating system where every application is provided with its own view of the operating system. Containerization packages an application and its dependencies into a single self-contained unit called a <dfn class="terminology">container image</dfn>, which can be run on almost any host machine with the appropriate software.</div>
+<div class="para" id="p-394">Containers are lightweight and fast because they share the host machine’s operating system and do not require their own operating system to be installed like VMs do. This makes containers highly portable, as well as easier to manage and deploy.</div>
+<div class="para logical" id="p-395">
 <div class="para">Some key concepts behind of containerization are:</div>
 <ul class="disc">
-<li id="li-105"><div class="para" id="p-392">
+<li id="li-105"><div class="para" id="p-396">
 <em class="emphasis">Standardization:</em> Containers provide a standard way to package and distribute applications, making it easier for open source projects to share and reuse code.</div></li>
-<li id="li-106"><div class="para" id="p-393">
+<li id="li-106"><div class="para" id="p-397">
 <em class="emphasis">Isolation:</em> Containers provide a way to isolate applications and their dependencies from the host operating system, which reduces the risk of software conflicts.</div></li>
-<li id="li-107"><div class="para" id="p-394">
+<li id="li-107"><div class="para" id="p-398">
 <em class="emphasis">Portability:</em> Containers are designed to be portable, which means they can be moved between different environments and different systems without modification.</div></li>
-<li id="li-108"><div class="para" id="p-395">
+<li id="li-108"><div class="para" id="p-399">
 <em class="emphasis">Reproducibility:</em> Containers make it easier to consistently recreate an environment and ensure that an application behaves the same way in development, testing, and production environments.</div></li>
 </ul>
 </div>
-<div class="para" id="p-396">If you are following a README and you are asked to do any of the following installations, then you will be installing a containerized environment: <a class="external" href="https://www.docker.com/" target="_blank">Docker</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-124" id="fn-124"><sup> 2 </sup></a>,  <a class="external" href="https://containerd.io/" target="_blank">Containerd</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-125" id="fn-125"><sup> 3 </sup></a>, <a class="external" href="https://cri-o.io/" target="_blank">CRI-O</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-126" id="fn-126"><sup> 4 </sup></a>&gt;, <a class="external" href="https://linuxcontainers.org/lxc/" target="_blank">LXC (Linux Container)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-127" id="fn-127"><sup> 5 </sup></a>&gt;, <a class="external" href="https://podman.io/" target="_blank">Podman</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-128" id="fn-128"><sup> 6 </sup></a>, <a class="external" href="" target="_blank">rkt (Rocket)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-129" id="fn-129"><sup> 7 </sup></a>. Don’t panic! The containerization should ultimately make it easier to set up the environment.</div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-123"><div class="fn"><code class="code-inline tex2jax_ignore">www.virtualbox.org/</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-124"><div class="fn"><code class="code-inline tex2jax_ignore">www.docker.com/</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-125"><div class="fn"><code class="code-inline tex2jax_ignore">containerd.io/</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-126"><div class="fn"><code class="code-inline tex2jax_ignore">cri-o.io/</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-127"><div class="fn"><code class="code-inline tex2jax_ignore">linuxcontainers.org/lxc/</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-128"><div class="fn"><code class="code-inline tex2jax_ignore">podman.io/</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-129"><div class="fn"><code class="code-inline tex2jax_ignore"></code></div></div>
+<div class="para" id="p-400">If you are following a README and you are asked to do any of the following installations, then you will be installing a containerized environment: <a class="external" href="https://www.docker.com/" target="_blank">Docker</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-127" id="fn-127"><sup> 2 </sup></a>,  <a class="external" href="https://containerd.io/" target="_blank">Containerd</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-128" id="fn-128"><sup> 3 </sup></a>, <a class="external" href="https://cri-o.io/" target="_blank">CRI-O</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-129" id="fn-129"><sup> 4 </sup></a>&gt;, <a class="external" href="https://linuxcontainers.org/lxc/" target="_blank">LXC (Linux Container)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-130" id="fn-130"><sup> 5 </sup></a>&gt;, <a class="external" href="https://podman.io/" target="_blank">Podman</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-131" id="fn-131"><sup> 6 </sup></a>, <a class="external" href="" target="_blank">rkt (Rocket)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-132" id="fn-132"><sup> 7 </sup></a>. Don’t panic! The containerization should ultimately make it easier to set up the environment.</div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-126"><div class="fn"><code class="code-inline tex2jax_ignore">www.virtualbox.org/</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-127"><div class="fn"><code class="code-inline tex2jax_ignore">www.docker.com/</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-128"><div class="fn"><code class="code-inline tex2jax_ignore">containerd.io/</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-129"><div class="fn"><code class="code-inline tex2jax_ignore">cri-o.io/</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-130"><div class="fn"><code class="code-inline tex2jax_ignore">linuxcontainers.org/lxc/</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-131"><div class="fn"><code class="code-inline tex2jax_ignore">podman.io/</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-132"><div class="fn"><code class="code-inline tex2jax_ignore"></code></div></div>
 </div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_dev_editors.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="ch_git.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

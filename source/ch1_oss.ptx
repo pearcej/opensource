@@ -2,7 +2,7 @@
 
 <!-- The @xmlns:xi attribute  -->
 <!-- is needed if you use xi:include in this file             -->
-<chapter xml:id="ch_intro_2_oss" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xml:id="ch_intro_oss" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Introduction to Open Source Software (OSS)</title>
   <introduction>
 	<p>
@@ -57,5 +57,12 @@
   <xi:include href="./sec_oss_share_code.ptx"/>
   <xi:include href="./sec_oss_contributor_mountain.ptx"/>
   <xi:include href="./sec_oss_build_portfolio.ptx"/>
+
+<conclusion>
+<title>Chapter License</title>
+	<p>
+		<url href="https://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</url>
+	</p>
+</conclusion>
 
 </chapter>

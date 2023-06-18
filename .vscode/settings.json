@@ -34,5 +34,12 @@
             "pattern": "**/source/**.ptx",
             "systemId": "C:\\Users\\pearcej\\.ptx\\schema\\pretext.rng"
         }
-    ]
+    ],
+    "cSpell.spellCheckOnlyWorkspaceFiles": true,
+    "search.exclude": {
+        "**/*.html": true,
+        "**/*.js": true,
+        "**/source/*.html": true,
+        "pretext.lua": true
+    }
 }

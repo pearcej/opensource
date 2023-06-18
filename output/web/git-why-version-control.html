@@ -85,15 +85,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.0.0dev3';
+eBookConfig.runestone_version = '6.5.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runtime.71ffd81c0faeb38b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runestone.e543e0dd19670ae2.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev3/prefix-runestone.1f1f63d2cda36a4d.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/runtime.ead78978a4e3c14b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.0/runestone.9ae535a5cdffdcb5.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.5.0/637.0fa6cababf056764.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.5.0/runestone.828206f80e9e88d8.css">
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -226,7 +226,7 @@ eBookConfig.enable_chatcodes =  false;
 <li>
 <div class="toc-item"><a href="meta_frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Open Source License</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Open Source Licensing</span></a></div></li>
 <li><div class="toc-item"><a href="dedication-1.html" class="internal"><span class="title">Dedication</span></a></div></li>
 <li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
 <li><div class="toc-item"><a href="meta_frontmatter-preface.html" class="internal"><span class="title">Preface</span></a></div></li>
@@ -234,7 +234,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="ch_intro_2_oss.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Open Source Software (OSS)</span></a></div>
+<div class="toc-item"><a href="ch_intro_oss.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Open Source Software (OSS)</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="sec_oss_what_it_is.html" class="internal"><span class="codenumber">1.1</span> <span class="title">What is Open Source Software?</span></a></div></li>
 <li>
@@ -471,48 +471,48 @@ eBookConfig.enable_chatcodes =  false;
 <section class="section" id="git-why-version-control"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.1</span> <span class="title">Why Version Control?</span>
 </h2>
-<section class="introduction" id="introduction-18"><div class="para logical" id="p-398">
+<section class="introduction" id="introduction-18"><div class="para logical" id="p-402">
 <div class="para">Have you ever experienced something like this the following scenario?</div>
 <ul class="disc">
 <li id="li-109"><div class="para" id="p-derived-li-109">You create an important document.</div></li>
-<li id="li-110"><div class="para" id="p-derived-li-110">Because its important you email it to some friends or family or colleagues for feedback on it.</div></li>
+<li id="li-110"><div class="para" id="p-derived-li-110">Because it’s important you email it to some friends or family or colleagues for feedback on it.</div></li>
 <li id="li-111"><div class="para" id="p-derived-li-111">You re-read it yourself create a new edited version.</div></li>
 <li id="li-112"><div class="para" id="p-derived-li-112">Then you get back feedback from someone you sent it to, but the feedback is on your original version.</div></li>
 <li id="li-113"><div class="para" id="p-derived-li-113">You then have to merge the two versions <em class="emphasis">by hand</em>.</div></li>
 </ul>
-</div> <div class="para" id="p-399">After doing a lot of merging of documents by hand, you might have a folder that looks like the following:</div>
+</div> <div class="para" id="p-403">After doing a lot of merging of documents by hand, you might have a folder that looks like the following:</div>
 <pre class="code-block tex2jax_ignore">mydoc.odt
 mydoc2.odt
 mydoc-moms-edits.odt
 mydoc2-plus-moms-combined.odt
 </pre>
-<div class="para" id="p-400">Or maybe you have experienced this on a larger scale... For example, three of your friends comment on different versions, and then they each share their edits with the whole group via email. Some comment on the original version, some comment on your mom’s version, others comment on your brother’s version, etc.</div> <div class="para" id="p-401">If you have experienced this, you have used version control, which according to Wikipedia <a class="external" href="https://en.wikipedia.org/wiki/Version_control" target="_blank">version control</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-130" id="fn-130"><sup> 1 </sup></a> “is the management of changes to documents, programs, and other information stored as computer files.” But, if you have experienced anything like this, then you have also have come to deeply understand the need for a better and easier way to merge in any changes that come on an earlier version. Formal software systems that are designed for version control have many advantages over the kind of informal system that we just described.</div> <div class="para" id="p-402">A <dfn class="terminology">version control system (VCS)</dfn> is a system that stores all of the versions of a project along with comments on those version that explain the reasons for the changes. A system that manages version control for software development is sometimes called a <em class="emphasis">source code management (SCM)</em> system, but we will typically use the more general term. In this chapter, you will learn the basics of version control.</div></section><section class="subsection" id="subsec_vcs_intro"><h3 class="heading hide-type">
+<div class="para" id="p-404">Or maybe you have experienced this on a larger scale... For example, three of your friends comment on different versions, and then they each share their edits with the whole group via email. Some comment on the original version, some comment on your mom’s version, others comment on your brother’s version, etc.</div> <div class="para" id="p-405">If you have experienced this, you have used version control, which according to Wikipedia <a class="external" href="https://en.wikipedia.org/wiki/Version_control" target="_blank">version control</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-133" id="fn-133"><sup> 1 </sup></a> “is the management of changes to documents, programs, and other information stored as computer files.” But, if you have experienced anything like this, then you have also have come to deeply understand the need for a better and easier way to merge in any changes that come on an earlier version. Formal software systems that are designed for version control have many advantages over the kind of informal system that we just described.</div> <div class="para" id="p-406">A <dfn class="terminology">version control system (VCS)</dfn> is a system that stores all of the versions of a project along with comments on those version that explain the reasons for the changes. A system that manages version control for software development is sometimes called a <em class="emphasis">source code management (SCM)</em> system, but we will typically use the more general term. In this chapter, you will learn the basics of version control.</div></section><section class="subsection" id="subsec_vcs_intro"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.1.1</span> <span class="title">Version Control Systems</span>
 </h3>
-<div class="para" id="p-403">The OSS world has developed many excellent ways of managing a software project, including not only a history of changes, but also who did what when and why.</div>
-<div class="para" id="p-404">You may want to start your own project someday, and you will have to choose an VCS. When you work with existing projects, the VCS has been chosen for you. The following five VCSs have been popular over the past few decades:</div>
-<div class="para logical" id="p-405"><ul class="disc">
+<div class="para" id="p-407">The OSS world has developed many excellent ways of managing a software project, including not only a history of changes, but also who did what when and why.</div>
+<div class="para" id="p-408">You may want to start your own project someday, and you will have to choose an VCS. When you work with existing projects, the VCS has been chosen for you. The following five VCSs have been popular over the past few decades:</div>
+<div class="para logical" id="p-409"><ul class="disc">
 <li id="li-114"><div class="para" id="p-derived-li-114">
-<a class="external" href="http://subversion.apache.org" target="_blank">Subversion (svn)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-131" id="fn-131"><sup> 2 </sup></a>
+<a class="external" href="http://subversion.apache.org" target="_blank">Subversion (svn)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-134" id="fn-134"><sup> 2 </sup></a>
 </div></li>
 <li id="li-115"><div class="para" id="p-derived-li-115">
-<a class="external" href="http://bazaar.canonical.com/en/" target="_blank">Bazaar (bzr)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-132" id="fn-132"><sup> 3 </sup></a>
+<a class="external" href="http://bazaar.canonical.com/en/" target="_blank">Bazaar (bzr)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-135" id="fn-135"><sup> 3 </sup></a>
 </div></li>
 <li id="li-116"><div class="para" id="p-derived-li-116">
-<a class="external" href="http://www.nongnu.org/cvs/" target="_blank">Concurrent Version System (cvs)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-133" id="fn-133"><sup> 4 </sup></a>
+<a class="external" href="http://www.nongnu.org/cvs/" target="_blank">Concurrent Version System (cvs)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-136" id="fn-136"><sup> 4 </sup></a>
 </div></li>
 <li id="li-117"><div class="para" id="p-derived-li-117">
-<a class="external" href="https://git-scm.com" target="_blank">Git (git)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-134" id="fn-134"><sup> 5 </sup></a>
+<a class="external" href="https://git-scm.com" target="_blank">Git (git)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-137" id="fn-137"><sup> 5 </sup></a>
 </div></li>
 <li id="li-118"><div class="para" id="p-derived-li-118">
-<a class="external" href="https://www.mercurial-scm.org/" target="_blank">Mercurial (hg)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-135" id="fn-135"><sup> 6 </sup></a>
+<a class="external" href="https://www.mercurial-scm.org/" target="_blank">Mercurial (hg)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-138" id="fn-138"><sup> 6 </sup></a>
 </div></li>
-</ul></div></section><section class="conclusion" id="conclusion-6"><div class="para" id="p-406">What has happened in the recent decade in version control systems has been truly remarkable because Git has come to completely dominate not just the open source world, but also much of the rest of the proprietary software community as well.</div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-130"><div class="fn"><code class="code-inline tex2jax_ignore">https://en.wikipedia.org/wiki/Version_control</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-131"><div class="fn"><code class="code-inline tex2jax_ignore">subversion.apache.org</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-132"><div class="fn"><code class="code-inline tex2jax_ignore">bazaar.canonical.com/en</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-133"><div class="fn"><code class="code-inline tex2jax_ignore">www.nongnu.org/cvs</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-134"><div class="fn"><code class="code-inline tex2jax_ignore">git-scm.com</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-135"><div class="fn"><code class="code-inline tex2jax_ignore">www.mercurial-scm.org/</code></div></div>
+</ul></div></section><section class="conclusion" id="conclusion-8"><div class="para" id="p-410">What has happened in the recent decade in version control systems has been truly remarkable because Git has come to completely dominate not just the open source world, but also much of the rest of the proprietary software community as well.</div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-133"><div class="fn"><code class="code-inline tex2jax_ignore">https://en.wikipedia.org/wiki/Version_control</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-134"><div class="fn"><code class="code-inline tex2jax_ignore">subversion.apache.org</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-135"><div class="fn"><code class="code-inline tex2jax_ignore">bazaar.canonical.com/en</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-136"><div class="fn"><code class="code-inline tex2jax_ignore">www.nongnu.org/cvs</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-137"><div class="fn"><code class="code-inline tex2jax_ignore">git-scm.com</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-138"><div class="fn"><code class="code-inline tex2jax_ignore">www.mercurial-scm.org/</code></div></div>
 </div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch_git.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_git_getting_started.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

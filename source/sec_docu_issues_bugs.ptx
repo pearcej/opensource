@@ -96,7 +96,7 @@
 					</li>
 
 					<li>
-					<em>Comments,</em> which allow other users or developers to add information to the bug. For example, a user might say “it burns my toast too!” Or, a developer might respond “the docs for the XZ-38 specify that it’s for creating Blackened Toast”. For a complex bug, there can be literally hundreds of comments attached to the bug report.
+					<em>Comments,</em> which allow other users or developers to add information to the bug. For example, a user might say “it burns my toast too!” Or, a developer might respond “the docs for the XZ-38 specify that it’s for creating blackened toast”. For a complex bug, there can be literally hundreds of comments attached to the bug report.
 					</li>
 
 					<li>
