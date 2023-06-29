@@ -40,6 +40,7 @@
     </p>
 
     <p>
+      <idx>version control system (VCS)</idx>
       A <term>version control system (VCS)</term> is a system that stores all of the versions of a project along with comments on those version that explain the reasons for the changes. 
       A system that manages version control for software development is sometimes called a <em>source code management (SCM)</em> system, but we will typically use the more general term. In this chapter, you will learn the basics of version control.
     </p>
