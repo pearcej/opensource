@@ -19,6 +19,7 @@
   
 		<subsection xml:id="user">
     <title><term>User</term></title>
+	<idx>user</idx>
 
 
 					<p>
@@ -26,6 +27,7 @@
 					</p>
 
 					<p>
+						<idx>inkscape</idx>
 						Alice is a budding artist, and she likes to share her work with friends online. She’s a big fan of anime. One of her friends suggests that she might be interested in a program called <term>Inkscape</term>, a cool illustration program.
 					</p>
 
@@ -45,6 +47,7 @@
 
 				<subsection xml:id="seeker">
 					<title><term>Seeker</term></title>
+					<idx>seeker</idx>
 
 					<p>
 						The Internet has changed the way we ask questions. Billions of people can now go to a web page, ask almost any imaginable question, and get some kind of response — maybe right, maybe dramatically wrong, but some kind of response. It is this experience that is, in no small part, why the word “google” is now a verb. Alice, without realizing it, will quickly move from a “User” of Inkscape to a “Seeker” of information.
@@ -103,6 +106,7 @@
 
 				<subsection xml:id="contributor">
 					<title><term>Contributor</term></title>
+					<idx>Contributor</idx>
 
 					<p>
 						The line between collaborator and contributor can be a blurry line, and there are many ways to define contribution, but here’s one good way of thinking about it: a contributor is a person that a FOSS community actively relies upon for help.
