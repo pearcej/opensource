@@ -46,7 +46,7 @@ main() {
 		<pre>gcc -o hello hello.c</pre>
 
 		<p>
-			<idx>gcc</idx>
+			<idx>gcc </idx>
 			The compilation command is gcc, which stands for “GNU Compiler Collection.” The flag -o sets the name of the program that we are about to generate; here, we’ve decided to call it hello. The last argument is the name of the source file that we want to compile (hello.c). After compiling the program, you should be able to run it. To run the program, type the following at the prompt:
 		</p>
 
