@@ -106,7 +106,7 @@
 
 				<subsection xml:id="contributor">
 					<title><term>Contributor</term></title>
-					<idx>Contributor</idx>
+					<idx>contributor</idx>
 
 					<p>
 						The line between collaborator and contributor can be a blurry line, and there are many ways to define contribution, but here’s one good way of thinking about it: a contributor is a person that a FOSS community actively relies upon for help.
