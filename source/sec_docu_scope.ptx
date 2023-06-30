@@ -59,6 +59,7 @@
 
 	<subsection xml:id="subsec-docu_purpose">
 		<title>The Purpose of Documentation</title>
+		<idx>The Purpose of Documentation</idx>
 		<p>
 			What do you think of when you think of documentation in OSS? Do you think of the README
 			or LICENSE or CODE_OF_CONDUCT or other files often found in the root of the main code
@@ -89,6 +90,7 @@
 				<li>
 					<title> CHANGELOG</title>
 					<p>
+						<idx>CHANGELOG</idx>
 						Documenting changes to the project over time, the CHANGELOG usually includes a list of all releases and a summary of the changes that were made in each one.
 					</p>
 				</li>
@@ -110,6 +112,7 @@
 					<title>FAQ</title>
 
 					<p>
+						<idx>FAQ</idx>
 						As is typical outside of OSS, FAQ provides answers to frequently asked questions about the project.
 					</p>
 				</li>
