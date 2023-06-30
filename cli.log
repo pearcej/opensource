@@ -9,3 +9,5 @@ INFO    :     http://localhost:8000
 INFO    : This page should open in a new tab automatically.
 INFO    : Use [Ctrl]+[C] to halt the server.
 
+INFO    : 
+Closing server...
