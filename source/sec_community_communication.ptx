@@ -21,6 +21,7 @@
     <subsection xml:id="subsec-secp">
         <title>Software Engineering Collaboration Platforms (SECP)</title>
         <p>
+          <idx>Software Engineering Collaboration Platforms (SECP)</idx>
           Virtually every open source community uses a 
             <term>Software Engineering Collaboration Platform (SECP)</term> such as 
             <url href="https://github.com/" visual="github.com/">GitHub</url>, 
@@ -31,6 +32,7 @@
                 <li>
                     <title>Repositories</title>
                     <p>
+                      <idx>repository / repo </idx>
           It goes without saying that an OSS needs to store the code base in a way that it can be accessed by the community of current and potential contributors. A 
                         <term>repository</term>, aka 
                         <term>repo</term>, is a file storage location used by a version control system to keep track of not only versions of the code base itself but also to keep track of project documentation, discussions, web pages, and more. Repos are nearly always hosted in a SECP, although they are also sometimes self-hosted by the project.
@@ -40,6 +42,7 @@
                 <li>
                     <title>Issue Trackers</title>
                     <p>
+                      <idx>Issue trackers</idx>
                       <term>Issue trackers</term> are designed to record, track, and resolve bugs, feature requests, questions, etc.
                       After an issue is posted, discussions on the issue typically occur and are sometimes prolonged. These discussions are most conveniently attached to the issue itself to facilitate the tracking of the discussion, which is particularly important in larger projects. When an issue is posted, it can be discussed by the community to decide on how to proceed with it. The issue can be categorized and linked to other discussions, projects, and engineering work as well. You are definitely advised to read all unresolved issues before posting so you are not duplicating another existing issue. 
                     </p>
@@ -103,6 +106,7 @@
                 <li>
                     <title>Merge Requests</title>
                     <p>
+                      <idx>merge request / pull request</idx>
           Software developers use the term 
                         <term>merge request</term> or 
                         <term>pull request (PR)</term> to describe a request to initiate the process of requesting an integration of specific code changes into the project repository. Best practice before making a merge request is to have initiated an earlier discussion using one of the forms of communication favored by the project. After this discussion, a (potential) contributor opens a merge request, which may then undergo several iterations of automatic checks, manual code reviews by one or more other contributor, as well as further discussion.
@@ -115,6 +119,7 @@
                 <li>
                     <title>Project Boards</title>
                     <p>
+                      <idx>project board</idx>
           A 
                         <term>project board</term> facilitates organization of project tasks. Project boards typically utilize a visual tool similar to the 
                         <url href="https://en.wikipedia.org/wiki/Kanban" visual="en.wikipedia.org/wiki/Kanban">Kanban</url> scheduling system used in lean manufacturing. SECPs provide such boards, and many projects use the ones provided in their SECP. However, some projects use an external tool like 
@@ -146,6 +151,7 @@
             <li>
                 <title>Collaborative Instant Messaging Platforms</title>
                 <p> 
+                  <idx>collaborative instant messaging platforms</idx>
                   In recent times, <term>collaborative instant messaging platforms</term> like 
                     <url href="https://discord.com/" visual="discord.com">Discord</url>, 
                     <url href="https://matrix.org/" visual="matrix.org">Matrix</url>, 
@@ -159,6 +165,7 @@
  <li>
                 <title>Wikis</title>
                 <p>
+                  <idx>Wikis</idx>
                   Although <term>wikis</term> can be created within many of the SECPs, the concept of a wiki is widely used and understood outside of SECPs as well, largely due to the wide popularity of 
                     <url href="https://www.wikipedia.org/" visual="wikipedia.org">Wikipedia</url>  and 
                     <url href="https://www.wikimedia.org/" visual="wikimedia.org">WikiMedia</url>. Simply stated, a wiki is a website where the pages are a user-editable, easy-to-use, asynchronous way of putting semi-permanent content on the web, so they are useful for documentation, timelines, status reports, meeting minutes, and conversation logs. A wiki provides easy version control, a database backend, simplified markup, and a fast edit-and-post cycle. Having said this, the use of wikis for OSS projects have fallen largely out of favor in place of having markdown files in the code repository since markdown allows using the same tools such as merge requests, which has the additional benefit that changes to the documentation can be part of the merge request that introduces the relevant change.
@@ -178,8 +185,11 @@
                 </p>
             </li>
             <li>
+              
                 <title>IRC</title>
-                <p>IRC stands for Internet Relay Chat. IRC is one of the older means of synchronous communication between people working on a OSS project, and although in the past it was one of the primary OSS communication tools, many projects have abandoned IRC for collaborative instant messaging platforms and other newer communication tools. It's a text-based federated chat system where clients connect to the servers of one or more networks, and the servers relay messages between themselves within each network (hence the name). Communication is done in channels which individual users join, and users are identified by nicks (nicknames). In addition to human users, like collaborative instant messaging platforms, various services and bots are present in many channels. However, it is very lightweight because the focus is solely on the textual content, which means it can work right from your command line. However, there is no formatting, not even new lines, no emojis, no voice or video chat, and unlike most more modern chat technologies where recordings can be automated, messages aren't easily stored, so it is designed to work only for synchronous communication.
+                <p>
+                  
+                  <term>IRC</term> stands for Internet Relay Chat. <idx>IRC</idx> is one of the older means of synchronous communication between people working on a OSS project, and although in the past it was one of the primary OSS communication tools, many projects have abandoned IRC for collaborative instant messaging platforms and other newer communication tools. It's a text-based federated chat system where clients connect to the servers of one or more networks, and the servers relay messages between themselves within each network (hence the name). Communication is done in channels which individual users join, and users are identified by nicks (nicknames). In addition to human users, like collaborative instant messaging platforms, various services and bots are present in many channels. However, it is very lightweight because the focus is solely on the textual content, which means it can work right from your command line. However, there is no formatting, not even new lines, no emojis, no voice or video chat, and unlike most more modern chat technologies where recordings can be automated, messages aren't easily stored, so it is designed to work only for synchronous communication.
  </p>
                 <!-- <p>To use IRC, you&#821actually7;ll need an IRC client; Wikipedia maintains an excellent list of options. We recommend installing a few on your system and trying them out to see which one you prefer. You&#8217;ll need to select a nickname (nick or handle) &#8212; choose wisely, because you&#8217;ll want to keep your nick for the long run. It&#8217;s strongly recommended that you register your nick so that other people cannot masquerade as you.</p><p>There are a handful of IRC networks used in open source, including ones operated by large projects (such as irc.mozilla.org) and ones which are operated by organizations and shared by many different communities (such as irc.freenode.net and irc.oftc.net). These are open channels and may be logged by one or more entities. Consider anything you say in IRC to be as public as if you said it on a busy street corner, with a megaphone, and seven people videotaping everything.</p><p>Most IRC clients let you perform operations using menus/hotkeys or by typing commands. Commands start with a slash (&#8220;/&#8221;) to distinguish them from text that you are typing into the chat session. Since the commands are the same in all IRC clients, it&#8217;s worthwhile becoming familiar with them &#8212; here are some of the basics:</p><ul><li>/connect server &#8211; connect to the named IRC server.</li><li>/list &#8211; lists available channels. Channel names start with &#8220;#&#8221; (official channels) or &#8220;##&#8221; (unofficial channels).</li><li>/join channel &#8211; join the listed channel on the server to which you are connected.</li><li>/me action &#8211; reports your nick as performing an action.</li><li>/leave reason &#8211; leave the current channel, citing the reason given (optional).</li><li>/quit reason &#8211; leave the server, citing the reason given (optional).</li></ul><p>Any text you type that does not begin with a slash is taken to be text, and is entered into the conversation.</p><p>It is normal to join a channel and say nothing. In fact, it is expected: don&#8217;t join a channel and say &#8220;hi&#8221; or leave and say &#8220;bye&#8221; &#8212; you may be interrupting a conversation already underway. Feel free to join as many channels as you like, once you&#8217;re comfortable with IRC.</p><p>It is fine to join a channel and sit there idle for a long time, lurking. You might never say anything; this is a good way for you to learn about who is in the channel, what they are talking about, etc. Listening is often more important than talking, because you learn more.</p><p>If you have a question you should just ask it rather than saying, &#8220;Can I ask a question about &#8230;&#8221; or &#8220;Does anyone know about &#8230;&#8221;. You don&#8217;t need to direct general questions to a specific person. Rather, you should ask in the channel in general, and someone usually answers you:</p><pre>
       don: How do I ask a question?
@@ -203,6 +213,7 @@
             <li>
                 <title>Mailing Lists and Forums</title>
                 <p>
+                  <idx>Mailing Lists and Forums</idx>
                   You likely know that an electronic mailing list is a collection of names and email addresses used to send material to multiple recipients typically given a single email address for the list. Open source communities that use email lists tend to use discussion lists (which allow for replies) rather than announcement lists (which are one way) to engage their communities. An example of an open source project that leverages email lists heavily for discussions is 
                   <url href="https://www.debian.org/MailingLists/" visual="www.debian.org/MailingLists">Debian</url>. Note that all emails sent to the Debian lists are distributed both to the list subscribers as well as copied to the public archive, so people to browse or search without the need to be subscribed.
                 </p>
