@@ -1,0 +1,29 @@
+name: "PreTeXt"
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: "Compile"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout repository"
+        uses: actions/checkout@v3
+
+      - name: "Setup Python"
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: "Install PreTeXt"
+        run: pip install -r requirements.txt
+
+      - name: "Compile book"
+        run: pretext build web
