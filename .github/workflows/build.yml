@@ -41,3 +41,22 @@ jobs:
         if: github.ref == 'refs/heads/main'
         with:
           path: "output/web/"
+
+  deploy:
+    name: "Publish"
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: $
+
+    steps:
+      - name: "Deploy to GitHub Pages"
+        id: deployment
+        uses: actions/deploy-pages@v2
