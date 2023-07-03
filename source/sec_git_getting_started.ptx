@@ -300,7 +300,7 @@
 				<p><ul>
 					<li>
 									<p>
-										<idx>modified</idx>
+								<idx>modified</idx>
 					<term>Modified</term> means that you have changed the file but have not committed it to your repository yet.
 				</p>
 					</li>
