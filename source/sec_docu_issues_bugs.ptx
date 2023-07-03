@@ -17,12 +17,15 @@
 		In any given OSS project, you might encounter terms like, issue, bug, defect, etc. In the broader context of OSS, these terms are often used interchangeably, but they can have slightly different connotations depending on the specific project and its development practices. 
 </p>
 <p>
+	<idx>issue</idx>
 	An <term>issue</term> typically refers to any problem, request, or task that is tracked and managed within the project's issue tracking system. While issues can include bugs and defects, they are not limited to technical problems alone. Issues can encompass a wide range of things, including feature requests, bug reports, documentation improvements, or even general discussions about the project. They serve as a centralized way for contributors and maintainers to communicate and collaborate on various aspects of the project. 
 </p>
 <p>
+	<idx>bug</idx>
 	A <term>bug</term> is when software produces problematic results. Bugs cause unintended behaviors that deviate from the expected or specified functionality. Bugs can arise due to programming mistakes, logical errors, compatibility issues, or unexpected interactions between different components of the software. In open source projects, bug reports are often filed as issues, and developers work to identify, reproduce, and fix them.
 		</p>
 	<p>
+		<idx>defect</idx>
 	Some projects also differentiate <term>defect</term>, from bug. A defect refers to a flaw or problem in software that leads to undesired behavior. However, the term defect is sometimes used in a broader sense to encompass not only software errors but also issues related to design, architecture, documentation, or other aspects of the software development process. Defects can be thought of as any deviation from the expected quality standards or requirements of the project. They can include functional or non-functional issues that impact the overall performance, usability, security, or reliability of the software.
 	</p>
 	
@@ -340,6 +343,7 @@ and the application crashes with the following error message in
         Bug triage is needed!
       </p>
 			<p>
+				<idx>triage</idx>
 				The title <em>triage</em> is borrowed from the medical profession, in which patients are stabilized and prioritized based on the severity of their condition. In the same way that patients are prioritized, bugs can be prioritized. Bug triage saves critical time for developers, and moves the project forward. It’s one of the most useful and instructive activities in which a newbie can engage.
 			</p>
 

@@ -89,6 +89,7 @@
 				<li>
 					<title> CHANGELOG</title>
 					<p>
+						<idx>changelog</idx>
 						Documenting changes to the project over time, the CHANGELOG usually includes a list of all releases and a summary of the changes that were made in each one.
 					</p>
 				</li>
@@ -102,6 +103,7 @@
 				<li>
 					<title>CONTRIBUTING</title>
 					<p>
+						<idx>contributing</idx>
 						If you are at all interested in getting involved in a new OSS project, the CONTRIBUTING file is key because it provides guidelines for contributors, including
 						how to report bugs, how to submit proposed code changes, and how to get help.
 					</p>
@@ -110,6 +112,7 @@
 					<title>FAQ</title>
 
 					<p>
+						<idx>FAQ</idx>
 						As is typical outside of OSS, FAQ provides answers to frequently asked questions about the project.
 					</p>
 				</li>
@@ -117,6 +120,7 @@
 				<li>
 					<title>INSTALL</title>
 					<p>
+						<idx>install</idx>
 						Containing instructions on how to install and set up the project, note that the INSTALL files is often not the same as how to set up the development environment to contribute to the project.
 					</p>
 				</li>
@@ -128,12 +132,14 @@
 				<li>
 					<title>TUTORIALS</title>
 					<p>
+						<idx>tutorials</idx>
 						The TUTORIALS file contains or links to tutorials or guides that help users understand how to use the project.
 					</p>
 				</li>
 				<li>
 					<title>ROADMAP</title>
 					<p>
+						<idx>roadmap</idx>
 						Outlining the project's plans for future releases, the ROADMAP is useful to new contributors to understand the direction of the project. 
 					</p>
 				</li>
@@ -145,6 +151,7 @@
 			<li>
 				<title>Automation of Builds and Publishing</title>
 				<p>
+		
 					While not used in all projects, larger OSS projects typically use CI/CD (continuous integration, delivery, and deployment) tools and processes in order to provide ongoing automation and continuous monitoring throughout the software lifecycle, from integration and testing phases to delivery and deployment. 
 				</p>
 			</li>
@@ -189,6 +196,7 @@
 				<li>
 					<title>Design documents</title>
 					<p>
+						<idx>design documents</idx>
 						Design documents provide detailed information on the design and architecture
 			of the project. They often include diagrams, flowcharts, and other visual aids to help
 			developers understand the project's structure.
@@ -197,6 +205,7 @@
 				<li>
 					<title>Developer documentation</title>
 					<p>
+						<idx>developer documentation</idx>
 						Developer documentation provides information that is useful to developers
 			working on the project. They often include coding conventions, APIs, and other technical information.
 					</p>
@@ -205,6 +214,7 @@
 					<title>Feature specifications</title>
 
 					<p>
+						<idx>feature specifications</idx>
 						Similar in purpose to a ROADMAP file, feature specification documents provide detailed descriptions of the
 						features that the project is expecting to implement. They often include use cases,
 						functional requirements, and technical specifications.
@@ -214,12 +224,14 @@
 					<title>Help documents</title>
 
 					<p>
+						<idx>help documents</idx>
 						Help documents provide information on how to get help if you are having problems with the project. They often include contact information for the project's support team, as well as troubleshooting tips and frequently asked questions.
 					</p>
 				</li>
 				<li>
 					<title>Release notes</title>
 					<p>
+						<idx>release notes</idx>
 						Release notes provide information on the changes made in a particular
 						release of the project. They often include a list of bug fixes, new features, and other
 						changes.
@@ -230,12 +242,14 @@
 					<title>Test plans</title>
 
 					<p>
+						<idx>test plans</idx>
 						 Describing the test cases that are used to test the project's functionality, test plans often include test scenarios, expected results, and test data.
 					</p>
 				</li>
 				<li>
 					<title>User manuals</title>
 					<p>
+						<idx>user manuals</idx>
 						Providing instructions on how to use the project, user manuals  often include step-by-step instructions, screenshots, and troubleshooting tips.
 					</p>
 				</li>
