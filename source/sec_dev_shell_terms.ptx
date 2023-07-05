@@ -73,7 +73,7 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
   <title>Accessing a Terminal Window on your Machine</title>
 
     <p>
-      Regardless of whether you are using macOS, Linux, or Windows, you are able to set up a development environment, open a terminal, and access a shell. Some good news is that all of these OSs offer shells that are largely compatible. This is useful for a variety of reasons,including being able to find find a useful answer when searching on how to accomplish various tasks on the Internet.
+      Regardless of whether you are using macOS, Linux, or Windows, you are able to set up a development environment, open a terminal, and access a shell. Some good news is that all of these OSs offer shells that are largely compatible. This is useful for a variety of reasons, including being able to find a useful answer when searching on how to accomplish various tasks on the Internet.
 
     <ul>
     <li><title>On a Mac</title>
