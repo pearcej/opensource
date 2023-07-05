@@ -42,7 +42,7 @@
                 <li>
                     <title>Issue Trackers</title>
                     <p>
-                      <idx>Issue trackers</idx>
+                      <idx>issue trackers</idx>
                       <term>Issue trackers</term> are designed to record, track, and resolve bugs, feature requests, questions, etc.
                       After an issue is posted, discussions on the issue typically occur and are sometimes prolonged. These discussions are most conveniently attached to the issue itself to facilitate the tracking of the discussion, which is particularly important in larger projects. When an issue is posted, it can be discussed by the community to decide on how to proceed with it. The issue can be categorized and linked to other discussions, projects, and engineering work as well. You are definitely advised to read all unresolved issues before posting so you are not duplicating another existing issue. 
                     </p>
