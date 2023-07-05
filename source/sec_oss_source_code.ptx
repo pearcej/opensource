@@ -11,6 +11,7 @@
   <subsection xml:id="subsec_source_code">
     <title>What is Source Sode</title>
 			<p>
+				<idx>source code</idx>
 				Source code is a set of instructions for computers that is meant to be read and written by humans.
 			</p>
 
@@ -38,12 +39,14 @@ main() {
 }</pre> -->
 
 		<p>
+			<idx>compiler</idx>
 			In order to run this program, it must be <term>compiled</term> into machine code using a program called a compiler. First, we save the program into a file called hello.c. Then, we compile it:
 		</p>
 
 		<pre>gcc -o hello hello.c</pre>
 
 		<p>
+			<idx>gcc</idx>
 			The compilation command is gcc, which stands for “GNU Compiler Collection.” The flag -o sets the name of the program that we are about to generate; here, we’ve decided to call it hello. The last argument is the name of the source file that we want to compile (hello.c). After compiling the program, you should be able to run it. To run the program, type the following at the prompt:
 		</p>
 
@@ -113,6 +116,8 @@ main() {
 	<subsection xml:id="subsec_decompilation">
 		<title>On Decompilation</title>
 		<p>
+			<idx>decompiling</idx>
+			<idx>compilation</idx>
 			Compilation transforms a high-level language into a low-level language like machine code or byte code. Decompilation is the reverse. The process of reverse engineering a program from its binary code to source code is called <term>decompiling</term>, and the level of difficulty of decompiling a program differs rather significantly by the programming language of the source code. C code is notoriously difficult to decompile, while Java is much easier, partly because of far fewer compiler optimizations and partly because the intact metadata including such details as data types and method names. 
 		</p>
 
