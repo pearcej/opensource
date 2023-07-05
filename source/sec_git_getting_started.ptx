@@ -372,6 +372,7 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
+					
 					<idx>git directory</idx>
 					The <term>Git directory</term> is where all the committed snapshots of the project are stored along with the associated metadata, such as commit messages and author information.  This is the most important part of Git. Along with the files and file directory, the Git directory is copied when you <em>clone</em> a repository from another computer.
 				</p><!--</div attr= class="paragraph">-->
