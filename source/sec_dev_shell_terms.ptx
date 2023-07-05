@@ -78,7 +78,7 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
     <ul>
     <li><title>On a Mac</title>
       <p>
-        If you are on a Mac, you have a couple of good options. With any Mac, the built-in <em>Terminal</em> program allows you to access a shell.  If you are looking for a more customizable and feature-rich terminal program, then you might want to consider <url href="https://iterm2.com/downloads.html" visual="iterm2.com/downloads.html">iTerm2</url>. Opening the Terminal on a Mac works like opening any other program: you can find it in the Applications folder, you can search for it, you can use the Launchpad, or you can use it's shortcut which is command(⌘)+T.
+        If you are on a Mac, you have a couple of good options. With any Mac, the built-in <em>Terminal</em> program allows you to access a shell.  If you are looking for a more customizable and feature-rich terminal program, then you might want to consider <url href="https://iterm2.com/downloads.html" visual="iterm2.com/downloads.html">iTerm2</url>. Opening the Terminal on a Mac works like opening any other program: you can find it in the Applications folder, you can search for it, you can use the Launchpad, or you can use its shortcut which is command(⌘)+T.
       </p>
     </li>
     <li><title>On a Linux machine</title>
