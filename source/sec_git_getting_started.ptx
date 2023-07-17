@@ -200,6 +200,7 @@
 				</figure>
 
 				<p>
+					<idx>stream of snapshots</idx>
 					Git doesn’t think of or store its data this way. Instead, Git thinks of its data more like a series of snapshots of a miniature filesystem. With Git, every time you commit, or save the state of your project, Git basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored. Git thinks about its data more like a <term>stream of snapshots</term>.
 				</p><!--</div attr= class="paragraph">-->
 
@@ -253,6 +254,7 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
+					<idx>SHA-1 hash</idx>
 					The mechanism that Git uses for creating this unique digital fingerprint of the data is called a <term>SHA-1 hash</term>. This is a 40-character string composed of hexadecimal characters (0–9 and a–f) and calculated based on the contents of a file or directory structure in Git. A SHA-1 hash looks something like this:
 				</p><!--</div attr= class="paragraph">-->
 
@@ -298,18 +300,21 @@
 				<p><ul>
 					<li>
 									<p>
+								<idx>modified</idx>
 					<term>Modified</term> means that you have changed the file but have not committed it to your repository yet.
 				</p>
 					</li>
 
 					<li>
 									<p>
+										<idx>staged</idx>
 					<term>Staged</term> means that you have marked a modified file in its current version to go into your next commit snapshot.
 				</p>
 					</li>
 
 					<li>
 									<p>
+										<idx>committed</idx>
 					<term>Committed</term> means that the data is safely stored in your local repository.
 				</p>
 					</li>
@@ -349,6 +354,7 @@
 				</figure>
 
 				<p>
+					<idx>git working tree</idx>
 					The <term>Git working tree</term> refers to the set of files and directories that are currently being worked on in a local repository, but it is more than just the set of files and directories. It is also a service that continuously monitors the resource status of the files and the file system in that local repository. For example, the Git working tree logs when a new file is added or deleted or modified. 
 				</p><!--</div attr= class="paragraph">-->
 				<p>
@@ -356,6 +362,8 @@
 				</p>
 <!-- div attr= class="paragraph"-->
 				<p>
+					<idx>git index</idx>
+					<idx>git staging area</idx>
 					The <term>Git staging area </term>, also known as the <term>Git index</term>, is a file where the changes to files that have been staged are stored and stand ready to be committed.
 				</p><!--</div attr= class="paragraph">-->
 				<p>
@@ -364,6 +372,8 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
+					
+					<idx>git directory</idx>
 					The <term>Git directory</term> is where all the committed snapshots of the project are stored along with the associated metadata, such as commit messages and author information.  This is the most important part of Git. Along with the files and file directory, the Git directory is copied when you <em>clone</em> a repository from another computer.
 				</p><!--</div attr= class="paragraph">-->
 
