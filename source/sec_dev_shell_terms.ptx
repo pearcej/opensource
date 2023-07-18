@@ -107,8 +107,7 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
         </li>
     <li><title>Installing Linux in a Virtual Machine (VM) Environment</title>
         <p>
-          If you have sufficient RAM and secondary storage available, then you might consider installing Linux in a VM. This may be a particularly good choice if you are on an older Windows machine and want to develop off-line. 
-         such as <url href="https://www.virtualbox.org/" visual="virtualbox.org/">Virtual Box</url> and installing and running Ubuntu in the VM. 
+          If you have sufficient RAM and secondary storage available, then you might consider installing Linux in a VM. This may be a particularly good choice if you are on an older Windows machine and want to develop off-line, then you might consider software such as <url href="https://www.virtualbox.org/" visual="virtualbox.org/">Virtual Box</url> and installing and running Ubuntu in the VM. 
       </p>
     </li>
     <li>
