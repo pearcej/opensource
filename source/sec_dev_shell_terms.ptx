@@ -36,7 +36,7 @@
   <li>
   <title>What is a <term>shell</term>?</title>
       <p>
-  A <term>shell</term> is a program which parses and interprets the commands you enter in the terminal and then executes them, often using functionality provided directly by the operating system. In other words, a shell is a CLI which serves as the interface between the end-user and the operating system. It is called a shell because it is a user interface layer directly surrounding the <term>kernel</term>, which is the innermost part of the operating system
+  A <term>shell</term> is a program which parses and interprets the commands you enter in the terminal and then executes them, often using functionality provided directly by the operating system. In other words, a shell is a CLI which serves as the interface between the end-user and the operating system. It is called a shell because it is a user interface layer directly surrounding the <term>kernel</term>, which is the innermost part of the operating system.
     </p>
   </li>
 </ul>
