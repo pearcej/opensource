@@ -811,6 +811,7 @@ gblock">--><!--</div attr= class="sect4">-->
 
 <!-- div attr= class="paragraph"-->
 				<p>
+					<idx>README</idx>
 					The <c>README</c> file explains your project, what it does, why it is useful, etc.
 					If GitHub detects a README file in your source, it will render it on the landing page of the project,
 					so this file is often the first item a visitor will see when visiting your repository.
@@ -866,6 +867,7 @@ gblock">--><!--</div attr= class="sect4">-->
 			<paragraphs xml:id="_code_of_conduct">
 				<title>CODE_OF_CONDUCT</title>
 				<p>
+					<idx>code of conduct</idx>
 					The CODE_OF_CONDUCT explains how one is expected to engage in that particular community. It is typically used to ensure an inclusive environment that respects all people and also typically describes how to address any problems among members of the project's community.
 				</p>
 			</paragraphs>
