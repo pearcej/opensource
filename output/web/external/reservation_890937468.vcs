@@ -1,9 +1,0 @@
-BEGIN:VCALENDAR
-VERSION:1.0
-BEGIN:VEVENT
-SUMMARY;ENCODING=QUOTED-PRINTABLE:Enterprise CarShare - Reservation
-DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Reservation Confirmation=0D=0AEnterprise CarShare - Reservation=0D=0APlease note the following details as of  9:53am Wednesday, September 14, 2022:=0D=0AVehicle:Ford 15-Passenger Van (License Plate: BWP050) at Berea College - Motor Pool Parking Lot=0D=0AStart: 9:00am Friday, October 28, 2022=0D=0AEnd: 4:00pm Saturday, October 29, 2022=0D=0ATotal Time:31 hour(s)=0D=0AMemo:TRIWiC=0D=0AReservation ID:3508015=0D=0AMessages=0D=0A+ Member Responsibilities=0D=0APlease review our terms &amp; conditions and member policies for helpful tips and simple guidelines that make for a better car sharing experience, for you and your fellow members!=0D=0A=0D=0A=0D=0AFor problems and/or emergencies with your reservations, please call  877-599-3227.=0D=0A
-DTSTART:20221028T130000Z
-DTEND:20221029T200000Z
-END:VEVENT
-END:VCALENDAR
