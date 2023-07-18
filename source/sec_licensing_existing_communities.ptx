@@ -13,11 +13,11 @@
       Some open source communities have strong preferences for particular licenses. If you want to participate in one of these communities, it will be easier to use their preferred license, even if you’re starting a brand new project with no existing dependencies. Some examples of such communities include:
     <ul>
 			<li>
-			<url href="https://www.apache.org/licenses/" visual="www.apache.org/licenses">Apache</url> requires <url href="https://www.apache.org/licenses/LICENSE-2.0" visual="/licenses/apache-2.0">Apache License 2.0</url>
+			<url href="https://www.apache.org/licenses/" visual="www.apache.org/licenses">Apache</url> requires <url href="https://www.apache.org/licenses/LICENSE-2.0" visual="www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</url>
 			</li>
 
 			<li>
-			<url href="https://github.com/cncf/foundation/blob/main/charter.md#11-ip-policy" visual="https://github.com/cncf/foundation/blob/main/charter.md#11-ip-policy">Cloud Native Computing Foundation</url> requires <url href="https://www.apache.org/licenses/LICENSE-2.0" visual="/licenses/apache-2.0">Apache License 2.0</url>.
+			<url href="https://github.com/cncf/foundation/blob/main/charter.md#11-ip-policy" visual="/github.com/cncf/foundation/blob/main/charter.md#11-ip-policy">Cloud Native Computing Foundation</url> requires <url href="https://www.apache.org/licenses/LICENSE-2.0" visual="/licenses/apache-2.0">Apache License 2.0</url>.
 			</li>
 
 			<li>
@@ -25,15 +25,15 @@
 			</li>
 
 			<li>
-			<url href="https://www.gnu.org/licenses/license-recommendations.html" visual="www.gnu.org/licenses/license-recommendations.html">GNU</url> recommends <url href="https://www.gnu.org/licenses/gpl-3.0.en.html" visual="/licenses/gpl-3.0/">GNU GPLv3</url> for most programs
+			<url href="https://www.gnu.org/licenses/license-recommendations.html" visual="www.gnu.org/licenses/license-recommendations.html">GNU</url> recommends <url href="https://www.gnu.org/licenses/gpl-3.0.en.html" visual="www.gnu.org/licenses/gpl-3.0.en.html">GNU GPLv3</url> for most programs
 			</li>
 
 			<li>
-			<url href="https://libraries.io/search?platforms=npm" visual="libraries.io/search?platforms=npm">npm packages</url> overwhelmingly use the <url href="https://en.wikipedia.org/wiki/MIT_License" visual="/licenses/mit">MIT</url> or the very similar <url href="https://en.wikipedia.org/wiki/ISC_license" visual="/licenses/isc">ISC</url> licenses
+			<url href="https://libraries.io/search?platforms=npm" visual="libraries.io/search?platforms=npm">npm packages</url> overwhelmingly use the <url href="https://en.wikipedia.org/wiki/MIT_License" visual="en.wikipedia.org/wiki/MIT_License">MIT</url> or the very similar <url href="https://en.wikipedia.org/wiki/ISC_license" visual="/licenses/isc">ISC</url> licenses
 			</li>
 
 			<li>
-			<url href="https://www.openbsd.org/policy.html" visual="www.openbsd.org/policy.html">OpenBSD</url> prefers the <url href="https://en.wikipedia.org/wiki/ISC_license" visual="/licenses/isc">ISC License</url>
+			<url href="https://www.openbsd.org/policy.html" visual="openbsd.org/policy.html">OpenBSD</url> prefers the <url href="https://en.wikipedia.org/wiki/ISC_license" visual="https://en.wikipedia.org/wiki/ISC_license">ISC License</url>
 			</li>
 
 			<li>
@@ -41,7 +41,7 @@
 			</li>
 
 			<li>
-			<url href="https://wordpress.org/about/license/" visual="wordpress.org/about/license">WordPress</url> plugins and themes must be <url href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html" visual="/licenses/gpl-2.0/">GNU GPLv2</url> (or later)
+			<url href="https://wordpress.org/about/license/" visual="wordpress.org/about/license">WordPress</url> plugins and themes must be <url href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html" visual="www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU GPLv2</url> (or later)
 			</li>
 
 		</ul>
