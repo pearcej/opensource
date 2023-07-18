@@ -59,7 +59,7 @@
 
 	<subsection xml:id="subsec-docu_purpose">
 		<title>The Purpose of Documentation</title>
-		<idx>The Purpose of Documentation</idx>
+		<idx>documentation</idx>
 		<p>
 			What do you think of when you think of documentation in OSS? Do you think of the README
 			or LICENSE or CODE_OF_CONDUCT or other files often found in the root of the main code
