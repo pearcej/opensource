@@ -57,7 +57,7 @@ main() {
 		</p>
 
 		<p>
-			At this point, you have two files in your directory: hello.c, the source code, and hello, the program binary. That binary is a piece of that machine code. You can open it with a program called hexdump that will let you see the binary in a hexidecimal form. You can do this yourself on the command line:
+			At this point, you have two files in your directory: hello.c, the source code, and hello, the program binary. That binary is a piece of that machine code. You can open it with a program called hexdump that will let you see the binary in a hexadecimal form. You can do this yourself on the command line:
 		</p>
 
 		<pre>hexdump hello</pre>
