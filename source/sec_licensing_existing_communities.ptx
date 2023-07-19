@@ -11,40 +11,40 @@
     </p>
     <p>
       Some open source communities have strong preferences for particular licenses. If you want to participate in one of these communities, it will be easier to use their preferred license, even if you’re starting a brand new project with no existing dependencies. Some examples of such communities include:
-    <ul>
-			<li>
-			<url href="https://www.apache.org/licenses/" visual="www.apache.org/licenses">Apache</url> requires <url href="https://www.apache.org/licenses/LICENSE-2.0" visual="www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</url>
-			</li>
+	<ul>
+		<li>
+		<url href="https://www.apache.org/licenses/" visual="www.apache.org/licenses">Apache</url> requires <url href="https://www.apache.org/licenses/LICENSE-2.0" visual="www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</url>
+		</li>
+	
+		<li>
+		<url href="https://github.com/cncf/foundation/blob/main/charter.md#11-ip-policy" visual="/github.com/cncf/foundation/blob/main/charter.md#11-ip-policy">Cloud Native Computing Foundation</url> requires <url href="https://www.apache.org/licenses/LICENSE-2.0" visual="www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</url>.
+		</li>
+	
+		<li>
+		<url href="https://www.mozilla.org/en-US/foundation/licensing/" visual="mozilla.org/en-US/foundation/licensing/">Firefox</url> has an entire guide for helping you choose the right license. For code, they recommend their own license, the Mozilla Public License <url href="https://www.mozilla.org/en-US/MPL/2.0/" visual="mozilla.org/en-US/MPL/2.0" >MPL 2.0</url>  or <url href="https://www.apache.org/licenses/LICENSE-2.0" visual="www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</url> and the guide offers guidance on choosing which.
+		</li>
+	
+		<li>
+		<url href="https://www.gnu.org/licenses/license-recommendations.html" visual="www.gnu.org/licenses/license-recommendations.html">GNU</url> recommends <url href="https://www.gnu.org/licenses/gpl-3.0.en.html" visual="www.gnu.org/licenses/gpl-3.0.en.html">GNU GPLv3</url> for most programs
+		</li>
 
-			<li>
-			<url href="https://github.com/cncf/foundation/blob/main/charter.md#11-ip-policy" visual="/github.com/cncf/foundation/blob/main/charter.md#11-ip-policy">Cloud Native Computing Foundation</url> requires <url href="https://www.apache.org/licenses/LICENSE-2.0" visual="/licenses/apache-2.0">Apache License 2.0</url>.
-			</li>
+		<li>
+		<url href="https://libraries.io/search?platforms=npm" visual="libraries.io/search?platforms=npm">npm packages</url> overwhelmingly use the <url href="https://en.wikipedia.org/wiki/MIT_License" visual="en.wikipedia.org/wiki/MIT_License">MIT</url> or the very similar <url href="https://en.wikipedia.org/wiki/ISC_license" visual="en.wikipedia.org/wiki/ISC_license">ISC</url> licenses
+		</li>
 
-			<li>
-			<url href="https://www.mozilla.org/en-US/foundation/licensing/" visual="mozilla.org/en-US/foundation/licensing/">Firefox</url> has an entire guide for helping you choose the right license. For code, they recommend their own license, the Mozilla Public License <url href="https://www.mozilla.org/en-US/MPL/2.0/" visual="mozilla.org/en-US/MPL/2.0" >MPL 2.0</url>  or <url href="https://www.apache.org/licenses/LICENSE-2.0" visual="/licenses/apache-2.0">Apache License 2.0</url> and the guide offers guidance on choosing which.
-			</li>
+		<li>
+		<url href="https://www.openbsd.org/policy.html" visual="openbsd.org/policy.html">OpenBSD</url> prefers the <url href="https://en.wikipedia.org/wiki/ISC_license" visual="en.wikipedia.org/wiki/ISC_license">ISC License</url>
+		</li>
 
-			<li>
-			<url href="https://www.gnu.org/licenses/license-recommendations.html" visual="www.gnu.org/licenses/license-recommendations.html">GNU</url> recommends <url href="https://www.gnu.org/licenses/gpl-3.0.en.html" visual="www.gnu.org/licenses/gpl-3.0.en.html">GNU GPLv3</url> for most programs
-			</li>
+		<li>
+		<url href="https://rust-lang.github.io/api-guidelines/necessities.html#crate-and-its-dependencies-have-a-permissive-license-c-permissive" visual="rust-lang.github.io/api-guidelines/necessities.html#crate-and-its-dependencies-have-a-permissive-license-c-permissive">Rust</url> crates are overwhelmingly licensed under both <url href="https://en.wikipedia.org/wiki/MIT_License" visual="en.wikipedia.org/wiki/MIT_License">MIT</url> and <url href="https://www.apache.org/licenses/LICENSE-2.0" visual="www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</url>
+		</li>
 
-			<li>
-			<url href="https://libraries.io/search?platforms=npm" visual="libraries.io/search?platforms=npm">npm packages</url> overwhelmingly use the <url href="https://en.wikipedia.org/wiki/MIT_License" visual="en.wikipedia.org/wiki/MIT_License">MIT</url> or the very similar <url href="https://en.wikipedia.org/wiki/ISC_license" visual="/licenses/isc">ISC</url> licenses
-			</li>
+		<li>
+		<url href="https://wordpress.org/about/license/" visual="wordpress.org/about/license">WordPress</url> plugins and themes must be <url href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html" visual="www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU GPLv2</url> (or later)
+		</li>
 
-			<li>
-			<url href="https://www.openbsd.org/policy.html" visual="openbsd.org/policy.html">OpenBSD</url> prefers the <url href="https://en.wikipedia.org/wiki/ISC_license" visual="https://en.wikipedia.org/wiki/ISC_license">ISC License</url>
-			</li>
-
-			<li>
-			<url href="https://rust-lang.github.io/api-guidelines/necessities.html#crate-and-its-dependencies-have-a-permissive-license-c-permissive" visual="rust-lang.github.io/api-guidelines/necessities.html#crate-and-its-dependencies-have-a-permissive-license-c-permissive">Rust</url> crates are overwhelmingly licensed under both <url href="https://en.wikipedia.org/wiki/MIT_License" visual="/licenses/mit">MIT</url> and <url href="https://www.apache.org/licenses/LICENSE-2.0" visual="/licenses/apache-2.0/">Apache License 2.0</url>
-			</li>
-
-			<li>
-			<url href="https://wordpress.org/about/license/" visual="wordpress.org/about/license">WordPress</url> plugins and themes must be <url href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html" visual="www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU GPLv2</url> (or later)
-			</li>
-
-		</ul>
+	</ul>
     </p>
     <p>
       Communities come in all shapes and sizes, and more than one community might be pertinent. For example,you must keep in mind the rules of your company if you work for one. The examples above are very well established. If the community you’re building a project for doesn’t have set-in-stone licensing traditions, or you don’t see your project as part of any particular community, that’s fine. Then you will need to make your own choice of a license because not posting any license at all means you implicitly retain all rights and give no permissions to use, share, modify, or improve the software.
@@ -57,7 +57,7 @@
 		As an open source software project matures, sometimes the maintainers of the project decide to change open source licenses. This section highlights a case study of one project's change of license and their reasons for that change.
 	</p>
 	<p>		
-		Some people who are new to working in open source software communities may naively think that the best licenses are those that are the most permissive. Unfortunately, there are pitfalls to the most permissive licenses when anyone can utilize the software for any purpose. 
+		Some people who are new to working in open source software communities may naively think that the best licenses are those that are the most permissive. Unfortunately, there are pitfalls to tho most permissive licenses when anyone can utilize the software for any purpose. 
 	</p>
 	<p>
 		<url href="https://plausible.io" visual="plausible.io">Plausible Analytics</url> is an open source software web analytics project that provides an alternative to Google Analytics, which is more privacy-friendly.
