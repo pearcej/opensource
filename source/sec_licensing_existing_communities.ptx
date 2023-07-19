@@ -57,7 +57,7 @@
 		As an open source software project matures, sometimes the maintainers of the project decide to change open source licenses. This section highlights a case study of one project's change of license and their reasons for that change.
 	</p>
 	<p>		
-		Some people who are new to working in open source software communities may naively think that the best licenses are those that are the most permissive. Unfortunately, there are pitfalls to the most permissive licenses when anyone can utilize the software for any purpose. 
+		Some people who are new to working in open source software communities may naively think that the best licenses are those that are the most permissive. Unfortunately, there are pitfalls to tho most permissive licenses when anyone can utilize the software for any purpose. 
 	</p>
 	<p>
 		<url href="https://plausible.io" visual="plausible.io">Plausible Analytics</url> is an open source software web analytics project that provides an alternative to Google Analytics, which is more privacy-friendly.
