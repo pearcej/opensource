@@ -48,12 +48,10 @@
     </p>
  
     <p>
-<<<<<<< HEAD
+
       <idx>case sensitive</idx>
       Note that your environment might be <term>case sensitive</term>, which means that it might discriminate between uppercase and lowercase letters, where two words that in letter cases only, are not considered equal. This means that <c>Echo</c>, <c>ECHO</c>, <c>WhoAmI</c>, and <c>WHOAMI</c>  might not be recognized as commands, so you are in a case sensitive environment and accidentally type one of these, you will elicit a response like:
-=======
-      Note that your environment might be <term>case sensitive</term>, which means that it might discriminate between uppercase and lowercase letters, where two words that in letter cases only, are not considered equal. This means that <c>Echo</c>, <c>ECHO</c>, <c>WhoAmI</c>, and <c>WHOAMI</c>  might not be recognized as commands, so you are in a case-sensitive environment and accidentally type one of these, you will elicit a response like:
->>>>>>> 9c329db6757f3b7a58b40b8d512488e70be50c3d
+
       </p>
 
       <pre>
