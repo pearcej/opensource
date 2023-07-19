@@ -8,7 +8,7 @@
     </p>
 
     <p>
-      When you author a creative work, such as code, you automatically hold exclusive copyright to the work by default. Unless you include a license that specifies otherwise, <em>nobody</em> else is permitted to copy, distribute, or modify your work without without opening themselves up to legal action by you. Once the work has other contributors (who then each become a copyright holder), “nobody” includes you. 
+      When you author a creative work, such as code, you automatically hold exclusive copyright to the work by default. Unless you include a license that specifies otherwise, <em>nobody</em> else is permitted to copy, distribute, or modify your work without opening themselves up to legal action by you. Once the work has other contributors (who then each become a copyright holder), “nobody” includes you. 
     </p>
     <p>
       If that is not a legal mess you want to get into, your code should include specific terms and conditions for what different people are allowed to do with it, in the form of a license.
@@ -26,7 +26,8 @@
 
     <definition xml:id="def-Intellectual-Property">
     <idx>intellectual property</idx>
-            
+    <idx>IP</idx> 
+    <idx>legal rights</idx>       
       <statement>
         <p>
           <term>Intellectual property</term> or <term>IP</term> refers both to the "property" that is created by efforts of the mind and to the <em>legal rights</em> related to this property. 

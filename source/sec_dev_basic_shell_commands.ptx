@@ -48,7 +48,7 @@
     </p>
  
     <p>
-      Note that your environment might be <term>case sensitive</term>, which means that it might discriminate between uppercase and lowercase letters, where two words that in letter cases only, are not considered equal. This means that <c>Echo</c>, <c>ECHO</c>, <c>WhoAmI</c>, and <c>WHOAMI</c>  might not be recognized as commands, so you are in a case sensitive environment and accidentally type one of these, you will elicit a response like:
+      Note that your environment might be <term>case sensitive</term>, which means that it might discriminate between uppercase and lowercase letters, where two words that in letter cases only, are not considered equal. This means that <c>Echo</c>, <c>ECHO</c>, <c>WhoAmI</c>, and <c>WHOAMI</c>  might not be recognized as commands, so you are in a case-sensitive environment and accidentally type one of these, you will elicit a response like:
       </p>
 
       <pre>
@@ -56,7 +56,7 @@
       </pre>
 
     <p>
-      or if you are in a case sensitive environment and you are lucky, you might get something more helpful like:
+      or if you are in a case-sensitive environment and you are lucky, you might get something more helpful like:
     </p>
     <pre>
       Command 'Echo' not found, did you mean:
