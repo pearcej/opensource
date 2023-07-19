@@ -67,7 +67,7 @@
     </p>
 
     <p>
-      If you are following a README and you are asked to do any of the following installations, then you will be installing a containerized environment: <url href="https://www.docker.com/" visual="www.docker.com/">Docker</url>,  <url href="https://containerd.io/" visual="containerd.io/">Containerd</url>, <url href="https://cri-o.io/" visual="cri-o.io/">CRI-O</url>>, <url href="https://linuxcontainers.org/lxc/" visual="linuxcontainers.org/lxc/">LXC (Linux Container)</url>>, <url href="https://podman.io/" visual="podman.io/">Podman</url>, <url href="">rkt (Rocket)</url>. Don't panic! The containerization should ultimately make it easier to set up the environment.
+      If you are following a README and you are asked to do any of the following installations, then you will be installing a containerized environment: <url href="https://www.docker.com/" visual="www.docker.com/">Docker</url>,  <url href="https://containerd.io/" visual="containerd.io/">Containerd</url>, <url href="https://cri-o.io/" visual="cri-o.io/">CRI-O</url>>, <url href="https://linuxcontainers.org/lxc/" visual="linuxcontainers.org/lxc/">LXC (Linux Container)</url>>, <url href="https://podman.io/" visual="podman.io/">Podman</url>, <url href="https://github.com/rkt/rkt" visual="github.com/rkt/rkt">rkt (Rocket)</url>. Don't panic! The containerization should ultimately make it easier to set up the environment.
     </p>
 
   </subsection>
