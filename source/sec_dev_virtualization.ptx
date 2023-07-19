@@ -13,6 +13,7 @@
     
       
       <p>
+        <idx>virtualization</idx>
       <term>Virtualization</term> is a technique that allows for one or more virtual (or simulated) environments to run on a given physical hardware system. Virtualization refers to the creation of virtual versions of system resources, such as operating systems, CPU cores, memory, storage devices, etc.  In a virtualized system, each virtualized environment shares the actual system resources while operating as if it has dedicated resources such as memory, processing power, and storage. In part, because we can create just the right environment for a given application without running into conflicts when different applications have conflicting requirements, virtualization can provide cost-savings, flexibility, and increased efficiency.
     </p>
     <p>
@@ -23,6 +24,11 @@
   <subsection xml:id="subsec_virtual_machines">
     <title>Virtual Machines</title>
     <p>
+      <idx>guest machine</idx>
+      <idx>host machine</idx>
+      <idx>hypervisor</idx>
+      <idx>virtual machine</idx>
+      <idx>vitualizer</idx>
       A <term>virtual machine (VM)</term> is a simulation of a physical computer that runs its own operating system and applications as if it were a completely separate physical computer. VMs rely on a <term>hypervisor</term> (aka a <term>virtualizer</term>) which is a type of computer software, firmware or hardware that creates and runs virtual machines. When using a VM, the physical computer is called the <term>host machine</term> and the virtual machine is called the <term>guest machine</term>. Virtual machines are managed by a software component called a <term>hypervisor</term> which makes sure that each virtual machine gets the needed resources without interfering with any real or other virtual systems.
     </p>
     <p>
@@ -33,6 +39,8 @@
   <subsection xml:id="subsec_containerization">
     <title>Containerization</title>
     <p>
+      <idx>container</idx>
+      <idx>container image</idx>
       A <term>container</term> leverages virtualization at the level of the operating system where every application is provided with its own view of the operating system. Containerization packages an application and its dependencies into a single self-contained unit called a <term>container image</term>, which can be run on almost any host machine with the appropriate software. 
     </p>
     <p>

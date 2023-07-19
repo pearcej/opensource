@@ -48,7 +48,10 @@
     </p>
  
     <p>
-      Note that your environment might be <term>case sensitive</term>, which means that it might discriminate between uppercase and lowercase letters, where two words that in letter cases only, are not considered equal. This means that <c>Echo</c>, <c>ECHO</c>, <c>WhoAmI</c>, and <c>WHOAMI</c>  might not be recognized as commands, so you are in a case-sensitive environment and accidentally type one of these, you will elicit a response like:
+
+      <idx>case sensitive</idx>
+      Note that your environment might be <term>case sensitive</term>, which means that it might discriminate between uppercase and lowercase letters, where two words that in letter cases only, are not considered equal. This means that <c>Echo</c>, <c>ECHO</c>, <c>WhoAmI</c>, and <c>WHOAMI</c>  might not be recognized as commands, so you are in a case sensitive environment and accidentally type one of these, you will elicit a response like:
+
       </p>
 
       <pre>
@@ -64,6 +67,7 @@
     </pre>
 
       <p>
+        <idx>environment variable</idx>
         Sometimes it is helpful to be able to remember some information or look up previously stored information. This can be accomplished using environment variables. An <term>environment variable</term> is a value that contains information about the system environment or the currently logged-in user. Having environment variables is a way of keeping track of information about the system environment and serves as a way to pass information about the environment to programs. For example, the operating system sets a bunch of environment variables which store information about the environment. As just one example, you might wonder how the operating system keeps track of its users. For each user, there is a user environment variable called USER that is specific only to the currently logged-in user. The shell will expand environment variables and that `echo` is useful to show us the results of that, so the USER environment variable can be accessed using the <c>echo</c> command that we already saw.  Try the following:
       </p>
 
@@ -88,6 +92,7 @@
       /bin/bash
      </pre>
      <p>
+      <idx>file path</idx>
      The reason you see something like this is because the SHELL environment variable stores the location of the shell program. This location, called the <term>file path</term>, is given in the form of the path needed to find the location. We explore how this path is described in the next section. 
      </p>
 
@@ -97,6 +102,9 @@
       <p>
       </p>
     <p> 
+      <idx>directory</idx>
+      <idx>file</idx>
+      <idx>folder</idx>
       Before computers became popular, a <term>file</term> and a <term>folder</term> referred to a container for a collection of documents. Operating systems use these terms very similarly. A file refers to a document and a folder or, synonymously, a <term>directory</term> refers to a collection of files and sub-directories. The operating system handles how files and directories are represented on a physical storage medium, how they are read from, and written to. You may be most familiar with accessing files through a graphical user interface. Creating a new document corresponds to creating a new file.
       Often, when opening an application that deals with documents, it will suggest documents you have recently worked with. These each correspond to a file, each of which is stored in a directory somewhere, and knowing where files are in your file directory will be important to working on open source. 
     </p>
@@ -107,6 +115,9 @@
       When using the shell,  "folders" are more typically called "directories", but the two terms are equivalent. 
      </p>
          <p>
+          <idx>parent</idx>
+          <idx>path</idx>
+          <idx>root directory</idx>
       Inside of a directory, we can find files and possibly additional directories. Since directories may contain other directories in addition to files, the directories on your computer form a hierarchy. Each directory is contained within another directory, which we refer to as its <term>parent</term>. The only exception to this rule is the  <term>root directory</term>, which can be a parent to other directories, but has no parent itself. It is therefore the top-level directory from which we can reach any other directory. Each file and directory in the file system can be referred to by its unique <term>path</term>. 
       The root directory always has the path <term>/</term>, and a file can thus be identified by its path through the file system beginning from the root node. 
       If there is a folder named <c>myfolder</c> located in the root directory, its path would be <c>/myfolder</c>. If <c>myfolder</c> then contains a file named <c>hello.txt</c>, its path would be <c>/myfolder/hello.txt</c>. If <c>/myfolder</c> contains a directory named <c>/mydocuments</c>, its path would be <c>/myfolder/mydocuments</c>. And so on."
@@ -116,6 +127,8 @@
     </notation>
   </p>
   <p>
+    <idx>home directory</idx>
+    <idx>root user</idx>
     Note that the term <em>root directory</em> shouldn't be confused with the term <em>root user</em> in a Linux-like system. The <term>root user</term> is a user named <em>root</em>, which is a special superuser account in Linux operating systems that has unrestricted read and write privileges to everything. The <em>root directory</em> should also not be confused with the <c>/root</c> folder which is found on some Linux-based systems and which is the home directory of the root superuser. 
   </p>
       <p>Let's get our bearings and see which directory we are currently in. The <c>pwd</c> command stands for <em>print working directory</em> and as the name says it prints the path of the directory you are working in. Try typing:
@@ -130,8 +143,8 @@
     /home/pearcej
     </pre>
       <p>
-        
-        Reading the path from right to left, using the folder metaphor, this means I am in a directory named <c>pearcej</c> which itself is a inside of a directory called <c>home</c> which is itself inside of the root directory, <c>/</c>. Note that the position with respect to the forward slash <c>/</c> tells us the direction of the relationship – further to the right is further inside.  To use the tree terminology, a directory that has a file or second directory directly inside of it is called a <term>parent</term> of the file or second directory that is inside, while the file or second directory is called the <term>child</term> of the parent directory. Hence, <c>pearcej</c>  is a child of <c>home</c> and <c>home</c> is a child of the root directory <c>/</c> in our example.
+        <idx>child</idx>
+        Reading the path from right to left, using the folder metaphor, this means I am in a directory named <c>pearcej</c> which itself is a inside of a directory called <c>home</c> which is itself inside of the root directory, <c>/</c>. Note that the position with respect to the forward slash <c>/</c> tells us the direction of the relationship – further to the right is further inside. To use the tree terminology, a directory that has a file or second directory directly inside of it is called a <term>parent</term> of the file or second directory that is inside, while the file or second directory is called the <term>child</term> of the parent directory. Hence, <c>pearcej</c>  is a child of <c>home</c> and <c>home</c> is a child of the root directory <c>/</c> in our example.
       </p>
       <p>
        Let's try "moving" (i.e. changing our working directory) to the root directory. Use the <c>cd</c> command which stands for <em>change directory</em> followed by the <c>/</c>:
@@ -159,6 +172,8 @@
         <p>
         </p>
         <p>
+          <idx>command option</idx>
+          <idx>flag</idx>
       Many shell commands have options which can be invoked by using a <term>command option</term>, which is also called a <term>flag</term>.
         Let's try using a command option with <c>ls</c>, the listing command. Try typing the following where the <c>-r</c> option stands for <c>reverse</c>, and it reverses the sorting order:
       </p>
@@ -209,6 +224,9 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
 -rw-rw-r--  1 pearcej friends     22 Apr 15  2023 hello.txt
 </pre>
 <p>
+  <idx>soft link</idx>
+  <idx>symbolic link</idx>
+  <idx>symlink</idx>
   The last item on each of these lines is the filename itself. The first item in each of the lines is a 10 character-long mix of letters and minus signs. The first character of that set indicates the file type where <c>d</c> tells us it is a directory, <c>l</c> indicates it is a symbolic link, and <c>-</c> indicates it is a regular file. (Note that a <term>symbolic link</term>, aka <term>symlink</term> or <term>soft link</term> is a special type of file that acts as a shortcut by pointing to some other file or directory.)
   The next nine characters display various permissions for the file. The first set of three characters (characters 2-4) are the user's (i.e. the file owner's) permissions, the next three are the group's permissions, and the last three are the permissions for all others. (The user's name  is in the third column and the group name is in the fourth column.) In each of these sets of three characters, the three characters refer to read (<c>r</c>), write (<c>w</c>), and execute (<c>x</c>) respectively. If you see a letter then that permission is allowed, and if you see a '-', the permission is disallowed. For example in the last of the three lines shown above, we see that the file <c>hello.txt</c> has permissions of <c>-rw-rw-r--</c>. This means this is a file that can be read and written (changed) but not executed by the owner <c>pearcej</c> and also by any user who is a member of the <c>friends</c> group, however other users can only read the file.
 </p>
@@ -222,6 +240,7 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
     <p>
     </p>
   <p>
+    <idx>manual</idx>
     If you want to see all of the command options for a given command, there are two different methods for many commands. You can often, but not always, use the <c>--help</c> option on the command or you can use the <term>manual</term> which is accessed using the <c>man</c> command. For example, with the <c>ls</c> command, you can use either one of the following, noting that they work a bit differently because the manual may use paging. If it does, to go to the next page use the space bar.
   </p>
       <pre>
@@ -319,6 +338,7 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
     You should see both of the directories that you made listed as subdirectories.
     </p>
     <p>
+      <idx>remove directory</idx>
     If you want to delete either of these new empty directories, you can use the <term>remove directory</term> command, <c>rmdir</c> followed by the name of the directory you want to remove. Note that there are other ways to remove directories, but <term>remove directory</term> is useful because it refuses to delete a directory that is not empty. Give it a try!
   </p>
   <p>
@@ -351,8 +371,8 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
    The intended purpose of the <c>touch</c> changes the last accessed/modified date.
    Understanding the result of the first line we typed is pretty straightforward. The second and third lines that we typed require a bit more explanation. As we learned  above, the <c>echo</c> command simply outputs (or echoes) the argument(s) to the terminal, but here the <c>echo</c> command has been used in combination with output redirection into a file.</p>
 
-
-    <p><term>Output redirection</term> is a feature in the shell that allows the user to redirect the output of a command using <c>></c> or <c>>></c>. Recall that the <c>echo</c> command normally prints to the screen. What we did above in creating new files with the <c>echo</c> command was to use output redirection to redirect the output of the command into a file of the specified name. So, the command <c>echo 'I love open source!' > newfile2.txt</c> redirected the output of the <c>echo</c> command into the <em>newfile2.txt</em> file. Both <c>></c> and <c>>></c> will create a <em>new</em> file with the provided name if one does not already exist. Note that the <c>></c> is the output redirection operator used for <em>overwriting</em> a file that might or might not already exist, while the <c>>></c> is an output operator that <em>appends</em> the output to an existing file or creates a new one if one does not already exist.  So, <c>></c> should be used judiciously!  
+    <p><idx>output redirection</idx>
+    <term>Output redirection</term> is a feature in the shell that allows the user to redirect the output of a command using <c>></c> or <c>>></c>. Recall that the <c>echo</c> command normally prints to the screen. What we did above in creating new files with the <c>echo</c> command was to use output redirection to redirect the output of the command into a file of the specified name. So, the command <c>echo 'I love open source!' > newfile2.txt</c> redirected the output of the <c>echo</c> command into the <em>newfile2.txt</em> file. Both <c>></c> and <c>>></c> will create a <em>new</em> file with the provided name if one does not already exist. Note that the <c>></c> is the output redirection operator used for <em>overwriting</em> a file that might or might not already exist, while the <c>>></c> is an output operator that <em>appends</em> the output to an existing file or creates a new one if one does not already exist.  So, <c>></c> should be used judiciously!  
     </p>
   
     <p>
@@ -390,6 +410,7 @@ lines
 </p> 
 
   <p>
+    <idx>input redirection</idx>
     Analogous to output redirection, <term>input redirection</term> in the  shell using <c>&lt;</c> or <c>&lt;&lt;</c> allows you to redirect the input of a command. 
     <!-- Unlike the here document example, often you will redirect to use a file instead of the keyboard.  -->
     So, if we want the response from a command to be written to a file instead of to the terminal, we can use output redirection, but if we want the input to a command to come from a file instead of from the keyboard, we use input redirection. 
@@ -455,6 +476,7 @@ wc -w &lt; temp.txt
 
 
 <p>
+  <idx>pipe (|)</idx>
   If you  are wondering if there is a better way than using a temporary file, there is. 
   A <term>pipe (|)</term> in the shell allows you to redirect (aka to pipe) the output of one command into the input of another command. Let's see an example:
 </p>
@@ -475,6 +497,7 @@ wc -w &lt; temp.txt
     
   </p>
 <p>
+  <idx>script</idx>
   It is possible to use what we have learned thus far to make an executable script. A <term>script</term> is a text file that contains a sequence of commands for the operating system. Shell scripts can be useful to bring together common sets of tasks and to make repetitive tasks faster and easier.
 </p>
 

@@ -14,29 +14,40 @@
   <li>
     <title>What is a <term>terminal</term>?</title>
     <p>
+      <idx>terminal</idx>
       The English word <term>terminal</term> means to be situated at the end of something, and the term's meaning in computing has evolved since it was originally coined in the 1960s.
     </p>
       
-    <p>Prior to the development of the first programmable electronic computers, computers were people (mostly women) who used mechanical calculators to compute complex mathematical computations quickly and accurately. The earliest electronic computers, such as Colossus and ENIAC, required specialized technical knowledge and skill to program because programming these machines was a complex process that involved physically entering commands flipping switches, pushing buttons, and manually moving patch cords. The development of the <term>terminal interface</term> in the 1960s marked a significant shift in the way users interacted with computers because the terminal provided a convenient and much more accessible way to provide input and obtain output, allowing users to remotely interact with a computer via a keyboard and screen.  Back when the terminal was first used in computing, what we refer to as the terminal today was the only interface available to the user, while now it is used to refer to a specific type of text-based programming interface. In particular, today a <term>terminal</term> simply refers to a text-based interface that allows a user to interact with a computer by entering commands and receiving output on a display screen. 
+    <p>
+      <idx>terminal interface</idx>
+      Prior to the development of the first programmable electronic computers, computers were people (mostly women) who used mechanical calculators to compute complex mathematical computations quickly and accurately. The earliest electronic computers, such as Colossus and ENIAC, required specialized technical knowledge and skill to program because programming these machines was a complex process that involved physically entering commands flipping switches, pushing buttons, and manually moving patch cords. The development of the <term>terminal interface</term> in the 1960s marked a significant shift in the way users interacted with computers because the terminal provided a convenient and much more accessible way to provide input and obtain output, allowing users to remotely interact with a computer via a keyboard and screen.  Back when the terminal was first used in computing, what we refer to as the terminal today was the only interface available to the user, while now it is used to refer to a specific type of text-based programming interface. In particular, today a <term>terminal</term> simply refers to a text-based interface that allows a user to interact with a computer by entering commands and receiving output on a display screen. 
     </p>
     
   </li>
   <li>
   <title>What is a <term>console</term>?</title>
     <p>
+      <idx>console</idx>
       The English word <term>console</term> comes from the related verb, <em>to console</em>, which means to provide support. In computing, the original meaning of the <term>console</term> was as a physical device that supported input into and output from a computer. The term is still used that way, but it has also come to be synonymous with terminal in some environments. For example, if you search for console on a Windows machine, you may find the terminal program and/or you may find a security console program.
     </p>
   </li>
   <li>
   <title>What is a <term>Command Line Interface (CLI)</term>?</title>
     <p>
+      <idx>command line interface (CLI)</idx>
       A <term>CLI</term> refers to any interface that works with text-based commands and text-based output. We will be using a <term>shell</term>, which is an example of a CLI.
     </p>
   </li>
   <li>
   <title>What is a <term>shell</term>?</title>
       <p>
+<<<<<<< HEAD
+        <idx>kernel</idx>
+        <idx>shell</idx>
+  A <term>shell</term> is a program which parses and interprets the commands you enter in the terminal and then executes them, often using functionality provided directly by the operating system. In other words, a shell is a CLI which serves as the interface between the end-user and the operating system. It is called a shell because it is a user interface layer directly surrounding the <term>kernel</term>, which is the innermost part of the operating system
+=======
   A <term>shell</term> is a program which parses and interprets the commands you enter in the terminal and then executes them, often using functionality provided directly by the operating system. In other words, a shell is a CLI which serves as the interface between the end-user and the operating system. It is called a shell because it is a user interface layer directly surrounding the <term>kernel</term>, which is the innermost part of the operating system.
+>>>>>>> 9c329db6757f3b7a58b40b8d512488e70be50c3d
     </p>
   </li>
 </ul>
@@ -46,6 +57,7 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
 <subsection xml:id="subsec-why_not_gui">
       <title>Why not a GUI?</title>
 <p>
+  <idx>GUI</idx>
   Given that Graphical User Interfaces (GUIs) came into widespread use decades ago, it may seem surprising that nearly all software developers utilize a non-graphical shell. The primary reasons for this include:
       <ul>
         <li>
@@ -88,6 +100,8 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
     </li>
     <li><title>On a Windows machine</title>
       <p>
+        <idx>command prompt</idx>
+        <idx>powershell</idx>
         If you are on a Windows machine, you have a number of options. On Windows, the terminal/shell is historically called the <term>command prompt (cmd)</term>, although a newer very different terminal/shell called <term>PowerShell</term> has also been around for decades. Neither of these terminal/shells are compatible with the default shell programs available on macOS and Linux. For OSS development, it will be preferable to have access to a shell that is compatible with the macOS and Linux ones.
         </p>
 
@@ -116,6 +130,7 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
         To contribute to most open source projects, you will need to set-up a build environment for local testing. While it is typical to have a local development environment to work in, there has recently been an influx of cloud providers which offer solutions for cloud-based development environments. These have the benefit that they require less setup than a local development environment, but are often only free within constraints and otherwise incur a monthly fee, which might be waived for a trial period or for students.
       </p>
       <p>
+        <idx>cloud development environment (CDE)</idx>
         <term>Cloud Development Environments (CDEs)</term> are full development environments in the cloud. The best known and most feature-rich is <url href="https://github.com/features/codespaces" visual="github.com/features/codespaces">GitHub Codespaces.</url> 
         A couple of the other popular cloud development environments include <url href="https://aws.amazon.com/cloud9/" visual="aws.amazon.com/cloud9">AWS Cloud9</url> and <url href="https://www.gitpod.io/" visual="www.gitpod.io">Gitpod.</url> All of these environments try to help you set up your development environment with ease, and you can mostly likely find a way to at least try them for free. 
       </p>
@@ -131,6 +146,8 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
 <subsection xml:id="subsec-access_shell">
 	<title>Your Shell</title>
 	<p>
+    <idx>bash</idx>
+    <idx>zsh</idx>
     Many shells are available for Linux, but the most popular is the Bourne-again shell (<term>bash</term>) shell, the next section is focused on bash. If you are using another shell like <term>zsh</term>, which is now the default on macOS and many people's preference over bash, then don't worry. The different shells available on Linux and macOS are largely compatible with each other and you will almost certainly not run into any issues by using zsh.
   </p>
 </subsection>
