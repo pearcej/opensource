@@ -9,11 +9,12 @@
         <li>
           You create an important document.
         </li>
+        
         <li>
           Because it’s important you email it to some friends or family or colleagues for feedback on it.
         </li>
         <li>
-          You re-read it yourself create a new edited version.
+          You re-read it yourself, and then create a new edited version.
         </li>
         <li>
           Then you get back feedback from someone you sent it to, but the feedback is on your original version.
@@ -40,6 +41,8 @@
     </p>
 
     <p>
+      <idx>version control system</idx>
+      <idx>VCS</idx>
       A <term>version control system (VCS)</term> is a system that stores all of the versions of a project along with comments on those version that explain the reasons for the changes. 
       A system that manages version control for software development is sometimes called a <em>source code management (SCM)</em> system, but we will typically use the more general term. In this chapter, you will learn the basics of version control.
     </p>
