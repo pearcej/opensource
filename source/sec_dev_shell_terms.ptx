@@ -36,7 +36,7 @@
   <li>
   <title>What is a <term>shell</term>?</title>
       <p>
-  A <term>shell</term> is a program which parses and interprets the commands you enter in the terminal and then executes them, often using functionality provided directly by the operating system. In other words, a shell is a CLI which serves as the interface between the end-user and the operating system. It is called a shell because it is a user interface layer directly surrounding the <term>kernel</term>, which is the innermost part of the operating system
+  A <term>shell</term> is a program which parses and interprets the commands you enter in the terminal and then executes them, often using functionality provided directly by the operating system. In other words, a shell is a CLI which serves as the interface between the end-user and the operating system. It is called a shell because it is a user interface layer directly surrounding the <term>kernel</term>, which is the innermost part of the operating system.
     </p>
   </li>
 </ul>
@@ -73,12 +73,12 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
   <title>Accessing a Terminal Window on your Machine</title>
 
     <p>
-      Regardless of whether you are using macOS, Linux, or Windows, you are able to set up a development environment, open a terminal, and access a shell. Some good news is that all of these OSs offer shells that are largely compatible. This is useful for a variety of reasons,including being able to find find a useful answer when searching on how to accomplish various tasks on the Internet.
+      Regardless of whether you are using macOS, Linux, or Windows, you are able to set up a development environment, open a terminal, and access a shell. Some good news is that all of these OSs offer shells that are largely compatible. This is useful for a variety of reasons, including being able to find a useful answer when searching on how to accomplish various tasks on the Internet.
 
     <ul>
     <li><title>On a Mac</title>
       <p>
-        If you are on a Mac, you have a couple of good options. With any Mac, the built-in <em>Terminal</em> program allows you to access a shell.  If you are looking for a more customizable and feature-rich terminal program, then you might want to consider <url href="https://iterm2.com/downloads.html" visual="iterm2.com/downloads.html">iTerm2</url>. Opening the Terminal on a Mac works like opening any other program: you can find it in the Applications folder, you can search for it, you can use the Launchpad, or you can use it's shortcut which is command(⌘)+T.
+        If you are on a Mac, you have a couple of good options. With any Mac, the built-in <em>Terminal</em> program allows you to access a shell.  If you are looking for a more customizable and feature-rich terminal program, then you might want to consider <url href="https://iterm2.com/downloads.html" visual="iterm2.com/downloads.html">iTerm2</url>. Opening the Terminal on a Mac works like opening any other program: you can find it in the Applications folder, you can search for it, you can use the Launchpad, or you can use its shortcut which is command(⌘)+T.
       </p>
     </li>
     <li><title>On a Linux machine</title>
@@ -107,8 +107,7 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
         </li>
     <li><title>Installing Linux in a Virtual Machine (VM) Environment</title>
         <p>
-          If you have sufficient RAM and secondary storage available, then you might consider installing Linux in a VM. This may be a particularly good choice if you are on an older Windows machine and want to develop off-line. 
-         such as <url href="https://www.virtualbox.org/" visual="virtualbox.org/">Virtual Box</url> and installing and running Ubuntu in the VM. 
+          If you have sufficient RAM and secondary storage available, then you might consider installing Linux in a VM. This may be a particularly good choice if you are on an older Windows machine and want to develop off-line, then you might consider software such as <url href="https://www.virtualbox.org/" visual="virtualbox.org/">Virtual Box</url> and installing and running Ubuntu in the VM. 
       </p>
     </li>
     <li>
