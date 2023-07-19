@@ -57,7 +57,7 @@ main() {
 		</p>
 
 		<p>
-			At this point, you have two files in your directory: hello.c, the source code, and hello, the program binary. That binary is a piece of that machine code. You can open it with a program called hexdump that will let you see the binary in a hexidecimal form. You can do this yourself on the command line:
+			At this point, you have two files in your directory: hello.c, the source code, and hello, the program binary. That binary is a piece of that machine code. You can open it with a program called hexdump that will let you see the binary in a hexadecimal form. You can do this yourself on the command line:
 		</p>
 
 		<pre>hexdump hello</pre>
@@ -130,6 +130,13 @@ main() {
 		</p>
 
       </subsection>
+	  	<p>
+			Prerequisite: Prior knowledge of programming in the C language.
+		</p>
+			
+		<p>	
+			In order to successfully complete the exercises below, it is important to have a reading-level understanding of the C programming language. This includes knowledge of the syntax, basic programming concepts, and the ability to modify and compile C source code.
+		</p>
 	<exercise xml:id="exercise-change-the-source-code">
 		<title><term>Exercise – Change the source code</term></title>
 
