@@ -1,0 +1,14 @@
+# Based upon Pretextbook .gitignore
+user/*
+script/mjsre/node_modules/
+script/mjsre/package-lock.json
+pretext/__pycache__/**
+.error_schema.log
+# any file ending in ~ (backups, usually)
+*~
+.vscode
+**/_build
+**/output
+**/cli.log
+**/rsbuild
+**/build
