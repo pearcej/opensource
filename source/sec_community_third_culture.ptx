@@ -22,7 +22,7 @@
   </ul>
 </p>
 
-<exercise xml:id="syntheticthirdculture">
+<exercise xml:id="OSSculture">
   <statement>
     <p>
       How do OSS communities develop their own culture, distinct from the native cultures of their participants?
@@ -37,7 +37,7 @@
       </statement>
       <feedback>
         <p>
-          While coherence is important, there are other inclusive ways in which culture may be formed.
+          While coherence is important, there are more inclusive ways in which culture may be formed.
       </p>
       </feedback>
     </choice>
@@ -49,7 +49,7 @@
       </statement>
       <feedback>
         <p>
-          While collaboration is significant, think about how culture development might involve more than just mixing difference.
+          While collaboration is significant, think about how OSS cultural development might involve more than just mixing difference.
         </p>
       </feedback>
     </choice>
