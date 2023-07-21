@@ -147,7 +147,7 @@
 					<title><term>Exercise – Github Flow</term></title>
 			
 					<p>
-						Go to <url href="https://docs.github.com/en/get-started/quickstart/github-flow ">Github Flow</url> and complete the provided exercise with one of your own repositories. 
+						Go to <url href="https://docs.github.com/en/get-started/quickstart/github-flow">Github Flow</url> and complete the provided exercise with one of your own repositories. 
 					</p>
 				</exercise>
 
@@ -199,14 +199,13 @@
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						Where this conversation may take place over email in the workflows presented in <url href="ch00/ch05-distributed-git">Distributed Git</url>, on GitHub this happens online. The project owner can review the unified diff and leave a comment by clicking on any of the lines.
+						Where this conversation may take place varies by community, on GitHub this typically happens online. The project owner can review the unified diff and leave a comment by clicking on any of the lines.
 					</p><!--</div attr= class="paragraph">-->
-
 
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						Once the maintainer makes a  comment, the person who opened the Pull Request (and indeed, anyone else watching the repository) will get a notification. 
+						Once the maintainer makes a comment, the person who opened the Pull Request (and indeed, anyone else watching the repository) will get a notification. 
 					</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="title"-->
@@ -868,7 +867,7 @@ gblock">--><!--</div attr= class="sect4">-->
 				<title>CODE_OF_CONDUCT</title>
 				<p>
 					<idx>code of conduct</idx>
-					The CODE_OF_CONDUCT explains how one is expected to engage in that particular community. It is typically used to ensure an inclusive environment that respects all people and also typically describes how to address any problems among members of the project's community.
+					The <c>CODE_OF_CONDUCT</c> file explains how one is expected to engage in that particular community. It is typically used to ensure an inclusive environment that respects all people and also typically describes how to address any problems among members of the project's community.
 				</p>
 			</paragraphs>
 
