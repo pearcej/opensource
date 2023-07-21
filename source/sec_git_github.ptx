@@ -618,10 +618,8 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 <!-- div attr= class="paragraph"-->
 					<p>
 						There are a few things to notice about this email. It will give you a small diffstat — a list of files that have changed in the Pull Request and by how much. It gives you a link to the Pull Request on GitHub. It also gives you a few URLs that you can use from the command line.
-					</p><!--</div attr= class="paragraph">-->
-gblock">--><!--</div attr= class="sect4">-->
+					</p>
 
-<!-- div attr= class="sect4"-->
 				</paragraphs>
 
 				<paragraphs xml:id="_collaborating_on_the_pull_request">
@@ -795,7 +793,7 @@ gblock">--><!--</div attr= class="sect4">-->
 			<paragraphs xml:id="_license">
 				<title>LICENSE</title>
 			<p>
-			The first is the LICENSE file, which can be of nearly any prose format. For example, it could be LICENSE, LICENSE.md, LICENSE.asciidoc, etc. 
+			The first is the <c>LICENSE</c> file, which can be of nearly any prose format. For example, it could be LICENSE, LICENSE.md, LICENSE.asciidoc, etc. 
 			</p>
 			<p>
 			The license file explains the respostory's legal license, including any legal rights, any copyright restrictions, etc. When you include a detectable license in your repository, people who visit your repository will see it at the top of the repository page.
