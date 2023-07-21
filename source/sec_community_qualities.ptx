@@ -80,6 +80,7 @@
         What aspect is essential to consider regarding the maturity of an OSS community and its history?
       </p>
     </statement>
+    
     <choices>
       <choice>
         <statement>
@@ -89,7 +90,7 @@
         </statement>
         <feedback>
           <p>
-            While representation matters in OSS community, it is an essential aspect when considering the maturity of an OSS community.
+            While representation matters in OSS community, it is an essential aspect when considering the maturity of an OSS community. 
         </p>
         </feedback>
       </choice>
