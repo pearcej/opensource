@@ -41,5 +41,65 @@
         Enough of the pep talk. It’s time to get started.
       </p>
 
+
+		<exercise xml:id="whatisOSS">
+			<statement>
+			  <p>
+				What is the primary characteristic of Open Source Software (OSS)?
+			  </p>
+			</statement>
+			<choices>
+			  <choice>
+				<statement>
+				  <p>
+					It is software developed for educational purposes.
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+				  Open Source Software is developed many purposes, not limited only to education.
+				</p>
+				</feedback>
+			  </choice>
+			  <choice>
+				<statement>
+				  <p>
+					It is available for free without licensing restrictions.
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+				  While it is true that many Open Source Software (OSS) projects are available for free, each typically comes with a specific license that grants users specific rights.
+				  </p>
+				</feedback>
+			  </choice>
+			  <choice correct = "yes">
+				<statement>
+				  <p>
+					The source code is publicly accessible for viewing.
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					Correct!  Open source software (OSS) is software that is designed with code that is publicly accessible and openly viewed.
+				  </p>
+				</feedback>
+			  </choice>
+			  <choice>
+				<statement>
+				  <p>
+					It can only be used on open, non-commercial projects.
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					In fact, Open Source Software is often utilized for commercial projects, and many businesses leverage open-source software as a cost-effective solution to building their products.
+				  </p>
+				</feedback>
+			  </choice>
+			</choices>
+		  </exercise>
+
+
 </section>
 
