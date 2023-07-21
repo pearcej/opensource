@@ -260,4 +260,61 @@
         <title>Exercise: Share Your Thoughts</title>
         <p>Write a blog post summarizing your thoughts about the communities you've been observing. Specifically note your conclusions about the qualities of the community identified earlier.</p>
     </exercise>
+    <exercise xml:id="communityComs">
+      <statement>
+        <p>
+          Why do most OSS communities heavily rely on asynchronous communication?
+        </p>
+      </statement>
+      <choices randomize = "yes">
+        <choice>
+          <statement>
+            <p>
+              It allows for real-time discussions and faster decision-making.
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              While real-time discussions and faster decision-making can be beneficial in some cases, this is not the primary reason why most OSS communities heavily rely on asynchronous communication.
+          </p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              It facilitates in-person meetings and video conferences.
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              In-person meetings and video conferences are forms of synchronous communication and are not the direct reason why OSS communities rely on asynchronous communication.
+            </p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              Asynchronous communication is more efficient for smaller communities.
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              The efficiency of asynchronous communication is not necessarily tied to the size of the community. It can be equally valuable for both smaller and larger OSS communities, but there is a specific reason why it's more commonly used.
+            </p>
+          </feedback>
+        </choice>
+        <choice correct = "yes">
+          <statement>
+            <p>
+              Contributors in different time zones find synchronous communication challenging.
+          </p>
+          </statement>
+          <feedback>
+            <p>
+              Correct! Most open-source software (OSS) communities heavily rely on asynchronous communication because contributors and community members often span across different time zones. 
+            </p>
+          </feedback>
+        </choice>
+      </choices>
+    </exercise>
 </section>
