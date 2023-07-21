@@ -10,6 +10,13 @@
 <!-- <brandlogo url="" source="images/cover.png"/> -->
 <!-- <covers front="images/front.pdf" back="images/back.pdf"/> -->
 <!-- <document-id>unique-book-id</document-id> -->
+<document-id edition="1">opensource</document-id>
+
+<!-- author-biographies length="short" /> -->   
+
+<blurb shelf="Misc">
+This book is designed for instructors, formal students, and self-learners. It explains what open source software is and teaches the basic skills of open source development incrementally, through real involvement in meaningful projects.
+</blurb>
 
 <!-- macros for defining latex math shortcuts. It is good practice  -->
 <!-- to define these semantically, so that the macro relates to what-->
