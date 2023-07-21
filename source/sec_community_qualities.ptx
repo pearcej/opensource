@@ -74,6 +74,63 @@
     </p>
 
   </exercise>
+  <exercise xml:id="communityQualities">
+    <statement>
+      <p>
+        What aspect is essential to consider regarding the maturity of an OSS community and its history?
+      </p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>
+            The number of different skills represented among community members. 
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            While representation matters in OSS community, it is an essential aspect when considering the maturity of an OSS community.
+        </p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            The extent to which subgroups are formally defined within the community.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            While subgroups can be an essential part of an OSS community, it doesn’t affect the maturity and history of the community.
+          </p>
+        </feedback>
+      </choice>
+      <choice correct = "yes">
+        <statement>
+          <p>
+            Whether the community has attracted contributors beyond developers, and the potential for growth and rejuvenation.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            Absolutely right! The maturity and history of an OSS community can be evaluated by considering whether it has attracted contributors beyond developers, and if it has experienced periods of growth, stability, stagnation, and rejuvenation.
+          </p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            The presence of a sponsoring company and the level of influence it holds over the community's direction.
+        </p>
+        </statement>
+        <feedback>
+          <p>
+            Sponsoring companies may affect the community’s direction in terms of commercial ties but it does not influence directly the maturity and history of OSS community. 
+          </p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
 
 </section>
 
