@@ -15,17 +15,17 @@
     </li>
     </ul>
     </p>
-    <exercise xml:id="globalCommunityChallenge">
+    <exercise xml:id="OSScontribution">
         <statement>
           <p>
-            Why is it essential for contributors to read the contribution guide and community discussions before joining an open-source project?
+            Why is it important for contributors to read the contribution guide and community discussions before joining an open-source project?
           </p>
         </statement>
         <choices>
           <choice>
             <statement>
               <p>
-                To understand the existing codebase
+                To better understand the existing codebase.
               </p>
             </statement>
             <feedback>
@@ -61,12 +61,12 @@
           <choice>
             <statement>
               <p>
-                To find exclusive access to premium project features.
+                To find out how to access to early-release project features.
             </p>
             </statement>
             <feedback>
               <p>
-                The availability of premium project features is not directly tied to reading the contribution guide or community discussions. The primary focus of these resources is different.
+                The availability of early-release project features is not directly tied to reading the contribution guide or community discussions. The primary focus of these resources is different.
               </p>
             </feedback>
           </choice>
@@ -78,7 +78,7 @@
             </statement>
             <feedback>
                 <p>
-                    INCORRECT!
+                    Incorrect!
                 </p>
             </feedback>
           </choice>
