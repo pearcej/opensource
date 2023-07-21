@@ -260,4 +260,62 @@
         <title>Exercise: Share Your Thoughts</title>
         <p>Write a blog post summarizing your thoughts about the communities you've been observing. Specifically note your conclusions about the qualities of the community identified earlier.</p>
     </exercise>
+
+    <exercise xml:id="Why-SECP">
+      <statement>
+        <p>
+          Which of the following features are commonly provided by Software Engineering Collaboration Platforms (SECP) used in open-source communities?
+        </p>
+      </statement>
+      <choices randomize = "yes">
+        <choice>
+          <statement>
+            <p>
+              Document Editing and File Management
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              This option is not specific to SECP features and does not encompass the functionalities mentioned in the section.
+          </p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              Mailing Lists and Forums Integration
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              While Mailing Lists and Forum Integration are mentioned in the text, they are not exclusive to SECP features.
+            </p>
+          </feedback>
+        </choice>
+        <choice correct = "yes">
+          <statement>
+            <p>
+              Repositories and Merge Requests
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Correct! Software Engineering Collaboration Platforms (SECP) typically provide features such as repositories for code storage and merge requests to initiate code integration.
+            </p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              Collaborative Instant Messaging and Wikis 
+          </p>
+          </statement>
+          <feedback>
+            <p>
+              While collaborative instant messaging and wikis are mentioned in the text, they are not exclusive to SECP features.
+            </p>
+          </feedback>
+        </choice>
+      </choices>
+    </exercise>
 </section>
