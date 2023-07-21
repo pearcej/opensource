@@ -15,5 +15,74 @@
     </li>
     </ul>
     </p>
+    <exercise xml:id="globalCommunityChallenge">
+        <statement>
+          <p>
+            Why is it essential for contributors to read the contribution guide and community discussions before joining an open-source project?
+          </p>
+        </statement>
+        <choices>
+          <choice>
+            <statement>
+              <p>
+                To understand the existing codebase
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                While understanding the codebase is crucial, there's another primary reason for reading the contribution guide and community discussions.
+            </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                To identify potential job opportunities within the project.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Although contributing to an open-source project can enhance career prospects, the primary purpose of reading the contribution guide and community discussions is different.
+              </p>
+            </feedback>
+          </choice>
+          <choice correct = "yes">
+            <statement>
+              <p>
+                To avoid violating implicit or explicit rules.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Absolutely! Reading the contribution guide and community discussions helps contributors understand the project's established rules, best practices, and community norms, preventing unintentional violations and fostering a positive collaboration experience.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                To find exclusive access to premium project features.
+            </p>
+            </statement>
+            <feedback>
+              <p>
+                The availability of premium project features is not directly tied to reading the contribution guide or community discussions. The primary focus of these resources is different.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+                <p>
+                    Both A and C are correct.
+                </p>
+            </statement>
+            <feedback>
+                <p>
+                    INCORRECT!
+                </p>
+            </feedback>
+          </choice>
+        </choices>
+      </exercise>
 </section>
 
