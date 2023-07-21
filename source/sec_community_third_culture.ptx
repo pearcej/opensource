@@ -22,5 +22,62 @@
   </ul>
 </p>
 
+<exercise xml:id="syntheticthirdculture">
+  <statement>
+    <p>
+      How do OSS communities develop their own culture, distinct from the native cultures of their participants?
+    </p>
+  </statement>
+  <choices randomize ="yes">
+    <choice>
+      <statement>
+        <p>
+          By assimilating the dominant culture of the project maintainers and contributors, creating a sense of coherence within the community.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          While coherence is important, there are other inclusive ways in which culture may be formed.
+      </p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>
+          By mixing cultural differences among participants to achieve better collaboration.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          While collaboration is significant, think about how culture development might involve more than just mixing difference.
+        </p>
+      </feedback>
+    </choice>
+    <choice correct = "yes">
+      <statement>
+        <p>
+          By building up shared experiences, humor, social norms, and conventions.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          Absolutely right! OSS communities develop their own culture by building up shared experiences, humor, social norms, and conventions. Over time, the participants in these communities create a synthetic third culture that becomes unique to the collaborative group.
+        </p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>
+          By rotating community members between different cultural contexts.
+      </p>
+      </statement>
+      <feedback>
+        <p>
+          While interactions and diversity are significant in OSS communities, consider how the culture formation might involve shared experiences and interactions.
+        </p>
+      </feedback>
+    </choice>
+  </choices>
+</exercise>
 </section>
 
