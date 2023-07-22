@@ -2,6 +2,50 @@
 
 <section xml:id="sec_oss_what_it_is" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>What is Open Source Software?</title>
+  <introduction>
+	<p>
+		Open Source Software (OSS) is software for which the source code is open for anyone to view.
+		A related type of open source software is Free and Open Source Software (FOSS) which offers additional freedoms. FOSS is software for which the source code not only affords users the freedom to view the source code but also guarantees users the freedom to build, copy, distribute, change, and improve the software. Note that the "free" in FOSS is related to these freedoms of what one is permitted to do with the the source code as opposed to being free of cost, which it might, or might not, be — more on this topic in the first section of this chapter.
+	</p>
+
+	<p>
+		Open source software differs from closed source proprietary software where only the owners and those they appoint have access to the source code because it is closed-off to others. So, with closed source software, if you want to personally ascertain that a game or another piece of software that you want to download and install does not include code that will steal your data or take over your entire system, you are simply out of luck.
+	</p>
+
+	<p>
+		There are more rigorous definitions of OSS and FOSS, and there are many licenses that help to ensure various freedoms in subtly different ways. We examine many of these details later in <xref ref="ch_licensing"/>. For now, we focus on this one simple idea: the freedom to view the source code is the essential element of open source software. 
+	</p>
+
+	<p>
+		By the end of this chapter, you should:
+	</p>
+
+	<p><ul>
+			<li>
+			Understand the difference between source code and binary code;
+			</li>
+
+			<li>
+			Be able to articulate advantages and disadvantages of open source software;
+			</li>
+
+			<li>
+			Understand some of the benefits of participating in open source projects;
+			</li>
+
+			<li>
+			Have an idea of some open source projects that might interest you, and why;
+			</li>
+
+			<li>
+			Have the beginning of your own open source portfolio.
+			</li>
+
+		</ul>
+
+		</p>
+  </introduction>
+  
       <p>
         This is, first and foremost, a textbook about how people create software collaboratively using a community development model, and about how you can become a member of one of those communities.  When the source code is open to viewing, most people call the result of such work by the name <term>open source software (OSS)</term>.
       </p>
