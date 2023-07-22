@@ -34,8 +34,7 @@
 		</p>
 
 		<p>
-			In open source projects, documentation is essential. It is much more than developer
-			documentation in code and README files.
+			In open source projects, documentation is much more than developer documentation in code and README files.
 		</p>
 
 		<p>
@@ -45,10 +44,10 @@
 		</p>
 
 		<p>
-			According to Mozilla, developer contributions to documentation greatly increased along
-			with a new community of writers, editors, and translators. This all resulted from
-			reducing the barriers to success that made even experienced developers too frustrated to
-			document properly.
+			Correcting documentation is often one of the first contributions that new contributors make to a project. This is because it is often the easiest way to get started. According to Mozilla, potential contributors prefer preferred simpler tasks to more challenging tasks, and shorter tasks to long tasks.
+			They found when given simpler choices, the percentage of people who engaged with the Mozilla contribution page by either choosing a contribution task or selecting not-ready was 60%, much higher than the 15% engagement rate the page had seen before they began looking into potential contributor preferences. See <url href="https://blog.mozilla.org/community/2015/09/01/participation-lab-notes-short-simple-tasks-increase-engagement/" visual="blog.mozilla.org/community/2015/09/01/participation-lab-notes-short-simple-tasks-increase-engagement/">Participation Lab Notes: Short Simple Tasks Increase Engagement</url> for more information.
+				
+			</references>
 		</p>
 
 		<p>
@@ -82,7 +81,9 @@
 				<li>
 					<title>README</title>
 					<p>
-						Arguably the most important file in any open source project, the README file typically contains an overview of the project, instructions on how to get started, information on how to contribute, and many other pieces of information that are
+						Arguably the most important file in any open source project, the README file typically contains an overview of the project, 
+						and what problem it solves, as well as
+						instructions on how to get started, information on how to contribute, and many other pieces of information that are
 						important to that particular OSS project.
 					</p>
 				</li>
@@ -124,13 +125,13 @@
 					<title>INSTALL</title>
 					<p>
 						<idx>install</idx>
-						Containing instructions on how to install and set up the project, note that the INSTALL files is often not the same as how to set up the development environment to contribute to the project.
+						Containing instructions on how to install and set up the project. Note that the INSTALL file is typically not the same as how to set up the development environment to contribute to the project.
 					</p>
 				</li>
 				<li>
 					<title>LICENSE</title>
 
-					<p> As explained in <xref ref="ch_licensing" />, the LICENSE file specifies the terms under which the project is licensed. It outlines what others are and are not allowed to do with the code. </p>
+					<p> As explained in <xref ref="ch_licensing" />, the LICENSE file specifies the terms under which the project is licensed. It outlines what one is and is not allowed to do with the code.</p>
 				</li>
 				<li>
 					<title>TUTORIALS</title>
@@ -151,24 +152,25 @@
 
 		</p>
 		<p> Some types of documentation utilize a particular structure often provided by the repository platform. We have discussed some of these earlier. Some very common kinds of documentation of this type are: <ul>
-			<li>
-				<title>Automation of Builds and Publishing</title>
-				<p>
-		
-					While not used in all projects, larger OSS projects typically use CI/CD (continuous integration, delivery, and deployment) tools and processes in order to provide ongoing automation and continuous monitoring throughout the software lifecycle, from integration and testing phases to delivery and deployment. 
-				</p>
-			</li>
+
 
 			<li>
 				<title>Bug and/or Issue Tracking</title>
-				<p> Bug and/or issue trackers provide tracking information for bugs or issues
-			that have been identified in the project. They typically include related reports with
+				<p>  Bug and/or issue trackers provide tracking information for bugs, feature requests, or general issues that have been identified in the project. They typically include related reports with
 			steps to reproduce the issue or bug, the expected behavior, and the actual behavior.
 			More about bug and issue trackers is covered in <xref ref="sec_issues_bugs" />. </p>
 				</li>
+
+				<li>
+					<title>Continuous Integration and Continuous Delivery (CI/CD)</title>
+					<p>
+			<idx>continuous integration and continuous delivery</idx>
+			<idx>CI/CD</idx>
+						While not used in all projects, larger OSS projects typically use CI/CD (continuous integration, delivery, and deployment) tools and processes in order to provide ongoing automation and continuous monitoring throughout the software lifecycle.
+				</li>
 				<li>
 					<title>Editing and Review</title>
-					<p> As we learned in <xref ref="sec_git_github" />,  Software Engineering Collaboration Platforms like Github provide a forum for code reviews, proposed edits, proposed updates, and discussions of these via merge or pull requests. These are also a dedicated forum for discussing a proposed feature or bug fix. </p>
+					<p> As we learned in <xref ref="sec_git_github" />,  Software Engineering Collaboration Platforms like GitHub provide a forum for code reviews, proposed edits, proposed updates, and discussions of these via merge or pull requests. These are also a dedicated forum for discussing a proposed feature or bug fix. </p>
 				</li>
 				<li>
 					<title>Project Management</title>
@@ -193,7 +195,7 @@
 		</p>
 
 
-		<p> Depending on the project, many other types of documentation might be found the project repository
+		<p> Depending on the project, many other types of documentation might be found in the project repository
 			including documentation that is not easily contained in a single file or a single tool.
 			This type of documentation includes: <ul>
 				<li>
@@ -267,7 +269,7 @@
 
 
 		<p>
-			Part of your journey is learning how to navigate the project's documentation to understand such things as how to get your development environment set-up, how to conduct yourself, as well as how you to contribute if you are so inclined. If you do want to contribute, you will be contributing not only to code, but to the historical documentation of that commit.
+			Part of your journey is learning how to navigate the project's documentation to understand such things as how to get your development environment set-up, how to conduct yourself, as well as how you to contribute if you are so inclined. If you do want to contribute, you will be contributing not only to code, but to the historical documentation of that code.
 		</p>
 
 		<p>
@@ -327,7 +329,7 @@ before this Tag in the document."""
 			<title>Exercise: Practice good code commenting</title>
 
 			<p>
-				Throughout all the exercises in this book practice doing good commit messages as
+				Throughout all the exercises in this book practice writing good commit messages as
 				well as effective commenting and documentation for your coding efforts.
 			</p>
 
