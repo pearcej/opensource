@@ -8,4 +8,10 @@
   <xi:include href="./sec_licensing_existing_communities.ptx" />
   <xi:include href="./sec_licensing_none.ptx" />
 
+  <conclusion>
+    <title>Chapter License</title>
+      <p>
+        <url href="https://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</url> Upgraded from 3.0. See <url href="https://wiki.creativecommons.org/wiki/4.0_upgrade_guidelines" visual="wiki.creativecommons.org/wiki/4.0_upgrade_guidelines">CC 4.0 upgrade guidelines</url>
+      </p>
+    </conclusion>
 </chapter>
