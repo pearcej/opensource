@@ -4,8 +4,11 @@
   <title>About Source Code</title>
   <introduction>
     <p>
-		Let’s start with an explanation of <em>source code</em>. One cannot understand <em>open source</em> without first understanding source.
-
+		<idx>source code</idx>
+		Let’s start with an explanation of <em>source code</em>. Source code is a set of instructions for computers that is meant to be read and written by humans.
+	</p>
+	<p>
+		One cannot understand <em>open source</em> without first understanding source.
     </p>
   </introduction>
   <subsection xml:id="subsec_source_code">
@@ -129,7 +132,7 @@ main() {
 			Note that copyright law generally provides the copyright holder with a set of exclusive rights. Decompilation is carried out by making copies of the software program, and so to be in compliance with law, one must consider the copyright before undertaking decompilation. Laws in both the United States and Europe do permit decompilation to a limited extent and for limited specific purposes. Laws in other areas of the world will vary, but reverse engineering a program for the purpose of reselling it under a different name and license would likely open you up to legal battles – the authors of this text strongly caution you against such action.
 		</p>
 
-      </subsection>
+
 	  	<p>
 			Prerequisite: Prior knowledge of programming in the C language.
 		</p>
@@ -137,6 +140,8 @@ main() {
 		<p>	
 			In order to successfully complete the exercises below, it is important to have a reading-level understanding of the C programming language. This includes knowledge of the syntax, basic programming concepts, and the ability to modify and compile C source code.
 		</p>
+	</subsection>
+	
 	<exercise xml:id="exercise-change-the-source-code">
 		<title><term>Exercise – Change the source code</term></title>
 

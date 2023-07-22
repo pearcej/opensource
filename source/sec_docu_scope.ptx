@@ -47,7 +47,6 @@
 			Correcting documentation is often one of the first contributions that new contributors make to a project. This is because it is often the easiest way to get started. According to Mozilla, potential contributors prefer preferred simpler tasks to more challenging tasks, and shorter tasks to long tasks.
 			They found when given simpler choices, the percentage of people who engaged with the Mozilla contribution page by either choosing a contribution task or selecting not-ready was 60%, much higher than the 15% engagement rate the page had seen before they began looking into potential contributor preferences. See <url href="https://blog.mozilla.org/community/2015/09/01/participation-lab-notes-short-simple-tasks-increase-engagement/" visual="blog.mozilla.org/community/2015/09/01/participation-lab-notes-short-simple-tasks-increase-engagement/">Participation Lab Notes: Short Simple Tasks Increase Engagement</url> for more information.
 				
-			</references>
 		</p>
 
 		<p>
@@ -163,10 +162,12 @@
 
 				<li>
 					<title>Continuous Integration and Continuous Delivery (CI/CD)</title>
+					<idx>continuous integration and continuous delivery</idx>
+					<idx>CI/CD</idx>
 					<p>
-			<idx>continuous integration and continuous delivery</idx>
-			<idx>CI/CD</idx>
+
 						While not used in all projects, larger OSS projects typically use CI/CD (continuous integration, delivery, and deployment) tools and processes in order to provide ongoing automation and continuous monitoring throughout the software lifecycle.
+					</p>
 				</li>
 				<li>
 					<title>Editing and Review</title>
