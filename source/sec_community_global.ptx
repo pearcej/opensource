@@ -4,6 +4,15 @@
     <title>The Challenges of Global Community</title>
 
     <introduction>
+      <p>An open source license formalizes what people are permitted to do with the material that is open source and under what conditions. For example, this might address whether you are granted the rights to use, modify, or distribute (commercially or non-commercially) the material.
+      </p>
+      <p>
+      Disclaimer: It is not the goal of this chapter to provide legal advice. The goal of this chapter is to provide a starting point to help you make an informed choice by providing information on popular open source licenses in a simplified fashion. If you have any questions regarding the best license for your code or any other legal issues relating to it, it’s your responsibility to do further research or consult with a professional.
+      </p>
+      <p>
+      Many people find licensing to be one of the more confusing aspects of open source software. It is our hope that this simplified treatment has given the reader a better understanding of the key issues.
+    </p>
+
       <p>Open Source Software is as much about community as it is about writing software. Consider the two words that make up the phrase open source: obviously, having source code is not a unique quality, since all software has source code, somewhere. The distinguishing feature of open source software is its openness, but being open is moot unless there is a community using and improving the software. The more people using, collaborating, and contributing to the software, the greater the value of its openness.
       </p>
       <p>Each OSS project builds its own unique community with its own qualities. Some communities are small, others large; some are highly structured, some are much more casual; some readily welcome new contributors, others have high barriers to entry; and some communities are global, while others are very local. One of the first steps in getting involved with an open source community is to scout out the lay of the land and discover the characteristics of the community. To do so, you need to understand the qualities you're looking for, and you need to understand how to communicate with the community.
