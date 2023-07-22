@@ -180,8 +180,9 @@ f30ab (HEAD -&gt; master, testing) Add feature #32 - ability to add new formats 
 
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
-				<pre>$ vim test.rb
-$ git commit -a -m 'made a change'</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+				<pre>
+$ git commit -a -m 'made a change'</pre>
+
 
 <!-- div attr= class="imageblock"-->
 <!-- div attr= class="content"-->
@@ -247,7 +248,7 @@ Note that <c>git log</c> doesn’t show <em>all</em> the branches <em>all</em> t
 
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
-				<pre>$ vim test.rb
+				<pre>
 $ git commit -a -m 'made other changes'</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
 <!-- div attr= class="paragraph"-->
