@@ -2,6 +2,24 @@
 
 <section xml:id="sec_community_global" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>The Challenges of Global Community</title>
+
+    <introduction>
+      <p>Open Source Software is as much about community as it is about writing software. Consider the two words that make up the phrase open source: obviously, having source code is not a unique quality, since all software has source code, somewhere. The distinguishing feature of open source software is its openness, but being open is moot unless there is a community using and improving the software. The more people using, collaborating, and contributing to the software, the greater the value of its openness.
+      </p>
+      <p>Each OSS project builds its own unique community with its own qualities. Some communities are small, others large; some are highly structured, some are much more casual; some readily welcome new contributors, others have high barriers to entry; and some communities are global, while others are very local. One of the first steps in getting involved with an open source community is to scout out the lay of the land and discover the characteristics of the community. To do so, you need to understand the qualities you're looking for, and you need to understand how to communicate with the community.
+      </p>
+      <p>It's important, and a little daunting, to realize that the concept of open applies not only to the source code, but to all of the activity that takes place within a community. Engaging with an open source community means working in the open, succeeding in the open, and failing in the open.</p>
+      <p>At the end of this chapter, you should:
+  
+      <ul>
+      <li>Understand the key qualities of an OSS community;</li>
+      <li>Understand common OSS communication tools;</li>
+      <li>Be able to determine the qualities of a specific OSS community;</li>
+      <li>Start to engage with one or more OSS communities using its communication tools and culture.</li>
+      </ul>
+      </p>
+    </introduction>
+
     <p>Most OSS projects are (or aspire to become) distributed, global communities. This introduces a number of challenges:
    
     <ul>
