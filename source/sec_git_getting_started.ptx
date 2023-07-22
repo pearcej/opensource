@@ -618,15 +618,37 @@ Again, you need to do this only once if you pass the <c>--global</c> option, bec
 	If you want to use a non-default text editor, such as VSCode, on a macOS system you may need to select "Shell Command: Install 'Code' command in path" from the Command Palette in VSCode. On a Windows system, if you want to use a different text editor, you must specify the full path to its executable file. This will be different depending on how your editor is packaged.
 </p>
 <p>
-	 After adding VSCode to your path, you might be able to do the following:
+	 After adding VSCode to your path, the following might work for changing your editor to VSCode:
 </p>
 <pre>
   git config  --global core.editor 'code --new-window --wait'
 </pre>
 
 <p>
-	The <c>--wait</c> option is needed to wait for the VSCode window to close before returning to the terminal. So a new window will open in a new instance of VSCode, and once you save the file and close it, you will return to your terminal.
+	The <c>--wait</c> option is needed to wait for the VSCode window to close before returning to the terminal. So a new window will open in a new instance of VSCode, and once you save the file and close it, you will return to your terminal. 
 </p>
+
+<p> If you have that working, you can use VSCode to add some additional functionality .Git diff is a particularly useful command for reviewing changes before committing them to the repository.
+	We will continue to use the <c>git diff</c> command in various ways throughout the rest of the chapter. To set up VSCode to handle <c>git diff</c> commands, we need to change the <c>git config</c> file. To get to it globally, type the following:
+	</p>
+	<pre>
+	  git config --global --edit
+	</pre>
+	<p>
+	  Then add the following lines to your git config file:
+	</p>
+	<pre>
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+    tool = code
+[mergetool "code"]
+    cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+	</pre>
+	<p>See <url href="https://code.visualstudio.com/docs/sourcecontrol/overview#_vs-code-as-git-difftool-and-mergetool" visual="code.visualstudio.com/docs/sourcecontrol/overview">VS Code as Git difftool and mergetool</url>
+	</p>
 
 </subsection>
 

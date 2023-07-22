@@ -628,28 +628,6 @@ index 8ebb991..643e24f 100644
  </pre>
 </p>
 
-        <p> Git diff is a particularly useful command for reviewing changes before committing them to the repository.
-          We will continue to use the <c>git diff</c> command in various ways throughout the rest of the book. To set up VSCode to handle <c>git diff</c> commands, we need to change the <c>git config</c> file. To get to it globally, type the following:
-          </p>
-		  <pre>
-			git config --global --edit
-		  </pre>
-		  <p>
-			The add the following lines to your git config file:
-		  </p>
-		  <pre>
-			[diff]
-    tool = default-difftool
-[difftool "default-difftool"]
-    cmd = code --wait --diff $LOCAL $REMOTE
-[merge]
-  tool = code
-[mergetool "code"]
-  cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
-		  </pre>
-		  <p>See <url href="https://code.visualstudio.com/docs/sourcecontrol/overview#_vs-code-as-git-difftool-and-mergetool" visual="code.visualstudio.com/docs/sourcecontrol/overview">VS Code as Git difftool and mergetool</url>
-		  </p>
-
 <!-- div attr= class="sect3"-->
 			</paragraphs>
 
