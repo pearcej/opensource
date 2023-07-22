@@ -50,7 +50,7 @@
                       A number of features exist in most issue trackers that facilitate communication among contributors and potential contributors. These include linking, labelling, mentioning a particular user, etc.
                     </p>
                     <p>
-                      One important feature that exists in issue trackers is the ability to <term>label</term> the issue with one or more of a set of labels. Github, for example, provides the following default labels:
+                      One important feature that exists in issue trackers is the ability to <term>label</term> the issue with one or more of a set of labels. GitHub, for example, provides the following default labels:
                       <ul>
                         <li>
                           <p>
@@ -98,7 +98,7 @@
                           </p>
                         </li>
                       </ul>
-                      Note that although the above default labels are included in every new Github repository, maintainers may or may not use all of them, and many maintainers choose to edit or delete some of the default labels and/or add their own custom labels that make sense for that project.
+                      Note that although the above default labels are included in every new GitHub repository, maintainers may or may not use all of them, and many maintainers choose to edit or delete some of the default labels and/or add their own custom labels that make sense for that project.
                     </p>
 
                 </li>

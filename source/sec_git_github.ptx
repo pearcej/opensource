@@ -11,10 +11,10 @@
             <url href="https://bitbucket.org/" visual="bitbucket.org">Bitbucket</url>. All of these use Git for version control and all provide cloud storage space for Git repositories. Of these, GitHub is the single largest host for Git repositories and is the central point of collaboration for millions of developers and projects. A large percentage of all Git repositories are hosted on GitHub, and many open-source projects use it for Git hosting, issue tracking, code review, and other things. So while it’s not a direct part of the Git open source project, there’s a good chance that you’ll want or need to interact with GitHub at some point while using Git professionally. Other hosting services work similarly.
 		</p>
 		<p>
-			Watch the following video from Github to learn more.
+			Watch the following video from GitHub to learn more.
 		</p>
 		<figure xml:id="video-what-is-github">
-			<caption>What is Github?</caption>
+			<caption>What is GitHub?</caption>
 			<video youtube="pBy1zgt0XPc" width="80%" />
 		</figure>
 
@@ -54,11 +54,11 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					To fork a project, visit the project page and click the “Fork” button at the top-right of the page. This gives you a copy of the project in the Github cloud.
+					To fork a project, visit the project page and click the “Fork” button at the top-right of the page. This gives you a copy of the project in the GitHub cloud.
 				</p><!--</div attr= class="paragraph">-->
 
 				<p>
-					Once you have your own fork on Github, you need to <term>clone</term> a local copy down to a place where you can edit it, most typically your own local computer. <em>Note that while you can make small changes in Github, it is not a good practice to do so.</em>
+					Once you have your own fork on GitHub, you need to <term>clone</term> a local copy down to a place where you can edit it, most typically your own local computer. <em>Note that while you can make small changes in GitHub, it is not a good practice to do so.</em>
 				</p><!--</div attr= class="paragraph">-->
 				<p>
 					Let's try this!
@@ -67,7 +67,7 @@
 					<title><term>Exercise – Fork a Repo</term></title>
 			
 					<p>
-						Go to <url href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">Github: Fork a Repo</url> and complete the provided exercise with the octocat/Spoon-Knife repository.
+						Go to <url href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">GitHub: Fork a Repo</url> and complete the provided exercise with the octocat/Spoon-Knife repository.
 					</p>
 				  </exercise>
 <!-- div attr= class="sect3"-->
@@ -144,10 +144,10 @@
 				</p><!--</div attr= class="paragraph">-->
 
 				<exercise xml:id="exercise-github-flow">
-					<title><term>Exercise – Github Flow</term></title>
+					<title><term>Exercise – GitHub Flow</term></title>
 			
 					<p>
-						Go to <url href="https://docs.github.com/en/get-started/quickstart/github-flow">Github Flow</url> and complete the provided exercise with one of your own repositories. 
+						Go to <url href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub Flow</url> and complete the provided exercise with one of your own repositories. 
 					</p>
 				</exercise>
 
@@ -182,8 +182,8 @@
 					</p>
 
 					<exercise xml:id="ex-intro-github">
-						<title>Introduction to Github</title>
-						Go to <url href="https://github.com/skills/introduction-to-github" visual="github.com/skills/introduction-to-github">Introduction to Github</url> and try all parts of the exercise. It should take an hour or less.
+						<title>Introduction to GitHub</title>
+						Go to <url href="https://github.com/skills/introduction-to-github" visual="github.com/skills/introduction-to-github">Introduction to GitHub</url> and try all parts of the exercise. It should take an hour or less.
 					</exercise>
 
 <!-- div attr= class="sect4"-->
@@ -785,7 +785,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 <!-- div attr= class="paragraph"-->
 				<p>
 					There are a number of special files that GitHub will notice if they are present in your repository.
-					We detail a few of the most common ones. Note that these can typically be written in any format that Github recognizes as prose.
+					We detail a few of the most common ones. Note that these can typically be written in any format that GitHub recognizes as prose.
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->

@@ -7,7 +7,7 @@
 	Open source software communities use documentation to enhance the software they produce in part via issue and/or bug trackers. When software doesn't perform as you'd expect, users might file a report. They can report inaccurate documentation, suggest new software features, report a bug, or note a potential security hole in a piece of software by filing an issue report. 
   </p>
     <p>
-      Issue trackers are a common component of platforms like Github for working together on open source software projects. Other stand-alone bug trackers and issue trackers include <url href="https://www.bugzilla.org/" visual="bugzilla.org">Bugzilla</url>, <url href="https://www.redmine.org/" visual="redmine.org">Redmine</url>, and <url href="https://trac.edgewall.org/" visual="trac.edgewall.org">Trac</url>.
+      Issue trackers are a common component of platforms like GitHub for working together on open source software projects. Other stand-alone bug trackers and issue trackers include <url href="https://www.bugzilla.org/" visual="bugzilla.org">Bugzilla</url>, <url href="https://www.redmine.org/" visual="redmine.org">Redmine</url>, and <url href="https://trac.edgewall.org/" visual="trac.edgewall.org">Trac</url>.
 	  All serve the same purpose, namely tracking bugs and issues like new feature requests.
     </p>
  
