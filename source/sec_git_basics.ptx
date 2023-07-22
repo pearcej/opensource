@@ -315,7 +315,7 @@ Changes to be committed:
 
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
-				<pre>$ vim CONTRIBUTING.md
+				<pre>
 $ git status
 On branch main
 Your branch is up-to-date with 'origin/main'.
@@ -628,14 +628,27 @@ index 8ebb991..643e24f 100644
  </pre>
 </p>
 
-        <p>
-          Note:
-        Git Diff in an External Tool
-        </p>
-				<p>
-					We will continue to use the <c>git diff</c> command in various ways throughout the rest of the book. There is another way to look at these diffs if you prefer a graphical or external diff viewing program instead. If you run <c>git difftool</c> instead of <c>git diff</c>, you can view any of these diffs in software like emerge, vimdiff and many more (including commercial products). Run <c>git difftool --tool-help</c> to see what is available on your system.
+        <p> Git diff is a particularly useful command for reviewing changes before committing them to the repository.
+          We will continue to use the <c>git diff</c> command in various ways throughout the rest of the book. To set up VSCode to handle <c>git diff</c> commands, we need to change the <c>git config</c> file. To get to it globally, type the following:
           </p>
-
+		  <pre>
+			git config --global --edit
+		  </pre>
+		  <p>
+			The add the following lines to your git config file:
+		  </p>
+		  <pre>
+			[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+  tool = code
+[mergetool "code"]
+  cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+		  </pre>
+		  <p>See <url href="https://code.visualstudio.com/docs/sourcecontrol/overview#_vs-code-as-git-difftool-and-mergetool" visual="code.visualstudio.com/docs/sourcecontrol/overview">VS Code as Git difftool and mergetool</url>
+		  </p>
 
 <!-- div attr= class="sect3"-->
 			</paragraphs>
@@ -663,7 +676,7 @@ index 8ebb991..643e24f 100644
 				
 <!-- div attr= class="paragraph"-->
 				<p>
-					The editor displays the following text (this example is a Vim screen):
+					The editor displays the following text:
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="listingblock"-->
