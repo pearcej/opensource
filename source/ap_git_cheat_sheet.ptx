@@ -17,7 +17,7 @@
         <li>
           <title><c>git init &lt;directory-name&gt;</c></title>
           <p>
-            Create an empty git repo in a new directory named <c>directory-name</c>. Take care with the <c>directory-name</c>; it is typical to use a short, descriptive, name using only lower case letters and the "-" character. Note that if you leave off the directory name then the current directory will be initialized as a git repository. For more detail see <url href="https://github.com/git-guides/git-init" visual="github.com/git-guides/git-init">Git Guides: Git Init</url>
+            Create an empty git repo in a new directory named <c>directory-name</c>. Take care with the <c>directory-name</c>; it is typical to use a short, descriptive, name using only lowercase letters and the "-" character. Note that if you leave off the directory name then the current directory will be initialized as a git repository. For more detail see <url href="https://github.com/git-guides/git-init" visual="github.com/git-guides/git-init">Git Guides: Git Init</url>
           </p>
         </li>
         <li>
