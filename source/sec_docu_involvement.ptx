@@ -11,7 +11,6 @@
 		<subsection xml:id="sub-sec-how-documentation-suffers">
 			<title>How Documentation Suffers</title>
 			<p>
-				<idx>codebases</idx>
 				Getting set up to contribute to an open source project ranges from being technically fairly easy to requiring a long series of steps including many interconnected software installations and several interconnected codebases. 
 			</p>
 
