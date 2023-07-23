@@ -21,7 +21,7 @@
     <subsection xml:id="subsec-secp">
         <title>Software Engineering Collaboration Platforms (SECP)</title>
         <p>
-          <idx>software engineering collaboration platforms / SECP</idx>
+          <idx>software engineering collaboration platforms</idx><idx>SECP</idx>
           Virtually every open source community uses a 
             <term>Software Engineering Collaboration Platform (SECP)</term> such as 
             <url href="https://github.com/" visual="github.com/">GitHub</url>, 
