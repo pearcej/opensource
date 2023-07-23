@@ -214,7 +214,7 @@
             <li>
                 <title>Mailing Lists and Forums</title>
                 <p>
-                  <idx>Mailing Lists and Forums</idx>
+                  <idx>mailing lists and forums</idx>
                   You likely know that an electronic mailing list is a collection of names and email addresses used to send material to multiple recipients typically given a single email address for the list. Open source communities that use email lists tend to use discussion lists (which allow for replies) rather than announcement lists (which are one way) to engage their communities. An example of an open source project that leverages email lists heavily for discussions is 
                   <url href="https://www.debian.org/MailingLists/" visual="www.debian.org/MailingLists">Debian</url>. Note that all emails sent to the Debian lists are distributed both to the list subscribers as well as copied to the public archive, so people to browse or search without the need to be subscribed.
                 </p>
