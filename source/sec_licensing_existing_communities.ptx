@@ -72,5 +72,63 @@
 	
   </subsection>
 
+  <exercise xml:id="globalCommunityChallenge">
+	<statement>
+	  <p>
+		What license did Plausible Analytics change to from the MIT License, and what was the main reason for this change?	  
+	</p>
+	</statement>
+	<choices randomize = "yes">
+	  <choice correct = "yes">
+		<statement>
+		  <p>
+			GNU GPLv3, to protect against corporations using the software to create proprietary software for sale.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			Correct! They made the change to their license to protect against corporations that took their code and then used it to create and sell proprietary software that directly competed with their project.
+		</p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>
+			Apache License 2.0, to make it more compatible with other open source projects.
+		</p>
+		</statement>
+		<feedback>
+		  <p>
+			The section mentions that Plausible Analytics changed to a GNU copyleft license, not the Apache License 2.0, for specific reasons related to how the software is used over a network.
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>
+			Mozilla Public License MPL 2.0, to ensure greater privacy protection for users.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			The reason for the license change was not related to privacy protection but rather to address specific issues with how corporations were using their software.
+		</p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>
+			ISC License, to simplify the licensing terms and make it more permissive.
+		</p>
+		</statement>
+		<feedback>
+		  <p>
+			The section states that Plausible Analytics moved to a copyleft license to protect against specific use cases involving corporations, which is different from choosing a more permissive license like the ISC License.
+		</p>
+		</feedback>
+	  </choice>
+	</choices>
+  </exercise>
+
 </section>
 
