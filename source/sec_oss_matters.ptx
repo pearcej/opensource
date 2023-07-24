@@ -92,5 +92,74 @@ ch_building_code
 		</p>
 
 	</exercise>
+	<exercise xml:id="OssMatters2">
+        <statement>
+          <p>
+			What type of software is generally more secure?
+          </p>
+        </statement>
+        <choices randomize = "yes">
+          <choice>
+            <statement>
+              <p>
+                Proprietary, because proprietary source code is not open to the public and cannot be easily modified. 
+              </p>
+            </statement>
+            <feedback>
+              <p>
+				Even though proprietary software’s source code is not shared with the public, it is not ensured that the security will be managed efficiently. 
+            </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                Open source, because open source software is more transparent compared to proprietary software, allowing developers to respond to bugs more rapidly and efficiently. 
+              </p>
+            </statement>
+            <feedback>
+              <p>
+				Despite the nature of open source that allows the public to access the source code, that doesn’t mean open-source software is more reliable and could still hold some security threats to users. 
+              </p>
+            </feedback>
+          </choice>
+          <choice >
+            <statement>
+              <p>
+                Proprietary, because proprietary software is strictly managed by a single organization so that it will ensure the software’s security. 
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Contrary to popular belief, this leads to more vulnerabilities as it is difficult for a single entity to keep track of every aspect of the product.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                Open source, because open source software needs a warranty to be protected from security threats. 
+            </p>
+            </statement>
+            <feedback>
+              <p>
+				Open source software typically does not come with a warranty, but licenses that grant users the freedom to view, modify, and distribute the source code. 
+              </p>
+            </feedback>
+          </choice>
+          <choice correct = "yes">
+            <statement>
+                <p>
+                    While open-source software seems inherently more secure, both open-source software and proprietary software pose possible challenges to software security.
+                </p>
+            </statement>
+            <feedback>
+                <p>
+                    Yes, while OSS can be considered to be more transparent, it isn’t inherently less secure than their proprietary counterparts!
+                </p>
+            </feedback>
+          </choice>
+        </choices>
+      </exercise>
 
 </section>
