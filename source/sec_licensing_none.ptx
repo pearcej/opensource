@@ -136,5 +136,63 @@
 
   </subsection>
 
+  <exercise xml:id="noLicense">
+    <statement>
+      <p>
+        If you come across software that doesn't have a license, what are your options as a potential user? 
+      </p>
+    </statement>
+    <choices randomize = "yes">
+      <choice correct = "yes">
+        <statement>
+          <p>
+            Request the maintainers to add a license and negotiate terms with them privately. 
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            Correct! It’s nicer to ask or remind the maintainers about product license for their software before attempting to use it by any means. 
+        </p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            Assume the software is open source and use it, but avoid sharing it with others.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            Assuming the software is open source without a license is not a safe approach. Without a license, you have no permission to use, modify, or share the software, so using it without a license is not advisable
+          </p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            Use the software for personal use but refrain from viewing or making a copy of the code.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            Without a license, you have no permission to use the software, even for personal use. Additionally, if you have access to the code, you may inadvertently infringe on the copyright holder's rights.
+          </p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            Contact GitHub support to report the lack of a license and seek their assistance in getting one.
+        </p>
+        </statement>
+        <feedback>
+          <p>
+            While it's a good idea to report the lack of a license to the maintainers or project owners, GitHub support is not directly involved in adding licenses to repositories. It's up to the project owners to choose and add a license to their software.
+          </p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+
 </section>
 
