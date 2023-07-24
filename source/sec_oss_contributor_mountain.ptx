@@ -181,6 +181,63 @@
 					</choice>
 				</choices>
 				</exercise>
+				<exercise xml:id="contributorMountain2">
+					<statement>
+					  <p>
+						In an OSS community, which of the following stages does a user typically transition through?
+					  </p>
+					</statement>
+					<choices randomize = "yes">
+					  <choice>
+						<statement>
+						  <p>
+							Seeker → User → Developer → Contributor
+						  </p>
+						</statement>
+						<feedback>
+						  <p>
+							Developer is not part of the typical progression a user undergoes in an OSS community. Also, one is a User before becoming a Seeker.
+						</p>
+						</feedback>
+					  </choice>
+					  <choice>
+						<statement>
+						  <p>
+							Beneficiary → Seeker → Collaborator → Contributor 
+						  </p>
+						</statement>
+						<feedback>
+						  <p>
+							Beneficiary is not a part of the Contributor Mountain. 
+						  </p>
+						</feedback>
+					  </choice>
+					  <choice correct = "yes">
+						<statement>
+						  <p>
+							User → Seeker → Collaborator → Contributor
+						  </p>
+						</statement>
+						<feedback>
+						  <p>
+							Correct! People usually start by being a user and keeps transitioning until they become a contributor.
+						  </p>
+						</feedback>
+					  </choice>
+					  <choice>
+						<statement>
+						  <p>
+							User → Seeker → Collaborator → Developer
+						</p>
+						</statement>
+						<feedback>
+						  <p>
+							Developer is not part of the Contributor Mountain.
+						  </p>
+						</feedback>
+					  </choice>
+					</choices>
+				  </exercise>
 
 </section>
 
