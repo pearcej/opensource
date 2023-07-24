@@ -86,7 +86,63 @@
 		</p>
 
 		</exercise>
-
+		<exercise xml:id="Sharecode2">
+			<statement>
+			  <p>
+				How does the availability of source code in FOSS projects prevent software from becoming “abandonware”?
+			  </p>
+			</statement>
+			<choices randomize ="yes">
+			  <choice  correct = "yes">
+				<statement>
+				  <p>
+					Once open-source code is created, it is open to the public, allowing multiple developers and communities to continue its development and maintenance.
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					Open Source code’s availability to the public encourages constant collaboration from the users preventing the software from becoming “abandonware”.
+				</p>
+				</feedback>
+			  </choice>
+			  <choice>
+				<statement>
+				  <p>
+					The source code will be sold by the developers to endure development costs and prevent it from becoming “abandonware”.
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					Selling the software to endure development costs will not prevent it from becoming abandonware. 
+				  </p>
+				</feedback>
+			  </choice>
+			  <choice>
+				<statement>
+				  <p>
+					The source code will be encrypted and only accessible to authorized developers, ensuring its ongoing development and value.
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					FOSS’s source code must be accessible to the public with or without authorized developers’ permission. Therefore, the source code will receive constant collaboration and development from a diverse group of developers, preventing the software from becoming “abandonware.”
+				  </p>
+				</feedback>
+			  </choice>
+			  <choice>
+				<statement>
+				  <p>
+					The source code will be kept secret and protected by intellectual property laws to avoid becoming “abandonware.”
+				</p>
+				</statement>
+				<feedback>
+				  <p>
+					No, the source code of a FOSS project will never be inaccessible to the public, or otherwise it will lose the value of a FOSS project. Intellectual property laws have no interference with keeping software from becoming “abandonware”. 
+				  </p>
+				</feedback>
+			  </choice>
+			</choices>
+		  </exercise>
 </section>
 
 
