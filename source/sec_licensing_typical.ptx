@@ -295,5 +295,62 @@
       There are many other licenses all with differing rules in the open source community. For a useful treatment of some more of other open source licenses, see <url href="https://choosealicense.com/licenses/" visual="choosealicense.com/licenses">Choose a License</url> by GitHub.
     </p>
   </conclusion>
+  <exercise xml:id="SecLicensingTypical">
+    <statement>
+      <p>
+        Which open source license requires making the complete source code of licensed works and modifications available under the same license?
+      </p>
+    </statement>
+    <choices randomize = "yes">
+      <choice>
+        <statement>
+          <p>
+            MIT License
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            The MIT License is a permissive license with fewer conditions and does not require making the complete source code available under the same license.
+        </p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            Apache License 2.0
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            The Apache License 2.0 is also a permissive license, but it does not require making the complete source code available under the same license.
+          </p>
+        </feedback>
+      </choice>
+      <choice correct = "yes">
+        <statement>
+          <p>
+            GNU General Public License v3.0
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            Correct! The GNU General Public License v3.0 is conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. 
+          </p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            Boost Software License 1.0
+        </p>
+        </statement>
+        <feedback>
+          <p>
+            This is simple permissive license only requiring preservation of copyright and license notices for source (and not binary) distribution
+          </p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
 </section>
 
