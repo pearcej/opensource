@@ -161,6 +161,62 @@ main() {
 		</p>
 
 	</exercise>
-
+	<exercise xml:id="OssSourceCode">
+        <statement>
+          <p>
+			Are there any potential legal considerations and limitations regarding decompilation and reverse engineering in relation to copyright laws?
+          </p>
+        </statement>
+        <choices>
+          <choice>
+            <statement>
+              <p>
+                Yes, decompilation is generally prohibited under copyright laws, regardless of the purpose or extent.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Although it is true that generally, decompilation is regulated under copyright laws, it can be done under certain conditions.
+            </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+               No, decompilation is usually permitted under most copyright laws as long as it is for commercial purposes.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Even though decompilation is permitted under most copyright laws, it is not limited to commercial uses only. 
+              </p>
+            </feedback>
+          </choice>
+          <choice correct = "yes">
+            <statement>
+              <p>
+                Yes, decompilation is allowed only for specific purposes and to a limited extent under some copyright laws.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Yes, to be in compliance with the law, one must consider the copyright before undertaking decompilation. It is permitted to a limited extent and for limited specific purposes.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+				No, decompilation is allowed under any circumstance as long as it holds no security concerns and potential security benefits. 
+            </p>
+            </statement>
+            <feedback>
+              <p>
+                Decompilation is not allowed under all circumstances, even though it holds no security threats. Decompilation must align with copyright laws before being carried out. 
+              </p>
+            </feedback>
+          </choice>
+        </choices>
+      </exercise>
 </section>
 
