@@ -49,5 +49,144 @@
 		</p><!--</div attr= class="entry-content">--><!--</div attr= class="entry-container">--><!--</div attr= xml:id="main" class="site-main" role="main">--><!--</div attr= class="wrapper">--><!--</div attr= xml:id="content" class="site-content">-->
 
     </subsection>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<exercise xml:id="OSSPortafolio2">
+        <statement>
+          <p>
+            In the context of the text, what should be the primary focus while contributing to an OSS project?
+          </p>
+        </statement>
+        <choices>
+          <choice>
+            <statement>
+              <p>
+                An OSS Portfolio generalizes your vision to the Open-Source Community, as it fits into the community’s interests and social trends. 
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                An OSS Portfolio should reflect one’s unique interests and personal values, rather than trying to fit into one generalized image and following social trends. 
+            </p>
+            </feedback>
+          </choice>
+          <choice correct = "yes">
+            <statement>
+              <p>
+                An OSS Portfolio helps you showcase your unique interests while also working towards solving societal issues. 
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                An OSS Portfolio does help you showcase your unique interests while working towards solving societal issues.
+              </p>
+            </feedback>
+          </choice>
+          <choice correct = "yes">
+            <statement>
+              <p>
+                An OSS Portfolio allows you to demonstrate your technical skills and expertise to potential employers or collaborators.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                An OSS Portfolio that includes the projects you work hard for will demonstrate your great potential and skills to companies you want to attract. 
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                Contributing to open-source projects reduces your representation within the software development community, as it is often undervalued by industry professionals.
+            </p>
+            </statement>
+            <feedback>
+              <p>
+                Contributing to open-source projects increases your representation within the software development community.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+                <p>
+                    An OSS Portfolio limits opportunities for networking with like-minded developers and potential mentors.
+                </p>
+            </statement>
+            <feedback>
+                <p>
+                    An OSS portfolio does not limit networking opportunities. On the contrary, it helps you to network with like-minded individuals and potential mentors.
+                </p>
+            </feedback>
+          </choice>
+		  <choice correct = "yes">
+            <statement>
+                <p>
+                    Engaging in open-source projects can lead to valuable learning experiences and exposure to diverse coding styles and methodologies.
+                </p>
+            </statement>
+            <feedback>
+                <p>
+                    Engaging in open-source projects can lead to valuable learning experiences and exposure to diverse coding styles and methodologies.
+                </p>
+            </feedback>
+          </choice>
+        </choices>
+      </exercise>
 </section>
 
