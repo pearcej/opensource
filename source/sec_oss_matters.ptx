@@ -92,5 +92,62 @@ ch_building_code
 		</p>
 
 	</exercise>
-
+	<exercise xml:id="OssMatters">
+        <statement>
+          <p>
+            Why is it advantageous for students and independent learners to engage with Open Source Software (OSS) projects? SELECT ALL THAT APPLY
+          </p>
+        </statement>
+        <choices randomize = "yes">
+          <choice correct = "yes">
+            <statement>
+              <p>
+                OSS projects offer real-world software development experience.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Engaging with OSS projects allows students and independent learners to work on real-world software development projects, gain practical experience, and contribute to widely-used software. 
+            </p>
+            </feedback>
+          </choice>
+          <choice correct = "yes">
+            <statement>
+              <p>
+                OSS projects present unique challenges for developers due to their diverse nature, fostering an enriching learning experience.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                OSS projects often present unique challenges, such as collaborating with geographically dispersed teams and contributing to a diverse range of projects, which further enrich the learning experience for developers.
+              </p>
+            </feedback>
+          </choice>
+          <choice >
+            <statement>
+              <p>
+				Students often get paid internships by OSS companies for their work.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                This is not a guaranteed advantage for all students and independent learners. 
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                Students can claim partial ownership of the OSS projects they contribute to.
+            </p>
+            </statement>
+            <feedback>
+              <p>
+				Ownership in OSS projects works differently than in traditional proprietary software. While students couldn’t claim OSS Project’s ownership, they may gain recognition for their contributions.
+              </p>
+            </feedback>
+          </choice>
+        </choices>
+      </exercise>
 </section>
+
