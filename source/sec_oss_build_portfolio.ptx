@@ -49,5 +49,62 @@
 		</p><!--</div attr= class="entry-content">--><!--</div attr= class="entry-container">--><!--</div attr= xml:id="main" class="site-main" role="main">--><!--</div attr= class="wrapper">--><!--</div attr= xml:id="content" class="site-content">-->
 
     </subsection>
+	<exercise xml:id="OSSPortfolio1">
+        <statement>
+          <p>
+			In the context of the text, what should be the primary focus while contributing to an OSS project?
+          </p>
+        </statement>
+        <choices randomize = "yes">
+          <choice>
+            <statement>
+              <p>
+				Building your portfolio.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Building your portfolio shouldn’t be your primary focus while working on an OSS project as your portfolio will build itself if the project achieves its goals. 
+            </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                Networking with project leaders.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                While networking can be beneficial, it is not the primary focus mentioned in the text when contributing to an OSS project.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+				Seeking job offers.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+				Contributing to OSS projects can open up job opportunities, this should not be your main reason to collaborate with the OSS community.
+              </p>
+            </feedback>
+          </choice>
+          <choice correct = "yes">
+            <statement>
+              <p>
+                Working hard on a project that matters to you.
+            </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct! If you choose a project that matters to you, and if you work hard to help that project achieve its goals, then you also achieve all of the above.
+              </p>
+            </feedback>
+          </choice>
+        </choices>
+      </exercise>
 </section>
 
