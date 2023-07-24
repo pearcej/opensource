@@ -124,7 +124,63 @@
 					</p>
 
 				</subsection>
-
+				<exercise xml:id="contributormountain1">
+				<statement>
+					<p>
+						Which of the following statements best describes the relationship between users and contributors in FOSS projects?
+					</p>
+				</statement>
+				<choices randomize = "yes">
+					<choice>
+					<statement>
+						<p>
+							Users are not considered part of the development process of FOSS projects.
+						</p>
+					</statement>
+					<feedback>
+						<p>
+							Actually, users play a significant role in the FOSS community beyond just using the software
+					</p>
+					</feedback>
+					</choice>
+					<choice>
+					<statement>
+						<p>
+							Contributors solely rely on users for their contributions.
+						</p>
+					</statement>
+					<feedback>
+						<p>
+							Even though user contributions are very important, contributors don’t solely rely on them.
+						</p>
+					</feedback>
+					</choice>
+					<choice>
+					<statement>
+						<p>
+							Users and contributors have distinct roles and do not interact.
+						</p>
+					</statement>
+					<feedback>
+						<p>
+							Users and contributors could still interact despite different responsibilities, such as users could give feedback to contributors about the software. In fact, this kind of interaction is common in FOSS projects.
+						</p>
+					</feedback>
+					</choice>
+					<choice correct = "yes">
+					<statement>
+						<p>
+							Users can become contributors and actively participate in FOSS projects.
+					</p>
+					</statement>
+					<feedback>
+						<p>
+							Correct! In FOSS projects, users are encouraged to become contributors and actively participate in the development process.
+						</p>
+					</feedback>
+					</choice>
+				</choices>
+				</exercise>
 
 </section>
 
