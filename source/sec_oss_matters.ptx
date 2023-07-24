@@ -92,7 +92,131 @@ ch_building_code
 		</p>
 
 	</exercise>
-	
-
+	<exercise xml:id="OssMatters">
+        <statement>
+          <p>
+            Why is it advantageous for students and independent learners to engage with Open Source Software (OSS) projects? SELECT ALL THAT APPLY
+          </p>
+        </statement>
+        <choices randomize = "yes">
+          <choice correct = "yes">
+            <statement>
+              <p>
+                OSS projects offer real-world software development experience.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Engaging with OSS projects allows students and independent learners to work on real-world software development projects, gain practical experience, and contribute to widely-used software. 
+            </p>
+            </feedback>
+          </choice>
+          <choice correct = "yes">
+            <statement>
+              <p>
+                OSS projects present unique challenges for developers due to their diverse nature, fostering an enriching learning experience.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                OSS projects often present unique challenges, such as collaborating with geographically dispersed teams and contributing to a diverse range of projects, which further enrich the learning experience for developers.
+              </p>
+            </feedback>
+          </choice>
+          <choice >
+            <statement>
+              <p>
+				Students often get paid internships by OSS companies for their work.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                This is not a guaranteed advantage for all students and independent learners. 
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                Students can claim partial ownership of the OSS projects they contribute to.
+            </p>
+            </statement>
+            <feedback>
+              <p>
+				Ownership in OSS projects works differently than in traditional proprietary software. While students couldn’t claim OSS Project’s ownership, they may gain recognition for their contributions.
+              </p>
+            </feedback>
+          </choice>
+        </choices>
+      </exercise>
+      <exercise xml:id="OssMatters2">
+        <statement>
+          <p>
+			What type of software is generally more secure?
+          </p>
+        </statement>
+        <choices randomize = "yes">
+          <choice>
+            <statement>
+              <p>
+                Proprietary, because proprietary source code is not open to the public and cannot be easily modified. 
+              </p>
+            </statement>
+            <feedback>
+              <p>
+				Even though proprietary software’s source code is not shared with the public, it is not ensured that the security will be managed efficiently. 
+            </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                Open source, because open source software is more transparent compared to proprietary software, allowing developers to respond to bugs more rapidly and efficiently. 
+              </p>
+            </statement>
+            <feedback>
+              <p>
+				Despite the nature of open source that allows the public to access the source code, that doesn’t mean open-source software is more reliable and could still hold some security threats to users. 
+              </p>
+            </feedback>
+          </choice>
+          <choice >
+            <statement>
+              <p>
+                Proprietary, because proprietary software is strictly managed by a single organization so that it will ensure the software’s security. 
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Contrary to popular belief, this leads to more vulnerabilities as it is difficult for a single entity to keep track of every aspect of the product.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                Open source, because open source software needs a warranty to be protected from security threats. 
+            </p>
+            </statement>
+            <feedback>
+              <p>
+				Open source software typically does not come with a warranty, but licenses that grant users the freedom to view, modify, and distribute the source code. 
+              </p>
+            </feedback>
+          </choice>
+          <choice correct = "yes">
+            <statement>
+                <p>
+                    While open-source software seems inherently more secure, both open-source software and proprietary software pose possible challenges to software security.
+                </p>
+            </statement>
+            <feedback>
+                <p>
+                    Yes, while OSS can be considered to be more transparent, it isn’t inherently less secure than their proprietary counterparts!
+                </p>
+            </feedback>
+          </choice>
+        </choices>
+      </exercise>
 </section>
 
