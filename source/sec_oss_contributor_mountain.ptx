@@ -4,7 +4,7 @@
 			<title>Climbing Contributor Mountain</title>
   <introduction>
 			<p>
-				Participation in FOSS projects is similar, in many ways, to an apprenticeship. 
+				Participation in OSS projects is similar, in many ways, to an apprenticeship. 
 				It takes some effort, and some help, to work your way to the top. Let’s watch the path a typical newbie takes up Contributor Mountain.
 			
 			</p>
@@ -39,7 +39,7 @@
 					</p>
 
 					<p>
-						Note: Alice may not yet know, or care, that Inkscape is FOSS software; in fact, she probably doesn’t even know what FOSS is. It’s irrelevant to her. She loves the fact that Inkscape is freely available, which is one of the great features of FOSS software — but beyond that, the concept of FOSS just isn’t meaningful to her. Yet.
+						Note: Alice may not yet know, or care, that Inkscape is OSS software; in fact, she probably doesn’t even know what OSS is. It’s irrelevant to her. She loves the fact that Inkscape is freely available, which is one of the great features of OSS software — but beyond that, the concept of FSS just isn’t meaningful to her. Yet.
 					</p>
 
 				</subsection>
@@ -82,11 +82,11 @@
 					</p>
 
 					<p>
-						This crucial step is what makes FOSS unique: it’s the step at which Alice decides to become a collaborator.
+						This crucial step is what makes OSS unique: it’s the step at which Alice decides to become a collaborator.
 					</p>
 
 					<p>
-						Why? Good question. Contributors to FOSS have many different reasons — but a frequently heard rationale is the desire to “scratch an itch.” Alice loves Inkscape, but she hates this bug.
+						Why? Good question. Contributors to OSS have many different reasons — but a frequently heard rationale is the desire to “scratch an itch.” Alice loves Inkscape, but she hates this bug.
 					</p>
 
 					<p>
@@ -108,7 +108,7 @@
 					<idx>contributor</idx>
 
 					<p>
-						The line between collaborator and contributor can be a blurry line, and there are many ways to define contribution, but here’s one good way of thinking about it: a contributor is a person that a FOSS community actively relies upon for help.
+						The line between collaborator and contributor can be a blurry line, and there are many ways to define contribution, but here’s one good way of thinking about it: a contributor is a person that an OSS community actively relies upon for help.
 					</p>
 
 					<p>
@@ -116,7 +116,7 @@
 					</p>
 
 					<p>
-						All of these contributors are making their projects better — and every FOSS project needs more of these kinds of contributors.
+						All of these contributors are making their projects better — and every OSS project needs more of these kinds of contributors.
 					</p>
 
 					<p>
@@ -127,19 +127,19 @@
 				<exercise xml:id="contributormountain1">
 				<statement>
 					<p>
-						Which of the following statements best describes the relationship between users and contributors in FOSS projects?
+						Which of the following statements best describes the relationship between users and contributors in OSS projects?
 					</p>
 				</statement>
 				<choices randomize = "yes">
 					<choice>
 					<statement>
 						<p>
-							Users are not considered part of the development process of FOSS projects.
+							Users are not considered part of the development process of OSS projects.
 						</p>
 					</statement>
 					<feedback>
 						<p>
-							Actually, users play a significant role in the FOSS community beyond just using the software
+							Actually, users play a significant role in the OSS community beyond just using the software
 					</p>
 					</feedback>
 					</choice>
@@ -163,19 +163,19 @@
 					</statement>
 					<feedback>
 						<p>
-							Users and contributors could still interact despite different responsibilities, such as users could give feedback to contributors about the software. In fact, this kind of interaction is common in FOSS projects.
+							Users and contributors could still interact despite different responsibilities, such as users could give feedback to contributors about the software. In fact, this kind of interaction is common in OSS projects.
 						</p>
 					</feedback>
 					</choice>
 					<choice correct = "yes">
 					<statement>
 						<p>
-							Users can become contributors and actively participate in FOSS projects.
+							Users can become contributors and actively participate in OSS projects.
 					</p>
 					</statement>
 					<feedback>
 						<p>
-							Correct! In FOSS projects, users are encouraged to become contributors and actively participate in the development process.
+							Correct! In OSS projects, users are encouraged to become contributors and actively participate in the development process.
 						</p>
 					</feedback>
 					</choice>
