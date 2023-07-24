@@ -86,6 +86,112 @@
 		</p>
 
 		</exercise>
+		<exercise xml:id="Sharecode">
+			<statement>
+			  <p>
+			What are some of the advantages of sharing source code in the context of open-source software (FOSS) development? CHECK ALL THAT APPLY
+			  </p>
+			</statement>
+			<choices randomize ="yes">
+			  <choice correct = "yes">
+				<statement>
+				  <p>
+					Shared development costs
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					The cost of writing and maintaining the software can be spread out over several individuals and/or companies.
+				</p>
+				</feedback>
+			  </choice>
+			  <choice>
+				<statement>
+				  <p>
+					Sharing source code prevents stakeholders from ethical benefits
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					Sharing source code embraces the open-source community’s value of sharing. It benefits individuals in terms of making meaningful collaboration and building a better community for everyone.
+				  </p>
+				</feedback>
+			  </choice>
+			  <choice correct = "yes">
+				<statement>
+				  <p>
+					Users can fix their bugs.
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					FOSS allows users to find and fix their own software issues but it also means that users can find other people to fix their bugs for them
+				  </p>
+				</feedback>
+			  </choice>
+			  <choice correct = "yes">
+				<statement>
+				  <p>
+					Potentially better and more secure software.
+				</p>
+				</statement>
+				<feedback>
+				  <p>
+					Allowing users to fix bugs can often lead to better and potentially more secure software because there is no limit to the number of people who could participate in OSS projects, compared to the proprietary software.
+				  </p>
+				</feedback>
+			  </choice>
+			  <choice>
+				<statement>
+					<p>
+					Software that is built on top of open-source software cannot be sold as proprietary software. 
+					</p>
+				</statement>
+				<feedback>
+					<p>
+					Open source software can be sold as proprietary as long as it follows the licenses approved by the Open Source initiative. Some open-source licenses allow combining open-source code with proprietary code, allowing commercial use and distribution under certain conditions.
+					</p>
+				</feedback>
+			  </choice>
+			  <choice correct = "yes">
+				<statement >
+					<p>
+					Software that outlives its creator
+					</p>
+				</statement>
+				<feedback>
+					<p>
+					People could stop working on an open-source project but as long as the source code is available to the public, the software still has a chance to be rebuilt.
+					</p>
+				</feedback>
+			  </choice>
+			  <choice>
+				<statement>
+					<p>
+					Users could distribute the source code free of cost.
+					</p>
+				</statement>
+				<feedback>
+					<p>
+					Although the source code is free to be viewed by the public, not all open-source software is free of cost. Authorized people could still charge you if you want to make a copy or modify their source code. 
+
+					</p>
+				</feedback>
+			  </choice>
+			  <choice correct = "yes">
+				<statement>
+					<p>
+					Freedom to fork and take a project in a new direction.
+					</p>
+				</statement>
+				<feedback>
+					<p>
+					Although proprietary software cannot be forked, OSS guarantees everybody the right to redistribute and modify the source code, developers can always take an OSS project and move it into a new direction, without anybody’s permission.
+					</p>
+				</feedback>
+			  </choice>
+			</choices>
+		  </exercise>
 
 </section>
 
