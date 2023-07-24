@@ -136,5 +136,62 @@
       These explanations and definitions are not intended to be used in any legal way and are offered without warranty of any type, either expressed or implied. In no event shall the author or other contributors be held liable for any claim, damages, or other liability arising from or in connection with these definitions or explanations.
     </p>
   </conclusion>
+  <exercise xml:id="Licensingabout">
+    <statement>
+      <p>
+        What is the primary purpose of licensing creative works like software?
+      </p>
+    </statement>
+    <choices randomize ="yes">
+      <choice>
+        <statement>
+          <p>
+            To grant exclusive copyright to the author of the work.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            While the section mentions that authors automatically hold exclusive copyright to their work by default, licensing serves a different purpose than just granting copyright.
+        </p>
+        </feedback>
+      </choice>
+      <choice correct = "yes">
+        <statement>
+          <p>
+            To provide a legal framework for others to use the work.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+           Licensing sets rules and conditions for how others can use a creative work, such as software, without infringing on the author's copyright
+          </p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            To allow unlimited copying and distribution of the work.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            Licensing is meant to regulate how others can use the work, not necessarily to allow unlimited copying and distribution without any conditions.
+          </p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+          To protect the creators’ products from being illegally sold for commercial purposes.
+        </p>
+        </statement>
+        <feedback>
+          <p>
+            While one of the reasons for licensing is indeed to protect the creators' products from illegal use, licensing is not solely focused on protecting against illegal activities.
+          </p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
 </section>
 
