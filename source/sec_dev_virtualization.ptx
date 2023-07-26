@@ -71,7 +71,63 @@
     </p>
 
   </subsection>
-
+  <exercise xml:id="SecDevVirtualization">
+    <statement>
+      <p>
+        Which of the following statements is true regarding the benefits of containerization in open-source projects?
+      </p>
+    </statement>
+    <choices randomize="yes">
+      <choice>
+        <statement>
+          <p>
+            Containers reduce the risk of software conflicts by providing a dedicated virtual environment for each application.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            This option describes the benefit of virtual machines (VMs), not containerization.
+        </p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            Container images can only be moved between environments with the exact same operating system, limiting their portability.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            Check the section on containerization to understand the portability aspect.
+          </p>
+        </feedback>
+      </choice>
+      <choice correct = "yes">
+        <statement>
+          <p>
+            Containerization simplifies the development and testing of software by offering a consistent environment across different systems.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            Correct! Containerization allows developers to create self-contained and portable environments, ensuring consistency across various systems.
+          </p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            Containers are suitable only for running small-scale applications and are not recommended for complex software projects.
+        </p>
+        </statement>
+        <feedback>
+          <p>
+            This statement is not accurate, as containers are used to run applications of various scales, including complex software projects. Review the section to confirm the benefits of containerization.
+          </p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
 
 </section>
 
