@@ -2,7 +2,15 @@
 
 <section xml:id="sec_dev_shell_terms" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Using the Command Line</title>
+  
   <introduction>
+    <p>
+      This chapter introduces some of the key tools and technologies that are typical to development in open source. Specific tools and technologies tend to change over time, but the concepts tend to remain, so this chapter focuses on the concepts at a high level first, and then offers case studies of specific tools and technologies that are popular at the moment.  (Fortunately, because this book is open source, the specifics can be easily changed by many contributors as time dictates.)
+    </p>
+    <p>
+      It is perhaps worth noting that the tools and technologies discussed in this chapter are not just specific to open source development. They are relevant to software engineering more generally, so what readers learn here is also broadly applicable to development work in industry.
+    </p>
+
     <p>
       In this section, we explain some terminology related to the command line, why developers use it, and then get set up to use it ourselves. If you have worked with the command line previously, then this entire section may serve as a review. Otherwise, this section is written with you in mind.
     </p>
@@ -107,7 +115,7 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
         </li>
     <li><title>Installing Linux in a Virtual Machine (VM) Environment</title>
         <p>
-          If you have sufficient RAM and secondary storage available, then you might consider installing Linux in a VM. This may be a particularly good choice if you are on an older Windows machine and want to develop off-line, then you might consider software such as <url href="https://www.virtualbox.org/" visual="virtualbox.org/">Virtual Box</url> and installing and running Ubuntu in the VM. 
+          If you have no other options among those that were detailed above and you have sufficient RAM and secondary storage available, then you might consider installing Linux in a VM. Using Linux in a VM will create at least some lag, which might be significant, nevertheless this may be a good choice if you are on an older Windows machine and want to develop off-line. If this describes your use-case, you might try it since it is cost-free. Try VM software such as <url href="https://www.virtualbox.org/" visual="virtualbox.org/">Virtual Box</url>, installing and running Ubuntu in the VM, and then following the Ubuntu directions above.
       </p>
     </li>
     <li>
