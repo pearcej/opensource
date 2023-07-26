@@ -652,5 +652,87 @@ As you can see, these search patterns give you a lot of power and control.
   </p>
 </conclusion>
 
+<exercise xml:id="basicshellcommands">
+  <statement>
+    <p>
+      What does the “cat” command do in the shell?
+    </p>
+  </statement>
+  <choices randomize = "yes">
+    <choice>
+      <statement>
+        <p>
+          Create a new file.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          The "cat" command is not used to create new files but rather serves a different purpose.
+      </p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>
+          Similarly to the “dog” command, it shows an ASCII art of a cat        
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          Unfortunately, there is no such thing as a “dog” command, but wouldn't it be so cute?
+        </p>
+      </feedback>
+    </choice>
+    <choice correct = "yes">
+      <statement>
+        <p>
+          Concatenate files and display their content.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          The "cat" command in the shell is used to concatenate files and display their contents on the terminal. It is a common command used to view the content of text files or to combine multiple files into a single output stream.
+        </p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>
+          Move files to a different directory.
+      </p>
+      </statement>
+      <feedback>
+        <p>
+          The "cat" command is not involved in moving files; it serves a different function. Moving files is done using a different command, not "cat."
+        </p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+          <p>
+            It prints “meow meow” on the screen
+          </p>
+      </statement>
+      <feedback>
+          <p>
+            Even though this command sounds like it would summon a cat, unfortunately, “cat” doesn’t mean the cute animal.  The "cat" command is not related to making sounds.
+          </p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+          <p>
+            Copy files to another location.
+          </p>
+      </statement>
+      <feedback>
+          <p>
+            The "cat" command is not used for copying files but rather for another purpose.
+          </p>
+      </feedback>
+    </choice>
+  </choices>
+</exercise>
+
 </section>
 
