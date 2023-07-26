@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="example_projects" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Example OSS Projects</title>
+
+  <xi:include href="./sec_example_pretext.ptx" />
+  <xi:include href="./sec_example_runestone_books.ptx" />
+  <xi:include href="./sec_example_runestone_monorepo.ptx" />
+
+</chapter>
