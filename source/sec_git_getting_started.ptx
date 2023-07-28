@@ -660,6 +660,63 @@ Again, you need to do this only once if you pass the <c>--global</c> option, bec
 	You should now have a basic understanding of different types of VCSs, as well as some of their advantages and disadvantages. You should also now know what Git is and should also now have a working version of Git set-up on your system. In the next section, we will learn some Git basics.
 	</p>
 </conclusion>
+<exercise xml:id="SecGitGettingStarted">
+	<statement>
+	  <p>
+		What is the purpose of the Git staging area (Git index)?
+	  </p>
+	</statement>
+	<choices randomize = "yes">
+	  <choice>
+		<statement>
+		  <p>
+			The Git staging area is a file where committed snapshots of the project are stored along with their associated metadata.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			This option describes the purpose of the Git repository itself, not specifically the staging area.
+		</p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>
+			The Git staging area continuously monitors the resource status of files and the file system in a local repository.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			This option describes a monitoring function, which is not the main purpose of the Git staging area.
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice correct = "yes">
+		<statement>
+		  <p>
+			The Git staging area is used to selectively stage changes to files that will be part of the next commit.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			Correct! The Git staging area, also known as the Git index, is used to selectively stage changes to files that will be part of the next commit. It allows developers to control which modifications are included in a commit, helping create clean and organized commits.
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>
+			The Git staging area is where all the committed snapshots of the project are stored.
+		</p>
+		</statement>
+		<feedback>
+		  <p>
+			This option incorrectly states that all committed snapshots of the project are stored in the staging area, whereas the staging area is just a step before creating a commit.
+		  </p>
+		</feedback>
+	  </choice>
+	</choices>
+  </exercise>
 
 </section>
 
