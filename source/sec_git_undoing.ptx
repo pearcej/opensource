@@ -291,5 +291,86 @@ Changes to be committed:
 		As you have learned from this section, Git provides several tools for undoing changes that you have made. One of the most common undos is when you commit too early and forget to add some files, or you mess up your commit message or if you accidentally stage a file that you didn't mean to. However, it's important to be careful when using these commands because you can't always undo some of these undos.
     </p>
   </conclusion>
+  <exercise xml:id="gitUndoing">
+	<statement>
+	  <p>
+		Suppose you have inadvertently modified a file and want to discard the changes to revert it back to its last committed state. Which Git command should you use? Select all that apply.
+	  </p>
+	</statement>
+	<choices randomize = "yes">
+	  <choice correct = "yes">
+		<statement>
+		  <p>
+			<c>git checkout -- &lt;file&gt;</c>
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			Corect! This command allows you to discard changes made to a specific file and revert it back to its last committed state.
+		</p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>
+			<c>git reset --hard HEAD</c>
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			This command resets the entire working directory to the state of the last commit. Be careful, as it will discard all changes, including those in other files.
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice correct = "yes">
+		<statement>
+		  <p>
+			<c>git restore &lt;file&gt;</c>
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			Correct! This command allows you to restore a file to a previous state, <term>but</term> it requires specifying the commit or reference from which to restore the file.
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>
+			<c>git revert HEAD</c>
+		</p>
+		</statement>
+		<feedback>
+		  <p>
+			The command git revert HEAD is used to create a new commit that undoes the changes introduced by the last commit, which is pointed to by the HEAD reference
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+			<p>
+				<c>git --unamend &lt;file&gt;</c>
+			</p>
+		</statement>
+		<feedback>
+			<p>
+				This is not a valid git command.
+			</p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+			<p>
+				<c>git reset &lt;file&gt;</c>
+			</p>
+		</statement>
+		<feedback>
+			<p>
+				This command unstages the file but does not revert any changes made in it.
+			</p>
+		</feedback>
+	  </choice>
+	</choices>
+  </exercise>
 </section>
 
