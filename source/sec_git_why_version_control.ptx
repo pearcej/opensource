@@ -95,7 +95,7 @@
     <exercise xml:id="SecGitWhyVersionControl">
       <statement>
         <p>
-          What is the main purpose of version control systems (VCS) in software development?
+          What is the main purpose of using a version control system (VCS) in software development?
         </p>
       </statement>
       <choices randomize = "yes">
