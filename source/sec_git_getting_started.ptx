@@ -694,7 +694,7 @@ Again, you need to do this only once if you pass the <c>--global</c> option, bec
 	  <choice correct = "yes">
 		<statement>
 		  <p>
-			The Git staging area is used to selectively stage changes to files that will be part of the next commit.
+			The Git staging area is used to selectively add a list of changes that will be part of the next commit.
 		  </p>
 		</statement>
 		<feedback>
