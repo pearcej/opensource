@@ -347,7 +347,7 @@ $ git commit -a -m 'made other changes'</pre><!--</div attr= class="content">-->
 		Git's branching model is considered a “killer feature” due to its:
 	  </p>
 	</statement>
-	<choices randomize = "yes">
+	<choices randomize = "no">
 	  <choice correct = "yes">
 		<statement>
 		  <p>
