@@ -341,5 +341,75 @@ $ git commit -a -m 'made other changes'</pre><!--</div attr= class="content">-->
      We’ve covered basic branching and merging in Git. You should feel comfortable creating and switching to new branches, switching between branches and merging local branches together. You should also be able to share your branches by pushing them to a shared server, working with others on shared branches and rebasing your branches before they are shared. Next, we’ll cover what you’ll need to run your own Git repository-hosting server.
     </p>
   </conclusion>
+  <exercise xml:id="GitBranching">
+	<statement>
+	  <p>
+		Git's branching model is considered a “killer feature” due to its:
+	  </p>
+	</statement>
+	<choices randomize = "no">
+	  <choice correct = "yes">
+		<statement>
+		  <p>
+			Cost-effective branching process, where creating new branches is instant and does not require duplicating the entire project directory.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			Great job! Git’s branching model allows for efficient and cost-effective branching by creating lightweight branches that do not duplicate the entire project directory.
+		</p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>
+			Compatibility with other Version Control Systems, allowing easy migration of repositories.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			While Git is widely used and has many benefits, its "killer feature" related to branching is not directly tied to compatibility with other Version Control Systems.
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice >
+		<statement>
+		  <p>
+			Advanced conflict resolution algorithms that automatically resolve merge conflicts but can accidentally delete files from the current branch.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			Git does have conflict resolution mechanisms, but it is not the primary "killer feature".
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>
+			Ability to create branches that are completely isolated from the main development line, ensuring a clean and organized project history.
+		</p>
+		</statement>
+		<feedback>
+		  <p>
+			While this is a feature of Git's branching model, it's not considered the main "killer feature" that sets Git apart from other Version Control Systems.
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+			<p>
+				None of the above.
+			</p>
+		</statement>
+		<feedback>
+			<p>
+				One of the answers above is correct.
+				
+			</p>
+		</feedback>
+	  </choice>
+	</choices>
+  </exercise>
 </section>
 
