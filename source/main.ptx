@@ -21,7 +21,7 @@
     <xi:include href="./ch4_dev_env.ptx"/>
     <xi:include href="./ch5_git.ptx"/> 
     <xi:include href="./ch6_documentation.ptx"/>
-
+    <xi:include href="./ch7_contributing.ptx"/>
   
 
     <!-- The following chapter contains a wide variety of elements to  -->

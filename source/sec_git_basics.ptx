@@ -1187,5 +1187,39 @@ From https://github.com/paulboone/ticgit
       At this point, you can do all the basic local Git operations — creating or cloning a repository, making changes, staging and committing those changes, and viewing the history of all the changes the repository has been through. Next, we’ll cover Git’s killer feature: its branching model.
     </p>
   </conclusion>
+  <exercise label="GitBasic" adaptive="no" indentation="hide" language="natural">
+    <statement>
+      <p>What is the correct order of Git commands to initialize a new repository, add a README, and make the first commit? </p>
+    </statement>
+    <blocks>
+      <block order="1">
+        <choice correct = "yes">
+            <cline>git init</cline>
+        </choice>
+        <choice>
+            <cline>git initial</cline>
+        </choice>
+      </block>
+	  <block order="2">
+        <choice>
+            <cline>git stage README.md</cline>
+        </choice>
+        <choice correct="yes">
+            <cline>git add README.md</cline>
+        </choice>
+	</block>
+	  <block order="3">
+        <choice>
+            <cline>git commit m- "Initial commit"</cline>
+        </choice>
+        <choice correct ="yes">
+            <cline>git commit -m "Initial commit"</cline>
+        </choice>
+      </block>
+      <block correct="no">
+        <cline>git status</cline>
+      </block>
+    </blocks>
+  </exercise>
 </section>
 
