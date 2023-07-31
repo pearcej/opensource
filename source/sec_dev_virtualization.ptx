@@ -71,7 +71,63 @@
     </p>
 
   </subsection>
-
+  <exercise xml:id="SecDevVirtualization">
+    <statement>
+      <p>
+        Which of the following statements is true regarding the benefits of containerization in open-source projects?
+      </p>
+    </statement>
+    <choices randomize="yes">
+      <choice>
+        <statement>
+          <p>
+            Containers offer a shared virtual environment for all applications, promoting better collaboration and resource utilization by eliminating the need for individual dedicated environments.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            Containers provide isolated environments for applications, not a shared virtual environment. Each container has its own isolated space, which prevents interference between applications.
+          </p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            The consistent operating system requirement for container images ensures a more stable and secure runtime environment, reducing the risk of unexpected behavior.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            Containers do not require a consistent operating system; they share the host machine's OS. However, containerization can still lead to a more stable and secure runtime environment due to isolation and standardization.
+          </p>
+        </feedback>
+      </choice>
+      <choice correct = "yes">
+        <statement>
+          <p>
+            Containerization simplifies the development and testing of software by offering a consistent environment across different systems.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            One of the benefits of containerization is that containers provide a consistent environment, which simplifies software development and testing across different systems.
+          </p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            Containers are especially suitable for running large-scale applications due to their lightweight nature, making them a cost-effective choice for complex projects.
+        </p>
+        </statement>
+        <feedback>
+          <p>
+            While containers are indeed known for their lightweight nature and portability, their suitability for running large-scale applications is not their primary advantage.
+          </p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
 
 </section>
 
