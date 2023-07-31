@@ -333,7 +333,7 @@
 					The concepts of modified, staged, and committed describe the different stages that files can go through as they are modified and committed to the repository. Next, let's discuss how Git is organized.
 				</p>
 			</paragraphs>
-			<paragraphs>
+			<paragraphs xml:id="sec_git_organization">
 				<title>How Git is Organized</title>
 <p>
 	
