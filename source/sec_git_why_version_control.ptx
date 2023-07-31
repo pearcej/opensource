@@ -92,6 +92,74 @@
     </p>
 
     </conclusion>
-
+    <exercise xml:id="SecGitWhyVersionControl">
+      <statement>
+        <p>
+          What is the main purpose of using a version control system (VCS) in software development?
+        </p>
+      </statement>
+      <choices randomize = "yes">
+        <choice>
+          <statement>
+            <p>
+              Storing all versions of a project along with comments to explain the changes.
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              While version control systems do store all versions of a project along with comments to explain the changes, this is just one aspect of their main purpose. 
+          </p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              Automatically merging changes from different versions of a document.
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              While version control systems do assist with merging changes, the process is not always automatic.
+            </p>
+          </feedback>
+        </choice>
+        <choice >
+          <statement>
+            <p>
+              Managing the installation and setup of software projects.
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              VCS focuses on versioning and collaboration, not installation and setup.
+            </p>
+          </feedback>
+        </choice>
+        <choice correct = "yes">
+          <statement>
+            <p>
+              Facilitating collaboration and tracking changes to files over time.
+          </p>
+          </statement>
+          <feedback>
+            <p>
+              Version Control Systems enable multiple developers to collaborate efficiently and track changes made to files over time. 
+            </p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+              <p>
+                Providing real-time collaboration and messaging features for developers.
+              </p>
+          </statement>
+          <feedback>
+              <p>
+                Version control systems do not provide real-time collaboration and messaging features. 
+              </p>
+          </feedback>
+        </choice>
+      </choices>
+    </exercise>
 </section>
 

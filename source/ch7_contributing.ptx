@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch_contributing" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Contribution: A Quick-Start Guide</title>
+
+  <xi:include href="./sec_contributing_quickstart.ptx" />
+
+
+</chapter>
