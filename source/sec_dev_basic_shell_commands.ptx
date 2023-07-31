@@ -652,7 +652,7 @@ As you can see, these search patterns give you a lot of power and control.
   </p>
 </conclusion>
 
-  <exercise label = "basicShellCommands" numbered = "yes" language = "natural" >
+  <exercise label = "basicShellCommands" numbered = "yes" language = "natural" adaptive="yes">
     <statement>
         <p>
           You have a file named <term>data.txt</term> that contains the following lines:
