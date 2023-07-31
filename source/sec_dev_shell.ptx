@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec_dev_shell_terms" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec_dev_shell" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Using the Command Line</title>
   
   <introduction>
