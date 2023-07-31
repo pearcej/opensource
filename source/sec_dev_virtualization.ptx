@@ -81,24 +81,24 @@
       <choice>
         <statement>
           <p>
-            Containers reduce the risk of software conflicts by providing a dedicated virtual environment for each application.
+            Containers offer a shared virtual environment for all applications, promoting better collaboration and resource utilization by eliminating the need for individual dedicated environments.
           </p>
         </statement>
         <feedback>
           <p>
-            This option describes the benefit of virtual machines (VMs), not containerization.
-        </p>
+            Containers provide isolated environments for applications, not a shared virtual environment. Each container has its own isolated space, which prevents interference between applications.
+          </p>
         </feedback>
       </choice>
       <choice>
         <statement>
           <p>
-            Container images can only be moved between environments with the exact same operating system, limiting their portability.
+            The consistent operating system requirement for container images ensures a more stable and secure runtime environment, reducing the risk of unexpected behavior.
           </p>
         </statement>
         <feedback>
           <p>
-            Check the section on containerization to understand the portability aspect.
+            Containers do not require a consistent operating system; they share the host machine's OS. However, containerization can still lead to a more stable and secure runtime environment due to isolation and standardization.
           </p>
         </feedback>
       </choice>
@@ -110,19 +110,19 @@
         </statement>
         <feedback>
           <p>
-            Correct! Containerization allows developers to create self-contained and portable environments, ensuring consistency across various systems.
+            One of the benefits of containerization is that containers provide a consistent environment, which simplifies software development and testing across different systems.
           </p>
         </feedback>
       </choice>
       <choice>
         <statement>
           <p>
-            Containers are suitable only for running small-scale applications and are not recommended for complex software projects.
+            Containers are especially suitable for running large-scale applications due to their lightweight nature, making them a cost-effective choice for complex projects.
         </p>
         </statement>
         <feedback>
           <p>
-            This statement is not accurate, as containers are used to run applications of various scales, including complex software projects. Review the section to confirm the benefits of containerization.
+            While containers are indeed known for their lightweight nature and portability, their suitability for running large-scale applications is not their primary advantage.
           </p>
         </feedback>
       </choice>
