@@ -1189,7 +1189,7 @@ From https://github.com/paulboone/ticgit
   </conclusion>
   <exercise label="GitBasic" adaptive="no" indentation="hide" language="natural">
     <statement>
-      <p>What is the correct order of Git commands to initialize a new repository, add a file, and make the first commit? </p>
+      <p>What is the correct order of Git commands to initialize a new repository, add a README, and make the first commit? </p>
     </statement>
     <blocks>
       <block order="1">
@@ -1202,10 +1202,10 @@ From https://github.com/paulboone/ticgit
       </block>
 	  <block order="2">
         <choice>
-            <cline>git stage <newfilename></cline>
+            <cline>git stage README.md</cline>
         </choice>
         <choice correct="yes">
-            <cline>git add <newfilename></cline>
+            <cline>git add README.md</cline>
         </choice>
 	</block>
 	  <block order="3">
