@@ -930,7 +930,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 			Now you’re a GitHub user. You know how to create an account, manage an organization, create and push to repositories, contribute to other people’s projects and accept contributions from others.
 		</conclusion>
 
-	<exercise label = "Git-GitHub" numbered = "yes" language = "natural">
+	<exercise label = "Git-GitHub" numbered = "yes" language = "natural" adaptive="yes">
 		<statement>
 			<p>
 				Arrange some of the steps below to contribute an edit to an existing project using established GitHub workflow: 
@@ -958,30 +958,26 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 				</cline>
 			</block>
 			<block order="5">
-				<choice>
-					<cline>
-						Push to the topic branch
-					</cline>
-				</choice>
 				<choice correct = "yes">
 					<cline>
-						Push to the forked repository
+						Push to the current branch
+					</cline>
+				</choice>
+				<choice>
+					<cline>
+						Push to the main branch
 					</cline>
 				</choice>
 			</block>
-			<block correct="no">
+		
+			<block order="6">
 				<cline>
-					Merge the main branch
-				</cline>
-			</block>
-			<block correct="no">						
-				<cline>
-					Push to the main branch
+					Update current branch from upstream remote
 				</cline>
 			</block>
 			<block order="7">
 				<cline>
-					Open a Pull Request.
+					Open a Pull Request
 				</cline>
 			</block>
 		</blocks>
