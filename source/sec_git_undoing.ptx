@@ -294,7 +294,7 @@ Changes to be committed:
   <exercise xml:id="gitUndoing">
 	<statement>
 	  <p>
-		Suppose you have inadvertently modified a file and want to discard the changes to revert it back to its last committed state. Which Git command should you use? Select all that apply.
+		Suppose you have inadvertently committed one or more changes to a file and want to discard the changes to revert it back to its last committed state. Which Git command should you use? Select all that apply.
 	  </p>
 	</statement>
 	<choices randomize = "yes">
