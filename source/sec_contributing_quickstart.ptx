@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="contributing_quickstart">
+		<title>Quick Start</title>
+<p>
+	Contributing to a project is a great way to learn more about a project, to support the project, and to improve your resume.  This section summarizes the process of contributing to a project that was detailed thoughout the previous chapters. With practice and persistence, you'll likely become more comfortable with the process of contributing to open source projects. Enjoy your journey into the world of open source software!
+
+<ol>
+	<li>
+		<title><em>Find a Project</em></title>
+		<p>
+		Explore a list of open source projects that are beginner friendly to discover an open source project that interest you.
+		As you explore repositories, be sure to look for beginner-friendly projects with good documentation and an active community of maintainers. See <xref ref="ch_community"/> for more information on community.
+		</p>
+	</li>
+	<li>
+		<title><em>Explore the Project</em></title>
+		<p>
+			Read the project's README, contributing guidelines, and code of conduct thoroughly to understand the project's goals, coding standards, and community norms. 
+		</p>
+	</li>
+	<li>
+		<title><em>Join the Community</em></title>
+		<p>
+			Introduce yourself on the project's communication channels (e.g., mailing lists, Discord, Slack, or IRC). Get a sense of how things work in the community.
+		</p>
+	</li>
+	<li>
+		<title><em>Get Your Development Environment Set-Up</em></title>
+		<p>
+			This is critically important! See <xref ref="ch_dev_env"/> for more information on setting up your development environment. Pay particular attention to the section on how to access a shell in <xref ref="sec_dev_shell"/>, particularly if you typically work in a Windows environment.
+		</p>
+		<p>
+			Install the necessary development tools:
+		</p>
+			<ul>
+				<li>
+					<title>Git</title>
+					<p>
+						Download and install Git from the official website and create a GitHub account. See the chapter on <xref ref="ch_git"/> for more information on all this. Warning: If you are using a Windows machine, be sure you are working in a Linux-compatible shell - see <xref ref="sec_dev_shell"/> for how and why.
+					</p>
+				</li>
+				<li>
+					<title>IDE/Code Editor</title>
+					<p>
+						Select an Integrated Development Environment (IDE) or a text editor suitable for the project's programming language(s). See <xref ref="sec_dev_editors"/> for more information on IDEs and text editors.
+					</p>
+				</li>
+				<li>
+					<title><em>Project Environment Specifics</em></title>
+					<p>
+						Follow the project's contributing guide in order to get everything you need to test locally. Do this slowly with attendion to detail. Fork the project repository and clone it to your local machine. See <xref ref="sec_git_github"/> for more information on how to do this. Then build locally.
+					</p>
+					<p>
+						At a minimum, you will need to i.e.  Fork -> Clone  -> Build -> Test Locally.
+					</p>
+				</li>
+			<p>
+				Don't get discouraged by any initial challenges. 
+			</p>
+			</ul>
+	</li>
+	<li>
+		<title><em>Start Small</em></title>
+		<p>
+		Look for "good first issue" or "beginner-friendly" labels in the issue tracker. 
+		Choose a small task like a documentation improvement, a typo fix, or a minor bug fix as your first contribution. When you find something to work on, be sure to make a branch to do the work.
+		</p>
+	</li>
+	<li>
+		<title>Contribute</title>
+		<p>
+			
+			After you have forked the project, cloned it to your local machine, created a branch, made your changes, tested your changes, and then pushed them back to your forked repository, be sure to update your branch from the main project. Then you are ready to create a pull request to the original project repo, being sure to follow both the project's contribution standards and code of conduct. 
+		</p>
+		<p>
+			i.e.  Fork -> Clone -> Branch -> Build -> Test -> Commit -> Push-> Update -> Pull Request. 
+		</p>
+	</li>
+	<li>
+		<title>Openly Receive Feedback and Iterate</title>
+		<p>
+			Be patient, open, and responsive to feedback from maintainers and other contributors.
+			Address the review comments and update your contribution accordingly. Be respectful of other contributors and users, even in times of disagreement. Remember that they are likely volunteers, and they have more experience with the project than you.
+			
+		</p>
+	</li>
+	<li>
+		<title>Celebrate and Continue</title>
+		<p>
+			If your contribution is accepted, celebrate your first contribution to open source software! Look for more challenging tasks as you gain experience and confidence. Stay involved in the project and continue contributing!
+			
+
+		</p>
+	</li>
+</ol>
+
+</p>
+
+
+	</section>
+

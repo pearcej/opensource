@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec_dev_shell_terms" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec_dev_shell" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Using the Command Line</title>
   
   <introduction>
@@ -150,6 +150,63 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
     If you have reached the end of this section, you should be able to open a terminal window to access a shell. In the next section, you will get some practice with some basic shell commands.
   </p>
 </conclusion>
+<exercise xml:id="ShellTerms">
+  <statement>
+    <p>
+      What is the primary purpose of a Command Line Interface (CLI) in computing?
+    </p>
+  </statement>
+  <choices randomize ="yes">
+    <choice>
+      <statement>
+        <p>
+          To provide a graphical user interface for software developers.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          A Command Line Interface (CLI) is different from a graphical user interface (GUI) and involves text-based commands instead of graphical elements.
+      </p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>
+          To enhance user experience by offering a wide range of customizable options not found in Graphical User Interfaces (GUIs).
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          While a CLI offers powerful features, its primary purpose is not specifically about enhancing user experience through customization.
+        </p>
+      </feedback>
+    </choice>
+    <choice correct = "yes">
+      <statement>
+        <p>
+          To support input and output from a computer via a keyboard and screen.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          Correct! A Command Line Interface (CLI) allows users to interact with a computer by entering text-based commands and receiving output on a display screen.
+        </p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>
+          To serve as a physical device that supports hardware connections and programming for a computer.
+      </p>
+      </statement>
+      <feedback>
+        <p>
+          A CLI is a software interface and not a physical device. It does not directly involve hardware connections or programming.
+        </p>
+      </feedback>
+    </choice>
+  </choices>
+</exercise>
 </section>
 
 
