@@ -652,5 +652,73 @@ As you can see, these search patterns give you a lot of power and control.
   </p>
 </conclusion>
 
+  <exercise label = "basicShellCommands" numbered = "yes" language = "natural" >
+    <statement>
+        <p>
+          You have a file named <term>data.txt</term> that contains the following lines:
+        </p>
+        <p><c>apple</c></p>
+        <p><c>orange</c></p>
+        <p><c>banana</c></p>
+        <p><c>grape</c></p>
+        <p>
+          Your task is to create a new file named <term>fruits.txt</term> and copy the contents of <term>data.txt</term> to <term>fruits.txt</term>. Next, append the word <c>kiwi</c> to <term>fruits.txt</term>. Then, display the contents of <term>fruits.txt</term> in the terminal. Next, count the number of fruits in <term>fruits.txt</term> and display the total count. Finally, overwrite the content of <term>data.txt</term> with the content of <term>fruits.txt</term> and rename <term>data.txt</term> to a new file named <c>fruits2</c>.
+        </p>
+        <p>
+          Here are some commands you may need to perform the task. Rearrange the correct commands in the correct order by dragging and dropping.
+        </p>
+    </statement>
+    <blocks>
+        <block order="1">
+          <choice correct = "yes">
+            <p>
+              <c>cat data.txt &gt; fruits.txt</c>
+            </p>
+        </choice>
+        <choice>
+            <p>
+              <c>cat data.txt &gt;&gt; fruits.txt</c>
+            </p>
+        </choice>
+        </block>
+        <block order="2">
+            <p>
+              <c>echo "kiwi" &gt;&gt; fruits.txt</c>
+            </p>
+        </block>
+        <block order="3">
+            <p>
+              <c>cat fruits.txt</c>
+            </p>
+        </block>
+        <block order ="4">
+          <choice>
+            <p>
+              <c>wc -l &lt; fruits.txt</c>
+            </p>
+        </choice>
+        <choice correct = "yes">
+            <p>
+              <c>wc -w &lt; fruits.txt</c>
+            </p>
+        </choice>
+        </block>
+        <block order="5">
+          <p>
+            <c>cp -i fruits.txt data.txt </c>
+          </p>
+        </block>
+        <block order="6">
+          <p>
+            <c>mv data.txt fruits2.txt</c>
+          </p>
+        </block>
+        <block correct="no">
+            <p>
+              <c>rm data.txt fruits2.txt</c>
+            </p>
+        </block>
+    </blocks>
+  </exercise>
 </section>
 
