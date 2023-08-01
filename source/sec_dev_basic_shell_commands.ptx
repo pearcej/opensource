@@ -657,10 +657,11 @@ As you can see, these search patterns give you a lot of power and control.
         <p>
           You have a file named <term>data.txt</term> that contains the following lines:
         </p>
-        <p><c>apple</c></p>
-        <p><c>orange</c></p>
-        <p><c>banana</c></p>
-        <p><c>grape</c></p>
+        <pre>apple
+orange
+banana
+grape
+        </pre>
         <p>
           Your task is to create a new file named <term>fruits.txt</term> and copy the contents of <term>data.txt</term> to <term>fruits.txt</term>. Next, append the word <c>kiwi</c> to <term>fruits.txt</term>. Then, display the contents of <term>fruits.txt</term> in the terminal. Next, count the number of fruits in <term>fruits.txt</term> and display the total count. Finally, overwrite the content of <term>data.txt</term> with the content of <term>fruits.txt</term> and rename <term>data.txt</term> to a new file named <c>fruits2</c>.
         </p>
