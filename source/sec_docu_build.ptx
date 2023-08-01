@@ -104,7 +104,7 @@
 		<exercise xml:id="docubuild">
 			<statement>
 			  <p>
-				What are some tasks you might encounter during a typical build process in an open-source project?
+				What are some tasks you might encounter during a typical build process in an open-source project? Select all that apply.
 			</p>
 			</statement>
 			<choices randomize = "yes">
