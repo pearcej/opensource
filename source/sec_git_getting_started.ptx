@@ -361,11 +361,12 @@
 					When you use stage changes, Git copies the changes from the modified files that are in the working tree to the staging area.
 				</p>
 <!-- div attr= class="paragraph"-->
+				
 				<p>
 					<idx>git index</idx>
-					<idx>git staging area</idx>
 					The <term>Git staging area </term>, also known as the <term>Git index</term>, is a file where the changes to files that have been staged are stored and stand ready to be committed.
-				</p><!--</div attr= class="paragraph">-->
+				</p>
+				<!--</div attr= class="paragraph">-->
 				<p>
 					Once changes have been staged in the staging area, you can create a new commit. This then takes the staged changes and creates a new snapshot of the files in the Git directory.
 				</p>

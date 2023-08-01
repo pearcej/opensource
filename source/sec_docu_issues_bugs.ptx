@@ -443,6 +443,63 @@ and the application crashes with the following error message in
 			</ul></p>
 
   </conclusion>
+  <exercise xml:id="SecDocuIssuesBugs">
+	<statement>
+	  <p>
+		What is the primary purpose of bug triage in an open-source project?
+	  </p>
+	</statement>
+	<choices randomize = "yes">
+	  <choice>
+		<statement>
+		  <p>
+			Facilitating communication between users and developers.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			Bug triage does involve communication, but it serves a more specific purpose in managing reported bugs.
+		</p>
+		</feedback>
+	  </choice>
+	  <choice correct = "yes">
+		<statement>
+		  <p>
+			Prioritizing bugs based on the severity of their impact.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			Correct! Bug triage involves analyzing and prioritizing the reported bugs based on the impact on the software project. It helps developers and teams focus on the most critical issues first, thereby efficiently managing their time and resources.
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>
+			Categorizing insufficient bug reports that need to be revised.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			Bug triage deals with categorization, but it goes beyond just insufficient bug reports.
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>
+			Automatically assign bugs to developers for solutions in a timely manner.
+		</p>
+		</statement>
+		<feedback>
+		  <p>
+			Bug triage may involve assignment, but it is not an automatic process and requires careful consideration. It involves human analysis and consideration before assigning bugs to developers.
+		  </p>
+		</feedback>
+	  </choice>
+	</choices>
+  </exercise>
 
 
 </section>
