@@ -101,5 +101,121 @@
 			</ul></p>
 
 		</subsection>
+		<exercise xml:id="docubuild">
+			<statement>
+			  <p>
+				What are some tasks you might encounter during a typical build process in an open-source project?
+			</p>
+			</statement>
+			<choices randomize = "yes">
+			  <choice>
+				<statement>
+				  <p>
+					Writing new code to add features to the project.
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					This task is more related to software development. The build process is primarily focused on converting source code into executable binary code, not on adding new features.
+				</p>
+				</feedback>
+			  </choice>
+			  <choice>
+				<statement>
+				  <p>
+					Creating user manuals for the software.
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					While documentation is important, this task is not directly part of the build process. Instead, it involves providing instructions and explanations for users.
+				  </p>
+				</feedback>
+			  </choice>
+			  <choice correct = "yes">
+				<statement>
+				  <p>
+					Determining build order and dependencies of the project's source code.
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					Correct! In a typical build process, it's crucial to identify the correct order in which source code components should be built and handle any dependencies between them.
+				  </p>
+				</feedback>
+			  </choice>
+			  <choice>
+				<statement>
+				  <p>
+					Reviewing the project's license and copyright information.
+				</p>
+				</statement>
+				<feedback>
+				  <p>
+					You may need to review the project's license and copyright information to comply with open-source licensing requirements and understand the terms under which the project is distributed.
+				  </p>
+				</feedback>
+			  </choice>
+			  <choice>
+				<statement>
+					<p>
+						Install necessary tools to interact with the software's user interface.
+					</p>
+				</statement>
+				<feedback>
+					<p>
+						This task is more related to the setup of the development environment rather than the build process itself.
+					</p>
+				</feedback>
+			  </choice>
+			  <choice correct = "yes">
+				<statement>
+					<p>
+						Compiling the source code into executable binary code.
+					</p>
+				</statement>
+				<feedback>
+					<p>
+						Correct! Compiling is a fundamental task in the build process where source code is converted into machine-executable binary code.
+					</p>
+				</feedback>
+			  </choice>
+			  <choice correct = "yes">
+				<statement>
+					<p>
+						Linking object files and libraries to create the final executable.
+					</p>
+				</statement>
+				<feedback>
+					<p>
+						Correct! Linking is an important step in the build process where individual object files and libraries are combined to create the final executable.
+					</p>
+				</feedback>
+			  </choice>
+			  <choice correct = "yes">
+				<statement>
+					<p>
+						Running tests on the project to ensure the build results are free of bugs.
+					</p>
+				</statement>
+				<feedback>
+					<p>
+						Correct! Testing the build results is essential to identify and fix any bugs or issues before the final release.
+					</p>
+				</feedback>
+			  </choice>
+			  <choice>
+				<statement>
+					<p>
+						Translating the project's documentation into multiple languages.					</p>
+				</statement>
+				<feedback>
+					<p>
+						This task is related to localization and translation, which is not directly part of the build process.
+					</p>
+				</feedback>
+			  </choice>
+			</choices>
+		  </exercise>
 
 </section>
