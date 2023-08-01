@@ -160,6 +160,60 @@
 
 			</exercise>
 		</subsection>
-
+		
+		<exercise label = "docuInvolvement" numbered = "yes" language = "natural" adaptive = "yes">
+			<statement>
+				<p>
+					Arrange some of the steps below in the correct order that a newcomer should take to become involved in an open-source project through documentation:
+				</p>
+			</statement>
+			<blocks>
+				<block order="1">
+					<cline>
+					  Learn to use the software
+					</cline>
+				</block>
+				<block order="2">
+					<cline>
+					  Join asynchronous communication channels.
+					</cline>
+				</block>
+				<block order="3">
+					<cline>
+						Start with the README, CONTRIBUTING files, and CODE_OF_CONDUCT
+					</cline>
+				</block>
+				<block order="4">
+					<cline>
+						Follow the documentation slowly
+					</cline>
+				</block>
+				<block order ="5">
+					<cline>
+						Join synchronous communication channels
+					</cline>
+				</block>
+				<block order="6">
+				  <cline>
+					Set up the development environment
+				  </cline>
+				</block>
+				<block order="7">
+				  <cline>
+					Identify the confusing parts of the documentation and suggest improvements
+				  </cline>
+				</block>
+				<block correct="no">
+					<cline>
+						Request a meeting with existing contributors to understand more about the project
+					</cline>
+				</block>
+				<block correct="no">
+					<cline>
+						Ask questions in the community channels
+					</cline>
+				</block>
+			</blocks>
+		  </exercise>
 </section>
 
