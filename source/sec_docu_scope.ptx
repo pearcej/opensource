@@ -348,7 +348,63 @@ before this Tag in the document."""
 			</p>
 		</exercise>
 	</subsection>
-
+	<exercise xml:id="docuscope">
+        <statement>
+          <p>
+			What are some common types of documentation included in an open-source project repository?
+		</p>
+        </statement>
+        <choices randomize="yes">
+          <choice>
+            <statement>
+              <p>
+                Source code documentation, README, and CODE_OF_CONDUCT
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                The README and CODE_OF_CONDUCT are indeed common types of documentation. However, "source code documentation" usually refers to inline comments and documentation within the code itself, and it is not listed as a separate common type of documentation in the reading.
+            </p>
+            </feedback>
+          </choice>
+          <choice correct = "yes">
+            <statement>
+              <p>
+                Bug and issue tracking, design documents, and user manuals
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct! Bug and issue tracking help to manage and resolve reported issues and feature requests. Design documents provide detailed information on the project's architecture and structure. User manuals offer instructions and guidance on how to use the project.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                README, LICENSE, and TUTORIALS
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                The README and LICENSE are indeed common types of documentation. However, "TUTORIALS" is not explicitly listed as one of the common types of documentation.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                FAQ, INSTALL, and CONTRIBUTING
+            </p>
+            </statement>
+            <feedback>
+              <p>
+				The FAQ and CONTRIBUTING files are indeed common types of documentation. However, "INSTALL" is typically a separate file that provides instructions on how to install and set up the project, and it is not listed as a common type of documentation.
+              </p>
+            </feedback>
+          </choice>
+        </choices>
+      </exercise>
 
 </section>
 
