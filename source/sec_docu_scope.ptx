@@ -378,7 +378,7 @@ before this Tag in the document."""
 				  </p>
 				</feedback>
 			  </choice>
-			  <choice  correct = "yes">
+			  <choice correct = "yes">
 				<statement>
 				  <p>
 					It facilitates understanding of the project's design, architecture, and technical details
