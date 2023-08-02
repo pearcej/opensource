@@ -347,6 +347,63 @@ before this Tag in the document."""
 				</ol>
 			</p>
 		</exercise>
+		<exercise xml:id="docuscope">
+			<statement>
+			  <p>
+				Why is quality documentation essential in open source communities?
+			</p>
+			</statement>
+			<choices randomize="yes">
+			  <choice>
+				<statement>
+				  <p>
+					It provides an overview of the project and its problem-solving capabilities. 
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					This option describes the README's purpose, but not the importance of documentation as a whole.
+				</p>
+				</feedback>
+			  </choice>
+			  <choice>
+				<statement>
+				  <p>
+					It outlines the behavior expected of all contributors and users of the project.
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					This option refers to the CODE_OF_CONDUCT, which is just one aspect of documentation.
+				  </p>
+				</feedback>
+			  </choice>
+			  <choice  correct = "yes">
+				<statement>
+				  <p>
+					It facilitates understanding of the project's design, architecture, and technical details
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					Correct! Documentation helps developers comprehend the code's purpose, changes, and technical information
+				  </p>
+				</feedback>
+			  </choice>
+			  <choice>
+				<statement>
+				  <p>
+					It ensures the project's ongoing automation and continuous monitoring.
+				</p>
+				</statement>
+				<feedback>
+				  <p>
+					This option relates to CI/CD tools, not the importance of documentation.
+				  </p>
+				</feedback>
+			  </choice>
+			</choices>
+		  </exercise>
 	</subsection>
 
 
