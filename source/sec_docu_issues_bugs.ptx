@@ -446,55 +446,55 @@ and the application crashes with the following error message in
   <exercise xml:id="SecDocuIssuesBugs">
 	<statement>
 	  <p>
-		What is the primary purpose of bug triage in an open-source project?
+		What is the primary purpose of an issue tracker in open-source software projects?
 	  </p>
 	</statement>
 	<choices randomize = "yes">
 	  <choice>
 		<statement>
 		  <p>
-			Facilitating communication between users and developers.
+			To provide a platform for developers to communicate with users about various aspects of the project.
 		  </p>
 		</statement>
 		<feedback>
 		  <p>
-			Bug triage does involve communication, but it serves a more specific purpose in managing reported bugs.
+			While communication is an essential aspect of an issue tracker, its main purpose is more specific and revolves around managing project tasks.
 		</p>
 		</feedback>
 	  </choice>
 	  <choice correct = "yes">
 		<statement>
 		  <p>
-			Prioritizing bugs based on the severity of their impact.
+			To manage bugs, defects, feature requests, and other tasks related to the project.
 		  </p>
 		</statement>
 		<feedback>
 		  <p>
-			Correct! Bug triage involves analyzing and prioritizing the reported bugs based on the impact on the software project. It helps developers and teams focus on the most critical issues first, thereby efficiently managing their time and resources.
+			Absolutely right! An issue tracker serves as a comprehensive tool for managing various software development tasks, such as bug tracking, defect management, and handling feature requests.
 		  </p>
 		</feedback>
 	  </choice>
 	  <choice>
 		<statement>
 		  <p>
-			Categorizing insufficient bug reports that need to be revised.
+			To act as a platform for users to provide feedback and suggestions about their feature requests.
 		  </p>
 		</statement>
 		<feedback>
 		  <p>
-			Bug triage deals with categorization, but it goes beyond just insufficient bug reports.
+			Although users can provide feedback through an issue tracker, the primary focus of this platform is not solely on feature requests but includes a broader range of tasks.
 		  </p>
 		</feedback>
 	  </choice>
 	  <choice>
 		<statement>
 		  <p>
-			Automatically assign bugs to developers for solutions in a timely manner.
+			To provide a centralized location for developers to collaborate on code.
 		</p>
 		</statement>
 		<feedback>
 		  <p>
-			Bug triage may involve assignment, but it is not an automatic process and requires careful consideration. It involves human analysis and consideration before assigning bugs to developers.
+			While collaboration and code contribution is encouraged in open-source projects, the primary purpose of an issue tracker is not to serve as a hub for developers to collaborate on code directly.
 		  </p>
 		</feedback>
 	  </choice>
