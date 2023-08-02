@@ -216,11 +216,8 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
   Occasionally, you need to change permissions of a file. For example, you might need to change permissions to make a file executable. Changing file permissions is done with the <c>chmod</c> command. We will explore this in a bit.
 </p>
    </paragraphs>
-<subsubsection xml:id="Test1">
-  
-  
 
-   <paragraphs xml:id="test2222">
+   <paragraphs>
     <title>Learning More About Command Options</title>
     <p>
     </p>
@@ -246,12 +243,12 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
     <title>Creating and Removing Directories</title>
     <p>
     </p>
-        <p permid="notations_test">
-        Next, let's go to your <term>home</term>  <notation>
-          <usage><m>\tilde{}</m></usage>
-          <description>home directory symbol</description>
-        </notation>directory which is referenced by the special tilde '~' character as follows:
-     
+        <p>
+        Next, let's go to your <term>home</term> directory which is referenced by the special tilde '~' character as follows:
+      <notation>
+      <usage><m>\tilde{}</m></usage>
+      <description>home directory symbol</description>
+    </notation>
       </p>
     <pre>
    cd ~
@@ -333,7 +330,6 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
   </pre>
 
   </paragraphs>
-</subsubsection>
   <paragraphs>
     <title>Input and Output Redirection</title>
     <p>
@@ -726,4 +722,3 @@ grape
     </blocks>
   </exercise>
 </section>
-
