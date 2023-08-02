@@ -5,7 +5,7 @@
 	
 <subsection xml:id="sec_git_types_version_control" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Types of Version Control</title>
-  <introduction>
+
 			<p>
 	Using a formal <term>version control system (VCS)</term> has many advantages over using just an informal system of version control like the one we described in the last section. Some of the important advantages of VCSs include:
 	<ul>
@@ -31,75 +31,73 @@
 	
 	For the examples in this chapter, we will use software source code as the files being version controlled, although in reality you can do this with nearly any type of file or set of files. For example, if you are a website designer and want to keep every version of the site, a VCS is a very wise thing to use. It allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also generally means that if you mess things up or lose files, you can easily recover. 
 </p>
-  </introduction>
+</subsection>
 
-<paragraphs xml:id="sec_local_version_control_systems">
-	<title>Local VCSs</title>
-<p>
-	
-</p>
+	<subsection xml:id="sec_local_version_control_systems">
+		<title>Local VCSs</title>
 	<p>
-		Many people’s first personal version-control method of choice is an informal one such as copying files into another directory or up into the cloud. These informal approaches are common because they are simple, but they are also  error prone. It is easy to forget which directory you’re in and accidentally write to the wrong file or copy over files you don’t mean to. 
-	</p>
-
-	<p>
-		To deal with this issue, programmers long ago developed a more formal system of version control.  Local VCSs provide a more automatic, less error-prone and more structured way of keeping all the changes to files under revision control on the local computer.
-		Local VCSs typically operate quickly because they do not have to communicate with a remote server. With a local system, developers have access to the entire history of the codebase on their local machine, and they can work on the codebase offline, without an internet connection. 
-	</p>
-	<p>
-		However, there are significant disadvantages to using local VCSs. For example, local VCSs do not support collaboration because multiple developers cannot easily work on the same codebase at the same time. So. local VCSs are more suited for individual developers who are working on their own projects. Local VCSs store code data locally, which increases the risk of data loss due to machine failure or corruption because whenever you have the entire history of a project in a single place, you risk losing everything.
-		In addition, local systems are not scalable, so as the codebase grows in size, the performance of the local system may degrade.
-	</p>
 		
-			</paragraphs>
+	</p>
+		<p>
+			Many people’s first personal version-control method of choice is an informal one such as copying files into another directory or up into the cloud. These informal approaches are common because they are simple, but they are also  error prone. It is easy to forget which directory you’re in and accidentally write to the wrong file or copy over files you don’t mean to. 
+		</p>
 
-			<paragraphs xml:id="sec_centralized_version_control_systems">
-				<title>Centralized VCSs</title>
-<p>
+		<p>
+			To deal with this issue, programmers long ago developed a more formal system of version control.  Local VCSs provide a more automatic, less error-prone and more structured way of keeping all the changes to files under revision control on the local computer.
+			Local VCSs typically operate quickly because they do not have to communicate with a remote server. With a local system, developers have access to the entire history of the codebase on their local machine, and they can work on the codebase offline, without an internet connection. 
+		</p>
+		<p>
+			However, there are significant disadvantages to using local VCSs. For example, local VCSs do not support collaboration because multiple developers cannot easily work on the same codebase at the same time. So. local VCSs are more suited for individual developers who are working on their own projects. Local VCSs store code data locally, which increases the risk of data loss due to machine failure or corruption because whenever you have the entire history of a project in a single place, you risk losing everything.
+			In addition, local systems are not scalable, so as the codebase grows in size, the performance of the local system may degrade.
+		</p>
+			
 	
+	</subsection>
+	<subsection xml:id="sec_centralized_version_control_systems">
+		<title>Centralized VCSs</title>
+<p>
+
 </p>
 
-				<p>
-					Many developers need to collaborate with other developers on other systems. To deal with this, centralized VCss) were developed. These systems (such as CVS, Subversion, and Perforce) have a single server that contains all the versioned files, and a number of clients check out files from that central server. For many years, this was the standard for version control.
-				</p>
+		<p>
+			Many developers need to collaborate with other developers on other systems. To deal with this, centralized VCss) were developed. These systems (such as CVS, Subversion, and Perforce) have a single server that contains all the versioned files, and a number of clients check out files from that central server. For many years, this was the standard for version control.
+		</p>
 
-					<p>
-					Centralized VCSs offer many advantages over local VCSs. For example, everyone knows or can see to a certain degree what everyone else on the project is doing. Administrators have fine-grained control over who can do what.
-				</p>
+			<p>
+			Centralized VCSs offer many advantages over local VCSs. For example, everyone knows or can see to a certain degree what everyone else on the project is doing. Administrators have fine-grained control over who can do what.
+		</p>
 
-					<p>
-					However, centralized VCSs also have some serious downsides. Conflict resolution can be a challenge because if individual copies of the repository diverge significantly from one another, conflicts can arise when merging changes is attempted. This lead to a process of resolving the conflicts, which can be time-consuming even when using conflict resolution tools. In fact, resolution of conflicts can delay the development process. To mitigate this, developers must communicate regarding direction and must also synchronize copies of the codebase regularly by merging changes  often. Effective communication and frequent updating can help prevent significant divergence and reduce the risk of conflicts in centralized VCSs.
-				</p>
+			<p>
+			However, centralized VCSs also have some serious downsides. Conflict resolution can be a challenge because if individual copies of the repository diverge significantly from one another, conflicts can arise when merging changes is attempted. This lead to a process of resolving the conflicts, which can be time-consuming even when using conflict resolution tools. In fact, resolution of conflicts can delay the development process. To mitigate this, developers must communicate regarding direction and must also synchronize copies of the codebase regularly by merging changes  often. Effective communication and frequent updating can help prevent significant divergence and reduce the risk of conflicts in centralized VCSs.
+		</p>
 
-				<p>
-					Another obvious is that like local VCSs, the centralized server represents a single point of failure. If that server goes down for an time, then during that downtime nobody can collaborate at all and no one can save versioned changes to anything they’re working on. If the disk of the central server becomes corrupted, and proper backups haven’t been kept, the project could lose absolutely everything — the entire history of the project except whatever single snapshots people happen to have on their local machines. 
-				</p>
+		<p>
+			Another obvious is that like local VCSs, the centralized server represents a single point of failure. If that server goes down for an time, then during that downtime nobody can collaborate at all and no one can save versioned changes to anything they’re working on. If the disk of the central server becomes corrupted, and proper backups haven’t been kept, the project could lose absolutely everything — the entire history of the project except whatever single snapshots people happen to have on their local machines. 
+		</p>
 
-			</paragraphs>
-
-			<paragraphs xml:id="sec_distributed_version_control_systems">
-				<title>Distributed VCSs</title>
-<p>
-	
-</p>
-				<p>
-					This is where distributed VCSs step in. In a distributed VCS (such as Git, Mercurial, Bazaar or Darcs), clients don’t just check out the latest snapshot of the files; rather, they fully mirror the repository, including its full history. Thus, if any server dies, and these systems were collaborating via that server, any of the client repositories can be copied back up to the server to restore it. Every clone is really a full backup of all the data.
-				</p>
-
-
-				<figure xml:id="git-distributed">
-				<caption>Distributed Version Control</caption>	
-					<image source='distributed.png'/>
-
-				</figure>
-
-				<p>
-					Furthermore, many of these distributed systems deal pretty well with having several remote repositories they can work with, so you can collaborate with different groups of people in different ways simultaneously within the same project. This allows you to set up several types of workflows that aren’t possible in centralized systems, such as hierarchical models.
-				</p>
-
-		</paragraphs>
 	</subsection>
 
+	<subsection xml:id="sec_distributed_version_control_systems">
+		<title>Distributed VCSs</title>
+<p>
+
+</p>
+		<p>
+			This is where distributed VCSs step in. In a distributed VCS (such as Git, Mercurial, Bazaar or Darcs), clients don’t just check out the latest snapshot of the files; rather, they fully mirror the repository, including its full history. Thus, if any server dies, and these systems were collaborating via that server, any of the client repositories can be copied back up to the server to restore it. Every clone is really a full backup of all the data.
+		</p>
+
+
+		<figure xml:id="git-distributed">
+		<caption>Distributed Version Control</caption>	
+			<image source='distributed.png'/>
+
+		</figure>
+
+		<p>
+			Furthermore, many of these distributed systems deal pretty well with having several remote repositories they can work with, so you can collaborate with different groups of people in different ways simultaneously within the same project. This allows you to set up several types of workflows that aren’t possible in centralized systems, such as hierarchical models.
+		</p>
+
+	</subsection>
 
 	<subsection xml:id="_a_short_history_of_git">
 			<title>A Short History of Git</title>
@@ -181,7 +179,7 @@
 <!-- div attr= class="sect3"-->
 		</introduction>
 
-			<paragraphs xml:id="sec_snapshots_not_differences">
+			<subsubsection xml:id="sec_snapshots_not_differences">
 				<title>Snapshots, Not Differences</title>
 <p>
 	
@@ -217,9 +215,9 @@
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="sec_nearly_every_operation_is_local">
+			<subsubsection xml:id="sec_nearly_every_operation_is_local">
 				<title>Nearly Every Operation Is Local</title>
 <p>
 	
@@ -240,9 +238,9 @@
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="sec_git_has_integrity">
+			<subsubsection xml:id="sec_git_has_integrity">
 				<title>Git Has Integrity</title>
 <p>
 	
@@ -268,9 +266,9 @@
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="sec_git_generally_only_adds_data">
+			<subsubsection xml:id="sec_git_generally_only_adds_data">
 				<title>Git Generally Only Adds Data</title>
 <p>
 	
@@ -284,9 +282,9 @@
 
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="sec_the_three_states">
+			<subsubsection xml:id="sec_the_three_states">
 				<title>The Three File States</title>
 <p>
 	
@@ -332,8 +330,8 @@
 				<p>
 					The concepts of modified, staged, and committed describe the different stages that files can go through as they are modified and committed to the repository. Next, let's discuss how Git is organized.
 				</p>
-			</paragraphs>
-			<paragraphs xml:id="sec_git_organization">
+			</subsubsection>
+			<subsubsection xml:id="sec_git_organization">
 				<title>How Git is Organized</title>
 <p>
 	
@@ -360,12 +358,12 @@
 				<p>
 					When you use stage changes, Git copies the changes from the modified files that are in the working tree to the staging area.
 				</p>
-<!-- div attr= class="paragraph"-->
-				<p>
+
+				<p xml:id="id_git_staging_area">
 					<idx>git index</idx>
 					<idx>git staging area</idx>
 					The <term>Git staging area </term>, also known as the <term>Git index</term>, is a file where the changes to files that have been staged are stored and stand ready to be committed.
-				</p><!--</div attr= class="paragraph">-->
+				</p>
 				<p>
 					Once changes have been staged in the staging area, you can create a new commit. This then takes the staged changes and creates a new snapshot of the files in the Git directory.
 				</p>
@@ -410,45 +408,45 @@
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 
-			</paragraphs>
+			</subsubsection>
 
 	</subsection>
-<subsection xml:id="sec_git_on_the_command_line">
-			<title>The Command Line</title>
+	<subsection xml:id="sec_git_on_the_command_line">
+				<title>The Command Line</title>
 
-<!-- div attr= class="paragraph"-->
-			<p>
-				There are a lot of different ways to use Git. There are the original command-line tools, and there are many graphical user interfaces of varying capabilities. For this chapter, we will be using Git on the command line. For one, the command line is the only place you can run <em>all</em> Git commands — most of the GUIs implement only a partial subset of Git functionality for simplicity. If you know how to run the command-line version, you can probably also figure out how to run the GUI version, while the opposite is not necessarily true. Also, while your choice of graphical client is a matter of personal taste, <em>all</em> users will have the command-line tools installed and available.
-			</p><!--</div attr= class="paragraph">-->
+	<!-- div attr= class="paragraph"-->
+				<p>
+					There are a lot of different ways to use Git. There are the original command-line tools, and there are many graphical user interfaces of varying capabilities. For this chapter, we will be using Git on the command line. For one, the command line is the only place you can run <em>all</em> Git commands — most of the GUIs implement only a partial subset of Git functionality for simplicity. If you know how to run the command-line version, you can probably also figure out how to run the GUI version, while the opposite is not necessarily true. Also, while your choice of graphical client is a matter of personal taste, <em>all</em> users will have the command-line tools installed and available.
+				</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="paragraph"-->
-			<p>
-				So you will need to to know how to open the Terminal in macOS or Linux or the Command Prompt or PowerShell in Windows. If you don’t remember what we’re talking about here, please review <xref ref="sec_dev_shell"/>.
-			</p><!--</div attr= class="paragraph">-->
+	<!-- div attr= class="paragraph"-->
+				<p>
+					So you will need to to know how to open the Terminal in macOS or Linux or the Command Prompt or PowerShell in Windows. If you don’t remember what we’re talking about here, please review <xref ref="sec_dev_shell"/>.
+				</p><!--</div attr= class="paragraph">-->
 
-			<!--TODO add directions on how to get to a terminal in all environments-->
+				<!--TODO add directions on how to get to a terminal in all environments-->
 
 
 	</subsection>
 
 	<subsection xml:id="git_installing">
 		<title>Installing Git</title>
-
-<!-- div attr= class="paragraph"-->
+<introduction>
+	<!-- div attr= class="paragraph"-->
 		<p>
 			Before you start using Git, you have to make it available on your computer. Even if it’s already installed, it’s probably a good idea to update to the latest version. You can either install it as a package or via another installer, or download the source code and compile it yourself. If you are a beginner, we strongly recommend using an installer.
 		</p><!--</div attr= class="paragraph">-->
 
-<!-- div attr= class="admonitionblock note"-->
-<!-- 			<table>
+	<!-- div attr= class="admonitionblock note"-->
+	<!-- 			<table>
 				<caption></caption>
-<col width="50%" />
-<col width="50%" />
+	<col width="50%" />
+	<col width="50%" />
 				<tabular>
 				<row class="odd">
 					<cell halign="left">
-Note
-</cell>
+	Note
+	</cell>
 					<cell halign="left">
 			<p>
 				This section was written using Git version <term>2.8.0</term>. Though most of the commands we use should work even in ancient versions of Git, some of them might not or might act slightly differently if you’re using an older version. Since Git is quite excellent at preserving backwards compatibility, any version after 2.8 should work just fine.
@@ -458,13 +456,13 @@ Note
 				</tabular>
 			</table> -->
 
-<!-- div attr= class="sect3"-->
-
-	<paragraphs xml:id="git_installing_on_linux">
+	<!-- div attr= class="sect3"-->
+</introduction>
+	<subsubsection xml:id="git_installing_on_linux">
 		<title>Installing on Linux</title>
-<p>
-	
-</p>
+	<p>
+
+	</p>
 	<!-- div attr= class="paragraph"-->
 		<p>
 			Using your Linux distribution's preferred package manager is the simplest process for installing Git on Linux.
@@ -494,13 +492,13 @@ Note
 		</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 	<!-- div attr= class="sect3"-->
-	</paragraphs>
+	</subsubsection>
 
-	<paragraphs xml:id="git_installing_on_macos">
+	<subsubsection xml:id="git_installing_on_macos">
 		<title>Installing on MacOS</title>
-<p>
-	
-</p>
+	<p>
+
+	</p>
 	<!-- div attr= class="paragraph"-->
 		<p>
 			There are several ways to install Git on a Mac. 
@@ -531,13 +529,13 @@ Note
 
 
 	<!-- div attr= class="sect3"-->
-	</paragraphs>
+	</subsubsection>
 
-	<paragraphs xml:id="_installing_on_windows">
+	<subsubsection xml:id="_installing_on_windows">
 		<title>Installing on Windows</title>
-<p>
-	
-</p>
+	<p>
+
+	</p>
 	<!-- div attr= class="paragraph"-->
 		<p>
 			There are also a few ways to install Git on Windows that depend upon where your development environment is.
@@ -551,106 +549,106 @@ Note
 		</p><!--</div attr= class="paragraph">-->
 
 	<!-- div attr= class="sect3"-->
-	</paragraphs>
+	</subsubsection>
 	</subsection>
 
-<subsection xml:id="_git_help">
-<title>Getting Help</title>
+	<subsection xml:id="_git_help">
+	<title>Getting Help</title>
 
-<!-- div attr= class="paragraph"-->
-<p>
-If you ever need help while using Git, there are three equivalent ways to get help for any of the Git commands:
-</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-<pre>$ git help &lt;verb&gt;
-$ git &lt;verb&gt; --help
-$ man git-&lt;verb&gt;</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-<!-- div attr= class="paragraph"-->
-<p>
-For example, you can get help for the <c>git config</c> command by running this:
-</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-<pre>$ git help config</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-<!-- div attr= class="paragraph"-->
-<p>
-If you don’t need the full-blown manpage help, but just need a quick refresher on the available options for a specific Git command, you can ask for the more concise “help” output with the <c>-h</c> option, as in the following for the Git <c>add command:</c>:
-</p><!--</div attr= class="paragraph">-->
-
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
-<pre>$ git add -h
-</pre>
-
-</subsection>
-
-<subsection xml:id="sec_git_config">
-<title>First-Time Git Setup</title>
-<p>
-	Now that you have Git on your system, you’ll want to do a few things to customize your Git environment. You should have to do these things only once on any given computer; they’ll stick around between upgrades. You can also change them at any time by running through the commands again. 
-</p>
-
-<p>
-	<idx>git config</idx>
-	Git can be configured using <term>git config</term> which lets you get and set configuration variables that control all aspects of how Git looks and operates.
-</p>
-
-<p>
-	The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:
-
-</p>
-<pre>
-	$ git config --global user.name "John Doe"
-	$ git config --global user.email johndoe@example.com
-</pre>
-
-<p>
-Again, you need to do this only once if you pass the <c>--global</c> option, because then Git will always use that information for anything you do on that system. If you want to override this with a different name or email address for specific projects, you can run the command without the <c>--global</c> option when you’re in that project.
-</p>
-<p>
-	Now that your identity is set up, you can configure the default text editor that will be used when Git needs you to type in a message. If not configured, Git uses your system’s default editor. 
-</p>
-<p>
-	If you want to use a non-default text editor, such as VSCode, on a macOS system you may need to select "Shell Command: Install 'Code' command in path" from the Command Palette in VSCode. On a Windows system, if you want to use a different text editor, you must specify the full path to its executable file. This will be different depending on how your editor is packaged.
-</p>
-<p>
-	 After adding VSCode to your path, the following might work for changing your editor to VSCode:
-</p>
-<pre>
-  git config  --global core.editor 'code --new-window --wait'
-</pre>
-
-<p>
-	The <c>--wait</c> option is needed to wait for the VSCode window to close before returning to the terminal. So a new window will open in a new instance of VSCode, and once you save the file and close it, you will return to your terminal. 
-</p>
-
-<p> If you have that working, you can use VSCode to add some additional functionality .Git diff is a particularly useful command for reviewing changes before committing them to the repository.
-	We will continue to use the <c>git diff</c> command in various ways throughout the rest of the chapter. To set up VSCode to handle <c>git diff</c> commands, we need to change the <c>git config</c> file. To get to it globally, type the following:
-	</p>
-	<pre>
-	  git config --global --edit
-	</pre>
+	<!-- div attr= class="paragraph"-->
 	<p>
-	  Then add the following lines to your git config file:
-	</p>
-	<pre>
-[diff]
-    tool = default-difftool
-[difftool "default-difftool"]
-    cmd = code --wait --diff $LOCAL $REMOTE
-[merge]
-    tool = code
-[mergetool "code"]
-    cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+	If you ever need help while using Git, there are three equivalent ways to get help for any of the Git commands:
+	</p><!--</div attr= class="paragraph">-->
+
+	<!-- div attr= class="listingblock"-->
+	<!-- div attr= class="content"-->
+	<pre>$ git help &lt;verb&gt;
+	$ git &lt;verb&gt; --help
+	$ man git-&lt;verb&gt;</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+
+	<!-- div attr= class="paragraph"-->
+	<p>
+	For example, you can get help for the <c>git config</c> command by running this:
+	</p><!--</div attr= class="paragraph">-->
+
+	<!-- div attr= class="listingblock"-->
+	<!-- div attr= class="content"-->
+	<pre>$ git help config</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+	<!-- div attr= class="paragraph"-->
+	<p>
+	If you don’t need the full-blown manpage help, but just need a quick refresher on the available options for a specific Git command, you can ask for the more concise “help” output with the <c>-h</c> option, as in the following for the Git <c>add command:</c>:
+	</p><!--</div attr= class="paragraph">-->
+
+	<!-- div attr= class="listingblock"-->
+	<!-- div attr= class="content"-->
+	<pre>$ git add -h
 	</pre>
-	<p>See <url href="https://code.visualstudio.com/docs/sourcecontrol/overview#_vs-code-as-git-difftool-and-mergetool" visual="code.visualstudio.com/docs/sourcecontrol/overview">VS Code as Git difftool and mergetool</url>
+
+	</subsection>
+
+	<subsection xml:id="sec_git_config">
+	<title>First-Time Git Setup</title>
+	<p>
+		Now that you have Git on your system, you’ll want to do a few things to customize your Git environment. You should have to do these things only once on any given computer; they’ll stick around between upgrades. You can also change them at any time by running through the commands again. 
 	</p>
 
-</subsection>
+	<p>
+		<idx>git config</idx>
+		Git can be configured using <term>git config</term> which lets you get and set configuration variables that control all aspects of how Git looks and operates.
+	</p>
+
+	<p>
+		The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:
+
+	</p>
+	<pre>
+		$ git config --global user.name "John Doe"
+		$ git config --global user.email johndoe@example.com
+	</pre>
+
+	<p>
+	Again, you need to do this only once if you pass the <c>--global</c> option, because then Git will always use that information for anything you do on that system. If you want to override this with a different name or email address for specific projects, you can run the command without the <c>--global</c> option when you’re in that project.
+	</p>
+	<p>
+		Now that your identity is set up, you can configure the default text editor that will be used when Git needs you to type in a message. If not configured, Git uses your system’s default editor. 
+	</p>
+	<p>
+		If you want to use a non-default text editor, such as VSCode, on a macOS system you may need to select "Shell Command: Install 'Code' command in path" from the Command Palette in VSCode. On a Windows system, if you want to use a different text editor, you must specify the full path to its executable file. This will be different depending on how your editor is packaged.
+	</p>
+	<p>
+		After adding VSCode to your path, the following might work for changing your editor to VSCode:
+	</p>
+	<pre>
+	git config  --global core.editor 'code --new-window --wait'
+	</pre>
+
+	<p>
+		The <c>--wait</c> option is needed to wait for the VSCode window to close before returning to the terminal. So a new window will open in a new instance of VSCode, and once you save the file and close it, you will return to your terminal. 
+	</p>
+
+	<p> If you have that working, you can use VSCode to add some additional functionality .Git diff is a particularly useful command for reviewing changes before committing them to the repository.
+		We will continue to use the <c>git diff</c> command in various ways throughout the rest of the chapter. To set up VSCode to handle <c>git diff</c> commands, we need to change the <c>git config</c> file. To get to it globally, type the following:
+		</p>
+		<pre>
+		git config --global --edit
+		</pre>
+		<p>
+		Then add the following lines to your git config file:
+		</p>
+		<pre>
+	[diff]
+		tool = default-difftool
+	[difftool "default-difftool"]
+		cmd = code --wait --diff $LOCAL $REMOTE
+	[merge]
+		tool = code
+	[mergetool "code"]
+		cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+		</pre>
+		<p>See <url href="https://code.visualstudio.com/docs/sourcecontrol/overview#_vs-code-as-git-difftool-and-mergetool" visual="code.visualstudio.com/docs/sourcecontrol/overview">VS Code as Git difftool and mergetool</url>
+		</p>
+
+	</subsection>
 
 <conclusion>
 <title>Conclusion</title>
@@ -716,7 +714,7 @@ Again, you need to do this only once if you pass the <c>--global</c> option, bec
 		</feedback>
 	  </choice>
 	</choices>
-  </exercise>
+</exercise>
 
 </section>
 
