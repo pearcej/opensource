@@ -72,6 +72,10 @@
       </pre>
     <p>
       You should see the same result as you saw with the <c>whoami</c> command! Note that you must precede the variable name with a dollar sign $ whenever you reference the value it contains. Isn't it interesting to peek inside the environment variable in that way? 
+      <notation>
+        <usage><m>$</m></usage>
+        <description></description>
+      </notation>
     </p>
     <p>
       In fact, one of the key uses of the <c>echo</c> command is to echo the values of variables, which the shell can expand. Let's see another example:
@@ -352,7 +356,11 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
    Understanding the result of the first line we typed is pretty straightforward. The second and third lines that we typed require a bit more explanation. As we learned  above, the <c>echo</c> command simply outputs (or echoes) the argument(s) to the terminal, but here the <c>echo</c> command has been used in combination with output redirection into a file.</p>
 
 
-    <p><term>Output redirection</term> is a feature in the shell that allows the user to redirect the output of a command using <c>></c> or <c>>></c>. Recall that the <c>echo</c> command normally prints to the screen. What we did above in creating new files with the <c>echo</c> command was to use output redirection to redirect the output of the command into a file of the specified name. So, the command <c>echo 'I love open source!' > newfile2.txt</c> redirected the output of the <c>echo</c> command into the <em>newfile2.txt</em> file. Both <c>></c> and <c>>></c> will create a <em>new</em> file with the provided name if one does not already exist. Note that the <c>></c> is the output redirection operator used for <em>overwriting</em> a file that might or might not already exist, while the <c>>></c> is an output operator that <em>appends</em> the output to an existing file or creates a new one if one does not already exist.  So, <c>></c> should be used judiciously!  
+    <p><term>Output redirection</term> is a feature in the shell that allows the user to redirect the output of a command using <c>></c> or <c>>></c>. Recall that the <c>echo</c> command normally prints to the screen. What we did above in creating new files with the <c>echo</c> command was to use output redirection to redirect the output of the command into a file of the specified name. So, the command <c>echo 'I love open source!' > newfile2.txt</c> redirected the output of the <c>echo</c> command into the <em>newfile2.txt</em> file. Both <c>></c> and <c>>></c> will create a <em>new</em> file with the provided name if one does not already exist. Note that the <c>></c> is the output redirection operator used for <em>overwriting</em> a file that might or might not already exist, while the <c>>></c> is an output operator that <em>appends</em> the output to an existing file or creates a new one if one does not already exist.  So, <c>></c> should be used judiciously! 
+      <notation>
+        <usage><m>&gt; or &gt;&gt;</m></usage>
+        <description></description>
+      </notation> 
     </p>
   
     <p>
@@ -393,6 +401,10 @@ lines
     Analogous to output redirection, <term>input redirection</term> in the  shell using <c>&lt;</c> or <c>&lt;&lt;</c> allows you to redirect the input of a command. 
     <!-- Unlike the here document example, often you will redirect to use a file instead of the keyboard.  -->
     So, if we want the response from a command to be written to a file instead of to the terminal, we can use output redirection, but if we want the input to a command to come from a file instead of from the keyboard, we use input redirection. 
+    <notation>
+      <usage><m>&lt;</m></usage>
+      <description> </description>
+    </notation>
   </p>
     <p>
       Let's look at an example of input redirection using the  shell command <c>wc</c>, which stands for <em>word count</em>. This a command that as the name suggests can be used for counting. However, it does more than count words! It actually provides the line count, the word count, and the character count in the file(s) specified in the file arguments.
@@ -457,7 +469,12 @@ wc -w &lt; temp.txt
 <p>
   If you  are wondering if there is a better way than using a temporary file, there is. 
   A <term>pipe (|)</term> in the shell allows you to redirect (aka to pipe) the output of one command into the input of another command. Let's see an example:
+  <notation>
+    <usage><m>|</m></usage>
+    <description></description>
+  </notation>
 </p>
+
 
 <pre>
   ls | wc -w
@@ -608,6 +625,14 @@ And, if you respond with "n", then the removal will not happen.
     </p>
   <p>
     This paragraph is intended to alert you to some useful search features. A couple examples of very common search patterns are using wildcards for zero or more characters or for a single character.  The asterisk (*) specifies zero or more characters to match. In bash the question mark (?) is used for matching exactly one single character.
+    <notation>
+      <usage><m>*</m></usage>
+      <description></description>
+    </notation>
+    <notation>
+      <usage><m>?</m></usage>
+      <description></description>
+    </notation>
     </p>
       <p>
         For example, if we type the following:
