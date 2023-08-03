@@ -7,9 +7,11 @@
     </p>
     </introduction>
     <subsection xml:id="subsec_website">
-        <title>Websites</title>
+      <idx><h>website</h></idx>
+      <idx><h>host</h></idx>
+        <title>Website</title>
         <p>
-          The first place where people discover an OSS community is typically a website.  To make a website available to all users, it must be hosted on a web server referred to as a 
+          The first place where people discover an OSS community is typically a <term>website</term>.  To make a website available to all users, it must be hosted on a web server referred to as a 
             <term>host</term> that serves the page.          
           Unfortunately, the nature of traditional HTML pages is that they are often a static, one-to-many form of communication created by a small number of people with write access to the server. This leads to websites that can become quickly outdated and which do not truly reflect the collaborative nature of the community. We will see how OSS communities work around this issue and make their website a collaborative project in the next section.
         </p>
@@ -283,11 +285,11 @@
 
             </li>
             <li>
-                <title>Mailing List and/or Forum</title>
+                <title>Mailing List</title>
                 <p xml:id="mailing_list">
                   <idx>mailing list</idx>
                   <idx>forum</idx>
-                  You likely know that an <term>electronic mailing list</term> is a collection of names and email addresses used to send material to multiple recipients, typically given a single email address for the list. Open source communities that use email lists tend to use discussion lists (which allow for replies) rather than announcement lists (which are one way) to engage their communities. An example of an open source project that leverages email lists heavily for discussions is 
+                  You likely know that an electronic <term>mailing list</term> is a collection of names and email addresses used to send material to multiple recipients, typically given a single email address for the list. Open source communities that use email lists tend to use discussion lists (which allow for replies) rather than announcement lists (which are one way) to engage their communities. An example of an open source project that leverages email lists heavily for discussions is 
                   <url href="https://www.debian.org/MailingLists/" visual="www.debian.org/MailingLists">Debian</url>. Note that all emails sent to the Debian lists are distributed both to the list subscribers as well as copied to the public archive, so people to browse or search without the need to be subscribed.
                 </p>
                 <p>
@@ -301,7 +303,10 @@
                   <url href="https://www.gnu.org/software/mailman/" visual="gnu.org/software/mailman/">GNU Mailman</url>, which provide subscriber management, bounce control, and web-accessible archiving.
     
                 </p>
-                <p xml:id="id_web-based_forum">
+              </li>
+              <li xml:id="id_web-based_forum">
+                <title>Forum</title>
+                <p>
                   <idx><h>web-based forum</h></idx>
                   <idx><h>forum</h></idx>
                   A <term>web-based forum</term> has some similarities to an email list because users can subscribe to receive updates via email. However, conversations in forums are typically grouped by discussion topic and are often better-organized than email archives, which makes them easier to browse and search. People on a  forum typically have handles or nicknames, rarely using their full real name, unlike in email. Many OSS communities have one or more forums specific to various aspects of the project. There are also forums that span multiple OSS communities. For example, <url href="https://itsfoss.community/" visual="itsfoss.community">It's FOSS Community</url> is an example of an active forum on FOSS.
@@ -346,7 +351,7 @@
         <choice>
           <statement>
             <p>
-              Document Editing and File Management
+              Document editing and file management
             </p>
           </statement>
           <feedback>
@@ -358,19 +363,19 @@
         <choice>
           <statement>
             <p>
-              Mailing Lists and Forums Integration
+              Mailing list and forum integration
             </p>
           </statement>
           <feedback>
             <p>
-              While Mailing Lists and Forum Integration are mentioned in the text, they are not exclusive to SECP features.
+              While mailing lists and forum integration are mentioned in the text, they are not exclusive to SECP features.
             </p>
           </feedback>
         </choice>
         <choice correct = "yes">
           <statement>
             <p>
-              Repositories and Merge Requests
+              Repositories and merge requests
             </p>
           </statement>
           <feedback>
@@ -382,7 +387,7 @@
         <choice>
           <statement>
             <p>
-              Collaborative Instant Messaging and Wikis 
+              Collaborative instant messaging and wikis 
           </p>
           </statement>
           <feedback>
