@@ -20,6 +20,8 @@
     </subsection>
     <subsection xml:id="subsec-secp">
         <title>Software Engineering Collaboration Platforms (SECP)</title>
+        <introduction>
+
         <p>
           <idx>software engineering collaboration platforms</idx><idx>SECP</idx>
           Virtually every open source community uses a 
@@ -29,12 +31,11 @@
             <url href="https://gitlab.com/" visual="gitlab.com/">GitLab</url>, or 
             <url href="https://bitbucket.org/" visual="bitbucket.org">Bitbucket</url>, each of which provides a comprehensive collection of features that are required for software development in OSS communities. These features arise naturally from the need store code, to discuss issues related to the code, to employ version control, and other needs: 
         </p>
-        <p>
-            <ul>
-                <li>
-                    <title>Repositories</title>
-                    <p>
-                      It goes without saying that an OSS needs to store the code base in a way that it can be accessed by the community of current and potential contributors.
+      </introduction>
+            <subsubsection xml:id="subsubsec-repository">
+              <title>Repository</title>
+              
+
                       <definition xml:id="def-repository">
                         <idx>repository</idx>
                         <idx>repo</idx>   
@@ -45,12 +46,14 @@
                             </p>
                           </statement>
                         </definition>
+                        <p>
+                          It goes without saying that an OSS needs to store the code base in a way that it can be accessed by the community of current and potential contributors.
                       Repos are nearly always hosted in a SECP, although they are also sometimes self-hosted by the project.
                     </p>
-                </li>
-                <li>
+                  </subsubsection>
+                <subsubsection xml:id="subsubsec-issue-tracker">
                     <title>Issue Tracker</title>
-                    <p xml:id="id_issue_tracker">
+                    
 
                       <definition xml:id="def-issue">
                         <idx>issue</idx>
@@ -69,7 +72,7 @@
                         </p>
                       </statement>
                     </definition>
-                      
+                      <p>
                       After an issue is posted, discussions on the issue typically occur and are sometimes prolonged. These discussions are most conveniently attached to the issue itself to facilitate the tracking of the discussion, which is particularly important in larger projects. When an issue is posted, it can be discussed by the community to decide on how to proceed with it. The issue can be categorized and linked to other discussions, projects, and engineering work as well. You are definitely advised to read all unresolved issues before posting so you are not duplicating another existing issue. 
                     </p>
                     <p>
@@ -132,26 +135,46 @@
                       Note that although the above default labels are included in every new GitHub repository, maintainers may or may not use all of them, and many maintainers choose to edit or delete some of the default labels and/or add their own custom labels that make sense for that project.
                     </p>
 
-                </li>
-                <li>
-                    <title>Merge Requests</title>
+                  </subsubsection>
+                <subsubsection xml:id="subsubsec-merge-request">
+                    <title>Merge Request</title>
+
+
+    <definition xml:id="def-merge-request">
+      <idx>merge request</idx>
+      <idx>pull request</idx>   
+        <statement>
+          <p>
+            The term 
+            <term>merge request</term> or 
+            <term>pull request (PR)</term> describes a request to initiate the process of requesting an integration of specific code changes into the project repository. 
+          </p>
+        </statement>
+      </definition>
                     <p>
-                      <idx>merge request / pull request</idx>
-          Software developers use the term 
-                        <term>merge request</term> or 
-                        <term>pull request (PR)</term> to describe a request to initiate the process of requesting an integration of specific code changes into the project repository. Best practice before making a merge request is to have initiated an earlier discussion using one of the forms of communication favored by the project. After this discussion, a (potential) contributor opens a merge request, which may then undergo several iterations of automatic checks, manual code reviews by one or more other contributor, as well as further discussion.
+
+          Best practice before making a merge request is to have initiated an earlier discussion using one of the forms of communication favored by the project. After this discussion, a (potential) contributor opens a merge request, which may then undergo several iterations of automatic checks, manual code reviews by one or more other contributor, as well as further discussion.
         
                     </p>
                     <p>
           It is important to understand that even in the best of circumstances, the typical merge request initiates further discussion and/or recommendation(s) for improvements from the core team of the OSS project. To those new to the OSS world, these discussions may come as a surprise, but they should not. Even then the core OSS term is likely to ask for further refinements. This is normal and to be expected.
         </p>
-                </li>
-                <li>
-                    <title>Project Boards</title>
+      </subsubsection>
+               <subsubsection xml:id="subsubsec-project-board">
+                <title>Project Board</title>
+
+                <definition xml:id="def-project-board">
+                  <idx>project board</idx>   
+                    <statement>
+                      <p>
+                        A <term>project board</term> is a tool that facilitates organization of project tasks. 
+                      </p>
+                    </statement>
+                  </definition>
+
                     <p>
                       <idx>project board</idx>
-          A 
-                        <term>project board</term> facilitates organization of project tasks. Project boards typically utilize a visual tool similar to the 
+                        Project boards typically utilize a visual tool similar to the 
                         <url href="https://en.wikipedia.org/wiki/Kanban" visual="en.wikipedia.org/wiki/Kanban">Kanban</url> scheduling system used in lean manufacturing. SECPs provide such boards, and many projects use the ones provided in their SECP. However, some projects use an external tool like 
                         <url href="https://trello.com/" visual="trello.com">Trello</url> or one of the open source alternatives such as 
                         <url href="https://kanboard.org/" visual="kanboard.org">Kanboard</url> or 
@@ -163,14 +186,14 @@
                     <p> 
                        If you wonder why some projects don't seem to use project boards, consider that in many OSS projects, there are no paid project leaders who can set goals, organize all of the issues into boards, prioritize tasks, etc. For the majority of OSS projects, there either isn't time to take manage project boards or the project is too small to derive much benefit from their use.
                     </p>
-                </li>
-            </ul>
-          </p>
-                <p>
+                  </subsubsection>
+          <conclusion>
+            <p>
+              
           One of the many features these software engineering collaboration platforms (SECP) sometimes offer is web hosting, which when enabled, facilitates structured collaborative editing of the site. As an example, 
           <url href="https://pages.github.com/" visual="pages.github.com">GitHub Pages</url> affords hosting as a website for projects that are managed on GitHub. This means that OSS communities can use their SECP of choice as their a host for their website as well.
         </p>
-        
+      </conclusion>
     </subsection>
     <subsection xml:id="subsec-other-tools">
         <title>Other Asynchronous Communication Tools</title>
@@ -194,39 +217,46 @@
                 </p>
             </li>
  <li>
-                <title>Wikis</title>
+                <title>Wiki</title>
+
+                <definition xml:id="def-wiki">
+                  <idx>Wikis</idx>     
+                    <statement>
+                      <p>
+                        Simply stated, a <term>wiki</term> is a hypertext publication where the pages are a user-editable, easy-to-use, asynchronous way of putting semi-permanent content on the web.
+                      </p>
+                    </statement>
+                  </definition>
+
                 <p>
-                  <idx>Wikis</idx>
+                  
                   Although <term>wikis</term> can be created within many of the SECPs, the concept of a wiki is widely used and understood outside of SECPs as well, largely due to the wide popularity of 
                     <url href="https://www.wikipedia.org/" visual="wikipedia.org">Wikipedia</url>  and 
-                    <url href="https://www.wikimedia.org/" visual="wikimedia.org">WikiMedia</url>. Simply stated, a wiki is a website where the pages are a user-editable, easy-to-use, asynchronous way of putting semi-permanent content on the web, so they are useful for documentation, timelines, status reports, meeting minutes, and conversation logs. A wiki provides easy version control, a database backend, simplified markup, and a fast edit-and-post cycle. Having said this, the use of wikis for OSS projects have fallen largely out of favor in place of having markdown files in the code repository since markdown allows using the same tools such as merge requests, which has the additional benefit that changes to the documentation can be part of the merge request that introduces the relevant change.
+                    <url href="https://www.wikimedia.org/" visual="wikimedia.org">WikiMedia</url>. Wikis are useful for documentation, timelines, status reports, meeting minutes, and conversation logs. A wiki provides easy version control, a database backend, simplified markup, and a fast edit-and-post cycle. Having said this, the use of wikis for OSS projects have fallen largely out of favor in place of having markdown files in the code repository since markdown allows using the same tools such as merge requests, which has the additional benefit that changes to the documentation can be part of the merge request that introduces the relevant change.
 
     
                 </p>
-                <!--     <exercise xml:id="exercise-project-wikis"><title>Exercise: Project Wikis</title><p>Wikis are meant to be community spaces where everyone can join in. They grown and are made better through community participation. For this exercise, we&#8217;re going to encourage you to check out the wikis of three established open source projects.
-    </p> -->
-                <p>
-                    <!--    <title>What wiki software are they using?</title><ol><li>
-        Link to the main wiki.
-      </li><li>
-        Search in the wiki for the history and current structure of the project. Is it in the wiki, or is it somewhere else in their project?
-      </li><li>
-        When the last change was made, who made it, and how often are changes submitted. Would you describe this wiki as &#8220;thriving&#8221; or &#8220;languishing&#8221;?
-      </li></ol> -->
-                </p>
+
+
             </li>
             <li>
-              
                 <title>IRC</title>
-                <idx>IRC</idx> 
+
+                <definition xml:id="def-irc">
+                  <idx>IRC</idx>  
+                  <idx><h>internet relay chat (IRC)</h></idx>   
+                    <statement>
+                      <p>
+                        <term>Internet Relay Chat (IRC)</term> is old-style text-based chat system for instant messaging and synchronous communication between people working on a OSS project.
+                      </p>
+                    </statement>
+                  </definition>
+
                 <p>
                   
-                  <term>IRC</term> stands for Internet Relay Chat. IRC is one of the older means of synchronous communication between people working on a OSS project, and although in the past it was one of the primary OSS communication tools, many projects have abandoned IRC for collaborative instant messaging platforms and other newer communication tools. It's a text-based federated chat system where clients connect to the servers of one or more networks, and the servers relay messages between themselves within each network (hence the name). Communication is done in channels which individual users join, and users are identified by nicks (nicknames). In addition to human users, like collaborative instant messaging platforms, various services and bots are present in many channels. However, it is very lightweight because the focus is solely on the textual content, which means it can work right from your command line. However, there is no formatting, not even new lines, no emojis, no voice or video chat, and unlike most more modern chat technologies where recordings can be automated, messages aren't easily stored, so it is designed to work only for synchronous communication.
+                  IRC is one of the older means of synchronous communication between people working on a OSS project, and although in the past it was one of the primary OSS communication tools, many projects have abandoned IRC for collaborative instant messaging platforms and other newer communication tools. It's a text-based federated chat system where clients connect to the servers of one or more networks, and the servers relay messages between themselves within each network (hence the name). Communication is done in channels which individual users join, and users are identified by nicks (nicknames). In addition to human users, like collaborative instant messaging platforms, various services and bots are present in many channels. However, it is very lightweight because the focus is solely on the textual content, which means it can work right from your command line. However, there is no formatting, not even new lines, no emojis, no voice or video chat, and unlike most more modern chat technologies where recordings can be automated, messages aren't easily stored, so it is designed to work only for synchronous communication.
  </p>
-                <!-- <p>To use IRC, you&#821actually7;ll need an IRC client; Wikipedia maintains an excellent list of options. We recommend installing a few on your system and trying them out to see which one you prefer. You&#8217;ll need to select a nickname (nick or handle) &#8212; choose wisely, because you&#8217;ll want to keep your nick for the long run. It&#8217;s strongly recommended that you register your nick so that other people cannot masquerade as you.</p><p>There are a handful of IRC networks used in open source, including ones operated by large projects (such as irc.mozilla.org) and ones which are operated by organizations and shared by many different communities (such as irc.freenode.net and irc.oftc.net). These are open channels and may be logged by one or more entities. Consider anything you say in IRC to be as public as if you said it on a busy street corner, with a megaphone, and seven people videotaping everything.</p><p>Most IRC clients let you perform operations using menus/hotkeys or by typing commands. Commands start with a slash (&#8220;/&#8221;) to distinguish them from text that you are typing into the chat session. Since the commands are the same in all IRC clients, it&#8217;s worthwhile becoming familiar with them &#8212; here are some of the basics:</p><ul><li>/connect server &#8211; connect to the named IRC server.</li><li>/list &#8211; lists available channels. Channel names start with &#8220;#&#8221; (official channels) or &#8220;##&#8221; (unofficial channels).</li><li>/join channel &#8211; join the listed channel on the server to which you are connected.</li><li>/me action &#8211; reports your nick as performing an action.</li><li>/leave reason &#8211; leave the current channel, citing the reason given (optional).</li><li>/quit reason &#8211; leave the server, citing the reason given (optional).</li></ul><p>Any text you type that does not begin with a slash is taken to be text, and is entered into the conversation.</p><p>It is normal to join a channel and say nothing. In fact, it is expected: don&#8217;t join a channel and say &#8220;hi&#8221; or leave and say &#8220;bye&#8221; &#8212; you may be interrupting a conversation already underway. Feel free to join as many channels as you like, once you&#8217;re comfortable with IRC.</p><p>It is fine to join a channel and sit there idle for a long time, lurking. You might never say anything; this is a good way for you to learn about who is in the channel, what they are talking about, etc. Listening is often more important than talking, because you learn more.</p><p>If you have a question you should just ask it rather than saying, &#8220;Can I ask a question about &#8230;&#8221; or &#8220;Does anyone know about &#8230;&#8221;. You don&#8217;t need to direct general questions to a specific person. Rather, you should ask in the channel in general, and someone usually answers you:</p><pre>
-      don: How do I ask a question?
-      funny_guy: don, you just did!
-    </pre><p>If there are several conversations taking place at the same time, it&#8217;s customary to put the nick of the user you are directing your comment to at the start of the line (as shown in the second line above); most IRC clients send a special alert to a user whose nick is &#8220;spoken&#8221; in a channel. Most IRC clients also auto-complete the nick when you press the <strong>[Tab]</strong> key, so you could type fun[Tab] to fill in the nick &#8220;funny_guy&#8221;.</p><p>Channels generally have a purpose, and people are often joined to many different channels at once.  You&#8217;ll see many of the same people in different channels.  However, what might be appropriate in one channel often isn&#8217;t in another.  When you enter a channel, take a look at its Topic (displayed at the top, or with the /topic command) for clues.</p><p>Generally you should avoid small-talk unless you are sure that it is appropriate. Even if you see others in the channel doing it, don&#8217;t take that to mean that you should (i.e., channel veterans can get away with things newcomers can&#8217;t!). At the same time, be ready for a playful and (at times) very sarcastic environment.</p><p>Also be aware that you never know who you are talking to based on their nicks (you learn who people are later, as you get to know people&#8217;s nicks), and avoid making assumptions about people in the channel.</p><exercise><title>Exercise: Learning IRC</title><p>Install one or more IRC clients. Find out which network(s) and channel(s) are used by the three open source communities that operate the wikis you investigated. Choose a nick and connect to those networks and channels. Leave your IRC client open for at least 24 hours, and observe the patterns of conversation and key participants. Have a discussion in at least one of the channels, and blog about your experience, including an excerpt from your conversation.</p></exercise> -->
+              
             </li>
             <li>
                 <title>Blog</title>
