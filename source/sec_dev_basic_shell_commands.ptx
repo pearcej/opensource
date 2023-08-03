@@ -74,7 +74,7 @@
       You should see the same result as you saw with the <c>whoami</c> command! Note that you must precede the variable name with a dollar sign $ whenever you reference the value it contains. Isn't it interesting to peek inside the environment variable in that way? 
       <notation>
         <usage><m>$</m></usage>
-        <description></description>
+        <description>dollar sign</description>
       </notation>
     </p>
     <p>
@@ -359,7 +359,7 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
     <p><term>Output redirection</term> is a feature in the shell that allows the user to redirect the output of a command using <c>></c> or <c>>></c>. Recall that the <c>echo</c> command normally prints to the screen. What we did above in creating new files with the <c>echo</c> command was to use output redirection to redirect the output of the command into a file of the specified name. So, the command <c>echo 'I love open source!' > newfile2.txt</c> redirected the output of the <c>echo</c> command into the <em>newfile2.txt</em> file. Both <c>></c> and <c>>></c> will create a <em>new</em> file with the provided name if one does not already exist. Note that the <c>></c> is the output redirection operator used for <em>overwriting</em> a file that might or might not already exist, while the <c>>></c> is an output operator that <em>appends</em> the output to an existing file or creates a new one if one does not already exist.  So, <c>></c> should be used judiciously! 
       <notation>
         <usage><m>&gt; or &gt;&gt;</m></usage>
-        <description></description>
+        <description>output redirection symbol</description>
       </notation> 
     </p>
   
@@ -403,7 +403,7 @@ lines
     So, if we want the response from a command to be written to a file instead of to the terminal, we can use output redirection, but if we want the input to a command to come from a file instead of from the keyboard, we use input redirection. 
     <notation>
       <usage><m>&lt;</m></usage>
-      <description> </description>
+      <description>input redirection symbol</description>
     </notation>
   </p>
     <p>
@@ -471,7 +471,7 @@ wc -w &lt; temp.txt
   A <term>pipe (|)</term> in the shell allows you to redirect (aka to pipe) the output of one command into the input of another command. Let's see an example:
   <notation>
     <usage><m>|</m></usage>
-    <description></description>
+    <description>pipe symbol</description>
   </notation>
 </p>
 
@@ -627,11 +627,11 @@ And, if you respond with "n", then the removal will not happen.
     This paragraph is intended to alert you to some useful search features. A couple examples of very common search patterns are using wildcards for zero or more characters or for a single character.  The asterisk (*) specifies zero or more characters to match. In bash the question mark (?) is used for matching exactly one single character.
     <notation>
       <usage><m>*</m></usage>
-      <description></description>
+      <description>asterisk </description>
     </notation>
     <notation>
       <usage><m>?</m></usage>
-      <description></description>
+      <description>question mark</description>
     </notation>
     </p>
       <p>
