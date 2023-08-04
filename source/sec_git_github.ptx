@@ -689,7 +689,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 					In any comment you can start typing a <c>@</c> character and it will begin to autocomplete with the names and usernames of people who are collaborators or contributors in the project.
 					<notation>
 						<usage><m>@</m></usage>
-						<description>At symbol</description>
+						<description>at symbol - used to tag a username</description>
 					  </notation>
 				</p><!--</div attr= class="paragraph">-->
 
