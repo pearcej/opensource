@@ -827,20 +827,17 @@ Changes to be committed:
 <!-- div attr= class="paragraph"-->
 				<p>
 					Note the backslash (<c>\</c>) in front of the <c>*</c>. This is necessary because Git does its own filename expansion in addition to your shell’s filename expansion. This command removes all files that have the <c>.log</c> extension in the <c>log/</c> directory. Or, you can do something like this:
-				</p><!--</div attr= class="paragraph">-->
+				</p>
 
-<!-- div attr= class="listingblock"-->
-<!-- div attr= class="content"-->
 				<pre>$ git rm \*~</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
-<!-- div attr= class="paragraph"-->
 				<p>
 					This command removes all files whose names end with a <c>~</c>.
 				<notation>
-					<usage><m>\backslash\backslash</m></usage>
+					<usage><m>\backslash</m></usage>
 					<description>backslash - escape character</description>
 				</notation>
-				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
+				</p>
 
 <!-- div attr= class="sect3"-->
 			</paragraphs>
