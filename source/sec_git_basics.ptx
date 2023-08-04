@@ -837,7 +837,7 @@ Changes to be committed:
 				<p>
 					This command removes all files whose names end with a <c>~</c>.
 				<notation>
-					<usage><m>\</m></usage>
+					<usage><m>\backslash\backslash</m></usage>
 					<description>backslash - escape character</description>
 				</notation>
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
