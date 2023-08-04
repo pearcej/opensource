@@ -74,7 +74,7 @@
       You should see the same result as you saw with the <c>whoami</c> command! Note that you must precede the variable name with a dollar sign $ whenever you reference the value it contains. Isn't it interesting to peek inside the environment variable in that way? 
       <notation>
         <usage><m>$</m></usage>
-        <description>dollar sign</description>
+        <description>dollar sign - preceeds shell variable names to obtain value</description>
       </notation>
     </p>
     <p>
@@ -116,7 +116,7 @@
       If there is a folder named <c>myfolder</c> located in the root directory, its path would be <c>/myfolder</c>. If <c>myfolder</c> then contains a file named <c>hello.txt</c>, its path would be <c>/myfolder/hello.txt</c>. If <c>/myfolder</c> contains a directory named <c>/mydocuments</c>, its path would be <c>/myfolder/mydocuments</c>. And so on."
     <notation>
       <usage><m>/</m></usage>
-      <description>root directory symbol</description>
+      <description>root directory - topmost directory in Linux-style OS</description>
     </notation>
   </p>
   <p>
@@ -251,7 +251,7 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
         Next, let's go to your <term>home</term> directory which is referenced by the special tilde '~' character as follows:
       <notation>
       <usage><m>\tilde{}</m></usage>
-      <description>home directory symbol</description>
+      <description>tilde - home directory symbol</description>
     </notation>
       </p>
     <pre>
@@ -298,11 +298,11 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
       Note the period at the end of the first line where the filename is expected. A period or dot (.) represents the current directory. The double period or double dot (..) represents the parent directory of the current one.
       <notation>
       <usage><m>.</m></usage>
-      <description>current directory symbol</description>
+      <description>dot - current directory</description>
     </notation>
       <notation>
       <usage><m>..</m></usage>
-      <description>parent directory symbol</description>
+      <description>double dot - parent directory symbol</description>
     </notation>
   </p>
   <p>
@@ -359,7 +359,7 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
     <p><term>Output redirection</term> is a feature in the shell that allows the user to redirect the output of a command using <c>></c> or <c>>></c>. Recall that the <c>echo</c> command normally prints to the screen. What we did above in creating new files with the <c>echo</c> command was to use output redirection to redirect the output of the command into a file of the specified name. So, the command <c>echo 'I love open source!' > newfile2.txt</c> redirected the output of the <c>echo</c> command into the <em>newfile2.txt</em> file. Both <c>></c> and <c>>></c> will create a <em>new</em> file with the provided name if one does not already exist. Note that the <c>></c> is the output redirection operator used for <em>overwriting</em> a file that might or might not already exist, while the <c>>></c> is an output operator that <em>appends</em> the output to an existing file or creates a new one if one does not already exist.  So, <c>></c> should be used judiciously! 
       <notation>
         <usage><m>&gt; or &gt;&gt;</m></usage>
-        <description>output redirection symbol</description>
+        <description>single or double greater than - output redirection</description>
       </notation> 
     </p>
   
@@ -403,7 +403,7 @@ lines
     So, if we want the response from a command to be written to a file instead of to the terminal, we can use output redirection, but if we want the input to a command to come from a file instead of from the keyboard, we use input redirection. 
     <notation>
       <usage><m>&lt;</m></usage>
-      <description>input redirection symbol</description>
+      <description>less than - input redirection</description>
     </notation>
   </p>
     <p>
@@ -471,7 +471,7 @@ wc -w &lt; temp.txt
   A <term>pipe (|)</term> in the shell allows you to redirect (aka to pipe) the output of one command into the input of another command. Let's see an example:
   <notation>
     <usage><m>|</m></usage>
-    <description>pipe symbol</description>
+    <description>pipe - redirect input to output</description>
   </notation>
 </p>
 
@@ -627,11 +627,11 @@ And, if you respond with "n", then the removal will not happen.
     This paragraph is intended to alert you to some useful search features. A couple examples of very common search patterns are using wildcards for zero or more characters or for a single character.  The asterisk (*) specifies zero or more characters to match. In bash the question mark (?) is used for matching exactly one single character.
     <notation>
       <usage><m>*</m></usage>
-      <description>asterisk </description>
+      <description>asterisk - wildcard for zero or more characters</description>
     </notation>
     <notation>
       <usage><m>?</m></usage>
-      <description>question mark</description>
+      <description>question mark - wildcard for single character</description>
     </notation>
     </p>
       <p>
