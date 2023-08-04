@@ -16,19 +16,25 @@
     <title>Selected Solutions</title>
   </solutions>
  -->  
-  <appendix xml:id="list_of_symbols">
-    <title>List of Symbols</title>
-    <notation-list/>
-  </appendix>
 
-  <appendix xml:id="ap_cheat_sheets">
-    <title>Cheat Sheets</title>
-    <xi:include href="./ap_bash_cheat_sheet.ptx" />
+
+  <appendix xml:id="ap_git_cheat_sheet_pointer">
+    <title>Git Cheat Sheet</title>
     <xi:include href="./ap_git_cheat_sheet.ptx" />
   </appendix>
 
+  <appendix xml:id="ap_bash_cheat_sheet_pointer">
+    <title>Shell Command Cheat Sheet</title>
+    <xi:include href="./ap_bash_cheat_sheet.ptx" />
+  </appendix>
+
+  <appendix xml:id="list_of_symbols">
+    <title>Symbols Index</title>
+    <notation-list/>
+  </appendix>
+
   <index>
-    <title>Index</title>
+    <title>Text Index</title>
     <index-list/>
   </index>
 
