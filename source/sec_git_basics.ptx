@@ -405,6 +405,10 @@ M  lib/simplegit.rb
 					<li>
 									<p>
 					Blank lines or lines starting with <c>#</c> are ignored.
+					<notation>
+						<usage><m>\#</m></usage>
+						<description>pound symbol - begins single line comment in shell script</description>
+					</notation>
 				</p>
 					</li>
 
@@ -429,6 +433,10 @@ M  lib/simplegit.rb
 					<li>
 									<p>
 					You can negate a pattern by starting it with an exclamation point (<c>!</c>).
+					<notation>
+						<usage><m>!</m></usage>
+						<description>exclamation point - negates</description>
+					</notation>
 				</p>
 					</li>
 
@@ -437,6 +445,10 @@ M  lib/simplegit.rb
 <!-- div attr= class="paragraph"-->
 				<p>
 					Glob patterns are like simplified regular expressions that shells use. An asterisk (<c>*</c>) matches zero or more characters; <c>[abc]</c> matches any character inside the brackets (in this case a, b, or c); a question mark (<c>?</c>) matches a single character; and brackets enclosing characters separated by a hyphen (<c>[0-9]</c>) matches any character between them (in this case 0 through 9). You can also use two asterisks to match nested directories; <c>a/**/z</c> would match <c>a/z</c>, <c>a/b/z</c>, <c>a/b/c/z</c>, and so on.
+					<notation>
+						<usage><m>*</m></usage>
+						<description>asterisk - matches zero or more characters</description>
+					</notation>
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
@@ -824,6 +836,10 @@ Changes to be committed:
 <!-- div attr= class="paragraph"-->
 				<p>
 					This command removes all files whose names end with a <c>~</c>.
+				<notation>
+					<usage><m>\</m></usage>
+					<description>backslash - escape character</description>
+				</notation>
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
