@@ -58,11 +58,6 @@
             </li>
             <li>
                 <p>
-                    Read the <url href="https://github.com/PreTeXtBook/pretext/blob/master/README.md" visual="github.com/PreTeXtBook/pretext/blob/master/README.md">README</url>.
-                </p>
-            </li>
-            <li>
-                <p>
                     Install the <url href="https://pretextbook.org/doc/guide/html/processing-CLI.html" visual="pretextbook.org/doc/guide/html/processing-CLI.html">PreTeXt-CLI</url>.
                 </p>
             </li>
