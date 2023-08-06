@@ -103,3 +103,8 @@ pretext/__pycache__/**
 **/_build
 **/rsbuild
 **/build
+published
+
+# Codespaces set-up
+
+.devcontainer.json
