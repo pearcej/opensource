@@ -12,7 +12,7 @@
             The <url href="https://www.mozilla.org/en-US/firefox/faq/" visual="mozilla.org/en-US/firefox/faq/">Mozilla Firefox Browser</url> proclaims itself to be the only major browser backed by a not-for-profit that doesn’t sell your personal data to advertisers while helping you protect your personal information. 
 		</p>
         <p>
-            The best way to get started contributing to Firefox utilizes:
+            To get started contributing to Firefox:
         </p>
         <ol>
             <li>
@@ -44,7 +44,7 @@
 		</p>
         <p>
             To get started with PretTeXt, do the following:
-        </p>
+        
        <ol>
             <li>
                 <p>
@@ -63,24 +63,24 @@
             </li>
             <li>
                 <p>
-                    Look for typo-level issues or issues marked by <em>Good first issue</em> in <url href="https://github.com/PreTeXtBook/pretext/issues" visual="github.com/PreTeXtBook/pretext/issues">Pretext Issue Queue</url>
+                    Look for typo-level issues or issues marked by <em>good first issue</em> in <url href="https://github.com/PreTeXtBook/pretext/issues" visual="github.com/PreTeXtBook/pretext/issues">Pretext Issue Queue</url>
                 </p>
             </li>
         </ol>
+    </p>
     </li>
     <li>
         <title><em>Runestone Academy</em></title>
         <p>
-            The mission of <url href="https://landing.runestone.academy/" visual="landing.runestone.academy/">Runestone Academy</url> is to make modern textbooks freely available to all (i.e. to democratize textbooks for the 21st century.)  To accomplish this mission Runestone has partnered with many institutions, the US National Science Foundation (NSF), as well as many professionals to make high quality interactive textbooks in multiple languages available to all students for free.  
+            The mission of <url href="https://landing.runestone.academy/" visual="landing.runestone.academy/">Runestone Academy</url> is to make modern textbooks freely available to all (i.e. to democratize textbooks for the 21st century.)  To accomplish this mission Runestone has partnered with many institutions, the US National Science Foundation (NSF), as well as many professors and other professionals to make high quality interactive textbooks in multiple languages available to all students for free.  
         </p>
     </li>
     <li>
         <p>
-            To get started contributing to Runestone textbooks, themselves, go to <url href="https://github.com/orgs/RunestoneInteractive/repositories?type=all" visual="github.com/orgs/RunestoneInteractive/repositories?type=all">Runestone Academy Repos</url>, and look for textbooks. 
+            To get started contributing to Runestone textbooks themselves, go to <url href="https://github.com/orgs/RunestoneInteractive/repositories?type=all" visual="github.com/orgs/RunestoneInteractive/repositories?type=all">Runestone Academy Repos</url>, and look for textbooks. 
         </p>
         <p>
             The following textbooks are known to be friendly to novice contribution:
-        </p>
         <ul>
             <li>
                 <p>
@@ -104,7 +104,7 @@
             </li>
             <li>
                 <p>
-                    <url href="https://github.com/pearcej/cpp4python/issues" visual="github.com/pearcej/cpp4python/issues">C++ for Python Programmers - author repo</url> and the original  <url href="https://github.com/RunestoneInteractive/cpp4python/issues" visual="github.com/RunestoneInteractive/cpp4python/issues">C++ for Python Programmers - forked repo.</url> Both repos are actively worked on.
+                    <url href="https://github.com/pearcej/cpp4python/issues" visual="github.com/pearcej/cpp4python/issues">C++ for Python Programmers - author repo</url> and the original  <url href="https://github.com/RunestoneInteractive/cpp4python/issues" visual="github.com/RunestoneInteractive/cpp4python/issues">C++ for Python Programmers - forked repo.</url> Both repos have issue queues and are actively worked on.
                 </p>
             </li>
             <li>
@@ -113,6 +113,32 @@
                 </p>
             </li>
         </ul>
+        </p>
+        <p>
+            Before trying to contribute to the Runestone Academy UL, it is best to gain practice contributing to books. To contribute to the Runestone Academy UI:
+            <ol>
+                <li>
+                    <p>
+                        Read the <url href="https://github.com/RunestoneInteractive/rs" visual="github.com/RunestoneInteractive/rs">README</url> and fork the repo.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Read the <url href="https://runestone-monorepo.readthedocs.io/en/latest/contributing.html" visual="runestone-monorepo.readthedocs.io/en/latest/contributing.html">Contributing Guide</url>, paying particular attention to the required code style and linting section.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Follow the directions on the <url href="https://runestone-monorepo.readthedocs.io/en/latest/developing.html" visual="runestone-monorepo.readthedocs.io/en/latest/developing.html">Developing</url> page.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Join the <url href="https://discord.gg/f3Qmbk9P3U" visual="discord.gg/f3Qmbk9P3U">Discord</url> channel.
+                    </p>
+                </li>
+            </ol>
+        </p>
     </li>
 	
 
