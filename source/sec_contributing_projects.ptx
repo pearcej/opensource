@@ -5,8 +5,7 @@
 <p>
 	The following are open source communities with a reputation of being friendly to novice contribution. Be sure to follow the recommendations given in <xref ref="sec_contributing_quickstart"/> for getting started well.
 </p>
-<ul>
-	<li>
+<subsubsection>
 		<title><em>Firefox</em></title>
 		<p>
             The <url href="https://www.mozilla.org/en-US/firefox/faq/" visual="mozilla.org/en-US/firefox/faq/">Mozilla Firefox Browser</url> proclaims itself to be the only major browser backed by a not-for-profit that doesn’t sell your personal data to advertisers while helping you protect your personal information. 
@@ -36,8 +35,8 @@
                 </p>
             </li>
         </ol>
-	</li>
-	<li>
+	</subsubsection>
+	<subsubsection>
 		<title><em>PreTeXt Authoring Software</em></title>
 		<p>
 			PreTeXt is an XML-based authoring and publishing system for authors of textbooks, research articles, and monographs, especially in STEM disciplines. One of the many wonderful aspects of PreTeXt is that anything authored in this softwere is designed to be highly accessible so can be printed to the web, on pdf, in Braile, and more.
@@ -68,16 +67,15 @@
             </li>
         </ol>
     </p>
-    </li>
-    <li>
+</subsubsection>
+<subsubsection>
+
         <title><em>Runestone Academy</em></title>
         <p>
             The mission of <url href="https://landing.runestone.academy/" visual="landing.runestone.academy/">Runestone Academy</url> is to make modern textbooks freely available to all (i.e. to democratize textbooks for the 21st century.)  To accomplish this mission Runestone has partnered with many institutions, the US National Science Foundation (NSF), as well as many professors and other professionals to make high quality interactive textbooks in multiple languages available to all students for free.  
         </p>
-    </li>
-    <li>
         <p>
-            To get started contributing to Runestone textbooks themselves, go to <url href="https://github.com/orgs/RunestoneInteractive/repositories?type=all" visual="github.com/orgs/RunestoneInteractive/repositories?type=all">Runestone Academy Repos</url>, and look for textbooks. 
+            To get started contributing to Runestone textbooks themselves, go to <url href="https://github.com/orgs/RunestoneInteractive/repositories?type=all" visual="github.com/orgs/RunestoneInteractive/repositories?type=all">Runestone Academy Repos</url>, and look for textbooks. You will need your development environment set-up to build the textbook, either using Runestone git 
         </p>
         <p>
             The following textbooks are known to be friendly to novice contribution:
@@ -115,7 +113,7 @@
         </ul>
         </p>
         <p>
-            Before trying to contribute to the Runestone Academy UL, it is best to gain practice contributing to books. To contribute to the Runestone Academy UI:
+            Before trying to contribute to the Runestone Academy UI or database backend, it is best to gain practice contributing to books. To contribute to the Runestone Academy UI:
             <ol>
                 <li>
                     <p>
@@ -139,12 +137,8 @@
                 </li>
             </ol>
         </p>
-    </li>
-	
 
-</ul>
-
-
+        </subsubsection>
 
 	</section>
 
