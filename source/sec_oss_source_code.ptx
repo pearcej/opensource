@@ -25,8 +25,8 @@
     <input>
 #include &lt;stdio.h&gt;
 int main() { 
-  for(;;) { 
-    printf ("Hello World!\n"); 
+  for(int i=0; i<100; i++) { 
+    gitprintf ("Hello World!\n"); 
   } 
   return 0;
 }
@@ -36,7 +36,7 @@ int main() {
 <!-- non-runnable
 <pre>#include &lt;stdio.h&gt;
 main() { 
-  for(;;) { 
+  for(int i=0; i<10; i++) { 
     printf ("Hello World!\n"); 
   } 
 }</pre> -->
