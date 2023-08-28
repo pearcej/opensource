@@ -24,10 +24,11 @@
 	<program xml:id="ex_c_prog" interactive="activecode" language="c">
     <input>
 #include &lt;stdio.h&gt;
-main() { 
+int main() { 
   for(;;) { 
     printf ("Hello World!\n"); 
   } 
+  return 0;
 }
     </input>
 	</program>
