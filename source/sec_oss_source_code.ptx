@@ -26,20 +26,13 @@
 #include &lt;stdio.h&gt;
 int main() { 
   for(int i=0; i&lt;100; i++) { 
-    gitprintf ("Hello World!\n"); 
+    printf ("Hello World!\n"); 
   } 
   return 0;
 }
     </input>
 	</program>
 
-<!-- non-runnable
-<pre>#include &lt;stdio.h&gt;
-main() { 
-  for(int i=0; i<10; i++) { 
-    printf ("Hello World!\n"); 
-  } 
-}</pre> -->
 
 		<p>
 			<idx>compiler</idx>
