@@ -49,7 +49,7 @@ int main() {
 		<pre>./hello</pre>
 
 		<p>
-			This says “run the program called hello that is in the current directory.” When run, this program will print Hello World! until we kill the program. Hold down the <term>CTRL</term> key and press the <term>C</term> key to kill the program’s execution.
+			This says “run the program called hello that is in the current directory.” When run, this program will print "Hello World!" 100 times. 
 		</p>
 
 		<p>
