@@ -89,7 +89,7 @@
 		<exercise xml:id="Sharecode">
 			<statement>
 			  <p>
-			What are some of the advantages of sharing source code in the context of open-source software (FOSS) development? CHECK ALL THAT APPLY
+			What are some of the advantages of sharing source code in the context of open-source software (OSS) development? CHECK ALL THAT APPLY
 			  </p>
 			</statement>
 			<choices randomize ="yes">
