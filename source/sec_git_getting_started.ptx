@@ -348,7 +348,10 @@
 				<figure xml:id="git-areas">
 					<caption>Git working tree, Git staging area, and Git directory</caption>
 
-				<image source='areas.png'/><!--</div attr= class="content">-->
+				<image source='areas.png'><!--</div attr= class="content">-->
+					<description>Visual has rows of arrow, checkout pointing from Repository to working, stage points from working directory to staging, commit arrow pointing from staging to .git repository.
+					</description>
+				</image>
 				</figure>
 
 				<p>
