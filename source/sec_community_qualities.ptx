@@ -27,7 +27,7 @@
 </subsection>
 
 <subsection xml:id="subsec_commercial_ties">
-<title>Commercial ties</title>
+<title>Commercial Ties</title>
 <p>Is there a company (or companies) sponsoring the project? Some sponsors provide only resources (funding, equipment, infrastructure), while others provide technology, legal protection, people, or some combination. It's important to understand how much influence the sponsors have in the overall direction of the project, and whether the community can continue if the sponsor pulls out (or fails).
 </p>
 </subsection>
@@ -57,11 +57,11 @@
       <ul>
         <li><title>Maturity and History</title> Discuss the maturity and the history of the project.
         </li>
-        <li><title>Focus</title> How the focus of the community changed over time? Has it changed greatly or very little? Explain.
+        <li><title>Focus</title> How did the focus of the community change over time? Has it changed greatly or very little? Explain.
         </li>
         <li><title>Type of Openness</title> Describe the type of openness you witness. 
         </li>
-        <li><title>Commercial ties</title> Are there commercial ties? If so, how much influence do the sponsors have?
+        <li><title>Commercial Ties</title> Are there commercial ties? If so, how much influence do the sponsors have?
         </li>
         <li><title>Subgroups</title> Can you identify any formal or informal subgroups that operate on differing tools or aspects?
         </li>
@@ -73,6 +73,64 @@
       </ul>
     </p>
 
+  </exercise>
+  <exercise xml:id="communityQualities">
+    <statement>
+      <p>
+        What aspect is essential to consider regarding the maturity of an OSS community and its history?
+      </p>
+    </statement>
+    
+    <choices>
+      <choice>
+        <statement>
+          <p>
+            The number of different skills represented among community members. 
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            While representation matters in OSS community, it is an essential aspect when considering the maturity of an OSS community. 
+        </p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            The extent to which subgroups are formally defined within the community.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            While subgroups can be an essential part of an OSS community, it doesn’t affect the maturity and history of the community.
+          </p>
+        </feedback>
+      </choice>
+      <choice correct = "yes">
+        <statement>
+          <p>
+            Whether the community has attracted contributors beyond developers, and the potential for growth and rejuvenation.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            Absolutely right! The maturity and history of an OSS community can be evaluated by considering whether it has attracted contributors beyond developers, and if it has experienced periods of growth, stability, stagnation, and rejuvenation.
+          </p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            The presence of a sponsoring company and the level of influence it holds over the community's direction.
+        </p>
+        </statement>
+        <feedback>
+          <p>
+            Sponsoring companies may affect the community’s direction in terms of commercial ties but it does not influence directly the maturity and history of OSS community. 
+          </p>
+        </feedback>
+      </choice>
+    </choices>
   </exercise>
 
 </section>

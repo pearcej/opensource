@@ -100,6 +100,74 @@
     <p>
       If you are interested in getting started with VSCode, you might begin with <url href="https://code.visualstudio.com/docs/introvideos/basics" visual="code.visualstudio.com/docs/introvideos/basics">VSCode's Getting Started Videos and Guide.</url>
     </p>
-  
+    <exercise xml:id="needAnEditor">
+      <statement>
+        <p>
+          Which feature in Integrated Development Environments (IDEs) allows developers to analyze the performance of their code?
+        </p>
+      </statement>
+      <choices randomize="yes">
+        <choice>
+          <statement>
+            <p>
+              Multi-language support
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Multi-language support will give us the ability to work effectively with a variety of programming languages and their varying syntaxes..
+          </p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              Code debugger 
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Code debugger detects and diagnoses errors in the code, including variable inspection and setting breakpoints. This feature helps developers identify and fix bugs in their code during the development process.
+            </p>
+          </feedback>
+        </choice>
+        <choice correct = "yes">
+          <statement>
+            <p>
+              Profiling support 
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Correct! This feature enables developers to measure the execution time and resource usage of their code to optimize performance. It helps to analyze the performance of the code.
+            </p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              Code folding 
+          </p>
+          </statement>
+          <feedback>
+            <p>
+              Code folding collapses sections of code to better focus the workspace
+            </p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              Code refactoring	
+          </p>
+          </statement>
+          <feedback>
+            <p>
+              Code refactoring automates code restructuring to improve readability and maintainability. 
+            </p>
+          </feedback>
+        </choice>
+      </choices>
+    </exercise>
 </section>
 

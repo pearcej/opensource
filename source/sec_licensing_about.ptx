@@ -3,17 +3,20 @@
 <section xml:id="sec_licensing_about" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>About Licensing</title>
   <introduction>
-    <p>
-      The primary purpose of licensing is to set rules by which a creative work like software can (or cannot) be used by others.
-    </p>
-
-    <p>
-      When you author a creative work, such as code, you automatically hold exclusive copyright to the work by default. Unless you include a license that specifies otherwise, <em>nobody</em> else is permitted to copy, distribute, or modify your work without opening themselves up to legal action by you. Once the work has other contributors (who then each become a copyright holder), “nobody” includes you. 
+    <p>An open source license formalizes what people are permitted to do with the material that is open source and under what conditions. For example, this might address whether you are granted the rights to use, modify, or distribute (commercially or non-commercially) the material.
     </p>
     <p>
-      If that is not a legal mess you want to get into, your code should include specific terms and conditions for what different people are allowed to do with it, in the form of a license.
+    Many people find licensing to be one of the more confusing aspects of open source software. It is our hope that the simplified treatment from this chapter will provide the reader a better understanding of the key issues.
+  </p>
+  <p>
+    When you author a creative work, such as code, you automatically hold exclusive copyright to the work by default. Unless you include a license that specifies otherwise, <em>nobody</em> else is permitted to copy, distribute, or modify your work without opening themselves up to legal action by you. Once the work has other contributors (who then each become a copyright holder), “nobody” includes you. 
+  </p>
+  <p>
+    If that is not a legal mess you want to get into, your code should include specific terms and conditions for what different people are allowed to do with it, in the form of a license.
+  </p>
+  <p>
+    Disclaimer: It is not the goal of this chapter to provide legal advice. The goal of this chapter is to provide a starting point to help you make an informed choice by providing information on popular open source licenses in a simplified fashion. If you have any questions regarding the best license for your code or any other legal issues relating to it, it’s your responsibility to do further research or consult with a professional.
     </p>
-
   </introduction>
   <subsection xml:id="subsec_important_IP_Terminology">
     <title>Important IP Terminology</title>
@@ -136,5 +139,62 @@
       These explanations and definitions are not intended to be used in any legal way and are offered without warranty of any type, either expressed or implied. In no event shall the author or other contributors be held liable for any claim, damages, or other liability arising from or in connection with these definitions or explanations.
     </p>
   </conclusion>
+  <exercise xml:id="Licensingabout">
+    <statement>
+      <p>
+        What is the primary purpose of licensing creative works like software?
+      </p>
+    </statement>
+    <choices randomize ="yes">
+      <choice>
+        <statement>
+          <p>
+            To grant exclusive copyright to the author of the work.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            While the section mentions that authors automatically hold exclusive copyright to their work by default, licensing serves a different purpose than just granting copyright.
+        </p>
+        </feedback>
+      </choice>
+      <choice correct = "yes">
+        <statement>
+          <p>
+            To provide a legal framework for others to use the work.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+           Licensing sets rules and conditions for how others can use a creative work, such as software, without infringing on the author's copyright
+          </p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            To allow unlimited copying and distribution of the work.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            Licensing is meant to regulate how others can use the work, not necessarily to allow unlimited copying and distribution without any conditions.
+          </p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+          To protect the creators’ products from being illegally sold for commercial purposes.
+        </p>
+        </statement>
+        <feedback>
+          <p>
+            While one of the reasons for licensing is indeed to protect the creators' products from illegal use, licensing is not solely focused on protecting against illegal activities.
+          </p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
 </section>
 

@@ -11,10 +11,10 @@
             <url href="https://bitbucket.org/" visual="bitbucket.org">Bitbucket</url>. All of these use Git for version control and all provide cloud storage space for Git repositories. Of these, GitHub is the single largest host for Git repositories and is the central point of collaboration for millions of developers and projects. A large percentage of all Git repositories are hosted on GitHub, and many open-source projects use it for Git hosting, issue tracking, code review, and other things. So while it’s not a direct part of the Git open source project, there’s a good chance that you’ll want or need to interact with GitHub at some point while using Git professionally. Other hosting services work similarly.
 		</p>
 		<p>
-			Watch the following video from Github to learn more.
+			Watch the following video from GitHub to learn more.
 		</p>
 		<figure xml:id="video-what-is-github">
-			<caption>What is Github?</caption>
+			<caption>What is GitHub?</caption>
 			<video youtube="pBy1zgt0XPc" width="80%" />
 		</figure>
 
@@ -54,11 +54,11 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					To fork a project, visit the project page and click the “Fork” button at the top-right of the page. This gives you a copy of the project in the Github cloud.
+					To fork a project, visit the project page and click the “Fork” button at the top-right of the page. This gives you a copy of the project in the GitHub cloud.
 				</p><!--</div attr= class="paragraph">-->
 
 				<p>
-					Once you have your own fork on Github, you need to <term>clone</term> a local copy down to a place where you can edit it, most typically your own local computer. <em>Note that while you can make small changes in Github, it is not a good practice to do so.</em>
+					Once you have your own fork on GitHub, you need to <term>clone</term> a local copy down to a place where you can edit it, most typically your own local computer. <em>Note that while you can make small changes in GitHub, it is not a good practice to do so.</em>
 				</p><!--</div attr= class="paragraph">-->
 				<p>
 					Let's try this!
@@ -67,7 +67,7 @@
 					<title><term>Exercise – Fork a Repo</term></title>
 			
 					<p>
-						Go to <url href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">Github: Fork a Repo</url> and complete the provided exercise with the octocat/Spoon-Knife repository.
+						Go to <url href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">GitHub: Fork a Repo</url> and complete the provided exercise with the octocat/Spoon-Knife repository.
 					</p>
 				  </exercise>
 <!-- div attr= class="sect3"-->
@@ -144,10 +144,10 @@
 				</p><!--</div attr= class="paragraph">-->
 
 				<exercise xml:id="exercise-github-flow">
-					<title><term>Exercise – Github Flow</term></title>
+					<title><term>Exercise – GitHub Flow</term></title>
 			
 					<p>
-						Go to <url href="https://docs.github.com/en/get-started/quickstart/github-flow ">Github Flow</url> and complete the provided exercise with one of your own repositories. 
+						Go to <url href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub Flow</url> and complete the provided exercise with one of your own repositories. 
 					</p>
 				</exercise>
 
@@ -182,8 +182,8 @@
 					</p>
 
 					<exercise xml:id="ex-intro-github">
-						<title>Introduction to Github</title>
-						Go to <url href="https://github.com/skills/introduction-to-github" visual="github.com/skills/introduction-to-github">Introduction to Github</url> and try all parts of the exercise. It should take an hour or less.
+						<title>Introduction to GitHub</title>
+						Go to <url href="https://github.com/skills/introduction-to-github" visual="github.com/skills/introduction-to-github">Introduction to GitHub</url> and try all parts of the exercise. It should take an hour or less.
 					</exercise>
 
 <!-- div attr= class="sect4"-->
@@ -199,14 +199,13 @@
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						Where this conversation may take place over email in the workflows presented in <url href="ch00/ch05-distributed-git">Distributed Git</url>, on GitHub this happens online. The project owner can review the unified diff and leave a comment by clicking on any of the lines.
+						Where this conversation may take place varies by community, on GitHub this typically happens online. The project owner can review the unified diff and leave a comment by clicking on any of the lines.
 					</p><!--</div attr= class="paragraph">-->
-
 
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						Once the maintainer makes a  comment, the person who opened the Pull Request (and indeed, anyone else watching the repository) will get a notification. 
+						Once the maintainer makes a comment, the person who opened the Pull Request (and indeed, anyone else watching the repository) will get a notification. 
 					</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="title"-->
@@ -619,10 +618,8 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 <!-- div attr= class="paragraph"-->
 					<p>
 						There are a few things to notice about this email. It will give you a small diffstat — a list of files that have changed in the Pull Request and by how much. It gives you a link to the Pull Request on GitHub. It also gives you a few URLs that you can use from the command line.
-					</p><!--</div attr= class="paragraph">-->
-gblock">--><!--</div attr= class="sect4">-->
+					</p>
 
-<!-- div attr= class="sect4"-->
 				</paragraphs>
 
 				<paragraphs xml:id="_collaborating_on_the_pull_request">
@@ -690,6 +687,10 @@ gblock">--><!--</div attr= class="sect4">-->
 <!-- div attr= class="paragraph"-->
 				<p>
 					In any comment you can start typing a <c>@</c> character and it will begin to autocomplete with the names and usernames of people who are collaborators or contributors in the project.
+					<notation>
+						<usage><m>@</m></usage>
+						<description>at symbol - used to tag a username</description>
+					  </notation>
 				</p><!--</div attr= class="paragraph">-->
 
 
@@ -788,7 +789,7 @@ gblock">--><!--</div attr= class="sect4">-->
 <!-- div attr= class="paragraph"-->
 				<p>
 					There are a number of special files that GitHub will notice if they are present in your repository.
-					We detail a few of the most common ones. Note that these can typically be written in any format that Github recognizes as prose.
+					We detail a few of the most common ones. Note that these can typically be written in any format that GitHub recognizes as prose.
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
@@ -796,7 +797,7 @@ gblock">--><!--</div attr= class="sect4">-->
 			<paragraphs xml:id="_license">
 				<title>LICENSE</title>
 			<p>
-			The first is the LICENSE file, which can be of nearly any prose format. For example, it could be LICENSE, LICENSE.md, LICENSE.asciidoc, etc. 
+			The first is the <c>LICENSE</c> file, which can be of nearly any prose format. For example, it could be LICENSE, LICENSE.md, LICENSE.asciidoc, etc. 
 			</p>
 			<p>
 			The license file explains the respostory's legal license, including any legal rights, any copyright restrictions, etc. When you include a detectable license in your repository, people who visit your repository will see it at the top of the repository page.
@@ -868,7 +869,7 @@ gblock">--><!--</div attr= class="sect4">-->
 				<title>CODE_OF_CONDUCT</title>
 				<p>
 					<idx>code of conduct</idx>
-					The CODE_OF_CONDUCT explains how one is expected to engage in that particular community. It is typically used to ensure an inclusive environment that respects all people and also typically describes how to address any problems among members of the project's community.
+					The <c>CODE_OF_CONDUCT</c> file explains how one is expected to engage in that particular community. It is typically used to ensure an inclusive environment that respects all people and also typically describes how to address any problems among members of the project's community.
 				</p>
 			</paragraphs>
 
@@ -932,5 +933,58 @@ gblock">--><!--</div attr= class="sect4">-->
 		<title>Section Summary</title>
 			Now you’re a GitHub user. You know how to create an account, manage an organization, create and push to repositories, contribute to other people’s projects and accept contributions from others.
 		</conclusion>
+
+	<exercise label = "Git-GitHub" numbered = "yes" language = "natural" adaptive="yes">
+		<statement>
+			<p>
+				Arrange some of the steps below to contribute an edit to an existing project using established GitHub workflow: 
+			</p>
+		</statement>
+		<blocks>
+			<block order="1">
+				<cline>
+				  Fork the project
+				</cline>
+			</block>
+			<block order="2">
+				<cline>
+					Clone the GitHub repo to your local
+				</cline>
+			</block>
+			<block order="3">
+				<cline>
+					Create a new topic branch
+				</cline>
+			</block> 
+			<block order ="4">
+				<cline>
+					Make changes
+				</cline>
+			</block>
+			<block order="5">
+				<choice correct = "yes">
+					<cline>
+						Push to the current branch
+					</cline>
+				</choice>
+				<choice>
+					<cline>
+						Push to the main branch
+					</cline>
+				</choice>
+			</block>
+		
+			<block order="6">
+				<cline>
+					Update current branch from upstream remote
+				</cline>
+			</block>
+			<block order="7">
+				<cline>
+					Open a Pull Request
+				</cline>
+			</block>
+		</blocks>
+	</exercise>
 	</section>
 

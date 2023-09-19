@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch_dev_env" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>OSS Development Environment</title>
+  
+  <xi:include href="./sec_dev_shell.ptx" />
+  <xi:include href="./sec_dev_basic_shell_commands.ptx" />
+  <xi:include href="./sec_dev_editors.ptx" />
+  <xi:include href="./sec_dev_virtualization.ptx" />
+
+</chapter>

@@ -4,8 +4,10 @@
   <title>About Source Code</title>
   <introduction>
     <p>
-		Let’s start with an explanation of <em>source code</em>. One cannot understand <em>open source</em> without first understanding source.
-
+		Let’s start with an explanation of <em>source code</em>. Source code is a set of instructions for computers that is meant to be read and written by humans.
+	</p>
+	<p>
+		One cannot understand <em>open source</em> without first understanding source.
     </p>
   </introduction>
   <subsection xml:id="subsec_source_code">
@@ -22,21 +24,15 @@
 	<program xml:id="ex_c_prog" interactive="activecode" language="c">
     <input>
 #include &lt;stdio.h&gt;
-main() { 
-  for(;;) { 
+int main() { 
+  for(int i=0; i&lt;100; i++) { 
     printf ("Hello World!\n"); 
   } 
+  return 0;
 }
     </input>
 	</program>
 
-<!-- non-runnable
-<pre>#include &lt;stdio.h&gt;
-main() { 
-  for(;;) { 
-    printf ("Hello World!\n"); 
-  } 
-}</pre> -->
 
 		<p>
 			<idx>compiler</idx>
@@ -53,7 +49,7 @@ main() {
 		<pre>./hello</pre>
 
 		<p>
-			This says “run the program called hello that is in the current directory.” When run, this program will print Hello World! until we kill the program. Hold down the <term>CTRL</term> key and press the <term>C</term> key to kill the program’s execution.
+			This says “run the program called hello that is in the current directory.” When run, this program will print "Hello World!" 100 times. 
 		</p>
 
 		<p>
@@ -118,7 +114,7 @@ main() {
 		<p>
 			<idx>decompiling</idx>
 			<idx>compilation</idx>
-			Compilation transforms a high-level language into a low-level language like machine code or byte code. Decompilation is the reverse. The process of reverse engineering a program from its binary code to source code is called <term>decompiling</term>, and the level of difficulty of decompiling a program differs rather significantly by the programming language of the source code. C code is notoriously difficult to decompile, while Java is much easier, partly because of far fewer compiler optimizations and partly because the intact metadata including such details as data types and method names. 
+			Compilation transforms a high-level language into a low-level language like machine code or byte code. Decompilation is the reverse. The process of reverse engineering a program from its binary code to source code is called <term>decompiling</term>, and the level of difficulty of decompiling a program differs rather significantly by the programming language of the source code. C code is notoriously difficult to decompile, while Java is much easier, partly because of far fewer compiler optimizations and partly because metadata, including details such as data types and method names, remain intact during compilation.
 		</p>
 
 		<p>
@@ -129,7 +125,6 @@ main() {
 			Note that copyright law generally provides the copyright holder with a set of exclusive rights. Decompilation is carried out by making copies of the software program, and so to be in compliance with law, one must consider the copyright before undertaking decompilation. Laws in both the United States and Europe do permit decompilation to a limited extent and for limited specific purposes. Laws in other areas of the world will vary, but reverse engineering a program for the purpose of reselling it under a different name and license would likely open you up to legal battles – the authors of this text strongly caution you against such action.
 		</p>
 
-      </subsection>
 	  	<p>
 			Prerequisite: Prior knowledge of programming in the C language.
 		</p>
@@ -137,6 +132,8 @@ main() {
 		<p>	
 			In order to successfully complete the exercises below, it is important to have a reading-level understanding of the C programming language. This includes knowledge of the syntax, basic programming concepts, and the ability to modify and compile C source code.
 		</p>
+	</subsection>
+
 	<exercise xml:id="exercise-change-the-source-code">
 		<title><term>Exercise – Change the source code</term></title>
 
@@ -154,10 +151,66 @@ main() {
 		</p>
 
 		<p>
-			This is actually a very tricky exercise, and it could take you a fair bit of time. We included it here because you might be curious and want to go poking around in the binary. Under most flavors of Linux you should be able to find or install a program called hexedit. To get you started, you use <term>TAB</term> to switch from hex to ASCII, / to search, and <term>F2</term> to save your changes. You can read the rest of the documentation for hexedit by reading the manpage, which you can get to by typing man hexedit on the command line, or pressing <term>F1</term> while running hexedit.
+			This is actually a very tricky exercise, and it could take you a fair bit of time. We included it here because you might be curious and want to go poking around in the binary. Under most flavors of Linux you should be able to find or install a program called hexedit. To get you started, you use <term>TAB</term> to switch from hex to ASCII, / to search, and <term>F2</term> to save your changes. You can read the rest of the documentation for hexedit by reading the manpage, which you can get to by typing <c>man hexedit</c> on the command line, or pressing <term>F1</term> while running hexedit.
 		</p>
 
 	</exercise>
-
+	<exercise xml:id="OssSourceCode">
+        <statement>
+          <p>
+			Are there any potential legal considerations and limitations regarding decompilation and reverse engineering in relation to copyright laws?
+          </p>
+        </statement>
+        <choices>
+          <choice>
+            <statement>
+              <p>
+                Yes, decompilation is generally prohibited under copyright laws, regardless of the purpose or extent.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Although it is true that generally, decompilation is regulated under copyright laws, it can be done under certain conditions.
+            </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+               No, decompilation is usually permitted under most copyright laws as long as it is for commercial purposes.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Even though decompilation is permitted under most copyright laws, it is not limited to commercial uses only. 
+              </p>
+            </feedback>
+          </choice>
+          <choice correct = "yes">
+            <statement>
+              <p>
+                Yes, decompilation is allowed only for specific purposes and to a limited extent under some copyright laws.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Yes, to be in compliance with the law, one must consider the copyright before undertaking decompilation. It is permitted to a limited extent and for limited specific purposes.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+				No, decompilation is allowed under any circumstance as long as it holds no security concerns and potential security benefits. 
+            </p>
+            </statement>
+            <feedback>
+              <p>
+                Decompilation is not allowed under all circumstances, even though it holds no security threats. Decompilation must align with copyright laws before being carried out. 
+              </p>
+            </feedback>
+          </choice>
+        </choices>
+      </exercise>
 </section>
 

@@ -52,7 +52,9 @@ $ git commit -m 'Initial commit'</pre><!--</div attr= class="content">--><!--</d
 			<!-- div attr= class="content"-->
 			<figure xml:id="git-commit-tree">
 			<caption>A commit and its tree</caption>
-			<image source='git-commit-and-tree.png'/>
+			<image source='git-commit-and-tree.png'>
+				<description> An illustrative depiction of your Git repository's status following a 'git commit' operation. </description>
+			</image>
 			</figure>
 			<!--</div attr= class="content">-->
 
@@ -180,14 +182,17 @@ f30ab (HEAD -&gt; master, testing) Add feature #32 - ability to add new formats 
 
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
-				<pre>$ vim test.rb
-$ git commit -a -m 'made a change'</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+				<pre>
+$ git commit -a -m 'made a change'</pre>
+
 
 <!-- div attr= class="imageblock"-->
 <!-- div attr= class="content"-->
 <figure xml:id="git-HEAD-moves">
   <caption>The HEAD branch moves forward when a commit is made</caption>
-  <image source='git-advance-testing.png'/>
+    <image source='git-advance-testing.png'>
+  <description> The block representing master head is located pointing to a block representing commit f30ab. </description>
+  </image>
 </figure>
 <!--</div attr= class="content">-->
 
@@ -222,7 +227,10 @@ Note that <c>git log</c> doesn’t show <em>all</em> the branches <em>all</em> t
 <!-- div attr= class="content"-->
 <figure  xml:id="git-HEAD-moves-checkout">
   <caption>HEAD moves when you checkout</caption>
-  <image source='git-checkout-master.png'/>
+  <image source='git-checkout-master.png'>
+  <description> image showing commit history of a branch after doing a git log command.
+  </description>
+  </image>
 </figure>
 
 
@@ -247,7 +255,7 @@ Note that <c>git log</c> doesn’t show <em>all</em> the branches <em>all</em> t
 
 <!-- div attr= class="listingblock"-->
 <!-- div attr= class="content"-->
-				<pre>$ vim test.rb
+				<pre>
 $ git commit -a -m 'made other changes'</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 
 <!-- div attr= class="paragraph"-->
@@ -340,5 +348,75 @@ $ git commit -a -m 'made other changes'</pre><!--</div attr= class="content">-->
      We’ve covered basic branching and merging in Git. You should feel comfortable creating and switching to new branches, switching between branches and merging local branches together. You should also be able to share your branches by pushing them to a shared server, working with others on shared branches and rebasing your branches before they are shared. Next, we’ll cover what you’ll need to run your own Git repository-hosting server.
     </p>
   </conclusion>
+  <exercise xml:id="GitBranching">
+	<statement>
+	  <p>
+		Git's branching model is considered a “killer feature” due to its:
+	  </p>
+	</statement>
+	<choices randomize = "no">
+	  <choice correct = "yes">
+		<statement>
+		  <p>
+			Cost-effective branching process, where creating new branches is instant and does not require duplicating the entire project directory.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			Great job! Git’s branching model allows for efficient and cost-effective branching by creating lightweight branches that do not duplicate the entire project directory.
+		</p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>
+			Compatibility with other Version Control Systems, allowing easy migration of repositories.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			While Git is widely used and has many benefits, its "killer feature" related to branching is not directly tied to compatibility with other Version Control Systems.
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice >
+		<statement>
+		  <p>
+			Advanced conflict resolution algorithms that automatically resolve merge conflicts but can accidentally delete files from the current branch.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			Git does have conflict resolution mechanisms, but it is not the primary "killer feature".
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>
+			Ability to create branches that are completely isolated from the main development line, ensuring a clean and organized project history.
+		</p>
+		</statement>
+		<feedback>
+		  <p>
+			While this is a feature of Git's branching model, it's not considered the main "killer feature" that sets Git apart from other Version Control Systems.
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+			<p>
+				None of the above.
+			</p>
+		</statement>
+		<feedback>
+			<p>
+				One of the answers above is correct.
+				
+			</p>
+		</feedback>
+	  </choice>
+	</choices>
+  </exercise>
 </section>
 

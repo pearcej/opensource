@@ -7,7 +7,7 @@
 	Open source software communities use documentation to enhance the software they produce in part via issue and/or bug trackers. When software doesn't perform as you'd expect, users might file a report. They can report inaccurate documentation, suggest new software features, report a bug, or note a potential security hole in a piece of software by filing an issue report. 
   </p>
     <p>
-      Issue trackers are a common component of platforms like Github for working together on open source software projects. Other stand-alone bug trackers and issue trackers include <url href="https://www.bugzilla.org/" visual="bugzilla.org">Bugzilla</url>, <url href="https://www.redmine.org/" visual="redmine.org">Redmine</url>, and <url href="https://trac.edgewall.org/" visual="trac.edgewall.org">Trac</url>.
+      Issue trackers are a common component of platforms like GitHub for working together on open source software projects. Other stand-alone bug trackers and issue trackers include <url href="https://www.bugzilla.org/" visual="bugzilla.org">Bugzilla</url>, <url href="https://www.redmine.org/" visual="redmine.org">Redmine</url>, and <url href="https://trac.edgewall.org/" visual="trac.edgewall.org">Trac</url>.
 	  All serve the same purpose, namely tracking bugs and issues like new feature requests.
     </p>
  
@@ -443,6 +443,63 @@ and the application crashes with the following error message in
 			</ul></p>
 
   </conclusion>
+  <exercise xml:id="SecDocuIssuesBugs">
+	<statement>
+	  <p>
+		What is the primary purpose of an issue tracker in open-source software projects?
+	  </p>
+	</statement>
+	<choices randomize = "yes">
+	  <choice>
+		<statement>
+		  <p>
+			To provide a platform for developers to communicate with users about various aspects of the project.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			While communication is an essential aspect of an issue tracker, its main purpose is more specific and revolves around managing project tasks.
+		</p>
+		</feedback>
+	  </choice>
+	  <choice correct = "yes">
+		<statement>
+		  <p>
+			To manage bugs, defects, feature requests, and other tasks related to the project.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			Absolutely right! An issue tracker serves as a comprehensive tool for managing various software development tasks, such as bug tracking, defect management, and handling feature requests.
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>
+			To act as a platform for users to provide feedback and suggestions about their feature requests.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			Although users can provide feedback through an issue tracker, the primary focus of this platform is not solely on feature requests but includes a broader range of tasks.
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>
+			To provide a centralized location for developers to collaborate on code.
+		</p>
+		</statement>
+		<feedback>
+		  <p>
+			While collaboration and code contribution is encouraged in open-source projects, the primary purpose of an issue tracker is not to serve as a hub for developers to collaborate on code directly.
+		  </p>
+		</feedback>
+	  </choice>
+	</choices>
+  </exercise>
 
 
 </section>

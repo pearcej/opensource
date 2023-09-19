@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch_git" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Version Control with Git</title>
+ 
+  <xi:include href="./sec_git_why_version_control.ptx" />
+  <xi:include href="./sec_git_getting_started.ptx" />
+  <xi:include href="./sec_git_basics.ptx" />
+  <xi:include href="./sec_git_branching.ptx" /> 
+  <xi:include href="./sec_git_undoing.ptx" /> 
+  <xi:include href="./sec_git_github.ptx" />
+  <!-- <xi:include href="./sec_scratch.ptx" /> -->
+  <!-- <xi:include href="./sec_git_tools.ptx" /> -->
+</chapter>
