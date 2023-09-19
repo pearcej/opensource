@@ -189,7 +189,7 @@ $ git commit -a -m 'made a change'</pre>
 <figure xml:id="git-HEAD-moves">
   <caption>The HEAD branch moves forward when a commit is made</caption>
     <image source='git-advance-testing.png'>
-  <description> The block representing master head is located at a block representing commit f30ab. </description>
+  <description> The block representing master head is located pointing to a block representing commit f30ab. </description>
   </image>
 </figure>
 <!--</div attr= class="content">-->
