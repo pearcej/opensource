@@ -47,6 +47,9 @@
       A system that manages version control for software development is sometimes called a <em>source code management (SCM)</em> system, but we will typically use the more general term. In this chapter, you will learn the basics of version control.
     </p>
 
+      <p>
+        This chapter is about version control with a focus on using Git for version control. We begin by discussing why you need version control, explaining some background on version control tools, move on to how to get Git running on your system, and finally we help you to start working with Git. By the end of this chapter you should understand why version control exists, why you should use one,  you should be all set up to begin to do so, and you should have a basic understanding the most commonly used git commands.
+      </p>
   </introduction>
 
   <subsection xml:id="subsec_vcs_intro">
