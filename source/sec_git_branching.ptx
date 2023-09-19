@@ -225,7 +225,10 @@ Note that <c>git log</c> doesn’t show <em>all</em> the branches <em>all</em> t
 <!-- div attr= class="content"-->
 <figure  xml:id="git-HEAD-moves-checkout">
   <caption>HEAD moves when you checkout</caption>
-  <image source='git-checkout-master.png'/>
+  <image source='git-checkout-master.png'>
+  <description> image showing commit history of a branch after doing a git log command.
+  </description>
+  </image>
 </figure>
 
 
