@@ -194,7 +194,9 @@
 				<figure xml:id="git-deltas">
 					<caption>Storing data as changes to a base version of each file</caption>
 
-				<image source='deltas.png'/><!--</div attr= class="content">-->
+				<image source='deltas.png'> 
+					<description> Demonstrates version control about how staging, commit and push works for different files </description>
+				</image>
 				</figure>
 
 				<p>
@@ -209,7 +211,7 @@
 
 				<image source='snapshots.png'/><!--</div attr= class="content">-->
 				</figure>
-
+i
 				<p>
 					This is an important distinction between Git and nearly all other VCSs. It makes Git reconsider almost every aspect of version control that most other systems copied from the previous generation. This makes Git more like a mini filesystem with some incredibly powerful tools built on top of it, rather than simply a VCS. We’ll explore some of the benefits you gain by thinking of your data this way when we cover Git branching in <!--TODO-->Git Branching.
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
