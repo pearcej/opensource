@@ -89,7 +89,9 @@
 
 		<figure xml:id="git-distributed">
 		<caption>Distributed Version Control</caption>	
-			<image source='distributed.png'/>
+			<image source='distributed.png'>
+			<description>Describe the distributed version database that communicates through the server computer with several remote repositories.</description>
+			</image>
 
 		</figure>
 
