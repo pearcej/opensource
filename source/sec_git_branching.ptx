@@ -166,7 +166,9 @@ f30ab (HEAD -&gt; master, testing) Add feature #32 - ability to add new formats 
 <!-- div attr= class="content"-->
 <figure xml:id="git-HEAD-current-branch">
   <caption>HEAD points to the current branch</caption>
-  <image source='git-head-to-testing.png'/>
+  <image source='git-head-to-testing.png'>
+  	<description>Diagram that shows relation between multiple branches inside a repository</description>
+  </image>
 </figure>
 <!--</div attr= class="content">-->
 
