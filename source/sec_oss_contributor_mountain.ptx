@@ -11,7 +11,9 @@
       <image source="im_contributor_mountain.png" width="50%">
 	  <!--TODO improve this image -->
       <!-- why this file must actually be in assets is puzzling -->
-        <description>a visual of the contributor mountain with user at the bottom</description>
+	  <!-- shortdescription tag doesn't seem to work as described -->
+        <description>image of contributor mountain depicting users at the bottom and contributors at the top</description>
+		<!-- description>Building up from the bottom of a pyramid, we see "User", "^ seek", "^ share", "Seekers", "^ participate", "Collaborators", and "Contributors" at the top.</description -->
       </image>
 
   </introduction>

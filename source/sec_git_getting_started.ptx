@@ -89,7 +89,9 @@
 
 		<figure xml:id="git-distributed">
 		<caption>Distributed Version Control</caption>	
-			<image source='distributed.png'/>
+			<image source='distributed.png'>
+			<description>Describe the distributed version database that communicates through the server computer with several remote repositories.</description>
+			</image>
 
 		</figure>
 
@@ -209,7 +211,9 @@
 				<figure xml:id="git-snapshots">
 					<caption>Storing data as snapshots of the project over time</caption>
 
-				<image source='snapshots.png'/><!--</div attr= class="content">-->
+				<image source='snapshots.png'>
+					<description>Chart showing example of Git storing data over time across 5 versions and 3 files.</description>
+				</image><!--</div attr= class="content">-->
 				</figure>
 i
 				<p>
@@ -350,7 +354,10 @@ i
 				<figure xml:id="git-areas">
 					<caption>Git working tree, Git staging area, and Git directory</caption>
 
-				<image source='areas.png'/><!--</div attr= class="content">-->
+				<image source='areas.png'><!--</div attr= class="content">-->
+					<description>Visual has rows of arrow, checkout pointing from Repository to working, stage points from working directory to staging, commit arrow pointing from staging to .git repository.
+					</description>
+				</image>
 				</figure>
 
 				<p>
