@@ -179,7 +179,9 @@ $ git commit -m 'Initial project version'</pre><!--</div attr= class="content">-
 <!-- div attr= class="content"-->
 			<figure xml:id="git-lifecycle">
 			<caption>The lifecycle of the status of your files</caption>
-			<image source='lifecycle.png'/><!--</div attr= class="content">-->
+			<image source='lifecycle.png'>
+				<description>An image using arrows to describe different changes to the status of your files during their lifecycle when working with git.</description>
+			</image><!--</div attr= class="content">-->
 			</figure>
 <!-- div attr= class="title"-->
 <!--</div attr= class="title">--><!--</div attr= class="imageblock">-->
