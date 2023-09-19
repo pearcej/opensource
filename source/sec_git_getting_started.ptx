@@ -209,7 +209,9 @@
 				<figure xml:id="git-snapshots">
 					<caption>Storing data as snapshots of the project over time</caption>
 
-				<image source='snapshots.png'/><!--</div attr= class="content">-->
+				<image source='snapshots.png'>
+					<description>Chart showing example of Git storing data over time across 5 versions and 3 files.</description>
+				</image><!--</div attr= class="content">-->
 				</figure>
 
 				<p>
