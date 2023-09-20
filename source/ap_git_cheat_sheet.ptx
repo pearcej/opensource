@@ -25,8 +25,21 @@
         <p>
           Clone a repository from a repository in the cloud to your local system. Note that if you are planning to contribute to a project that is not yours, you will likely want to <term>fork</term> the repository into your own account first. For example, to contribute to a project hosted on GitHub, go to that repository and fork it into your own GitHub account. For more detail see <url href="https://github.com/git-guides/git-clone" visual="github.com/git-guides/git-clone">Git Guides: Git Clone</url>
         </p>
+        <p> </p>
+        <p>
+		    The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:
+      </p>
+           
       </li>
+      <li>
+       <title><c>$ git config --global user.name "John Doe" and $ git config --global user.email johndoe@example.com</c></title>
+      <p>
+      Again, you need to do this only once if you pass the <c>--global</c> option, because then Git will always use that information for anything you do on that system. If you want to override this with a different name or email address for specific projects, you can run the command without the <c>--global</c> option when you’re in that project.
+      </p>
+      </li>
+    
 
+    
       </dl>
 
 
@@ -151,5 +164,7 @@
       </dl>
     </subsection>
 </section>
+
+
 
 
