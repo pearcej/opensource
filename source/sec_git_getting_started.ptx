@@ -197,7 +197,7 @@
 					<caption>Storing data as changes to a base version of each file</caption>
 
 				<image source='deltas.png'> 
-					<description> Demonstrates version control about how staging, commit and push works for different files </description>
+					<description> Demonstrates version control about how staging, commit and push work together to store only deltas when changes are made to different files. </description>
 				</image>
 				</figure>
 
