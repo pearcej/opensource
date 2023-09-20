@@ -351,55 +351,67 @@ before this Tag in the document."""
 	<exercise xml:id="docuscope">
 		<statement>
 		  <p>
-			Why is quality documentation essential in open source communities?
+			Which of the following statements best captures the role and significance of documentation in open source projects?
 		</p>
 		</statement>
 		<choices randomize="yes">
 		  <choice>
 			<statement>
 			  <p>
-				It provides an overview of the project and its problem-solving capabilities. 
+				Documentation is primarily used to outline the project's future plans and visions. 
 			  </p>
 			</statement>
 			<feedback>
 			  <p>
-				This option describes the README's purpose, but not the importance of documentation as a whole.
+				While the ROADMAP can provide insights into a project's future plans, the primary role of documentation spans far beyond just outlining future visions. Documentation serves to communicate a wide range of information, from code functionality to contributor guidelines.
 			</p>
 			</feedback>
 		  </choice>
 		  <choice>
 			<statement>
 			  <p>
-				It outlines the behavior expected of all contributors and users of the project.
+				The LICENSE file is crucial because it contains step-by-step instructions on how to use the software.
 			  </p>
 			</statement>
 			<feedback>
 			  <p>
-				This option refers to the CODE_OF_CONDUCT, which is just one aspect of documentation.
+				The LICENSE file primarily outlines the terms under which the project is licensed, specifying what one is and is not allowed to do with the code. It doesn't provide step-by-step instructions on using the software.
 			  </p>
 			</feedback>
 		  </choice>
 		  <choice correct = "yes">
 			<statement>
 			  <p>
-				It facilitates understanding of the project's design, architecture, and technical details
+				One primary purpose of documentation in open source is to explain why decisions were made, helping future reference.
 			  </p>
 			</statement>
 			<feedback>
 			  <p>
-				Correct! Documentation helps developers comprehend the code's purpose, changes, and technical information
+				Correct! Documentation in open source projects serves a critical purpose in explaining the reasoning behind decisions, aiding in both current understanding and future reference.
 			  </p>
 			</feedback>
 		  </choice>
 		  <choice>
 			<statement>
 			  <p>
-				It ensures the project's ongoing automation and continuous monitoring.
+				Documentation is mainly for external users and not for the development team.
 			</p>
 			</statement>
 			<feedback>
 			  <p>
-				This option relates to CI/CD tools, not the importance of documentation.
+				Remember, documentation is not just for external users. Even seasoned developers benefit from well-documented code, especially when revisiting complex code segments after a significant duration.
+			  </p>
+			</feedback>
+		  </choice>
+		  <choice>
+			<statement>
+			  <p>
+			  Documentation in open source projects is usually limited to the README and LICENSE files.
+			</p>
+			</statement>
+			<feedback>
+			  <p>
+				Documentation in open source projects is comprehensive, encompassing a range of files such as README, CHANGELOG, CODE_OF_CONDUCT, and more. It's not limited to just README and LICENSE files.
 			  </p>
 			</feedback>
 		  </choice>
