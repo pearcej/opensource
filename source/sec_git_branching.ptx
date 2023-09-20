@@ -262,7 +262,9 @@ $ git commit -a -m 'made other changes'</pre><!--</div attr= class="content">-->
 <!-- div attr= class="content"-->
 <figure xml:id="git-divergent-history">
   <caption>Divergent history</caption>
-  <image source='git-advance-master.png'/>
+  <image source='git-advance-master.png'> 
+	<description>Image showing divergent history, with MASTER and TESTING branch diverging from a common previous commit.</description>
+  </image>
 </figure>
 
 				<p>
