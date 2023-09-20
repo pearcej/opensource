@@ -215,7 +215,6 @@
 					<description>Chart showing example of Git storing data over time across 5 versions and 3 files.</description>
 				</image><!--</div attr= class="content">-->
 				</figure>
-i
 				<p>
 					This is an important distinction between Git and nearly all other VCSs. It makes Git reconsider almost every aspect of version control that most other systems copied from the previous generation. This makes Git more like a mini filesystem with some incredibly powerful tools built on top of it, rather than simply a VCS. We’ll explore some of the benefits you gain by thinking of your data this way when we cover Git branching in <!--TODO-->Git Branching.
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
