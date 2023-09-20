@@ -443,6 +443,63 @@ and the application crashes with the following error message in
 			</ul></p>
 
   </conclusion>
+  <exercise xml:id="SecDocuIssuesBugs">
+	<statement>
+	  <p>
+		What is the primary purpose of an issue tracker in open-source software projects?
+	  </p>
+	</statement>
+	<choices randomize = "yes">
+	  <choice>
+		<statement>
+		  <p>
+			To provide a platform for developers to communicate with users about various aspects of the project.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			While communication is an essential aspect of an issue tracker, its main purpose is more specific and revolves around managing project tasks.
+		</p>
+		</feedback>
+	  </choice>
+	  <choice correct = "yes">
+		<statement>
+		  <p>
+			To manage bugs, defects, feature requests, and other tasks related to the project.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			Absolutely right! An issue tracker serves as a comprehensive tool for managing various software development tasks, such as bug tracking, defect management, and handling feature requests.
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>
+			To act as a platform for users to provide feedback and suggestions about their feature requests.
+		  </p>
+		</statement>
+		<feedback>
+		  <p>
+			Although users can provide feedback through an issue tracker, the primary focus of this platform is not solely on feature requests but includes a broader range of tasks.
+		  </p>
+		</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>
+			To provide a centralized location for developers to collaborate on code.
+		</p>
+		</statement>
+		<feedback>
+		  <p>
+			While collaboration and code contribution is encouraged in open-source projects, the primary purpose of an issue tracker is not to serve as a hub for developers to collaborate on code directly.
+		  </p>
+		</feedback>
+	  </choice>
+	</choices>
+  </exercise>
 
 
 </section>

@@ -17,9 +17,9 @@
     <xi:include href="./meta_frontmatter.ptx" />
     <xi:include href="./ch1_oss.ptx" />
     <xi:include href="./ch2_community.ptx"/>
-    <xi:include href="./ch3_licensing.ptx"/>
-    <xi:include href="./ch4_dev_env.ptx"/>
-    <xi:include href="./ch5_git.ptx"/> 
+    <xi:include href="./ch3_dev_env.ptx"/>
+    <xi:include href="./ch4_git.ptx"/> 
+    <xi:include href="./ch5_licensing.ptx"/>
     <xi:include href="./ch6_documentation.ptx"/>
     <xi:include href="./ch7_contributing.ptx"/>
   

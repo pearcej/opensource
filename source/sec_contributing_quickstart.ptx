@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="contributing_quickstart">
+<section xml:id="sec_contributing_quickstart">
 		<title>Quick Start</title>
 <p>
 	Contributing to a project is a great way to learn more about a project, to support the project, and to improve your resume.  This section summarizes the process of contributing to a project that was detailed thoughout the previous chapters. With practice and persistence, you'll likely become more comfortable with the process of contributing to open source projects. Enjoy your journey into the world of open source software!
@@ -74,7 +74,7 @@
 			After you have forked the project, cloned it to your local machine, created a branch, made your changes, tested your changes, and then pushed them back to your forked repository, be sure to update your branch from the main project. Then you are ready to create a pull request to the original project repo, being sure to follow both the project's contribution standards and code of conduct. 
 		</p>
 		<p>
-			i.e.  Fork -> Clone -> Branch -> Build -> Test -> Commit -> Push-> Update -> Pull Request. 
+			i.e.  Fork <m>\Rightarrow</m> Clone <m>\Rightarrow</m> Branch <m>\Rightarrow</m> Build <m>\Rightarrow</m> Test <m>\Rightarrow</m> Commit <m>\Rightarrow</m> Push <m>\Rightarrow</m> Update <m>\Rightarrow</m> Pull Request. 
 		</p>
 	</li>
 	<li>

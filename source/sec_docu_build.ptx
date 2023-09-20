@@ -101,5 +101,60 @@
 			</ul></p>
 
 		</subsection>
+		<exercise xml:id="docubuild">
+			<statement>
+			  <p>
+				What is the purpose of build automation tools in software development?
+			</p>
+			</statement>
+			<choices randomize = "yes">
+			  <choice>
+				<statement>
+				  <p>
+					To manually compile and link object files and libraries.
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					Build automation tools aim to automate these tasks, not perform them manually.
+				</p>
+				</feedback>
+			  </choice>
+			  <choice correct = "yes">
+				<statement>
+				  <p>
+					To simplify the process of turning source code into binary executables.
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					Correct! Build automation tools are used to automate the process of turning source code into binary executable files, which simplifies the build process and allows developers to handle complex projects more efficiently.
+				  </p>
+				</feedback>
+			  </choice>
+			  <choice >
+				<statement>
+				  <p>
+					To manage dependencies and build order in a complex software project.
+				</p>
+				</statement>
+				<feedback>
+				  <p>
+					While build automation tools may help manage dependencies, they serve a broader purpose in automating the entire build process.				  </p>
+				</feedback>
+			  </choice>
+			  <choice>
+				<statement>
+				  <p>
+					To easily refactor the code in a software project.				</p>
+				</statement>
+				<feedback>
+				  <p>
+					Although build automation tools can be a part of an environment that supports refactoring, their main purpose is not to refactor the code, but to automate the build process from source code to binary executables.
+				  </p>
+				</feedback>
+			  </choice>
+			</choices>
+		  </exercise>
 
 </section>

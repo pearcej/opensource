@@ -52,7 +52,9 @@ $ git commit -m 'Initial commit'</pre><!--</div attr= class="content">--><!--</d
 			<!-- div attr= class="content"-->
 			<figure xml:id="git-commit-tree">
 			<caption>A commit and its tree</caption>
-			<image source='git-commit-and-tree.png'/>
+			<image source='git-commit-and-tree.png'>
+				<description> An illustrative depiction of your Git repository's status following a 'git commit' operation. </description>
+			</image>
 			</figure>
 			<!--</div attr= class="content">-->
 
@@ -188,7 +190,9 @@ $ git commit -a -m 'made a change'</pre>
 <!-- div attr= class="content"-->
 <figure xml:id="git-HEAD-moves">
   <caption>The HEAD branch moves forward when a commit is made</caption>
-  <image source='git-advance-testing.png'/>
+    <image source='git-advance-testing.png'>
+  <description> The block representing master head is located pointing to a block representing commit f30ab. </description>
+  </image>
 </figure>
 <!--</div attr= class="content">-->
 
@@ -223,7 +227,10 @@ Note that <c>git log</c> doesn’t show <em>all</em> the branches <em>all</em> t
 <!-- div attr= class="content"-->
 <figure  xml:id="git-HEAD-moves-checkout">
   <caption>HEAD moves when you checkout</caption>
-  <image source='git-checkout-master.png'/>
+  <image source='git-checkout-master.png'>
+  <description> image showing commit history of a branch after doing a git log command.
+  </description>
+  </image>
 </figure>
 
 

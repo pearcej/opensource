@@ -5,6 +5,7 @@
   <title>Contribution: A Quick-Start Guide</title>
 
   <xi:include href="./sec_contributing_quickstart.ptx" />
+  <xi:include href="./sec_contributing_projects.ptx" />
 
 
 </chapter>

@@ -160,6 +160,65 @@
 
 			</exercise>
 		</subsection>
+		<exercise xml:id="SecDocuInvolvement">
+			<statement>
+			  <p>
+				Why is improving documentation considered an excellent way for newcomers to contribute to an open source project?
+			  </p>
+			</statement>
+			<choices randomize = "yes">
+			  <choice>
+				<statement>
+				  <p>
+					It allows newcomers to showcase their technical skills in coding.
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					Improving documentation is not directly related to coding skills.
+
+				</p>
+				</feedback>
+			  </choice>
+			  <choice>
+				<statement>
+				  <p>
+					Developers often prefer newcomers to work on documentation instead of coding.
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					While developers may appreciate contributions to documentation, this is not the primary reason why improving documentation is considered a good starting point for newcomers.
+				  </p>
+				</feedback>
+			  </choice>
+			  <choice correct = "yes">
+				<statement>
+				  <p>
+					Newcomers have experienced the process of setting up the project and can improve documentation based on their experience.
+				  </p>
+				</statement>
+				<feedback>
+				  <p>
+					Correct! Newcomers can often make valuable contributions to documentation because they have gone through the process of setting up the project, which allows them to identify and improve parts of the documentation that might be unclear, outdated, or confusing based on their first-hand experience.
+				  </p>
+				</feedback>
+			  </choice>
+			  <choice>
+				<statement>
+				  <p>
+					Improving documentation is viewed as less time-consuming compared to other contribution tasks.
+				</p>
+				</statement>
+				<feedback>
+				  <p>
+					The time consumption of improving documentation is not the primary reason why it is recommended for newcomers to start with documentation.
+				  </p>
+				</feedback>
+			  </choice>
+			</choices>
+		  </exercise>
+		
 
 </section>
 
