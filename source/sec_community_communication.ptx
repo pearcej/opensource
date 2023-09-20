@@ -3,7 +3,7 @@
     xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>OSS Community Communication</title>
     <introduction>
-        <p>Communication in an open-source community takes many forms, but all of these break down into two broad categories: synchronous (simultaneous, e.g. in person meetings or video conference meetings) and asynchronous (non-simultaneous, e.g. email or various kinds of messaging services). Due to the geographically-dispersed nature of most communities, most OSS communication makes heavy use of asynchronous technologies. Synchronous communications typically include various forms of audio/video chat, which is neither convenient nor efficient for widely dispersed OSS communities. Asynchronous communications are much more varied and most OSS communities use more than one asynchronous form of communication. When a software team is made of full-time people who all work the same hours in the same office building, it is easier to have a higher proportion of synchronous discussion, but when some contributors are sleeping while others are working, it is far harder, so it is not a big surprise that the vast majority of OSS communication is asynchronous.
+        <p>Communication in an open-source community takes many forms, but all of these break down into two broad categories: synchronous (simultaneous, e.g. in-person meetings or video conference meetings) and asynchronous (non-simultaneous, e.g. email or various kinds of messaging services). Due to the geographically-dispersed nature of most communities, most OSS communication makes heavy use of asynchronous technologies. Synchronous communications typically include various forms of audio/video chat, which is neither convenient nor efficient for widely dispersed OSS communities. Asynchronous communications are much more varied and most OSS communities use more than one asynchronous form of communication. When a software team is made of full-time people who all work the same hours in the same office building, it is easier to have a higher proportion of synchronous discussion, but when some contributors are sleeping while others are working, it is far harder, so it is not a big surprise that the vast majority of OSS communication is asynchronous.
     </p>
     </introduction>
     <subsection xml:id="subsec_website">
@@ -61,7 +61,7 @@
                         <idx>issue</idx>
                           <statement>
                             <p>
-                              An <term>issue</term> typically refers to any problem, request, feature requestions, or other task that is tracked and managed within the project’s issue-tracking system.
+                              An <term>issue</term> typically refers to any problem, request, question, or other task that is tracked and managed within the project’s issue-tracking system.
                             </p>
                           </statement>
                         </definition>
@@ -75,7 +75,7 @@
                       </statement>
                     </definition>
                       <p>
-                      After an issue is posted, discussions on the issue typically occur and are sometimes prolonged. These discussions are most conveniently attached to the issue itself to facilitate the tracking of the discussion, which is particularly important in larger projects. When an issue is posted, it can be discussed by the community to decide on how to proceed with it. The issue can be categorized and linked to other discussions, projects, and engineering work as well. You are definitely advised to read all unresolved issues before posting so you are not duplicating another existing issue. 
+                      After an issue is posted, discussions on the issue typically occur and are sometimes prolonged. These discussions are most conveniently attached to the issue itself to facilitate the tracking of the discussion, which is particularly important in larger projects. When an issue is posted, it can be discussed by the community to decide on how to proceed with it. The issue can be categorized and linked to other discussions, projects, and engineering work as well. You are definitely advised to read or search through all unresolved issues before posting so you are not duplicating an existing issue. 
                     </p>
                     <p>
                       A number of features exist in most issue trackers that facilitate communication among contributors and potential contributors. These include linking, labelling, mentioning a particular user, etc.
@@ -134,7 +134,7 @@
                           </p>
                         </li>
                       </ul>
-                      Note that although the above default labels are included in every new GitHub repository, maintainers may or may not use all of them, and many maintainers choose to edit or delete some of the default labels and/or add their own custom labels that make sense for that project.
+                      Note that although the above default labels are included in every new GitHub repository, maintainers may or may not use all of them, and many maintainers choose to edit or delete some of the default labels and/or add their own custom labels that make sense for the project they maintain.
                     </p>
 
                   </subsubsection>
@@ -148,14 +148,14 @@
         <statement>
           <p>
             The term 
-            <term>merge request</term> or 
-            <term>pull request (PR)</term> describes a request to initiate the process of requesting an integration of specific code changes into the project repository. 
+            <term>merge request (MR)</term> or 
+            <term>pull request (PR)</term> describes a request to initiate the process of integrating specific code changes into the project repository. 
           </p>
         </statement>
       </definition>
                     <p>
 
-          Best practice before making a merge request is to have initiated an earlier discussion using one of the forms of communication favored by the project. After this discussion, a (potential) contributor opens a merge request, which may then undergo several iterations of automatic checks, manual code reviews by one or more other contributor, as well as further discussion.
+          Best practice before making a merge request is to have initiated an earlier discussion using one of the forms of communication favored by the project. After this discussion, a (potential) contributor opens a merge request, which may then undergo several iterations of automatic checks, manual code reviews by one or more other contributors, as well as further discussion.
         
                     </p>
                     <p>
@@ -186,13 +186,13 @@
                         <url href="https://github.com/NixOS/nixpkgs/projects?type=classic" visual="github.com/NixOS/nixpkgs/projects?type=classic">NixOS Project Boards</url> offer good examples of projects that use the SECP's project boards.
                     </p>
                     <p> 
-                       If you wonder why some projects don't seem to use project boards, consider that in many OSS projects, there are no paid project leaders who can set goals, organize all of the issues into boards, prioritize tasks, etc. For the majority of OSS projects, there either isn't time to take manage project boards or the project is too small to derive much benefit from their use.
+                       If you wonder why some projects don't seem to use project boards, consider that in many OSS projects, there are no paid project leaders who can set goals, organize all of the issues into boards, prioritize tasks, etc. For the majority of OSS projects, there either isn't time to manage project boards or the project is too small to derive much benefit from their use.
                     </p>
                   </subsubsection>
           <conclusion>
             <p>
               
-          One of the many features these software engineering collaboration platforms (SECP) sometimes offer is web hosting, which when enabled, facilitates structured collaborative editing of the site. As an example, 
+          One of the many features that software engineering collaboration platforms (SECP) sometimes offer is web hosting, which, when enabled, facilitates structured collaborative editing of the site. As an example, 
           <url href="https://pages.github.com/" visual="pages.github.com">GitHub Pages</url> affords hosting as a website for projects that are managed on GitHub. This means that OSS communities can use their SECP of choice as their a host for their website as well.
         </p>
       </conclusion>
@@ -256,7 +256,7 @@
 
                 <p>
                   
-                  IRC is one of the older means of synchronous communication between people working on a OSS project, and although in the past it was one of the primary OSS communication tools, many projects have abandoned IRC for collaborative instant messaging platforms and other newer communication tools. It's a text-based federated chat system where clients connect to the servers of one or more networks, and the servers relay messages between themselves within each network (hence the name). Communication is done in channels which individual users join, and users are identified by nicks (nicknames). In addition to human users, like collaborative instant messaging platforms, various services and bots are present in many channels. However, it is very lightweight because the focus is solely on the textual content, which means it can work right from your command line. However, there is no formatting, not even new lines, no emojis, no voice or video chat, and unlike most more modern chat technologies where recordings can be automated, messages aren't easily stored, so it is designed to work only for synchronous communication.
+                  IRC is one of the older means of synchronous communication between people working on a OSS project, and although in the past it was one of the primary OSS communication tools, many projects have abandoned IRC for collaborative instant messaging platforms and other newer communication tools. It's a text-based federated chat system where clients connect to the servers of one or more networks, and the servers relay messages between themselves within each network (hence the name). Communication is done in channels which individual users join, and users are identified by nicks (nicknames). In addition to human users, like collaborative instant messaging platforms, various services and bots are present in many channels. However, IRC is very lightweight because its focus is solely on the textual content, which means it can work right from your command line. However, there is no formatting, not even new lines, no emojis, no voice or video chat, and unlike most more modern chat technologies where recordings can be automated, messages aren't easily stored, so it is designed to work only for synchronous communication.
  </p>
               
             </li>
@@ -274,7 +274,7 @@
                   </statement>
                 </definition>
                 <p>
-                  A website provides semi-permanent places for content which is updated and replaced as needed. While in a blog, new articles that are published add to the content rather than replacing it (although existing posts can be updated as well if things change). Blogs provide a flow of transient, in-the-moment news, commentary, and technical articles which is posted by date, with past posts still available. Because many open source participants write blogs, it is sometimes difficult to keep up with them on a larger project. The volume of blog postings created within a community can be overwhelming. To help deal with this, RSS feeds enable the receipt of content in a machine-readable format so that it can be used in a variety of different ways through a service called a RSS feed aggregator. A few open-source community also maintain a Planet site which aggregates the feeds from that community into a single page (and the Planet, in turn, provides an aggregated feed). Here are some examples: 
+                  A website provides semi-permanent places for content which is updated and replaced as needed. While in a blog, new articles that are published add to the content rather than replacing it (although existing posts can be updated as well if things change). Blogs provide a flow of transient, in-the-moment news, commentary, and technical articles which are posted by date, with past posts still available. Because many open source participants write blogs, it is sometimes difficult to keep up with them on a larger project. The volume of blog postings created within a community can be overwhelming. To help deal with this, RSS feeds enable the receipt of content in a machine-readable format so that it can be used in a variety of different ways through a service called a RSS feed aggregator. A few open-source communities also maintain a Planet site which aggregates the feeds from that community into a single page (and the Planet, in turn, provides an aggregated feed). Here are some examples: 
                     <url href="https://planet.mozilla.org" visual="planet.mozilla.org">The Mozilla Planet</url>, 
                     <url href="http://fedoraplanet.org/" visual= "planet.fedoraproject.org">The Fedora Planet</url>, and 
                     <url href="https://planet.documentfoundation.org/" visual="https://planet.documentfoundation.org/">The Document Foundation Planet</url>.

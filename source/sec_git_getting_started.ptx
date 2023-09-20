@@ -89,7 +89,9 @@
 
 		<figure xml:id="git-distributed">
 		<caption>Distributed Version Control</caption>	
-			<image source='distributed.png'/>
+			<image source='distributed.png'>
+			<description>Describe the distributed version database that communicates through the server computer with several remote repositories.</description>
+			</image>
 
 		</figure>
 
@@ -194,7 +196,9 @@
 				<figure xml:id="git-deltas">
 					<caption>Storing data as changes to a base version of each file</caption>
 
-				<image source='deltas.png'/><!--</div attr= class="content">-->
+				<image source='deltas.png'> 
+					<description> Demonstrates version control about how staging, commit and push work together to store only deltas when changes are made to different files. </description>
+				</image>
 				</figure>
 
 				<p>
@@ -207,9 +211,10 @@
 				<figure xml:id="git-snapshots">
 					<caption>Storing data as snapshots of the project over time</caption>
 
-				<image source='snapshots.png'/><!--</div attr= class="content">-->
+				<image source='snapshots.png'>
+					<description>Chart showing example of Git storing data over time across 5 versions and 3 files.</description>
+				</image><!--</div attr= class="content">-->
 				</figure>
-
 				<p>
 					This is an important distinction between Git and nearly all other VCSs. It makes Git reconsider almost every aspect of version control that most other systems copied from the previous generation. This makes Git more like a mini filesystem with some incredibly powerful tools built on top of it, rather than simply a VCS. We’ll explore some of the benefits you gain by thinking of your data this way when we cover Git branching in <!--TODO-->Git Branching.
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
@@ -348,7 +353,10 @@
 				<figure xml:id="git-areas">
 					<caption>Git working tree, Git staging area, and Git directory</caption>
 
-				<image source='areas.png'/><!--</div attr= class="content">-->
+				<image source='areas.png'><!--</div attr= class="content">-->
+					<description>Visual has rows of arrow, checkout pointing from Repository to working, stage points from working directory to staging, commit arrow pointing from staging to .git repository.
+					</description>
+				</image>
 				</figure>
 
 				<p>
