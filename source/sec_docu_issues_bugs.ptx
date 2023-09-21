@@ -13,7 +13,16 @@
  
   </introduction><subsection xml:id="subsec_issues_bugs_overview">
 	<title>Issues and Bugs, Oh My!</title>
+	
+	
 	<p>
+	<figure xml:id="git-bugimg">
+		<caption>First Actual Bug</caption>	
+			<image source='first-bug.png'>
+			<description>The first ever bug. Found within a computer which was preventing the closure of the relay. </description>
+			</image>
+
+		</figure>
 		In any given OSS project, you might encounter terms like, issue, bug, defect, etc. In the broader context of OSS, these terms are often used interchangeably, but they can have slightly different connotations depending on the specific project and its development practices. 
 </p>
 <p>
