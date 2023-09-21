@@ -82,7 +82,7 @@ $ git commit -m 'Initial commit'</pre><!--</div attr= class="content">--><!--</d
 
 <!-- div attr= class="imageblock"-->
 <!-- div attr= class="content"-->
-		<figure xml:id="git-branch-and-commit-hostory">
+		<figure xml:id="img-git-branch-and-commit-history">
 		<caption>A branch and its commit history</caption>
 		<image source='git-branch-and-history.png'>
 			<description> A graph of the commit history of a Git branch. </description>
