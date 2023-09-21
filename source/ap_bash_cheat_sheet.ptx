@@ -185,7 +185,20 @@ The <term>touch</term> command is commonly used for file creation. Its intended 
         </ul>
         </p>
       </li>
-      </dl>
+      <li>
+      <title><c>grep &lt;"string"&gt; &lt;file-name&gt;</c></title>
+      <p>
+        <term>grep</term> is used to search text for patterns specified by the user.
+      <ul>
+        <li>
+          <p>
+          e.g. <c>grep "Hello World!" first_program.txt</c> displays all the lines in the file <c>first_program.txt</c> that contain the text "Hello World!". 
+          </p>
+        </li>
+      </ul>
+    </p>
+    </li>
+    </dl>
     </p>
  </paragraphs>
 
@@ -252,6 +265,25 @@ The <term>touch</term> command is commonly used for file creation. Its intended 
               <p>
               e.g. <c>wc file.txt</c> reports the count of lines, words, and bytes in  file.txt.
               </p>
+            </li>
+            </ul>
+          </p>
+          </li>
+          <li>
+          <title><c>history</c></title>
+          <p>
+            The <term>history</term> command displays a list of previously executed shell commands, allowing users to review their command history.
+          <ul>
+           <li>
+              <p>e.g. <c>history</c> could display:</p>
+                <pre>
+                1  git init
+                2  git add main.c
+                3  git commit -m "Initial commit"
+                4  git remote add origin https://github.com/username/repo.git
+                5  git push -u origin master
+                6  history
+                </pre>
             </li>
           </ul>
         </p>
