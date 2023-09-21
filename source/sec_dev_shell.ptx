@@ -29,7 +29,9 @@
     </p>
     <figure xml:id="img-DEC_VT100-terminal">
 			<caption>The DEC VT100, a widely emulated computer terminal</caption>
-			<image width="80%" source='DEC_VT100_terminal.png'/>
+			  <image width="80%" source='DEC_VT100_terminal.png'>
+          <description>Photo of an old DEC VT100 terminal from the 1970s.</description>
+        </image>
 			</figure>
     <p>
     The development of the <term>terminal interface</term> in the 1960s marked a significant shift in the way users interacted with computers because the terminal provided a convenient and much more accessible way to provide input and obtain output, allowing users to remotely interact with a computer via a keyboard and screen.  Back when the terminal was first used in computing, what we refer to as the terminal today was the only interface available to the user, while now it is used to refer to a specific type of text-based programming interface. In particular, today a <term>terminal</term> simply refers to a text-based interface that allows a user to interact with a computer by entering commands and receiving output on a display screen. 
