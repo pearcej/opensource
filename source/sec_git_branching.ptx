@@ -113,7 +113,9 @@ $ git commit -m 'Initial commit'</pre><!--</div attr= class="content">--><!--</d
 <!-- div attr= class="content"-->
 <figure xml:id="git-two-branches">
   <caption>Two branches pointing into the same series of commits</caption>
-  <image source='git-two-branches.png'/>
+  <image source='git-two-branches.png'>
+  	<description>An image illustrating a branch's commit history, showcasing its progression through different versions or snapshots.</description>
+  </image>
 </figure>
 
 
