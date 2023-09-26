@@ -22,6 +22,7 @@
   <li>
     <title>What is a <term>terminal</term>?</title>
     <p>
+<idx>terminal</idx>
       The English word <term>terminal</term> means to be situated at the end of something, and the term's meaning in computing has evolved since it was originally coined in the 1960s.
     </p>
       
@@ -47,12 +48,15 @@
   <li>
   <title>What is a <term>Command Line Interface (CLI)</term>?</title>
     <p>
+      <idx>Command Line Interface</idx>
+<idx>CLI</idx>
       A <term>CLI</term> refers to any interface that works with text-based commands and text-based output. We will be using a <term>shell</term>, which is an example of a CLI.
     </p>
   </li>
   <li>
   <title>What is a <term>shell</term>?</title>
       <p>
+<idx>shell</idx>
   A <term>shell</term> is a program which parses and interprets the commands you enter in the terminal and then executes them, often using functionality provided directly by the operating system. In other words, a shell is a CLI which serves as the interface between the end-user and the operating system. It is called a shell because it is a user interface layer directly surrounding the <term>kernel</term>, which is the innermost part of the operating system.
     </p>
   </li>
