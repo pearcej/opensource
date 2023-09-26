@@ -28,7 +28,9 @@
     <li><title>Time and distance</title> 
       <figure xml:id="img-day-times-on-globe">
         <caption>Our World Day and Night at 8:00 am Eastern Standard Time</caption>
-        <image source='day-times-on-globe.png'/>
+          <image source='day-times-on-globe.png'>
+            <description>Photo of a map with lighting to represent day and night at 8:00 am Eastern Standard Time.</description>
+          </image>
         </figure>
       <p> The fact that our globe spins introduces some interesting challenges: collaborators in India and the USA, for example, will never be able to collaborate in real time during normal business hours – in fact, they'll hardly be able to collaborate during normal waking hours. Most communities meet face-to-face only once or twice a year, if at all, and the face-to-face meetings usually involve only a small subset of the whole community. These challenges have forced the development of really good asynchronous online communication tools. However, having people in different timezones also has some advantages, making it easier to respond in a variety of threads, follow rapidly-developing security issues, and manage infrastructure 24&#215;7.
       </p>
