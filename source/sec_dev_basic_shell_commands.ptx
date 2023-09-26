@@ -624,7 +624,24 @@ And, if you respond with "n", then the removal will not happen.
     The <em>up arrow</em> key retrieves the previous shell command. If you press it multiple times, it will take you back through multiple commands in your shell history. This is a useful way to repeat a command. For example, if you had a typo, you can use the up arrow, edit the command, and push enter to fix the command. Analogously, the <em>down arrow</em> will move you in the reverse direction through the shell command history. For more useful shell commands, type <c>man bash</c> for hints on how to search your shell history, re-execute commands, and much more.
     </p>
   <p>
+  <p>
+  An additional efficiency-enhancing feature is the <em>history</em> command. This command conveniently presents a record of previously executed shell commands, enabling users to effortlessly revisit their command history. This proves highly beneficial by sparing users the effort of repeatedly consulting documentation for commands they intend to use. 
+  </p>
+  <p>
+  Here's an instance of what might be displayed when the <c>history</c> command is executed:
+  </p>
+  <pre>
+  1  git init
+  2  git add main.c
+  3  git commit -m "Initial commit"
+  4  git remote add origin https://github.com/username/repo.git
+  5  git push -u origin master
+  6  history
+  </pre>
+
+    <p>
     This paragraph is intended to alert you to some useful search features. A couple examples of very common search patterns are using wildcards for zero or more characters or for a single character.  The asterisk (*) specifies zero or more characters to match. In bash the question mark (?) is used for matching exactly one single character.
+    </p>
     <notation>
       <usage><m>*</m></usage>
       <description>asterisk - wildcard for zero or more characters</description>
@@ -664,8 +681,6 @@ rm: remove regular file 'newfile2_cp.txt'?
 <p>
 As you can see, these search patterns give you a lot of power and control. 
   </p>
-
-  
   </paragraphs>
 
 </subsection>

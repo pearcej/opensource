@@ -185,19 +185,6 @@ The <term>touch</term> command is commonly used for file creation. Its intended 
         </ul>
         </p>
       </li>
-      <li>
-      <title><c>grep &lt;"string"&gt; &lt;file-name&gt;</c></title>
-      <p>
-        <term>grep</term> is used to search text for patterns specified by the user.
-      <ul>
-        <li>
-          <p>
-          e.g. <c>grep "Hello World!" first_program.txt</c> displays all the lines in the file <c>first_program.txt</c> that contain the text "Hello World!". 
-          </p>
-        </li>
-      </ul>
-    </p>
-    </li>
     </dl>
     </p>
  </paragraphs>
