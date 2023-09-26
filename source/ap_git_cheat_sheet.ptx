@@ -34,7 +34,7 @@
         </p>
       </li>
       <li>
-      <title><c>git help &lt;verb&gt;</c></title>
+      <title><c>git help &lt;command&gt;</c></title>
         <p>
           Get help for a specific git command. For example, <c>git help clone</c> will give you help for the <c>git clone</c> command. 
         
