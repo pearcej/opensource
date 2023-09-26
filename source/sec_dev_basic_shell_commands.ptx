@@ -625,10 +625,10 @@ And, if you respond with "n", then the removal will not happen.
     </p>
   <p>
   <p>
-  An additional efficiency-enhancing feature is the <em>history</em> command. This command conveniently presents a record of previously executed shell commands, enabling users to effortlessly revisit their command history. This proves highly beneficial by sparing users the effort of repeatedly consulting documentation for commands they intend to use. 
+  An additional efficiency-enhancing feature is the <term>history</term> command. This command conveniently presents a record of previously executed shell commands, enabling users to effortlessly revisit their command history. 
   </p>
   <p>
-  Here's an instance of what might be displayed when the <c>history</c> command is executed:
+  Here's an example of what might be displayed when the <c>history</c> command is executed:
   </p>
   <pre>
   1  git init
