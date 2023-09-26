@@ -39,12 +39,13 @@
   <li>
   <title>What is a <term>console</term>?</title>
     <p>
-      The English word <term>console</term> comes from the related verb, <em>to console</em>, which means to provide support. In computing, the original meaning of the <term>console</term> was as a physical device that supported input into and output from a computer. The term is still used that way, but it has also come to be synonymous with terminal in some environments. For example, if you search for console on a Windows machine, you may find the terminal program and/or you may find a security console program.
+      The English word <term>console</term> comes from the related verb, <em>to console</em>, which means to provide support. In computing, the original meaning of the <term> console</term> was as a physical device that supported input into and output from a computer. The term is still used that way, but it has also come to be synonymous with terminal in some environments. For example, if you search for console on a Windows machine, you may find the terminal program and/or you may find a security console program.
     </p>
   </li>
   <li>
   <title>What is a <term>Command Line Interface (CLI)</term>?</title>
     <p>
+      <idx> Command Line Interface </idx>
       A <term>CLI</term> refers to any interface that works with text-based commands and text-based output. We will be using a <term>shell</term>, which is an example of a CLI.
     </p>
   </li>
