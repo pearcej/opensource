@@ -584,6 +584,10 @@
 	<pre>$ git help config</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
 	<!-- div attr= class="paragraph"-->
 	<p>
+	<notation>
+	<usage><m>-h</m></usage>
+	<description>help</description>
+	</notation>
 	If you don’t need the full-blown manpage help, but just need a quick refresher on the available options for a specific Git command, you can ask for the more concise “help” output with the <c>-h</c> option, as in the following for the Git <c>add command:</c>:
 	</p><!--</div attr= class="paragraph">-->
 
