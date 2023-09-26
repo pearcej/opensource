@@ -48,6 +48,9 @@ ehthumbs_vista.db
 .Trash-*
 .nfs*
 
+# Don't track build logs
+logs/
+
 # Don't include VSCode generated files
 .vscode
 *.code-workspace
