@@ -20,6 +20,7 @@
 <!-- div attr= class="content"-->
 			<pre>$ git commit --amend
       </pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
+	  <idx>git commit --amend</idx>
 
 <!-- div attr= class="paragraph"-->
 			<p>
