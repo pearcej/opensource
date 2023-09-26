@@ -21,10 +21,10 @@
 <ul>
   <li>
     <title>What is a <term>terminal</term>?</title>
+    <idx>terminal</idx>
     <p>
       The English word <term>terminal</term> means to be situated at the end of something, and the term's meaning in computing has evolved since it was originally coined in the 1960s.
     </p>
-      
     <p>Prior to the development of the first programmable electronic computers, computers were people (mostly women) who used mechanical calculators to compute complex mathematical computations quickly and accurately. The earliest electronic computers, such as Colossus and ENIAC, required specialized technical knowledge and skill to program because programming these machines was a complex process that involved physically entering commands flipping switches, pushing buttons, and manually moving patch cords.
     </p>
     <figure xml:id="img-DEC_VT100-terminal">
