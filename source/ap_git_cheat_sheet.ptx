@@ -64,6 +64,12 @@
           Download content from the remote repository and integrate these changes into the local repository. This command should be used regularly because without it your local branch won't have any of the updates that are present on the remote. For more detail see <url href="https://github.com/git-guides/git-pull" visual="github.com/git-guides/git-pull">Git Guides: Git Pull</url>
         </p>
       </li>
+      <li>
+        <title><c>git fetch</c></title>
+        <p>
+          This Git command fetches down all the branches from that Git remote. It downloads contents from the remote repository.
+        </p>
+      </li>
 
       <li>
         <title><c>git add &lt;filename&gt;</c></title>
