@@ -43,6 +43,7 @@
 		</p>
 
 		<p>
+			<idx>Local VCS</idx>
 			To deal with this issue, programmers long ago developed a more formal system of version control.  Local VCSs provide a more automatic, less error-prone and more structured way of keeping all the changes to files under revision control on the local computer.
 			Local VCSs typically operate quickly because they do not have to communicate with a remote server. With a local system, developers have access to the entire history of the codebase on their local machine, and they can work on the codebase offline, without an internet connection. 
 		</p>
@@ -60,6 +61,7 @@
 </p>
 
 		<p>
+		<idx>Centralized VCS</idx>
 			Many developers need to collaborate with other developers on other systems. To deal with this, centralized VCSs were developed. These systems (such as CVS, Subversion, and Perforce) have a single server that contains all the versioned files, and a number of clients check out files from that central server. For many years, this was the standard for version control.
 		</p>
 
@@ -83,6 +85,7 @@
 
 </p>
 		<p>
+		<idx>Distributed VCS</idx>
 			This is where distributed VCSs step in. In a distributed VCS (such as Git, Mercurial, Bazaar or Darcs), clients don’t just check out the latest snapshot of the files; rather, they fully mirror the repository, including its full history. Thus, if any server dies, and these systems were collaborating via that server, any of the client repositories can be copied back up to the server to restore it. Every clone is really a full backup of all the data.
 		</p>
 

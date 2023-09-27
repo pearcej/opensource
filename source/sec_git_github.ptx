@@ -39,6 +39,7 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
+				<idx>Fork</idx>
 					If you want to contribute to an existing project to which you don’t have write access (aka push access), you can <term>fork</term> the project. When you “fork” a project, GitHub will make a copy of the project that is entirely yours; it lives in your namespace, and you can push to it.
 				</p><!--</div attr= class="paragraph">-->
 
