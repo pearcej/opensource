@@ -86,6 +86,12 @@
           Commit all staged files to the local repository. For more detail see <url href="https://github.com/git-guides/git-commit" visual="github.com/git-guides/git-commit">Git Guides: Git Commit</url>
         </p>
       </li>
+      <li>
+          <title><c>git commit --amend</c></title>
+          <p>
+            modify the most recent commit by either updating its content or changing its commit message.
+          </p>
+        </li>
 
       <li>
         <title><c>git push</c></title>
@@ -157,6 +163,37 @@
           <title><c>git stash drop</c></title>
           <p>
             The <c>git stash drop</c> command deletes the most recent stashed work. 
+          </p>
+        </li>
+      </dl>
+    </subsection>
+
+
+    <subsection xml:id="a-git-restoring">
+      <title>Git Restoring/Reverting</title>
+      <dl width="narrow">
+        <li>
+          <title><c>git restore</c></title>
+          <p>
+            Provide a safer way to revert changes in the working tree or staging area. It's designed specifically for restoring files without switching branches or altering commit history.
+          </p>
+        </li>
+        <li>
+          <title><c>git reset</c></title>
+          <p>
+            Allows users to reset the current HEAD to a specified state, often used to unstage changes or modify the commit history. 
+          </p>
+        </li>
+        <li>
+          <title><c>git revert</c></title>
+          <p>
+            Create a new commit that undoes changes from a specified commit. This can be seen as a way to "restore" the state of the repository to a prior condition, but through a new commit. 
+          </p>
+        </li>
+        <li>
+          <title><c>git clean</c></title>
+          <p>
+            Remove untracked files from the working tree. It's similar in spirit to git restore in that it helps you bring your working directory to a clean state, but it's focused on untracked files.
           </p>
         </li>
       </dl>
