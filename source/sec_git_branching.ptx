@@ -132,7 +132,9 @@ $ git commit -m 'Initial commit'</pre><!--</div attr= class="content">--><!--</d
 <!-- div attr= class="content"-->
 <figure xml:id="git-HEAD-branch">
   <caption>HEAD pointing to a branch</caption>
-  <image source='git-head-to-master.png'/>
+  <image source='git-head-to-master.png'>
+   <description>Diagram showing the HEAD pointing to the 'master' branch and ultimately pointing at different commits.</description>
+  </image>
 </figure>
 <!--</div attr= class="content">-->
 
