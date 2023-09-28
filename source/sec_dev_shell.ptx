@@ -130,7 +130,7 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
     </li>
     <li><title>Dual Boot With Linux</title>
       <p>
-        If your computer does not have sufficient RAM and enough processing power for properly running a Virtual Machine, a different option might be to proceed with a dual boot installation with your current operating system and Linux. This method will allow you to start your computer with Linux whenever you need to access your development environment.
+        If your computer does not have sufficient RAM and enough processing power for properly running a virtual machine, a different option might be to proceed with a dual boot installation with your current operating system and Linux. This method will allow you to start your computer with Linux whenever you need to access your development environment.
     </p>
     </li>
     <li>
