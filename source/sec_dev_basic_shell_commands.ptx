@@ -23,7 +23,7 @@
       <p>
       First, follow the directions given in <xref ref="subsec-getting_terminal"/> to open a terminal window so you can use your shell. All of the shell commands will be typed in this terminal window.
       </p>
-      <paragraphs>
+      <subsubsection>
         <title>Introduction to Shell Commands</title>
         <p>
         </p>
@@ -95,8 +95,8 @@
      The reason you see something like this is because the SHELL environment variable stores the location of the shell program. This location, called the <term>file path</term>, is given in the form of the path needed to find the location. We explore how this path is described in the next section. 
      </p>
 
-  </paragraphs>
-    <paragraphs>
+  </subsubsection>
+    <subsubsection>
       <title>Files and File Systems</title>
       <p>
       </p>
@@ -157,7 +157,7 @@
         You should see a listing of files and directories.
       </p>
 
-      </paragraphs>
+      </subsubsection>
       <paragraphs>
         <title>Shell Command Options</title>
         <p>
@@ -243,7 +243,7 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
       ls -lra
       </pre>
   </paragraphs>
-  <paragraphs>
+  <subsubsection>
     <title>Creating and Removing Directories</title>
     <p>
     </p>
@@ -333,8 +333,8 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
   pwd
   </pre>
 
-  </paragraphs>
-  <paragraphs>
+  </subsubsection>
+  <subsubsection>
     <title>Input and Output Redirection</title>
     <p>
     </p>
@@ -484,7 +484,7 @@ wc -w &lt; temp.txt
    Try it! This is an improvement because it is faster and avoids the use of a temporary file.
 </p>
 
-</paragraphs>
+</subsubsection>
 
 <paragraphs>
   <title>Scripts</title>
@@ -615,7 +615,7 @@ rm -i newfile4.txt
 And, if you respond with "n", then the removal will not happen. 
 </p>
   </paragraphs>
-<paragraphs>
+<subsubsection>
   <title>A few time-saving shell commands</title>
   <p>
     
@@ -624,24 +624,7 @@ And, if you respond with "n", then the removal will not happen.
     The <em>up arrow</em> key retrieves the previous shell command. If you press it multiple times, it will take you back through multiple commands in your shell history. This is a useful way to repeat a command. For example, if you had a typo, you can use the up arrow, edit the command, and push enter to fix the command. Analogously, the <em>down arrow</em> will move you in the reverse direction through the shell command history. For more useful shell commands, type <c>man bash</c> for hints on how to search your shell history, re-execute commands, and much more.
     </p>
   <p>
-  <p>
-  An additional efficiency-enhancing feature is the <term>history</term> command. This command conveniently presents a record of previously executed shell commands, enabling users to effortlessly revisit their command history. 
-  </p>
-  <p>
-  Here's an example of what might be displayed when the <c>history</c> command is executed:
-  </p>
-  <pre>
-  1  git init
-  2  git add main.c
-  3  git commit -m "Initial commit"
-  4  git remote add origin https://github.com/username/repo.git
-  5  git push -u origin master
-  6  history
-  </pre>
-
-    <p>
-    This paragraph is intended to alert you to some useful search features. A couple examples of very common search patterns are using wildcards for zero or more characters or for a single character.  The asterisk (*) specifies zero or more characters to match. In bash the question mark (?) is used for matching exactly one single character.
-    </p>
+    <p>This paragraph is intended to alert you to some useful search features. A couple examples of very common search patterns are using wildcards for zero or more characters or for a single character.  The asterisk (*) specifies zero or more characters to match. In bash the question mark (?) is used for matching exactly one single character.</p>
     <notation>
       <usage><m>*</m></usage>
       <description>asterisk - wildcard for zero or more characters</description>
@@ -650,7 +633,6 @@ And, if you respond with "n", then the removal will not happen.
       <usage><m>?</m></usage>
       <description>question mark - wildcard for single character</description>
     </notation>
-    </p>
       <p>
         For example, if we type the following:
       </p>
@@ -664,6 +646,7 @@ Then the question mark will match with any single character, and we will see the
 rm: remove regular file 'newfile2.txt'?
 rm: remove regular file 'newfile4.txt'?
 </pre>
+</p>
 <p>
 If we instead type:
 </p>
@@ -681,7 +664,8 @@ rm: remove regular file 'newfile2_cp.txt'?
 <p>
 As you can see, these search patterns give you a lot of power and control. 
   </p>
-  </paragraphs>
+
+  </subsubsection>
 
 </subsection>
 
@@ -762,4 +746,3 @@ grape
     </blocks>
   </exercise>
 </section>
-

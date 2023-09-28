@@ -39,7 +39,7 @@
 
 <!-- div attr= class="sect3"-->
 
-			<paragraphs xml:id="_initializing_a_repository_in_an_existing_directory">
+			<subsubsection xml:id="_initializing_a_repository_in_an_existing_directory">
 				<title>Initializing a Repository in an Existing Directory</title>
 
 <!-- div attr= class="paragraph"-->
@@ -105,9 +105,9 @@ $ git commit -m 'Initial project version'</pre><!--</div attr= class="content">-
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="_git_cloning">
+			<subsubsection xml:id="_git_cloning">
 				<title>Cloning an Existing Repository</title>
 
 <!-- div attr= class="paragraph"-->
@@ -148,7 +148,7 @@ $ git commit -m 'Initial project version'</pre><!--</div attr= class="content">-
 					Git has a number of different transfer protocols you can use. The previous example uses the <c>https://</c> protocol, but you may also see <c>git://</c> or <c>user@server:path/to/repo.git</c>, which uses the SSH transfer protocol. 
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
-			</paragraphs>
+			</subsubsection>
 
 		</subsection>
 
@@ -188,7 +188,7 @@ $ git commit -m 'Initial project version'</pre><!--</div attr= class="content">-
 
 <!-- div attr= class="sect3"-->
 
-			<paragraphs xml:id="_checking_status">
+			<subsubsection xml:id="_checking_status">
 				<title>Checking the Status of Your Files</title>
 
 <!-- div attr= class="paragraph"-->
@@ -232,9 +232,9 @@ nothing added to commit but untracked files present (use "git add" to track)</pr
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="_tracking_files">
+			<subsubsection xml:id="_tracking_files">
 				<title>Tracking New Files</title>
 
 <!-- div attr= class="paragraph"-->
@@ -267,9 +267,9 @@ Changes to be committed:
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="_staging_modified_files">
+			<subsubsection xml:id="_staging_modified_files">
 				<title>Staging Modified Files</title>
 
 <!-- div attr= class="paragraph"-->
@@ -351,9 +351,9 @@ Changes to be committed:
     modified:   CONTRIBUTING.md</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="_short_status">
+			<subsubsection xml:id="_short_status">
 				<title>Short Status</title>
 
 <!-- div attr= class="paragraph"-->
@@ -376,9 +376,9 @@ M  lib/simplegit.rb
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="_ignoring">
+			<subsubsection xml:id="_ignoring">
 				<title>Ignoring Files</title>
 
 <!-- div attr= class="paragraph"-->
@@ -512,7 +512,7 @@ doc/**/*.pdf</pre><!--</div attr= class="content">--><!--</div attr= class="list
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
 			<paragraphs xml:id="_git_diff_staged">
 				<title>Viewing Your Staged and Unstaged Changes</title>
@@ -775,7 +775,7 @@ $ git commit -a -m 'Add new benchmarks'
 <!-- div attr= class="sect3"-->
 			</paragraphs>
 
-			<paragraphs xml:id="_removing_files">
+			<subsubsection xml:id="_removing_files">
 				<title>Removing Files</title>
 
 <!-- div attr= class="paragraph"-->
@@ -845,22 +845,23 @@ Changes to be committed:
 <!-- div attr= class="paragraph"-->
 				<p>
 					Note the backslash (<c>\</c>) in front of the <c>*</c>. This is necessary because Git does its own filename expansion in addition to your shell’s filename expansion. This command removes all files that have the <c>.log</c> extension in the <c>log/</c> directory. Or, you can do something like this:
-				</p>
 
 				<pre>$ git rm \*~</pre><!--</div attr= class="content">--><!--</div attr= class="listingblock">-->
-
-				<p>
-					This command removes all files whose names end with a <c>~</c>.
 				<notation>
 					<usage><m>\backslash</m></usage>
 					<description>backslash - escape character</description>
 				</notation>
 				</p>
+				
+				<p>
+					This command removes all files whose names end with a <c>~</c>.
+				</p>
+				
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="_git_mv">
+			<subsubsection xml:id="_git_mv">
 				<title>Moving Files</title>
 
 <!-- div attr= class="paragraph"-->
@@ -910,7 +911,7 @@ $ git add README</pre><!--</div attr= class="content">--><!--</div attr= class="
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 
-			</paragraphs>
+			</subsubsection>
       </subsection>
 
   		<subsection xml:id="_viewing_history">
@@ -1039,7 +1040,7 @@ index a0a60ae..47c6340 100644
 
 <!-- div attr= class="sect3"-->
 
-			<paragraphs xml:id="_showing_your_remotes">
+			<subsubsection xml:id="_showing_your_remotes">
 				<title>Showing Your Remotes</title>
 
 <!-- div attr= class="paragraph"-->
@@ -1097,9 +1098,9 @@ origin    git@github.com:mojombo/grit.git (push)</pre><!--</div attr= class="con
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="_adding_remote_repositories">
+			<subsubsection xml:id="_adding_remote_repositories">
 				<title>Adding Remote Repositories</title>
 
 <!-- div attr= class="paragraph"-->
@@ -1140,9 +1141,9 @@ From https://github.com/paulboone/ticgit
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="_fetching_and_pulling">
+			<subsubsection xml:id="_fetching_and_pulling">
 				<title>Fetching and Pulling from Your Remotes</title>
 
 <!-- div attr= class="paragraph"-->
@@ -1186,9 +1187,9 @@ From https://github.com/paulboone/ticgit
 
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="_pushing_remotes">
+			<subsubsection xml:id="_pushing_remotes">
 				<title>Pushing to Your Remotes</title>
 
 <!-- div attr= class="paragraph"-->
@@ -1206,7 +1207,7 @@ From https://github.com/paulboone/ticgit
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 	
 		</subsection>
 
@@ -1253,4 +1254,3 @@ From https://github.com/paulboone/ticgit
     </blocks>
   </exercise>
 </section>
-

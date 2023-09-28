@@ -39,7 +39,6 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-				<idx>Fork</idx>
 					If you want to contribute to an existing project to which you don’t have write access (aka push access), you can <term>fork</term> the project. When you “fork” a project, GitHub will make a copy of the project that is entirely yours; it lives in your namespace, and you can push to it.
 				</p><!--</div attr= class="paragraph">-->
 
@@ -691,7 +690,8 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 					<notation>
 						<usage><m>@</m></usage>
 						<description>at symbol - used to tag a username</description>
-					  </notation>
+					</notation>
+					
 				</p><!--</div attr= class="paragraph">-->
 
 
@@ -709,6 +709,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 				<p>
 					If someone gets mentioned on a Pull Request or Issue, they will be “subscribed” to it and will continue getting notifications any time some activity occurs on it. You will also be subscribed to something if you opened it, if you’re watching the repository or if you comment on something. If you no longer wish to receive notifications, there is an “Unsubscribe” button on the page you can click to stop receiving updates on it.
 				</p><!--</div attr= class="paragraph">-->
+				</paragraphs>
 
 
 				<paragraphs xml:id="_the_notifications_page">
@@ -782,8 +783,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 						</paragraphs>
 					</paragraphs>
 				</paragraphs>
-			</paragraphs>
-
+			
 			<paragraphs xml:id="_special_files">
 				<title>Special Files</title>
 
@@ -988,4 +988,3 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 		</blocks>
 	</exercise>
 	</section>
-
