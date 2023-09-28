@@ -93,16 +93,17 @@
           Push the current branch and all commits to the remote repository. Note that <c>git push</c> only updates the corresponding branch on the remote.
         </p>
       </li>
-            <li>
+      <li>
+      <title><c>git push --set-upstream origin &lt;branchname &gt;</c></title>
+      <p>This command will set upstream the local branch to the remote respository on Github</p>
+      </li>
+      <li>
         <title><c>git push -u origin &lt;branchname&gt;</c></title>
         <p>
           Here <c>-u</c> stands for set upstream. It is used to push a new branch named &lt;branchname&gt; by creating an upstream tracking branch that is related to your current local branch. For more detail see <url href="https://github.com/git-guides/git-push" visual="github.com/git-guides/git-push">Git Guides: Git Push</url>
         </p>
       </li>
-      <li>
-      <title><c>git push --set-upstream origin &lt;branchname &gt;</c></title>
-      <p>This command will set upstream the local branch to the remote respository on Github</p>
-      </li>
+
 
       </dl>
     </subsection>
