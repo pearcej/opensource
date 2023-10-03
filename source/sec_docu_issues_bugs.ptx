@@ -397,7 +397,7 @@ and the application crashes with the following error message in
 				</li>
 
 				<li>
-				<title>Ensuring that the bug is filed against the correct component, with the correct version</title> Sometimes, bugs are simply filed with the wrong information in some of the fields and it is obviously wrong. When a bug report about foomail accidentally gets filed against foomatic, reassiging that bug to the right component is simple — but vital.
+				<title>Ensuring that the bug is filed against the correct component, with the correct version</title> Sometimes, bugs are simply filed with the wrong information in some of the fields and it is obviously wrong. When a bug report about foomail accidentally gets filed against foomatic, reassigning that bug to the right component is simple — but vital.
 				</li>
 
 			</ul></p>
