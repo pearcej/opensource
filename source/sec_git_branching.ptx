@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec_git_branching" xmlns:xi="http://www.w3.org/2001/XInclude">
-<idx><h>branch</h></idx>
+<idx>branch</idx>
   <title>Git Branching</title>
   <introduction>
 		<p>
