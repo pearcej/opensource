@@ -134,6 +134,11 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
           If you have no other options among those that were detailed above and you have sufficient RAM and secondary storage available, then you might consider installing Linux in a VM. Using Linux in a VM will create at least some lag, which might be significant, nevertheless this may be a good choice if you are on an older Windows machine and want to develop off-line. If this describes your use-case, you might try it since it is cost-free. Try VM software such as <url href="https://www.virtualbox.org/" visual="virtualbox.org/">Virtual Box</url>, installing and running Ubuntu in the VM, and then following the Ubuntu directions above.
       </p>
     </li>
+    <li><title>Dual Boot With Linux</title>
+      <p>
+        If your computer does not have sufficient RAM and enough processing power for properly running a virtual machine, a different option might be to proceed with a dual boot installation with your current operating system and Linux. This method will allow you to start your computer with Linux whenever you need to access your development environment.
+    </p>
+    </li>
     <li>
     <title>In the Cloud</title>
       <p>

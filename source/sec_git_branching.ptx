@@ -66,7 +66,9 @@ $ git commit -m 'Initial commit'</pre><!--</div attr= class="content">--><!--</d
 
 			<figure xml:id="git-commit-parents">
 			<caption>Commits and their parents</caption>
-			<image source='git-commits-and-parents.png'/>
+			<image source='git-commits-and-parents.png'>
+				<description>Diagram that illustrates how a pointer stores changes to most recent commit.</description>
+			</image>
 			</figure>
 
 			<p>
