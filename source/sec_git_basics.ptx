@@ -1156,7 +1156,7 @@ From https://github.com/paulboone/ticgit
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					The command goes out to that remote project and pulls down all the data from that remote project that you don’t have yet. After you do this, you should have references to all the branches from that remote, which you can merge in or inspect at any time.
+					The command <idx> <c>git fetch &lt;remote&gt;</c> </idx> goes out to that remote project and pulls down all the data from that remote project that you don’t have yet. After you do this, you should have references to all the branches from that remote, which you can merge in or inspect at any time.
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="paragraph"-->
