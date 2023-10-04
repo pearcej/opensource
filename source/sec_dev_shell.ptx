@@ -22,6 +22,7 @@
   <li>
     <title>What is a <term>terminal</term>?</title>
     <p>
+<idx>terminal</idx>
       The English word <term>terminal</term> means to be situated at the end of something, and the term's meaning in computing has evolved since it was originally coined in the 1960s.
     </p>
       
@@ -29,7 +30,9 @@
     </p>
     <figure xml:id="img-DEC_VT100-terminal">
 			<caption>The DEC VT100, a widely emulated computer terminal</caption>
-			<image width="80%" source='DEC_VT100_terminal.png'/>
+			  <image width="80%" source='DEC_VT100_terminal.png'>
+          <description>Photo of an old DEC VT100 terminal from the 1970s.</description>
+        </image>
 			</figure>
     <p>
     The development of the <term>terminal interface</term> in the 1960s marked a significant shift in the way users interacted with computers because the terminal provided a convenient and much more accessible way to provide input and obtain output, allowing users to remotely interact with a computer via a keyboard and screen.  Back when the terminal was first used in computing, what we refer to as the terminal today was the only interface available to the user, while now it is used to refer to a specific type of text-based programming interface. In particular, today a <term>terminal</term> simply refers to a text-based interface that allows a user to interact with a computer by entering commands and receiving output on a display screen. 
@@ -46,13 +49,15 @@
   <li>
   <title>What is a <term>Command Line Interface (CLI)</term>?</title>
     <p>
-      <idx> Command Line Interface </idx>
+      <idx>Command Line Interface</idx>
+<idx>CLI</idx>
       A <term>CLI</term> refers to any interface that works with text-based commands and text-based output. We will be using a <term>shell</term>, which is an example of a CLI.
     </p>
   </li>
   <li>
   <title>What is a <term>shell</term>?</title>
       <p>
+<idx>shell</idx>
   A <term>shell</term> is a program which parses and interprets the commands you enter in the terminal and then executes them, often using functionality provided directly by the operating system. In other words, a shell is a CLI which serves as the interface between the end-user and the operating system. It is called a shell because it is a user interface layer directly surrounding the <term>kernel</term>, which is the innermost part of the operating system.
     </p>
   </li>
@@ -129,6 +134,11 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
         <p>
           If you have no other options among those that were detailed above and you have sufficient RAM and secondary storage available, then you might consider installing Linux in a VM. Using Linux in a VM will create at least some lag, which might be significant, nevertheless this may be a good choice if you are on an older Windows machine and want to develop off-line. If this describes your use-case, you might try it since it is cost-free. Try VM software such as <url href="https://www.virtualbox.org/" visual="virtualbox.org/">Virtual Box</url>, installing and running Ubuntu in the VM, and then following the Ubuntu directions above.
       </p>
+    </li>
+    <li><title>Dual Boot With Linux</title>
+      <p>
+        If your computer does not have sufficient RAM and enough processing power for properly running a virtual machine, a different option might be to proceed with a dual boot installation with your current operating system and Linux. This method will allow you to start your computer with Linux whenever you need to access your development environment.
+    </p>
     </li>
     <li>
     <title>In the Cloud</title>

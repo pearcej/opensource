@@ -13,6 +13,7 @@
   <book xml:id="open-source">
     <title>Open Source</title>
     <subtitle>What It Is and How to Contribute</subtitle>
+  
 
     <xi:include href="./meta_frontmatter.ptx" />
     <xi:include href="./ch1_oss.ptx" />
