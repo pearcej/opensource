@@ -42,7 +42,8 @@
   <li>
   <title>What is a <term>console</term>?</title>
     <p>
-      The English word <term>console</term> comes from the related verb, <em>to console</em>, which means to provide support. In computing, the original meaning of the <term>console</term> was as a physical device that supported input into and output from a computer. The term is still used that way, but it has also come to be synonymous with terminal in some environments. For example, if you search for console on a Windows machine, you may find the terminal program and/or you may find a security console program.
+      <idx> console</idx>
+      The English word <term>console</term> comes from the related verb, <em>to console</em>, which means to provide support. In computing, the original meaning of the <term> console</term> was as a physical device that supported input into and output from a computer. The term is still used that way, but it has also come to be synonymous with terminal in some environments. For example, if you search for console on a Windows machine, you may find the terminal program and/or you may find a security console program.
     </p>
   </li>
   <li>
