@@ -4,8 +4,8 @@
   <title>What is Open Source Software?</title>
   <introduction>
 	<p>
-		Open Source Software (OSS) is software for which the source code is open for anyone to view.
-		A related type of open source software is Free and Open Source Software (FOSS) which offers additional freedoms. FOSS is software for which the source code not only affords users the freedom to view the source code but also guarantees users the freedom to build, copy, distribute, change, and improve the software. Note that the "free" in FOSS is related to these freedoms of what one is permitted to do with the the source code as opposed to being free of cost, which it might, or might not, be — more on this topic in the remainder of this chapter.
+Open source software (OSS) which is also called Free and Open Source Software (FOSS) is source code made freely available for possible modification and/or redistribution, depending upon the specific licensing.
+Open source software is distributed under a license that grants users the freedom to run, study, modify, and share the software and its source code with anyone, for any purpose. Note that the "free" in FOSS is related to these freedoms of what one is permitted to do with the source code as opposed to being free of cost, which it might, or might not, be — more on this topic in the remainder of this chapter.
 	</p>
 
 	<p>
