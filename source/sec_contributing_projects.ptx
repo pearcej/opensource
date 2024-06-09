@@ -8,7 +8,7 @@
 <subsubsection>
 		<title><em>Firefox</em></title>
 		<p>
-            The <url href="https://www.mozilla.org/en-US/firefox/faq/" visual="mozilla.org/en-US/firefox/faq/">Mozilla Firefox Browser</url> proclaims itself to be the only major browser backed by a not-for-profit that doesn’t sell your personal data to advertisers while helping you protect your personal information. 
+            The <url href="https://www.mozilla.org/en-US/firefox/faq/" visual="mozilla.org/en-US/firefox/faq/">Mozilla Firefox Browser</url> proclaims itself to be the only major browser backed by a not-for-profit that doesn’t sell your personal data to advertisers while helping you protect your personal information.
 		</p>
         <p>
             To get started contributing to Firefox:
@@ -24,7 +24,7 @@
                     Make an account at <url href="https://bugzilla.mozilla.org/home" visual="bugzilla.mozilla.org/home">Bugzilla</url>.
                 </p>
             </li>
-            <li> 
+            <li>
                 <p>
                     Carefully follow <url href="https://firefox-source-docs.mozilla.org/setup/contributing_code.html" visual="firefox-source-docs.mozilla.org/setup/index.html">Getting Set Up To Work On The Firefox Codebase</url>.
                 </p>
@@ -36,6 +36,37 @@
             </li>
         </ol>
 	</subsubsection>
+
+	<title><em>CHAOSS</em></title>
+	<p>
+					CHAOSS stands for <i>Community Health Analytics in Open Source Software</i>. The <url href="https://chaoss.community/" visual="https://chaoss.community/">CHAOSS project</url> focuses on creating metrics, metrics models, and software to better understand open source community health.
+	</p>
+			<p>
+					To get started contributing to CHAOSS, check out the project's <url href="https://chaoss.community/kb-getting-started/" visual="https://chaoss.community/kb-getting-started/">Quick Start for New Contributors</url>. It recommends that you start by:
+			</p>
+			<ol>
+					<li>
+							<p>
+									Joining the CHAOSS Slack team, including the #newcomers channel.
+							</p>
+					</li>
+					<li>
+							<p>
+									Attending a few CHAOSS Newcomer Hangouts.
+							</p>
+					</li>
+					<li>
+							<p>
+									Attending some weekly CHAOSS Community Meetings.
+							</p>
+					</li>
+			</ol>
+			<p>
+					These activities should help you determine which CHAOSS project you might like to contribute to, as well as next steps you can take down that path.
+			</p>
+  </subsubsection>
+
+
 	<subsubsection>
 		<title><em>PreTeXt Authoring Software</em></title>
 		<p>
@@ -43,7 +74,7 @@
 		</p>
         <p>
             To get started with PretTeXt, do the following:
-        
+
        <ol>
             <li>
                 <p>
@@ -72,10 +103,10 @@
 
         <title><em>Runestone Academy</em></title>
         <p>
-            The mission of <url href="https://landing.runestone.academy/" visual="landing.runestone.academy/">Runestone Academy</url> is to make modern textbooks freely available to all (i.e. to democratize textbooks for the 21st century.)  To accomplish this mission Runestone has partnered with many institutions, the US National Science Foundation (NSF), as well as many professors and other professionals to make high quality interactive textbooks in multiple languages available to all students for free.  
+            The mission of <url href="https://landing.runestone.academy/" visual="landing.runestone.academy/">Runestone Academy</url> is to make modern textbooks freely available to all (i.e. to democratize textbooks for the 21st century.)  To accomplish this mission Runestone has partnered with many institutions, the US National Science Foundation (NSF), as well as many professors and other professionals to make high quality interactive textbooks in multiple languages available to all students for free.
         </p>
         <p>
-            To get started contributing to Runestone textbooks themselves, go to <url href="https://github.com/orgs/RunestoneInteractive/repositories?type=all" visual="github.com/orgs/RunestoneInteractive/repositories?type=all">Runestone Academy Repos</url>, and look for textbooks. You will need your development environment set-up to build the textbook, either using Runestone git 
+            To get started contributing to Runestone textbooks themselves, go to <url href="https://github.com/orgs/RunestoneInteractive/repositories?type=all" visual="github.com/orgs/RunestoneInteractive/repositories?type=all">Runestone Academy Repos</url>, and look for textbooks. You will need your development environment set-up to build the textbook, either using Runestone git
         </p>
         <p>
             The following textbooks are known to be friendly to novice contribution:
@@ -141,4 +172,3 @@
         </subsubsection>
 
 	</section>
-
