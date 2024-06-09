@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec_contributing_projects">
-		<title>Friendly Communities</title>
+<title>Friendly Communities</title>
 <p>
 	The following are open source communities with a reputation of being friendly to novice contribution. Be sure to follow the recommendations given in <xref ref="sec_contributing_quickstart"/> for getting started well.
 </p>
 <subsubsection>
-		<title><em>Firefox</em></title>
+<title><em>Firefox</em></title>
 		<p>
             The <url href="https://www.mozilla.org/en-US/firefox/faq/" visual="mozilla.org/en-US/firefox/faq/">Mozilla Firefox Browser</url> proclaims itself to be the only major browser backed by a not-for-profit that doesn’t sell your personal data to advertisers while helping you protect your personal information.
 		</p>
@@ -37,38 +37,40 @@
         </ol>
 	</subsubsection>
 
+	<subsubsection>
 	<title><em>CHAOSS</em></title>
-	<p>
-					CHAOSS stands for <i>Community Health Analytics in Open Source Software</i>. The <url href="https://chaoss.community/" visual="https://chaoss.community/">CHAOSS project</url> focuses on creating metrics, metrics models, and software to better understand open source community health.
+		<p>
+		CHAOSS stands for <i>Community Health Analytics in Open Source Software</i>. The <url href="https://chaoss.community/" visual="https://chaoss.community/">CHAOSS project</url> focuses on creating metrics, metrics models, and software to better understand open source community health.
+		</p>
+		<p>
+		To get started contributing to CHAOSS, check out the project's <url href="https://chaoss.community/kb-getting-started/" visual="https://chaoss.community/kb-getting-started/">Quick Start for New Contributors</url>. It recommends that you start by:
+		
+		<ol>
+		<li>
+			<p>
+			Joining the CHAOSS Slack team, including the #newcomers channel.
+			</p>
+		</li>
+		<li>
+			<p>
+			Attending a few CHAOSS Newcomer Hangouts.
+			</p>
+		</li>
+		<li>
+			<p>
+			Attending some weekly CHAOSS Community Meetings.
+			</p>
+		</li>
+	</ol>
 	</p>
-			<p>
-					To get started contributing to CHAOSS, check out the project's <url href="https://chaoss.community/kb-getting-started/" visual="https://chaoss.community/kb-getting-started/">Quick Start for New Contributors</url>. It recommends that you start by:
-			</p>
-			<ol>
-					<li>
-							<p>
-									Joining the CHAOSS Slack team, including the #newcomers channel.
-							</p>
-					</li>
-					<li>
-							<p>
-									Attending a few CHAOSS Newcomer Hangouts.
-							</p>
-					</li>
-					<li>
-							<p>
-									Attending some weekly CHAOSS Community Meetings.
-							</p>
-					</li>
-			</ol>
-			<p>
-					These activities should help you determine which CHAOSS project you might like to contribute to, as well as next steps you can take down that path.
-			</p>
+	<p>
+		These activities should help you determine which CHAOSS project you might like to contribute to, as well as next steps you can take down that path.
+	</p>
   </subsubsection>
 
 
-	<subsubsection>
-		<title><em>PreTeXt Authoring Software</em></title>
+<subsubsection>
+	<title><em>PreTeXt Authoring Software</em></title>
 		<p>
 			PreTeXt is an XML-based authoring and publishing system for authors of textbooks, research articles, and monographs, especially in STEM disciplines. One of the many wonderful aspects of PreTeXt is that anything authored in this softwere is designed to be highly accessible so can be printed to the web, on pdf, in Braile, and more.
 		</p>
