@@ -28,12 +28,21 @@ jobs:
         run: pip install -r requirements.txt
       - name: "Compile book"
         run: pretext build web
-      - name: Upload GitHub Pages artifact
-        # Keep v3 but ensure it's at least 3.0.0 or later
-        uses: actions/upload-pages-artifact@v3
+      - name: Package website
         if: github.ref == 'refs/heads/main'
+        # Create a tar archive for GitHub Pages
+        run: |
+          cd output/web
+          tar --dereference --hard-dereference -cf $RUNNER_TEMP/artifact.tar .
+          cd -
+      - name: Upload GitHub Pages artifact
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@v4  # Use v4 directly
         with:
-          path: "output/web/"
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: 1
+          if-no-files-found: error
   deploy:
     name: "Publish"
     runs-on: ubuntu-latest
