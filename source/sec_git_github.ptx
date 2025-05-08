@@ -224,7 +224,7 @@
 
 <!-- div attr= class="paragraph"-->
 					<p>
-						Adding commits to an existing Pull Request doesn’t trigger a notification, so once you push corrections you might want to to leave a comment to inform the project owner that you made the requested change.
+						Adding commits to an existing Pull Request does not trigger a notification, so once you push corrections, you might want to leave a comment to inform the project owner that you made the requested change.
 					</p><!--</div attr= class="paragraph">-->
 
 
