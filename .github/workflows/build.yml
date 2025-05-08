@@ -11,8 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      # Add the following permission for v4 of deploy-pages
-      actions: read
+      actions: read  # Required for v4 artifact system
     steps:
       - name: "Checkout repository"
         uses: actions/checkout@v3
@@ -30,8 +29,8 @@ jobs:
       - name: "Compile book"
         run: pretext build web
       - name: Upload GitHub Pages artifact
-        # Update to v4
-        uses: actions/upload-pages-artifact@v4
+        # Keep v3 but ensure it's at least 3.0.0 or later
+        uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/main'
         with:
           path: "output/web/"
@@ -43,13 +42,11 @@ jobs:
     permissions:
       pages: write
       id-token: write
-      # Add this permission for v4 of deploy-pages
-      actions: read
+      actions: read  # Required for v4 artifact system
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: "Deploy to GitHub Pages"
         id: deployment
-        # Update to v4
         uses: actions/deploy-pages@v4
