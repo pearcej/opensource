@@ -110,7 +110,7 @@ A terminal/console will typically seamlessly offer direct access to a shell as w
     </li>
     <li><title>On a Windows machine</title>
       <p>
-        If you are on a Windows machine, you are in good company. In 2023, Windows is by far the most popular OS for desktops and laptopsHowever, if you are on a Windows machine, you will need to do some work to set up a development environment. If you are on a Windows machine, you have a number of options, but assuming everything will be just fine working in your normal Windows environment is simply not going to work. Seriously! So, please save yourself a lot of time, read on, and follow the directions below. 
+        If you are on a Windows machine, you are in good company. In 2025, Windows is by far the most popular OS for desktops and laptops, however, if you are on a Windows machine, you will need to do some work to set up a development environment. If you are on a Windows machine, you have a number of options, but assuming everything will be just fine working in your normal Windows environment is simply not going to work. Seriously! So, please save yourself a lot of time, read on, and follow the directions below. 
       </p>
       <p>
         Here is why your normal environment won't work. In Windows, the terminal/shell is historically called the <term>command prompt (cmd)</term>, although a newer very different terminal/shell called <term>PowerShell</term> has also been around for decades. Neither of these terminals/shells are compatible with the default shell programs available on macOS and Linux. Note that for OSS development, it will be vastly superior to have access to a shell that is compatible with the macOS and Linux ones because these are the typical shells that developers use.
