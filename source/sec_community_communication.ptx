@@ -31,7 +31,7 @@
             <url href="https://github.com/" visual="github.com/">GitHub</url>, 
             <url href="https://gitea.io/" visual="gitea.io">Gitea</url>, 
             <url href="https://gitlab.com/" visual="gitlab.com/">GitLab</url>, or 
-            <url href="https://bitbucket.org/" visual="bitbucket.org">Bitbucket</url>, each of which provides a comprehensive collection of features that are required for software development in OSS communities. These features arise naturally from the need store code, to discuss issues related to the code, to employ version control, and other needs: 
+            <url href="https://bitbucket.org/" visual="bitbucket.org">Bitbucket</url>, each of which provides a comprehensive collection of features that are required for software development in OSS communities. These features arise naturally from the need to store code, to discuss issues related to the code, to employ version control, and other needs: 
         </p>
       </introduction>
             <subsubsection xml:id="subsubsec-repository">
@@ -159,7 +159,7 @@
         
                     </p>
                     <p>
-          It is important to understand that even in the best of circumstances, the typical merge request initiates further discussion and/or recommendation(s) for improvements from the core team of the OSS project. To those new to the OSS world, these discussions may come as a surprise, but they should not. Even then the core OSS term is likely to ask for further refinements. This is normal and to be expected.
+          It is important to understand that even in the best of circumstances, the typical merge request initiates further discussion and/or recommendation(s) for improvements from the core team of the OSS project. To those new to the OSS world, these discussions may come as a surprise, but they should not. Even then the core OSS team is likely to ask for further refinements. This is normal and to be expected.
         </p>
       </subsubsection>
                <subsubsection xml:id="subsubsec-project-board">

@@ -139,6 +139,14 @@
       </p>  
       </li>
 
+            <li>
+        <title><c>git branch -d &lt;branch-name&gt;</c></title>
+      <p>
+        Delete the branch called <c>&lt;branch-name&gt;</c>. Note that you cannot be on the branch you are trying to delete. If you want to delete a branch that has not been merged, use <c>-D</c> instead of <c>-d</c>.
+      </p>  
+      </li>
+
+
       <li>
         <title><c>git merge &lt;branch-name&gt;</c></title>
       <p>
