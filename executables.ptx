@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executables
+      latex="latex"
+      pdflatex="pdflatex"
+      xelatex="xelatex"
+      asy="asy"
+      sage="sage"
+      pdfeps="pdftops"
+      node="node"
+      liblouis="file2brl" />
