@@ -44,7 +44,7 @@
                           <statement>
                             <p>
                               A <term>repository</term>, aka 
-                              <term>repo</term>, is a file storage location used by a version control system to keep track of not only versions of the code base itself but also to keep track of project documentation, discussions, web pages, and more. 
+                              <term>repo</term>, is a file storage location used by a version control system to keep track of not only versions of the code base itself, but also to keep track of project documentation, discussions, web pages, and more. 
                             </p>
                           </statement>
                         </definition>
