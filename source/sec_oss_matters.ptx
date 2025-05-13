@@ -10,7 +10,7 @@
 		Unfortunately, most people do not even read the legal terms and conditions for software packages before accepting them. A 2017 study entitled <url href="https://www.businessinsider.com/deloitte-study-91-percent-agree-terms-of-service-without-reading-2017-11?op=1" visual="businessinsider.com/deloitte-study-91-percent-agree-terms-of-service-without-reading-2017-11">You're not alone, no one reads terms of service agreements</url> found that over 90% of people do not read these statements before agreeing to them. Honestly, I am shocked that statistic is not even higher... So, everyone who does not read these is at the mercy of the developers, which might or might not be a safe choice. Open source should matter to those who do not read these license agreements because they and others can look at the source code.
 	</p>
 	<p>
-		Did you realize that open source software is so incredibly prevalent that you would be pretty hard-pressed to not be using it regularly? Android and Apple iOS very heavily dominate the global market share for cell phone operating systems. However, the <url href="https://source.android.com/" visual="source.android.com">Android</url> system has more than three times as many users as Apple's iOS, and Android is open source. <url href="https://en.wikipedia.org/wiki/Linux" visual="en.wikipedia.org/wiki/Linux">Linux</url> is a family of open source operating systems that powers the majority of the webpages on the Internet. Chrome is by far the most popular browser on the planet, and while it is not fully open source,  it is built on top of a number of OSS projects, the details of which can be found by going to "chrome://credits" in the Chrome browser's URL bar. Even Apple iOS, which as mentioned above is the second most popular operating systems for cell phones, includes a lot of OSS components which are listed in "Settings > General > Legal and Regulatory". We will learn a lot more about open source licensing in <xref ref="ch_licensing"/>. So, OSS matters to everyone who uses a cell phone or searches the Internet. In fact, these are just examples, virtually any piece of software that the reader is using will likely include OSS components, so OSS should matter to <em>you</em>!
+		Did you realize that OSS is so incredibly prevalent that you would be pretty hard-pressed to not be using it regularly? Android and Apple iOS very heavily dominate the global market share for cell phone operating systems. However, the <url href="https://source.android.com/" visual="source.android.com">Android</url> system has more than three times as many users as Apple's iOS, and Android is open source. <url href="https://en.wikipedia.org/wiki/Linux" visual="en.wikipedia.org/wiki/Linux">Linux</url> is a family of open source operating systems that powers the majority of the webpages on the Internet. Chrome is by far the most popular browser on the planet, and while it is not fully open source,  it is built on top of a number of OSS projects, the details of which can be found by going to "chrome://credits" in the Chrome browser's URL bar. Even Apple iOS, which as mentioned above is the second most popular operating systems for cell phones, includes a lot of OSS components which are listed in "Settings > General > Legal and Regulatory". We will learn a lot more about open source licensing in <xref ref="ch_licensing"/>. So, OSS matters to everyone who uses a cell phone or searches the Internet. In fact, these are just examples, virtually any piece of software that the reader is using will likely include OSS components, so OSS should matter to <em>you</em>!
 	</p>
 	<p>
 		OSS might also matter to you if you are a student or a learner because it is real. You can see into not only the source code but also into the process of making code improvements. And if you choose to go out into the real world looking for a job as a software developer, you will have a tremendous advantage if you can prove that you have experience in real software projects — ugly, messy, confusing, gigantic, real software projects.
@@ -171,12 +171,12 @@ ch_building_code
           <choice>
             <statement>
               <p>
-                Open source, because open source software is more transparent compared to proprietary software, allowing developers to respond to bugs more rapidly and efficiently. 
+                Open source, because OSS is more transparent compared to proprietary software, allowing developers to respond to bugs more rapidly and efficiently. 
               </p>
             </statement>
             <feedback>
               <p>
-				Despite the nature of open source that allows the public to access the source code, that doesn’t mean open-source software is more reliable and could still hold some security threats to users. 
+				Despite the nature of open source that allows the public to access the source code, that doesn’t mean OSS is more reliable and could still hold some security threats to users. 
               </p>
             </feedback>
           </choice>
@@ -195,19 +195,19 @@ ch_building_code
           <choice>
             <statement>
               <p>
-                Open source, because open source software needs a warranty to be protected from security threats. 
+                Open source, because OSS needs a warranty to be protected from security threats. 
             </p>
             </statement>
             <feedback>
               <p>
-				Open source software typically doesn't come with a warranty, but licenses that grant users the freedom to view, modify, and distribute the source code. 
+				OSS typically doesn't come with a warranty, but licenses that grant users the freedom to view, modify, and distribute the source code. 
               </p>
             </feedback>
           </choice>
           <choice correct = "yes">
             <statement>
                 <p>
-                    While open-source software seems inherently more secure, both open-source software and proprietary software pose possible challenges to software security.
+                    While OSS seems inherently more secure, both OSS and proprietary software pose possible challenges to software security.
                 </p>
             </statement>
             <feedback>
