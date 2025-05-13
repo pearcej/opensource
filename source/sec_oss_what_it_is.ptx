@@ -4,17 +4,17 @@
   <title>What is Open Source Software?</title>
   <introduction>
 	<p>
-Open source software (OSS) which is also called Free and Open Source Software (FOSS) is source code made freely available for possible modification and/or redistribution, depending upon the specific licensing.
-Open source software is distributed under a license that grants users the freedom to run, study, modify, and share the software and its source code with anyone, for any purpose. Note that the "free" in FOSS is related to these freedoms of what one is permitted to do with the source code as opposed to being free of cost, which it might, or might not, be — more on this topic in the remainder of this chapter.
+Open Source Software (OSS) which is also called Free and Open Source Software (FOSS) is source code made freely available for possible modification and/or redistribution, depending upon the specific licensing.
+OSS is distributed under a license that grants users the freedom to run, study, modify, and share the software and its source code with anyone, for any purpose. Note that the "Free" in FOSS is related to these freedoms of what one is permitted to do with the source code as opposed to being free of cost, which it might, or might not, be — more on this topic in the remainder of this chapter.
 	</p>
 
 	<p>
 		<idx>proprietary software</idx>
-		Open source software differs from closed source <term>proprietary software</term> where only the owners and those they appoint have access to the source code because the latter is closed-off to others. So, with closed source software, if you want to personally ascertain that a game or another piece of software that you want to download and install does not include code that will steal your data or take over your entire system, you are simply out of luck.
+		OSS differs from closed source <term>proprietary software</term> where only the owners and those they appoint have access to the source code because the latter is closed-off to others. So, with closed source software, if you want to personally ascertain that a game or another piece of software that you want to download and install does not include code that will steal your data or take over your entire system, you are simply out of luck.
 	</p>
 
 	<p>
-		There are more rigorous definitions of OSS and FOSS, and there are many licenses that help to ensure various freedoms in subtly different ways. We examine many of these details later in <xref ref="ch_licensing"/>. For now, we focus on this one simple idea: the freedom to view the source code is the essential element of open source software. 
+		There are more rigorous definitions of OSS and FOSS, and there are many licenses that help to ensure various freedoms in subtly different ways. We examine many of these details later in <xref ref="ch_licensing"/>. For now, we focus on this one simple idea: the freedom to view the source code is the essential element of OSS. 
 	</p>
 
 	<p>
@@ -27,7 +27,7 @@ Open source software is distributed under a license that grants users the freedo
 			</li>
 
 			<li>
-			Be able to articulate advantages and disadvantages of open source software;
+			Be able to articulate advantages and disadvantages of OSS;
 			</li>
 
 			<li>
@@ -48,20 +48,20 @@ Open source software is distributed under a license that grants users the freedo
   </introduction>
   
       <p>
-        This is, first and foremost, a textbook about how people create software collaboratively using a community development model, and about how you can become a member of one of those communities.  When the source code is open to viewing, most people call the result of such work by the name <term>open source software (OSS)</term>.
+        This is, first and foremost, a textbook about how people create software collaboratively using a community development model, and about how you can become a member of one of those communities.  When the source code is open to viewing, most people call the result of such work by the name <term>Open Source Software (OSS)</term>.
       </p>
       <p>
       The following related terms relate to OSS that guarantees additional freedoms:
         <idx>free software</idx>   
-        <idx>free and open source software</idx>  
+        <idx>Free and Open Source Software</idx>  
         <idx>FOSS</idx>   
         <idx>FLOSS</idx>  
-        <idx>free/libre and open source software</idx>   
-       Some people call <term>free software</term> or use both terms: <term>free and open source software (FOSS)</term>. Some people throw in the word libre to clarify the intended meaning of free, and call it <term>free/libre open source software (FLOSS)</term>. 
+        <idx>Free/Libre and Open Source Software</idx>   
+       Some people call <term>free software</term> or use both terms: <term>Free and Open Source Software (FOSS)</term>. Some people throw in the word libre to clarify the intended meaning of free, and call it <term>Free/Libre Open Source Software (FLOSS)</term>. 
       </p>
 
       <p>
-        There are valid reasons for the usage of these different terms in different contexts, but for the sake of breadth, we primarily use the terms <term>open source</term> or <term>open source software (OSS)</term> in this book. If you are interested in additional clarification or on the history of these related types of software and the evolution of the terms, see <url href="https://www.gnu.org/philosophy/free-sw.html" visual="www.gnu.org/philosophy/free-sw.html">What is Free Software</url> by the open source <url href="https://www.gnu.org/" visual="www.gnu.org/">GNU Operating System</url>.
+        There are valid reasons for the usage of these different terms in different contexts, but for the sake of breadth, we primarily use the terms <term>open source</term> or <term>Open Source Software (OSS)</term> in this book. If you are interested in additional clarification or on the history of these related types of software and the evolution of the terms, see <url href="https://www.gnu.org/philosophy/free-sw.html" visual="www.gnu.org/philosophy/free-sw.html">What is Free Software</url> by the open source <url href="https://www.gnu.org/" visual="www.gnu.org/">GNU Operating System</url>.
       </p>
 
       <p>
@@ -73,13 +73,13 @@ Open source software is distributed under a license that grants users the freedo
         <idx>OSS</idx>
         <statement>
           <p>
-            <term>Open source software (OSS)</term> is software that is designed with code that is publicly accessible and openly viewed.
+            <term>Open Source Software (OSS)</term> is software that is designed with code that is publicly accessible and openly viewed.
           </p>
         </statement>
       </definition>
       </p>
 
-      <p>Open source software is typically developed in a collaborative way. It often relies upon peer review and community member contributions, frequently with community members from all over the world. In addition to seeing the code, often anyone can also freely modify and distribute the code as they see fit as long as the open source license is followed. We will explore licensing details in <xref ref="ch_licensing"/>
+      <p>OSS is typically developed in a collaborative way. It often relies upon peer review and community member contributions, frequently with community members from all over the world. In addition to seeing the code, often anyone can also freely modify and distribute the code as they see fit as long as the open source license is followed. We will explore licensing details in <xref ref="ch_licensing"/>
       </p>
 
       <p>
@@ -102,7 +102,7 @@ Open source software is distributed under a license that grants users the freedo
 				</statement>
 				<feedback>
 				  <p>
-				  Open Source Software is developed many purposes, not limited only to education.
+				  Open Source Software (OSS) is developed many purposes, not limited only to education.
 				</p>
 				</feedback>
 			  </choice>
@@ -126,7 +126,7 @@ Open source software is distributed under a license that grants users the freedo
 				</statement>
 				<feedback>
 				  <p>
-					Correct!  Open source software (OSS) is software that is designed with code that is publicly accessible and openly viewed.
+					Correct!  Open Source Software (OSS) is software that is designed with code that is publicly accessible and openly viewed.
 				  </p>
 				</feedback>
 			  </choice>
@@ -138,7 +138,7 @@ Open source software is distributed under a license that grants users the freedo
 				</statement>
 				<feedback>
 				  <p>
-					In fact, Open Source Software is often utilized for commercial projects, and many businesses leverage open-source software as a cost-effective solution to building their products.
+					In fact, Open Source Software (OSS) is often utilized for commercial projects, and many businesses leverage open-source software as a cost-effective solution to building their products.
 				  </p>
 				</feedback>
 			  </choice>
