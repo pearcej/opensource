@@ -23,7 +23,7 @@
       <p>
       First, follow the directions given in <xref ref="subsec-getting_terminal"/> to open a terminal window so you can use your shell. All of the shell commands will be typed in this terminal window.
       </p>
-      <paragraphs>
+      <subsection xml:id="subsec-intro_shell_commands">
         <title>Introduction to Shell Commands</title>
         <p>
         </p>
@@ -95,8 +95,8 @@
      The reason you see something like this is because the SHELL environment variable stores the location of the shell program. This location, called the <term>file path</term>, is given in the form of the path needed to find the location. We explore how this path is described in the next section. 
      </p>
 
-  </paragraphs>
-    <paragraphs>
+  </subsection>
+    <subsection xml:id="subsec-files_and_file_systems">
       <title>Files and File Systems</title>
       <p>
       </p>
@@ -157,8 +157,8 @@
         You should see a listing of files and directories.
       </p>
 
-      </paragraphs>
-      <paragraphs>
+      </subsection>
+      <subsection xml:id="subsec-shell_command_options">
         <title>Shell Command Options</title>
         <p>
         </p>
@@ -189,8 +189,8 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
   Thus, the <c>-l</c> flag changed how the listing is displayed.
 </p>
     
-</paragraphs>
-<paragraphs>
+</subsection>
+<subsection xml:id="subsec-file_permissions">
     <title>File Permissions</title>
   <p>
     
@@ -219,9 +219,9 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
 <p>
   Occasionally, you need to change permissions of a file. For example, you might need to change permissions to make a file executable. Changing file permissions is done with the <c>chmod</c> command. We will explore this in a bit.
 </p>
-   </paragraphs>
+   </subsection>
 
-   <paragraphs>
+   <subsection xml:id="subsec-command_options">
     <title>Learning More About Command Options</title>
     <p>
     </p>
@@ -242,8 +242,8 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
       <pre>
       ls -lra
       </pre>
-  </paragraphs>
-  <paragraphs>
+  </subsection>
+  <subsection xml:id="subsec-creating_removing_directories">
     <title>Creating and Removing Directories</title>
     <p>
     </p>
@@ -333,8 +333,8 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
   pwd
   </pre>
 
-  </paragraphs>
-  <paragraphs>
+  </subsection>
+  <subsection xml:id="subsec-input_output_redirection">
     <title>Input and Output Redirection</title>
     <p>
     </p>
@@ -484,9 +484,9 @@ wc -w &lt; temp.txt
    Try it! This is an improvement because it is faster and avoids the use of a temporary file.
 </p>
 
-</paragraphs>
+</subsection>
 
-<paragraphs>
+<subsection xml:id="subsec-scripts">
   <title>Scripts</title>
   <p>
     
@@ -546,9 +546,8 @@ wc -w &lt; temp.txt
   chmod +x hellouser.sh
   ./hellouser.sh
 </pre>
-</paragraphs>
-
-<paragraphs>
+</subsection>
+<subsection xml:id="subsec-file_management">
   <title>File Management</title>
   <p>
   </p>
@@ -614,8 +613,8 @@ rm -i newfile4.txt
 <p>
 And, if you respond with "n", then the removal will not happen. 
 </p>
-  </paragraphs>
-<paragraphs>
+  </subsection>
+<subsection xml:id="subsec-shell_commands">
   <title>A few time-saving shell commands</title>
   <p>
     
@@ -681,7 +680,7 @@ rm: remove regular file 'newfile2_cp.txt'?
 <p>
 As you can see, these search patterns give you a lot of power and control. 
   </p>
-  </paragraphs>
+  </subsection>
 
 </subsection>
 
