@@ -24,7 +24,7 @@
 		</introduction>
 
 <!-- TODO -->
-		<subsection xml:id="_contributing_to_a_project">
+		<subsubsection xml:id="_contributing_to_a_project">
 			<title>Contributing to a Project</title>
 
 <!-- div attr= class="paragraph"-->
@@ -34,7 +34,7 @@
 
 <!-- div attr= class="sect3"-->
 
-			<subsection xml:id="_forking_projects">
+			<subsubsection xml:id="_forking_projects">
 				<title>Forking Projects</title>
 
 <!-- div attr= class="paragraph"-->
@@ -72,9 +72,9 @@
 					</p>
 				  </exercise>
 <!-- div attr= class="sect3"-->
-			</subsection>
+			</subsubsection>
 
-			<subsection xml:id="ch06-github_flow">
+			<subsubsection xml:id="ch06-github_flow">
 				<title>The GitHub Flow</title>
 
 <!-- div attr= class="paragraph"-->
@@ -153,7 +153,7 @@
 				</exercise>
 
 
-				<subsection xml:id="_creating_a_pull_request">
+				<subsubsection xml:id="_creating_a_pull_request">
 					<title>Creating a Pull Request</title>
 
 					<p>
@@ -188,9 +188,9 @@
 					</exercise>
 
 <!-- div attr= class="sect4"-->
-				</subsection>
+				</subsubsection>
 
-				<subsection xml:id="_iterating_on_a_pull_request">
+				<subsubsection xml:id="_iterating_on_a_pull_request">
 					<title>Iterating on a Pull Request</title>
 
 <!-- div attr= class="paragraph"-->
@@ -255,10 +255,10 @@
 					</p>
 	
 <!-- div attr= class="sect3"-->
-				</subsection>
-			</subsection>
+				</subsubsection>
+			</subsubsection>
 
-			<subsection xml:id="_advanced_pull_requests">
+			<subsubsection xml:id="_advanced_pull_requests">
 				<title>Advanced Pull Requests</title>
 
 <!-- div attr= class="paragraph"-->
@@ -268,7 +268,7 @@
 
 <!-- div attr= class="sect4"-->
 
-				<subsection xml:id="_pull_requests_as_patches">
+				<subsubsection xml:id="_pull_requests_as_patches">
 					<title>Pull Requests as Patches</title>
 
 <!-- div attr= class="paragraph"-->
@@ -287,9 +287,9 @@
 					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">-->
 
 <!-- div attr= class="sect4"-->
-				</subsection>
+				</subsubsection>
 
-				<subsection xml:id="_keeping_up_with_upstream">
+				<subsubsection xml:id="_keeping_up_with_upstream">
 					<title>Keeping up with Upstream</title>
 
 <!-- div attr= class="paragraph"-->
@@ -374,9 +374,9 @@
 					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">-->
 
 <!-- div attr= class="sect4"-->
-				</subsection>
+				</subsubsection>
 
-				<subsection xml:id="_references">
+				<subsubsection xml:id="_references">
 					<title>References</title>
 
 <!-- div attr= class="paragraph"-->
@@ -396,10 +396,10 @@
 					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-				</subsection>
-			</subsection>
+				</subsubsection>
+			</subsubsection>
 
-			<subsection xml:id="_github_flavored_markdown">
+			<subsubsection xml:id="_github_flavored_markdown">
 				<title>GitHub Flavored Markdown</title>
 
 <!-- div attr= class="paragraph"-->
@@ -415,7 +415,7 @@
 
 <!-- div attr= class="sect4"-->
 
-				<subsection xml:id="_task_lists">
+				<subsubsection xml:id="_task_lists">
 					<title>Task Lists</title>
 
 <!-- div attr= class="paragraph"-->
@@ -441,9 +441,9 @@
 					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">-->
 
 <!-- div attr= class="sect4"-->
-				</subsection>
+				</subsubsection>
 
-				<subsection xml:id="_code_snippets">
+				<subsubsection xml:id="_code_snippets">
 					<title>Code Snippets</title>
 
 <!-- div attr= class="paragraph"-->
@@ -472,9 +472,9 @@ for(int i=0 ; i &lt; 5 ; i++)
 
 
 <!-- div attr= class="sect4"-->
-				</subsection>
+				</subsubsection>
 
-				<subsection xml:id="_quoting">
+				<subsubsection xml:id="_quoting">
 					<title>Quoting</title>
 
 <!-- div attr= class="paragraph"-->
@@ -496,11 +496,11 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 
 
 <!-- div attr= class="sect4"-->
-				</subsection>
+				</subsubsection>
 
-			</subsection>
+			</subsubsection>
 
-			<subsection xml:id="_fetch_and_push_on_different_repositories">
+			<subsubsection xml:id="_fetch_and_push_on_different_repositories">
 				<title>Keep your GitHub public repository up-to-date</title>
 
 <!-- div attr= class="paragraph"-->
@@ -519,13 +519,13 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 
 
 
-			</subsection>
+			</subsubsection>
 
-		</subsection>
+		</subsubsection>
 
 <!-- TODO -->
 
-		<subsection xml:id="_maintaining_gh_project">
+		<subsubsection xml:id="_maintaining_gh_project">
 			<title>Maintaining a Project</title>
 
 <!-- div attr= class="paragraph"-->
@@ -535,7 +535,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 
 <!-- div attr= class="sect3"-->
 
-			<subsection xml:id="_creating_a_new_repository">
+			<subsubsection xml:id="_creating_a_new_repository">
 				<title>Creating a New Repository</title>
 
 <!-- div attr= class="paragraph"-->
@@ -567,9 +567,9 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="sect3"-->
-			</subsection>
+			</subsubsection>
 
-			<subsection xml:id="_adding_collaborators">
+			<subsubsection xml:id="_adding_collaborators">
 				<title>Adding Collaborators</title>
 
 <!-- div attr= class="paragraph"-->
@@ -590,9 +590,9 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 
 
 <!-- div attr= class="sect3"-->
-			</subsection>
+			</subsubsection>
 
-			<subsection xml:id="_managing_pull_requests">
+			<subsubsection xml:id="_managing_pull_requests">
 				<title>Managing Pull Requests</title>
 
 <!-- div attr= class="paragraph"-->
@@ -607,7 +607,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 
 <!-- div attr= class="sect4"-->
 
-				<subsection xml:id="_email_notifications">
+				<subsubsection xml:id="_email_notifications">
 					<title>Email Notifications</title>
 
 <!-- div attr= class="paragraph"-->
@@ -621,9 +621,9 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 						There are a few things to notice about this email. It will give you a small diffstat — a list of files that have changed in the Pull Request and by how much. It gives you a link to the Pull Request on GitHub. It also gives you a few URLs that you can use from the command line.
 					</p>
 
-				</subsection>
+				</subsubsection>
 
-				<subsection xml:id="_collaborating_on_the_pull_request">
+				<subsubsection xml:id="_collaborating_on_the_pull_request">
 					<title>Collaborating on the Pull Request</title>
 
 <!-- div attr= class="paragraph"-->
@@ -652,10 +652,10 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">-->
 
 <!-- div attr= class="sect4"-->
-				</subsection>
+				</subsubsection>
 
 
-				<subsection xml:id="_pull_requests_on_pull_requests">
+				<subsubsection xml:id="_pull_requests_on_pull_requests">
 					<title>Pull Requests on Pull Requests</title>
 
 <!-- div attr= class="paragraph"-->
@@ -674,10 +674,10 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 					</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="sect3"-->
-				</subsection>
-			</subsection>
+				</subsubsection>
+			</subsubsection>
 
-			<subsection xml:id="_mentions_and_notifications">
+			<subsubsection xml:id="_mentions_and_notifications">
 				<title>Mentions and Notifications</title>
 
 <!-- div attr= class="paragraph"-->
@@ -711,7 +711,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 				</p><!--</div attr= class="paragraph">-->
 
 
-				<subsection xml:id="_the_notifications_page">
+				<subsubsection xml:id="_the_notifications_page">
 					<title>The Notifications Page</title>
 
 <!-- div attr= class="paragraph"-->
@@ -728,7 +728,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 
 <!-- div attr= class="sect5"-->
 
-					<subsection xml:id="_web_notifications">
+					<subsubsection xml:id="_web_notifications">
 						<title>Web Notifications</title>
 
 <!-- div attr= class="paragraph"-->
@@ -749,7 +749,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 
 <!-- div attr= class="sect5"-->
 
-						<subsection xml:id="_email_notifications_2">
+						<subsubsection xml:id="_email_notifications_2">
 							<title>Email Notifications</title>
 
 <!-- div attr= class="paragraph"-->
@@ -779,12 +779,12 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 							</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect5">--><!--</div attr= class="sect4">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-						</subsection>
-					</subsection>
-				</subsection>
-			</subsection>
+						</subsubsection>
+					</subsubsection>
+				</subsubsection>
+			</subsubsection>
 
-			<subsection xml:id="_special_files">
+			<subsubsection xml:id="_special_files">
 				<title>Special Files</title>
 
 <!-- div attr= class="paragraph"-->
@@ -794,8 +794,8 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</subsection>
-			<subsection xml:id="_license">
+			</subsubsection>
+			<subsubsection xml:id="_license">
 				<title>LICENSE</title>
 			<p>
 			The first is the <c>LICENSE</c> file, which can be of nearly any prose format. For example, it could be LICENSE, LICENSE.md, LICENSE.asciidoc, etc. 
@@ -806,9 +806,9 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 			<p>
 				For more information on how to add a license, see <url href="https://help.github.com/articles/adding-a-license-to-a-repository/" visual="help.github.com/articles/adding-a-license-to-a-repository/">Adding a license to a repository</url> 
 			</p>
-			</subsection>
+			</subsubsection>
 
-			<subsection xml:id="_readme">
+			<subsubsection xml:id="_readme">
 				<title>README</title>
 
 <!-- div attr= class="paragraph"-->
@@ -864,17 +864,17 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</subsection>
+			</subsubsection>
 
-			<subsection xml:id="_code_of_conduct">
+			<subsubsection xml:id="_code_of_conduct">
 				<title>CODE_OF_CONDUCT</title>
 				<p>
 					<idx>code of conduct</idx>
 					The <c>CODE_OF_CONDUCT</c> file explains how one is expected to engage in that particular community. It is typically used to ensure an inclusive environment that respects all people and also typically describes how to address any problems among members of the project's community.
 				</p>
-			</subsection>
+			</subsubsection>
 
-			<subsection xml:id="_contributing">
+			<subsubsection xml:id="_contributing">
 				<title>CONTRIBUTING</title>
 
 <!-- div attr= class="paragraph"-->
@@ -892,9 +892,9 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</subsection>
+			</subsubsection>
 
-			<subsection xml:id="_project_administration">
+			<subsubsection xml:id="_project_administration">
 				<title>Project Administration</title>
 
 <!-- div attr= class="paragraph"-->
@@ -904,7 +904,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 
 <!-- div attr= class="sect4"-->
 
-				<subsection xml:id="_changing_the_default_branch">
+				<subsubsection xml:id="_changing_the_default_branch">
 					<title>Changing the Default Branch</title>
 
 <!-- div attr= class="paragraph"-->
@@ -918,11 +918,11 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">-->
 
 <!-- div attr= class="sect4"-->
-				</subsection>
+				</subsubsection>
 
-			</subsection>
+			</subsubsection>
 
-		</subsection>
+		</subsubsection>
 
 
 
