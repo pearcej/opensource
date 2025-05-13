@@ -13,7 +13,7 @@
 
 <subsection xml:id="subsec-files_directories_privileges">
   <title>Files, Directories, and Privileges</title>
-  <p>
+  <introduction><p>
     This and subsequent subsections are written to be followed as an extended exercise with explanations given as we go.
   </p>
     <exercise xml:id="exercise-try-cli">
@@ -23,7 +23,8 @@
       <p>
       First, follow the directions given in <xref ref="subsec-getting_terminal"/> to open a terminal window so you can use your shell. All of the shell commands will be typed in this terminal window.
       </p>
-      <subsection xml:id="subsec-intro_shell_commands">
+      </introduction>
+    <subsubsection xml:id="subsec-intro_shell_commands">
         <title>Introduction to Shell Commands</title>
         <p>
         </p>
@@ -94,9 +95,9 @@
      <p>
      The reason you see something like this is because the SHELL environment variable stores the location of the shell program. This location, called the <term>file path</term>, is given in the form of the path needed to find the location. We explore how this path is described in the next section. 
      </p>
+  </subsubsection>
 
-  </subsection>
-    <subsection xml:id="subsec-files_and_file_systems">
+    <subsubsection xml:id="subsec-files_and_file_systems">
       <title>Files and File Systems</title>
       <p>
       </p>
@@ -156,9 +157,9 @@
       <p>
         You should see a listing of files and directories.
       </p>
+      </subsubsection>
 
-      </subsection>
-      <subsection xml:id="subsec-shell_command_options">
+      <subsubsection xml:id="subsec-shell_command_options">
         <title>Shell Command Options</title>
         <p>
         </p>
@@ -187,10 +188,10 @@ lrwxrwxrwx  1 root    root        7 Mar 24  2022 bin -> usr/bin
 
 <p>
   Thus, the <c>-l</c> flag changed how the listing is displayed.
-</p>
-    
-</subsection>
-<subsection xml:id="subsec-file_permissions">
+</p>   
+</subsubsection>
+
+<subsubsection xml:id="subsec-file_permissions">
     <title>File Permissions</title>
   <p>
     
@@ -219,9 +220,9 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
 <p>
   Occasionally, you need to change permissions of a file. For example, you might need to change permissions to make a file executable. Changing file permissions is done with the <c>chmod</c> command. We will explore this in a bit.
 </p>
-   </subsection>
+   </subsubsection>
 
-   <subsection xml:id="subsec-command_options">
+   <subsubsection xml:id="subsec-command_options">
     <title>Learning More About Command Options</title>
     <p>
     </p>
@@ -242,8 +243,8 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
       <pre>
       ls -lra
       </pre>
-  </subsection>
-  <subsection xml:id="subsec-creating_removing_directories">
+  </subsubsection>
+  <subsubsection xml:id="subsec-creating_removing_directories">
     <title>Creating and Removing Directories</title>
     <p>
     </p>
@@ -333,8 +334,8 @@ lrwxrwxrwx  1 root    pearcej      7 Mar 24  2022 bin -> usr/bin
   pwd
   </pre>
 
-  </subsection>
-  <subsection xml:id="subsec-input_output_redirection">
+  </subsubsection>
+  <subsubsection xml:id="subsec-input_output_redirection">
     <title>Input and Output Redirection</title>
     <p>
     </p>
@@ -484,9 +485,9 @@ wc -w &lt; temp.txt
    Try it! This is an improvement because it is faster and avoids the use of a temporary file.
 </p>
 
-</subsection>
+</subsubsection>
 
-<subsection xml:id="subsec-scripts">
+<subsubsection xml:id="subsec-scripts">
   <title>Scripts</title>
   <p>
     
@@ -546,8 +547,9 @@ wc -w &lt; temp.txt
   chmod +x hellouser.sh
   ./hellouser.sh
 </pre>
-</subsection>
-<subsection xml:id="subsec-file_management">
+</subsubsection>
+
+<subsubsection xml:id="subsec-file_management">
   <title>File Management</title>
   <p>
   </p>
@@ -613,21 +615,19 @@ rm -i newfile4.txt
 <p>
 And, if you respond with "n", then the removal will not happen. 
 </p>
-  </subsection>
-<subsection xml:id="subsec-shell_commands">
+</subsubsection>
+<subsubsection xml:id="subsec-shell_commands">
   <title>A few time-saving shell commands</title>
   <p>
-    
-  </p>
-  <p>
-    The <em>up arrow</em> key retrieves the previous shell command. If you press it multiple times, it will take you back through multiple commands in your shell history. This is a useful way to repeat a command. For example, if you had a typo, you can use the up arrow, edit the command, and push enter to fix the command. Analogously, the <em>down arrow</em> will move you in the reverse direction through the shell command history. For more useful shell commands, type <c>man bash</c> for hints on how to search your shell history, re-execute commands, and much more.
     </p>
   <p>
-  <p>
-  An additional efficiency-enhancing feature is the <term>history</term> command. This command conveniently presents a record of previously executed shell commands, enabling users to effortlessly revisit their command history. 
+    The <em>up arrow</em> key retrieves the previous shell command. If you press it multiple times, it will take you back through multiple commands in your shell history. This is a useful way to repeat a command. For example, if you had a typo, you can use the up arrow, edit the command, and push enter to fix the command. Analogously, the <em>down arrow</em> will move you in the reverse direction through the shell command history. For more useful shell commands, type <c>man bash</c> for hints on how to search your shell history, re-execute commands, and much more.
   </p>
   <p>
-  Here's an example of what might be displayed when the <c>history</c> command is executed:
+    An additional efficiency-enhancing feature is the <term>history</term> command. This command conveniently presents a record of previously executed shell commands, enabling users to effortlessly revisit their command history.
+  </p>
+  <p>
+    Here's an example of what might be displayed when the <c>history</c> command is executed:
   </p>
   <pre>
   1  git init
@@ -638,9 +638,8 @@ And, if you respond with "n", then the removal will not happen.
   6  history
   </pre>
 
-    <p>
+  <p>
     This paragraph is intended to alert you to some useful search features. A couple examples of very common search patterns are using wildcards for zero or more characters or for a single character.  The asterisk (*) specifies zero or more characters to match. In bash the question mark (?) is used for matching exactly one single character.
-    </p>
     <notation>
       <usage><m>*</m></usage>
       <description>asterisk - wildcard for zero or more characters</description>
@@ -649,50 +648,48 @@ And, if you respond with "n", then the removal will not happen.
       <usage><m>?</m></usage>
       <description>question mark - wildcard for single character</description>
     </notation>
-    </p>
-      <p>
-        For example, if we type the following:
-      </p>
-        <pre>
+  </p> <p>
+    For example, if we type the following:
+  </p>
+  <pre>
 rm -i newfile?.txt
 </pre>
-<p>
+  <p>
 Then the question mark will match with any single character, and we will see the following prompts:
 </p>
-<pre>
+  <pre>
 rm: remove regular file 'newfile2.txt'?
 rm: remove regular file 'newfile4.txt'?
 </pre>
-<p>
+  <p>
 If we instead type:
 </p>
-<pre>
+  <pre>
 rm -i newfile*.txt
-</pre> 
-<p>
+</pre>
+  <p>
     Then the asterisk will match with any number of characters (including zero), and we will see the following prompts:
 </p>
-<pre>
+  <pre>
 rm: remove regular file 'newfile2.txt'?
 rm: remove regular file 'newfile4.txt'?
 rm: remove regular file 'newfile2_cp.txt'?
 </pre>
-<p>
-As you can see, these search patterns give you a lot of power and control. 
+  <p>
+As you can see, these search patterns give you a lot of power and control.
   </p>
-  </subsection>
+</subsubsection>
 
 </subsection>
 
-<conclusion>
-<title>Conclusion</title>
-  <p>
-    Hopefully, you now feel a bit more comfortable using the shell. The shell commands discussed above are summarized in Appendix <xref ref="ap_shell_cheat_sheet"/>.
-  </p>
-</conclusion>
-
-  <exercise label = "basicShellCommands" numbered = "yes" language = "natural" adaptive="yes">
-    <statement>
+ <conclusion>
+    <title>Conclusion</title>
+    <p>
+      Hopefully, you now feel a bit more comfortable using the shell. The shell commands discussed above are summarized in Appendix <xref ref="ap_shell_cheat_sheet"/>.
+    </p>
+    <exercise xml:id="quiz_basic_shell_commands">
+      <title>Quiz: Basic Shell Commands</title>
+      <statement>
         <p>
           You have a file named <term>data.txt</term> that contains the following lines:
         </p>
@@ -707,58 +704,23 @@ grape
         <p>
           Here are some commands you may need to perform the task. Rearrange the correct commands in the correct order by dragging and dropping.
         </p>
-    </statement>
-    <blocks>
+      </statement>
+
+      <blocks>
         <block order="1">
-          <choice correct = "yes">
+          <choice correct="yes">
             <p>
               <c>cat data.txt &gt; fruits.txt</c>
             </p>
-        </choice>
-        <choice>
+          </choice>
+          <choice>
             <p>
               <c>cat data.txt &gt;&gt; fruits.txt</c>
             </p>
-        </choice>
+          </choice>
         </block>
-        <block order="2">
-            <p>
-              <c>echo "kiwi" &gt;&gt; fruits.txt</c>
-            </p>
-        </block>
-        <block order="3">
-            <p>
-              <c>cat fruits.txt</c>
-            </p>
-        </block>
-        <block order ="4">
-          <choice>
-            <p>
-              <c>wc -l &lt; fruits.txt</c>
-            </p>
-        </choice>
-        <choice correct = "yes">
-            <p>
-              <c>wc -w &lt; fruits.txt</c>
-            </p>
-        </choice>
-        </block>
-        <block order="5">
-          <p>
-            <c>cp -i fruits.txt data.txt </c>
-          </p>
-        </block>
-        <block order="6">
-          <p>
-            <c>mv data.txt fruits2.txt</c>
-          </p>
-        </block>
-        <block correct="no">
-            <p>
-              <c>rm data.txt fruits2.txt</c>
-            </p>
-        </block>
-    </blocks>
-  </exercise>
-</section>
+        </blocks>
+    </exercise>
+  </conclusion>
 
+</section>
