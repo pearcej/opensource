@@ -31,7 +31,7 @@
             <url href="https://github.com/" visual="github.com/">GitHub</url>, 
             <url href="https://gitea.io/" visual="gitea.io">Gitea</url>, 
             <url href="https://gitlab.com/" visual="gitlab.com/">GitLab</url>, or 
-            <url href="https://bitbucket.org/" visual="bitbucket.org">Bitbucket</url>, each of which provides a comprehensive collection of features that are required for software development in OSS communities. These features arise naturally from the need store code, to discuss issues related to the code, to employ version control, and other needs: 
+            <url href="https://bitbucket.org/" visual="bitbucket.org">Bitbucket</url>, each of which provides a comprehensive collection of features that are required for software development in OSS communities. These features arise naturally from the need to store code, to discuss issues related to the code, to employ version control, and other needs: 
         </p>
       </introduction>
             <subsubsection xml:id="subsubsec-repository">
@@ -44,7 +44,7 @@
                           <statement>
                             <p>
                               A <term>repository</term>, aka 
-                              <term>repo</term>, is a file storage location used by a version control system to keep track of not only versions of the code base itself but also to keep track of project documentation, discussions, web pages, and more. 
+                              <term>repo</term>, is a file storage location used by a version control system to keep track of not only versions of the code base itself, but also to keep track of project documentation, discussions, web pages, and more. 
                             </p>
                           </statement>
                         </definition>
