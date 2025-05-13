@@ -472,7 +472,7 @@ M  lib/simplegit.rb
 					You can also use two asterisks to match nested directories; <c>a/**/z</c> would match <c>a/z</c>, <c>a/b/z</c>, <c>a/b/c/z</c>, and so on.
 					<notation>
       					<usage><m>**</m></usage>
-      					<description>double asterisk - </description>
+      					<description>double asterisk - matches characters in nested directories</description>
     				</notation>
 				</p>
 
