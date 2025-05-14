@@ -28,13 +28,14 @@
 			<title>Contributing to a Project</title>
 
 <!-- div attr= class="paragraph"-->
+            <introduction>
 			<p>
 				Next, let’s walk through some details that could be useful in helping you contribute to an existing open source project.
 			</p><!--</div attr= class="paragraph">-->
-
+            </introduction> 
 <!-- div attr= class="sect3"-->
 
-			<paragraphs xml:id="_forking_projects">
+			<subsubsection xml:id="_forking_projects">
 				<title>Forking Projects</title>
 
 <!-- div attr= class="paragraph"-->
@@ -72,9 +73,9 @@
 					</p>
 				  </exercise>
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="ch06-github_flow">
+			<subsubsection xml:id="ch06-github_flow">
 				<title>The GitHub Flow</title>
 
 <!-- div attr= class="paragraph"-->
@@ -151,9 +152,9 @@
 						Go to <url href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub Flow</url> and complete the provided exercise with one of your own repositories. 
 					</p>
 				</exercise>
+			</subsubsection>	
 
-
-				<paragraphs xml:id="_creating_a_pull_request">
+				<subsubsection xml:id="_creating_a_pull_request">
 					<title>Creating a Pull Request</title>
 
 					<p>
@@ -188,9 +189,9 @@
 					</exercise>
 
 <!-- div attr= class="sect4"-->
-				</paragraphs>
+				</subsubsection>
 
-				<paragraphs xml:id="_iterating_on_a_pull_request">
+				<subsubsection xml:id="_iterating_on_a_pull_request">
 					<title>Iterating on a Pull Request</title>
 
 <!-- div attr= class="paragraph"-->
@@ -255,20 +256,19 @@
 					</p>
 	
 <!-- div attr= class="sect3"-->
-				</paragraphs>
-			</paragraphs>
+				</subsubsection>
 
-			<paragraphs xml:id="_advanced_pull_requests">
+			<subsubsection xml:id="_advanced_pull_requests">
 				<title>Advanced Pull Requests</title>
 
 <!-- div attr= class="paragraph"-->
 				<p>
 					Now that we’ve covered the basics of contributing to a project on GitHub, let’s cover a few interesting tips and tricks about Pull Requests so you can be more effective in using them.
 				</p><!--</div attr= class="paragraph">-->
-
+			</subsubsection>	
 <!-- div attr= class="sect4"-->
 
-				<paragraphs xml:id="_pull_requests_as_patches">
+				<subsubsection xml:id="_pull_requests_as_patches">
 					<title>Pull Requests as Patches</title>
 
 <!-- div attr= class="paragraph"-->
@@ -287,9 +287,9 @@
 					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">-->
 
 <!-- div attr= class="sect4"-->
-				</paragraphs>
+				</subsubsection>
 
-				<paragraphs xml:id="_keeping_up_with_upstream">
+				<subsubsection xml:id="_keeping_up_with_upstream">
 					<title>Keeping up with Upstream</title>
 
 <!-- div attr= class="paragraph"-->
@@ -374,9 +374,9 @@
 					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">-->
 
 <!-- div attr= class="sect4"-->
-				</paragraphs>
+				</subsubsection>
 
-				<paragraphs xml:id="_references">
+				<subsubsection xml:id="_references">
 					<title>References</title>
 
 <!-- div attr= class="paragraph"-->
@@ -396,10 +396,9 @@
 					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-				</paragraphs>
-			</paragraphs>
+				</subsubsection>
 
-			<paragraphs xml:id="_github_flavored_markdown">
+			<subsubsection xml:id="_github_flavored_markdown">
 				<title>GitHub Flavored Markdown</title>
 
 <!-- div attr= class="paragraph"-->
@@ -412,10 +411,10 @@
 				<p>
 					The GitHub flavor of Markdown adds more things you can do beyond the basic Markdown syntax. These can all be really useful when creating useful Pull Request or Issue comments or descriptions.
 				</p><!--</div attr= class="paragraph">-->
-
+            </subsubsection>
 <!-- div attr= class="sect4"-->
 
-				<paragraphs xml:id="_task_lists">
+				<subsubsection xml:id="_task_lists">
 					<title>Task Lists</title>
 
 <!-- div attr= class="paragraph"-->
@@ -441,9 +440,9 @@
 					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">-->
 
 <!-- div attr= class="sect4"-->
-				</paragraphs>
+				</subsubsection>
 
-				<paragraphs xml:id="_code_snippets">
+				<subsubsection xml:id="_code_snippets">
 					<title>Code Snippets</title>
 
 <!-- div attr= class="paragraph"-->
@@ -472,9 +471,9 @@ for(int i=0 ; i &lt; 5 ; i++)
 
 
 <!-- div attr= class="sect4"-->
-				</paragraphs>
+				</subsubsection>
 
-				<paragraphs xml:id="_quoting">
+				<subsubsection xml:id="_quoting">
 					<title>Quoting</title>
 
 <!-- div attr= class="paragraph"-->
@@ -496,11 +495,9 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 
 
 <!-- div attr= class="sect4"-->
-				</paragraphs>
+				</subsubsection>
 
-			</paragraphs>
-
-			<paragraphs xml:id="_fetch_and_push_on_different_repositories">
+			<subsubsection xml:id="_fetch_and_push_on_different_repositories">
 				<title>Keep your GitHub public repository up-to-date</title>
 
 <!-- div attr= class="paragraph"-->
@@ -519,7 +516,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 
 
 
-			</paragraphs>
+			</subsubsection>
 
 		</subsection>
 
@@ -529,13 +526,14 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 			<title>Maintaining a Project</title>
 
 <!-- div attr= class="paragraph"-->
+            <introduction> 
 			<p>
 				Now that we’re comfortable contributing to a project, let’s look at the other side: creating, maintaining and administering your own project.
 			</p><!--</div attr= class="paragraph">-->
-
+		    </introduction>
 <!-- div attr= class="sect3"-->
 
-			<paragraphs xml:id="_creating_a_new_repository">
+			<subsubsection xml:id="_creating_a_new_repository">
 				<title>Creating a New Repository</title>
 
 <!-- div attr= class="paragraph"-->
@@ -567,9 +565,9 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 				</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="_adding_collaborators">
+			<subsubsection xml:id="_adding_collaborators">
 				<title>Adding Collaborators</title>
 
 <!-- div attr= class="paragraph"-->
@@ -590,9 +588,9 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="_managing_pull_requests">
+			<subsubsection xml:id="_managing_pull_requests">
 				<title>Managing Pull Requests</title>
 
 <!-- div attr= class="paragraph"-->
@@ -604,10 +602,10 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 				<p>
 					Pull Requests can either come from a branch in a fork of your repository or they can come from another branch in the same repository. The only difference is that the ones in a fork are often from people where you can’t push to their branch and they can’t push to yours, whereas with internal Pull Requests generally both parties can access the branch.
 				</p><!--</div attr= class="paragraph">-->
-
+            </subsubsection>
 <!-- div attr= class="sect4"-->
 
-				<paragraphs xml:id="_email_notifications">
+				<subsubsection xml:id="_email_notifications">
 					<title>Email Notifications</title>
 
 <!-- div attr= class="paragraph"-->
@@ -621,9 +619,9 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 						There are a few things to notice about this email. It will give you a small diffstat — a list of files that have changed in the Pull Request and by how much. It gives you a link to the Pull Request on GitHub. It also gives you a few URLs that you can use from the command line.
 					</p>
 
-				</paragraphs>
+				</subsubsection>
 
-				<paragraphs xml:id="_collaborating_on_the_pull_request">
+				<subsubsection xml:id="_collaborating_on_the_pull_request">
 					<title>Collaborating on the Pull Request</title>
 
 <!-- div attr= class="paragraph"-->
@@ -652,10 +650,10 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">-->
 
 <!-- div attr= class="sect4"-->
-				</paragraphs>
+				</subsubsection>
 
 
-				<paragraphs xml:id="_pull_requests_on_pull_requests">
+				<subsubsection xml:id="_pull_requests_on_pull_requests">
 					<title>Pull Requests on Pull Requests</title>
 
 <!-- div attr= class="paragraph"-->
@@ -674,10 +672,9 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 					</p><!--</div attr= class="paragraph">-->
 
 <!-- div attr= class="sect3"-->
-				</paragraphs>
-			</paragraphs>
+				</subsubsection>
 
-			<paragraphs xml:id="_mentions_and_notifications">
+			<subsubsection xml:id="_mentions_and_notifications">
 				<title>Mentions and Notifications</title>
 
 <!-- div attr= class="paragraph"-->
@@ -709,9 +706,9 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 				<p>
 					If someone gets mentioned on a Pull Request or Issue, they will be “subscribed” to it and will continue getting notifications any time some activity occurs on it. You will also be subscribed to something if you opened it, if you’re watching the repository or if you comment on something. If you no longer wish to receive notifications, there is an “Unsubscribe” button on the page you can click to stop receiving updates on it.
 				</p><!--</div attr= class="paragraph">-->
+            </subsubsection>
 
-
-				<paragraphs xml:id="_the_notifications_page">
+				<subsubsection xml:id="_the_notifications_page">
 					<title>The Notifications Page</title>
 
 <!-- div attr= class="paragraph"-->
@@ -725,10 +722,10 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 					<p>
 						The two choices are to get notifications over “Email” and over “Web” and you can choose either, neither or both for when you actively participate in things and for activity on repositories you are watching.
 					</p><!--</div attr= class="paragraph">-->
-
+				</subsubsection>
+					
 <!-- div attr= class="sect5"-->
-
-					<paragraphs xml:id="_web_notifications">
+					<subsubsection xml:id="_web_notifications">
 						<title>Web Notifications</title>
 
 <!-- div attr= class="paragraph"-->
@@ -746,10 +743,10 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 						<p>
 							All of these tools are very useful for handling large numbers of notifications. Many GitHub power users will simply turn off email notifications entirely and manage all of their notifications through this screen.
 						</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect5">-->
+                    </subsubsection>
 
 <!-- div attr= class="sect5"-->
-
-						<paragraphs xml:id="_email_notifications_2">
+						<subsubsection xml:id="_email_notifications_2">
 							<title>Email Notifications</title>
 
 <!-- div attr= class="paragraph"-->
@@ -779,12 +776,9 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 							</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect5">--><!--</div attr= class="sect4">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-						</paragraphs>
-					</paragraphs>
-				</paragraphs>
-			</paragraphs>
+						</subsubsection>
 
-			<paragraphs xml:id="_special_files">
+			<subsubsection xml:id="_special_files">
 				<title>Special Files</title>
 
 <!-- div attr= class="paragraph"-->
@@ -794,8 +788,8 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
-			<paragraphs xml:id="_license">
+			</subsubsection>
+			<subsubsection xml:id="_license">
 				<title>LICENSE</title>
 			<p>
 			The first is the <c>LICENSE</c> file, which can be of nearly any prose format. For example, it could be LICENSE, LICENSE.md, LICENSE.asciidoc, etc. 
@@ -806,9 +800,9 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 			<p>
 				For more information on how to add a license, see <url href="https://help.github.com/articles/adding-a-license-to-a-repository/" visual="help.github.com/articles/adding-a-license-to-a-repository/">Adding a license to a repository</url> 
 			</p>
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="_readme">
+			<subsubsection xml:id="_readme">
 				<title>README</title>
 
 <!-- div attr= class="paragraph"-->
@@ -864,17 +858,17 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="_code_of_conduct">
+			<subsubsection xml:id="_code_of_conduct">
 				<title>CODE_OF_CONDUCT</title>
 				<p>
 					<idx>code of conduct</idx>
 					The <c>CODE_OF_CONDUCT</c> file explains how one is expected to engage in that particular community. It is typically used to ensure an inclusive environment that respects all people and also typically describes how to address any problems among members of the project's community.
 				</p>
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="_contributing">
+			<subsubsection xml:id="_contributing">
 				<title>CONTRIBUTING</title>
 
 <!-- div attr= class="paragraph"-->
@@ -892,19 +886,19 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 				</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect3">-->
 
 <!-- div attr= class="sect3"-->
-			</paragraphs>
+			</subsubsection>
 
-			<paragraphs xml:id="_project_administration">
+			<subsubsection xml:id="_project_administration">
 				<title>Project Administration</title>
 
 <!-- div attr= class="paragraph"-->
 				<p>
 					Generally there are not a lot of administrative things you can do with a single project, but there are a couple of items that might be of interest.
 				</p><!--</div attr= class="paragraph">-->
-
+            </subsubsection>
 <!-- div attr= class="sect4"-->
 
-				<paragraphs xml:id="_changing_the_default_branch">
+				<subsubsection xml:id="_changing_the_default_branch">
 					<title>Changing the Default Branch</title>
 
 <!-- div attr= class="paragraph"-->
@@ -918,9 +912,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 					</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect4">-->
 
 <!-- div attr= class="sect4"-->
-				</paragraphs>
-
-			</paragraphs>
+				</subsubsection>
 
 		</subsection>
 
