@@ -28,10 +28,11 @@
 			<title>Contributing to a Project</title>
 
 <!-- div attr= class="paragraph"-->
+            <introduction>
 			<p>
 				Next, let’s walk through some details that could be useful in helping you contribute to an existing open source project.
 			</p><!--</div attr= class="paragraph">-->
-
+            </introduction> 
 <!-- div attr= class="sect3"-->
 
 			<subsubsection xml:id="_forking_projects">
@@ -529,10 +530,11 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 			<title>Maintaining a Project</title>
 
 <!-- div attr= class="paragraph"-->
+            <introduction> 
 			<p>
 				Now that we’re comfortable contributing to a project, let’s look at the other side: creating, maintaining and administering your own project.
 			</p><!--</div attr= class="paragraph">-->
-
+		    </introduction>
 <!-- div attr= class="sect3"-->
 
 			<subsubsection xml:id="_creating_a_new_repository">
