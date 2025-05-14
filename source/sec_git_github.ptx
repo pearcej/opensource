@@ -24,7 +24,7 @@
 		</introduction>
 
 <!-- TODO -->
-		<subsubsection xml:id="_contributing_to_a_project">
+		<subsection xml:id="_contributing_to_a_project">
 			<title>Contributing to a Project</title>
 
 <!-- div attr= class="paragraph"-->
@@ -152,7 +152,7 @@
 						Go to <url href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub Flow</url> and complete the provided exercise with one of your own repositories. 
 					</p>
 				</exercise>
-
+			</subsubsection>	
 
 				<subsubsection xml:id="_creating_a_pull_request">
 					<title>Creating a Pull Request</title>
@@ -257,7 +257,6 @@
 	
 <!-- div attr= class="sect3"-->
 				</subsubsection>
-			</subsubsection>
 
 			<subsubsection xml:id="_advanced_pull_requests">
 				<title>Advanced Pull Requests</title>
@@ -266,7 +265,7 @@
 				<p>
 					Now that we’ve covered the basics of contributing to a project on GitHub, let’s cover a few interesting tips and tricks about Pull Requests so you can be more effective in using them.
 				</p><!--</div attr= class="paragraph">-->
-
+			</subsubsection>	
 <!-- div attr= class="sect4"-->
 
 				<subsubsection xml:id="_pull_requests_as_patches">
@@ -398,7 +397,6 @@
 
 <!-- div attr= class="sect3"-->
 				</subsubsection>
-			</subsubsection>
 
 			<subsubsection xml:id="_github_flavored_markdown">
 				<title>GitHub Flavored Markdown</title>
@@ -413,7 +411,7 @@
 				<p>
 					The GitHub flavor of Markdown adds more things you can do beyond the basic Markdown syntax. These can all be really useful when creating useful Pull Request or Issue comments or descriptions.
 				</p><!--</div attr= class="paragraph">-->
-
+            </subsubsection>
 <!-- div attr= class="sect4"-->
 
 				<subsubsection xml:id="_task_lists">
@@ -499,8 +497,6 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 <!-- div attr= class="sect4"-->
 				</subsubsection>
 
-			</subsubsection>
-
 			<subsubsection xml:id="_fetch_and_push_on_different_repositories">
 				<title>Keep your GitHub public repository up-to-date</title>
 
@@ -522,11 +518,11 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 
 			</subsubsection>
 
-		</subsubsection>
+		</subsection>
 
 <!-- TODO -->
 
-		<subsubsection xml:id="_maintaining_gh_project">
+		<subsection xml:id="_maintaining_gh_project">
 			<title>Maintaining a Project</title>
 
 <!-- div attr= class="paragraph"-->
@@ -606,7 +602,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 				<p>
 					Pull Requests can either come from a branch in a fork of your repository or they can come from another branch in the same repository. The only difference is that the ones in a fork are often from people where you can’t push to their branch and they can’t push to yours, whereas with internal Pull Requests generally both parties can access the branch.
 				</p><!--</div attr= class="paragraph">-->
-
+            </subsubsection>
 <!-- div attr= class="sect4"-->
 
 				<subsubsection xml:id="_email_notifications">
@@ -677,7 +673,6 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 
 <!-- div attr= class="sect3"-->
 				</subsubsection>
-			</subsubsection>
 
 			<subsubsection xml:id="_mentions_and_notifications">
 				<title>Mentions and Notifications</title>
@@ -711,7 +706,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 				<p>
 					If someone gets mentioned on a Pull Request or Issue, they will be “subscribed” to it and will continue getting notifications any time some activity occurs on it. You will also be subscribed to something if you opened it, if you’re watching the repository or if you comment on something. If you no longer wish to receive notifications, there is an “Unsubscribe” button on the page you can click to stop receiving updates on it.
 				</p><!--</div attr= class="paragraph">-->
-
+            </subsubsection>
 
 				<subsubsection xml:id="_the_notifications_page">
 					<title>The Notifications Page</title>
@@ -727,9 +722,9 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 					<p>
 						The two choices are to get notifications over “Email” and over “Web” and you can choose either, neither or both for when you actively participate in things and for activity on repositories you are watching.
 					</p><!--</div attr= class="paragraph">-->
-
+				</subsubsection>
+					
 <!-- div attr= class="sect5"-->
-
 					<subsubsection xml:id="_web_notifications">
 						<title>Web Notifications</title>
 
@@ -748,9 +743,9 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 						<p>
 							All of these tools are very useful for handling large numbers of notifications. Many GitHub power users will simply turn off email notifications entirely and manage all of their notifications through this screen.
 						</p><!--</div attr= class="paragraph">--><!--</div attr= class="sect5">-->
+                    </subsubsection>
 
 <!-- div attr= class="sect5"-->
-
 						<subsubsection xml:id="_email_notifications_2">
 							<title>Email Notifications</title>
 
@@ -782,9 +777,6 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 
 <!-- div attr= class="sect3"-->
 						</subsubsection>
-					</subsubsection>
-				</subsubsection>
-			</subsubsection>
 
 			<subsubsection xml:id="_special_files">
 				<title>Special Files</title>
@@ -903,7 +895,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 				<p>
 					Generally there are not a lot of administrative things you can do with a single project, but there are a couple of items that might be of interest.
 				</p><!--</div attr= class="paragraph">-->
-
+            </subsubsection>
 <!-- div attr= class="sect4"-->
 
 				<subsubsection xml:id="_changing_the_default_branch">
@@ -922,9 +914,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 <!-- div attr= class="sect4"-->
 				</subsubsection>
 
-			</subsubsection>
-
-		</subsubsection>
+		</subsection>
 
 
 
