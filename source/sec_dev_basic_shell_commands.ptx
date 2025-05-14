@@ -16,16 +16,17 @@
   <introduction><p>
     This and subsequent subsections are written to be followed as an extended exercise with explanations given as we go.
   </p>
-    <exercise xml:id="exercise-try-cli">
+    <p>
+      This section is written to be followed as an extended exercise with explanations given as we go.
+    </p>
+      </introduction>
+
+    <subsubsection xml:id="subsec-intro_shell_commands">
+        <title>Introduction to Shell Commands</title>
+        <exercise xml:id="exercise-try-cli">
     <title>Exercise: Try shell commands for navigation</title>
     <p>Try each of the following commands on your own machine.</p>
   </exercise>
-      <p>
-      First, follow the directions given in <xref ref="subsec-getting_terminal"/> to open a terminal window so you can use your shell. All of the shell commands will be typed in this terminal window.
-      </p>
-      </introduction>
-    <subsubsection xml:id="subsec-intro_shell_commands">
-        <title>Introduction to Shell Commands</title>
         <p>
         </p>
       <p>
@@ -678,49 +679,52 @@ rm: remove regular file 'newfile2_cp.txt'?
   <p>
 As you can see, these search patterns give you a lot of power and control.
   </p>
+
+
+    <exercise xml:id="quiz_basic_shell_commands">
+    <title>Quiz: Basic Shell Commands</title>
+    <statement>
+      <p>
+        You have a file named <term>data.txt</term> that contains the following lines:
+      </p>
+      <pre>apple
+orange
+banana
+grape
+      </pre>
+      <p>
+        Your task is to create a new file named <term>fruits.txt</term> and copy the contents of <term>data.txt</term> to <term>fruits.txt</term>. Next, append the word <c>kiwi</c> to <term>fruits.txt</term>. Then, display the contents of <term>fruits.txt</term> in the terminal. Next, count the number of fruits in <term>fruits.txt</term> and display the total count. Finally, overwrite the content of <term>data.txt</term> with the content of <term>fruits.txt</term> and rename <term>data.txt</term> to a new file named <c>fruits2</c>.
+      </p>
+      <p>
+        Here are some commands you may need to perform the task. Rearrange the correct commands in the correct order by dragging and dropping.
+      </p>
+    </statement>
+    <blocks>
+      <block order="1">
+        <choice correct="yes">
+          <p>
+            <c>cat data.txt &gt; fruits.txt</c>
+          </p>
+        </choice>
+        <choice>
+          <p>
+            <c>cat data.txt &gt;&gt; fruits.txt</c>
+          </p>
+        </choice>
+      </block>
+    </blocks>
+  </exercise>
+  
 </subsubsection>
 
 </subsection>
 
- <conclusion>
+
+
+  <conclusion>
     <title>Conclusion</title>
     <p>
       Hopefully, you now feel a bit more comfortable using the shell. The shell commands discussed above are summarized in Appendix <xref ref="ap_shell_cheat_sheet"/>.
     </p>
-    <exercise xml:id="quiz_basic_shell_commands">
-      <title>Quiz: Basic Shell Commands</title>
-      <statement>
-        <p>
-          You have a file named <term>data.txt</term> that contains the following lines:
-        </p>
-        <pre>apple
-orange
-banana
-grape
-        </pre>
-        <p>
-          Your task is to create a new file named <term>fruits.txt</term> and copy the contents of <term>data.txt</term> to <term>fruits.txt</term>. Next, append the word <c>kiwi</c> to <term>fruits.txt</term>. Then, display the contents of <term>fruits.txt</term> in the terminal. Next, count the number of fruits in <term>fruits.txt</term> and display the total count. Finally, overwrite the content of <term>data.txt</term> with the content of <term>fruits.txt</term> and rename <term>data.txt</term> to a new file named <c>fruits2</c>.
-        </p>
-        <p>
-          Here are some commands you may need to perform the task. Rearrange the correct commands in the correct order by dragging and dropping.
-        </p>
-      </statement>
-
-      <blocks>
-        <block order="1">
-          <choice correct="yes">
-            <p>
-              <c>cat data.txt &gt; fruits.txt</c>
-            </p>
-          </choice>
-          <choice>
-            <p>
-              <c>cat data.txt &gt;&gt; fruits.txt</c>
-            </p>
-          </choice>
-        </block>
-        </blocks>
-    </exercise>
   </conclusion>
-
 </section>
