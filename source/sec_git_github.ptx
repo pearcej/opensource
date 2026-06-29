@@ -40,7 +40,7 @@
 
 <!-- div attr= class="paragraph"-->
 				<p>
-				<idx>Fork</idx>
+				<idx>fork</idx>
 					If you want to contribute to an existing project to which you don’t have write access (aka push access), you can <term>fork</term> the project. When you “fork” a project, GitHub will make a copy of the project that is entirely yours; it lives in your namespace, and you can push to it.
 				</p><!--</div attr= class="paragraph">-->
 
@@ -807,7 +807,7 @@ How big are these slings and in particular, these arrows?</pre><!--</div attr= c
 
 <!-- div attr= class="paragraph"-->
 				<p>
-					<idx>README</idx>
+					<idx>readme</idx>
 					The <c>README</c> file explains your project, what it does, why it is useful, etc.
 					If GitHub detects a README file in your source, it will render it on the landing page of the project,
 					so this file is often the first item a visitor will see when visiting your repository.

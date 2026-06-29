@@ -49,7 +49,7 @@
   <li>
   <title>What is a <term>Command Line Interface (CLI)</term>?</title>
     <p>
-      <idx>Command Line Interface</idx>
+      <idx>command line interface</idx>
 <idx>CLI</idx>
       A <term>CLI</term> refers to any interface that works with text-based commands and text-based output. We will be using a <term>shell</term>, which is an example of a CLI.
     </p>
