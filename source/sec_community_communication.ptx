@@ -222,7 +222,7 @@
                 <title>Wiki</title>
 
                 <definition xml:id="def-wiki">
-                  <idx>Wikis</idx>     
+                  <idx>wikis</idx>     
                     <statement>
                       <p>
                         Simply stated, a <term>wiki</term> is a hypertext publication where the pages are a user-editable, easy-to-use, asynchronous way of putting semi-permanent content on the web.
