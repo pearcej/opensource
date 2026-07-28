@@ -2,7 +2,35 @@
 
 <section xml:id="sec_docu_scope" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<title>Documentation Matters!</title>
-	<introduction>
+ <introduction>
+	<p>
+		
+		For many reasons documentation is of utmost importance in open source projects. It acts as a historical record for decisions made as well as a communication link between programmers and users by offering directions, explanations, and advice. New potential contributors can use documentation to understand the project's goals and functions as well as how the community functions. 
+		</p>
+		<p>
+		Effective up-to-date documentation is crucial in creating a thriving and encouraging ecosystem around the open source project by enhancing usability, encouraging collaboration, and lowering entry barriers to contribution. By offering usage instructions and troubleshooting assistance, documentation enables users to get the most out of the project's features.
+	</p>
+
+	<p>
+		By the time you finish this chapter you should be able to:
+	</p>
+
+	<p><ol>
+		<li>
+		Explain both the historical and current value of documentation to open source software.
+		</li>
+		<li>
+		Leverage documentation as a way to become quickly useful as a project newcomer.
+		</li>
+		<li>
+		Follow an established methodology for technical communication, including writing effective issue and commit messages to document your contributions as you make them.
+		</li>
+
+	</ol></p>
+
+
+
+
 		<p>
 			Quality documentation is essential to open source communities because decisions and processes need to be communicated to a distributed team of developers as well as to future developers. In addition, even seasoned developers might write some complicated code, and if they come back to it six months later, even they might not easily remember why a particular change was made or understand precisely how it works without good documentation. But, these are just two of the many reasons documentation matters in open source.
 		</p>
