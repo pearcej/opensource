@@ -5,6 +5,32 @@
 <p>
     The following are open source communities with a reputation of being friendly to novice contribution. Be sure to follow the recommendations given in <xref ref="sec_contributing_quickstart"/> for getting started well.
 </p>
+
+   <subsubsection>
+    <title><em>
+Berea College Student Software Development Team</em></title>
+        <p>
+            The Berea College Student Software Development Team is a program that originally was designed to help the Berea College community identify inefficiencies in their processes and then develop technical solutions to address those problems. Over the years, it has grown into a team that creates and maintains open-source applications for internal clients using modern engineering practices and which welcomes external contributions.
+
+        </p>
+        <p>
+        To get started contributing to BCStudentSoftwareDevTeam, check out their overview page at <url href="https://github.com/BCStudentSoftwareDevTeam" visual="github.com/BCStudentSoftwareDevTeam">BCStudentSoftwareDevTeam</url>. The maintainers recommend that you start by:
+        
+        <ol>
+        <li>
+            <p>
+            Reading the documentation for each of their projects.
+            </p>
+        </li>
+               <li>
+            <p>
+            Looking for issues marked with the "good first issues" tag since the project maintainers have identified these issues as being good for new contributors.
+            </p>
+        </li>
+        </ol>
+
+    </p>
+</subsubsection>
     <subsubsection>
     <title><em>CHAOSS</em></title>
         <p>
